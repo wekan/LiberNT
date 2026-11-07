@@ -1,0 +1,7 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+    IDS_DESKLINK, "Työpöytä (luo pikakuvake)"
+    IDS_SHORTCUT, "Pikakuvake kohteeseen %s"
+}

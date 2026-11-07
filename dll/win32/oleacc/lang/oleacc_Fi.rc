@@ -1,0 +1,123 @@
+/*
+ * Finnish resources for oleacc
+ *
+ * Copyright 2008 Nikolay Sivov
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+    0 "tuntematon objekti" /* undocumented */
+    ROLE_SYSTEM_TITLEBAR    "otsikkorivi"
+    ROLE_SYSTEM_MENUBAR     "valikkorivi"
+    ROLE_SYSTEM_SCROLLBAR   "vierityspalkki"
+    ROLE_SYSTEM_GRIP        "tartuntakahva"
+    ROLE_SYSTEM_SOUND       "ääni"
+    ROLE_SYSTEM_CURSOR      "kohdistin"
+    ROLE_SYSTEM_CARET       "tekstikohdistin"
+    ROLE_SYSTEM_ALERT       "hälytys"
+    ROLE_SYSTEM_WINDOW      "ikkuna"
+    ROLE_SYSTEM_CLIENT      "asiakasalue"
+    ROLE_SYSTEM_MENUPOPUP   "ponnahdusvalikko"
+    ROLE_SYSTEM_MENUITEM    "valikon kohde"
+    ROLE_SYSTEM_TOOLTIP     "työkaluvihje"
+    ROLE_SYSTEM_APPLICATION "sovellus"
+    ROLE_SYSTEM_DOCUMENT    "asiakirja"
+    ROLE_SYSTEM_PANE        "ruutu"
+    ROLE_SYSTEM_CHART       "kaavio"
+    ROLE_SYSTEM_DIALOG      "valintaikkuna"
+    ROLE_SYSTEM_BORDER      "reunus"
+    ROLE_SYSTEM_GROUPING    "ryhmittely"
+    ROLE_SYSTEM_SEPARATOR   "erotin"
+    ROLE_SYSTEM_TOOLBAR     "työkalurivi"
+    ROLE_SYSTEM_STATUSBAR   "tilarivi"
+    ROLE_SYSTEM_TABLE        "taulukko"
+    ROLE_SYSTEM_COLUMNHEADER "sarakeotsikko"
+    ROLE_SYSTEM_ROWHEADER    "riviotsikko"
+    ROLE_SYSTEM_COLUMN       "sarake"
+    ROLE_SYSTEM_ROW          "rivi"
+    ROLE_SYSTEM_CELL         "solu"
+    ROLE_SYSTEM_LINK         "linkki"
+    ROLE_SYSTEM_HELPBALLOON  "ohjeilmapallo"
+    ROLE_SYSTEM_CHARACTER    "merkki"
+    ROLE_SYSTEM_LIST         "luettelo"
+    ROLE_SYSTEM_LISTITEM     "luettelon kohde"
+    ROLE_SYSTEM_OUTLINE      "jäsennys"
+    ROLE_SYSTEM_OUTLINEITEM  "jäsennyksen kohde"
+    ROLE_SYSTEM_PAGETAB      "sivuvälilehti"
+    ROLE_SYSTEM_PROPERTYPAGE "ominaisuussivu"
+    ROLE_SYSTEM_INDICATOR    "ilmaisin"
+    ROLE_SYSTEM_GRAPHIC      "grafiikka"
+    ROLE_SYSTEM_STATICTEXT   "staattinen teksti"
+    ROLE_SYSTEM_TEXT         "teksti"
+    ROLE_SYSTEM_PUSHBUTTON   "painike"
+    ROLE_SYSTEM_CHECKBUTTON  "valintaruutu"
+    ROLE_SYSTEM_RADIOBUTTON  "valintanappi"
+    ROLE_SYSTEM_COMBOBOX     "yhdistelmäruutu"
+    ROLE_SYSTEM_DROPLIST     "avattava luettelo"
+    ROLE_SYSTEM_PROGRESSBAR  "edistymispalkki"
+    ROLE_SYSTEM_DIAL         "säädin"
+    ROLE_SYSTEM_HOTKEYFIELD  "pikanäppäinkenttä"
+    ROLE_SYSTEM_SLIDER       "liukusäädin"
+    ROLE_SYSTEM_SPINBUTTON   "askelruutu"
+    ROLE_SYSTEM_DIAGRAM      "kaavio"
+    ROLE_SYSTEM_ANIMATION    "animaatio"
+    ROLE_SYSTEM_EQUATION     "yhtälö"
+    ROLE_SYSTEM_BUTTONDROPDOWN "avattava painike"
+    ROLE_SYSTEM_BUTTONMENU   "valikkopainike"
+    ROLE_SYSTEM_BUTTONDROPDOWNGRID "avattava ruudukkopainike"
+    ROLE_SYSTEM_WHITESPACE   "tyhjä tila"
+    ROLE_SYSTEM_PAGETABLIST  "sivuvälilehtiluettelo"
+    ROLE_SYSTEM_CLOCK        "kello"
+    ROLE_SYSTEM_SPLITBUTTON  "jaettu painike"
+    ROLE_SYSTEM_IPADDRESS    "IP-osoite"
+    ROLE_SYSTEM_OUTLINEBUTTON "jäsennyspainike"
+
+    IDS_STATE_NORMAL            "normaali"
+    IDS_STATE_UNAVAILABLE       "ei käytettävissä"
+    IDS_STATE_SELECTED          "valittu"
+    IDS_STATE_FOCUSED           "kohdistettu"
+    IDS_STATE_PRESSED           "painettu"
+    IDS_STATE_CHECKED           "valittu"
+    IDS_STATE_MIXED             "sekoitettu"
+    IDS_STATE_READONLY          "vain luku"
+    IDS_STATE_HOTTRACKED        "korostettu"
+    IDS_STATE_DEFAULT           "oletus"
+    IDS_STATE_EXPANDED          "laajennettu"
+    IDS_STATE_COLLAPSED         "kutistettu"
+    IDS_STATE_BUSY              "varattu"
+    IDS_STATE_FLOATING          "kelluva"
+    IDS_STATE_MARQUEED          "vierivä"
+    IDS_STATE_ANIMATED          "animoitu"
+    IDS_STATE_INVISIBLE         "näkymätön"
+    IDS_STATE_OFFSCREEN         "näytön ulkopuolella"
+    IDS_STATE_SIZEABLE          "muutettavan kokoinen"
+    IDS_STATE_MOVEABLE          "siirrettävä"
+    IDS_STATE_SELFVOICING       "itse puhuva"
+    IDS_STATE_FOCUSABLE         "kohdistettavissa"
+    IDS_STATE_SELECTABLE        "valittavissa"
+    IDS_STATE_LINKED            "linkitetty"
+    IDS_STATE_TRAVERSED         "käyty"
+    IDS_STATE_MULTISELECTABLE   "monivalittavissa"
+    IDS_STATE_EXTSELECTABLE     "laajennetusti valittavissa"
+    IDS_STATE_ALERT_LOW         "hälytys: alhainen"
+    IDS_STATE_ALERT_MEDIUM      "hälytys: keskitaso"
+    IDS_STATE_ALERT_HIGH        "hälytys: korkea"
+    IDS_STATE_PROTECTED         "suojattu"
+    IDS_STATE_HASPOPUP          "ponnahdusikkuna"
+}

@@ -1,0 +1,46 @@
+/*
+ * PROJECT:     ReactOS Utility Manager Resources DLL (UManDlg.dll)
+ * LICENSE:     GPL-2.0+ (https://spdx.org/licenses/GPL-2.0+)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATOR:  Copyright 2019-2020 George Bișoc <george.bisoc@reactos.org>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 284, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Helppokäyttöisyyden apuohjelmien hallinta"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LISTBOX IDC_LISTBOX, 4, 4, 273, 56, LBS_NOTIFY | WS_VSCROLL | WS_CHILD | WS_VISIBLE | WS_TABSTOP | WS_BORDER
+    CONTROL "", IDC_GROUPBOX, "Button", BS_GROUPBOX | WS_CHILD | WS_VISIBLE, 3, 62, 275, 92
+    CONTROL "Käynnistä", IDC_START, "Button", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 14, 76, 45, 16
+    CONTROL "Pysäytä", IDC_STOP, "Button", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 69, 76, 45, 16
+    CONTROL "Käynnistä automaattisesti, kun kirjaudun sisään", IDC_START_LOG_IN, "Button", BS_CHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 12, 101, 206, 14
+    CONTROL "Käynnistä automaattisesti, kun lukitsen työpöydän", IDC_START_DESKTOP, "Button", BS_CHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 12, 118, 212, 14
+    CONTROL "Käynnistä automaattisesti apuohjelmien hallinnan käynnistyessä", IDC_START_UTILMAN, "Button", BS_CHECKBOX | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 12, 134, 212, 13
+    CONTROL "&OK", IDC_OK, "Button", BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 160, 161, 50, 14
+    CONTROL "&Peruuta", IDC_CANCEL, "Button", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 221, 161, 50, 14
+    CONTROL "O&hje", IDC_HELP_TOPICS, "Button", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_TABSTOP, 98, 161, 50, 14
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OSK "Näyttönäppäimistö"
+    IDS_MAGNIFIER "Suurennuslasi"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NOTRUNNING "%s ei ole käynnissä"
+    IDS_RUNNING "%s on käynnissä"
+    IDS_GROUPBOX_OPTIONS_TITLE "Asetukset: %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_ABOUT "Tietoja: Helppokäyttöisyyden apuohjelmien hallinta..."
+    IDS_APP_NAME "Helppokäyttöisyyden apuohjelmien hallinta"
+    IDS_AUTHORS "Copyright 2019 George Bișoc, Hermes Belusca-Maito"
+END

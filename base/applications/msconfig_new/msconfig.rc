@@ -64,6 +64,10 @@ END
     #include "lang/es-ES.rc"
     APP_TOOLS   HTML    "lang/mscfgtl/es-ES.xml"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/fi-FI.rc"
+    APP_TOOLS   HTML    "lang/mscfgtl/fi-FI.xml"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/fr-FR.rc"
     APP_TOOLS   HTML    "lang/mscfgtl/fr-FR.xml"

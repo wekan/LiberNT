@@ -1,0 +1,80 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+/* Dialogs */
+
+SELWINDOW DIALOGEX 20, 20, 220, 140
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+CAPTION "Valitse ikkuna"
+BEGIN
+    LISTBOX 100, 5, 5, 210, 110, LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON "&OK", 1, 60, 120, 40, 15, BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP
+    PUSHBUTTON "&Peruuta", 2, 120, 120, 40, 15, WS_CHILD | WS_VISIBLE | WS_TABSTOP
+END
+
+/* Menus */
+
+EDITMENU MENU
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "&Kumoa", EM_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Leikkaa", WM_CUT
+        MENUITEM "K&opioi", WM_COPY
+        MENUITEM "L&iitä", WM_PASTE
+        MENUITEM "&Poista", WM_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Valitse &kaikki", EM_SETSEL
+    END
+END
+
+SYSMENU MENU
+BEGIN
+    MENUITEM "&Palauta", SC_RESTORE
+    MENUITEM "&Siirrä", SC_MOVE
+    MENUITEM "&Muuta kokoa", SC_SIZE
+    MENUITEM "Pie&nennä", SC_MINIMIZE
+    MENUITEM "Suu&renna", SC_MAXIMIZE
+    MENUITEM SEPARATOR
+    MENUITEM "S&ulje\tAlt+F4", SC_CLOSE
+END
+
+SYSMENUMDI MENU
+BEGIN
+    MENUITEM "&Palauta", SC_RESTORE
+    MENUITEM "&Siirrä", SC_MOVE
+    MENUITEM "&Muuta kokoa", SC_SIZE
+    MENUITEM "Pie&nennä", SC_MINIMIZE
+    MENUITEM "Suu&renna", SC_MAXIMIZE
+    MENUITEM SEPARATOR
+    MENUITEM "S&ulje\tCtrl+F4", SC_CLOSE
+    MENUITEM SEPARATOR
+    MENUITEM "&Seuraava\tCtrl+F6", SC_NEXTWINDOW
+END
+
+/* Strings */
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR "Virhe"
+    IDS_NOT_RESPONDING " (Ei vastaa)"
+    IDS_ASK_TERMINATE "Tämä sovellus ei vastaa. Haluatko lopettaa sen?"
+    IDS_HUNG_UP_TITLE "Jumissa!"
+    IDS_OK "OK"
+    IDS_CANCEL "Peruuta"
+    IDS_ABORT "&Keskeytä"
+    IDS_RETRY "&Yritä uudelleen"
+    IDS_IGNORE "&Ohita"
+    IDS_YES "&Kyllä"
+    IDS_NO "&Ei"
+    IDS_CLOSE "&Sulje"
+    IDS_HELP "Ohje"
+    IDS_TRYAGAIN "&Yritä uudelleen"
+    IDS_CONTINUE "&Jatka"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MDI_MOREWINDOWS "&Lisää ikkunoita..."
+END

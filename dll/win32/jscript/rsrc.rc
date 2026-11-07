@@ -45,6 +45,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/jscript_Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/jscript_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/jscript_Fr.rc"
 #endif

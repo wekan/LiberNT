@@ -1,0 +1,18 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_SNAPIN_NAME          "Varmenteet"
+    IDS_SNAPIN_DESCRIPTION   "Selaa käyttäjätilillesi tallennettuja varmenteita."
+    IDS_SNAPIN_PROVIDER      "LiberNT"
+    IDS_ROOT_CURRENT_USER    "Varmenteet - nykyinen käyttäjä"
+    IDS_COLUMN_ISSUED_TO     "Myönnetty kohteelle"
+    IDS_COLUMN_ISSUED_BY     "Myöntäjä"
+    IDS_COLUMN_EXPIRATION    "Vanhenemispäivä"
+    IDS_COLUMN_PURPOSES      "Käyttötarkoitukset"
+    IDS_COLUMN_FRIENDLY_NAME "Kutsumanimi"
+    IDS_COLUMN_OBJECT_TYPE   "Objektin tyyppi"
+    IDS_FOLDER_CERTIFICATES  "Varmenteet"
+    IDS_PURPOSES_ALL         "<Kaikki>"
+    IDS_FRIENDLY_NAME_NONE   "<Ei mitään>"
+END

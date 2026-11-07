@@ -1,0 +1,31 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\nKelvolliset komennot:\n\
+               load        Lataa suodatinohjaimen\n\
+               unload      Poistaa suodatinohjaimen muistista\n\
+               filters     Luettelee järjestelmään rekisteröidyt suodattimet\n\
+               volumes     Luettelee kaikki taltiot\n\n"
+
+    IDS_USAGE_LOAD      "Lataa suodatinohjaimen\n"
+    IDS_USAGE_UNLOAD    "Poistaa suodatinohjaimen muistista\n"
+    IDS_USAGE_FILTERS   "Luettelee kaikki rekisteröidyt suodattimet\n"
+    IDS_USAGE_VOLUMES   "Luettelee kaikki taltiot\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DISPLAY_FILTERS1    "Suodattimen nimi                Esiintymiä       Korkeus     Kehys\n"
+    IDS_DISPLAY_FILTERS2    "Suodattimen nimi                Esiintymiä      Kehys\n"
+    IDS_DISPLAY_VOLUMES     "DOS-nimi                        Taltion nimi                             Tiedostojärj. Tila\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR_PRIV      "Ohjaimen latausoikeuden asettaminen epäonnistui (0x%X)\n"
+    IDS_ERROR_FILTERS   "Suodattimien luettelointi epäonnistui (0x%X)\n"
+    IDS_ERROR_LOAD      "Suodattimen lataaminen epäonnistui (0x%X)\n"
+    IDS_ERROR_UNLOAD    "Suodattimen poistaminen muistista epäonnistui (0x%X)\n"
+    IDS_ERROR_VOLUMES   "Taltioiden luettelointi epäonnistui (0x%X)\n"
+END

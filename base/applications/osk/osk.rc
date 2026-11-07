@@ -59,6 +59,9 @@ IDI_BOTTOM    ICON "res/bottom.ico"
 #ifdef LANGUAGE_ET_EE
     #include "lang/et-EE.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/fi-FI.rc"
+#endif
 #ifdef LANGUAGE_FR_CA
     #include "lang/fr-CA.rc"
 #endif

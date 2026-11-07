@@ -1,0 +1,446 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+101 DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Valintasäännöt"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 201, 2000, 7, 7, 21, 20
+    LTEXT "Alla olevassa luettelossa näkyvät määrittämäsi sijainnit. Valitse sijainti, josta soitat.", -1, 35, 7, 210, 16
+    LTEXT "&Sijainnit:", -1, 7, 35, 210, 8
+    CONTROL "", 1033, "SysListView32", WS_BORDER | WS_TABSTOP | 0x0000011D, 7, 46, 238, 105, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Uusi...", 1030, 87, 155, 50, 14
+    PUSHBUTTON "&Muokkaa...", 1031, 141, 155, 50, 14
+    PUSHBUTTON "&Poista", 1032, 195, 155, 50, 14
+    LTEXT "Puhelinnumero valitaan muodossa:", 1052, 7, 181, 100, 8
+    LTEXT "", 1053, 14, 195, 224, 16
+END
+
+102 DIALOGEX 0, 0, 252, 255
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 202, 2000, 7, 7, 20, 20
+    LTEXT "Sijainnin &nimi:", -1, 35, 11, 56, 8, SS_CENTERIMAGE
+    EDITTEXT 1038, 96, 8, 149, 14, ES_AUTOHSCROLL
+    LTEXT "Määritä sijainti, josta soitat.", 2001, 7, 33, 238, 8
+    LTEXT "Maa tai &alue:", -1, 7, 49, 161, 8
+    COMBOBOX 1006, 7, 60, 175, 200, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL
+    LTEXT "&Suuntanumero:", -1, 190, 49, 48, 8
+    EDITTEXT 1034, 190, 60, 48, 12, ES_AUTOHSCROLL
+    GROUPBOX "Valintasäännöt", 2002, 7, 80, 238, 92
+    LTEXT "Käytä tästä sijainnista soitettaessa seuraavia sääntöjä:", 2003, 14, 92, 224, 8
+    LTEXT "Ulkolinja &paikallispuheluille, valitse:", -1, 14, 106, 170, 8
+    EDITTEXT 1010, 190, 104, 48, 12, ES_AUTOHSCROLL
+    LTEXT "Ulkolinja &kaukopuheluille, valitse:", -1, 14, 122, 170, 8
+    EDITTEXT 1011, 190, 120, 48, 12, ES_AUTOHSCROLL
+    LTEXT "Kaukopuheluiden &operaattoritunnus:", -1, 14, 138, 170, 8
+    EDITTEXT 1059, 190, 136, 48, 12, ES_AUTOHSCROLL
+    LTEXT "&Ulkomaanpuheluiden operaattoritunnus:", -1, 14, 154, 170, 8
+    EDITTEXT 1060, 190, 152, 48, 12, ES_AUTOHSCROLL
+    AUTOCHECKBOX "Koputuksen &esto, valitse:", 1035, 14, 177, 170, 10
+    COMBOBOX 1013, 190, 176, 48, 73, CBS_DROPDOWN | CBS_SORT | WS_VSCROLL
+    LTEXT "Valinta:", -1, 14, 195, 40, 8
+    AUTORADIOBUTTON "&Ääni", 1036, 58, 194, 50, 10, NOT WS_TABSTOP
+    AUTORADIOBUTTON "P&ulssi", 1037, 112, 194, 50, 10, NOT WS_TABSTOP
+    LTEXT "Puhelinnumero valitaan muodossa:", 1052, 7, 219, 100, 8
+    LTEXT "", 1053, 14, 232, 224, 16
+END
+
+103 DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Suuntanumerosäännöt"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Suuntanumerosääntö määrittää, miten puhelinnumerot valitaan nykyiseltä suuntanumeroalueelta muille alueille ja oman alueen sisällä.", 2000, 7, 7, 238, 16
+    LTEXT "&Suuntanumerosäännöt:", -1, 7, 31, 238, 8
+    CONTROL "", 1033, "SysListView32", WS_BORDER | WS_TABSTOP | 0x0000801D, 7, 42, 238, 99, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Uusi...", 1030, 87, 147, 50, 14
+    PUSHBUTTON "&Muokkaa...", 1031, 141, 147, 50, 14
+    PUSHBUTTON "&Poista", 1032, 195, 147, 50, 14
+    GROUPBOX "Kuvaus", 2006, 7, 166, 238, 45
+    LTEXT "", 1039, 14, 180, 224, 24
+END
+
+104 DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Puhelukortti"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse käytettävä puhelukortti tai lisää uusi valitsemalla Uusi.", 2000, 7, 7, 238, 8
+    LTEXT "Korttien &tyypit:", -1, 7, 23, 238, 8
+    CONTROL "", 1033, "SysListView32", WS_BORDER | WS_TABSTOP | 0x0000400D, 7, 34, 238, 63, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Uusi...", 1030, 87, 103, 50, 14
+    PUSHBUTTON "&Muokkaa...", 1031, 141, 103, 50, 14
+    PUSHBUTTON "&Poista", 1032, 195, 103, 50, 14
+    LTEXT "&Tilinumero:", -1, 7, 127, 91, 8
+    EDITTEXT 1018, 102, 125, 143, 12, ES_AUTOHSCROLL
+    LTEXT "&Henkilökohtainen tunnusluku (PIN):", -1, 7, 145, 91, 8
+    EDITTEXT 1019, 102, 143, 143, 12, ES_AUTOHSCROLL
+    GROUPBOX "Palvelunumerot", 2001, 7, 158, 238, 53
+    LTEXT "Kaukopuhelut:", -1, 14, 172, 84, 8
+    LTEXT "", 1042, 102, 172, 136, 8
+    LTEXT "Ulkomaanpuhelut:", -1, 14, 184, 84, 8
+    LTEXT "", 1043, 102, 184, 136, 8
+    LTEXT "Paikallispuhelut:", -1, 14, 196, 84, 8
+    LTEXT "", 1051, 102, 196, 136, 8
+END
+
+105 DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 203, 2000, 7, 7, 20, 20
+    LTEXT "Puhelu&kortin nimi:", -1, 35, 12, 64, 8, SS_CENTERIMAGE
+    EDITTEXT 1047, 105, 9, 140, 14, ES_AUTOHSCROLL
+    LTEXT "Tili&numero:", -1, 7, 35, 238, 8
+    EDITTEXT 1018, 7, 46, 116, 14, ES_AUTOHSCROLL
+    LTEXT "&Henkilökohtainen tunnusluku (PIN):", -1, 7, 68, 238, 8
+    EDITTEXT 1019, 7, 80, 116, 14, ES_AUTOHSCROLL
+    LTEXT "Tätä puhelukorttia käytetään, kun:", 1056, 14, 117, 224, 8
+    GROUPBOX "Puhelukortin tiedot", 2001, 7, 105, 238, 66
+    LTEXT "", 1000, 22, 131, 216, 8
+    LTEXT "", 1001, 22, 143, 216, 8
+    LTEXT "", 1002, 22, 155, 216, 8
+END
+
+106 DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Kaukopuhelut"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Kaukopuheluiden palvelunumero:", -1, 7, 7, 238, 8
+    EDITTEXT 1044, 7, 18, 140, 14, ES_AUTOHSCROLL
+    LTEXT "Syötä kaukopuheluiden valintavaiheet alla olevilla painikkeilla. Syötä vaiheet täsmälleen siinä järjestyksessä kuin ne ovat puhelukortissasi.", 2000, 7, 40, 238, 24
+    LTEXT "Puhelukortin &valintavaiheet:", -1, 7, 72, 80, 8
+    CONTROL "List1", 1033, "SysListView32", WS_BORDER | WS_TABSTOP | 0x0000400D, 7, 83, 184, 74, WS_EX_CLIENTEDGE
+    PUSHBUTTON "Siirrä &ylös", 1022, 195, 83, 50, 14
+    PUSHBUTTON "Siirrä &alas", 1023, 195, 101, 50, 14
+    PUSHBUTTON "&Poista", 1024, 195, 119, 50, 14
+    PUSHBUTTON "Palvelu&numero", 1025, 7, 161, 90, 14
+    PUSHBUTTON "&Tilinumero", 1018, 101, 161, 90, 14
+    PUSHBUTTON "&PIN", 1019, 7, 179, 90, 14
+    PUSHBUTTON "&Kohdenumero...", 1020, 101, 179, 90, 14
+    PUSHBUTTON "&Odota kehotetta...", 1017, 7, 197, 90, 14
+    PUSHBUTTON "&Määritä numerot...", 1021, 101, 197, 90, 14
+END
+
+107 DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Ulkomaanpuhelut"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Ulkomaanpuheluiden palvelunumero:", -1, 7, 7, 238, 8
+    EDITTEXT 1045, 7, 18, 140, 14, ES_AUTOHSCROLL
+    LTEXT "Syötä ulkomaanpuheluiden valintavaiheet alla olevilla painikkeilla. Syötä vaiheet täsmälleen siinä järjestyksessä kuin ne ovat puhelukortissasi.", 2000, 7, 40, 244, 24
+    LTEXT "Puhelukortin &valintavaiheet:", -1, 7, 72, 80, 8
+    CONTROL "List1", 1033, "SysListView32", WS_BORDER | WS_TABSTOP | 0x0000400D, 7, 83, 184, 74, WS_EX_CLIENTEDGE
+    PUSHBUTTON "Siirrä &ylös", 1022, 195, 83, 50, 14
+    PUSHBUTTON "Siirrä &alas", 1023, 195, 101, 50, 14
+    PUSHBUTTON "&Poista", 1024, 195, 119, 50, 14
+    PUSHBUTTON "Palvelu&numero", 1025, 7, 161, 90, 14
+    PUSHBUTTON "&Tilinumero", 1018, 101, 161, 90, 14
+    PUSHBUTTON "&PIN", 1019, 7, 179, 90, 14
+    PUSHBUTTON "&Kohdenumero...", 1020, 101, 179, 90, 14
+    PUSHBUTTON "&Odota kehotetta...", 1017, 7, 197, 90, 14
+    PUSHBUTTON "&Määritä numerot...", 1021, 101, 197, 90, 14
+END
+
+108 DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Paikallispuhelut"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Paikallispuheluiden palvelunumero:", -1, 7, 7, 238, 8
+    EDITTEXT 1008, 7, 18, 140, 14, ES_AUTOHSCROLL
+    LTEXT "Syötä paikallispuheluiden valintavaiheet alla olevilla painikkeilla täsmälleen siinä järjestyksessä kuin ne ovat puhelukortissasi. Jos haluat soittaa paikallispuheluita ilman puhelukorttia, jätä tämä kohta tyhjäksi.", 2000, 7, 40, 238, 24
+    LTEXT "Puhelukortin &valintavaiheet:", -1, 7, 72, 238, 8
+    CONTROL "List1", 1033, "SysListView32", WS_BORDER | WS_TABSTOP | 0x0000400D, 7, 83, 184, 74, WS_EX_CLIENTEDGE
+    PUSHBUTTON "Siirrä &ylös", 1022, 195, 83, 50, 14
+    PUSHBUTTON "Siirrä &alas", 1023, 195, 101, 50, 14
+    PUSHBUTTON "&Poista", 1024, 195, 119, 50, 14
+    PUSHBUTTON "Palvelu&numero", 1025, 7, 161, 90, 14
+    PUSHBUTTON "&Tilinumero", 1018, 101, 161, 90, 14
+    PUSHBUTTON "&PIN", 1019, 7, 179, 90, 14
+    PUSHBUTTON "&Kohdenumero...", 1020, 101, 179, 90, 14
+    PUSHBUTTON "&Odota kehotetta...", 1017, 7, 197, 90, 14
+    PUSHBUTTON "&Määritä numerot...", 1021, 101, 197, 90, 14
+END
+
+109 DIALOGEX 0, 0, 252, 257
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Uusi suuntanumerosääntö"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Tätä suuntanumerosääntöä käytetään vain puheluihin, jotka soitetaan alla määrittämäsi suuntanumeron ja etuliitteen yhdistelmään.", 2000, 7, 6, 238, 16
+    LTEXT "Suuntanumero, johon soitat:", -1, 7, 31, 110, 8
+    LTEXT "S&uuntanumero:", -1, 7, 47, 36, 8
+    EDITTEXT 1034, 46, 44, 50, 14, ES_AUTOHSCROLL
+    LTEXT "Määritä tässä suuntanumerosäännössä käytettävät etuliitteet.", -1, 14, 78, 224, 8
+    AUTORADIOBUTTON "&Sisällytä kaikki tämän suuntanumeron etuliitteet", 1014, 14, 90, 224, 12, NOT WS_TABSTOP
+    AUTORADIOBUTTON "Sisällytä &vain alla luetellut etuliitteet:", 1015, 14, 104, 224, 12, NOT WS_TABSTOP
+    LTEXT "Sisällytettävät &etuliitteet:", 1057, 26, 117, 119, 8
+    CONTROL "List1", 1033, "SysListView32", WS_BORDER | WS_TABSTOP | 0x0000411D, 25, 128, 66, 32, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Lisää...", 1005, 95, 128, 50, 14
+    PUSHBUTTON "&Poista", 1024, 95, 146, 50, 14
+    LTEXT "Kun valitaan numeroita, joissa on yllä olevat etuliitteet:", -1, 14, 184, 224, 8
+    AUTOCHECKBOX "&Valitse:", 1012, 14, 198, 30, 12
+    EDITTEXT 1007, 46, 196, 42, 14, ES_AUTOHSCROLL
+    AUTOCHECKBOX "Lisää &suuntanumero", 1029, 14, 214, 85, 12
+    DEFPUSHBUTTON "OK", 1, 141, 236, 50, 14
+    PUSHBUTTON "Peruuta", 2, 195, 236, 50, 14
+    RTEXT "Suuntanumero", 2001, 133, 31, 51, 8
+    LTEXT "Etuliite", 2002, 200, 31, 45, 8
+    CONTROL "", 2003, "STATIC", SS_BLACKFRAME | SS_SUNKEN, 180, 41, 1, 6
+    CONTROL "", 2004, "STATIC", SS_BLACKFRAME | SS_SUNKEN, 203, 41, 1, 6
+    RTEXT "X - X X X - X X X - X X X X", 2005, 133, 48, 112, 8
+    GROUPBOX "Etuliitteet", -1, 7, 64, 238, 102
+    GROUPBOX "Säännöt", -1, 7, 170, 238, 60
+END
+
+110 DIALOGEX 0, 0, 227, 82
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "", 1003, 7, 7, 213, 8
+    LTEXT "", 1039, 7, 23, 213, 8
+    EDITTEXT 1031, 7, 34, 213, 14, ES_AUTOHSCROLL
+    DEFPUSHBUTTON "OK", 1, 116, 62, 50, 14
+    PUSHBUTTON "Peruuta", 2, 170, 62, 50, 14
+END
+
+111 DIALOGEX 0, 0, 252, 124
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Odota"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse kehotteen tyyppi, jota odotetaan ennen numeron valinnan jatkamista.", 2000, 7, 7, 238, 16
+    AUTORADIOBUTTON "Odota &valintaääntä", 1009, 7, 31, 238, 10, WS_GROUP
+    AUTORADIOBUTTON "Odota &ääniviestin päättymistä", 1016, 7, 47, 238, 10, NOT WS_TABSTOP
+    AUTORADIOBUTTON "Odota määritetty &aika:", 1048, 7, 63, 238, 10, NOT WS_TABSTOP
+    EDITTEXT 1050, 18, 77, 36, 14, ES_AUTOHSCROLL | WS_GROUP
+    CONTROL "Spin1", 1049, "msctls_updown32", 0x00000036, 42, 78, 11, 14
+    LTEXT "&sekuntia", -1, 58, 79, 187, 8
+    DEFPUSHBUTTON "OK", 1, 141, 103, 50, 14
+    PUSHBUTTON "Peruuta", 2, 195, 103, 50, 14
+END
+
+112 DIALOGEX 0, 0, 252, 111
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Kohdenumero"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Tämä vaihe lisää valittavan kohdenumeron puhelukortin valintasarjaan. Mitkä numeron osat haluat valita, kun kohdenumero valitaan?", 2000, 7, 7, 238, 24
+    AUTOCHECKBOX "Valitse &maa- tai aluetunnus", 1027, 7, 39, 238, 10
+    AUTOCHECKBOX "Valitse &suuntanumero", 1034, 7, 55, 238, 10
+    AUTOCHECKBOX "Valitse &numero", 1008, 7, 71, 238, 10, WS_DISABLED
+    DEFPUSHBUTTON "OK", 1, 141, 92, 50, 14
+    PUSHBUTTON "Peruuta", 2, 195, 92, 50, 14
+END
+
+113 DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Lisäasetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 201, 2000, 7, 7, 20, 20
+    LTEXT "Tähän tietokoneeseen on asennettu seuraavat puhelinpalvelujen tarjoajat:", -1, 40, 7, 205, 16
+    LTEXT "&Palveluntarjoajat:", -1, 7, 35, 238, 8
+    LISTBOX 1033, 7, 46, 238, 147, LBS_STANDARD | LBS_NOINTEGRALHEIGHT | WS_TABSTOP
+    PUSHBUTTON "&Lisää...", 1005, 87, 197, 50, 14
+    PUSHBUTTON "P&oista", 1024, 141, 197, 50, 14
+    PUSHBUTTON "&Määritä...", 1031, 195, 197, 50, 14
+END
+
+114 DIALOGEX 20, 15, 252, 135
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Lisää palveluntarjoaja"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse asennettava palveluntarjoaja alla olevasta luettelosta ja valitse Lisää.", 2000, 7, 7, 241, 16
+    LTEXT "&Puhelinpalvelujen tarjoajat:", -1, 7, 31, 144, 10
+    LISTBOX 1055, 7, 42, 238, 74, LBS_STANDARD | WS_TABSTOP
+    PUSHBUTTON "&Lisää", 1005, 141, 114, 50, 14
+    DEFPUSHBUTTON "Peruuta", 2, 195, 114, 50, 14
+END
+
+115 DIALOGEX 10, 10, 303, 228
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Sijaintitiedot"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 302, 302, "STATIC", SS_BITMAP, 10, 10, 88, 155
+    LTEXT "Ennen kuin voit muodostaa puhelin- tai modeemiyhteyksiä, LiberNT tarvitsee seuraavat tiedot nykyisestä sijainnistasi.", 2000, 107, 15, 188, 25
+    LTEXT "&Missä maassa tai millä alueella olet nyt?", -1, 107, 43, 189, 10
+    COMBOBOX 1006, 107, 55, 180, 200, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL
+    LTEXT "Mikä on nykyinen &suuntanumerosi?", -1, 107, 74, 189, 10
+    EDITTEXT 1034, 107, 87, 45, 12, ES_AUTOHSCROLL
+    LTEXT "Mikä on &operaattoritunnus, jos sellainen tarvitaan?", -1, 107, 105, 189, 10
+    EDITTEXT 1058, 106, 118, 45, 12, ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT "Mikä numero valitaan &ulkolinjaa varten, jos sellainen tarvitaan?", -1, 107, 137, 189, 10
+    EDITTEXT 1010, 107, 149, 45, 12, ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT "Tämän sijainnin puhelinjärjestelmä käyttää:", -1, 107, 168, 189, 10
+    AUTORADIOBUTTON "&Äänivalintaa", 1036, 107, 178, 57, 14, WS_GROUP | NOT WS_TABSTOP
+    AUTORADIOBUTTON "&Pulssivalintaa", 1037, 175, 178, 57, 14, NOT WS_TABSTOP
+    DEFPUSHBUTTON "OK", 1, 192, 204, 50, 14
+    PUSHBUTTON "Peruuta", 2, 246, 204, 50, 14
+END
+
+400 DIALOGEX 0, 0, 290, 151
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 302, 302, "STATIC", SS_BITMAP, 0, 0, 88, 155
+    LTEXT "Ennen kuin voit muodostaa puhelin- tai modeemiyhteyksiä, LiberNT tarvitsee seuraavat tiedot nykyisestä sijainnistasi.", 2000, 95, 2, 188, 25
+    LTEXT "&Missä maassa tai millä alueella olet nyt?", -1, 95, 30, 188, 10
+    COMBOBOX 1006, 95, 41, 177, 68, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL
+    LTEXT "Mikä on nykyinen &suuntanumerosi?", -1, 95, 61, 188, 10
+    EDITTEXT 1034, 95, 73, 40, 14, ES_AUTOHSCROLL
+    LTEXT "Mikä numero valitaan &ulkolinjaa varten, jos sellainen tarvitaan?", -1, 95, 96, 188, 10
+    EDITTEXT 1010, 95, 107, 40, 14, ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT "Tämän sijainnin puhelinjärjestelmä käyttää:", -1, 95, 129, 159, 10
+    AUTORADIOBUTTON "&Äänivalintaa", 1036, 95, 139, 55, 12, WS_GROUP | NOT WS_TABSTOP
+    AUTORADIOBUTTON "&Pulssivalintaa", 1037, 155, 139, 55, 12, NOT WS_TABSTOP
+END
+
+500 DIALOGEX 0, 0, 235, 88
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "LiberNT Explorer"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 504, 501, 13, 14, 21, 20
+    LTEXT "", 502, 47, 15, 180, 32
+    AUTOCHECKBOX "&Luota tähän sivuun jatkossa aina", 503, 50, 47, 147, 12
+    DEFPUSHBUTTON "&OK", 505, 110, 65, 50, 14
+    PUSHBUTTON "&Peruuta", 506, 164, 65, 50, 14
+END
+
+STRINGTABLE
+BEGIN
+    1 "Puhelin- ja modeemiasetukset"
+    2 "Määritä modeemin käytön valintasäännöt ja ominaisuudet."
+    3 "Sijainti"
+    4 "Luo uusi sijainti valitsemalla Uusi."
+    5 "Uusi sijainti"
+    6 "Muokkaa sijaintia"
+    7 "Uusi puhelukortti"
+    8 "Muokkaa puhelukorttia"
+    9 "Area Code"
+    10 "Etuliitteet"
+    11 "Sääntö"
+    12 "Antamasi merkki ei kelpaa.\n\nKelvollisia merkkejä ovat 0–9, *, # ja pilkku."
+    13 "Antamasi merkki ei kelpaa.\n\nKelvollisia merkkejä ovat 0–9, *, #, välilyönti ja pilkku."
+    14 "Antamasi merkki ei kelpaa.\n\nKelvollisia merkkejä ovat 0–9."
+    15 "Antamasi merkki ei kelpaa."
+    16 "Valitse %1"
+    17 "Valitse %1 ja suuntanumero"
+    18 "Valitse suuntanumero"
+    19 "Valitse vain numero"
+    20 "Kaikki"
+    21 "Valitut"
+    22 "Muokkaa suuntanumerosääntöä"
+    23 "Näytä säännön kuvaus valitsemalla se yllä olevasta luettelosta tai lisää sääntö valitsemalla Uusi."
+    24 "Valitse '%2' ja suuntanumero ennen numeroa kaikissa suuntanumeroalueen %1 sisäisissä puheluissa."
+    25 "Valitse '%2' ennen numeroa kaikissa suuntanumeroalueen %1 sisäisissä puheluissa."
+    26 "Valitse suuntanumero ennen numeroa kaikissa suuntanumeroalueen %1 sisäisissä puheluissa."
+    27 "Valitse vain numero kaikissa suuntanumeroalueen %1 sisäisissä puheluissa."
+    28 "Valitse '%2' ja suuntanumero ennen numeroa suuntanumeroalueen %1 sisäisissä puheluissa, joissa on määrittämäsi etuliitteet."
+    29 "Valitse '%2' ennen numeroa suuntanumeroalueen %1 sisäisissä puheluissa, joissa on määrittämäsi etuliitteet."
+    30 "Valitse suuntanumero ennen numeroa suuntanumeroalueen %1 sisäisissä puheluissa, joissa on määrittämäsi etuliitteet."
+    31 "Valitse vain numero suuntanumeroalueen %1 sisäisissä puheluissa, joissa on määrittämäsi etuliitteet."
+    32 "Valitse '1' ennen kaikkiin muihin suuntanumeroihin soitettavia puheluita ja lisää suuntanumero kaikille etuliitteille."
+    33 "Lisää etuliite"
+    34 "Anna yksi tai useampi etuliite välilyönneillä tai pilkuilla erotettuina."
+    35 "Määritä numerot"
+    36 "Anna yksi tai useampi valittava numero (myös * ja #)."
+    37 "Yritit antaa virheellisen merkin.\n\nKelvollisia merkkejä ovat 0–9 ja välilyönti."
+    38 "Odota %1!d! sekuntia."
+    39 "Valitse palvelunumero."
+    40 "Valitse tilinumero."
+    41 "Valitse PIN-koodi."
+    42 "Odota valintaääntä."
+    43 "Odota ääniviestin päättymistä."
+    44 "Valitse maa- tai aluetunnus, suuntanumero ja numero."
+    45 "Valitse maa- tai aluetunnus ja numero."
+    46 "Valitse suuntanumero ja numero."
+    47 "Valitse maa- tai aluetunnus."
+    48 "Valitse suuntanumero."
+    49 "Valitse numero."
+    50 "soitetaan kaukopuheluita."
+    51 "soitetaan ulkomaanpuheluita."
+    52 "soitetaan paikallispuheluita."
+    53 "Tämän puhelukortin käytölle ei ole määritetty sääntöjä."
+    54 "Anna tämän sijainnin kaukopuheluiden operaattoritunnus."
+    55 "Anna tälle sijainnille nimi."
+    56 "Anna tämän sijainnin suuntanumero."
+    57 "Valitse numero, jolla koputus estetään."
+    58 "Valitse maa tai alue, josta soitat."
+    59 "Puuttuvia tietoja"
+    60 "Antamasi sijainnin nimi on jo käytössä. Anna yksilöllinen nimi."
+    61 "Tästä puhelukortista puuttuu pakollisia tietoja. Jos haluat käyttää korttia, valitse Muokkaa ja anna lisätietoja, tai valitse toinen kortti."
+    62 "Valitse oletuspuhelukortti. Valitse kortti luettelosta tai luo uusi valitsemalla Uusi."
+    63 "Anna puhelukortin nimi."
+    64 "Anna tilinumero."
+    65 "Anna PIN-koodi."
+    66 "Tälle puhelukortille ei ole määritetty sääntöjä. Luo sääntö valitsemalla Kaukopuhelut-, Ulkomaanpuhelut- tai Paikallispuhelut-välilehti."
+    67 "Kaukopuhelusääntö edellyttää puhelukortin kaukopuheluiden palvelunumeroa."
+    68 "Ulkomaanpuhelusääntö edellyttää puhelukortin ulkomaanpuheluiden palvelunumeroa."
+    69 "Paikallispuhelusääntö edellyttää puhelukortin paikallispuheluiden palvelunumeroa."
+    70 "Ei mitään"
+    71 "Haluatko varmasti poistaa valitun puhelinpalvelujen tarjoajan?"
+    72 "<palveluntarjoajaa ei ole asennettu>"
+    73 "Anna etuliitteet, joihin tätä sääntöä sovelletaan."
+    74 "&Numerot:"
+    75 "&Etuliitteet:"
+    76 "Yritit antaa virheellisen merkin.\n\nKelvollisia merkkejä ovat 0–9, välilyönti ja pilkku."
+    77 "Vahvista poisto"
+    78 "Haluatko varmasti poistaa tämän sijainnin?"
+    79 "Haluatko varmasti poistaa tämän puhelukortin?"
+    80 "Haluatko varmasti poistaa tämän suuntanumerosäännön?"
+    81 "Anna valittavat numerot."
+    82 "Antamasi puhelukortin nimi on jo käytössä. Anna yksilöllinen nimi."
+    83 "LiberNT tarvitsee puhelintiedot sijainnista, josta soitat. Jos peruutat antamatta näitä tietoja, ohjelma ei ehkä toimi oikein numeroa valittaessa. Lisäksi jotkin sovellukset näyttävät tämän valintaikkunan heti uudelleen, jos peruutat sen.\nHaluatko varmasti peruuttaa?"
+    84 "Vahvista peruutus"
+    85 "Oma sijainti"
+    86 "<asennettavia palveluntarjoajia ei ole saatavilla>"
+    87 "Antamasi merkki ei kelpaa.\n\nKelvollisia merkkejä ovat 0–9, A–D, *, #, +, !, välilyönti ja pilkku."
+    88 "Anna tämän sijainnin ulkomaanpuheluiden operaattoritunnus."
+    89 "Anna tämän sijainnin operaattoritunnus."
+    90 "Tämä sivu yrittää soittaa tai valvoa puheluita tai muita multimediayhteyksiä tietokoneessasi.\nHaluatko sallia sen jatkaa?"
+    91 "Tämä sivu yrittää käyttää verkkosi hakemistotietoja.\nHaluatko sallia sen jatkaa?"
+    92 "Tämä sivu yrittää käyttää tai muuttaa verkkoneuvottelutietoja.\nHaluatko sallia sen jatkaa?"
+    93 "Tämä sivu yrittää käyttää tai muuttaa rekisteritietoja.\nHaluatko sallia sen jatkaa?"
+    1064 "Puhelin- ja modeemiasetuksia ei voi avata. Puhelinpalvelun käynnistämisessä voi olla ongelma."
+    1065 "Poista palveluntarjoaja"
+    15800 "23"
+    15801 "0,""None (Direct Dial)"","""","""","""","""","""","""","""","""",1"
+    15802 "1,""AT&T Direct Dial via 1010ATT1"","""",""G"",""J1FG"",""J011EFG"","""","""",""1010288"",""1010288"",1"
+    15803 "2,""AT&T via 1010ATT0"","""",""G"",""J0FG$TH"",""J01EFG$TH"","""","""",""1010288"",""1010288"",1"
+    15804 "3,""AT&T via 1-800-321-0288"","""",""G"",""J$TFG$TH"",""J$T01EFG$TH"","""","""",""18003210288"",""18003210288"",1"
+    15805 "4,""MCI Direct Dial via 10102221"","""",""G"",""J1FG"",""J011EFG"","""","""",""1010222"",""1010222"",1"
+    15806 "5,""MCI via 10102220"","""",""G"",""J0FG$TH"",""J01EFG$TH"","""","""",""1010222"",""1010222"",1"
+    15807 "6,""MCI via 1-800-888-8000"","""",""G"",""J,,,,,,TH,,FG"",""J,,,,,,TH,,011EFG"","""","""",""18008888000"",""18008888000"",1"
+    15808 "7,""MCI via 1-800-674-0700"","""",""G"",""J,,,,,,TH,,FG"",""J,,,,,,TH,,011EFG"","""","""",""18006740700"",""18006740700"",1"
+    15809 "8,""MCI via 1-800-674-7000"","""",""G"",""J,,,,,,TH,,FG"",""J,,,,,,TH,,011EFG"","""","""",""18006747000"",""18006747000"",1"
+    15810 "9,""US Sprint Direct Dial via 10103331"","""",""G"",""J1FG"",""J011EFG"","""","""",""1010333"",""1010333"",1"
+    15811 "10,""US Sprint via 10103330"","""",""G"",""J0FG$TH"",""J01EFG$TH"","""","""",""1010333"",""1010333"",1"
+    15812 "11,""US Sprint via 1-800-877-8000"","""",""G"",""J,,,T0FG,,H"",""J,,,T01EFG#,H"","""","""",""18008778000"",""18008778000"",1"
+    15813 "12,""Calling Card via 0"","""",""G"",""0FG$TH"",""01EFG$TH"","""","""","""","""",1"
+    15814 "13,""Carte France Telecom"","""",""T3010,H,0FG#"",""T3010,H,0FG#"",""T3010,H,00EFG#"","""","""","""","""",1"
+    15815 "14,""Mercury (UK)"","""",""J$TH,0FG"",""J$TH,0FG"",""J$TH,0FG"","""",""0500800800"",""0500800800"",""0500800800"",1"
+    15816 "15,""British Telecom (UK)"","""",""J$H,0FG"",""J$H,0FG"",""J$H,00EFG"","""",""144"",""144"".""144"",1"
+    15817 "16,""CLEAR Communications (New Zealand)"","""",""J$TH,0FG"",""J$TH,0FG"",""J$TH,00EFG"","""",""0502333"",""0502333"",""0502333"",1"
+    15818 "17,""Telecom New Zealand"","""",""J,0FG?H"",""J,0FG?H"",""J,00EFG?H"","""",""012"",""012"",""012"",1"
+    15819 "18,""Global Card (Taiwan to USA)"","""",""G"",""0FG"",""J,102880$TFG$H"","""","""","""",""0080"",1"
+    15820 "19,""Telstra (Australia) via 1818 (voice)"","""",""J$TH,FG#"",""J$TH,FG#"",""J$TH,0011EFG#"","""",""1818"",""1818"",""1818"",1"
+    15821 "20,""Telstra (Australia) via 1818 (fax)"","""",""J$TH,FG#"",""J$TH,FG#"",""J$TH,0015EFG#"","""",""1818"",""1818"",""1818"",1"
+    15822 "21,""Optus (Australia) via 1812"","""",""FG"",""FG"",""J@TH,0011EFG"","""","""","""",""1812"",1"
+    15823 "22,""Optus (Australia) via 008551812"","""",""FG"",""FG"",""J@TH,0011EFG"","""","""","""",""008551812"",1"
+END

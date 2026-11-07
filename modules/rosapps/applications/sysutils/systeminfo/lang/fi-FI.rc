@@ -1,0 +1,73 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+
+IDS_USAGE
+"\nSYSTEMINFO [/S järjestelmä [/U käyttäjänimi [/P [salasana]]]] [/FO muoto] [/NH]\n\n\
+Kuvaus:\n\
+    Tämän komentorivityökalun avulla järjestelmänvalvoja voi kysyä\n\
+    järjestelmän perusmääritystietoja.\n\n\
+Parametrit:\n\
+    /S      järjestelmä     Määrittää etäjärjestelmän, johon yhdistetään.\n\n\
+    /U      [toimialue\\]käyttäjä Määrittää käyttäjäkontekstin, jossa\n\
+                            komento suoritetaan.\n\n\
+    /P      [salasana]      Määrittää salasanan annetulle\n\
+                            käyttäjäkontekstille. Kysytään, jos puuttuu.\n\n\
+    /FO     muoto           Määrittää muodon, jossa tulos\n\
+                            näytetään.\n\
+                            Kelvolliset arvot: ""TABLE"", ""LIST"", ""CSV"".\n\n\
+    /NH                     Määrittää, että ""sarakeotsikkoa"" ei\n\
+                            näytetä tulosteessa.\n\
+                            Kelpaa vain muodoille ""TABLE"" ja ""CSV"".\n\n\
+    /?                      Näyttää tämän ohjeen.\n\n\
+Esimerkkejä:\n\
+    SYSTEMINFO\n\
+    SYSTEMINFO /?\n\
+    SYSTEMINFO /S järjestelmä\n\
+    SYSTEMINFO /S järjestelmä /U käyttäjä\n\
+    SYSTEMINFO /S järjestelmä /U toimialue\\käyttäjä /P salasana /FO TABLE\n\
+    SYSTEMINFO /S järjestelmä /FO LIST\n\
+    SYSTEMINFO /S järjestelmä /FO CSV /NH\n"
+
+IDS_HOST_NAME               "Isäntänimi"
+IDS_OS_NAME                 "Käyttöjärjestelmän nimi"
+IDS_OS_VERSION              "Käyttöjärjestelmän versio"
+IDS_BUILD                   "Koontiversio"
+IDS_OS_BUILD_TYPE           "Käyttöjärjestelmän koontityyppi"
+IDS_REG_OWNER               "Rekisteröity omistaja"
+IDS_REG_ORG                 "Rekisteröity organisaatio"
+IDS_PRODUCT_ID              "Tuotetunnus"
+IDS_INST_DATE               "Asennuspäivä"
+IDS_UP_TIME                 "Järjestelmän käyttöaika"
+IDS_UP_TIME_FORMAT          "%u päivää, %u tuntia, %u minuuttia, %u sekuntia"
+IDS_SYS_MANUFACTURER        "Järjestelmän valmistaja"
+IDS_SYS_MODEL               "Järjestelmän malli"
+IDS_SYS_TYPE                "Järjestelmän tyyppi"
+IDS_PROCESSORS              "Suorittimet"
+IDS_PROCESSORS_FORMAT       "Asennettuja suorittimia: %u."
+IDS_BIOS_DATE               "BIOS-päivämäärä"
+IDS_BIOS_VERSION            "BIOS-versio"
+IDS_ROS_DIR                 "LiberNT-hakemisto"
+IDS_SYS_DIR                 "Järjestelmähakemisto"
+IDS_BOOT_DEV                "Käynnistyslaite"
+IDS_SYS_LOCALE              "Järjestelmän maa-asetus"
+IDS_INPUT_LOCALE            "Syöttökieli"
+IDS_TIME_ZONE               "Aikavyöhyke"
+IDS_TOTAL_PHYS_MEM          "Fyysistä muistia yhteensä"
+IDS_AVAIL_PHISICAL_MEM      "Käytettävissä oleva fyysinen muisti"
+IDS_VIRT_MEM_MAX            "Näennäismuisti: enimmäiskoko"
+IDS_VIRT_MEM_AVAIL          "Näennäismuisti: käytettävissä"
+IDS_VIRT_MEM_INUSE          "Näennäismuisti: käytössä"
+IDS_PAGEFILE_LOC            "Sivutustiedostojen sijainnit"
+IDS_DOMAIN                  "Toimialue"
+IDS_NETWORK_CARDS           "Verkkokortit"
+IDS_NETWORK_CARDS_FORMAT    "Asennettuja: %u."
+IDS_CONNECTION_NAME         "Yhteyden nimi"
+IDS_STATUS                  "Tila"
+IDS_MEDIA_DISCONNECTED      "Tietoväline irrotettu"
+IDS_DHCP_ENABLED            "DHCP käytössä"
+IDS_NO                      "Ei"
+IDS_IP_ADDRESSES            "IP-osoitteet"
+
+END

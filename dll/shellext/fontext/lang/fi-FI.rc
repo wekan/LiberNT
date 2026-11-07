@@ -1,0 +1,42 @@
+// Don't translate this file at current time
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_INSTALL DIALOG 0, 0, 205, 60
+CAPTION "Asennetaan fontteja..."
+STYLE DS_CENTER | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Asennetaan fontteja...", IDC_INSTALL_TEXT, 5, 10, 195, 10
+    CONTROL "", IDC_INSTALL_PROGRESS, "msctls_progress32", 0, 5, 25, 195, 10
+    PUSHBUTTON "Peruuta", IDCANCEL, 65, 40, 70, 15
+END
+
+STRINGTABLE
+BEGIN
+    IDS_REACTOS_FONTS_FOLDER "LiberNT-fonttikansio"
+    IDS_INSTALL_OK "Fontit on asennettu."
+    IDS_INSTALL_FAILED "Fonttien asentaminen epäonnistui."
+    IDS_CONFIRM_DELETE_FONT "Haluatko poistaa fontit?"
+    IDS_PROPERTIES "&Ominaisuudet"
+    IDS_CANTDELETEFONT "Fonttien poistaminen epäonnistui."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_COL_NAME "Nimi"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_COL_FILENAME "Tiedostonimi"
+    IDS_COL_SIZE "Koko"
+    IDS_COL_MODIFIED "Muokattu"
+    IDS_COL_ATTR "Määritteet"
+END
+
+
+STRINGTABLE
+BEGIN
+    IDS_FONT_PREVIEW "Esikatselu"
+END

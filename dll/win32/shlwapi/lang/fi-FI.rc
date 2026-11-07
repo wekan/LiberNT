@@ -1,7 +1,7 @@
 /*
- * Finnish resources for shlwapi
+ * English resources for shlwapi
  *
- * Copyright 2005 Kaj Kaloinen
+ * Copyright 2004 Jon Griffiths
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -22,10 +22,10 @@ LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
 
 STRINGTABLE
 {
-    IDS_BYTES_FORMAT    "%ld bytes"
-    IDS_TIME_INTERVAL_HOURS    " hr"
+    IDS_BYTES_FORMAT    "%ld tavua"
+    IDS_TIME_INTERVAL_HOURS    " h"
     IDS_TIME_INTERVAL_MINUTES  " min"
-    IDS_TIME_INTERVAL_SECONDS  " sec"
+    IDS_TIME_INTERVAL_SECONDS  " s"
 #ifdef __REACTOS__
     IDS_KB_FORMAT "%s KB"
     IDS_MB_FORMAT "%s MB"
@@ -33,11 +33,11 @@ STRINGTABLE
     IDS_TB_FORMAT "%s TB"
     IDS_PB_FORMAT "%s PB"
     IDS_EB_FORMAT "%s EB"
-    IDS_RESTRICTED "This operation has been cancelled due to restrictions on this computer. Please contact your system administrator."
-    IDS_RESTRICTIONS "Restrictions"
-    IDS_ANY_FILE "%s File"
-    IDS_FILE "File"
-    IDS_FOLDER "Folder"
+    IDS_RESTRICTED "Tämä toiminto on peruttu tähän tietokoneeseen määritettyjen rajoitusten vuoksi. Ota yhteys järjestelmänvalvojaan."
+    IDS_RESTRICTIONS "Rajoitukset"
+    IDS_ANY_FILE "%s-tiedosto"
+    IDS_FILE "Tiedosto"
+    IDS_FOLDER "Kansio"
 #endif
 }
 
@@ -48,9 +48,9 @@ FONT 8, "MS Shell Dlg"
 {
  LTEXT "", IDS_ERR_USER_MSG2, 15, 5, 28, 20
  LTEXT "", IDS_ERR_USER_MSG, 15, 5, 210, 8
- CHECKBOX "Älä näytä tätä viestiä enää", IDC_ERR_DONT_SHOW, 5, 20, 210, 10, BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP
- PUSHBUTTON "&OK", IDOK, 105, 40, 50, 14, WS_GROUP | WS_TABSTOP
- PUSHBUTTON "&Peruuta", IDCANCEL, 160, 40, 50, 14, WS_GROUP | WS_TABSTOP
+ CHECKBOX "Älä näytä tätä viestiä &enää", IDC_ERR_DONT_SHOW, 5, 20, 210, 10, BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP
+ PUSHBUTTON "OK", IDOK, 105, 40, 50, 14, WS_GROUP | WS_TABSTOP
+ PUSHBUTTON "Peruuta", IDCANCEL, 160, 40, 50, 14, WS_GROUP | WS_TABSTOP
  PUSHBUTTON "&Kyllä", IDYES, 105, 40, 50, 14, WS_GROUP | WS_TABSTOP
  PUSHBUTTON "&Ei", IDNO, 160, 40, 50, 14, WS_GROUP | WS_TABSTOP
 }

@@ -1,0 +1,436 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDR_TASKMANAGER MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Uusi tehtävä (Suorita...)", ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Lopeta Tehtävienhallinta", ID_FILE_EXIT
+    END
+    POPUP "&Asetukset"
+    BEGIN
+        MENUITEM "&Aina päällimmäisenä", ID_OPTIONS_ALWAYSONTOP, CHECKED
+        MENUITEM "Pie&nennä käytettäessä", ID_OPTIONS_MINIMIZEONUSE, CHECKED
+        MENUITEM "&Piilota pienennettynä", ID_OPTIONS_HIDEWHENMINIMIZED, CHECKED
+        MENUITEM "", ID_OPTIONS_SHOW16BITTASKS, CHECKED
+    END
+    POPUP "&Näytä"
+    BEGIN
+        MENUITEM "&Päivitä nyt", ID_VIEW_REFRESH
+        POPUP "Päivitys&nopeus"
+        BEGIN
+            MENUITEM "&Korkea", ID_VIEW_UPDATESPEED_HIGH
+            MENUITEM "&Normaali", ID_VIEW_UPDATESPEED_NORMAL, CHECKED
+            MENUITEM "&Matala", ID_VIEW_UPDATESPEED_LOW
+            MENUITEM "K&eskeytetty", ID_VIEW_UPDATESPEED_PAUSED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "", ID_VIEW_LARGE
+        MENUITEM "", ID_VIEW_SMALL
+        MENUITEM "", ID_VIEW_DETAILS, CHECKED
+        MENUITEM "", ID_VIEW_SELECTCOLUMNS
+        POPUP ""
+        BEGIN
+            MENUITEM "", ID_VIEW_CPUHISTORY_ONEGRAPHALL
+            MENUITEM "", ID_VIEW_CPUHISTORY_ONEGRAPHPERCPU, CHECKED
+        END
+        MENUITEM "", ID_VIEW_SHOWKERNELTIMES
+    END
+    POPUP ""
+    BEGIN
+        MENUITEM "Vierekkäin &vaakasuunnassa", ID_WINDOWS_TILEHORIZONTALLY
+        MENUITEM "Vierekkäin &pystysuunnassa", ID_WINDOWS_TILEVERTICALLY
+        MENUITEM "P&ienennä", ID_WINDOWS_MINIMIZE
+        MENUITEM "&Suurenna", ID_WINDOWS_MAXIMIZE
+        MENUITEM "&Limittäin", ID_WINDOWS_CASCADE
+        MENUITEM "&Tuo eteen", ID_WINDOWS_BRINGTOFRONT
+    END
+    POPUP "&Sammuta"
+    BEGIN
+        MENUITEM "&Valmiustila", ID_SHUTDOWN_STANDBY
+        MENUITEM "&Horrostila", ID_SHUTDOWN_HIBERNATE
+        MENUITEM "&Sammuta", ID_SHUTDOWN_POWEROFF
+        MENUITEM "&Käynnistä uudelleen", ID_SHUTDOWN_REBOOT
+        MENUITEM "Kirjaa &ulos %s", ID_SHUTDOWN_LOGOFF
+        MENUITEM "V&aihda käyttäjää\tWinKey+L", ID_SHUTDOWN_SWITCHUSER, GRAYED
+        MENUITEM "&Lukitse tietokone\tWinKey+L", ID_SHUTDOWN_LOCKCOMPUTER
+        MENUITEM "Ka&tkaise yhteys", ID_SHUTDOWN_DISCONNECT, GRAYED
+        MENUITEM "&Poista tietokone telakasta", ID_SHUTDOWN_EJECT_COMPUTER, GRAYED
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "Tehtävienhallinnan &ohjeaiheet", ID_HELP_TOPICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Tietoja Tehtävienhallinnasta", ID_HELP_ABOUT
+    END
+END
+
+IDR_WINDOWSMENU MENU
+BEGIN
+    MENUITEM "Vierekkäin &vaakasuunnassa", ID_WINDOWS_TILEHORIZONTALLY
+    MENUITEM "Vierekkäin &pystysuunnassa", ID_WINDOWS_TILEVERTICALLY
+    MENUITEM "P&ienennä", ID_WINDOWS_MINIMIZE
+    MENUITEM "&Suurenna", ID_WINDOWS_MAXIMIZE
+    MENUITEM "&Limittäin", ID_WINDOWS_CASCADE
+    MENUITEM "&Tuo eteen", ID_WINDOWS_BRINGTOFRONT
+END
+
+IDR_APPLICATION_PAGE_CONTEXT1 MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Uusi tehtävä (Suorita...)", ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Suuret kuvakkeet", ID_VIEW_LARGE
+        MENUITEM "Pi&enet kuvakkeet", ID_VIEW_SMALL
+        MENUITEM "&Tiedot", ID_VIEW_DETAILS, CHECKED
+    END
+END
+
+IDR_APPLICATION_PAGE_CONTEXT2 MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Siirr&y tehtävään", ID_APPLICATION_PAGE_SWITCHTO
+        MENUITEM "&Tuo eteen", ID_WINDOWS_BRINGTOFRONT
+        MENUITEM SEPARATOR
+        MENUITEM "Vierekkäin &vaakasuunnassa", ID_WINDOWS_TILEHORIZONTALLY
+        MENUITEM "Vierekkäin &pystysuunnassa", ID_WINDOWS_TILEVERTICALLY
+        MENUITEM "P&ienennä", ID_WINDOWS_MINIMIZE
+        MENUITEM "&Suurenna", ID_WINDOWS_MAXIMIZE
+        MENUITEM "&Limittäin", ID_WINDOWS_CASCADE
+        MENUITEM SEPARATOR
+        MENUITEM "Lopeta t&ehtävä", ID_APPLICATION_PAGE_ENDTASK
+        MENUITEM "Siirry pr&osessiin", ID_APPLICATION_PAGE_GOTOPROCESS
+    END
+END
+
+IDR_TRAY_POPUP MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Palauta", ID_RESTORE
+        MENUITEM "&Sulje", ID_FILE_EXIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Aina päällimmäisenä", ID_OPTIONS_ALWAYSONTOP
+    END
+END
+
+IDR_PROCESS_PAGE_CONTEXT MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Lopeta prosessi", ID_PROCESS_PAGE_ENDPROCESS
+        MENUITEM "Lopeta prosessi&puu", ID_PROCESS_PAGE_ENDPROCESSTREE
+        MENUITEM "&Virheenkorjaus", ID_PROCESS_PAGE_DEBUG
+        MENUITEM SEPARATOR
+        POPUP "Aseta p&rioriteetti"
+        BEGIN
+            MENUITEM "&Reaaliaikainen", ID_PROCESS_PAGE_SETPRIORITY_REALTIME
+            MENUITEM "&Korkea", ID_PROCESS_PAGE_SETPRIORITY_HIGH
+            MENUITEM "Normaalia k&orkeampi", ID_PROCESS_PAGE_SETPRIORITY_ABOVENORMAL
+            MENUITEM "&Normaali", ID_PROCESS_PAGE_SETPRIORITY_NORMAL
+            MENUITEM "Normaalia &alempi", ID_PROCESS_PAGE_SETPRIORITY_BELOWNORMAL
+            MENUITEM "&Matala", ID_PROCESS_PAGE_SETPRIORITY_LOW
+        END
+        MENUITEM "Aseta &suoritinaffiniteetti...", ID_PROCESS_PAGE_SETAFFINITY
+        MENUITEM SEPARATOR
+        MENUITEM "&Ominaisuudet", ID_PROCESS_PAGE_PROPERTIES
+        MENUITEM "Avaa &tiedoston sijainti", ID_PROCESS_PAGE_OPENFILELOCATION
+    END
+END
+
+/* Dialogs */
+
+/* TRANSLATORS: CAPTION must be the same as IDS_APP_TITLE to be brought back to focus when already opened */
+
+IDD_TASKMGR_DIALOG DIALOGEX 0, 0, 264, 246
+STYLE DS_SHELLFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP |
+      WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Tehtävienhallinta"
+MENU IDR_TASKMANAGER
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL "", IDC_TAB, "SysTabControl32", WS_TABSTOP, 3, 3, 257, 228
+END
+
+IDD_APPLICATION_PAGE DIALOGEX 0, 0, 247, 210
+STYLE DS_SHELLFONT | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL "", IDC_APPLIST, "SysListView32", LVS_REPORT | LVS_SHOWSELALWAYS |
+            WS_BORDER | WS_TABSTOP, 5, 7, 235, 177
+    PUSHBUTTON "Lopeta t&ehtävä", IDC_ENDTASK, 75, 189, 53, 14, WS_DISABLED
+    PUSHBUTTON "Siirr&y tehtävään", IDC_SWITCHTO, 131, 189, 53, 14, WS_DISABLED
+    PUSHBUTTON "&Uusi tehtävä...", IDC_NEWTASK, 187, 189, 53, 14
+END
+
+IDD_PROCESS_PAGE DIALOGEX 0, 0, 247, 210
+STYLE DS_SHELLFONT | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL "", IDC_PROCESSLIST, "SysListView32", LVS_REPORT | LVS_SINGLESEL |
+            LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP, 5, 7, 235, 177
+    AUTOCHECKBOX "&Näytä kaikkien käyttäjien prosessit", IDC_SHOWALLPROCESSES, 5, 191, 111, 10
+    PUSHBUTTON "&Lopeta prosessi", IDC_ENDPROCESS, 171, 189, 69, 14
+END
+
+IDD_PERFORMANCE_PAGE DIALOGEX 0, 0, 247, 210
+STYLE DS_SHELLFONT | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Suorittimen käyttö", IDC_CPU_USAGE_FRAME, 5, 5, 60, 54, 0, WS_EX_TRANSPARENT
+    GROUPBOX "Muistin käyttö", IDC_MEM_USAGE_FRAME, 5, 63, 60, 54, BS_LEFTTEXT, WS_EX_TRANSPARENT
+    GROUPBOX "Yhteensä", IDC_TOTALS_FRAME, 5, 122, 114, 39, 0, WS_EX_TRANSPARENT
+    GROUPBOX "Varattu muisti (kt)", IDC_COMMIT_CHARGE_FRAME, 5, 166, 114, 39, 0, WS_EX_TRANSPARENT
+    GROUPBOX "Fyysinen muisti (kt)", IDC_PHYSICAL_MEMORY_FRAME, 128, 122, 114, 39, 0, WS_EX_TRANSPARENT
+    GROUPBOX "Ytimen muisti (kt)", IDC_KERNEL_MEMORY_FRAME, 128, 166, 114, 39, 0, WS_EX_TRANSPARENT
+    LTEXT "Kahvat", IDS_TOTALS_HANDLE_COUNT, 12, 131, 57, 8
+    LTEXT "Säikeet", IDS_TOTALS_THREAD_COUNT, 12, 140, 57, 8
+    LTEXT "Prosessit", IDS_TOTALS_PROCESS_COUNT, 12, 149, 57, 8
+    EDITTEXT IDC_TOTALS_HANDLE_COUNT, 69, 131, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT IDC_TOTALS_THREAD_COUNT, 69, 140, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT IDC_TOTALS_PROCESS_COUNT, 69, 149, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT "Yhteensä", IDS_COMMIT_CHARGE_TOTAL, 12, 175, 57, 8
+    LTEXT "Raja", IDS_COMMIT_CHARGE_LIMIT, 12, 184, 57, 8, NOT WS_BORDER
+    LTEXT "Huippu", IDS_COMMIT_CHARGE_PEAK, 12, 193, 57, 8
+    EDITTEXT IDC_COMMIT_CHARGE_TOTAL, 69, 174, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT IDC_COMMIT_CHARGE_LIMIT, 69, 184, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT IDC_COMMIT_CHARGE_PEAK, 69, 193, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT "Yhteensä", IDS_PHYSICAL_MEMORY_TOTAL, 134, 131, 57, 8
+    LTEXT "Käytettävissä", IDS_PHYSICAL_MEMORY_AVAILABLE, 134, 140, 57, 8
+    LTEXT "Välimuisti", IDS_PHYSICAL_MEMORY_SYSTEM_CACHE, 134, 149, 57, 8
+    EDITTEXT IDC_PHYSICAL_MEMORY_TOTAL, 192, 131, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT IDC_PHYSICAL_MEMORY_AVAILABLE, 192, 140, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT IDC_PHYSICAL_MEMORY_SYSTEM_CACHE, 192, 149, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT "Yhteensä", IDS_KERNEL_MEMORY_TOTAL, 134, 174, 57, 8
+    LTEXT "Sivutettu", IDS_KERNEL_MEMORY_PAGED, 134, 184, 57, 8
+    LTEXT "Sivuttamaton", IDS_KERNEL_MEMORY_NONPAGED, 134, 193, 57, 8
+    EDITTEXT IDC_KERNEL_MEMORY_TOTAL, 192, 174, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT IDC_KERNEL_MEMORY_PAGED, 192, 184, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT IDC_KERNEL_MEMORY_NONPAGED, 192, 193, 45, 8, ES_RIGHT | ES_READONLY |
+             ES_NUMBER | NOT WS_BORDER | NOT WS_TABSTOP
+    GROUPBOX "Suorittimen käyttöhistoria", IDC_CPU_USAGE_HISTORY_FRAME, 74, 5, 168, 54, 0, WS_EX_TRANSPARENT
+    GROUPBOX "Muistin käyttöhistoria", IDC_MEMORY_USAGE_HISTORY_FRAME, 74, 63, 168, 54, 0, WS_EX_TRANSPARENT
+    PUSHBUTTON "Suorittimen käytön näyttö", IDC_CPU_USAGE_GRAPH, 12, 17, 47, 37, NOT WS_TABSTOP, WS_EX_CLIENTEDGE
+    PUSHBUTTON "Muistin käytön näyttö", IDC_MEM_USAGE_GRAPH, 12, 75, 47, 37, NOT WS_TABSTOP, WS_EX_CLIENTEDGE
+    PUSHBUTTON "Suorittimen käyttöhistoria", IDC_CPU_USAGE_HISTORY_GRAPH, 81, 17, 153, 37, NOT WS_TABSTOP, WS_EX_CLIENTEDGE
+    PUSHBUTTON "Muistin käyttöhistoria", IDC_MEM_USAGE_HISTORY_GRAPH, 81, 75, 153, 37, NOT WS_TABSTOP, WS_EX_CLIENTEDGE
+END
+
+IDD_AFFINITY_DIALOG DIALOGEX 0, 0, 231, 154
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Suoritinaffiniteetti"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON "OK", IDOK, 120, 133, 50, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 174, 133, 50, 14
+    LTEXT "Suoritinaffiniteetti-asetus määrittää, millä suorittimilla prosessi saa toimia.", IDC_STATIC, 5, 5, 220, 16
+    AUTOCHECKBOX "CPU 0", IDC_CPU0, 11, 28, 37, 10
+    AUTOCHECKBOX "CPU 1", IDC_CPU1, 11, 41, 37, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 2", IDC_CPU2, 11, 54, 37, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 3", IDC_CPU3, 11, 67, 37, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 4", IDC_CPU4, 11, 80, 37, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 5", IDC_CPU5, 11, 93, 37, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 6", IDC_CPU6, 11, 106, 37, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 7", IDC_CPU7, 11, 119, 37, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 8", IDC_CPU8, 61, 28, 37, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 9", IDC_CPU9, 61, 41, 37, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 10", IDC_CPU10, 61, 54, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 11", IDC_CPU11, 61, 67, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 12", IDC_CPU12, 61, 80, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 13", IDC_CPU13, 61, 93, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 14", IDC_CPU14, 61, 106, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 15", IDC_CPU15, 61, 119, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 16", IDC_CPU16, 116, 28, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 17", IDC_CPU17, 116, 41, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 18", IDC_CPU18, 116, 54, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 19", IDC_CPU19, 116, 67, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 20", IDC_CPU20, 116, 80, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 21", IDC_CPU21, 116, 93, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 22", IDC_CPU22, 116, 106, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 23", IDC_CPU23, 116, 119, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 24", IDC_CPU24, 175, 28, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 25", IDC_CPU25, 175, 41, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 26", IDC_CPU26, 175, 54, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 27", IDC_CPU27, 175, 67, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 28", IDC_CPU28, 175, 80, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 29", IDC_CPU29, 175, 93, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 30", IDC_CPU30, 175, 106, 41, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "CPU 31", IDC_CPU31, 175, 119, 41, 10, WS_DISABLED | WS_TABSTOP
+END
+
+IDD_COLUMNS_DIALOG DIALOGEX 0, 0, 195, 199
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Valitse sarakkeet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON "OK", IDOK, 84, 178, 50, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 138, 178, 50, 14
+    LTEXT "Valitse sarakkeet, jotka näkyvät Tehtävienhallinnan Prosessit-sivulla.", IDC_STATIC, 7, 7, 181, 17
+    AUTOCHECKBOX "&Kuvan nimi", IDC_IMAGENAME, 7, 28, 56, 10, WS_DISABLED | WS_TABSTOP
+    AUTOCHECKBOX "&PID (prosessitunnus)", IDC_PID, 7, 39, 88, 10
+    AUTOCHECKBOX "&Suorittimen käyttö", IDC_CPUUSAGE, 7, 50, 53, 10
+    AUTOCHECKBOX "Suoritin&aika", IDC_CPUTIME, 7, 61, 48, 10
+    AUTOCHECKBOX "&Muistin käyttö", IDC_MEMORYUSAGE, 7, 72, 63, 10
+    AUTOCHECKBOX "Muistin käytön m&uutos", IDC_MEMORYUSAGEDELTA, 7, 83, 82, 10
+    AUTOCHECKBOX "Muistin käytön &huippu", IDC_PEAKMEMORYUSAGE, 7, 94, 82, 10
+    AUTOCHECKBOX "Sivuvirh&eet", IDC_PAGEFAULTS, 7, 105, 53, 10
+    AUTOCHECKBOX "USER-o&bjektit", IDC_USEROBJECTS, 7, 116, 62, 10
+    AUTOCHECKBOX "I/O-luvut", IDC_IOREADS, 7, 127, 49, 10
+    AUTOCHECKBOX "I/O-lukutavut", IDC_IOREADBYTES, 7, 138, 65, 10
+    AUTOCHECKBOX "&Istunnon tunnus", IDC_SESSIONID, 7, 149, 50, 10
+    AUTOCHECKBOX "Käy&ttäjänimi", IDC_USERNAME, 7, 160, 51, 10
+    AUTOCHECKBOX "Sivuvirheiden muut&os", IDC_PAGEFAULTSDELTA, 107, 28, 72, 10
+    AUTOCHECKBOX "Virtuaalimuistin &koko", IDC_VIRTUALMEMORYSIZE, 107, 39, 77, 10
+    AUTOCHECKBOX "Sivutettu &varanto", IDC_PAGEDPOOL, 107, 50, 53, 10
+    AUTOCHECKBOX "Sivuttamato&n varanto", IDC_NONPAGEDPOOL, 107, 61, 67, 10
+    AUTOCHECKBOX "Perusprio&riteetti", IDC_BASEPRIORITY, 107, 72, 55, 10
+    AUTOCHECKBOX "Kahvo&jen määrä", IDC_HANDLECOUNT, 107, 83, 59, 10
+    AUTOCHECKBOX "Säikei&den määrä", IDC_THREADCOUNT, 107, 94, 59, 10
+    AUTOCHECKBOX "GDI-objektit", IDC_GDIOBJECTS, 107, 105, 55, 10
+    AUTOCHECKBOX "I/O-kirjoitukset", IDC_IOWRITES, 107, 116, 49, 10
+    AUTOCHECKBOX "I/O-kirjoitustavut", IDC_IOWRITEBYTES, 107, 127, 65, 10
+    AUTOCHECKBOX "I/O muut", IDC_IOOTHER, 107, 138, 46, 10
+    AUTOCHECKBOX "I/O muut tavut", IDC_IOOTHERBYTES, 107, 149, 65, 10
+    AUTOCHECKBOX "&Komentorivi", IDC_COMMANDLINE, 107, 160, 65, 10
+END
+
+/* String Tables */
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE "Tehtävienhallinta"
+    IDC_TASKMGR "Tehtävienhallinta"
+    IDS_IDLE_PROCESS "Järjestelmän joutoprosessi"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW "Suorittaa uuden ohjelman"
+    ID_OPTIONS_ALWAYSONTOP "Tehtävienhallinta pysyy kaikkien muiden ikkunoiden edessä, ellei sitä pienennetä"
+    ID_OPTIONS_MINIMIZEONUSE "Tehtävienhallinta pienennetään, kun tehtävään siirrytään"
+    ID_OPTIONS_HIDEWHENMINIMIZED "Piilota Tehtävienhallinta, kun se pienennetään"
+    ID_VIEW_REFRESH "Pakota Tehtävienhallinta päivittymään heti päivitysnopeuden asetuksesta riippumatta"
+    ID_VIEW_LARGE "Näyttää tehtävät suurina kuvakkeina"
+    ID_VIEW_SMALL "Näyttää tehtävät pieninä kuvakkeina"
+    ID_VIEW_DETAILS "Näyttää tietoja kustakin tehtävästä"
+    ID_VIEW_UPDATESPEED_HIGH "Päivittää näkymän kahdesti sekunnissa"
+    ID_VIEW_UPDATESPEED_NORMAL "Päivittää näkymän kahden sekunnin välein"
+    ID_VIEW_UPDATESPEED_LOW "Päivittää näkymän neljän sekunnin välein"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_UPDATESPEED_PAUSED "Ei päivitä automaattisesti"
+    ID_WINDOWS_TILEHORIZONTALLY "Järjestää ikkunat vierekkäin vaakasuunnassa työpöydälle"
+    ID_WINDOWS_TILEVERTICALLY "Järjestää ikkunat vierekkäin pystysuunnassa työpöydälle"
+    ID_WINDOWS_MINIMIZE "Pienentää ikkunat"
+    ID_WINDOWS_MAXIMIZE "Suurentaa ikkunat"
+    ID_WINDOWS_CASCADE "Järjestää ikkunat limittäin vinottain työpöydälle"
+    ID_WINDOWS_BRINGTOFRONT "Tuo ikkunan eteen, mutta ei siirry siihen"
+    ID_HELP_TOPICS "Näyttää Tehtävienhallinnan ohjeaiheet"
+    ID_HELP_ABOUT "Näyttää ohjelman tiedot, versionumeron ja tekijänoikeudet"
+    ID_FILE_EXIT "Lopettaa Tehtävienhallinnan"
+    ID_OPTIONS_SHOW16BITTASKS "Näyttää 16-bittiset tehtävät niihin liittyvän ntvdm.exe:n alla"
+    ID_VIEW_SELECTCOLUMNS "Valitse, mitkä sarakkeet näkyvät Prosessit-sivulla"
+    ID_VIEW_SHOWKERNELTIMES "Näyttää ytimen ajan suorituskykykaavioissa"
+    ID_VIEW_CPUHISTORY_ONEGRAPHALL "Yksi historiakaavio näyttää suorittimien kokonaiskäytön"
+    ID_VIEW_CPUHISTORY_ONEGRAPHPERCPU "Jokaisella suorittimella on oma historiakaavionsa"
+    ID_APPLICATION_PAGE_SWITCHTO "Tuo tehtävän etualalle ja siirtää kohdistuksen siihen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENDTASK "Pyytää valittuja tehtäviä sulkeutumaan"
+    ID_GOTOPROCESS "Siirtää kohdistuksen valitun tehtävän prosessiin"
+    ID_RESTORE "Palauttaa Tehtävienhallinnan piilotetusta tilasta"
+    ID_PROCESS_PAGE_ENDPROCESS "Poistaa prosessin järjestelmästä"
+    ID_PROCESS_PAGE_ENDPROCESSTREE "Poistaa tämän prosessin ja kaikki sen jälkeläiset järjestelmästä"
+    ID_PROCESS_PAGE_DEBUG "Liittää virheenkorjaimen tähän prosessiin"
+    ID_PROCESS_PAGE_SETAFFINITY "Määrittää, millä suorittimilla prosessi saa toimia"
+    ID_PROCESS_PAGE_SETPRIORITY_REALTIME "Asettaa prosessin REAALIAIKAINEN-prioriteettiluokkaan"
+    ID_PROCESS_PAGE_SETPRIORITY_HIGH "Asettaa prosessin KORKEA-prioriteettiluokkaan"
+    ID_PROCESS_PAGE_SETPRIORITY_ABOVENORMAL "Asettaa prosessin NORMAALIA KORKEAMPI -prioriteettiluokkaan"
+    ID_PROCESS_PAGE_SETPRIORITY_NORMAL "Asettaa prosessin NORMAALI-prioriteettiluokkaan"
+    ID_PROCESS_PAGE_SETPRIORITY_BELOWNORMAL "Asettaa prosessin NORMAALIA ALEMPI -prioriteettiluokkaan"
+    ID_PROCESS_PAGE_SETPRIORITY_LOW "Asettaa prosessin MATALA-prioriteettiluokkaan"
+    ID_PROCESS_PAGE_PROPERTIES "Näyttää prosessin tiedoston ominaisuudet"
+    ID_PROCESS_PAGE_OPENFILELOCATION "Avaa prosessin tiedoston sijainnin"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TAB_APPS "Sovellukset"
+    IDS_TAB_PROCESSES "Prosessit"
+    IDS_TAB_PERFORMANCE "Suorituskyky"
+    IDS_TAB_TASK "Tehtävä"
+    IDS_TAB_STATUS "Tila"
+    IDS_TAB_IMAGENAME "Kuvan nimi"
+    IDS_TAB_PID "PID"
+    IDS_TAB_USERNAME "Käyttäjänimi"
+    IDS_TAB_SESSIONID "Istunnon tunnus"
+    IDS_TAB_CPU "Suoritin"
+    IDS_TAB_CPUTIME "Suoritinaika"
+    IDS_TAB_MEMUSAGE "Muistin käyttö"
+    IDS_TAB_PEAKMEMUSAGE "Muistin käytön huippu"
+    IDS_TAB_MEMDELTA "Muistin muutos"
+    IDS_TAB_PAGEFAULT "Sivuvirheet"
+    IDS_TAB_PFDELTA "Sivuvirheiden muutos"
+    IDS_TAB_VMSIZE "VM-koko"
+    IDS_TAB_PAGEDPOOL "Sivutettu varanto"
+    IDS_TAB_NPPOOL "Sivuttamaton varanto"
+    IDS_TAB_BASEPRI "Perusprioriteetti"
+    IDS_TAB_HANDLES "Kahvat"
+    IDS_TAB_THREADS "Säikeet"
+    IDS_TAB_USERPBJECTS "USER-objektit"
+    IDS_TAB_GDIOBJECTS "GDI-objektit"
+    IDS_TAB_IOREADS "I/O-luvut"
+    IDS_TAB_IOWRITES "I/O-kirjoitukset"
+    IDS_TAB_IOOTHER "I/O muut"
+    IDS_TAB_IOREADBYTES "I/O-lukutavut"
+    IDS_TAB_IOWRITESBYTES "I/O-kirjoitustavut"
+    IDS_TAB_IOOTHERBYTES "I/O muut tavut"
+    IDS_TAB_COMMANDLINE "Komentorivi"
+    IDS_MENU_SELECTCOLUMNS "&Valitse sarakkeet..."
+    IDS_MENU_16BITTASK "Näytä &16-bittiset tehtävät"
+    IDS_MENU_WINDOWS "&Ikkunat"
+    IDS_MENU_LARGEICONS "&Suuret kuvakkeet"
+    IDS_MENU_SMALLICONS "Pi&enet kuvakkeet"
+    IDS_MENU_DETAILS "&Tiedot"
+    IDS_MENU_ONEGRAPHALLCPUS "&Yksi kaavio kaikille suorittimille"
+    IDS_MENU_ONEGRAPHPERCPU "&Kaavio kullekin suorittimelle"
+    IDS_MENU_CPUHISTORY "Suorittimen &historia"
+    IDS_MENU_SHOWKERNELTIMES "Näytä &ytimen ajat"
+    IDS_CREATENEWTASK "Luo uusi tehtävä"
+    IDS_CREATENEWTASK_DESC "Kirjoita ohjelman, kansion, asiakirjan tai Internet-resurssin nimi, niin Tehtävienhallinta avaa sen."
+    IDS_MSG_ACCESSPROCESSAFF "Prosessin suoritinaffiniteettia ei voi lukea tai asettaa"
+    IDS_MSG_PROCESSONEPRO "Prosessilla on oltava affiniteetti vähintään yhteen suorittimeen."
+    IDS_MSG_INVALIDOPTION "Virheellinen asetus"
+    IDS_MSG_UNABLEDEBUGPROCESS "Prosessin virheenkorjaus ei onnistu"
+    IDS_MSG_WARNINGDEBUG "VAROITUS: Tämän prosessin virheenkorjaus voi aiheuttaa tietojen menetyksen.\nHaluatko varmasti liittää virheenkorjaimen?"
+    IDS_MSG_TASKMGRWARNING "Tehtävienhallinnan varoitus"
+    IDS_MSG_WARNINGTERMINATING "VAROITUS: Prosessin lopettaminen voi aiheuttaa ei-toivottuja\nseurauksia, kuten tietojen menetystä ja järjestelmän epävakautta.\nProsessi ei voi tallentaa tilaansa tai tietojaan ennen\nlopettamista. Haluatko varmasti lopettaa\nprosessin?"
+    IDS_MSG_UNABLETERMINATEPRO "Prosessia ei voi lopettaa"
+    IDS_MSG_CLOSESYSTEMPROCESS "Tämä on kriittinen järjestelmäprosessi. Tehtävienhallinta ei lopeta tätä prosessia."
+    IDS_MSG_UNABLECHANGEPRIORITY "Prioriteettia ei voi muuttaa"
+    IDS_MSG_WARNINGCHANGEPRIORITY "VAROITUS: Tämän prosessin prioriteettiluokan muuttaminen voi\naiheuttaa ei-toivottuja seurauksia, kuten järjestelmän epävakautta.\nHaluatko varmasti muuttaa prioriteettiluokkaa?"
+    IDS_MSG_TRAYICONCPUUSAGE "Suorittimen käyttö: %d%%"
+    IDS_STATUS_MEMUSAGE "Varattu muisti: %s / %s (%d%%)"
+    IDS_STATUS_CPUUSAGE "Suoritin: %3d%%"
+    IDS_STATUS_PROCESSES "Prosessit: %d"
+    IDS_NOT_RESPONDING "Ei vastaa"
+    IDS_RUNNING "Käynnissä"
+END

@@ -1,0 +1,41 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Vertaa kahta tiedostoa tai tiedostojoukkoa ja näyttää niiden väliset\n\
+erot.\n\
+\n\
+FC [/A] [/C] [/L] [/LBn] [/N] [/OFF[LINE]] [/T] [/U] [/W] [/nnnn]\n\
+   [asema1:][polku1]tiedostonimi1 [asema2:][polku2]tiedostonimi2\n\
+FC /B [asema1:][polku1]tiedostonimi1 [asema2:][polku2]tiedostonimi2\n\
+\n\
+  /A         Näyttää vain kunkin erojoukon ensimmäisen ja viimeisen rivin.\n\
+  /B         Suorittaa binäärivertailun.\n\
+  /C         Ei huomioi kirjainkokoa.\n\
+  /L         Vertaa tiedostoja ASCII-tekstinä.\n\
+  /LBn       Asettaa peräkkäisten erojen enimmäismääräksi määritetyn\n\
+             rivimäärän (oletus: 100).\n\
+  /N         Näyttää rivinumerot ASCII-vertailussa.\n\
+  /OFF[LINE] Ei ohita tiedostoja, joilla on offline-määrite.\n\
+  /T         Ei laajenna sarkaimia välilyönneiksi (oletus: laajentaa).\n\
+  /U         Vertaa tiedostoja UNICODE-tekstitiedostoina.\n\
+  /W         Tiivistää tyhjät merkit (sarkaimet ja välilyönnit) vertailua varten.\n\
+  /nnnn      Määrittää, kuinka monen peräkkäisen rivin täytyy täsmätä\n\
+             eron jälkeen (oletus: 2).\n\
+  [asema1:][polku1]tiedostonimi1\n\
+             Määrittää ensimmäisen verrattavan tiedoston tai tiedostojoukon.\n\
+  [asema2:][polku2]tiedostonimi2\n\
+             Määrittää toisen verrattavan tiedoston tai tiedostojoukon.\n"
+    IDS_NO_DIFFERENCE "FC: eroja ei löytynyt\n"
+    IDS_LONGER_THAN "FC: %ls on pidempi kuin %ls\n"
+    IDS_COMPARING "Verrataan tiedostoja %ls ja %ls\n"
+    IDS_OUT_OF_MEMORY "FC: Muisti loppui\n"
+    IDS_CANNOT_READ "FC: kohteesta %ls ei voi lukea\n"
+    IDS_INVALID_SWITCH "FC: Virheellinen valitsin\n"
+    IDS_CANNOT_OPEN "FC: kohdetta %ls ei voi avata - Tiedostoa tai kansiota ei ole\n"
+    IDS_NEEDS_FILES "FC: Liian vähän tiedostomäärityksiä\n"
+    IDS_CANT_USE_WILDCARD "Yleismerkkejä ('*' ja '?') ei vielä tueta\n"
+    IDS_DIFFERENT "FC: Tiedostot %ls ja %ls ovat erilaiset\n"
+    IDS_TOO_LARGE "FC: Tiedosto %ls on liian suuri\n"
+    IDS_RESYNC_FAILED "Uudelleensynkronointi epäonnistui.  Tiedostot ovat liian erilaiset.\n"
+END

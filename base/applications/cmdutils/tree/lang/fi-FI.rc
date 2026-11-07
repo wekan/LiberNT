@@ -1,0 +1,12 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Näyttää aseman tai polun kansiorakenteen graafisesti.\n\n\
+TREE [asema:][polku] [/F] [/A]\n\n\
+\t/F   Näyttää kunkin kansion tiedostojen nimet.\n\
+\t/A   Käyttää ASCII-merkkejä laajennettujen merkkien sijaan.\n"
+    IDS_NO_SUBDIRECTORIES "Alikansioita ei ole"
+    IDS_FOLDER_PATH "Kansioiden PATH-luettelo\n"
+    IDS_VOL_SERIAL "Taltion sarjanumero on %x:%x\n"
+END

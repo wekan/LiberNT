@@ -1,0 +1,55 @@
+/*
+ * PROJECT:     LiberNT System Information
+ * LICENSE:     GPL-3.0-or-later (https://spdx.org/licenses/GPL-3.0-or-later)
+ * PURPOSE:     English (United States) resource file
+ * COPYRIGHT:   Copyright 2026 Ahmed ARIF <arif.ing@outlook.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDM_MAIN MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Lopeta", IDM_EXIT
+    END
+    POPUP "&Näytä"
+    BEGIN
+        MENUITEM "&Päivitä\tF5", IDM_REFRESH
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Tietoja Järjestelmätiedoista", IDM_ABOUT
+    END
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TITLE "Järjestelmätiedot"
+    IDS_COLUMN_ITEM "Kohde"
+    IDS_COLUMN_VALUE "Arvo"
+    IDS_OS_NAME "Käyttöjärjestelmän nimi"
+    IDS_VERSION "Versio"
+    IDS_VERSION_FORMAT "%lu.%lu.%lu, koontiversio %lu"
+    IDS_SYSTEM_NAME "Järjestelmän nimi"
+    IDS_MANUFACTURER "Järjestelmän valmistaja"
+    IDS_MODEL "Järjestelmän malli"
+    IDS_SYSTEM_TYPE "Järjestelmän tyyppi"
+    IDS_TYPE_X86 "x86-pohjainen tietokone"
+    IDS_TYPE_X64 "x64-pohjainen tietokone"
+    IDS_TYPE_ARM64 "ARM64-pohjainen tietokone"
+    IDS_TYPE_RISCV64 "RISC-V64-pohjainen tietokone"
+    IDS_PROCESSOR "Suoritin"
+    IDS_PROCESSOR_FORMAT "%s, %lu loogista suoritinta"
+    IDS_BIOS "BIOS-versio/-päivämäärä"
+    IDS_WINDOWS_DIRECTORY "Windows-hakemisto"
+    IDS_SYSTEM_DIRECTORY "Järjestelmähakemisto"
+    IDS_LOCALE "Maa-asetus"
+    IDS_USER_NAME "Käyttäjänimi"
+    IDS_TIME_ZONE "Aikavyöhyke"
+    IDS_TOTAL_PHYSICAL "Fyysistä muistia yhteensä"
+    IDS_AVAILABLE_PHYSICAL "Käytettävissä oleva fyysinen muisti"
+    IDS_TOTAL_VIRTUAL "Virtuaalimuistia yhteensä"
+    IDS_AVAILABLE_VIRTUAL "Käytettävissä oleva virtuaalimuisti"
+    IDS_PAGE_FILE "Sivutustiedoston tila"
+END

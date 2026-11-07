@@ -1,0 +1,95 @@
+/*
+ * Copyright 2009 Piotr Caban
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+    IDS_TO_PRIMITIVE        "Virhe muunnettaessa objektia perustyypiksi"
+    IDS_INVALID_CALL_ARG    "Virheellinen proseduurikutsu tai argumentti"
+    IDS_SUBSCRIPT_OUT_OF_RANGE "Indeksi on alueen ulkopuolella"
+    IDS_STACK_OVERFLOW      "Pinotila on lopussa"
+    IDS_OBJECT_REQUIRED     "Objekti vaaditaan"
+    IDS_CREATE_OBJ_ERROR    "Automaatiopalvelin ei voi luoda objektia"
+    IDS_NO_PROPERTY         "Objekti ei tue tätä ominaisuutta tai metodia"
+    IDS_UNSUPPORTED_ACTION  "Objekti ei tue tätä toimintoa"
+    IDS_ARG_NOT_OPT         "Argumentti ei ole valinnainen"
+    IDS_OBJECT_NOT_COLLECTION "Objekti ei ole kokoelma"
+    IDS_SYNTAX_ERROR        "Syntaksivirhe"
+    IDS_SEMICOLON           "Odotettiin ';'"
+    IDS_LBRACKET            "Odotettiin '('"
+    IDS_RBRACKET            "Odotettiin ')'"
+    IDS_EXPECTED_IDENTIFIER "Odotettiin tunnistetta"
+    IDS_EXPECTED_ASSIGN     "Odotettiin '='"
+    IDS_INVALID_CHAR        "Virheellinen merkki"
+    IDS_UNTERMINATED_STR    "Päättymätön merkkijonovakio"
+    IDS_MISPLACED_RETURN    "'return'-lause funktion ulkopuolella"
+    IDS_INVALID_BREAK       "'break' ei voi olla silmukan ulkopuolella"
+    IDS_INVALID_CONTINUE    "'continue' ei voi olla silmukan ulkopuolella"
+    IDS_LABEL_REDEFINED     "Nimiö on määritetty uudelleen"
+    IDS_LABEL_NOT_FOUND     "Nimiötä ei löytynyt"
+    IDS_EXPECTED_CCEND      "Odotettiin '@end'"
+    IDS_DISABLED_CC         "Ehdollinen kääntäminen on poistettu käytöstä"
+    IDS_EXPECTED_AT         "Odotettiin '@'"
+    IDS_NOT_FUNC            "Odotettiin funktiota"
+    IDS_NOT_STRING          "'[object]' ei ole merkkijono-objekti"
+    IDS_NOT_DATE            "'[object]' ei ole päivämääräobjekti"
+    IDS_NOT_NUM             "Odotettiin lukua"
+    IDS_OBJECT_EXPECTED     "Odotettiin objektia"
+    IDS_ILLEGAL_ASSIGN      "Virheellinen sijoitus"
+    IDS_UNDEFINED           "'|' on määrittelemätön"
+    IDS_NOT_BOOL            "Odotettiin Boolean-objektia"
+    IDS_INVALID_DELETE      "Kohdetta '|' ei voi poistaa"
+    IDS_NOT_VBARRAY         "Odotettiin VBArray-objektia"
+    IDS_JSCRIPT_EXPECTED    "Odotettiin JScript-objektia"
+    IDS_ENUMERATOR_EXPECTED "Odotettiin Enumerator-objektia"
+    IDS_REGEXP_EXPECTED     "Odotettiin säännöllisen lausekkeen objektia"
+    IDS_REGEXP_SYNTAX_ERROR "Syntaksivirhe säännöllisessä lausekkeessa"
+    IDS_UNEXPECTED_QUANTIFIER "Odottamaton kvanttori"
+    IDS_EXCEPTION_THROWN    "Poikkeus heitettiin, eikä sitä käsitelty"
+    IDS_URI_INVALID_CODING  "Purettava URI on virheellinen"
+    IDS_URI_INVALID_CHAR    "Koodattava URI sisältää virheellisiä merkkejä"
+    IDS_FRACTION_DIGITS_OUT_OF_RANGE "Desimaalien määrä on alueen ulkopuolella"
+    IDS_PRECISION_OUT_OF_RANGE "Tarkkuus on alueen ulkopuolella"
+    IDS_ARRAY_OR_ARGS_EXPECTED "Odotettiin taulukkoa tai arguments-objektia"
+    IDS_INVALID_LENGTH      "Taulukon pituuden on oltava äärellinen positiivinen kokonaisluku"
+    IDS_ARRAY_EXPECTED      "Odotettiin Array-objektia"
+    IDS_INVALID_WRITABLE_PROP_DESC "Ominaisuuskuvaajan 'writable'-määritettä ei voi asettaa arvoon 'true' tälle objektille"
+    IDS_CYCLIC_PROTO_VALUE         "Syklinen __proto__-arvo"
+    IDS_CREATE_FOR_NONEXTENSIBLE   "Ominaisuutta ei voi luoda laajentamattomalle objektille"
+    IDS_OBJECT_NONEXTENSIBLE       "Ominaisuutta '|' ei voi määrittää: objekti ei ole laajennettavissa"
+    IDS_NONCONFIGURABLE_REDEFINED  "Ei-määritettävää ominaisuutta '|' ei voi määrittää uudelleen"
+    IDS_NONWRITABLE_MODIFIED       "Kirjoitussuojattua ominaisuutta '|' ei voi muokata"
+    IDS_NOT_TYPEDARRAY             "'this' ei ole tyypitetty taulukko-objekti"
+    IDS_TYPEDARRAY_BAD_CTOR_ARG    "Tyypitetyn taulukon konstruktorin argumentti on virheellinen"
+    IDS_TYPEDARRAY_INVALID_OFFSLEN "Virheellinen siirtymä tai pituus luotaessa tyypitettyä taulukkoa"
+    IDS_TYPEDARRAY_INVALID_SUBARRAY "Virheellinen alku- tai loppuarvo tyypitetyn taulukon subarray-metodissa"
+    IDS_TYPEDARRAY_INVALID_SOURCE  "Virheellinen lähde tyypitetyn taulukon set-metodissa"
+    IDS_NOT_DATAVIEW               "'this' ei ole DataView-objekti"
+    IDS_DATAVIEW_NO_ARGUMENT       "DataView-metodin pakollista argumenttia offset tai value ei ole määritetty"
+    IDS_DATAVIEW_INVALID_ACCESS    "DataView-toiminto käyttää aluetta määritetyn puskurin pituuden ulkopuolelta"
+    IDS_DATAVIEW_INVALID_OFFSET    "DataView-konstruktorin offset-argumentti on virheellinen"
+    IDS_WRONG_THIS                 "'this' ei ole | -objekti"
+    IDS_KEY_NOT_OBJECT             "'key' ei ole objekti"
+    IDS_ARRAYBUFFER_EXPECTED       "Odotettiin ArrayBuffer-objektia"
+    IDS_PROP_DESC_MISMATCH         "Ominaisuudella ei voi olla sekä käsittelijöitä että arvoa"
+
+    IDS_COMPILATION_ERROR   "Microsoft JScript -käännösvirhe"
+    IDS_RUNTIME_ERROR       "Microsoft JScript -suorituksenaikainen virhe"
+    IDS_UNKNOWN_ERROR       "Tuntematon suorituksenaikainen virhe"
+}

@@ -1,0 +1,378 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+/* Basic application information */
+STRINGTABLE
+BEGIN
+    IDS_APP_HEADER "LiberNT DiskPart"
+    IDS_APP_USAGE "\nLevyjen osiointitulkki.\n\n\
+Käyttö: DISKPART [/S tiedostonimi] [/T aikakatkaisu] [/?]\n\n\
+/S tiedostonimi\tSuorittaa annetun komentosarjan.\n\
+/T aikakatkaisu\tAikakatkaisu sekunteina DiskPartin päällekkäisen käytön estämiseksi.\n\
+/?\t\tNäyttää tämän ohjeen.\n\n"
+    IDS_APP_LICENSE "Lisensoitu GNU GPLv2 -lisenssillä\n"
+    IDS_APP_CURR_COMPUTER "Tietokoneessa: %s\n\n"
+    IDS_APP_LEAVING "\nPoistutaan DiskPartista...\n"
+    IDS_APP_PROMPT "DISKPART> "
+END
+
+/* ACTIVE command strings */
+STRINGTABLE
+BEGIN
+    IDS_ACTIVE_FAIL "\nDiskPart ei voinut merkitä osiota aktiiviseksi.\nVarmista, että osio on kelvollinen.\n"
+    IDS_ACTIVE_SUCCESS "\nDiskPart merkitsi nykyisen osion aktiiviseksi.\n"
+    IDS_ACTIVE_ALREADY "\nNykyinen osio on jo merkitty aktiiviseksi.\n"
+    IDS_ACTIVE_NO_MBR "\nValittu levy ei ole MBR-levy.\nACTIVE-komentoa voi käyttää vain MBR-levyllä.\n"
+END
+
+/* ASSIGN command strings */
+STRINGTABLE
+BEGIN
+    IDS_ASSIGN_FAIL "\nDiskPart ei voinut määrittää asemakirjainta tai liitoskohtaa.\nVarmista, että asemakirjain tai liitoskohta on kelvollinen.\n"
+    IDS_ASSIGN_SUCCESS "\nDiskPart määritti asemakirjaimen tai liitoskohdan.\n"
+    IDS_ASSIGN_ALREADY_ASSIGNED "\nMääritetty kirjain on jo määritetty tälle asemalle.\n"
+    IDS_ASSIGN_INVALID_LETTER "\nMäärittämäsi kirjain ei ole kelvollinen taltion kirjain.\n"
+    IDS_ASSIGN_NO_MORE_LETTER "\nVapaita asemakirjaimia ei ole määritettäväksi tälle taltiolle.\nVapauta jokin asemakirjain ja yritä uudelleen.\n"
+    IDS_ASSIGN_SYSTEM_VOLUME "\nDiskPart ei voi vaihtaa järjestelmä-, käynnistys- tai sivutustiedostotaltion asemakirjainta.\n"
+END
+
+/* AUTOMOUNT command strings */
+STRINGTABLE
+BEGIN
+    IDS_AUTOMOUNT_ENABLED "\nUusien taltioiden automaattinen liittäminen on käytössä.\n"
+    IDS_AUTOMOUNT_DISABLED "\nUusien taltioiden automaattinen liittäminen on poistettu käytöstä.\n"
+    IDS_AUTOMOUNT_SCRUBBED "\nDiskPart tyhjensi järjestelmän liitoskohta-asetukset.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CLEAN_FAIL "\nDiskPart ei voinut tyhjentää levyä.\nLevyn tietoja ei ehkä voi palauttaa.\n"
+    IDS_CLEAN_SUCCESS "\nDiskPart tyhjensi levyn.\n"
+    IDS_CLEAN_SYSTEM "\nValittu levy on välttämätön tietokoneen toiminnalle, eikä sitä voi tyhjentää.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONVERT_GPT_ALREADY "\nValittua levyä ei voi muuntaa, koska se on jo GPT-muotoinen.\n"
+    IDS_CONVERT_GPT_NOT_EMPTY "\nValittua levyä ei voi muuntaa GPT-muotoon.\nValitse muunnettavaksi tyhjä levy.\n"
+    IDS_CONVERT_GPT_SUCCESS "\nValittu levy muunnettiin GPT-muotoon.\n"
+    IDS_CONVERT_MBR_ALREADY "\nValittua levyä ei voi muuntaa, koska se on jo MBR-muotoinen.\n"
+    IDS_CONVERT_MBR_NOT_EMPTY "\nValittua levyä ei voi muuntaa MBR-muotoon.\nValitse muunnettavaksi tyhjä levy.\n"
+    IDS_CONVERT_MBR_SUCCESS "\nValittu levy muunnettiin MBR-muotoon.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CREATE_PARTITION_FAIL "\nDiskPart ei voinut luoda määritettyä osiota.\n"
+    IDS_CREATE_PARTITION_SUCCESS "\nDiskPart loi määritetyn osion.\n"
+    IDS_CREATE_PARTITION_INVALID_STYLE "\nLoogisia tai laajennettuja osioita ei voi luoda GPT-levylle.\nLuo GPT-levylle sen sijaan ensisijainen osio.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DELETE_PARTITION_FAIL "\nDiskPart ei voinut poistaa valittua osiota.\nVarmista, että valittu osio voidaan poistaa.\n"
+    IDS_DELETE_PARTITION_SUCCESS "\nDiskPart poisti valitun osion.\n"
+    IDS_DELETE_PARTITION_SYSTEM "\nValittu osio voi olla välttämätön tietokoneen toiminnalle, eikä sitä voi poistaa.\n"
+END
+
+/* Disk Information Labels */
+STRINGTABLE
+BEGIN
+    IDS_DETAIL_DISK_DESCRIPTION "%s\n"
+    IDS_DETAIL_DISK_ID "Levyn tunnus: %s\n"
+    IDS_DETAIL_DISK_TYPE "Tyyppi      : %s\n"
+    IDS_DETAIL_DISK_STATUS "Tila        : %s\n"
+    IDS_DETAIL_INFO_PATH   "Polku       : %hu\n"
+    IDS_DETAIL_INFO_TARGET "Kohde       : %hu\n"
+    IDS_DETAIL_INFO_LUN_ID "LUN-tunnus  : %hu\n"
+    IDS_DETAIL_INFO_LOC_PATH "Sijaintipolku"
+    IDS_DETAIL_INFO_CURR_RO_STATE "Nykyinen vain luku -tila: %s\n"
+    IDS_DETAIL_INFO_RO "Vain luku: %s\n"
+    IDS_DETAIL_INFO_BOOT_DSK "Käynnistyslevy: %s\n"
+    IDS_DETAIL_INFO_PAGE_FILE_DSK "Sivutustiedostolevy: %s\n"
+    IDS_DETAIL_INFO_HIBER_FILE_DSK "Horrostiedostolevy: %s\n"
+    IDS_DETAIL_INFO_CRASH_DSK "Kaatumisvedoslevy: %s\n"
+    IDS_DETAIL_INFO_CLST_DSK "Klusteroitu levy: %s\n"
+    IDS_DETAIL_PARTITION_NUMBER "Osio %lu\n"
+    IDS_DETAIL_PARTITION_TYPE   "Tyyppi          : %s\n"
+    IDS_DETAIL_PARTITION_HIDDEN "Piilotettu      : %s\n"
+    IDS_DETAIL_PARTITION_ACTIVE "Aktiivinen      : %s\n"
+    IDS_DETAIL_PARTITION_OFFSET "Siirtymä tavuina: %I64u\n"
+    IDS_DETAIL_PARTITION_REQUIRED "Pakollinen      : %s\n"
+    IDS_DETAIL_PARTITION_ATTRIBUTE "Määritteet      : %016I64x\n"
+    IDS_DETAIL_NO_DISKS "\nTähän taltioon ei ole liitetty levyjä.\n"
+    IDS_DETAIL_NO_VOLUME "\nTähän osioon ei liity taltiota.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FILESYSTEMS_CURRENT "Nykyinen tiedostojärjestelmä\n"
+    IDS_FILESYSTEMS_FORMATTING "Alustukseen käytettävissä olevat tiedostojärjestelmät\n"
+    IDS_FILESYSTEMS_TYPE "  Tyyppi        : %s\n"
+    IDS_FILESYSTEMS_CLUSTERSIZE "  Varausyksikkö : %s\n"
+    IDS_FILESYSTEMS_SERIAL_NUMBER "  Sarjanumero   : %08lx\n"
+    IDS_FILESYSTEMS_DEFAULT " (Oletus)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FORMAT_FAIL "\nDiskPart ei voinut alustaa valittua taltiota.\n"
+    IDS_FORMAT_SUCCESS "\nDiskPart alusti valitun taltion.\n"
+    IDS_FORMAT_PROGRESS "\r  %3lu prosenttia valmiina"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_GPT_FAIL "\nDiskPart ei voinut määrittää määritteitä valitulle GPT-osiolle.\n"
+    IDS_GPT_SUCCESS "\nDiskPart määritti määritteet valitulle GPT-osiolle.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HELP_FORMAT_STRING "%-11.11s - %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INACTIVE_FAIL "\nDiskPart ei voinut merkitä osiota passiiviseksi.\nVarmista, että osio on kelvollinen.\n"
+    IDS_INACTIVE_SUCCESS "\nDiskPart merkitsi nykyisen osion passiiviseksi.\n"
+    IDS_INACTIVE_ALREADY "\nNykyinen osio on jo merkitty passiiviseksi.\n"
+    IDS_INACTIVE_NO_MBR "\nValittu levy ei ole MBR-levy.\nINACTIVE-komentoa voi käyttää vain MBR-levyllä.\n"
+END
+
+/* Detail header titles */
+STRINGTABLE
+BEGIN
+    IDS_LIST_DISK_HEAD "  Levy ###  Tila        Koko     Vapaa    Dyn  Gpt\n"
+    IDS_LIST_DISK_LINE "  --------  ----------  -------  -------  ---  ---\n"
+    IDS_LIST_DISK_FORMAT "%c Levy %-3lu  %-10s  %-7s  %-7s   %1s    %1s\n"
+    IDS_LIST_PARTITION_HEAD "  Osio ###  Tyyppi            Koko     Siirtymä\n"
+    IDS_LIST_PARTITION_LINE "  --------  ----------------  -------  -------\n"
+    IDS_LIST_PARTITION_FORMAT "%c Osio %-3lu  %-16s  %-7s  %-7s\n"
+    IDS_LIST_PARTITION_NO_DISK "\nOsioita ei voi luetella, koska levyä ei ole.\nValitse levy ja yritä uudelleen.\n\n"
+    IDS_LIST_PARTITION_NONE "\nTällä levyllä ei ole näytettäviä osioita.\n"
+    IDS_LIST_VOLUME_HEAD "  Taltio ###  Kir  Nimi         FS     Tyyppi      Koko     Tila       Tiedot\n"
+    IDS_LIST_VOLUME_LINE "  ----------  ---  -----------  -----  ----------  -------  ---------  --------\n"
+    IDS_LIST_VOLUME_FORMAT "%c Taltio %-3lu   %c   %-11.11s  %-5.5s  %-10.10s  %-7.7s  %-9.9s  %-8.8s\n"
+END
+
+/* REMOVE command strings */
+STRINGTABLE
+BEGIN
+    IDS_REMOVE_FAIL "\nDiskPart ei voinut poistaa asemakirjainta tai liitoskohtaa.\nVarmista, että asemakirjain tai liitoskohta on kelvollinen.\n"
+    IDS_REMOVE_SUCCESS "\nDiskPart poisti asemakirjaimen tai liitoskohdan.\n"
+    IDS_REMOVE_NO_LETTER "\nValitulla taltiolla ei ole poistettavaa kirjainta tai liitoskohtaa.\n"
+    IDS_REMOVE_WRONG_LETTER "\nMäärittämääsi kirjainta ei ole määritetty tälle taltiolle.\n"
+END
+
+/* RESCAN command strings */
+STRINGTABLE
+BEGIN
+    IDS_RESCAN_START "\nOdota, kun DiskPart tarkistaa kokoonpanon...\n"
+    IDS_RESCAN_END "\nDiskPart on tarkistanut kokoonpanon.\n\n"
+END
+
+/* Select command strings */
+STRINGTABLE
+BEGIN
+    IDS_SHRINK_QUERYMAX "\nSuurin vapautettavissa oleva tavumäärä on: %4I64u %s\n"
+    IDS_SHRINK_SUCCESS "\nDiskPart pienensi taltiota määrällä: %4I64u %s\n"
+    IDS_SHRINK_FS_NOT_SUPPORTED "\nVirtuaalilevypalvelun virhe:\nTaltiota ei voi pienentää, koska tiedostojärjestelmä ei tue sitä.\n\n"
+    IDS_SHRINK_TOO_BIG "\nVirtuaalilevypalvelun virhe:\nMääritetty pienennys on liian suuri, ja taltiosta tulisi \npienempi kuin taltion vähimmäiskoko.\n\n"
+    IDS_SHRINK_TOO_SMALL "\nVirtuaalilevypalvelun virhe:\nMääritetty pienennys on pienempi kuin sallittu vähimmäispienennys.\n\n"
+    IDS_SHRINK_NO_VOLUME "\nYhtään taltiota ei ole valittu.\nValitse taltio ja yritä uudelleen.\n"
+    IDS_EXTEND_SUCCESS "\nDiskPart laajensi taltion.\n"
+    IDS_EXTEND_FS_SUCCESS "\nDiskPart laajensi taltion tiedostojärjestelmän.\n"
+    IDS_EXTEND_NO_SPACE "\nMääritetyillä levyillä ei ole tarpeeksi käytettävää vapaata tilaa\ntaltion laajentamiseen.\n"
+    IDS_EXTEND_NOT_ENOUGH "\nVirtuaalilevypalvelun virhe:\nTätä toimintoa varten ei ole tarpeeksi käytettävää tilaa.\n\n"
+    IDS_EXTEND_FS_NOT_SUPPORTED "\nVirtuaalilevypalvelun virhe:\nTaltiota ei voi laajentaa, koska tiedostojärjestelmä ei tue sitä.\n\n"
+    IDS_RESIZE_INVALID_PARAMETER "\nDiskPart kohtasi virheen: Parametri on virheellinen.\nLisätietoja on järjestelmän tapahtumalokissa.\n\n"
+    IDS_SELECT_NO_DISK "\nYhtään levyä ei ole valittu.\nValitse levy ja yritä uudelleen.\n\n"
+    IDS_SELECT_DISK "\nLevy %lu on nyt valittu levy.\n\n"
+    IDS_SELECT_DISK_INVALID "\nVirheellinen levy.\n\n"
+    IDS_SELECT_DISK_ENUM_NO_START "\nLevyjen luettelointia ei ole vielä aloitettu.\n\nYhtään levyä ei ole valittu.\n\n"
+    IDS_SELECT_DISK_ENUM_FINISHED "\nViimeinen levy on luetteloitu.\n\nYhtään levyä ei ole valittu.\n\n"
+    IDS_SELECT_NO_PARTITION "\nYhtään osiota ei ole valittu.\nValitse levy ja yritä uudelleen.\n\n"
+    IDS_SELECT_PARTITION "\nOsio %lu on nyt valittu osio.\n\n"
+    IDS_SELECT_PARTITION_NO_DISK "\nOsiota ei voi valita, koska levyä ei ole.\nValitse levy ja yritä uudelleen.\n\n"
+    IDS_SELECT_PARTITION_INVALID "\nVirheellinen osio.\n\n"
+    IDS_SELECT_NO_VOLUME "\nYhtään taltiota ei ole valittu.\nValitse taltio ja yritä uudelleen.\n\n"
+    IDS_SELECT_VOLUME "\nTaltio %lu on nyt valittu taltio.\n\n"
+    IDS_SELECT_VOLUME_INVALID "\nVirheellinen taltio.\n\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SETID_FAIL "\nDiskPart ei voinut muuttaa osion tyyppiä.\n"
+    IDS_SETID_SUCCESS "\nOsion tyyppi muutettiin.\n"
+    IDS_SETID_INVALID_FORMAT "\nOsiotyypin muoto on virheellinen.\n"
+    IDS_SETID_INVALID_TYPE "\nOsiotyyppi on virheellinen.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UNIQUID_DISK_INVALID_STYLE "\nValittu levy ei ole GPT-levy eikä MBR-levy.\nValitse GPT-levy tai MBR-levy.\n"
+END
+
+/* Disk Status */
+STRINGTABLE
+BEGIN
+    IDS_STATUS_YES "Kyllä"
+    IDS_STATUS_NO "Ei"
+    IDS_STATUS_DISK_HEALTHY "Kunnossa"
+    IDS_STATUS_DISK_SICK "Viallinen"
+    IDS_STATUS_UNAVAILABLE "EI SAATAVILLA"
+    IDS_STATUS_ONLINE "Yhteydessä"
+    IDS_STATUS_OFFLINE "Irrotettu"
+    IDS_STATUS_NO_MEDIA "Ei mediaa"
+    IDS_INFO_BOOT "Käynn."
+    IDS_INFO_SYSTEM "Järjest."
+END
+
+/* CMD Messages for commands */
+STRINGTABLE
+BEGIN
+    IDS_MSG_ARG_SYNTAX_ERROR "Tälle komennolle määritetyt argumentit eivät ole kelvollisia.\nLisätietoja komennosta saat kirjoittamalla:"
+END
+
+/* Help Command Descriptions */
+STRINGTABLE
+BEGIN
+    IDS_HELP_ACTIVE                    "Merkitse valittu osio aktiiviseksi.\n"
+    IDS_HELP_ADD                       "Lisää peilaus yksinkertaiseen taltioon.\n"
+    IDS_HELP_ASSIGN                    "Määritä asemakirjain tai liitoskohta valitulle taltiolle.\n"
+    IDS_HELP_ATTACH                    "Liittää virtuaalilevytiedoston.\n"
+    IDS_HELP_ATTRIBUTES                "Käsittele taltion tai levyn määritteitä.\n"
+    IDS_HELP_AUTOMOUNT                 "Ota perustaltioiden automaattinen liittäminen käyttöön tai pois.\n"
+    IDS_HELP_BREAK                     "Pura peilausjoukko.\n"
+    IDS_HELP_CLEAN                     "Poista levyltä kokoonpanotiedot tai kaikki\n              tiedot.\n"
+    IDS_HELP_COMPACT                   "Yrittää pienentää tiedoston fyysistä kokoa.\n"
+
+    IDS_HELP_CONVERT                   "Muuntaa levymuotojen välillä.\n"
+    IDS_HELP_CONVERT_GPT               "Muuntaa MBR-levyn GPT-muotoon.\n"
+    IDS_HELP_CONVERT_MBR               "Muuntaa GPT-levyn MBR-muotoon.\n"
+
+    IDS_HELP_CREATE                    "Luo taltio, osio tai virtuaalilevy.\n"
+    IDS_HELP_CREATE_PARTITION          "Luo osio.\n"
+    IDS_HELP_CREATE_PARTITION_EFI      "Luo EFI-järjestelmäosio.\n"
+    IDS_HELP_CREATE_PARTITION_EXTENDED "Luo laajennettu osio.\n"
+    IDS_HELP_CREATE_PARTITION_LOGICAL  "Luo looginen asema.\n"
+    IDS_HELP_CREATE_PARTITION_MSR      "Luo MSR-osio.\n"
+    IDS_HELP_CREATE_PARTITION_PRIMARY  "Luo ensisijainen osio.\n"
+    IDS_HELP_CREATE_VOLUME             "Luo taltio.\n"
+    IDS_HELP_CREATE_VDISK              "Luo virtuaalilevytiedosto.\n"
+
+    IDS_HELP_DELETE                    "Poista objekti.\n"
+    IDS_HELP_DELETE_DISK               "Poista levy.\n"
+    IDS_HELP_DELETE_PARTITION          "Poista osio.\n"
+    IDS_HELP_DELETE_VOLUME             "Poista taltio.\n"
+
+    IDS_HELP_DETACH                    "Irrottaa virtuaalilevytiedoston.\n"
+
+    IDS_HELP_DETAIL                    "Näytä objektin tiedot.\n"
+    IDS_HELP_DETAIL_DISK               "Tulosta levyn tiedot.\n"
+    IDS_HELP_DETAIL_PARTITION          "Tulosta osion tiedot.\n"
+    IDS_HELP_DETAIL_VOLUME             "Tulosta taltion tiedot.\n"
+
+    IDS_HELP_EXIT                      "Lopeta DiskPart.\n"
+    IDS_HELP_EXPAND                    "Kasvattaa virtuaalilevyn suurinta käytettävissä olevaa kokoa.\n"
+    IDS_HELP_EXTEND                    "Laajenna taltiota.\n"
+    IDS_HELP_FILESYSTEMS               "Näytä taltion nykyinen ja tuetut tiedostojärjestelmät.\n"
+    IDS_HELP_FORMAT                    "Alusta taltio tai osio.\n"
+    IDS_HELP_GPT                       "Määritä määritteet valitulle GPT-osiolle.\n"
+    IDS_HELP_HELP                      "Näytä komentojen luettelo.\n"
+    IDS_HELP_IMPORT                    "Tuo levyryhmä.\n"
+    IDS_HELP_INACTIVE                  "Merkitse valittu osio passiiviseksi.\n"
+
+    IDS_HELP_LIST                      "Näytä objektien luettelo.\n"
+    IDS_HELP_LIST_DISK                 "Luettele levyt.\n"
+    IDS_HELP_LIST_PARTITION            "Luettele osiot.\n"
+    IDS_HELP_LIST_VOLUME               "Luettele taltiot.\n"
+    IDS_HELP_LIST_VDISK                "Luettele virtuaalilevytiedostot.\n"
+
+    IDS_HELP_MERGE                     "Yhdistää alilevyn sen ylätason levyihin.\n"
+    IDS_HELP_OFFLINE                   "Irrota objekti, joka on merkitty yhteydessä olevaksi.\n"
+    IDS_HELP_ONLINE                    "Yhdistä objekti, joka on merkitty irrotetuksi.\n"
+    IDS_HELP_RECOVER                   "Päivittää virheellisen paketin kaikkien levyjen tilan\n              ja synkronoi uudelleen peilatut ja RAID5-taltiot,\n              joiden plex- tai pariteettitiedot ovat vanhentuneet.\n"
+    IDS_HELP_REM                       "Ei tee mitään. Käytetään komentosarjojen kommentointiin.\n"
+    IDS_HELP_REMOVE                    "Poista asemakirjain tai liitoskohdan määritys.\n"
+    IDS_HELP_REPAIR                    "Korjaa RAID-5-taltio, jonka jäsen on vioittunut.\n"
+    IDS_HELP_RESCAN                    "Etsi tietokoneesta uudelleen levyjä ja taltioita.\n"
+    IDS_HELP_RETAIN                    "Sijoita säilytetty osio yksinkertaisen taltion alle.\n"
+    IDS_HELP_SAN                       "Näytä tai aseta käynnistetyn käyttöjärjestelmän SAN-käytäntö.\n"
+
+    IDS_HELP_SELECT                    "Siirrä kohdistus objektiin.\n"
+    IDS_HELP_SELECT_DISK               "Siirtää kohdistuksen levyyn.\n"
+    IDS_HELP_SELECT_PARTITION          "Siirtää kohdistuksen osioon.\n"
+    IDS_HELP_SELECT_VOLUME             "Siirtää kohdistuksen taltioon.\n"
+    IDS_HELP_SELECT_VDISK              "Siirtää kohdistuksen virtuaalilevyyn.\n"
+
+    IDS_HELP_SETID                     "Muuta osion tyyppiä.\n"
+    IDS_HELP_SHRINK                    "Pienennä valitun taltion kokoa.\n"
+
+    IDS_HELP_UNIQUEID                  "Näyttää tai asettaa levyn GUID-osiotaulukon (GPT) tunnuksen\n              tai pääkäynnistystietueen (MBR) allekirjoituksen.\n"
+    IDS_HELP_UNIQUEID_DISK             "Näyttää tai asettaa levyn GUID-osiotaulukon (GPT) tunnuksen\n              tai pääkäynnistystietueen (MBR) allekirjoituksen.\n"
+END
+
+/* Common Error Messages */
+STRINGTABLE
+BEGIN
+    IDS_ERROR_MSG_NO_SCRIPT "Virhe avattaessa komentosarjaa: %s\n"
+    IDS_ERROR_MSG_BAD_ARG "Virhe käsiteltäessä argumenttia: %s\n"
+    IDS_ERROR_INVALID_ARGS "Virheelliset argumentit\n"
+    IDS_ERROR_NO_MEDIUM "Laitteessa ei ole tallennusvälinettä.\n"
+END
+
+/* Bus type */
+STRINGTABLE
+BEGIN
+    IDS_BUSTYPE_UNKNOWN "Tuntematon"
+    IDS_BUSTYPE_SCSI    "SCSI"
+    IDS_BUSTYPE_ATAPI   "ATAPI"
+    IDS_BUSTYPE_ATA     "ATA"
+    IDS_BUSTYPE_1394    "1394"
+    IDS_BUSTYPE_SSA     "SSA"
+    IDS_BUSTYPE_FIBRE   "FibreChannel"
+    IDS_BUSTYPE_USB     "USB"
+    IDS_BUSTYPE_RAID    "RAID"
+    IDS_BUSTYPE_ISCSI   "iSCSI"
+    IDS_BUSTYPE_SAS     "SAS"
+    IDS_BUSTYPE_SATA    "SATA"
+    IDS_BUSTYPE_SD      "SD"
+    IDS_BUSTYPE_MMC     "MMC"
+    IDS_BUSTYPE_VIRTUAL "Virtuaalinen"
+    IDS_BUSTYPE_FBV     "FileBackedVirtual"
+    IDS_BUSTYPE_SPACES  "StorageSpaces"
+    IDS_BUSTYPE_NVME    "NVME"
+    IDS_BUSTYPE_SCM     "SCM"
+    IDS_BUSTYPE_UFS     "UFS"
+    IDS_BUSTYPE_NVMEOF  "NVMEOF"
+    IDS_BUSTYPE_OTHER   "Muu"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PARTITION_TYPE_EXTENDED "Laajennettu"
+    IDS_PARTITION_TYPE_LOGICAL "Looginen"
+    IDS_PARTITION_TYPE_PRIMARY "Ensisijainen"
+    IDS_PARTITION_TYPE_RESERVED "Varattu"
+    IDS_PARTITION_TYPE_SYSTEM "Järjestelmä"
+    IDS_PARTITION_TYPE_UNKNOWN "Tuntematon"
+    IDS_PARTITION_TYPE_UNUSED "Käyttämätön"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VOLUME_TYPE_DVD "DVD"
+    IDS_VOLUME_TYPE_PARTITION "Osio"
+    IDS_VOLUME_TYPE_REMOVABLE "Siirrett."
+    IDS_VOLUME_TYPE_UNKNOWN "Tuntematon"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UNIT_TB    "Tt"
+    IDS_UNIT_GB    "Gt"
+    IDS_UNIT_MB    "Mt"
+    IDS_UNIT_KB    "kt"
+    IDS_UNIT_B     "t"
+END

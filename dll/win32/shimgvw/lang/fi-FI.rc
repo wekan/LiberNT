@@ -1,0 +1,37 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE "LiberNT:n kuvien ja faksien katseluohjelma"
+    IDS_SETASDESKBG "Aseta työpöydän taustakuvaksi"
+    IDS_NOPREVIEW "Esikatselua ei ole saatavilla."
+    IDS_PREVIEW "Esikatselu"
+    /* Tooltips */
+    IDS_TOOLTIP_NEXT_PIC "Seuraava kuva"
+    IDS_TOOLTIP_PREV_PIC "Edellinen kuva"
+    IDS_TOOLTIP_BEST_FIT "Sovita ikkunaan (Ctrl+B)"
+    IDS_TOOLTIP_REAL_SIZE "Todellinen koko (Ctrl+A)"
+    IDS_TOOLTIP_SLIDE_SHOW "Aloita diaesitys (F11)"
+    IDS_TOOLTIP_ZOOM_IN "Lähennä (+)"
+    IDS_TOOLTIP_ZOOM_OUT "Loitonna (-)"
+    IDS_TOOLTIP_ROT_CLOCKW "Kierrä myötäpäivään (Ctrl+K)"
+    IDS_TOOLTIP_ROT_COUNCW "Kierrä vastapäivään (Ctrl+L)"
+    IDS_TOOLTIP_ROT_CWSAVE "Kierrä myötäpäivään ja tallenna (häviöllinen)"
+    IDS_TOOLTIP_ROT_CCWSAVE "Kierrä vastapäivään ja tallenna (häviöllinen)"
+    IDS_TOOLTIP_DELETE "Poista (DEL)"
+    IDS_TOOLTIP_PRINT "Tulosta (Ctrl+P)"
+    IDS_TOOLTIP_SAVEAS "Tallenna nimellä... (Ctrl+S)"
+    IDS_TOOLTIP_MODIFY "Muokkaa (Ctrl+E)"
+    IDS_TOOLTIP_HELP_TOC "Ohjeen aiheet (F1)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EMF_FILE    "EMF-kuva"
+    IDS_GIF_FILE    "GIF-kuva"
+    IDS_JPG_FILE    "JPEG-kuva"
+    IDS_BMP_FILE    "Bittikarttakuva"
+    IDS_PNG_FILE    "PNG-kuva"
+    IDS_TIF_FILE    "TIF-kuva"
+    IDS_WMF_FILE    "WMF-kuva"
+END

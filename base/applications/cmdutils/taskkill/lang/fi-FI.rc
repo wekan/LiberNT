@@ -1,0 +1,25 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+    STRING_USAGE, "Käyttö: taskkill [/?] [/f] [/im Prosessinimi | /pid ProsessinID] [/t]\n"
+    STRING_INVALID_OPTION, "Virhe: Tuntematon tai virheellinen komentorivin valitsin.\n"
+    STRING_INVALID_PARAM, "Virhe: Virheellinen komentorivin parametri.\n"
+    STRING_MISSING_OPTION, "Virhe: Jompikumpi valitsimista /im tai /pid on annettava.\n"
+    STRING_MISSING_PARAM, "Virhe: Valitsin %1 edellyttää komentorivin parametria.\n"
+    STRING_MUTUAL_EXCLUSIVE, "Virhe: Valitsimia /im ja /pid ei voi käyttää yhdessä.\n"
+    STRING_CLOSE_PID_SEARCH, "Sulkemisviesti lähetettiin prosessin (PID %1!u!) ylimmän tason ikkunoille.\n"
+    STRING_CLOSE_PROC_SRCH, "Sulkemisviesti lähetettiin prosessin ""%1"" (PID %2!u!) ylimmän tason ikkunoille.\n"
+    STRING_TERM_PID_SEARCH, "Prosessi, jonka PID on %1!u!, on lopetettu.\n"
+    STRING_TERM_PROC_SEARCH, "Prosessi ""%1"", jonka PID on %2!u!, on lopetettu.\n"
+    STRING_SEARCH_FAILED, "Virhe: Prosessia ""%1"" ei löytynyt.\n"
+    STRING_ENUM_FAILED, "Virhe: Prosessiluetteloa ei voi luetella.\n"
+    STRING_TERMINATE_FAILED, "Virhe: Prosessia ""%1"" ei voi lopettaa.\n"
+    STRING_SELF_TERMINATION, "Virhe: Prosessi ei saa lopettaa itseään.\n"
+    // STRING_CLOSE_CHILD, "Sent termination signal to process with PID %1!u!, child of PID %2!u!.\n"
+    STRING_CLOSE_CHILD, "Sulkemisviesti lähetettiin prosessin (PID %1!u!, prosessin %2!u! aliprosessi) ylimmän tason ikkunoille.\n"
+    STRING_TERM_CHILD, "Prosessi, jonka PID on %1!u! (prosessin %2!u! aliprosessi), on lopetettu.\n"
+    STRING_TERM_CHILD_FAILED, "Virhe: Prosessia, jonka PID on %1!u! (prosessin %2!u! aliprosessi), ei voi lopettaa.\n"
+    STRING_PARAM_TOO_MUCH, "Virhe: Virheellinen syntaksi. Valitsinta '%1' ei voi käyttää useammin kuin '%2!d!' kertaa.\n"
+    STRING_INVALID_SYNTAX, "Virhe: Virheellinen syntaksi.\n"
+}

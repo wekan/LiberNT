@@ -1,0 +1,67 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDR_MAINMENU MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Avaa...\tCtrl+O", IDM_OPEN_FILE
+        MENUITEM "&Sulje\tCtrl+W", IDM_CLOSE_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Lopeta", IDM_EXIT
+    END
+    POPUP "T&oista"
+    BEGIN
+        MENUITEM "Toista/&Tauko\tCtrl+P", IDC_PLAY
+        MENUITEM "&Pysäytä\tCtrl+S", IDC_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&Jatkuva toisto\tCtrl+T", IDM_REPEAT
+    END
+    POPUP "&Näytä"
+    BEGIN
+        MENUITEM "&Yhden ikkunan tila", IDM_SWITCHVIEW
+    END
+    POPUP "&Laite"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Ominaisuudet", IDM_DEVPROPS
+        MENUITEM SEPARATOR
+        MENUITEM "&Äänenvoimakkuus", IDM_VOLUMECTL
+    END
+    POPUP "O&hje"
+    BEGIN
+        MENUITEM "&Tietoja", IDM_ABOUT
+    END
+END
+
+ID_ACCELERATORS ACCELERATORS
+BEGIN
+    "^O", IDM_OPEN_FILE
+    "^W", IDM_CLOSE_FILE
+    "^P", IDC_PLAY
+    "^S", IDC_STOP
+    "^T", IDM_REPEAT
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MODE_UNKNOWN "Tuntematon"
+    IDS_MODE_OPEN "Avattu"
+    IDS_MODE_STOP "Pysäytetty"
+    IDS_MODE_PLAY "Toistetaan"
+    IDS_MODE_PAUSE "Tauko"
+    IDS_MODE_RECORD "Tallennetaan"
+    IDS_MODE_SEEK "Siirrytään"
+    IDS_MODE_NOT_READY "Ei valmis"
+    IDS_ALL_TYPES_FILTER "Kaikki tuetut"
+    IDS_TOOLTIP_PLAY "Toista"
+    IDS_TOOLTIP_STOP "Pysäytä"
+    IDS_TOOLTIP_EJECT "Poista asemasta"
+    IDS_TOOLTIP_BACKWARD "Hyppää taaksepäin"
+    IDS_TOOLTIP_SEEKBACK "Kelaa taaksepäin"
+    IDS_TOOLTIP_SEEKFORW "Kelaa eteenpäin"
+    IDS_TOOLTIP_FORWARD "Hyppää eteenpäin"
+    IDS_TOOLTIP_PAUSE "Tauko"
+    IDS_APPTITLE "LiberNT-mediasoitin"
+    IDS_PLAY "Toista"
+    IDS_DEFAULTMCIERRMSG "Tälle virheelle ei ole kuvausta."
+END

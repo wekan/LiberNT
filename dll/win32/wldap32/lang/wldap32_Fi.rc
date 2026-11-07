@@ -1,0 +1,125 @@
+/*
+ * English resources for WLDAP32
+ *
+ * Copyright 2005 Hans Leidekker
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+/* The error constants are defined in an enum and thus cannot be used here. */
+
+STRINGTABLE
+{
+    0 "Onnistui"
+    1 "Toimintovirhe"
+    2 "Protokollavirhe"
+    3 "Aikaraja ylitetty"
+    4 "Kokoraja ylitetty"
+    5 "Vertailu epätosi"
+    6 "Vertailu tosi"
+    7 "Todennusmenetelmää ei tueta"
+    8 "Vahva todennus vaaditaan"
+    9 "Viittaus (v2)"
+    10 "Viittaus"
+    11 "Hallintaraja ylitetty"
+    12 "Kriittinen laajennus ei käytettävissä"
+    13 "Luottamuksellisuus vaaditaan"
+    14 "SASL-sidonta käynnissä"
+    15 ""
+    16 "Määritettä ei ole"
+    17 "Määrittämätön tyyppi"
+    18 "Sopimaton vastaavuus"
+    19 "Rajoitusrikkomus"
+    20 "Määrite tai arvo on jo olemassa"
+    21 "Virheellinen syntaksi"
+    22 ""
+    23 ""
+    24 ""
+    25 ""
+    26 ""
+    27 ""
+    28 ""
+    29 ""
+    30 ""
+    31 ""
+    32 "Objektia ei ole"
+    33 "Aliasongelma"
+    34 "Virheellinen DN-syntaksi"
+    35 "On lehtiobjekti"
+    36 "Aliaksen viittauksen purkuongelma"
+    37 ""
+    38 ""
+    39 ""
+    40 ""
+    41 ""
+    42 ""
+    43 ""
+    44 ""
+    45 ""
+    46 ""
+    47 ""
+    48 "Sopimaton todennus"
+    49 "Virheelliset tunnistetiedot"
+    50 "Riittämättömät oikeudet"
+    51 "Varattu"
+    52 "Ei käytettävissä"
+    53 "Ei suostu suorittamaan"
+    54 "Silmukka havaittu"
+    55 ""
+    56 ""
+    57 ""
+    58 ""
+    59 ""
+    60 "Lajitteluohjausobjekti puuttuu"
+    61 "Indeksialueen virhe"
+    62 ""
+    63 ""
+    64 "Nimeämisrikkomus"
+    65 "Objektiluokkarikkomus"
+    66 "Ei sallittu muille kuin lehtiobjekteille"
+    67 "Ei sallittu RDN:lle"
+    68 "On jo olemassa"
+    69 "Objektiluokan muutokset eivät sallittuja"
+    70 "Liian suuret tulokset"
+    71 "Vaikuttaa useisiin DSA:ihin"
+    72 ""
+    73 ""
+    74 ""
+    75 ""
+    76 ""
+    77 ""
+    78 ""
+    79 ""
+    80 "Muu"
+    81 "Palvelin ei toiminnassa"
+    82 "Paikallinen virhe"
+    83 "Koodausvirhe"
+    84 "Koodauksen purkuvirhe"
+    85 "Aikakatkaisu"
+    86 "Tuntematon todennus"
+    87 "Suodatinvirhe"
+    88 "Käyttäjä peruutti"
+    89 "Parametrivirhe"
+    90 "Muisti ei riitä"
+    91 "Yhteyttä LDAP-palvelimeen ei voi muodostaa"
+    92 "Tämä LDAP-protokollan versio ei tue toimintoa"
+    93 "Määritettyä ohjausobjektia ei löytynyt sanomasta"
+    94 "Sanomassa ei ole tulosta"
+    95 "Lisää tuloksia palautettiin"
+    96 "Silmukka viittausten käsittelyssä"
+    97 "Viittausten hyppyraja ylitetty"
+}

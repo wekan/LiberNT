@@ -1,0 +1,25 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\nKäyttö: arping [-t] [-n määrä] -s lähde-ip kohdeisäntä\n\n\
+Asetukset:\n\
+    -t             Lähettää pingiä määritettyyn isäntään, kunnes se pysäytetään.\n\
+                   Pysäytä painamalla Control-C.\n\
+    -n määrä       Lähetettävien kyselyjen määrä.\n\
+    -s             Käyttää tätä lähde-IP-osoitetta.\n\n\0"
+    IDS_BAD_OPTION_FORMAT "Virheellinen asetuksen muoto %1.\n\0"
+    IDS_BAD_OPTION "Virheellinen asetus %1.\n\0"
+    IDS_BAD_PARAMETER "Virheellinen parametri %1.\n\0"
+    IDS_DEST_MUST_BE_SPECIFIED "Kohdeisännän nimi tai IP-osoite on määritettävä.\n\0"
+    IDS_COULD_NOT_INIT_WINSOCK "Winsock-DLL:ää ei voitu alustaa.\n\0"
+    IDS_UNKNOWN_HOST "Tuntematon isäntä %1.\n\0"
+    IDS_SRC_MUST_BE_SPECIFIED "Lähdeisännän IP-osoite on määritettävä.\n\0"
+    IDS_BAD_VALUE_OPTION_N "Virheellinen arvo asetukselle -n, sallittu alue on 1 - %1!u!.\n\0"
+    IDS_ARPING_TO_FROM "ARPING %1 osoitteesta %2\n\0"
+    IDS_MS "ms\0"
+    IDS_1MS "1ms\0"
+    IDS_REPLY_FROM "Unicast-vastaus osoitteesta %1 [%2]  %3%4\n\0"
+    IDS_ARPING_STATISTICS "Lähetetty %1!u! kyselyä\n\
+Vastaanotettu %2!u! vastausta\n\0"
+END

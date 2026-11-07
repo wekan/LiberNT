@@ -1,0 +1,8 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\nTulostaa nykyisen isäntänimen.\n\nhostname\n"
+    IDS_NOSET "sethostname: Avaa ""Järjestelmä""-ohjauspaneelin ""Tietokoneen nimi"" -välilehti\nja vaihda isäntänimi siellä.\nhostname -s ei ole tuettu.\n"
+    IDS_ERROR "Virhe: "
+END

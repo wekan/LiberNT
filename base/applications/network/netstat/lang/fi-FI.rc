@@ -1,0 +1,112 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\nNäyttää TCP/IP-protokollan nykyiset tilastot ja verkkoyhteydet.\n\n\
+NETSTAT [-a] [-b] [-e] [-n] [-o] [-p proto] [-r] [-s] [-t] [-v] [väli]\n\n\
+  -a            Näyttää kaikki yhteydet ja kuuntelevat portit.\n\
+  -b            FIXME (valitsin hyväksytään, mutta toimintoa ei ole toteutettu).\n\
+  -e            Näyttää Ethernet-tilastot. Voidaan yhdistää valitsimen -s\n\
+                kanssa.\n\
+  -n            Näyttää osoitteet ja porttinumerot numeromuodossa.\n\
+  -o            Näyttää kunkin yhteyden prosessitunnuksen.\n\
+  -p proto      Näyttää protokollan 'proto' (TCP tai UDP) yhteydet.\n\
+                Kun käytetään valitsimen -s kanssa protokollakohtaisten\n\
+                tilastojen näyttämiseen, 'proto' voi olla TCP, UDP tai IP.\n\
+  -r            Näyttää nykyisen reititystaulukon.\n\
+  -s            Näyttää protokollakohtaiset tilastot. Oletusarvoisesti tilastot\n\
+                näytetään protokollille IP, ICMP, TCP ja UDP;\n\
+                valitsimella -p voidaan määrittää oletusten osajoukko.\n\
+  -t            FIXME (valitsin hyväksytään, mutta toimintoa ei ole toteutettu).\n\
+  -v            FIXME (valitsin hyväksytään, mutta toimintoa ei ole toteutettu).\n\
+  väli          Näyttää valitut tilastot uudelleen 'väli' sekunnin välein.\n\
+                Lopeta uudelleennäyttäminen painamalla CTRL+C. Oletusarvoisesti\n\
+                netstat tulostaa nykyiset tiedot vain kerran.\n"
+    IDS_DISPLAY_THEADER "\n  Proto  Paikallinen osoite     Etäosoite              Tila"
+    IDS_DISPLAY_PROCESS "       Prosessi\n"
+    IDS_ACTIVE_CONNECT "\nAktiiviset yhteydet\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_IP4_STAT_HEADER "\nIPv4-tilastot\n\n"
+    IDS_IP_PACK_REC            "  Vastaanotetut paketit              = %lu\n"
+    IDS_IP_HEAD_REC_ERROR      "  Vastaanotetut otsikkovirheet       = %lu\n"
+    IDS_IP_ADDR_REC_ERROR      "  Vastaanotetut osoitevirheet        = %lu\n"
+    IDS_IP_DATAG_FWD           "  Edelleenlähetetyt datagrammit      = %lu\n"
+    IDS_IP_UNKNOWN_PRO_REC     "  Vastaanotetut tuntemattomat prot.  = %lu\n"
+    IDS_IP_REC_PACK_DISCARD    "  Hylätyt vastaanotetut paketit      = %lu\n"
+    IDS_IP_REC_PACK_DELIVER    "  Toimitetut vastaanotetut paketit   = %lu\n"
+    IDS_IP_OUT_REQUEST         "  Lähtevät pyynnöt                   = %lu\n"
+    IDS_IP_ROUTE_DISCARD       "  Reitityksessä hylätyt              = %lu\n"
+    IDS_IP_DISCARD_OUT_PACK    "  Hylätyt lähtevät paketit           = %lu\n"
+    IDS_IP_OUT_PACKET_NO_ROUTE "  Lähtevät paketit ilman reittiä     = %lu\n"
+    IDS_IP_REASSEMBLE_REQUIRED "  Uudelleenkoonti tarpeen            = %lu\n"
+    IDS_IP_REASSEMBLE_SUCCESS  "  Onnistuneet uudelleenkoonnit       = %lu\n"
+    IDS_IP_REASSEMBLE_FAILURE  "  Epäonnistuneet uudelleenkoonnit    = %lu\n"
+    IDS_IP_DATAG_FRAG_SUCCESS  "  Onnistuneesti pilkotut datagrammit = %lu\n"
+    IDS_IP_DATAG_FRAG_FAILURE  "  Epäonnistuneet pilkkomiset         = %lu\n"
+    IDS_IP_DATAG_FRAG_CREATE   "  Luodut fragmentit                  = %lu\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ICMP4_STAT_HEADER "\nICMPv4-tilastot\n\n"
+    IDS_ICMP_THEADER             "                            Vastaan.    Lähet.\n"
+    IDS_ICMP_MSG                 "  Viestit                   %-11lu %-10lu\n"
+    IDS_ICMP_ERROR               "  Virheet                   %-11lu %-10lu\n"
+    IDS_ICMP_DEST_UNREACH        "  Kohde ei tavoitettavissa  %-11lu %-10lu\n"
+    IDS_ICMP_TIME_EXCEED         "  Aika ylitetty             %-11lu %-10lu\n"
+    IDS_ICMP_PARAM_PROBLEM       "  Parametriongelmat         %-11lu %-10lu\n"
+    IDS_ICMP_SRC_QUENCHES        "  Lähteen hidastuspyynnöt   %-11lu %-10lu\n"
+    IDS_ICMP_REDIRECT            "  Uudelleenohjaukset        %-11lu %-10lu\n"
+    IDS_ICMP_ECHO                "  Kaiutuspyynnöt            %-11lu %-10lu\n"
+    IDS_ICMP_ECHO_REPLY          "  Kaiutusvastaukset         %-11lu %-10lu\n"
+    IDS_ICMP_TIMESTAMP           "  Aikaleimat                %-11lu %-10lu\n"
+    IDS_ICMP_TIMESTAMP_REPLY     "  Aikaleimavastaukset       %-11lu %-10lu\n"
+    IDS_ICMP_ADDRESSS_MASK       "  Osoitepeitteet            %-11lu %-10lu\n"
+    IDS_ICMP_ADDRESSS_MASK_REPLY "  Osoitepeitevastaukset     %-11lu %-10lu\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TCP4_HEADER         "\nIPv4:n TCP-tilastot\n\n"
+    IDS_TCP_ACTIVE_OPEN     "  Aktiiviset avaukset                 = %lu\n"
+    IDS_TCP_PASS_OPEN       "  Passiiviset avaukset                = %lu\n"
+    IDS_TCP_FAIL_CONNECT    "  Epäonnistuneet yhteysyritykset      = %lu\n"
+    IDS_TCP_RESET_CONNECT   "  Nollatut yhteydet                   = %lu\n"
+    IDS_TCP_CURRENT_CONNECT "  Nykyiset yhteydet                   = %lu\n"
+    IDS_TCP_SEG_RECEIVE     "  Vastaanotetut segmentit             = %lu\n"
+    IDS_TCP_SEG_SENT        "  Lähetetyt segmentit                 = %lu\n"
+    IDS_TCP_SEG_RETRANSMIT  "  Uudelleenlähetetyt segmentit        = %lu\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UDP_IP4_HEADER    "\nIPv4:n UDP-tilastot\n\n"
+    IDS_UDP_DATAG_RECEIVE "  Vastaanotetut datagrammit = %lu\n"
+    IDS_UDP_NO_PORT       "  Ei porttia                = %lu\n"
+    IDS_UDP_RECEIVE_ERROR "  Vastaanottovirheet        = %lu\n"
+    IDS_UDP_DATAG_SEND    "  Lähetetyt datagrammit     = %lu\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ETHERNET_INTERFACE_STAT     "Liittymätilastot\n\n"
+    IDS_ETHERNET_THEADER            "                           Vastaanotettu       Lähetetty\n\n"
+    IDS_ETHERNET_BYTES              "Tavut                %14lu %15lu\n"
+    IDS_ETHERNET_UNICAST_PACKET     "Unicast-paketit      %14lu %15lu\n"
+    IDS_ETHERNET_NON_UNICAST_PACKET "Muut kuin unicast    %14lu %15lu\n"
+    IDS_ETHERNET_DISCARD            "Hylätyt              %14lu %15lu\n"
+    IDS_ETHERNET_ERROR              "Virheet              %14lu %15lu\n"
+    IDS_ETHERNET_UNKNOWN            "Tuntemattomat prot.  %14lu\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR_WSA_START "VIRHE: WSAStartup() epäonnistui: %d\n"
+    IDS_ERROR_ROUTE "VIRHE: Tiedostoa 'route.exe' ei löydy\n"
+    IDS_ERROR_TCP_SNAPSHOT "VIRHE: TCP-päätepisteiden tilannevedos epäonnistui.\n"
+    IDS_ERROR_UDP_ENDPOINT "VIRHE: UDP-päätepisteiden tilannevedos epäonnistui.\n"
+    IDS_ERROR_UDP_ENDPOINT_TABLE "VIRHE: UDP-päätepistetaulukon tilannevedos epäonnistui.\n"
+END

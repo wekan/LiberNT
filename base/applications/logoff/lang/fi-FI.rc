@@ -1,0 +1,11 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Lopettaa istunnon.\n\n\
+  /v\t\tNäyttää tietoja suoritetuista toiminnoista.\n\
+  /?\t\tNäyttää nämä tiedot.\n\n"
+    IDS_LOGOFF_REMOTE "Lopetetaan istunto etäkoneessa."
+    IDS_LOGOFF_LOCAL "Lopetetaan nykyinen istunto tässä koneessa."
+    IDS_ILLEGAL_PARAM "Virheellisiä parametreja\n"
+END

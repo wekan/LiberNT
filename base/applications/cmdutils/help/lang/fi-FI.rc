@@ -1,0 +1,74 @@
+/* Magnus Olsen, 2005 */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_NO_ENTRY "Ohjeapuohjelma ei tue tätä komentoa.\nKokeile komentoa ""%s /?"".\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Näyttää ohjetietoja LiberNT-komennoista.\n\n\
+HELP [command]\n\n\
+  command - Näyttää tämän komennon ohjetiedot.\n"
+    IDS_HELP1 "Kaikkien käytettävissä olevien komentojen luettelo (+ kuvaus)\n\n\
+  help command\n\
+  command /?     Lisätietoja tietystä komennosta\n\n\
+?        Luettelee kaikki käytettävissä olevat komennot (ilman kuvausta).\n\
+ALIAS    Asettaa, poistaa tai näyttää aliaksia.\n\
+ATTRIB   Näyttää tai muuttaa tiedostomääritteitä.\n\
+BEEP     Antaa äänimerkin kaiuttimesta.\n\
+CALL     Kutsuu komentotiedostoa toisesta komentotiedostosta.\n\
+CD       Näyttää nykyisen hakemiston nimen tai vaihtaa sen.\n\
+CHCP     Näyttää tai asettaa aktiivisen koodisivun numeron.\n\
+CHOICE   Odottaa, että käyttäjä valitsee yhden annetuista vaihtoehdoista.\n\
+CLS      Tyhjentää näytön.\n\
+CMD      Käynnistää uuden LiberNT-komentotulkin.\n\
+COLOR    Asettaa konsolin oletusarvoiset edusta- ja taustavärit.\n\
+COPY     Kopioi yhden tai useamman tiedoston toiseen sijaintiin.\n\
+DATE     Näyttää tai asettaa päivämäärän.\n\
+DELETE   Poistaa yhden tai useamman tiedoston.\n\
+DIR      Näyttää hakemiston tiedostojen ja alihakemistojen luettelon.\n\
+ECHO     Näyttää viestejä tai ottaa komentojen kaiun käyttöön tai pois.\n\
+ERASE    Poistaa yhden tai useamman tiedoston.\n\
+EXIT     Lopettaa CMD.EXE-ohjelman (komentotulkin).\n\
+FOR      Suorittaa määritetyn komennon kullekin joukon tiedostolle.\n\
+FREE     Vapaa levytila.\n\
+GOTO     Siirtää LiberNT-komentotulkin komentotiedoston\n\
+         nimiöityyn riviin.\n\
+HELP     Näyttää ohjetietoja LiberNT-komennoista.\n\
+HISTORY  Luettelee kaikki käytetyt komennot.\n\
+IF       Suorittaa ehdollista käsittelyä komentotiedostoissa.\n\
+LABEL    Luo, muuttaa tai poistaa levyn taltionimen.\n\
+MD       Luo hakemiston.\n\
+MKDIR    Luo hakemiston.\n\
+MKLINK   Luo tiedostojärjestelmän linkkiobjektin.\n\
+MOVE     Siirtää yhden tai useamman tiedoston hakemistosta toiseen\n\
+         hakemistoon.\n\
+PATH     Näyttää tai asettaa suoritettavien tiedostojen hakupolun.\n\
+PAUSE    Keskeyttää komentotiedoston käsittelyn ja näyttää viestin.\n\
+POPD     Palauttaa PUSHD-komennolla tallennetun nykyisen hakemiston\n\
+         aiemman arvon.\n\
+PROMPT   Muuttaa komentokehotteen.\n\
+PUSHD    Tallentaa nykyisen hakemiston ja vaihtaa sen.\n\
+RD       Poistaa hakemiston.\n\
+REM      Kirjaa kommentteja komentotiedostoihin.\n\
+REN      Nimeää tiedoston tai tiedostot uudelleen.\n\
+RENAME   Nimeää tiedoston tai tiedostot uudelleen.\n\
+REPLACE  Korvaa tiedostoja.\n\
+RMDIR    Poistaa hakemiston.\n\
+SCREEN   Siirtää kohdistinta ja tulostaa halutessa tekstiä.\n\
+SET      Näyttää, asettaa tai poistaa LiberNT-ympäristömuuttujia.\n\
+SHIFT    Siirtää korvattavien parametrien paikkaa komentotiedostoissa.\n"
+    IDS_HELP2 "START    Avaa erillisen ikkunan määritetyn ohjelman tai komennon suorittamista varten.\n\
+         Suorittaa komennon.\n\
+TIME     Näyttää tai asettaa järjestelmän kellonajan.\n\
+TIMER    Sallii kymmenen sekuntikellon käytön.\n\
+TITLE    Asettaa CMD.EXE-istunnon ikkunan otsikon.\n\
+TYPE     Näyttää tekstitiedoston sisällön.\n\
+VER      Näyttää LiberNT-version.\n\
+VERIFY   Määrittää, tarkistaako LiberNT, että tiedostot kirjoitetaan\n\
+         levylle oikein.\n\
+VOL      Näyttää levyn taltionimen ja sarjanumeron.\n"
+END

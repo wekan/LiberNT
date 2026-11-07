@@ -1,0 +1,12 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    STRING_CHCP_HELP "Näyttää tai asettaa aktiivisen koodisivun numeron.\n\n\
+CHCP [nnn]\n\n\
+  nnn   Määrittää aktiivisen koodisivun numeron.\n\n\
+Näytä aktiivisen koodisivun numero kirjoittamalla CHCP ilman parametria.\n"
+    STRING_CHCP_ERROR1 "Aktiivinen koodisivu: %u\n"
+    STRING_CHCP_ERROR4 "Virheellinen koodisivu\n"
+    STRING_ERROR_INVALID_PARAM_FORMAT "Virheellinen parametrin muoto - %s\n"
+END

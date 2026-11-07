@@ -1,0 +1,613 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDM_MENU MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Monista...", 0
+        MENUITEM "&Poista", 1
+        MENUITEM "&Näytä loki", 2
+        MENUITEM SEPARATOR
+        MENUITEM "&Ominaisuudet", 3
+        MENUITEM "&Kopioi ominaisuudet", 4
+        MENUITEM "Kä&ytä ominaisuuksia", 5
+    END
+END
+
+IDD_ADVANCED DIALOGEX 17, 12, 238, 210
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Lisäasetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Lisäasetukset", 1018, 6, 6, 225, 70
+    LTEXT "&Ylimääräiset alustuskomennot:", 1011, 16, 20, 143, 8
+    EDITTEXT 1016, 16, 31, 205, 13, ES_AUTOHSCROLL
+    LTEXT "&Odota luottokorttiääntä:", 1007, 16, 55, 109, 8, NOT WS_VISIBLE
+    EDITTEXT 1008, 133, 52, 26, 12, ES_RIGHT | NOT WS_VISIBLE | WS_GROUP
+    CONTROL "", 1009, "MSCTLS_UPDOWN32", NOT WS_VISIBLE | WS_BORDER | WS_GROUP | 0x00000036, 159, 52, 12, 12
+    LTEXT "sekuntia", 1010, 173, 54, 40, 8, NOT WS_VISIBLE
+    GROUPBOX "&Maan tai alueen valinta", 1012, 6, 80, 225, 75
+    COMBOBOX 1013, 18, 99, 203, 50, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "&Portin lisäasetukset...", 1100, 107, 170, 125, 14
+    DEFPUSHBUTTON "Muuta &oletusasetuksia...", 3, 107, 188, 125, 14
+END
+
+IDD_GENERAL DIALOGEX 0, 0, 238, 210
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Portti:", 1018, 9, 8, 32, 10
+    LTEXT "COM-portti", 1095, 48, 8, 181, 10
+    GROUPBOX "&Kaiuttimen äänenvoimakkuus", 1029, 10, 21, 218, 48
+    CONTROL "", 1032, "MSCTLS_TRACKBAR32", WS_GROUP | WS_TABSTOP | 0x00000001, 84, 40, 66, 20
+    RTEXT "Pois", 1045, 56, 40, 22, 8
+    LTEXT "Suuri", 1001, 155, 40, 25, 11
+    GROUPBOX "Portin &enimmäisnopeus", 1031, 10, 78, 218, 46
+    COMBOBOX 1036, 18, 100, 202, 69, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    GROUPBOX "Valinnan ohjaus", 1060, 10, 133, 218, 51
+    AUTOCHECKBOX "&Odota valintaääntä ennen valintaa", 1003, 27, 157, 174, 10
+END
+
+IDD_DISTINCTIVE_RING DIALOGEX 0, 0, 238, 210
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Erottuva soittoääni"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "", 1068, 10, 7, 218, 145
+    AUTOCHECKBOX "&Tässä puhelinlinjassa on erottuvan soittoäänen palvelut", 1069, 20, 7, 184, 10
+    CTEXT "Soittokuvio", -1, 84, 21, 70, 8
+    CTEXT "Puhelun tyyppi", -1, 159, 21, 63, 8
+    LTEXT "&Ensisijainen osoite:", 1070, 20, 41, 62, 8
+    COMBOBOX 1073, 84, 37, 71, 61, CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | NOT WS_TABSTOP
+    COMBOBOX 1082, 160, 37, 62, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Osoite &1:", 1071, 20, 59, 62, 8
+    COMBOBOX 1074, 84, 55, 71, 61, CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | NOT WS_TABSTOP
+    COMBOBOX 1083, 160, 55, 62, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Osoite &2:", 1072, 20, 77, 62, 8
+    COMBOBOX 1075, 84, 73, 71, 61, CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | NOT WS_TABSTOP
+    COMBOBOX 1084, 160, 73, 62, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Osoite &3:", 1076, 20, 95, 62, 8
+    COMBOBOX 1077, 84, 91, 71, 61, CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | NOT WS_TABSTOP
+    COMBOBOX 1085, 160, 91, 62, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Etu&sijasoittajat:", 1078, 20, 112, 62, 8
+    COMBOBOX 1079, 84, 109, 71, 61, CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | NOT WS_TABSTOP
+    COMBOBOX 1086, 160, 109, 62, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Ta&kaisinsoitto:", 1080, 20, 131, 62, 8
+    COMBOBOX 1081, 84, 127, 71, 61, CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | NOT WS_TABSTOP
+    COMBOBOX 1087, 160, 127, 62, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+IDD_DISTINCTIVE_RING_2 DIALOGEX 0, 0, 238, 210
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Erottuva soittoääni"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "", 1068, 10, 7, 218, 87
+    AUTOCHECKBOX "&Tässä puhelinlinjassa on erottuvan soittoäänen palvelut", 1069, 19, 7, 177, 10
+    CTEXT "Soittokuvio", -1, 20, 21, 74, 8
+    CTEXT "Puhelun tyyppi", -1, 96, 21, 65, 8
+    LTEXT "&Yksi soitto:", 1088, 20, 37, 53, 8
+    COMBOBOX 1091, 96, 37, 65, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "&Kaksi soittoa:", 1089, 20, 57, 53, 8
+    COMBOBOX 1092, 96, 55, 65, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "K&olme soittoa:", 1090, 20, 76, 53, 8
+    COMBOBOX 1093, 96, 73, 65, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+IDD_DIAGNOSTICS DIALOGEX 0, 0, 238, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Diagnostiikka"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL "", 1042, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000084D, 19, 18, 200, 58
+    CONTROL "", 1041, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000084D, 19, 84, 200, 58
+    PUSHBUTTON "&Kysele modeemia", 1096, 138, 149, 75, 14
+    AUTOCHECKBOX "Tallenna &loki", 1020, 18, 187, 98, 10
+    PUSHBUTTON "&Näytä loki", 1094, 138, 184, 75, 14, WS_DISABLED
+    GROUPBOX "Modeemin tiedot", 1047, 10, 6, 217, 164
+    GROUPBOX "Kirjaaminen", -1, 10, 173, 217, 32
+END
+
+IDD_PLEASE_WAIT DIALOGEX 0, 0, 195, 72
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Odota..."
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 5100, -1, 9, 7, 20, 20
+    LTEXT "Muodostetaan yhteyttä modeemiin. Tämä voi kestää useita sekunteja.", -1, 42, 7, 146, 28
+    DEFPUSHBUTTON "Peruuta", 2, 72, 52, 50, 14
+END
+
+IDD_GENERAL_2 DIALOGEX 0, 0, 238, 210
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTOCHECKBOX "&Operaattorin avustama (manuaalinen) valinta", 1002, 19, 22, 150, 10
+    AUTOCHECKBOX "&Katkaise puhelu, jos joutilaana yli", 1042, 19, 38, 143, 10
+    EDITTEXT 1043, 168, 35, 25, 13, ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT "&Peruuta puhelu, jos ei yhteyttä ajassa", -1, 19, 56, 147, 10
+    EDITTEXT 1040, 168, 54, 25, 13, ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT "Portin &nopeus:", 1034, 16, 102, 93, 8
+    COMBOBOX 1036, 114, 100, 84, 69, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    RTEXT "&Tietoprotokolla:", 1032, 16, 122, 93, 8
+    COMBOBOX 1037, 114, 119, 84, 69, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    RTEXT "Pakk&aus:", 1035, 16, 139, 93, 8
+    COMBOBOX 1099, 114, 137, 84, 69, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    RTEXT "&Vuonohjaus:", 1027, 16, 157, 93, 8
+    COMBOBOX 1031, 114, 155, 84, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    GROUPBOX "Puheluasetukset", 1060, 11, 7, 217, 66
+    LTEXT "min", 1044, 195, 38, 22, 8
+    LTEXT "s", 1041, 194, 56, 22, 8
+    GROUPBOX "Datayhteyden asetukset", -1, 11, 82, 217, 94
+END
+
+IDD_ADVANCED_2 DIALOGEX 17, 12, 238, 210
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Lisäasetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTOCHECKBOX "Avaa pääteikkuna &ennen valintaa", 1000, 20, 21, 200, 10
+    AUTOCHECKBOX "Avaa pääteikkuna valinnan &jälkeen", 1001, 20, 38, 200, 10
+    RTEXT "&Databitit:", 1024, 18, 79, 93, 8
+    COMBOBOX 1025, 114, 77, 106, 61, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    RTEXT "&Pariteetti:", 1026, 18, 97, 93, 8
+    COMBOBOX 1028, 114, 95, 106, 60, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    RTEXT "&Lopetusbitit:", 1029, 18, 115, 93, 8
+    COMBOBOX 1030, 114, 113, 106, 45, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    RTEXT "&Modulaatio:", 1045, 18, 133, 93, 8
+    COMBOBOX 1038, 114, 131, 106, 69, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    GROUPBOX "Pääteikkuna", 1004, 10, 7, 217, 49
+    GROUPBOX "Laitteistoasetukset", 1005, 10, 64, 217, 89
+END
+
+IDD_ISDN DIALOGEX 0, 0, 238, 210
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "ISDN"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Keskuksen &tyyppi", -1, 11, 6, 217, 39
+    COMBOBOX 1104, 17, 20, 204, 69, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    GROUPBOX "&Ensimmäinen numero", -1, 11, 50, 217, 50
+    EDITTEXT 1017, 33, 62, 188, 13, ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT "S&PID/EAZ:", 1027, 34, 83, 67, 8
+    EDITTEXT 1107, 104, 79, 117, 13, ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX "T&oinen numero", -1, 11, 105, 217, 49
+    EDITTEXT 1018, 33, 114, 189, 13, ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT "SPI&D/EAZ:", 1028, 35, 135, 68, 8
+    EDITTEXT 1108, 105, 132, 117, 13, ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_PLEASE_WAIT_2 DIALOGEX 0, 0, 195, 72
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Odota"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 5100, -1, 9, 7, 20, 20
+    LTEXT "Lähetetään maa- tai aluetietoja modeemille.", -1, 42, 7, 146, 28
+END
+
+IDD_WARNING DIALOGEX 0, 0, 360, 105
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Varoitus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTOCHECKBOX "Älä näytä tätä viestiä uudelleen", 1109, 17, 73, 118, 10
+    DEFPUSHBUTTON "OK", 1, 302, 84, 50, 14
+    LTEXT "Jotkin modeemit eivät käsittele oikein näin pitkiä alustusmerkkijonoja.", -1, 50, 27, 304, 8
+    LTEXT "Lisätietoja tästä rajoituksesta saat modeemin valmistajalta.", -1, 50, 41, 304, 8
+    ICON 5100, -1, 15, 14, 20, 20
+    LTEXT "Olet antanut modeemin alustusmerkkijonon, joka on yli 57 merkkiä pitkä.", -1, 50, 14, 304, 8
+END
+
+IDD_MODEMS DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Modeemit"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 5100, 1057, 6, 7, 20, 20
+    LTEXT "Seuraavat &modeemit on asennettu:", -1, 44, 12, 203, 9
+    CONTROL "", 113, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x00000849, 7, 32, 238, 158, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Lisää...", 110, 56, 198, 60, 14
+    PUSHBUTTON "&Poista", 112, 121, 198, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 109, 185, 198, 60, 14
+END
+
+IDD_PLEASE_WAIT_3 DIALOGEX 0, 0, 195, 72
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Odota..."
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON "&Pysäytä", 2, 74, 53, 50, 14
+    ICON 5100, -1, 9, 7, 20, 20
+    LTEXT "Poistetaan", -1, 40, 8, 151, 8
+    LTEXT "Modeemi", 1005, 40, 16, 151, 25
+END
+
+STRINGTABLE
+BEGIN
+    180 "RS-232-sarjaportti"
+    181 "Ulkoinen modeemi"
+    182 "Sisäinen modeemi"
+    183 "PCMCIA-modeemi"
+    184 "Rinnakkaismodeemi"
+    185 "Rinnakkaisportti"
+    200 "110"
+    201 "1200"
+    202 "2400"
+    203 "4800"
+    204 "9600"
+    206 "19200"
+    207 "38400"
+    210 "115200"
+    211 "57600"
+    216 "300"
+    220 "230400"
+    221 "460800"
+    222 "921600"
+    240 "4"
+    241 "5"
+    242 "6"
+    243 "7"
+    244 "8"
+    250 "Parillinen"
+    251 "Pariton"
+    252 "Ei mitään"
+    253 "Merkki"
+    254 "Väli"
+    255 "1"
+    256 "1.5"
+    257 "2"
+    260 "Xon / Xoff"
+    261 "Laitteisto"
+    262 "Ei mitään"
+    263 "Käytössä"
+    264 "Pieni"
+    265 "V.23 (Minitel)"
+    266 "Vakio"
+    267 "Ei-vakio (Bell, HST)"
+    270 "Lisää &lokiin"
+    300 "Määrittämätön"
+    301 "Data"
+    302 "Faksi"
+    303 "Puhe"
+    304 "Ei mitään"
+    320 "Maa- tai alueasetus päivitetty"
+    340 "Modeemi"
+    341 "Modeemin asetukset"
+    342 "Modeemin osoite"
+    400 "Maa- tai alueasetusta ei päivitetty"
+    401 "Jotkin modeemit eivät hyväksy yli 57 merkin pituisia käyttäjän alustuskomentoja.\n\nLisätietoja tästä rajoituksesta saat modeemin valmistajalta"
+    402 "Varoitus"
+    460 "Muisti ei riitä Yleiset-valintaikkunan näyttämiseen.\nSulje joitakin tiedostoja tai ohjelmia ja yritä uudelleen."
+    461 "Muisti ei riitä Modeemin asetukset -valintaikkunan näyttämiseen.\nSulje joitakin tiedostoja tai ohjelmia ja yritä uudelleen."
+    463 "Jokaisen soitto-osoitteen asetuksena on oltava 'Automaattinen' tai yksilöllinen soittokuvio.\n\nVaihda päällekkäinen soittokuvio toiseksi."
+    465 "Vakio-EC"
+    466 "Pakotettu EC"
+    467 "Matkapuhelin"
+    468 "Ei käytössä"
+    469 "Käytössä"
+    470 "Ei käytössä"
+    480 "AUTO  (1 Ch.)"
+    481 "AUTO  (2 Ch.)"
+    482 "PPP   (56K)"
+    483 "PPP   (64K)"
+    484 "PPP   (112K)"
+    485 "PPP   (112K,PAP)"
+    486 "PPP   (112K,CHAP)"
+    487 "PPP   (112K,MSCHAP)"
+    488 "PPP   (128K)"
+    489 "PPP   (128K,PAP)"
+    490 "PPP   (128K,CHAP)"
+    491 "PPP   (128K,MSCHAP)"
+    500 "V.120 (64K)"
+    501 "V.120 (56K)"
+    502 "V.120 (112K)"
+    503 "V.120 (128K)"
+    504 "X.75  (64K)"
+    505 "X.75  (128K)"
+    506 "X.75  (T.70)"
+    507 "X.75  (BTX)"
+    508 "V.110 (1.2K)"
+    509 "V.110 (2.4K)"
+    510 "V.110 (4.8K)"
+    511 "V.110 (9.6K)"
+    512 "V.110 (12.0K)"
+    513 "V.110 (14.4K)"
+    514 "V.110 (19.2K)"
+    515 "V.110 (28.8K)"
+    516 "V.110 (38.4K)"
+    517 "V.110 (57.6K)"
+    518 "Analoginen (V.34/V.90)"
+    550 "ESS5 (AT&T) (Pohjois-Amerikka)"
+    551 "AT&T Point to Multipoint"
+    552 "National ISDN 1 (NI-1)"
+    553 "Northern Telecom DMS 100 (NT1)"
+    554 "NTT INS64 (Japani)"
+    555 "Eurooppalainen ISDN (DSS1)"
+    556 "Saksan kansallinen (1TR6) (harvoin käytetty)"
+    557 "Ranskan kansallinen (VN3) (harvoin käytetty)"
+    558 "Belgian kansallinen (harvoin käytetty)"
+    559 "Australian kansallinen (harvoin käytetty)"
+    560 "Tuntematon keskus"
+    570 "Tämän modeemin ISDN-määritys\nei ole valmis.\n\nTäytä tiedot ISDN-välilehdellä\nennen modeemin käyttämistä."
+    600 "PPP   (56K,GSM)"
+    601 "PPP   (64K,GSM)"
+    602 "V.120 (64K,GSM)"
+    604 "V.110 (1.2K,GSM)"
+    605 "V.110 (2.4K,GSM)"
+    606 "V.110 (4.8K,GSM)"
+    607 "V.110 (9.6K,GSM)"
+    608 "V.110 (12.0K,GSM)"
+    609 "V.110 (14.4K,GSM)"
+    610 "V.110 (19.2K,GSM)"
+    611 "V.110 (28.8K,GSM)"
+    612 "V.110 (38.4K,GSM)"
+    613 "V.110 (57.6K,GSM)"
+    614 "Analoginen RLP"
+    615 "Analoginen NRLP"
+    616 "GPRS"
+    617 "PIAFS - saapuva"
+    618 "PIAFS - lähtevä"
+    700 "Käytä nykyistä TAPI-sijaintia"
+    2006 "Liitetty kohteeseen"
+    2007 "Ei läsnä"
+    2008 "Ei toiminnassa"
+    2009 "Vaatii uudelleenkäynnistyksen"
+    2010 "#Modeemin asennuksen viimeistely vaatii tietokoneen uudelleenkäynnistyksen.\n\nHaluatko käynnistää tietokoneen uudelleen nyt?"
+    2011 "Modeemia ei ole asennettu oikein"
+    2012 "Tuntematon portti"
+    3000 "Modeemin asennus"
+    3018 "Modeemit"
+    3019 "Asentaa uuden modeemin ja muuttaa modeemin ominaisuuksia."
+    3053 "Modeemin ominaisuuksia ei voi näyttää, koska modeemi ei ole käytettävissä.\n\nKäynnistä järjestelmä uudelleen ja yritä uudelleen."
+    3054 "Modeemien ominaisuudet"
+    3060 "Haluatko varmasti poistaa valitut modeemit järjestelmästä?"
+    3061 "LiberNT ei voinut poistaa modeemia '%1' kohteesta %2."
+    3062 "Modeemi"
+    3069 "Muisti ei riitä modeemin ohjauspaneelin avaamiseen.\n\nSulje joitakin ohjelmia ja yritä uudelleen."
+    3073 "Vain järjestelmänvalvoja voi asentaa modeemin."
+    3074 "Modeemeja ei ole asennettu.  Vain järjestelmänvalvoja voi asentaa modeemin."
+    3076 "Tietokone on sammutettava ja käynnistettävä uudelleen, jotta uudet asetukset tulevat voimaan.\n\nHaluatko käynnistää tietokoneen uudelleen nyt?"
+    3077 "Verkkoasetusten muutos"
+    3200 "300 baudia"
+    3201 "1200 baudia"
+    3202 "2400 baudia"
+    3203 "9600 baudia"
+    3204 "19,2K baudia"
+    3205 "38,4K baudia"
+    3206 "57,6K baudia"
+    3207 "Ei vastausta"
+    3212 "Komento"
+    3213 "Vastaus"
+    3214 "Porttia, johon modeemi on liitetty, ei voitu avata. Syynä voi olla laitteistoristiriita. Tarkista Laitehallinnasta, että kaikki laitteet toimivat."
+    3215 "Toinen sovellus käyttää parhaillaan modeemin porttia. Sulje kaikki sovellukset, jotka saattavat käyttää porttia."
+    3218 "OpenComm"
+    3221 "115K baudia"
+    3222 "Päivitetään"
+    3223 "Virhe"
+    3233 "Onnistui"
+    3236 "Modeemi ei vastannut. Varmista, että se on liitetty oikein ja kytketty päälle.  Jos kyseessä on sisäinen modeemi tai se on liitetty, tarkista, että portin keskeytys on määritetty oikein."
+    3237 "KOMENTOA EI TUETA"
+    3238 "Kenttä"
+    3239 "Arvo"
+    3240 " Oletusasetukset"
+    3241 " Yhteysasetukset"
+    6144 "Japani"
+    6145 "Albania"
+    6146 "Algeria"
+    6147 "Amerikan Samoa"
+    6148 "Saksa (maa- tai aluekoodi 04)"
+    6149 "Anguilla"
+    6150 "Antigua ja Barbuda"
+    6151 "Argentiina"
+    6152 "Ascension-saari"
+    6153 "Australia"
+    6154 "Itävalta"
+    6155 "Bahama"
+    6156 "Bahrain"
+    6157 "Bangladesh"
+    6158 "Barbados"
+    6159 "Belgia"
+    6160 "Belize"
+    6161 "Benin"
+    6162 "Bermuda"
+    6163 "Bhutan"
+    6164 "Bolivia"
+    6165 "Botswana"
+    6166 "Brasilia"
+    6167 "Maa- tai aluekoodi (23)"
+    6168 "Brittiläinen Intian valtameren alue"
+    6169 "Brittiläiset Neitsytsaaret"
+    6170 "Brunei"
+    6171 "Bulgaria"
+    6172 "Myanmar"
+    6173 "Burundi"
+    6174 "Valko-Venäjä"
+    6175 "Kamerun"
+    6176 "Kanada"
+    6177 "Kap Verde"
+    6178 "Caymansaaret"
+    6179 "Keski-Afrikan tasavalta"
+    6180 "Tšad"
+    6181 "Chile"
+    6182 "Kiina"
+    6183 "Kolumbia"
+    6184 "Komorit"
+    6185 "Kongo"
+    6186 "Cookinsaaret"
+    6187 "Costa Rica"
+    6188 "Kuuba"
+    6189 "Kypros"
+    6190 "Tšekki"
+    6191 "Kambodža"
+    6192 "Pohjois-Korea"
+    6193 "Tanska"
+    6194 "Djibouti"
+    6195 "Dominikaaninen tasavalta"
+    6196 "Dominica"
+    6197 "Ecuador"
+    6198 "Egypti"
+    6199 "El Salvador"
+    6200 "Päiväntasaajan Guinea"
+    6201 "Etiopia"
+    6202 "Falklandinsaaret (Islas Malvinas)"
+    6203 "Fidžisaaret"
+    6204 "Suomi"
+    6205 "Ranska"
+    6206 "Ranskan Polynesia"
+    6207 "Maa- tai aluekoodi (63)"
+    6208 "Gabon"
+    6209 "Gambia"
+    6210 "Saksa (maa- tai aluekoodi 66)"
+    6211 "Angola"
+    6212 "Ghana"
+    6213 "Gibraltar"
+    6214 "Kreikka"
+    6215 "Grenada"
+    6216 "Guam"
+    6217 "Guatemala"
+    6218 "Guernsey"
+    6219 "Guinea"
+    6220 "Guinea-Bissau"
+    6221 "Guyana"
+    6222 "Haiti"
+    6223 "Honduras"
+    6224 "Hongkong (erityishallintoalue)"
+    6225 "Unkari"
+    6226 "Islanti"
+    6227 "Intia"
+    6228 "Indonesia"
+    6229 "Iran"
+    6230 "Irak"
+    6231 "Irlanti"
+    6232 "Israel"
+    6233 "Italia"
+    6234 "Norsunluurannikko"
+    6235 "Jamaika"
+    6236 "Afganistan"
+    6237 "Jersey"
+    6238 "Jordania"
+    6239 "Kenia"
+    6240 "Kiribati"
+    6241 "Korea"
+    6242 "Kuwait"
+    6243 "Laos"
+    6244 "Libanon"
+    6245 "Lesotho"
+    6246 "Liberia"
+    6247 "Libya"
+    6248 "Liechtenstein"
+    6249 "Luxemburg"
+    6250 "Macao (erityishallintoalue)"
+    6251 "Madagaskar"
+    6252 "Malesia"
+    6253 "Malawi"
+    6254 "Malediivit"
+    6255 "Mali"
+    6256 "Malta"
+    6257 "Mauritania"
+    6258 "Mauritius"
+    6259 "Meksiko"
+    6260 "Monaco"
+    6261 "Mongolia"
+    6262 "Montserrat"
+    6263 "Marokko"
+    6264 "Mosambik"
+    6265 "Nauru"
+    6266 "Nepal"
+    6267 "Alankomaat"
+    6268 "Alankomaiden Antillit"
+    6269 "Uusi-Kaledonia"
+    6270 "Uusi-Seelanti"
+    6271 "Nicaragua"
+    6272 "Niger"
+    6273 "Nigeria"
+    6274 "Norja"
+    6275 "Oman"
+    6276 "Pakistan"
+    6277 "Panama"
+    6278 "Papua-Uusi-Guinea"
+    6279 "Paraguay"
+    6280 "Peru"
+    6281 "Filippiinit"
+    6282 "Puola"
+    6283 "Portugali"
+    6284 "Puerto Rico"
+    6285 "Qatar"
+    6286 "Romania"
+    6287 "Ruanda"
+    6288 "Saint Kitts ja Nevis"
+    6289 "Maa- tai aluekoodi (145)"
+    6290 "Saint Helena"
+    6291 "Saint Lucia"
+    6292 "San Marino"
+    6293 "Maa- tai aluekoodi (148)"
+    6294 "São Tomé ja Príncipe"
+    6295 "Saint Vincent ja Grenadiinit"
+    6296 "Saudi-Arabia"
+    6297 "Senegal"
+    6298 "Seychellit"
+    6299 "Sierra Leone"
+    6300 "Singapore"
+    6301 "Salomonsaaret"
+    6302 "Somalia"
+    6303 "Etelä-Afrikka"
+    6304 "Espanja"
+    6305 "Sri Lanka"
+    6306 "Sudan"
+    6307 "Suriname"
+    6308 "Swazimaa"
+    6309 "Ruotsi"
+    6310 "Sveitsi"
+    6311 "Syyria"
+    6312 "Tansania"
+    6313 "Thaimaa"
+    6314 "Togo"
+    6315 "Tonga"
+    6316 "Trinidad ja Tobago"
+    6317 "Tunisia"
+    6318 "Turkki"
+    6319 "Turks- ja Caicossaaret"
+    6320 "Tuvalu"
+    6321 "Uganda"
+    6322 "Ukraina"
+    6323 "Arabiemiirikunnat"
+    6324 "Yhdistynyt kuningaskunta"
+    6325 "Yhdysvallat"
+    6326 "Burkina Faso"
+    6327 "Uruguay"
+    6328 "Maa- tai aluekoodi (184)"
+    6329 "Vanuatu"
+    6330 "Vatikaani"
+    6331 "Venezuela"
+    6332 "Vietnam"
+    6333 "Wallis ja Futuna"
+    6334 "Samoa"
+    6335 "Jemen"
+    6336 "Jemen"
+    6337 "Maa- tai aluekoodi (193)"
+    6338 "Kongon demokraattinen tasavalta"
+    6339 "Sambia"
+    6340 "Zimbabwe"
+    6501 "Moldova"
+    6502 "Viro"
+    6503 "Liettua"
+    6504 "Armenia"
+    6505 "Georgia"
+    6506 "Azerbaidžan"
+    6507 "Turkmenistan"
+    6508 "Uzbekistan"
+    6509 "Kazakstan"
+    6510 "Tadžikistan"
+    6511 "Kirgisia"
+    6512 "Latvia"
+    6513 "Venäjä"
+    6600 "Kroatia"
+    6601 "Slovenia"
+    6602 "Makedonia, entinen Jugoslavian tasavalta"
+    6603 "Bosnia ja Hertsegovina"
+    6604 "Jugoslavia"
+    20013 "Laitteistotunnus"
+END

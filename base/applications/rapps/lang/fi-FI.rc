@@ -1,0 +1,274 @@
+/*
+ * PROJECT:     ReactOS Applications Manager
+ * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
+ * PURPOSE:     English (United States) resource file
+ * TRANSLATORS: Copyright 2009 Dmitry Chapyshev <dmitry@reactos.org>
+ *              Copyright 2015 Ismael Ferreras Morezuelas <swyterzone+ros@gmail.com>
+ *              Copyright 2017-2018 Alexander Shaposhnikov <sanchaez@reactos.org>
+ *              Copyright 2020 He Yang <1160386205@qq.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDR_MAINMENU MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Asetukset", ID_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "&Lopeta", ID_EXIT
+    END
+    POPUP "&Ohjelmat"
+    BEGIN
+        MENUITEM "&Asenna\tCtrl+Enter", ID_INSTALL
+        MENUITEM "&Poista asennus\tCtrl+Del", ID_UNINSTALL
+        MENUITEM "&Muuta", ID_MODIFY
+        MENUITEM SEPARATOR
+        MENUITEM "Poista &rekisteristä", ID_REGREMOVE
+        MENUITEM SEPARATOR
+        MENUITEM "P&äivitä\tF5", ID_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "Päivitä &tietokanta\tCtrl+F5", ID_RESETDB
+    END
+    POPUP "Ohje"
+    BEGIN
+        MENUITEM "Ohje\tF1", ID_HELP, GRAYED
+        MENUITEM "&Tietoja", ID_ABOUT
+    END
+END
+
+IDR_LINKMENU MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Avaa linkki selaimessa", ID_OPEN_LINK
+        MENUITEM "&Kopioi linkki leikepöydälle", ID_COPY_LINK
+    END
+END
+
+IDD_SETTINGS_DIALOG DIALOGEX 0, 0, 250, 265
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Asetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Yleiset", -1, 4, 2, 240, 61
+    CONTROL "", IDC_GENERALLIST, "SysListView32", WS_TABSTOP | LVCHECKSTYLES, 15, 12, 219, 46, WS_EX_STATICEDGE
+    GROUPBOX "Lataaminen", -1, 4, 65, 240, 51
+    LTEXT "Latauskansio:", -1, 16, 75, 100, 9
+    EDITTEXT IDC_DOWNLOAD_DIR_EDIT, 15, 86, 166, 12, WS_CHILD | WS_VISIBLE | WS_GROUP | ES_AUTOHSCROLL
+    PUSHBUTTON "&Valitse", IDC_CHOOSE, 187, 85, 50, 14
+    AUTOCHECKBOX "&Poista asennusohjelma asennuksen jälkeen", IDC_DEL_AFTER_INSTALL, 16, 100, 218, 12
+    GROUPBOX "Ohjelmistolähde", -1, 4, 118, 240, 46
+    AUTORADIOBUTTON "Oletus", IDC_SOURCE_DEFAULT, 15, 132, 74, 10, WS_GROUP | WS_TABSTOP
+    AUTORADIOBUTTON "Määritetty lähde", IDC_USE_SOURCE, 15, 147, 74, 10
+    EDITTEXT IDC_SOURCE_URL, 97, 147, 140, 12, ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX "Välityspalvelin", -1, 4, 166, 240, 76
+    AUTORADIOBUTTON "Järjestelmän välityspalvelinasetukset", IDC_PROXY_DEFAULT, 15, 180, 210, 10, WS_GROUP | WS_TABSTOP
+    AUTORADIOBUTTON "Suora (ei välityspalvelinta)", IDC_NO_PROXY, 15, 195, 210, 10
+    AUTORADIOBUTTON "Välityspalvelin", IDC_USE_PROXY, 15, 210, 74, 10
+    EDITTEXT IDC_PROXY_SERVER, 90, 210, 147, 12, ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT "Ohita välityspalvelin", -1, 26, 226, 64, 10
+    EDITTEXT IDC_NO_PROXY_FOR, 90, 225, 147, 12, ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON "Oletukset", IDC_DEFAULT_SETTINGS, 8, 245, 60, 14, WS_GROUP | WS_TABSTOP
+    DEFPUSHBUTTON "OK", IDOK, 116, 245, 60, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 181, 245, 60, 14
+END
+
+IDD_INSTALL_DIALOG DIALOGEX 0, 0, 216, 97
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Ohjelman asennus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "…", IDC_INSTALL_TEXT, 4, 5, 209, 35
+    AUTORADIOBUTTON "&Asenna levyltä (CD tai DVD)", IDC_CD_INSTALL, 10, 46, 197, 11, WS_GROUP
+    AUTORADIOBUTTON "&Lataa ja asenna", IDC_DOWNLOAD_INSTALL, 10, 59, 197, 11, NOT WS_TABSTOP
+    DEFPUSHBUTTON "OK", IDOK, 86, 78, 60, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 150, 78, 60, 14
+END
+
+IDD_DOWNLOAD_DIALOG DIALOGEX 0, 0, 220, 220
+STYLE DS_SHELLFONT | DS_CENTER | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Ladataan %ls…"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL "", IDC_DOWNLOAD_PROGRESS, "msctls_progress32", WS_BORDER | PBS_SMOOTH, 10, 10, 200, 12
+    EDITTEXT IDC_DOWNLOAD_STATUS, 10, 28, 200, 22, ES_CENTER | ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_DISABLED | NOT WS_BORDER
+    PUSHBUTTON "Peruuta", IDCANCEL, 85, 53, 50, 15, WS_GROUP | WS_TABSTOP
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TOOLTIP_INSTALL "Asenna"
+    IDS_TOOLTIP_UNINSTALL "Poista asennus"
+    IDS_TOOLTIP_MODIFY "Muuta"
+    IDS_TOOLTIP_SELECT_ALL "Valitse kaikki / poista valinnat"
+    IDS_TOOLTIP_SETTINGS "Asetukset"
+    IDS_TOOLTIP_REFRESH "Päivitä"
+    IDS_TOOLTIP_UPDATE_DB "Päivitä tietokanta"
+    IDS_TOOLTIP_EXIT "Lopeta"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APP_NAME "Nimi"
+    IDS_APP_INST_VERSION "Versio"
+    IDS_APP_DESCRIPTION "Kuvaus"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INFO_VERSION "\nVersio: "
+    IDS_INFO_DESCRIPTION "\nKuvaus: "
+    IDS_INFO_PUBLISHER "\nJulkaisija: "
+    IDS_INFO_HELPLINK "\nOhjelinkki: "
+    IDS_INFO_HELPPHONE "\nTukipuhelin: "
+    IDS_INFO_README "\nLueminut: "
+    IDS_INFO_REGOWNER "\nRekisteröity omistaja: "
+    IDS_INFO_PRODUCTID "\nTuotetunnus: "
+    IDS_INFO_CONTACT "\nYhteystieto: "
+    IDS_INFO_UPDATEINFO "\nPäivitystiedot: "
+    IDS_INFO_INFOABOUT "\nLisätietoja: "
+    IDS_INFO_COMMENTS "\nKommentit: "
+    IDS_INFO_INSTLOCATION "\nAsennussijainti: "
+    IDS_INFO_INSTALLSRC "\nAsennuslähde: "
+    IDS_INFO_UNINSTALLSTR "\nAsennuksen poistokomento: "
+    IDS_INFO_MODIFYPATH "\nMuutospolku: "
+    IDS_INFO_INSTALLDATE "\nAsennuspäivä: "
+    IDS_AINFO_PACKAGE_NAME "\nPaketin nimi: "
+END
+
+STRINGTABLE
+BEGIN
+    IDS_AINFO_VERSION "\nVersio: "
+    IDS_AINFO_AVAILABLEVERSION "\nSaatavilla oleva versio: "
+    IDS_AINFO_DESCRIPTION "\nKuvaus: "
+    IDS_AINFO_SIZE "\nKoko: "
+    IDS_AINFO_URLSITE "\nKotisivu: "
+    IDS_AINFO_LICENSE "\nLisenssi: "
+    IDS_AINFO_URLDOWNLOAD "\nLataus: "
+    IDS_AINFO_LANGUAGES "\nKielet: "
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CAT_AUDIO "Ääni"
+    IDS_CAT_DEVEL "Kehitys"
+    IDS_CAT_DRIVERS "Ohjaimet"
+    IDS_CAT_EDU "Opetus ja viihde"
+    IDS_CAT_ENGINEER "Tekniikka"
+    IDS_CAT_FINANCE "Talous"
+    IDS_CAT_GAMES "Pelit & viihde"
+    IDS_CAT_GRAPHICS "Grafiikka"
+    IDS_CAT_INTERNET "Internet & verkko"
+    IDS_CAT_LIBS "Kirjastot"
+    IDS_CAT_OFFICE "Toimisto"
+    IDS_CAT_OTHER "Muut"
+    IDS_CAT_SCIENCE "Tiede"
+    IDS_CAT_TOOLS "Työkalut"
+    IDS_CAT_VIDEO "Video"
+    IDS_CAT_THEMES "Teemat"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE "ReactOS-sovellustenhallinta"
+    IDS_APP_AUTHORS "Copyright 2009 Dmitry Chapyshev"
+    IDS_WELCOME_TITLE "Tervetuloa ReactOS-sovellustenhallintaan!"
+    IDS_WELCOME_TEXT "Valitse vasemmalta luokka ja sitten sovellus, jonka haluat asentaa tai poistaa.\nReactOS-verkkosivusto: "
+    IDS_WELCOME_URL "https://reactos.org"
+
+    IDS_APPWIZ_TITLE "Lisää tai poista sovellus"
+    IDS_APPWIZ_TEXT1 "Valitse ""Sovellukset"" tai ""Päivitykset"", niin näet järjestelmään asennettujen sovellusten tai päivitysten luettelon."
+    IDS_APPWIZ_TEXT2 "Jos haluat poistaa ohjelman tai muuttaa sen asennettuja osia, valitse se luettelosta ja napsauta ""Poista asennus"" tai ""Muuta""."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SEARCH_TEXT "Hae…"
+    IDS_APPS_COUNT "Sovelluksia: %d"
+    IDS_APPS_SELECT_COUNT "; Valittu: %d"
+    IDS_INSTALLED "Asennettu"
+    IDS_AVAILABLEFORINST "Asennettavissa"
+    IDS_UPDATES "Päivitykset"
+    IDS_APPLICATIONS "Sovellukset"
+    IDS_CHOOSE_FOLDER_TEXT "Valitse kansio, johon lataukset tallennetaan:"
+    IDS_CHOOSE_FOLDER_ERROR "Määrittämääsi kansiota ei ole olemassa. Luodaanko se?"
+    IDS_URL_INVALID "Määrittämäsi URL-osoite on virheellinen tai sitä ei tueta. Korjaa se!"
+    IDS_APP_REG_REMOVE "Haluatko varmasti poistaa asennetun ohjelman tiedot rekisteristä?"
+    IDS_INFORMATION "Tiedot"
+    IDS_UNABLE_TO_DOWNLOAD "Pakettia ei voi ladata! Osoitetta ei löydy!"
+    IDS_UNABLE_TO_DOWNLOAD2 "Pakettia ei voi ladata! Tarkista Internet-yhteys!"
+    IDS_UNABLE_TO_REMOVE "Ohjelman tietoja ei voi poistaa rekisteristä!"
+    IDS_UNABLE_TO_INSTALL "Asennusohjelmaa ei voi avata!"
+    IDS_UNABLE_TO_QUERY_CERT "Varmenteen tietoja ei voi noutaa.\n\nHaluatko silti jatkaa?"
+    IDS_INTEG_CHECK_TITLE "Tarkistetaan paketin eheyttä…"
+    IDS_INTEG_CHECK_FAIL "Paketti ei läpäissyt eheystarkistusta. Se on voinut vioittua tai sitä on voitu muokata latauksen aikana. Ohjelmiston suorittamista ei suositella."
+    IDS_INTERRUPTED_DOWNLOAD "Lataus keskeytyi. Tarkista Internet-yhteys."
+    IDS_UNABLE_TO_WRITE "Levylle ei voi kirjoittaa. Levy voi olla täynnä."
+    IDS_INSTALL_SELECTED "Asenna valitut"
+    IDS_SELECTEDFORINST "Valittu asennettavaksi"
+    IDS_MISMATCH_CERT_INFO "Käytetty varmenne on tuntematon:\nKohde: %s\nMyöntäjä: %s\nHaluatko silti jatkaa?"
+    IDS_UNABLE_PATH "Virheellinen polun muoto."
+    IDS_APP_DISPLAY_DETAILS "Tiedot"
+    IDS_APP_DISPLAY_LIST "Luettelo"
+    IDS_APP_DISPLAY_TILE "Ruudut"
+    IDS_NO_SEARCH_RESULTS "Ei hakutuloksia"
+    IDS_CFG_SAVE_WINDOW_POS "Tallenna ikkunan sijainti"
+    IDS_CFG_UPDATE_AVLIST "Päivitä saatavilla olevien ohjelmien luettelo käynnistettäessä"
+    IDS_CFG_LOG_ENABLED "Kirjaa ohjelmien asennukset ja poistot lokiin"
+    IDS_CFG_SMALL_ICONS "Pienet kuvakkeet"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_INSTALLED "Asennettu"
+    IDS_STATUS_NOTINSTALLED "Ei asennettu"
+    IDS_STATUS_DOWNLOADED "Ladattu"
+    IDS_STATUS_UPDATE_AVAILABLE "Päivitys saatavilla"
+    IDS_STATUS_DOWNLOADING "Ladataan…"
+    IDS_STATUS_INSTALLING "Asennetaan…"
+    IDS_STATUS_WAITING "Odottaa asennusta…"
+    IDS_STATUS_FINISHED "Valmis"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LICENSE_OPENSOURCE "Avoin lähdekoodi"
+    IDS_LICENSE_FREEWARE "Ilmaisohjelma"
+    IDS_LICENSE_TRIAL "Kokeiluversio"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LANGUAGE_AVAILABLE_TRANSLATION "Tukee kieltäsi"
+    IDS_LANGUAGE_NO_TRANSLATION "Tukee muita kieliä"
+    IDS_LANGUAGE_ENGLISH_TRANSLATION "Tukee englantia"
+    IDS_LANGUAGE_SINGLE "Yksi kieli"
+    IDS_LANGUAGE_MORE_PLACEHOLDER " (+%d muuta)"
+    IDS_LANGUAGE_AVAILABLE_PLACEHOLDER " (+%d saatavilla)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DL_DIALOG_DB_DISP "Sovellustietokanta"
+    IDS_DL_DIALOG_DB_DOWNLOAD_DISP "Päivitetään tietokantaa…"
+    IDS_DL_DIALOG_DB_UNOFFICIAL_DOWNLOAD_DISP "Päivitetään tietokantaa… (epävirallinen lähde)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CMD_USAGE "Käyttö: "
+    IDS_CMD_NEED_PACKAGE_NAME "Virhe: valitsin %1 edellyttää yhtä tai useampaa paketin nimeä.\n"
+    IDS_CMD_NEED_FILE_NAME "Virhe: valitsin %1 edellyttää tiedostonimeä.\n"
+    IDS_CMD_NEED_PARAMS "Virhe: valitsin %1 edellyttää yhtä tai useampaa parametria.\n"
+    IDS_CMD_INVALID_OPTION "Virhe: tuntematon tai virheellinen komentorivin valitsin.\n"
+    IDS_CMD_FIND_RESULT_FOR "Hakutulos kohteelle %1:\n"
+    IDS_CMD_PACKAGE_NOT_FOUND "Pakettia %1 ei löytynyt.\n"
+    IDS_CMD_PACKAGE_INFO "Tietoja paketista %1:\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INSTGEN_CONFIRMUNINST "Haluatko varmasti poistaa sovelluksen %s?"
+    IDS_INSTGEN_CONFIRMINSTRUNAPP "Asennus valmis. Suoritetaanko %s nyt?"
+END

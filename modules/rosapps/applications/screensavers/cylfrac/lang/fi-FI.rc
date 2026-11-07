@@ -1,0 +1,8 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_DESCRIPTION "Sylinterifraktaali"
+    IDS_TITLE       "Tietoja"
+    IDS_TEXT        "Sylinterifraktaali, tekijä unC0Rr.\nTehty erityisesti ReactOS:lle."
+END

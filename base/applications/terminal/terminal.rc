@@ -25,3 +25,6 @@ IDI_TERMINAL ICON "res/terminal.ico"
 #ifdef LANGUAGE_EN_US
     #include "lang/en-US.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/fi-FI.rc"
+#endif

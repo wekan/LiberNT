@@ -1,0 +1,43 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDM_CONSOLE_SMALL MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Uusi\tCtrl+N", IDM_FILE_NEW
+        MENUITEM "&Avaa...\tCtrl+O", IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Lopeta\tAlt+F4", IDM_FILE_EXIT
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Tietoja LiberNT-hallintakonsolista", IDM_HELP_ABOUT
+    END
+END
+
+IDM_CONSOLE_LARGE MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Uusi\tCtrl+N", IDM_FILE_NEW
+        MENUITEM "&Avaa...\tCtrl+O", IDM_FILE_OPEN
+        MENUITEM "&Tallenna", IDM_FILE_SAVE
+        MENUITEM "Tallenna &nimellä...", IDM_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Lopeta\tAlt+F4", IDM_FILE_EXIT
+    END
+    POPUP "&Ikkunat"
+    BEGIN
+        MENUITEM "Luettelo", IDM_WINDOWS_LIST
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Tietoja LiberNT-hallintakonsolista", IDM_HELP_ABOUT
+    END
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE "LiberNT-hallintakonsoli"
+    IDS_CONSOLETITLE "Konsoli%1!u!"
+END

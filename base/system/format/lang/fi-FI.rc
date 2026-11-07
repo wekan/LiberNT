@@ -1,0 +1,56 @@
+/*
+ * PROJECT:     Disk Format Utility
+ * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATOR:  Copyright 2005 Magnus Olsen <magnus@greatlord.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    STRING_HELP "Käyttö: %s asema: [-FS:tiedostojärjestelmä] [-V:nimi] [-Q] [-A:koko] [-C] [-X] [-Y]\n\n\
+  [asema:]         Määrittää alustettavan aseman.\n\
+  -FS:tiedostojärjestelmä  Määrittää tiedostojärjestelmän tyypin (%s).\n\
+  -V:nimi          Määrittää taltion nimen.\n\
+  -Q               Suorittaa pika-alustuksen.\n\
+  -A:koko          Ohittaa varausyksikön oletuskoon. Oletusasetuksia\n\
+                   suositellaan vahvasti yleiseen käyttöön.\n\
+                   NTFS tukee kokoja 512, 1024, 2048, 4096, 8192, 16K, 32K, 64K.\n\
+                   FAT tukee kokoja 8192, 16K, 32K, 64K, 128K, 256K.\n\
+                   NTFS-pakkausta ei tueta, kun varausyksikön koko on\n\
+                   yli 4096.\n\
+  -C               Uuteen taltioon luotavat tiedostot pakataan\n\
+                   oletusarvoisesti.\n\
+  -X               Pakottaa taltion irrotuksen ensin, jos se on käytössä.\n\
+  -Y               Ei kysy ennen pakotettua irrotusta ja jättää nimen\n\
+                   tyhjäksi, jos nimeä ei anneta.\n\n"
+    STRING_COMPLETE "%lu prosenttia valmiina.\r"
+    STRING_FORMAT_FAIL "FormatEx ei onnistunut.\n\n"
+    STRING_NO_SUPPORT "Toimintoa ei tueta"
+    STRING_FMIFS_FAIL "FMIFS-aloituskohtia ei löytynyt.\n\n"
+    STRING_UNKNOW_ARG "Tuntematon argumentti: %s\n"
+    STRING_DRIVE_PARM "Pakollinen asemaparametri puuttuu.\n\n"
+    STRING_ERROR_DRIVE_TYPE "Aseman tyyppiä ei voitu selvittää.\n"
+    STRING_INSERT_DISK "Aseta uusi levyke asemaan %C:\nja paina Enter, kun olet valmis..."
+    STRING_NO_VOLUME "Taltiota ei voitu kysellä"
+    STRING_NO_VOLUME_SIZE "Taltion kokoa ei voitu kysellä"
+    STRING_FILESYSTEM "Tiedostojärjestelmän tyyppi on %s.\n"
+    STRING_LABEL_NAME_EDIT "Anna aseman %C: nykyinen taltion nimi: "
+    STRING_ERROR_LABEL "Tälle asemalle annettiin väärä taltion nimi.\n"
+    STRING_YN_FORMAT "\nVAROITUS: KAIKKI KIINTOLEVYN\n\
+ASEMAN %C: TIEDOT MENETETÄÄN!\nJatketaanko alustusta (K/E)? "
+    STRING_YES_NO_FAQ "KE"
+    STRING_VERIFYING "Tarkistetaan"
+    STRING_FAST_FMT "Pika-alustetaan"
+    STRING_CREATE_FSYS "Luodaan tiedostojärjestelmän rakenteita.\n"
+    STRING_FMT_COMPLETE "Alustus on valmis.\n"
+    STRING_VOL_COMPRESS "Taltio ei tue pakkausta.\n"
+    STRING_ENTER_LABEL "Taltion nimi (11 merkkiä, Enter = ei nimeä)? "
+    STRING_NO_LABEL "Taltiolle ei voitu antaa nimeä"
+    STRING_FREE_SPACE "\n%I64d tavua levytilaa yhteensä.\n%I64d tavua vapaana levyllä.\n"
+    STRING_SERIAL_NUMBER "\nTaltion sarjanumero on %04X-%04X\n"
+    STRING_FORCE_DISMOUNT "\nToinen prosessi käyttää taltiota. Se voidaan alustaa, kun se on\n\
+irrotettu, mikä tekee kaikista sen avoimista kahvoista virheellisiä.\n\
+Pakotetaanko taltion irrotus (K/E)? "
+END

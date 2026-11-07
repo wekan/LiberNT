@@ -43,6 +43,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/iccvid_Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/iccvid_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/iccvid_Fr.rc"
 #endif

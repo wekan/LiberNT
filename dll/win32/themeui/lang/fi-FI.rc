@@ -1,0 +1,35 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_BRICK "Tiili"
+    IDS_EGGPLANT "Munakoiso"
+    IDS_GOLIVE "Vihreä oliivi" //Spruce
+    IDS_HCONTRAST_1 "Suuri kontrasti 1"
+    IDS_HCONTRAST_2 "Suuri kontrasti 2"
+    IDS_HCONTRAST_BLACK "Suuri kontrasti, musta"
+    IDS_HCONTRAST_WHITE "Suuri kontrasti, valkoinen"
+    IDS_LILAC "Sireeni"
+    IDS_MAPLE "Vaahtera"
+    IDS_MARINE "Meri"
+    IDS_PLUM "Luumu"
+    IDS_PUMPKIN "Kurpitsa"
+    IDS_RAIN "Sadepäivä"
+    IDS_RWB "Punainen, valkoinen ja sininen"
+    IDS_CLASSIC "LiberNT, perinteinen"
+    IDS_STANDARD "LiberNT, vakio"
+    IDS_ROSE "Ruusu"
+    IDS_SAND "Hiekka" //Desert
+    IDS_SLATE "Liuskekivi"
+    IDS_SKY "Taivas"
+    IDS_STORM "Myrsky"
+    IDS_TEAL "Sinivihreä"
+    IDS_WHEAT "Vehnä"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SIZE_NORMAL "Normaali"
+    IDS_SIZE_LARGE "Suuri"
+    IDS_SIZE_XLARGE "Erittäin suuri"
+END

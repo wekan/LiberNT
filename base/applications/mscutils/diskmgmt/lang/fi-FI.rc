@@ -1,0 +1,176 @@
+/*
+ * PROJECT:     LiberNT Disk Management
+ * LICENSE:     GPL-3.0-or-later (https://spdx.org/licenses/GPL-3.0-or-later)
+ * PURPOSE:     Finnish resources
+ * COPYRIGHT:   Copyright 2026 Ahmed ARIF <arif.ing@outlook.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_NEWVOLUME DIALOGEX 0, 0, 360, 200
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Uusi taltio"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "", IDC_SZ_TITLE, 12, 10, 336, 12
+    LTEXT "Valitse, kuinka paljon vapaasta tilasta uusi taltio käyttää.", -1, 12, 24, 336, 10
+    CONTROL "", IDC_SZ_SLIDER, TRACKBAR_CLASSA, TBS_HORZ | TBS_NOTICKS | WS_TABSTOP, 8, 42, 344, 20
+    LTEXT "", IDC_SZ_SUMMARY, 12, 74, 336, 10
+    LTEXT "&Koko (Mt):", -1, 12, 94, 74, 10
+    EDITTEXT IDC_SZ_SIZE, 90, 92, 80, 14, ES_NUMBER
+    CONTROL "", IDC_SZ_SPIN, UPDOWN_CLASSA, UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS, 0, 0, 0, 0
+    LTEXT "", IDC_SZ_RANGE, 178, 94, 170, 10
+    LTEXT "&Nimi:", -1, 12, 114, 74, 10
+    EDITTEXT IDC_SZ_NAME, 90, 112, 150, 14, ES_AUTOHSCROLL
+    LTEXT "&Tiedostojärjestelmä:", -1, 12, 134, 74, 10
+    COMBOBOX IDC_SZ_FS, 90, 132, 100, 80, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT "&Aseman kirjain:", -1, 12, 154, 74, 10
+    COMBOBOX IDC_SZ_LETTER, 90, 152, 100, 120, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON "Lisää", IDOK, 232, 178, 58, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 294, 178, 58, 14
+END
+
+IDD_RESIZE DIALOGEX 0, 0, 360, 136
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Muuta taltion kokoa"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "", IDC_SZ_TITLE, 12, 10, 336, 12
+    LTEXT "Pienennä taltiota tai kasvata sitä sen jälkeiseen vapaaseen tilaan.", -1, 12, 24, 336, 10
+    CONTROL "", IDC_SZ_SLIDER, TRACKBAR_CLASSA, TBS_HORZ | TBS_NOTICKS | WS_TABSTOP, 8, 42, 344, 20
+    LTEXT "", IDC_SZ_SUMMARY, 12, 74, 336, 10
+    LTEXT "&Koko (Mt):", -1, 12, 94, 74, 10
+    EDITTEXT IDC_SZ_SIZE, 90, 92, 80, 14, ES_NUMBER
+    CONTROL "", IDC_SZ_SPIN, UPDOWN_CLASSA, UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS, 0, 0, 0, 0
+    LTEXT "", IDC_SZ_RANGE, 178, 94, 170, 10
+    DEFPUSHBUTTON "Muuta kokoa", IDOK, 232, 114, 58, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 294, 114, 58, 14
+END
+
+IDD_ERASE DIALOGEX 0, 0, 300, 150
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tyhjennä"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "", IDC_ER_TITLE, 12, 10, 276, 12
+    LTEXT "Tyhjentäminen poistaa kaikki siihen tallennetut tiedot, eikä sitä voi kumota. Anna nimi ja valitse tiedostojärjestelmä.", -1, 12, 26, 276, 18
+    LTEXT "&Nimi:", -1, 12, 54, 64, 10
+    EDITTEXT IDC_ER_NAME, 80, 52, 150, 14, ES_AUTOHSCROLL
+    LTEXT "&Tiedostojärj.:", -1, 12, 74, 64, 10
+    COMBOBOX IDC_ER_FS, 80, 72, 100, 80, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT "&Osiotyyppi:", IDC_ER_SCHEME_LABEL, 12, 94, 64, 10
+    COMBOBOX IDC_ER_SCHEME, 80, 92, 150, 60, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    AUTOCHECKBOX "&Pikatyhjennys", IDC_ER_QUICK, 80, 94, 150, 10
+    DEFPUSHBUTTON "Tyhjennä", IDOK, 174, 126, 58, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 236, 126, 58, 14
+END
+
+IDD_WORK DIALOGEX 0, 0, 260, 64
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION ""
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "", IDC_WORK_TEXT, 12, 10, 236, 10
+    LTEXT "", IDC_WORK_STATUS, 12, 24, 236, 10
+    CONTROL "", IDC_WORK_PROGRESS, PROGRESS_CLASSA, PBS_MARQUEE, 12, 40, 236, 10
+END
+
+IDD_CHECK DIALOGEX 0, 0, 320, 224
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION ""
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "", IDC_WORK_TEXT, 12, 10, 296, 10
+    LTEXT "", IDC_WORK_STATUS, 12, 24, 296, 10
+    CONTROL "", IDC_WORK_PROGRESS, PROGRESS_CLASSA, PBS_MARQUEE, 12, 38, 296, 10
+    EDITTEXT IDC_WORK_OUTPUT, 12, 54, 296, 140, ES_MULTILINE | ES_READONLY | ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON "Peruuta", IDCANCEL, 250, 202, 58, 14
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE "Levynhallinta"
+    IDS_CAT_INTERNAL "Sisäiset"
+    IDS_CAT_EXTERNAL "Ulkoiset"
+    IDS_CAT_IMAGE "Levykuvat"
+    IDS_DISK_N "Levy %lu"
+    IDS_UNKNOWN "Tuntematon"
+    IDS_UNTITLED "Nimetön"
+    IDS_NONE "Ei mitään"
+    IDS_RAW "RAW"
+    IDS_KIND_DATA "Perustieto-osio"
+    IDS_KIND_PRIMARY "Ensisijainen osio"
+    IDS_KIND_ESP "EFI-järjestelmäosio"
+    IDS_KIND_MSR "Microsoftin varattu osio"
+    IDS_KIND_RECOVERY "Palautusosio"
+    IDS_KIND_OTHER "Osio"
+    IDS_KIND_FREE "Varaamaton"
+    IDS_SCHEME_GPT "GUID-osiotaulukko"
+    IDS_SCHEME_MBR "Pääkäynnistystietue (MBR)"
+    IDS_SCHEME_RAW "Ei alustettu"
+    IDS_SYSTEM_VOLUME "LiberNT-järjestelmätaltio"
+    IDS_BOOT_PARTITION "Käynnistyksenhallinnan käytössä"
+    IDS_CAPTION_PARTITIONS "%lu osiota"
+    IDS_LOCATION "Levy %lu, osio %lu"
+    IDS_USAGE "%s käytetty • %s vapaana"
+    IDS_COL_NAME "Nimi"
+    IDS_COL_TYPE "Tyyppi"
+    IDS_COL_FS "Tiedostojärjestelmä"
+    IDS_COL_CAPACITY "Kapasiteetti"
+    IDS_COL_FREE "Vapaana"
+    IDS_INFO_UNALLOCATED "Varaamaton:"
+    IDS_INFO_SECTOR "Sektorin koko:"
+    IDS_INFO_DEVICE "Laite:"
+    IDS_INFO_DISKID "Levyn tunniste:"
+    IDS_INFO_SERIAL "Sarjanumero:"
+    IDS_INFO_MOUNT "Liitoskohta:"
+    IDS_INFO_OFFSET "Siirtymä:"
+    IDS_INFO_VOLSERIAL "Taltion sarjanumero:"
+    IDS_TB_NEW "&Uusi"
+    IDS_TB_DELETE "&Poista"
+    IDS_TB_CHECK "&Tarkista"
+    IDS_TB_RESIZE "&Muuta kokoa"
+    IDS_TB_ERASE "T&yhjennä"
+    IDS_TB_MOUNT "&Liitä"
+    IDS_TB_UNMOUNT "&Irrota"
+    IDS_TB_INFO "Ti&edot"
+    IDS_TB_REFRESH "P&äivitä"
+    IDS_NEW_VOLUME "Uusi taltio"
+    IDS_NEW_TITLE "Lisää taltio kohteeseen %s"
+    IDS_RESIZE_TITLE "Muuta kohteen %s kokoa"
+    IDS_SIZE_RANGE "Välillä %s - %s"
+    IDS_RESIZE_GROW "%s (kasvaa %s)"
+    IDS_RESIZE_SHRINK "%s (vapauttaa %s)"
+    IDS_LETTER_AUTO "Automaattinen"
+    IDS_LETTER_NONE "Ei mitään"
+    IDS_DELETE_MAIN "Poistetaanko %s?"
+    IDS_DELETE_CONTENT "Osio poistetaan levyltä, ja kaikki siihen tallennetut tiedot menetetään."
+    IDS_ERASE_TITLE "Tyhjennä %s"
+    IDS_ERASE_MAIN "Tyhjennetäänkö %s?"
+    IDS_ERASE_CONTENT "Kaikki tähän taltioon tallennetut tiedot menetetään."
+    IDS_ERASE_DISK_CONTENT "Kaikki tämän levyn osiot poistetaan, ja kaikki levylle tallennetut tiedot menetetään."
+    IDS_WORK_CREATE "Luodaan taltiota"
+    IDS_WORK_ERASE "Tyhjennetään"
+    IDS_WORK_CHECK "Tarkistetaan taltiota"
+    IDS_WORK_SHRINK "Pienennetään taltiota"
+    IDS_WORK_EXTEND "Laajennetaan taltiota"
+    IDS_STATUS_PARTITION "Kirjoitetaan osiotaulukkoa..."
+    IDS_STATUS_WAITING "Odotetaan taltion ilmestymistä..."
+    IDS_STATUS_FORMATTING "Alustetaan..."
+    IDS_STATUS_ERASING "Tyhjennetään levyä..."
+    IDS_STATUS_SHRINKING "Siirretään tietoja ja pienennetään..."
+    IDS_STATUS_EXTENDING "Laajennetaan..."
+    IDS_STATUS_DONE "Valmis."
+    IDS_STATUS_FAILED "Toiminto epäonnistui."
+    IDS_ERR_PARTITION "Osiotaulukkoa ei voitu päivittää."
+    IDS_ERR_NOVOLUME "Uutta taltiota ei ilmestynyt."
+    IDS_ERR_FORMAT "Taltiota ei voitu alustaa."
+    IDS_ERR_LETTER "Aseman kirjainta ei voitu muuttaa."
+    IDS_ERR_CHECK "Tarkistus löysi taltiosta ongelmia."
+    IDS_ERR_RESIZE "Taltion kokoa ei voitu muuttaa."
+    IDS_ERR_NOROOM "Tämän taltion kokoa ei voi muuttaa: vapautettavaa tilaa ei ole, eikä sen jälkeen ole vapaata tilaa."
+    IDS_ERR_INUSE "Taltio on käytössä. Sulje sitä käyttävät ohjelmat ja yritä uudelleen."
+    IDS_ERR_BUSY "Peruutettu tarkistus on vielä pysähtymässä. Yritä hetken kuluttua uudelleen."
+    IDS_ERR_READONLY "Tämä taltio on vain luku -tilassa, eikä sen kokoa voi muuttaa. Jos siinä on Windows-asennus, joka on asetettu horrostilaan tai sammutettu pikakäynnistyksellä, käynnistä Windows ja sammuta se kokonaan ja yritä sitten uudelleen."
+    IDS_CLOSE "Sulje"
+END

@@ -1,0 +1,124 @@
+/*
+ * PROJECT:     LiberNT Terminal
+ * LICENSE:     GPL-3.0-or-later (https://spdx.org/licenses/GPL-3.0-or-later)
+ * PURPOSE:     English (United States) resources
+ * COPYRIGHT:   Copyright 2026 Ahmed ARIF <arif.ing@outlook.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE               "Pääte"
+    IDS_NEW_TAB                 "Uusi välilehti"
+    IDS_SETTINGS                "Asetukset"
+    IDS_ABOUT                   "Tietoja"
+    IDS_CLOSE_ALL_TABS          "Tässä ikkunassa on useita välilehtiä. Suljetaanko ne kaikki?"
+    IDS_CLOSE_ALL_TABS_TITLE    "Sulje kaikki välilehdet"
+    IDS_PROCESS_EXITED          "[Prosessi päättyi koodilla %lu. Sulje tämä välilehti painamalla Enter.]"
+    IDS_START_FAILED            "Tätä profiilia ei voitu käynnistää.\r\n\r\n%s"
+    IDS_SETTINGS_ERROR          "Päätteen asetukset"
+    IDS_FIND_HINT               "Etsi"
+    IDS_FIND_COUNT              "%d/%d"
+    IDS_FIND_NONE               "Ei tuloksia"
+    IDS_RENAME_TAB              "Nimeä välilehti uudelleen"
+    IDS_OPEN_SETTINGS_FILE      "Avaa asetustiedosto"
+    IDS_DUPLICATE_TAB           "Monista välilehti"
+    IDS_CLOSE_TAB               "Sulje välilehti"
+    IDS_CLOSE_OTHER_TABS        "Sulje muut välilehdet"
+    IDS_CLOSE_TABS_RIGHT        "Sulje oikealla olevat välilehdet"
+    IDS_COPYRIGHT               "(C) Copyright 2026 LiberNT Team."
+    IDS_VERSION_LINE            "Versio 1.0"
+    IDS_DESCRIPTION             "Välilehdellinen pääte komentokehotteelle, PowerShellille ja Linux-komentotulkeille."
+    IDS_COPY                    "Kopioi"
+    IDS_PASTE                   "Liitä"
+    IDS_SELECT_ALL              "Valitse kaikki"
+    IDS_FIND                    "Etsi"
+    IDS_CLEAR_BUFFER            "Tyhjennä puskuri"
+    IDS_PROFILE_NEW             "Uusi profiili"
+    IDS_SCHEME_NEW              "Uusi teema"
+    IDS_SETTINGS_SAVED          "Asetukset tallennettiin."
+    IDS_SETTINGS_SAVE_FAILED    "Asetuksia ei tallennettu"
+
+    IDS_THEME_SYSTEM            "Käytä järjestelmän asetusta"
+    IDS_THEME_LIGHT             "Vaalea"
+    IDS_THEME_DARK              "Tumma"
+    IDS_CURSOR_BAR              "Pystyviiva"
+    IDS_CURSOR_BLOCK            "Täytetty laatikko"
+    IDS_CURSOR_UNDERLINE        "Alaviiva"
+    IDS_EXIT_GRACEFUL           "Sulje, jos se päättyy onnistuneesti"
+    IDS_EXIT_ALWAYS             "Sulje aina"
+    IDS_EXIT_NEVER              "Pidä välilehti auki"
+    IDS_COLUMN_ACTION           "Toiminto"
+    IDS_COLUMN_KEYS             "Näppäimet"
+    IDS_COLOR_FOREGROUND        "Edusta"
+    IDS_COLOR_BACKGROUND        "Tausta"
+    IDS_COLOR_CURSOR            "Kohdistin"
+    IDS_COLOR_SELECTION         "Valinta"
+
+    IDS_SETTINGS_WINDOW         "Päätteen asetukset"
+    IDS_SET_SECTION_PROFILES    "Profiilit"
+    IDS_SET_SECTION_COLORS      "Värit"
+    IDS_SET_SECTION_WINDOW      "Ikkuna"
+    IDS_SET_SECTION_KEYS        "Näppäimet"
+    IDS_SET_ADD                 "Uusi"
+    IDS_SET_NAME                "Nimi"
+    IDS_SET_COMMAND             "Komentorivi"
+    IDS_SET_DIRECTORY           "Aloituskansio"
+    IDS_SET_TAB_TITLE           "Välilehden otsikko"
+    IDS_SET_FONT                "Fontti ja koko"
+    IDS_SET_BOLD                "Lihavointi"
+    IDS_SET_CURSOR              "Kohdistin"
+    IDS_SET_BLINK               "Vilkkuminen"
+    IDS_SET_HISTORY             "Historiarivit"
+    IDS_SET_PADDING             "Reunus"
+    IDS_SET_ON_EXIT             "Kun prosessi päättyy"
+    IDS_SET_KEEP_TITLE          "Säilytä tässä annettu välilehden otsikko"
+    IDS_SET_BELL_SOUND          "Toista ääni äänimerkille"
+    IDS_SET_HIDDEN              "Piilota uuden välilehden valikosta"
+    IDS_SET_SCHEME_NAME         "Teeman nimi"
+    IDS_SET_SCHEME_COLORS       "Teksti ja kohdistin"
+    IDS_SET_PALETTE             "Paletti"
+    IDS_SET_DEFAULT_PROFILE     "Oletusprofiili"
+    IDS_SET_THEME               "Teema"
+    IDS_SET_WINDOW_SIZE         "Uuden ikkunan koko"
+    IDS_SET_COLUMNS             "saraketta"
+    IDS_SET_ROWS                "riviä"
+    IDS_SET_WORD_DELIMITERS     "Sanojen erottimet"
+    IDS_SET_COPY_ON_SELECT      "Kopioi teksti heti, kun se valitaan"
+    IDS_SET_CONFIRM_CLOSE       "Kysy ennen useita välilehtiä sisältävän ikkunan sulkemista"
+    IDS_SET_BELL_MARK           "Merkitse taustavälilehdet, jotka antavat äänimerkin"
+    IDS_SET_DUPLICATE           "Monista"
+    IDS_SET_DELETE              "Poista"
+    IDS_SET_BROWSE              "Selaa..."
+    IDS_SET_ASSIGN              "Määritä"
+    IDS_SET_REMOVE              "Poista"
+    IDS_SET_RESET               "Palauta kaikki"
+    IDS_SET_SAVE                "Tallenna"
+    IDS_SET_CANCEL              "Peruuta"
+    IDS_SET_OPEN_JSON           "Muokkaa settings.json-tiedostoa"
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 250, 104
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tietoja Päätteestä"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON            "", IDC_ABOUT_ICON, 12, 12, 32, 32
+    LTEXT           "", IDC_ABOUT_NAME, 54, 12, 186, 10
+    LTEXT           "", IDC_ABOUT_VERSION, 54, 25, 186, 10
+    LTEXT           "", IDC_ABOUT_COPYRIGHT, 54, 38, 186, 10
+    LTEXT           "", IDC_ABOUT_DESCRIPTION, 54, 54, 186, 22
+    DEFPUSHBUTTON   "OK", IDOK, 190, 82, 50, 14
+END
+
+IDD_RENAME DIALOGEX 0, 0, 220, 58
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nimeä välilehti uudelleen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_RENAME_EDIT, 7, 9, 206, 14, ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK", IDOK, 108, 36, 50, 14
+    PUSHBUTTON      "Peruuta", IDCANCEL, 163, 36, 50, 14
+END
+

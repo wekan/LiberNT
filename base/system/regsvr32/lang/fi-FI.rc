@@ -1,0 +1,19 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_UsageMessage "%s\n\nKäyttö: regsvr32 [/u] [/s] [/c] [/n] [/i[:cmdline]] dllname\n\
+/u -	Poista palvelimen rekisteröinti\n\
+/s -	Hiljainen; ei näytä viestiruutuja\n\
+/c -	Tulostus konsoliin\n\
+/i -	Kutsuu DllInstall-funktiota ja välittää sille valinnaisen [cmdline]; /u:n kanssa kutsuu DLL:n asennuksen poistoa\n\
+/n -	Ei kutsu DllRegisterServer-funktiota; tätä valitsinta on käytettävä /i:n kanssa"
+    IDS_NoDllSpecified "DLL-tiedoston nimeä ei ole määritetty."
+    IDS_InvalidFlag "Tuntematon valitsin: %s"
+    IDS_SwitchN_NoI "Tuntematon valitsin: /n on käytettävä /i-valitsimen kanssa"
+    IDS_DllNotLoaded "LoadLibrary('%s') epäonnistui.\nGetLastError palauttaa 0x%08x."
+    IDS_MissingEntry "%s ladattiin, mutta aloituskohtaa %s ei löytynyt.\n\n\
+%s ei ehkä ole viety, tai muistissa voi olla vioittunut versio tiedostosta %s. Voit havaita ja poistaa sen PView-ohjelmalla."
+    IDS_FailureMessage "%s kohteessa %s epäonnistui.\nPaluukoodi oli: 0x%08x"
+    IDS_SuccessMessage "%s kohteessa %s onnistui."
+END

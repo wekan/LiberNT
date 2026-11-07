@@ -1,0 +1,155 @@
+/*
+ * PROJECT:     ReactOS ipconfig utility
+ * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATOR:  Copyright 2005-2006 Ged Murphy <gedmurphy@gmail.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_HEADER "\nLiberNT IP -määritys\n\n"
+    IDS_HOSTNAME            "\tIsäntänimi. . . . . . . . . . . . : %hs\n"
+    IDS_PRIMARYDNSSUFFIX    "\tEnsisijainen DNS-pääte. . . . . . : %hs\n"
+    IDS_NODETYPEBCAST       "\tSolmun tyyppi . . . . . . . . . . : Yleislähetys\n"
+    IDS_NODETYPEP2P         "\tSolmun tyyppi . . . . . . . . . . : Vertaisverkko\n"
+    IDS_NODETYPEMIXED       "\tSolmun tyyppi . . . . . . . . . . : Sekoitettu\n"
+    IDS_NODETYPEHYBRID      "\tSolmun tyyppi . . . . . . . . . . : Hybridi\n"
+    IDS_NODETYPEUNKNOWN     "\tSolmun tyyppi . . . . . . . . . . : Tuntematon\n"
+    IDS_IPROUTINGNO         "\tIP-reititys käytössä. . . . . . . : Ei\n"
+    IDS_IPROUTINGYES        "\tIP-reititys käytössä. . . . . . . : Kyllä\n"
+    IDS_WINSPROXYNO         "\tWINS-välityspalvelin käytössä . . : Ei\n"
+    IDS_WINSPROXYYES        "\tWINS-välityspalvelin käytössä . . : Kyllä\n"
+    IDS_DNSSUFFIXLIST       "\tDNS-päätteiden hakuluettelo . . . : %hs\n"
+    IDS_EMPTYLINE           "\t                                    %hs\n"
+    IDS_MEDIADISCONNECTED   "\tTietovälineen tila. . . . . . . . : Tietovälineen yhteys katkaistu\n"
+    IDS_CONNECTIONDNSSUFFIX "\tYhteyskohtainen DNS-pääte . . . . : %hs\n"
+    IDS_DESCRIPTION         "\tKuvaus. . . . . . . . . . . . . . : "
+    IDS_PHYSICALADDRESS     "\tFyysinen osoite . . . . . . . . . : %hs\n"
+    IDS_DHCPNO              "\tDHCP käytössä . . . . . . . . . . : Ei\n"
+    IDS_DHCPYES             "\tDHCP käytössä . . . . . . . . . . : Kyllä\n"
+    IDS_AUTOCONFIGNO        "\tAutomaattimääritys käytössä . . . : Ei\n"
+    IDS_AUTOCONFIGYES       "\tAutomaattimääritys käytössä . . . : Kyllä\n"
+    IDS_IPADDRESS           "\tIPv4-osoite . . . . . . . . . . . : %hs\n"
+    IDS_SUBNETMASK          "\tAliverkon peite . . . . . . . . . : %hs\n"
+    IDS_DEFAULTGATEWAY      "\tOletusyhdyskäytävä. . . . . . . . : %hs\n"
+    IDS_DHCPSERVER          "\tDHCP-palvelin . . . . . . . . . . : %hs\n"
+    IDS_DNSSERVERS          "\tDNS-palvelimet. . . . . . . . . . : %hs\n"
+    IDS_PRIMARYWINSSERVER   "\tEnsisijainen WINS-palvelin. . . . : %hs\n"
+    IDS_SECONDARYWINSSERVER "\tToissijainen WINS-palvelin. . . . : %hs\n"
+    IDS_LEASEOBTAINED       "\tKäyttöoikeus saatu. . . . . . . . : %s\n"
+    IDS_LEASEEXPIRES        "\tKäyttöoikeus vanhenee . . . . . . : %s\n"
+    IDS_IPV6ADDRESS         "\tIPv6-osoite . . . . . . . . . . . : %hs"
+    IDS_TEMPIPV6ADDRESS     "\tVäliaikainen IPv6-osoite. . . . . : %hs"
+    IDS_LINKLOCALIPV6ADDRESS "\tLinkin paik. IPv6-osoite. . . . . : %hs"
+    IDS_DHCPV6IAID          "\tDHCPv6 IAID . . . . . . . . . . . : %lu\n"
+    IDS_DHCPV6DUID          "\tDHCPv6-asiakkaan DUID . . . . . . : %hs\n"
+    IDS_ADDRPREFERRED       "(Ensisijainen) \n"
+    IDS_ADDRTENTATIVE       "(Alustava) \n"
+    IDS_ADDRDEPRECATED      "(Vanhentunut) \n"
+    IDS_ADDRDUPLICATE       "(Kaksoiskappale) \n"
+    IDS_ADDREND             "\n"
+    IDS_CONNDNSSUFFIXLIST   "\tYhteyskohtainen DNS-päätteiden hakuluettelo :\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UNKNOWNADAPTER "\nTuntematon sovitin: %ls\n\n"
+    IDS_OTHER "\nMuun tyyppinen sovitin: %ls\n\n"
+    IDS_ETH "\nEthernet-sovitin: %ls\n\n"
+    IDS_TOKEN "\nToken Ring -sovitin: %ls\n\n"
+    IDS_FDDI "\nFDDI-sovitin: %ls\n\n"
+    IDS_PPP "\nPPP-sovitin: %ls\n\n"
+    IDS_LOOP "\nLoopback-sovitin: %ls\n\n"
+    IDS_SLIP "\nSLIP-sovitin: %ls\n\n"
+    IDS_WIFI "\nLangattoman verkon sovitin: %ls\n\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DNSNAME              "\t%ls\n"
+    IDS_DNSLINE              "\t----------------------------------------\n"
+    IDS_DNSRECORDNAME        "\tTietueen nimi . . . . : %ls\n"
+    IDS_DNSRECORDTYPE        "\tTietueen tyyppi . . . : %hu\n"
+    IDS_DNSRECORDTTL         "\tElinaika (TTL). . . . : %lu\n"
+    IDS_DNSRECORDLENGTH      "\tTietojen pituus . . . : %hu\n"
+    IDS_DNSSECTIONQUESTION   "\tOsa . . . . . . . . . : Kysymys\n"
+    IDS_DNSSECTIONANSWER     "\tOsa . . . . . . . . . : Vastaus\n"
+    IDS_DNSSECTIONAUTHORITY  "\tOsa . . . . . . . . . : Valtuutus\n"
+    IDS_DNSSECTIONADDITIONAL "\tOsa . . . . . . . . . : Lisätiedot\n"
+    IDS_DNSTYPEA             "\tA (isäntä) -tietue. . : %ls\n"
+    IDS_DNSTYPENS            "\tNS-tietue . . . . . . : %ls\n"
+    IDS_DNSTYPECNAME         "\tCNAME-tietue. . . . . : %ls\n"
+    IDS_DNSTYPESOA1          "\tSOA-tietue. . . . . . : %ls\n\t                        %ls\n\t                        %lu\n"
+    IDS_DNSTYPESOA2          "\t                        %lu\n\t                        %lu\n\t                        %lu\n\t                        %lu\n"
+    IDS_DNSTYPEPTR           "\tPTR-tietue. . . . . . : %ls\n"
+    IDS_DNSTYPEMX            "\tMX-tietue . . . . . . : %ls\n\t                        %hu\n\t                        %hu\n"
+    IDS_DNSTYPEAAAA          "\tAAAA-tietue . . . . . : %ls\n"
+    IDS_DNSTYPEATMA          "\tATMA-tietue . . . . . : \n"
+    IDS_DNSTYPESRV           "\tSRV-tietue. . . . . . : %ls\n\t                        %hu\n\t                        %hu\n\t                        %hu\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DNSNORECORD         "\tEi tyypin %ls tietueita\n\n"
+    IDS_DNSNONAME           "\tNimeä ei ole olemassa.\n\n"
+    IDS_DNSFLUSHERROR       "DNS-selvittimen välimuistin tyhjentäminen epäonnistui: "
+    IDS_DNSFLUSHSUCCESS     "DNS-selvittimen välimuisti tyhjennettiin.\n"
+    IDS_DHCPNOTCONNECTED    "Kohteelle %ls ei voi suorittaa toimintoja, kun sen tietovälineen yhteys on katkaistu.\n"
+    IDS_DHCPNOTENABLED      "DHCP ei ole käytössä sovittimessa %ls.\n"
+    IDS_DHCPNOADAPTER       "Toiminto epäonnistui, koska yksikään sovitin ei ole tähän toimintoon \nsallitussa tilassa.\n"
+    IDS_DHCPRELEASED        "Sovittimen %ls IP-osoite on jo vapautettu.\n"
+    IDS_DHCPRELEASEERROR    "Virhe vapautettaessa liittymää %ls : "
+    IDS_DHCPRENEWERROR      "Virhe uusittaessa liittymää %ls : "
+    IDS_DHCPSETIDERROR      "Sovittimen %ls luokkatunnuksen asettaminen epäonnistui: "
+    IDS_DHCPSETIDSUCCESS    "Sovittimen %ls luokkatunnus asetettiin.\n"
+END
+
+STRINGTABLE
+BEGIN
+/* Please keep the spacing/formatting as per en-US.rc when translating */
+    IDS_USAGE
+"\nKÄYTTÖ:\n\
+    ipconfig [/? | /all | /renew [sovitin] | /release [sovitin] |\n\
+              /renew6 [sovitin] | /release6 [sovitin] |\n\
+              /flushdns | /displaydns | /registerdns |\n\
+              /showclassid sovitin |\n\
+              /setclassid sovitin [luokkatunnus] ]\n\
+\n\
+    jossa:\n\
+    sovitin         Yhteyden nimi\n\
+                    (yleismerkit * ja ? sallittuja, katso esimerkit)\n\
+\n\
+Valinnat:\n\
+    /?              Näyttää tämän ohjeen.\n\
+    /all            Näyttää täydelliset määritystiedot.\n\
+    /release        Vapauttaa määritetyn sovittimen IPv4-osoitteen.\n\
+    /release6       Vapauttaa määritetyn sovittimen IPv6-osoitteen.\n\
+    /renew          Uusii määritetyn sovittimen IPv4-osoitteen.\n\
+    /renew6         Uusii määritetyn sovittimen IPv6-osoitteen.\n\
+    /flushdns       Tyhjentää DNS-selvittimen välimuistin.\n\
+    /registerdns    Päivittää kaikki DHCP-käyttöoikeudet ja rekisteröi DNS-nimet uudelleen.\n\
+    /displaydns     Näyttää DNS-selvittimen välimuistin sisällön.\n\
+    /showclassid    Näyttää kaikki sovittimelle sallitut DHCP-luokkatunnukset.\n\
+    /setclassid     Muuttaa DHCP-luokkatunnusta.\n\
+\n\
+Oletuksena näytetään vain kunkin TCP/IP:hen sidotun sovittimen IP-osoite,\n\
+aliverkon peite ja oletusyhdyskäytävä.\n\
+\n\
+Jos Release- ja Renew-valinnoille ei anneta sovittimen nimeä, kaikkien\n\
+TCP/IP:hen sidottujen sovittimien IP-osoitteiden käyttöoikeudet vapautetaan tai uusitaan.\n\
+\n\
+Jos Setclassid-valinnalle ei anneta luokkatunnusta, luokkatunnus poistetaan.\n\
+\n\
+Esimerkkejä:\n\
+    > ipconfig                   ... Näyttää tiedot.\n\
+    > ipconfig /all              ... Näyttää yksityiskohtaiset tiedot\n\
+    > ipconfig /renew            ... uusii kaikki sovittimet\n\
+    > ipconfig /renew EL*        ... uusii kaikki yhteydet, joiden nimi\n\
+                                     alkaa merkeillä EL\n\
+    > ipconfig /release *Con*    ... vapauttaa kaikki vastaavat yhteydet,\n\
+                                     esim. ""Local Area Connection 1""\n\
+                                     tai   ""Local Area Connection 2""\n"
+    IDS_CMDLINEERROR "\nVirhe: tuntematon tai puutteellinen komentorivi.\n"
+END

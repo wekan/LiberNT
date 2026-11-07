@@ -1,0 +1,45 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+/*
+ * For the standard names of these groups and accounts, please refer to:
+ * https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups
+ * https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-identifiers
+ * and their corresponding localized pages.
+ */
+STRINGTABLE
+BEGIN
+    IDS_DOMAIN_BUILTIN_NAME "Builtin"
+    IDS_GROUP_NONE_NAME "Ei mitään"
+    IDS_GROUP_NONE_COMMENT "Tavalliset käyttäjät"
+    IDS_ALIAS_ADMINISTRATORS_NAME "Järjestelmänvalvojat"
+    IDS_ALIAS_ADMINISTRATORS_COMMENT "Järjestelmänvalvojilla on rajoittamaton käyttöoikeus tietokoneeseen tai toimialueeseen."
+    IDS_ALIAS_GUESTS_NAME "Vieraat"
+    IDS_ALIAS_GUESTS_COMMENT "Vierailla on oletusarvoisesti samat oikeudet kuin Käyttäjät-ryhmän jäsenillä."
+    IDS_ALIAS_POWER_USERS_NAME "Tehokäyttäjät"
+    IDS_ALIAS_POWER_USERS_COMMENT "Tehokäyttäjillä on useimmat järjestelmänvalvojan oikeudet tietyin rajoituksin."
+    IDS_ALIAS_USERS_NAME "Käyttäjät"
+    IDS_ALIAS_USERS_COMMENT "Käyttäjät eivät voi tehdä koko järjestelmää koskevia muutoksia."
+    IDS_ALIAS_PRINT_OPS_NAME "Tulostusoperaattorit"
+    IDS_ALIAS_PRINT_OPS_COMMENT "Tämän ryhmän jäsenet voivat hallita toimialueen tulostimia."
+    IDS_ALIAS_BACKUP_OPS_NAME "Varmuuskopiointioperaattorit"
+    IDS_ALIAS_BACKUP_OPS_COMMENT "Varmuuskopiointioperaattorit voivat ohittaa suojausrajoitukset ainoastaan tiedostojen varmuuskopiointia tai palauttamista varten."
+    IDS_ALIAS_REPLICATOR_NAME "Replikaattori"
+    IDS_ALIAS_REPLICATOR_COMMENT "Tukee tiedostojen replikointia toimialueessa."
+    IDS_ALIAS_REMOTE_DESKTOP_USERS_NAME "Etätyöpöydän käyttäjät"
+    IDS_ALIAS_REMOTE_DESKTOP_USERS_COMMENT "Tämän ryhmän jäsenillä on oikeus kirjautua etäyhteyden kautta."
+    IDS_ALIAS_NETWORK_CONFIGURATION_OPS_NAME "Verkkomääritysoperaattorit"
+    IDS_ALIAS_NETWORK_CONFIGURATION_OPS_COMMENT "Tämän ryhmän jäsenillä voi olla joitakin järjestelmänvalvojan oikeuksia verkko-ominaisuuksien määritysten hallintaan."
+    IDS_ALIAS_MONITORING_USERS_NAME "Suorituskykynäytön käyttäjät"
+    IDS_ALIAS_MONITORING_USERS_COMMENT "Tämän ryhmän jäsenillä on etäkäyttöoikeus tämän tietokoneen valvontaan."
+    IDS_ALIAS_LOGGING_USERS_NAME "Suorituskykylokin käyttäjät"
+    IDS_ALIAS_LOGGING_USERS_COMMENT "Tämän ryhmän jäsenillä on etäkäyttöoikeus ajoittaa tämän tietokoneen suorituskykylaskurien kirjaamista."
+    /*
+     * ATTENTION:
+     *   If you translate the administrator account name, keep IDS_USER_ADMINISTRATOR_NAME and
+     *   syssetup.dll:IDS_ADMINISTRATOR_NAME synchronized.
+     */
+    IDS_USER_ADMINISTRATOR_NAME "Järjestelmänvalvoja"
+    IDS_USER_ADMINISTRATOR_COMMENT "Sisäinen tili tietokoneen tai toimialueen hallintaan."
+    IDS_USER_GUEST_NAME "Vieras"
+    IDS_USER_GUEST_COMMENT "Sisäinen tili tietokoneen tai toimialueen vieraskäyttöön."
+END

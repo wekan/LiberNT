@@ -1,0 +1,65 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+ID_ACCEL ACCELERATORS
+BEGIN
+    VK_DELETE, CMD_DELETE, VIRTKEY
+END
+
+MAIN_MENU MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Avaa...", CMD_OPEN
+        MENUITEM "Tallenna &nimellä...", CMD_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Lopeta", CMD_EXIT
+    END
+    POPUP "&Muokkaa"
+    BEGIN
+        MENUITEM "&Poista\tDel", CMD_DELETE
+    END
+    POPUP "&Näytä"
+    BEGIN
+        MENUITEM "&Automaattinen", CMD_AUTOMATIC
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Ohjeen aiheet", CMD_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Tietoja", CMD_ABOUT
+    END
+END
+
+STRINGTABLE
+BEGIN
+    STRING_CLIPBOARD "Leikepöydän katseluohjelma"
+    STRING_CLIPFILE  "Leikepöydän elementti"
+    STRING_DELETE_MSG "Tyhjennetäänkö leikepöydän sisältö?"
+    STRING_DELETE_TITLE "Tyhjennä leikepöytä"
+    STRING_FORMAT_NT "LiberNT:n leikepöytätiedostot (*.clp)"
+    STRING_FORMAT_GEN "Leikepöytätiedostot (*.clp)"
+END
+
+STRINGTABLE
+BEGIN
+    STRING_CF_UNKNOWN "Tuntematon muoto"
+    STRING_CF_TEXT "Teksti"
+    STRING_CF_BITMAP "Bittikartta"
+    STRING_CF_OEMTEXT "OEM-teksti"
+    STRING_CF_UNICODETEXT "Unicode-teksti"
+    STRING_CF_DIB "DIB-bittikartta"
+    STRING_CF_LOCALE "Aluekohtaiset tiedot"
+    STRING_CF_ENHMETAFILE "Laajennettu metatiedosto"
+    STRING_CF_METAFILEPICT "Metatiedosto"
+    STRING_CF_PALETTE "Väripaletti"
+    STRING_CF_DIBV5 "DIB-bittikartta (versio 5)"
+    STRING_CF_SYLK "Symbolic Link -muoto"
+    STRING_CF_DIF "Data Interchange -muoto"
+    STRING_CF_HDROP "Pudotustiedot"
+END
+
+STRINGTABLE
+BEGIN
+    ERROR_UNSUPPORTED_FORMAT "Leikepöydällä on tietoja muodossa, jota ei voi näyttää."
+    ERROR_INVALID_FILE_FORMAT "Valittu tiedosto ei ole kelvollinen leikepöytätiedosto."
+END

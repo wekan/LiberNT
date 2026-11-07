@@ -1,0 +1,58 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+    STRING_INVPARMS, "Virheellinen määrä parametreja - Ohje: xcopy /?\n"
+    STRING_INVPARM,  "Virheellinen parametri '%1' - Ohje: xcopy /?\n"
+    STRING_PAUSE,    "Aloita kopiointi painamalla <Enter>\n"
+    STRING_SIMCOPY,  "%1!d! tiedosto(a) kopioitaisiin\n"
+    STRING_COPY,     "%1!d! tiedosto(a) kopioitu\n"
+    STRING_QISDIR,   "Onko '%1' kohteessa tiedostonimi\n\
+                     vai kansio?\n\
+                     (T - Tiedosto, K - Kansio)\n"
+    STRING_SRCPROMPT,"%1? (Kyllä|Ei)\n"
+    STRING_OVERWRITE,"Korvataanko %1? (Kyllä|Ei|Aina)\n"
+    STRING_COPYFAIL, "Kohteen '%1' kopiointi kohteeseen '%2' epäonnistui, paluukoodi %3!d!\n"
+    STRING_OPENFAIL, "Kohteen '%1' avaaminen epäonnistui\n"
+    STRING_READFAIL, "Kohteen '%1' lukeminen epäonnistui\n"
+    STRING_YES_CHAR, "K"
+    STRING_NO_CHAR,  "E"
+    STRING_ALL_CHAR, "A"
+    STRING_FILE_CHAR,"T"
+    STRING_DIR_CHAR, "K"
+
+    STRING_HELP,
+"XCOPY - Kopioi lähdetiedostot tai kansiopuut kohteeseen.\n\
+\n\
+Syntaksi:\n\
+XCOPY lähde [kohde] [/I] [/S] [/Q] [/F] [/L] [/W] [/T] [/N] [/U]\n\
+\t     [/R] [/H] [/C] [/P] [/A] [/M] [/E] [/D] [/Y] [/-Y] [/K]\n\
+\n\
+Missä:\n\
+\n\
+[/I]  Olettaa kohteen kansioksi, jos sitä ei ole ja kopioidaan kaksi tai\n\
+\tuseampia tiedostoja.\n\
+[/S]  Kopioi kansiot ja alikansiot.\n\
+[/E]  Kopioi kansiot ja alikansiot, myös tyhjät.\n\
+[/Q]  Ei näytä nimiä kopioinnin aikana (hiljainen tila).\n\
+[/F]  Näyttää lähteen ja kohteen täydet nimet kopioinnin aikana.\n\
+[/L]  Simuloi toimintoa ja näyttää kopioitavien tiedostojen nimet.\n\
+[/W]  Kysyy vahvistusta ennen kopioinnin aloittamista.\n\
+[/T]  Luo tyhjän kansiorakenteen, mutta ei kopioi tiedostoja.\n\
+[/Y]  Ei kysy vahvistusta tiedostoja korvattaessa.\n\
+[/-Y] Kysyy vahvistusta tiedostoja korvattaessa.\n\
+[/P]  Kysyy vahvistusta ennen kunkin lähdetiedoston kopioimista.\n\
+[/N]  Kopioi käyttäen lyhyitä nimiä.\n\
+[/U]  Kopioi vain tiedostot, jotka ovat jo olemassa kohteessa.\n\
+[/R]  Korvaa myös vain luku -tiedostot.\n\
+[/H]  Kopioi myös piilotetut tiedostot ja järjestelmätiedostot.\n\
+[/C]  Jatkaa, vaikka kopioinnin aikana tapahtuisi virhe.\n\
+[/A]  Kopioi vain tiedostot, joilla on arkistomäärite.\n\
+[/M]  Kopioi vain tiedostot, joilla on arkistomäärite, ja poistaa\n\
+\tarkistomääritteen.\n\
+[/K]  Kopioi tiedostomääritteet; ilman tätä määritteitä ei säilytetä.\n\
+[/D | /D:m-d-y] Kopioi uudet tai annetun päivämäärän jälkeen muutetut tiedostot.\n\
+\t\tJos päivämäärää ei anneta, kopioi vain jos kohde on\n\
+\t\tlähdettä vanhempi.\n\n"
+
+}

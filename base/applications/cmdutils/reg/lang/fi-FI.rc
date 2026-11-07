@@ -1,0 +1,181 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+    STRING_USAGE, "Käyttö:\n\
+  REG [toiminto] [parametrit]\n\n\
+Tuetut toiminnot:\n\
+  ADD | COPY | DELETE | EXPORT | IMPORT | QUERY\n\n\
+Saat ohjeen tietystä toiminnosta kirjoittamalla:\n\
+  REG [toiminto] /?\n\n"
+
+    STRING_ADD_USAGE, "REG ADD <avain> [/v arvon_nimi | /ve] [/t tyyppi] [/s erotin] [/d tiedot] [/f]\n\n\
+  Lisää avaimen rekisteriin tai lisää uuden arvon annettuun rekisteriavaimeen.\n\n\
+  <avain>\n\
+     Lisättävä rekisteriavain tai, jos [/v] tai [/ve] on määritetty,\n\
+     avain, johon uudet rekisteritiedot lisätään.\n\n\
+     Muoto: JUURI\\Aliavain\n\n\
+     JUURI: Ennalta määritetty rekisteriavain. Sen on oltava jokin seuraavista:\n\n\
+         HKEY_LOCAL_MACHINE  | HKLM\n\
+         HKEY_CURRENT_USER   | HKCU\n\
+         HKEY_CLASSES_ROOT   | HKCR\n\
+         HKEY_USERS          | HKU\n\
+         HKEY_CURRENT_CONFIG | HKCC\n\n\
+     Aliavain: Rekisteriavaimen täydellinen polku annetun JUURI-avaimen alla.\n\n\
+  /v <arvon_nimi>\n\
+     Lisättävän rekisteriarvon nimi.\n\n\
+  /ve\n\
+     Lisää nimettömän rekisteriarvon. Tämä asetus muokkaa (Oletus)-\n\
+     rekisteriarvoa.\n\n\
+  /t <tyyppi>\n\
+     Rekisteriin lisättävien tietojen tyyppi. Jos [/t] on määritetty,\n\
+     <tyyppi> on oltava jokin seuraavista:\n\n\
+         REG_SZ    | REG_MULTI_SZ | REG_EXPAND_SZ\n\
+         REG_DWORD | REG_QWORD    | REG_BINARY   | REG_NONE\n\n\
+     Jos [/t] ei ole määritetty, oletustietotyyppi on REG_SZ.\n\n\
+  /s <erotin>\n\
+     Merkki, jolla REG_MULTI_SZ-tietojen merkkijonot erotetaan.\n\
+     Jos [/s] ei ole määritetty, oletuserotin on \\0.\n\n\
+  /d <tiedot>\n\
+     Uuteen rekisteriarvoon lisättävät tiedot.\n\n\
+  /f\n\
+     Muokkaa rekisteriä kysymättä vahvistusta.\n\n"
+
+    STRING_DELETE_USAGE, "REG DELETE <avain> [/v arvon_nimi | /ve | /va] [/f]\n\n\
+  Poistaa rekisteriavaimen (kaikkine aliavaimineen ja arvoineen) tai poistaa\n\
+  yhden tai useamman arvon annetusta rekisteriavaimesta.\n\n\
+  <avain>\n\
+     Poistettava rekisteriavain tai, jos jokin valitsimista [/v], [/ve] tai [/va]\n\
+     on määritetty, rekisteriavain, josta arvot poistetaan.\n\n\
+     Muoto: JUURI\\Aliavain\n\n\
+     JUURI: Ennalta määritetty rekisteriavain. Sen on oltava jokin seuraavista:\n\n\
+         HKEY_LOCAL_MACHINE  | HKLM\n\
+         HKEY_CURRENT_USER   | HKCU\n\
+         HKEY_CLASSES_ROOT   | HKCR\n\
+         HKEY_USERS          | HKU\n\
+         HKEY_CURRENT_CONFIG | HKCC\n\n\
+     Aliavain: Rekisteriavaimen täydellinen polku annetun JUURI-avaimen alla.\n\n\
+  /v <arvon_nimi>\n\
+     Poistettavan rekisteriarvon nimi.\n\n\
+  /ve\n\
+     Poistaa nimettömän rekisteriarvon. Tämä asetus poistaa (Oletus)-\n\
+     rekisteriarvon.\n\n\
+  /va\n\
+     Poistaa kaikki rekisteriavaimen arvot.\n\n\
+  /f\n\
+     Poistaa rekisteriavaimen (kaikkine aliavaimineen ja arvoineen)\n\
+     kysymättä vahvistusta.\n\n"
+
+    STRING_QUERY_USAGE, "REG QUERY <avain> [/v arvon_nimi | /ve] [/s]\n\n\
+  Hakee määritetyn rekisteriavaimen ja luettelee kaikki sen välittömät aliavaimet,\n\
+  arvot ja tiedot. Hae jokainen aliavain rekursiivisesti valitsimella [/s].\n\n\
+  <avain>\n\
+     Haettava rekisteriavain.\n\n\
+     Muoto: JUURI\\Aliavain\n\n\
+     JUURI: Ennalta määritetty rekisteriavain. Sen on oltava jokin seuraavista:\n\n\
+         HKEY_LOCAL_MACHINE  | HKLM\n\
+         HKEY_CURRENT_USER   | HKCU\n\
+         HKEY_CLASSES_ROOT   | HKCR\n\
+         HKEY_USERS          | HKU\n\
+         HKEY_CURRENT_CONFIG | HKCC\n\n\
+     Aliavain: Rekisteriavaimen täydellinen polku annetun JUURI-avaimen alla.\n\n\
+  /v <arvon_nimi>\n\
+     Haettavan rekisteriarvon nimi. Jos [/v] tai [/ve] ei ole\n\
+     määritetty, kaikki avaimen <avain> arvot luetellaan.\n\n\
+ /ve\n\
+     Hakee nimettömän rekisteriarvon. Tämä asetus hakee (Oletus)-\n\
+     rekisteriarvon.\n\n\
+  /s\n\
+     Luettelee kaikki avaimen <avain> ja sen aliavainten rekisterimerkinnät.\n\n"
+
+    STRING_SUCCESS, "reg: Toiminto onnistui\n"
+    STRING_INVALID_KEY, "reg: Virheellinen rekisteriavain\n"
+    STRING_INVALID_CMDLINE, "reg: Virheelliset komentoriviparametrit\n"
+    STRING_NO_REMOTE, "reg: Etäkoneeseen ei saada yhteyttä\n"
+    STRING_VALUE_NONEXIST, "reg: Määritettyä rekisteriarvoa ei löydy\n"
+    STRING_UNSUPPORTED_TYPE, "reg: Rekisterin tietotyyppiä ei tueta [%1]\n"
+    STRING_MISSING_NUMBER, "reg: Valitsimen [/d] jälkeen on annettava kelvollinen numeroarvo\n"
+    STRING_MISSING_HEXDATA, "reg: Valitsimen [/d] jälkeen on annettava kelvollinen heksadesimaaliarvo\n"
+    STRING_UNHANDLED_TYPE, "reg: Käsittelemätön rekisterin tietotyyppi [/t 0x%1!x!, /d %2]\n"
+    STRING_OVERWRITE_VALUE, "Rekisteriarvo '%1' on jo olemassa. Haluatko korvata sen?"
+    STRING_YES, "K"
+    STRING_NO, "E"
+    STRING_ALL, "A"
+    STRING_YESNO, " (Kyllä|Ei)"
+    STRING_YESNOALL, " (Kyllä|Ei|Aina)"
+    STRING_CANCELLED, "reg: Rekisteritoiminto peruutettiin\n"
+    STRING_DEFAULT_VALUE, "(Oletus)"
+    STRING_DELETE_VALUE, "Haluatko varmasti poistaa rekisteriarvon '%1'?"
+    STRING_DELETE_VALUEALL, "Haluatko varmasti poistaa kaikki kohteen '%1' rekisteriarvot?"
+    STRING_DELETE_SUBKEY, "Haluatko varmasti poistaa rekisteriavaimen '%1'?"
+    STRING_INVALID_STRING, "reg: Valitsimen [/d] jälkeen on annettava kelvollinen merkkijono\n"
+    STRING_VALUEALL_FAILED, "reg: Kaikkia kohteen '%1' rekisteriarvoja ei voitu poistaa\n"
+    STRING_MATCHES_FOUND, "Haku valmis. Löydettyjen osumien määrä: %1!d!\n"
+    STRING_INVALID_SYNTAX, "reg: Virheellinen syntaksi. "
+    STRING_INVALID_OPTION, "reg: Virheellinen valitsin [%1]. "
+    STRING_REG_HELP, "Saat ohjeen kirjoittamalla ""REG /?"".\n"
+    STRING_FUNC_HELP, "Saat ohjeen kirjoittamalla ""REG %1 /?"".\n"
+    STRING_VALUE_NOT_SET, "(arvoa ei ole asetettu)"
+
+    STRING_IMPORT_USAGE, "REG IMPORT <tiedosto>\n\n\
+  Tuo avaimet, arvot ja tiedot annetusta tiedostosta rekisteriin.\n\n\
+  <tiedosto>\n\
+     Tuotavan rekisteritiedoston nimi ja polku.\n\n"
+
+    STRING_FILE_NOT_FOUND, "reg: Tiedostoa '%1' ei löytynyt.\n"
+    STRING_ESCAPE_SEQUENCE, "reg: Tuntematon ohjausmerkkijono [\\%1!c!]\n"
+
+    STRING_EXPORT_USAGE, "REG EXPORT <avain> <tiedosto> [/y]\n\n\
+  Vie määritetyn rekisteriavaimen (kaikkine aliavaimineen ja arvoineen)\n\
+  tiedostoon.\n\n\
+  <avain>\n\
+     Vietävä rekisteriavain.\n\n\
+     Muoto: JUURI\\Aliavain\n\n\
+     JUURI: Ennalta määritetty rekisteriavain. Sen on oltava jokin seuraavista:\n\n\
+         HKEY_LOCAL_MACHINE  | HKLM\n\
+         HKEY_CURRENT_USER   | HKCU\n\
+         HKEY_CLASSES_ROOT   | HKCR\n\
+         HKEY_USERS          | HKU\n\
+         HKEY_CURRENT_CONFIG | HKCC\n\n\
+     Aliavain: Rekisteriavaimen täydellinen polku annetun JUURI-avaimen alla.\n\n\
+  <tiedosto>\n\
+     Luotavan rekisteritiedoston nimi ja polku.\n\
+     Tiedostotunnisteen on oltava .reg.\n\n\
+  /y\n\
+     Korvaa tiedoston <tiedosto> kysymättä vahvistusta.\n\n"
+
+    STRING_INVALID_SYSTEM_KEY, "reg: Virheellinen järjestelmäavain\n"
+    STRING_OVERWRITE_FILE, "Tiedosto '%1' on jo olemassa. Haluatko korvata sen?"
+    STRING_KEY_NONEXIST, "reg: Määritettyä rekisteriavainta ei löydy\n"
+    STRING_KEY_IMPORT_FAILED, "reg: Rekisteriavainta '%1' ei voitu tuoda\n"
+
+    STRING_REG_VIEW_USAGE, "  /reg:32\n\
+     Käyttää rekisteriä 32-bittisen näkymän kautta.\n\n\
+  /reg:64\n\
+     Käyttää rekisteriä 64-bittisen näkymän kautta.\n\n"
+    STRING_ACCESS_DENIED, "reg: Määritettyä rekisteriavainta ei voi käyttää tai luoda\n"
+
+    STRING_COPY_USAGE, "REG COPY <avain1> <avain2> [/s] [/f]\n\n\
+  Kopioi määritetyn rekisteriavaimen sisällön toiseen sijaintiin.\n\
+  Oletusarvoisesti toiminto kopioi vain rekisteriarvot. Kopioi kaikki\n\
+  aliavaimet ja arvot rekursiivisesti valitsimella [/s].\n\n\
+  <avain1>, <avain2>\n\
+     Rekisteriavaimet, jotka määrittävät tietojen lähteen (<avain1>) ja\n\
+     kohteen (<avain2>). Jos <avain2> ei ole olemassa, se luodaan.\n\n\
+     Muoto: JUURI\\Aliavain\n\n\
+     JUURI: Ennalta määritetty rekisteriavain. Sen on oltava jokin seuraavista:\n\n\
+         HKEY_LOCAL_MACHINE  | HKLM\n\
+         HKEY_CURRENT_USER   | HKCU\n\
+         HKEY_CLASSES_ROOT   | HKCR\n\
+         HKEY_USERS          | HKU\n\
+         HKEY_CURRENT_CONFIG | HKCC\n\n\
+     Aliavain: Rekisteriavaimen täydellinen polku annetun JUURI-avaimen alla.\n\n\
+  /s\n\
+     Kopioi kaikki aliavaimet ja arvot avaimesta <avain1> avaimeen <avain2>.\n\n\
+  /f\n\
+     Korvaa kaikki avaimen <avain2> rekisteritiedot kysymättä vahvistusta.\n\
+     Tämä asetus ei muokkaa aliavaimia ja arvoja, jotka ovat vain avaimessa <avain2>.\n\n"
+
+    STRING_COPY_SRC_DEST_SAME, "reg: Lähde- ja kohdeavain eivät voi olla samat\n"
+    STRING_COPY_CONFIRM, "Arvo '%1\\%2' on jo olemassa kohdeavaimessa. Haluatko korvata sen?"
+}

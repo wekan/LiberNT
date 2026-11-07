@@ -1,0 +1,28 @@
+/*
+ * PROJECT:     ReactOS Attrib Command
+ * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATORS: Copyright 2005 Magnus Olsen <magnus@greatlord.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    STRING_ATTRIB_HELP "Näyttää tai muuttaa tiedostomääritteitä.\n\n\
+ATTRIB [+R | -R] [+A | -A] [+S | -S] [+H | -H] tiedosto ...\n\
+       [/S [/D]]\n\n\
+  +   Asettaa määritteen\n\
+  -   Poistaa määritteen\n\
+  R   Vain luku -tiedostomäärite\n\
+  A   Arkistoitava-tiedostomäärite\n\
+  S   Järjestelmätiedosto-määrite\n\
+  H   Piilotettu-tiedostomäärite\n\
+  /S  Käsittelee vastaavat tiedostot nykyisessä kansiossa\n\
+      ja kaikissa alikansioissa\n\
+  /D  Käsittelee myös kansiot\n\n\
+Näytä kaikkien tiedostojen määritteet kirjoittamalla ATTRIB ilman parametria.\n"
+    STRING_CONSOLE_ERROR "Tuntematon virhe: %d\n"
+    STRING_FILE_NOT_FOUND "Tiedostoa ei löydy - '%s'\n"
+    STRING_ERROR_INVALID_PARAM_FORMAT "Virheellinen parametrin muoto - %s\n"
+END

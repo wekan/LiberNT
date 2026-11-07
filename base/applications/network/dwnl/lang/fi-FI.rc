@@ -1,0 +1,25 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Käyttö: dwnl URL [KOHDE]\n"
+    IDS_RESOLVING "Selvitetään %s... "
+    IDS_DONE "valmis.\n"
+    IDS_LENGTH_FULL "Pituus: %I64u [%s]\n"
+    IDS_LENGTH "Pituus: %I64u\n"
+    IDS_FILE_SAVED "\nTiedosto tallennettu.\n"
+    IDS_CONNECTING_TO_FULL "Muodostetaan yhteys kohteeseen %s [%s]... "
+    IDS_CONNECTING_TO "Muodostetaan yhteys kohteeseen %s... "
+    IDS_REDIRECTING_TO "Uudelleenohjataan kohteeseen %s... "
+    IDS_SEND_REQUEST "Lähetetään pyyntöä... "
+    IDS_BYTES_DOWNLOADED "%I64u tavua ladattu"
+    IDS_BYTES_DOWNLOADED_FULL "%2d%% (%I64u tavua ladattu)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR_DOWNLOAD "\nVIRHE: Lataus epäonnistui.\n"
+    IDS_ERROR_CODE "\nVIRHE: %u\n"
+    IDS_ERROR_FILENAME "\nVIRHE: Tiedostonimeä ei voi määrittää. Anna kohdetiedoston nimi.\n"
+    IDS_ERROR_PROTOCOL "\nVIRHE: Protokollaa ei tueta.\n"
+END

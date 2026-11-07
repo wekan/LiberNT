@@ -1,0 +1,58 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_LOGGEDOUTSAS "Tervetuloa!"
+    IDS_PRESSCTRLALTDELETE "Kirjaudu sisään painamalla Ctrl+Alt+Delete."
+    IDS_ASKFORUSER "Käyttäjänimi: "
+    IDS_ASKFORPASSWORD "Salasana: "
+END
+
+/* Shutdown Dialog Strings */
+STRINGTABLE
+BEGIN
+    IDS_SHUTDOWN_SHUTDOWN "Sammuta"
+    IDS_SHUTDOWN_RESTART "Käynnistä uudelleen"
+    IDS_SHUTDOWN_SLEEP "Lepotila"
+    IDS_SHUTDOWN_HIBERNATE "Horrostila"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LOGONUI_HINT_SIGNIN "Kirjaudu sisään painamalla mitä tahansa näppäintä tai napsauttamalla"
+    IDS_LOGONUI_HINT_UNLOCK "Avaa lukitus painamalla mitä tahansa näppäintä tai napsauttamalla"
+    IDS_LOGONUI_HINT_CAD_SIGNIN "Kirjaudu sisään painamalla Ctrl+Alt+Delete"
+    IDS_LOGONUI_HINT_CAD_UNLOCK "Avaa lukitus painamalla Ctrl+Alt+Delete"
+    IDS_LOGONUI_USERNAME "Käyttäjänimi"
+    IDS_LOGONUI_PASSWORD "Salasana"
+    IDS_LOGONUI_OTHER_USER "Muu käyttäjä"
+    IDS_LOGONUI_WELCOME "Tervetuloa"
+    IDS_LOGONUI_CAPSLOCK "Caps Lock on käytössä"
+    IDS_LOGONUI_WRONG_PASSWORD "Käyttäjänimi tai salasana on virheellinen. Yritä uudelleen."
+    IDS_LOGONUI_DISABLED "Tämä tili on poistettu käytöstä."
+    IDS_LOGONUI_LOCKED_OUT "Tämä tili on lukittu. Yritä myöhemmin uudelleen tai ota yhteys järjestelmänvalvojaan."
+    IDS_LOGONUI_ACCOUNT_EXPIRED "Tämä tili on vanhentunut."
+    IDS_LOGONUI_LOGON_HOURS "Tällä tilillä ei voi kirjautua sisään tähän aikaan."
+    IDS_LOGONUI_WORKSTATION "Tällä tilillä ei voi kirjautua sisään tähän laitteeseen."
+    IDS_LOGONUI_RESTRICTION "Tällä tilillä ei voi kirjautua sisään juuri nyt."
+    IDS_LOGONUI_FAILED "Kirjautuminen ei onnistunut. Yritä uudelleen."
+    IDS_LOGONUI_PASSWORD_EXPIRED "Salasanasi on vanhentunut. Jatka valitsemalla uusi salasana."
+    IDS_LOGONUI_PASSWORD_MUST_CHANGE "Valitse uusi salasana ennen ensimmäistä kirjautumista."
+    IDS_LOGONUI_UNLOCK_OTHER "Vain %s tai järjestelmänvalvoja voi avata tämän laitteen lukituksen."
+    IDS_LOGONUI_LOCK "Lukitse"
+    IDS_LOGONUI_SIGN_OUT "Kirjaudu ulos"
+    IDS_LOGONUI_CHANGE_PASSWORD "Vaihda salasana"
+    IDS_LOGONUI_TASK_MANAGER "Tehtävienhallinta"
+    IDS_LOGONUI_CANCEL "Peruuta"
+    IDS_LOGONUI_OLD_PASSWORD "Vanha salasana"
+    IDS_LOGONUI_NEW_PASSWORD "Uusi salasana"
+    IDS_LOGONUI_CONFIRM_PASSWORD "Vahvista salasana"
+    IDS_LOGONUI_MISMATCH "Salasanat eivät täsmää."
+    IDS_LOGONUI_CHANGE_FAILED "Salasanaa ei voitu vaihtaa. Tarkista vanha salasana ja yritä uudelleen."
+    IDS_LOGONUI_PASSWORD_RULES "Uusi salasana ei täytä salasanavaatimuksia."
+    IDS_LOGONUI_OK "OK"
+    IDS_LOGONUI_CHANGED "Salasanasi on vaihdettu."
+    IDS_LOGONUI_EMERGENCY_TITLE "Hätäuudelleenkäynnistys"
+    IDS_LOGONUI_EMERGENCY_TEXT "Käynnistä uudelleen heti valitsemalla OK. Kaikki tallentamattomat tiedot menetetään. Käytä tätä vain viimeisenä keinona."
+    IDS_LOGONUI_SIGN_IN "Kirjaudu sisään"
+END

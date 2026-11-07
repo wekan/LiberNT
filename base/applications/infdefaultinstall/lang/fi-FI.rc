@@ -1,0 +1,12 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_SUCCESS "Toiminto onnistui."
+    IDS_FAILED "Asennus epäonnistui."
+    IDS_UNSUPPORTED "Valitsemasi INF-tiedosto ei tue tätä asennustapaa"
+    IDS_USAGE "Käyttö: InfDefaultInstall.exe <INF-tiedosto>"
+    IDS_NO_SECTION "Vaadittua osaa ei löytynyt INF-tiedostosta."
+    IDS_ERROR_TITLE "Virhe"
+    IDS_INSTALL_ERROR "Asennusvirhe"
+END

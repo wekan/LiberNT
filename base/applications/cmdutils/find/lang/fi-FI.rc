@@ -1,0 +1,15 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "FIND: Tulostaa tiedoston kaikki rivit, jotka sisältävät merkkijonon.\n\n\
+FIND [/V] [/C] [/N] [/I] [/OFF[LINE]] ""merkkijono"" [tiedosto...]\n\
+  /V         Tulostaa rivit, jotka eivät sisällä merkkijonoa.\n\
+  /C         Laskee merkkijonon sisältävien rivien määrän.\n\
+  /N         Numeroi näytettävät rivit alkaen numerosta 1.\n\
+  /I         Ei erota isoja ja pieniä kirjaimia.\n\
+  /OFF[LINE] Ei ohita tiedostoja, joilla on offline-määrite."
+    IDS_NO_SUCH_FILE "FIND: %s: Tiedostoa ei ole\n"
+    IDS_CANNOT_OPEN "FIND: %s: Tiedostoa ei voi avata\n"
+    IDS_INVALID_SWITCH "FIND: Virheellinen valitsin\n"
+END

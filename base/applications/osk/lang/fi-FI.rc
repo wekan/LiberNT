@@ -1,0 +1,71 @@
+/*
+ * PROJECT:         ReactOS Kernel
+ * LICENSE:         GPL - See COPYING in the top level directory
+ * FILE:            base/applications/osk/lang/fi-FI.rc
+ * PURPOSE:         On screen keyboard (Finnish resources).
+ * PROGRAMMERS:     Denis ROBERT
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDR_OSK_MENU MENU
+BEGIN
+    POPUP "Tiedosto"
+    BEGIN
+        MENUITEM "&Lopeta", IDM_EXIT
+    END
+
+    POPUP "Näppäimistö"
+    BEGIN
+        MENUITEM "Laajennettu näppäimistö", IDM_ENHANCED_KB, CHECKED
+        MENUITEM "Vakionäppäimistö", IDM_STANDARD_KB
+        MENUITEM SEPARATOR
+        MENUITEM "Tavallinen asettelu", IDM_REG_LAYOUT, CHECKED, GRAYED
+        MENUITEM "Lohkoasettelu", IDM_BLOCK_LAYOUT, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "101 näppäintä", IDM_101_KEYS, CHECKED, GRAYED
+        MENUITEM "102 näppäintä", IDM_102_KEYS, GRAYED
+        MENUITEM "106 näppäintä", IDM_106_KEYS, GRAYED
+    END
+
+    POPUP "Asetukset"
+    BEGIN
+        MENUITEM "Aina päällimmäisenä", IDM_ON_TOP, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "&Käytä napsautusääntä", IDM_CLICK_SOUND
+        MENUITEM SEPARATOR
+        MENUITEM "Ki&rjoitustila...", IDM_TYPE_MODE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Fontti...", IDM_FONT
+    END
+
+    POPUP "Ohje"
+    BEGIN
+        MENUITEM "&Ohjeen aiheet", IDM_HELP_TOPICS, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Tietoja: Näyttönäppäimistö...", IDM_ABOUT
+    END
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OSK "Näyttönäppäimistö"
+    IDS_AUTHORS "Copyright Denis Robert"
+    IDS_NUMLOCK "Num"
+    IDS_CAPSLOCK "Caps"
+    IDS_SCROLLLOCK "Scroll"
+    /* Make sure the text fits onto the buttons */
+    IDS_ESCAPE "Esc"
+    IDS_PRN "Prn"
+    IDS_STOP "Stop"
+    IDS_ATTN "Attn"
+    IDS_INSERT "ins"
+    IDS_NUMLOCKKEY "nlk"
+    IDS_DELETE "del"
+    IDS_END "end"
+    IDS_CTRL "ctrl"
+    IDS_LEFTALT "alt"
+    IDS_RIGHTALT "alt"
+END
+
+/* EOF */

@@ -1,0 +1,71 @@
+/*
+ * FILE:        base/applications/network/route/lang/fi-FI.rc
+ * PURPOSE:     Finnish translations for ReactOS Route Command
+ * TRANSLATORS:
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE1 "\n\
+Käsittelee verkon reititystaulukoita.\n\n\
+ROUTE [-f] [-p] komento [kohde]\n\
+                [MASK verkkopeite] [yhdyskäytävä] [METRIC metriikka]\n\n\
+  -f           Tyhjentää reititystaulukosta kaikki yhdyskäytävämerkinnät\n\
+               ennen komennon suorittamista. Voidaan käyttää ADD- ja\n\
+               DELETE-komennon kanssa.\n\n\
+  -p           Tekee reitistä pysyvän järjestelmän käynnistysten välillä.\n\
+               Oletusarvoisesti reitit eivät säily, kun järjestelmä\n\
+               käynnistetään uudelleen. Voidaan käyttää ADD-komennon kanssa.\n\n\
+  komento      Jokin seuraavista vaihtoehdoista:\n\
+                 PRINT   Tulostaa reitit.\n\
+                 ADD     Lisää uuden reitin.\n\
+                 DELETE  Poistaa reitin.\n\
+  kohde        Määrittää isännän.\n\
+  verkkopeite  Määrittää reittimerkinnän verkkopeitteen arvon.\n\
+               Jos sitä ei määritetä, oletus on 255.255.255.255.\n\
+  yhdyskäytävä Määrittää yhdyskäytävän.\n\
+  metriikka    Määrittää metriikan eli kohteen kustannuksen.\n\
+  liittymä     Määrittää reitin liittymän numeron.\n"
+
+    IDS_USAGE2 "\n\
+route add -komennon käyttö:\n\
+route add <kohde> [mask <peite>] <yk> [metric <m>]\n\
+  Lisää reitin IP-reititystaulukkoon.\n\
+  <kohde> on verkko tai isäntä, johon reitti lisätään.\n\
+  <peite>  on käytettävä verkkopeite (tunnistetaan automaattisesti, jos puuttuu)\n\
+  <yk>     on yhdyskäytävä, jonka kautta verkkoon päästään\n\
+  <m>      on käytettävä metriikka (pienempi on parempi)\n"
+
+    IDS_USAGE3 "\n\
+Esimerkkejä:\n\
+    > route PRINT               ... tulostaa kaikki reitit\n\
+    > route PRINT 156*          ... tulostaa kaikki reitit, jotka vastaavat 156*\n\
+    > route ADD 156.0.0.0 MASK 255.0.0.0 156.0.1.12 METRIC 5\n\
+                   kohde^   verkkopeite^   yhdysk.^   metr.^\n\n\
+    > route DELETE 156.0.0.0    ... poistaa reitin\n\
+    > route DELETE 156*         ... poistaa kaikki reitit, jotka vastaavat 156*\n"
+
+    IDS_ROUTE_ADD_ERROR "Reitin lisääminen epäonnistui\n"
+    IDS_ROUTE_DEL_ERROR "Reitin poistaminen epäonnistui\n"
+    IDS_ROUTE_ENUM_ERROR "Reittien luetteleminen epäonnistui\n"
+    IDS_SEPARATOR "===========================================================================\n"
+    IDS_INTERFACE_LIST "Liittymäluettelo\n"
+    IDS_INTERFACE_ENTRY "0x%-2lx ........................... %s\n"
+    IDS_ETHERNET_ENTRY "0x%-2lx ...%s...... %s\n"
+    IDS_IPV4_ROUTE_TABLE "\nIPv4-reititystaulukko\n"
+    IDS_ACTIVE_ROUTES "Aktiiviset reitit:\n"
+    IDS_ROUTES_ENTRY "  %15s  %15s  %15s  %15s  %6ld\n"
+    IDS_PERSISTENT_ROUTES "Pysyvät reitit:\n"
+    IDS_PERSISTENT_ENTRY "  %15s  %15s  %15s  %8s\n"
+    IDS_DEFAULT_GATEWAY "Oletusyhdyskäytävä:%18s\n"
+    IDS_ROUTES_HEADER "Verkon kohde               Verkkopeite      Yhdyskäytävä   Liittymä   Metriikka\n"
+    IDS_PERSISTENT_HEADER "Verkon kohde               Verkkopeite      Yhdyskäytävä Metriikka\n"
+    IDS_NONE "  Ei mitään\n"
+    IDS_IPV6_ROUTE_TABLE "\nIPv6-reititystaulukko\n"
+    IDS_ROUTES6_HEADER " If Metriikka Verkon kohde          Yhdyskäytävä\n"
+    IDS_ROUTES6_ENTRY "%3lu %6lu %-24s %s\n"
+    IDS_ROUTES6_LONG_ENTRY "%3lu %6lu %s\n                                    %s\n"
+    IDS_ONLINK "Linkissä"
+END

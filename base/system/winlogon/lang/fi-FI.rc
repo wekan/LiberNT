@@ -1,0 +1,61 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_SHUTDOWNCOMPUTER DIALOGEX 45, 22, 164, 52
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Tietokoneen sammuttaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Voit nyt katkaista virran tietokoneesta.", IDC_SHUTDOWNCOMPUTER, 31, 13, 132, 8
+    ICON IDI_WINLOGON, IDC_SHTDOWNICON, 6, 7, 18, 20
+    DEFPUSHBUTTON "&Käynnistä", IDC_BTNSHTDOWNCOMPUTER, 62, 32, 40, 14
+END
+
+IDD_GINALOADFAILED DIALOGEX 58, 83, 231, 119
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Käyttöliittymävirhe"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjautumisen käyttöliittymän DLL-tiedoston %s lataaminen epäonnistui.", IDC_GINALOADFAILED, 39, 16, 156, 24
+    LTEXT "Pyydä järjestelmänvalvojaa korvaamaan DLL-tiedosto tai palauta alkuperäinen DLL-tiedosto.", IDC_GINALOADFAILEDCONTACT, 39, 53, 151, 25
+    DEFPUSHBUTTON "&Käynnistä uudelleen", IDOK, 80, 91, 68, 14
+END
+
+IDD_SYSSHUTDOWN DIALOGEX 50, 50, 180, 140
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_VISIBLE | WS_CAPTION | WS_POPUP
+CAPTION "Järjestelmän sammutus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON IDI_WARNING, IDC_SYSSHUTDOWNICON, 6, 7, 18, 20
+    LTEXT "Järjestelmän sammutus on aloitettu. Tallenna kaikki työsi ja lopeta istunto. Kaikki tallentamattomat tiedot menetetään, kun järjestelmä sammuu.", IDC_STATIC, 38, 7, 135, 40
+    LTEXT "Järjestelmä sammuu:", IDC_STATIC, 38, 50, 90, 8
+    LTEXT "00:00:00", IDC_SYSSHUTDOWNTIMELEFT, 132, 50, 41, 8
+    LTEXT "Viesti:", IDC_STATIC, 38, 65, 135, 8
+    EDITTEXT IDC_SYSSHUTDOWNMESSAGE, 34, 75, 139, 58, ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP, WS_EX_STATICEDGE
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PREPARENETWORKCONNECTIONS "Valmistellaan verkkoyhteyksiä"
+    IDS_APPLYINGCOMPUTERSETTINGS "Otetaan käyttöön tietokoneen asetuksia"
+    IDS_RUNNINGSTARTUPSCRIPTS "Suoritetaan käynnistyskomentosarjoja"
+    IDS_RUNNINGSHUTDOWNSCRIPTS "Suoritetaan sammutuskomentosarjoja"
+    IDS_APPLYINGYOURPERSONALSETTINGS "Otetaan käyttöön henkilökohtaisia asetuksia"
+    IDS_RUNNINGLOGOFFSCRIPTS "Suoritetaan uloskirjautumisen komentosarjoja"
+    IDS_RUNNINGLOGONSCRIPTS "Suoritetaan kirjautumisen komentosarjoja"
+    IDS_LOADINGYOURPERSONALSETTINGS "Ladataan henkilökohtaisia asetuksia"
+    IDS_CLOSINGNETWORKCONNECTIONS "Suljetaan verkkoyhteyksiä"
+    IDS_REACTOSISRESTARTING "Käynnistetään uudelleen"
+    IDS_REACTOSISSHUTTINGDOWN "Sammutetaan"
+    IDS_PREPARETOSTANDBY "Valmistellaan valmiustilaa"
+    IDS_PREPARETOHIBERNATE "Valmistellaan horrostilaa"
+    IDS_SAVEYOURSETTINGS "Tallennetaan asetuksia"
+    IDS_REACTOSISSTARTINGUP "LiberNT käynnistyy"
+    IDS_LOGGINGOFF "Kirjaudutaan ulos"
+    IDS_TIMEOUTSHORTFORMAT "%02d:%02d:%02d"
+    IDS_TIMEOUTLONGFORMAT "%d päivää"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_FAILEDACTIVATEUSERSHELL "Winlogon ei voinut aktivoida käyttäjän komentotulkkia!"
+END

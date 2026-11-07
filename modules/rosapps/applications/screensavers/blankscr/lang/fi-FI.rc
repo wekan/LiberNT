@@ -1,0 +1,7 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_DESCRIPTION "Tyhjä näyttö"
+    IDS_TEXT        "Asetuksia ei tarvitse määrittää."
+END

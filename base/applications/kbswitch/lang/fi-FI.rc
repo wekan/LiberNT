@@ -1,0 +1,21 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDR_POPUP MENU
+BEGIN
+    POPUP "popup"
+    BEGIN
+        MENUITEM "&Asetukset...", ID_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "&Lopeta", ID_EXIT
+    END
+END
+
+STRINGTABLE
+BEGIN
+    IDS_IME_ON "Syöttöjärjestelmä (IME) - KÄYTÖSSÄ"
+    IDS_IME_OFF "Syöttöjärjestelmä (IME) - EI KÄYTÖSSÄ"
+    IDS_SOFTKBD_ON "Näyttönäppäimistö - KÄYTÖSSÄ"
+    IDS_SOFTKBD_OFF "Näyttönäppäimistö - EI KÄYTÖSSÄ"
+    IDS_SHOWTOOLBAR "Näytä työkalurivi"
+    IDS_INPUTSYSTEM "Syöttöjärjestelmän (IME) määritys..."
+END

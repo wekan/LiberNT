@@ -1,0 +1,9 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_NTOBJFLD_NAME "NT-objektinimiavaruus"
+    IDS_REGISTRY_NAME "Järjestelmän rekisteri"
+    IDS_NTOBJFLD_COMMENT "Mahdollistaa NT-objektinimiavaruuden selaamisen"
+    IDS_REGISTRY_COMMENT "Mahdollistaa järjestelmän rekisterin selaamisen"
+END

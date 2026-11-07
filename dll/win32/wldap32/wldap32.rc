@@ -36,6 +36,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/wldap32_Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/wldap32_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/wldap32_Fr.rc"
 #endif

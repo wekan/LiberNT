@@ -1,0 +1,52 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Käyttö: WHERE [valitsimet] malli...\n\
+\n\
+Kuvaus:\n\
+    Näyttää mallien mukaisten tiedostojen sijainnin.\n\
+    Oletuksena tämä työkalu hakee käyttämällä malleja ja\n\
+    PATH-ympäristömuuttujan polkuja.\n\
+\n\
+Valitsimet:\n\
+  /F       Näyttää kaikki löydetyt tiedostot lainausmerkeissä.\n\
+  /Q       Hiljainen tila. Ei näytä tiedostoja eikä viestejä.\n\
+  /R dir   Aloittaa haun määritetystä hakemistosta ja hakee\n\
+           rekursiivisesti.\n\
+  /T       Näyttää kaikkien löydettyjen tiedostojen koon ja viimeisen\n\
+           muokkauspäivämäärän.\n\
+  pattern  Määrittää tiedostojen hakumallin. Yleismerkkejä * ja ? voi\n\
+           käyttää. Myös muotoja ""$env:pattern"" ja ""path:pattern"" voi\n\
+           käyttää, jolloin ""env"" on ympäristömuuttuja ja\n\
+           haku tehdään ""env""-ympäristömuuttujan\n\
+           poluista. Älä käytä näitä muotoja /R:n kanssa. Haku tehdään\n\
+           myös lisäämällä malliin PATHEXT-muuttujan\n\
+           tiedostotunnisteet.\n\
+  /?       Näyttää tämän viestin.\n\
+\n\
+HUOMAUTUS: Tämä työkalu palauttaa virhetason 0, jos haku onnistui,\n\
+      1, jos tiedostoa ei löytynyt, ja 2, jos tapahtui virhe.\n\
+\n\
+Esimerkki:\n\
+    WHERE myfile*.exe\n\
+    WHERE /F /T mspaint\n\
+    WHERE $WINDIR:notepad myfile???\n\
+    WHERE C:\\Windows;C:\\Windows\\system32:exp*.exe\n\
+    WHERE /R ""C:\\Program Files"" *.dll\n"
+
+    IDS_BAD_ARG "VIRHE: Virheellinen argumentti - '%ls'.\n"
+    IDS_NOT_FOUND "TIETO: Annettujen mallien mukaisia tiedostoja ei löytynyt.\n"
+    IDS_FILE_INFO "%10I64u  %-12ls %-12ls %ls\n"
+    IDS_WANT_VALUE "VIRHE: Kohteelle '%ls' tarvitaan arvo.\n"
+    IDS_TYPE_HELP "Saat käyttöohjeet kirjoittamalla ""WHERE /?"".\n"
+    IDS_ENVPAT_WITH_R "VIRHE: Muotoa ""$env:pattern"" ei voi käyttää /R:n kanssa.\n"
+    IDS_PATHPAT_WITH_R "VIRHE: Muotoa ""path:pattern"" ei voi käyttää /R:n kanssa.\n"
+    IDS_BAD_PATHPAT "VIRHE: Muodossa ""path:pattern"" on määritetty virheellinen malli.\n"
+    IDS_OUTOFMEMORY "VIRHE: Muisti loppui.\n"
+    IDS_BAD_ENVVAR "VIRHE: Ympäristömuuttujaa ""%ls"" ei löydy.\n"
+    IDS_CANT_FOUND "VIRHE: Järjestelmä ei löydä määritettyä tiedostoa.\n"
+    IDS_BAD_DIR "VIRHE: Määritetty hakemisto on virheellinen.\n"
+    IDS_BAD_NAME "VIRHE: Tiedostonimen, hakemistonimen tai taltion nimen syntaksi on virheellinen.\n"
+    IDS_TOO_MANY "VIRHE: Valitsinta '%ls' ei voi käyttää useammin kuin '%u' kertaa.\n"
+END

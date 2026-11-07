@@ -1,0 +1,27 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_INVALIDFORMAT "RunEx- tai RunOnceEx-merkinnän %1 muoto oli virheellinen. Funktion nimen jälkeen tarvitaan pystyviiva ('|'), ja funktion on tuettava WinMain()-parametreja."
+    IDS_LOADERROR "Virhe ladattaessa kohdetta %1. Tiedostoa ei ehkä ole asennettu tai se on vioittunut."
+    IDS_CALLERROR "Virhe tai poikkeus kutsuttaessa funktiota %1 kohteessa %2."
+    IDS_INCORRECTFORMAT "Seuraavan RunEx- tai RunOnceEx-komennon muoto on virheellinen: %1. Komentotulkin suorituskomennon on alettava merkeillä ||."
+    IDS_NOEXPORT "Funktiota %1 ei voi kutsua tiedostossa %2, koska funktiota ei ole olemassa tai sitä ei ole viety."
+    IDS_EXECUTEERROR "Virhe tai poikkeus suoritettaessa kohdetta %1."
+    IDS_NOFUNCTION "Funktiota %1 ei löydy tiedostosta %2."
+    IDS_NODEPENDENCY "Riippuvuustiedostoa %1 ei voi ladata."
+    IDS_SETUPERROR "Virhe määritettäessä kohdetta %1. Virhe on kirjattu lokiin, ja asennus jatkuu"
+    IDS_INCOMPLETE "Sovelluksen edellinen asennus ei ole valmis.\n\nViimeistele asennus kirjautumalla sisään järjestelmänvalvojan tilillä."
+    IDS_SETUP "LiberNT-asennus"
+    IDS_SERVICEERROR "Joitakin palveluja ei voitu käynnistää. Asennuksen on käynnistettävä järjestelmä uudelleen palvelujen käynnistämiseksi."
+END
+
+IDD_DIALOG DIALOGEX 0, 0, 206, 166
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "LiberNT-asennus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "LiberNT määrittää nyt seuraavia kohteita:", -1, 36, 13, 163, 11
+    LISTBOX IDC_LB_ITEMS, 36, 32, 163, 127, LBS_NOTIFY | LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    ICON IDI_ICON, -1, 7, 7, 20, 20
+END

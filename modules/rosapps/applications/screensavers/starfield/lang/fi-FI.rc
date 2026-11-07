@@ -1,0 +1,8 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_DESCRIPTION "Tähtikenttä-näytönsäästäjä"
+    IDS_TITLE       "Tietoja"
+    IDS_TEXT        "Asetuksia ei tarvitse määrittää."
+END

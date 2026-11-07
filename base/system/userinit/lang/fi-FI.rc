@@ -1,0 +1,7 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_SHELL_FAIL "Userinit ei voinut käynnistää komentotulkkia!"
+    IDS_INSTALLER_FAIL "Userinit ei voinut käynnistää asennusohjelmaa!"
+END

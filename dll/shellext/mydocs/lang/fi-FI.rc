@@ -1,0 +1,6 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+    IDS_NOSRCFILEFOUND "Lähdetiedostoa tai -kansiota '%ls' ei löydy."
+}

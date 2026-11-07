@@ -46,6 +46,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/oleaut32_Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/oleaut32_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/oleaut32_Fr.rc"
 #endif

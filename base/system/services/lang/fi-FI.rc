@@ -1,0 +1,16 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_SERVICE_START   "käynnistys"
+    IDS_SERVICE_STOP    "pysäytys"
+    IDS_SERVICE_PAUSE   "keskeytys"
+    IDS_SERVICE_RESUME  "jatko"
+    IDS_SERVICE_RUNNING "Käynnissä"
+    IDS_SERVICE_STOPPED "Pysäytetty"
+    IDS_SERVICE_PAUSED  "Keskeytetty"
+    IDS_RECOVERY_NONE        "Ei toimintoa"
+    IDS_RECOVERY_RESTART     "Käynnistä palvelu uudelleen"
+    IDS_RECOVERY_REBOOT      "Käynnistä tietokone uudelleen"
+    IDS_RECOVERY_RUN_COMMAND "Suorita määritetty palautusohjelma"
+END

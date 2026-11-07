@@ -1,0 +1,15 @@
+/*
+ * PROJECT:     ReactOS W32Time Service
+ * LICENSE:     GPL-2.0+ (https://spdx.org/licenses/GPL-2.0+)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATORS: Copyright 2019 Doug Lyons <douglyons@douglyons.com>
+ *              Copyright 2021 Eric Kohl <ekohl@reactos.org>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_DISPLAYNAME "Aikapalvelu"
+    IDS_DESCRIPTION "Ylläpitää päivämäärän ja kellonajan synkronointia kaikissa verkon asiakkaissa ja palvelimissa."
+END

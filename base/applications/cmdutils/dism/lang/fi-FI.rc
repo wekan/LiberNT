@@ -1,0 +1,240 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_HEADER "\nLevykuvien käyttöönotto- ja huoltotyökalu (DISM)\nVersio: %s\n\n"
+    IDS_ERROR_DECIMAL "\nVirhe: %lu\n\n"
+    IDS_ERROR_HEX "\nVirhe: 0x%08lx\n\n"
+    IDS_LOG_LOCATION "\nDISM-lokitiedosto on sijainnissa %s\n"
+    IDS_UNRECOGNIZED_TOKEN "DISM ei tunnista komentorivin asetusta ""%s"". \nLisätietoja saat ohjeesta suorittamalla DISM.exe /?.\n"
+    IDS_UNKNOWN_OPTION "Asetus %s on tuntematon. \nLisätietoja saat ohjeesta suorittamalla DISM.exe /?.\n"
+    IDS_MISSING_OPTION "Komentoriviltä puuttuu asetus %s.\nLisätietoja on ohjeessa.\n"
+    IDS_OPTIONS_CONFLICT "Asetuksia %s ja %s ei voi käyttää komentorivillä yhdessä.\nLisätietoja on ohjeessa.\n"
+    IDS_OPTION_REQUIRED "Komentoriviltä puuttuu pakollinen asetus.\nVarmista, että %s tai %s on määritetty.\n"
+    IDS_IMAGE_NOT_FOUND "Määritettyä levykuvaa ei ole määritetyssä levykuvasäilössä.\nTarkista ensin levykuvasäilön olemassa olevat levykuvat.\n"
+    IDS_INVALID_ARGUMENTS "Komennon käsittelyssä tapahtui virhe.\nVarmista, että komentorivin argumentit ovat kelvollisia. Lisätietoja on lokitiedostossa.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DETAILS "Levykuvan tiedot : %s\n\n"
+    IDS_INDEX "Indeksi : %d\n"
+    IDS_NAME "Nimi : %s\n"
+    IDS_DESCRIPTION "Kuvaus : %s\n"
+    IDS_SIZE "Koko : %s tavua\n"
+    IDS_WIM_BOOTABLE "WIM käynnistettävä : %s\n"
+    IDS_ARCHITECTURE "Arkkitehtuuri : %s\n"
+    IDS_HAL "Hal : %s\n"
+    IDS_VERSION "Versio : %s\n"
+    IDS_SP_BUILD "Service Pack -koontiversio : %s\n"
+    IDS_SP_LEVEL "Service Pack -taso : %s\n"
+    IDS_EDITION "Painos : %s\n"
+    IDS_INSTALLATION "Asennus : %s\n"
+    IDS_PRODUCT_TYPE "Tuotetyyppi : %s\n"
+    IDS_PRODUCT_SUITE "Tuotepaketti : %s\n"
+    IDS_SYSTEM_ROOT "Järjestelmän juuri : %s\n"
+    IDS_DIRECTORIES "Hakemistot : %s\n"
+    IDS_FILES "Tiedostot : %s\n"
+    IDS_CREATED "Luotu : %s\n"
+    IDS_MODIFIED "Muokattu : %s\n"
+    IDS_LANGUAGES "Kielet :\n"
+    IDS_LANGUAGES_UNDEFINED "Kielet : <määrittämätön>\n"
+    IDS_LANGUAGE "\t%s\n"
+    IDS_LANGUAGE_DEFAULT "\t%s (oletus)\n"
+    IDS_UNDEFINED "<määrittämätön>"
+    IDS_YES "Kyllä"
+    IDS_NO "Ei"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPLYING "Otetaan levykuvaa käyttöön\n"
+    IDS_SAVING "Tallennetaan levykuvaa\n"
+    IDS_EXPORTING "Viedään levykuvaa\n"
+    IDS_MOUNTED_IMAGES "Liitetyt levykuvat:\n\n\n"
+    IDS_NO_MOUNTED_IMAGES "Liitettyjä levykuvia ei löytynyt.\n\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HELP_GENERAL "\nDISM.exe [dism_options] {Imaging_command} [<Imaging_arguments>]\n\
+\n\
+KUVAUS:\n\
+\n\
+  DISM tallentaa, ottaa käyttöön, vie, jakaa ja tutkii Windows-levykuvia\n\
+  (WIM-, ESD- ja SWM-tiedostoja).\n\
+\n\
+WIM-KOMENNOT:\n\
+\n\
+  /List-Image             - Luettelee levykuvan tiedostot ja kansiot.\n\
+  /Delete-Image           - Poistaa levykuvan WIM-tiedostosta, jossa on\n\
+                            useita levykuvia.\n\
+  /Export-Image           - Kopioi levykuvan toiseen WIM- tai ESD-tiedostoon.\n\
+  /Append-Image           - Tallentaa hakemiston uutena levykuvana\n\
+                            olemassa olevaan WIM-tiedostoon.\n\
+  /Capture-Image          - Tallentaa hakemiston uuteen WIM-tiedostoon.\n\
+  /Get-MountedWimInfo     - Luettelee liitetyt WIM-levykuvat.\n\
+  /Get-WimInfo            - Näyttää WIM-tiedoston levykuvat.\n\
+  /Cleanup-Wim            - Poistaa rikkinäisten WIM-liitosten jäänteet.\n\
+\n\
+YLEISET LEVYKUVAKOMENNOT:\n\
+\n\
+  /Split-Image            - Jakaa WIM-tiedoston vain luku -muotoisiksi\n\
+                            osa-WIM-tiedostoiksi (SWM).\n\
+  /Apply-Image            - Ottaa levykuvan käyttöön hakemistoon.\n\
+  /Get-MountedImageInfo   - Luettelee liitetyt levykuvat.\n\
+  /Get-ImageInfo          - Näyttää WIM-, ESD- tai SWM-tiedoston levykuvat.\n\
+  /Cleanup-Mountpoints    - Poistaa rikkinäisten liitosten jäänteet.\n\
+\n\
+DISM-ASETUKSET:\n\
+\n\
+  /English                - Näyttää komentorivin tulosteen englanniksi.\n\
+  /LogPath                - Määrittää lokitiedoston polun.\n\
+  /Quiet                  - Näyttää vain virheilmoitukset.\n\
+\n\
+Saat ohjeen komennosta kirjoittamalla komennon välittömästi ennen /?.\n\
+\n\
+  Esimerkkejä:\n\
+    DISM.exe /Apply-Image /?\n\
+    DISM.exe /Get-ImageInfo /?\n\
+\n"
+    IDS_HELP_GET_IMAGEINFO "\n/Get-ImageInfo /ImageFile:<image_file> [/Index:<image_index> | /Name:<image_name>]\n\
+\n\
+  Näyttää WIM-, ESD- tai SWM-tiedoston levykuvat. Valitsimella /Index tai\n\
+  /Name näyttää kyseisen levykuvan tiedot.\n\
+\n\
+    Esimerkkejä:\n\
+      DISM.exe /Get-ImageInfo /ImageFile:C:\\images\\install.wim\n\
+      DISM.exe /Get-ImageInfo /ImageFile:C:\\images\\install.esd /Index:1\n\
+\n"
+    IDS_HELP_GET_WIMINFO "\n/Get-WimInfo /WimFile:<WIM_file> [/Index:<image_index> | /Name:<image_name>]\n\
+\n\
+  Näyttää WIM-tiedoston levykuvat. Valitsimella /Index tai /Name näyttää\n\
+  kyseisen levykuvan tiedot.\n\
+\n\
+    Esimerkkejä:\n\
+      DISM.exe /Get-WimInfo /WimFile:C:\\images\\install.wim\n\
+      DISM.exe /Get-WimInfo /WimFile:C:\\images\\install.wim /Index:1\n\
+\n"
+    IDS_HELP_LIST_IMAGE "\n/List-Image /ImageFile:<path_to_image_file>\n\
+  [/Index:<image_index> | /Name:<image_name>]\n\
+\n\
+  Luettelee levykuvan tiedostot ja kansiot.\n\
+  Jos tiedostossa on useita levykuvia, tarvitaan /Index tai /Name.\n\
+\n\
+    Esimerkki:\n\
+      DISM.exe /List-Image /ImageFile:install.wim /Index:1\n\
+\n"
+    IDS_HELP_APPLY_IMAGE "\n/Apply-Image /ImageFile:<path_to_image_file> /ApplyDir:<target_directory>\n\
+  [/Index:<image_index> | /Name:<image_name>] [/CheckIntegrity] [/Verify]\n\
+  [/NoRpFix] [/SWMFile:<pattern>] [/Compact] [/WIMBoot] [/EA]\n\
+\n\
+  Ottaa levykuvan käyttöön olemassa olevaan hakemistoon.\n\
+  /CheckIntegrity pysäyttää, jos WIM-tiedoston eheystaulukko ei täsmää.\n\
+  /Verify tarkistaa käyttöön otetut tiedot.\n\
+  /NoRpFix säilyttää uudelleenjäsennyskohdat sellaisina kuin ne tallennettiin.\n\
+  /SWMFile nimeää jaetun WIM-tiedoston osat polkuna ja mallina.\n\
+  /Compact ottaa tiedostot käyttöön pakattuina.\n\
+  /WIMBoot ottaa levykuvan käyttöön WIMBoot-tilassa.\n\
+  /EA ottaa käyttöön laajennetut määritteet.\n\
+  Jos tiedostossa on useita levykuvia, tarvitaan /Index tai /Name.\n\
+\n\
+    Esimerkkejä:\n\
+      DISM.exe /Apply-Image /ImageFile:install.wim /Index:1 /ApplyDir:D:\\\n\
+\n\
+      DISM.exe /Apply-Image /ImageFile:install.swm /SWMFile:install*.swm\n\
+        /ApplyDir:D:\\ /Index:1\n\
+\n"
+    IDS_HELP_CAPTURE_IMAGE "\n/Capture-Image /ImageFile:<path_to_image_file> /CaptureDir:<source_directory>\n\
+  /Name:<Name>\n\
+  [/Description:Description] [/ConfigFile:<wimscript.ini>]\n\
+  [/Compress:{fast|max|none}] [/Bootable] [/CheckIntegrity] [/Verify]\n\
+  [/NoRpFix] [/EA]\n\
+\n\
+  Tallentaa hakemiston kaikkine alikansioineen uuteen WIM-tiedostoon.\n\
+  /ConfigFile nimeää tiedoston, jossa luetellaan tallennuksesta ja\n\
+  pakkauksesta pois jätettävät polut.\n\
+  /Compress valitsee pakkauksen. Oletus on fast.\n\
+  /Bootable merkitsee levykuvan käynnistyslevykuvaksi.\n\
+  /CheckIntegrity tallentaa WIM-tiedostoon eheystaulukon.\n\
+  /Verify tarkistaa kirjoitetun WIM-tiedoston.\n\
+  /NoRpFix säilyttää uudelleenjäsennyskohdat sellaisinaan.\n\
+  /EA tallentaa laajennetut määritteet.\n\
+\n\
+    Esimerkki:\n\
+      DISM.exe /Capture-Image /ImageFile:install.wim /CaptureDir:D:\\\n\
+        /Name:Drive-D\n\
+\n"
+    IDS_HELP_APPEND_IMAGE "\n/Append-Image /ImageFile:<path_to_image_file> /CaptureDir:<source_directory>\n\
+  /Name:<Name>\n\
+  [/Description:Description] [/ConfigFile:<wimscript.ini>]\n\
+  [/Bootable] [/CheckIntegrity] [/Verify] [/NoRpFix] [/EA]\n\
+\n\
+  Tallentaa hakemiston uutena levykuvana olemassa olevaan WIM-tiedostoon.\n\
+  /ConfigFile nimeää tiedoston, jossa luetellaan tallennuksesta ja\n\
+  pakkauksesta pois jätettävät polut.\n\
+  /Bootable merkitsee levykuvan käynnistyslevykuvaksi.\n\
+  /CheckIntegrity tallentaa WIM-tiedostoon eheystaulukon.\n\
+  /Verify tarkistaa kirjoitetun WIM-tiedoston.\n\
+  /NoRpFix säilyttää uudelleenjäsennyskohdat sellaisinaan.\n\
+  /EA tallentaa laajennetut määritteet.\n\
+\n\
+    Esimerkki:\n\
+      DISM.exe /Append-Image /ImageFile:install.wim /CaptureDir:D:\\\n\
+        /Name:Drive-D\n\
+\n"
+    IDS_HELP_EXPORT_IMAGE "\n/Export-Image /SourceImageFile:<path_to_image_file> [/SWMFile:<pattern>]\n\
+  [/SourceIndex:<image_index> | /SourceName:<image_name>]\n\
+  /DestinationImageFile:<path_to_image_file> [/DestinationName:<Name>]\n\
+  [/Compress:{fast|max|none|recovery}] [/Bootable] [/CheckIntegrity]\n\
+  Jos tiedostossa on useita levykuvia, tarvitaan /SourceIndex tai /SourceName.\n\
+\n\
+  Kopioi levykuvan toiseen WIM- tai ESD-tiedostoon. Olemassa olevaan\n\
+  kohdetiedostoon levykuva lisätään uutena.\n\
+  /SWMFile nimeää jaetun WIM-tiedoston osat polkuna ja mallina.\n\
+  /Compress valitsee uuden kohdetiedoston pakkauksen.\n\
+  recovery kirjoittaa kiinteän ESD-tiedoston. Ilman sitä kohde käyttää\n\
+  lähteen pakkausta.\n\
+  /Bootable merkitsee levykuvan käynnistyslevykuvaksi.\n\
+  /CheckIntegrity tallentaa kohteeseen eheystaulukon.\n\
+\n\
+    Esimerkki:\n\
+      DISM.exe /Export-Image /SourceImageFile:install.wim /SourceIndex:1\n\
+        /DestinationImageFile:install2.wim\n\
+\n"
+    IDS_HELP_DELETE_IMAGE "\n/Delete-Image /ImageFile:<path_to_image_file>\n\
+  {/Index:<image_index> | /Name:<image_name>} [/CheckIntegrity]\n\
+\n\
+  Poistaa levykuvan WIM-tiedostosta, jossa on useita levykuvia.\n\
+  /CheckIntegrity tarkistaa ja päivittää eheystaulukon.\n\
+\n\
+    Esimerkki:\n\
+      DISM.exe /Delete-Image /ImageFile:install.wim /Index:1\n\
+\n"
+    IDS_HELP_SPLIT_IMAGE "\n/Split-Image\n\
+  /ImageFile:<path_to_image_file> /SWMFile:<path_to_swm> /FileSize:<MB-Size>\n\
+  [/CheckIntegrity]\n\
+\n\
+  Jakaa WIM-tiedoston vain luku -muotoisiksi osa-WIM-tiedostoiksi.\n\
+  /FileSize määrittää kunkin osan enimmäiskoon megatavuina (Mt).\n\
+  /CheckIntegrity tallentaa kuhunkin osaan eheystaulukon.\n\
+\n\
+    Esimerkki:\n\
+      DISM.exe /Split-Image /ImageFile:install.wim /SWMFile:split.swm\n\
+        /FileSize:650\n\
+\n"
+    IDS_HELP_GET_MOUNTED "\n/Get-MountedImageInfo\n\
+\n\
+  Luettelee liitetyt levykuvat ja niiden tilan.\n\
+\n\
+    Esimerkki:\n\
+      DISM.exe /Get-MountedImageInfo\n\
+\n"
+    IDS_HELP_CLEANUP "\n/Cleanup-Mountpoints\n\
+\n\
+  Poistaa rikkinäisten levykuvaliitosten jäänteet.\n\
+\n\
+    Esimerkki:\n\
+      DISM.exe /Cleanup-Mountpoints\n\
+\n"
+END

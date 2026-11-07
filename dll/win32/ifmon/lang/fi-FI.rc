@@ -1,0 +1,273 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_HLP_INTERFACE_SHOW "Näyttää tietoja.\n"
+    IDS_HLP_INTERFACE_SHOW_INTERFACE "Näyttää liittymät.\n"
+    IDS_HLP_INTERFACE_SHOW_INTERFACE_EX "\nKäyttö:\n"
+
+    IDS_HLP_IP_ADD "Lisää määritysmerkinnän taulukkoon.\n"
+    IDS_HLP_IP_ADD_ADDRESS     "Lisää IP-osoitteen määritettyyn liittymään.\n"
+    IDS_HLP_IP_ADD_ADDRESS_EX  "\nKäyttö: %1!s! [name=]<merkkijono> [[addr=]IP-osoite [mask=]aliverkon peite]\n\
+       [[gateway=]IP-osoite [gwmetric=]kokonaisluku]\n\n\
+Parametrit:\n\n\
+      name         - IP-liittymän nimi.\n\
+      addr         - Liittymään lisättävä IP-osoite.\n\
+      mask         - Määritetyn IP-osoitteen aliverkon peite.\n\
+      gateway      - Määritetyn IP-osoitteen oletusyhdyskäytävä.\n\
+      gwmetric     - Oletusyhdyskäytävän metriikka.\n\n\
+Huomautuksia: Lisää liittymään IP-osoitteita ja oletusyhdyskäytäviä. Jos DHCP\n\
+         on käytössä liittymässä, se poistetaan käytöstä.\n\n\
+Esimerkkejä:\n\n\
+       %1!s! ""Lähiverkkoyhteys"" 10.0.0.2  255.0.0.0\n\
+       %1!s! ""Lähiverkkoyhteys"" gateway=10.0.0.3 gwmetric=2\n\n\
+       Ensimmäinen komento lisää Lähiverkkoyhteys-liittymään staattisen\n\
+       IP-osoitteen 10.0.0.2 aliverkon peitteellä 255.0.0.0. Toinen komento\n\
+       lisää IP-osoitteen 10.0.0.3 tämän liittymän toiseksi\n\
+       oletusyhdyskäytäväksi yhdyskäytävän metriikalla 2.\n"
+
+    IDS_HLP_IP_ADD_DNS    "Lisää staattisen DNS-palvelimen osoitteen.\n"
+    IDS_HLP_IP_ADD_DNS_EX "\nKäyttö: %1!s! [name=]<merkkijono> [addr=]<IP-osoite> [[index=]<kokonaisluku>]\n\n\
+Parametrit:\n\n\
+      Tunniste       Arvo\n\
+      name         - Sen liittymän nimi, johon DNS-palvelimet lisätään.\n\
+      addr         - Lisättävän DNS-palvelimen IP-osoite.\n\
+      index        - Määrittää määritetyn DNS-palvelimen osoitteen\n\
+                     indeksin (etusijan).\n\n\
+Huomautuksia: Lisää uuden DNS-palvelimen IP-osoitteen staattiseen luetteloon.\n\
+         Oletusarvoisesti DNS-palvelin lisätään luettelon loppuun. Jos\n\
+         indeksi on määritetty, DNS-palvelin sijoitetaan siihen kohtaan\n\
+         luettelossa, ja muita palvelimia siirretään alaspäin.\n\
+         Jos DNS-palvelimet on aiemmin saatu DHCP:n kautta, uusi\n\
+         osoite korvaa vanhan luettelon.\n\n\
+Esimerkkejä:\n\n\
+       %1!s! ""Lähiverkkoyhteys"" 10.0.0.1\n\
+       %1!s! ""Lähiverkkoyhteys"" 10.0.0.3 index=2\n"
+
+    IDS_HLP_IP_DELETE            "Poistaa määritysmerkinnän taulukosta.\n"
+    IDS_HLP_IP_DELETE_ADDRESS    "Poistaa IP-osoitteen tai oletusyhdyskäytävän määritetystä liittymästä.\n"
+    IDS_HLP_IP_DELETE_ADDRESS_EX "\nKäyttö: %1!s! [name=]<merkkijono> [[addr=]IP-osoite] [[gateway=]IP-osoite|ALL]\n\n\
+Parametrit:\n\n\
+      Tunniste       Arvo\n\
+      name         - Liittymän nimi.\n\
+      addr         - Nimellä määritetyn liittymän staattinen IP-osoite.\n\
+      gateway      - Jokin seuraavista arvoista:\n\
+                     <IP-osoite>: Tietty oletusyhdyskäytävän IP-osoite\n\
+                                   poistettavalle staattiselle IP-osoitteelle.\n\
+                     ALL: Poistaa kaikki oletusyhdyskäytävien IP-osoitteet\n\
+                          poistettavalta staattiselta IP-osoitteelta.\n\n\
+Huomautuksia: Poistaa IP-osoitteen liittymästä, jolla on useita staattisia\n\
+         IP-osoitteita, tai poistaa oletusyhdyskäytävän määritetystä liittymästä.\n\n\
+Esimerkkejä:\n\n\
+       %1!s! ""Lähiverkkoyhteys"" addr=10.0.0.1 gateway=all\n"
+
+    IDS_HLP_IP_DELETE_ARPCACHE    "Tyhjentää yhden tai kaikkien liittymien ARP-välimuistin.\n"
+    IDS_HLP_IP_DELETE_ARPCACHE_EX "\nKäyttö: %1!s! [name=]<merkkijono>\n\n\
+Parametrit:\n\n\
+      Tunniste       Arvo\n\
+      name         - Tietyn liittymän kutsumanimi. Jos nimeä ei ole\n\
+                     määritetty, kaikkien liittymien ARP-välimuistit\n\
+                     tyhjennetään.\n\n\
+Huomautuksia: Tyhjentää osoitteenselvitysprotokollan (ARP) välimuistin tietystä\n\
+         liittymästä tai kaikista liittymistä.\n\n\
+Esimerkkejä:\n\n\
+       %1!s!\n\
+       %1!s! name=""Lähiverkkoyhteys""\n"
+
+    IDS_HLP_IP_DELETE_DNS    "Poistaa DNS-palvelimen määritetystä liittymästä.\n"
+    IDS_HLP_IP_DELETE_DNS_EX "\nKäyttö: %1!s! [name=]<merkkijono> [[addr=]<IP-osoite>|ALL ]\n\n\
+Parametrit:\n\n\
+      Tunniste       Arvo\n\
+      name         - Sen liittymän nimi, josta DNS-palvelimet poistetaan.\n\
+      addr         - Jokin seuraavista arvoista:\n\
+                     <IP-osoite>: Poistettavan DNS-palvelimen tietty\n\
+                                   IP-osoite.\n\
+                     ALL: Poistaa kaikki DNS-palvelinten määritetyt IP-osoitteet.\n\n\
+Huomautuksia: Poistaa tietyn liittymän staattisesti määritetyt\n\
+         DNS-palvelinten IP-osoitteet.\n\n\
+Esimerkkejä:\n\n\
+       %1!s! ""Lähiverkkoyhteys"" 10.0.0.1\n\
+       %1!s! ""Lähiverkkoyhteys"" all\n"
+
+    IDS_HLP_IP_SET             "Asettaa määritystiedot.\n"
+    IDS_HLP_IP_SET_ADDRESS     "Asettaa määritetyn liittymän IP-osoitteen tai oletusyhdyskäytävän.\n"
+    IDS_HLP_IP_SET_ADDRESS_EX  "\nKäyttö: %1!s! [name=]<merkkijono> \n\
+       [[source=]dhcp | \n\
+        [source=] static [addr=]IP-osoite [mask=]aliverkon peite]\n\
+       [[gateway=]<IP-osoite>|none [gwmetric=]kokonaisluku]\n\n\
+Parametrit:\n\n\
+      Tunniste       Arvo\n\
+      name         - Liittymän nimi.\n\
+      source       - Jokin seuraavista arvoista:\n\
+                     dhcp: Asettaa DHCP:n tietyn liittymän IP-osoitteiden\n\
+                           määrityslähteeksi.\n\
+                     static: Asettaa IP-osoitteiden määrityslähteeksi\n\
+                             paikallisen staattisen määrityksen.\n\
+      gateway      - Jokin seuraavista arvoista:\n\
+                     <IP-osoite>: Tietty oletusyhdyskäytävä asetettavalle\n\
+                                   staattiselle IP-osoitteelle.\n\
+                     none: Oletusyhdyskäytäviä ei aseteta.\n\
+      gwmetric     - Oletusyhdyskäytävän metriikka. Tätä kenttää ei pidä\n\
+                     asettaa, jos gateway on 'none'.\n\
+      Seuraavia asetuksia käytetään vain, jos source on 'static':\n\
+      addr         - Määritetyn liittymän IP-osoite.\n\
+      mask         - Määritetyn IP-osoitteen aliverkon peite.\n\n\
+Huomautuksia: Vaihtaa IP-osoitteen määritystilan DHCP:stä\n\
+         staattiseksi tai staattisesta DHCP:ksi. Lisää IP-osoitteita\n\
+         staattisen IP-osoitteen liittymään tai lisää oletusyhdyskäytäviä.\n\n\
+Esimerkkejä:\n\n\
+       %1!s! name=""Lähiverkkoyhteys"" source=dhcp\n\
+       %1!s! local static 10.0.0.9 255.0.0.0 10.0.0.1 1\n"
+
+    IDS_HLP_IP_SET_DNS         "Asettaa DNS-palvelimen tilan ja osoitteet.\n"
+    IDS_HLP_IP_SET_DNS_EX      "\nKäyttö: %1!s! [name=]<merkkijono> [source=]dhcp|static [addr=]<IP-osoite>|none\n\
+             [[register=]none|primary|both]\n\n\
+Parametrit:\n\n\
+      Tunniste       Arvo\n\
+      name         - Liittymän nimi.\n\
+      source       - Jokin seuraavista arvoista:\n\
+                     dhcp: Asettaa DHCP:n tietyn liittymän DNS-palvelinten\n\
+                           määrityslähteeksi.\n\
+                     static: Asettaa DNS-palvelinten määrityslähteeksi\n\
+                             paikallisen staattisen määrityksen.\n\
+      addr         - Jokin seuraavista arvoista:\n\
+                     <IP-osoite>: DNS-palvelimen IP-osoite.\n\
+                     none: Tyhjentää DNS-palvelinten luettelon.\n\
+      register     - Jokin seuraavista arvoista:\n\
+                     none: Poistaa dynaamisen DNS-rekisteröinnin käytöstä.\n\
+                     primary: Rekisteröi vain ensisijaisella DNS-liitteellä.\n\
+                     both: Rekisteröi sekä ensisijaisella DNS-liitteellä\n\
+                           että yhteyskohtaisella liitteellä.\n\n\
+Huomautuksia: Asettaa DNS-palvelinten määrityksen DHCP- tai staattiseen tilaan.\n\
+         Vain kun source on 'static', 'addr'-asetus on käytettävissä\n\
+         staattisen DNS-palvelinten IP-osoiteluettelon määrittämiseen\n\
+         määritetylle liittymälle.\n\n\
+Esimerkkejä:\n\n\
+       %1!s! name=""Lähiverkkoyhteys"" source=dhcp\n\
+       %1!s! ""Lähiverkkoyhteys"" static 10.0.0.1 primary\n"
+
+    IDS_HLP_IP_SHOW              "Näyttää IP-tiedot.\n"
+    IDS_HLP_IP_SHOW_ADDRESSES    "Näyttää IP-osoitteen määritykset.\n"
+    IDS_HLP_IP_SHOW_ADDRESSES_EX "\nKäyttö: %1!s! [[name=]merkkijono]\n\n\
+Parametrit:\n\n\
+      Tunniste        Arvo\n\
+      name            Tietyn liittymän nimi.\n\n\
+Huomautuksia: Näyttää tietyn liittymän tai liittymien IP-osoitemääritykset.\n\n\
+Esimerkkejä:\n\n\
+      %1!s! ""Lähiverkko""\n"
+    IDS_HLP_IP_SHOW_CONFIG       "Näyttää IP-osoitteen ja lisätietoja.\n"
+    IDS_HLP_IP_SHOW_CONFIG_EX    "\nKäyttö: %1!s! [[name=]merkkijono]\n\n\
+Parametrit:\n\n\
+      Tunniste        Arvo\n\
+      name            Tietyn liittymän nimi.\n\n\
+Huomautuksia: Näyttää tietyn liittymän tai liittymien IP-osoite- ja\nDNS-palvelinmääritykset.\n\n\
+Esimerkkejä:\n\n\
+      %1!s! ""Lähiverkko""\n"
+    IDS_HLP_IP_SHOW_DNS          "Näyttää DNS-palvelinten osoitteet.\n"
+    IDS_HLP_IP_SHOW_DNS_EX       "\nKäyttö: %1!s! [[name=]merkkijono]\n\n\
+Parametrit:\n\n\
+      Tunniste        Arvo\n\
+      name            Tietyn liittymän nimi.\n\n\
+Huomautuksia: Näyttää tietyn liittymän tai liittymien\nDNS-palvelinmääritykset.\n\n\
+Esimerkkejä:\n\n\
+      %1!s! ""Lähiverkko""\n"
+
+    IDS_HLP_IP_RESET    "Palauttaa TCP/IP:n ja siihen liittyvät osat alkutilaan.\n"
+    IDS_HLP_IP_RESET_EX "\nKäyttö: %1!s! [name=]<merkkijono>\n\n\
+Parametrit:\n\n\
+      Tunniste       Arvo\n\
+      name         - Sen tiedoston nimi, johon lisätään tiedot\n\
+                     palautetuista asetuksista.\n\n\
+Huomautuksia: Palauttaa TCP/IP:n ja siihen liittyvät osat alkutilaan.\n\n\
+Esimerkkejä:\n\n\
+       %1!s! resetlog.txt\n"
+
+    IDS_HLP_WINSOCK_RESET "Palauttaa Winsock-luettelon alkutilaan.\n"
+    IDS_HLP_WINSOCK_RESET_EX "\nKäyttö: %1!s!\n\n\
+Huomautuksia: Palauttaa Winsock-luettelon alkutilaan.\n"
+    IDS_HLP_WINSOCK_SHOW  "Näyttää tietoja.\n"
+    IDS_HLP_WINSOCK_SHOW_CATALOG "Näyttää Winsock-luettelon sisällön.\n"
+    IDS_HLP_WINSOCK_SHOW_CATALOG_EX "\nKäyttö: %1!s! [[type=]full]\n\n\
+Parametrit:\n\n\
+    \n"
+
+    IDS_IP_HEADER        "\nLiittymän ""%1!s!"" määritykset\n"
+    IDS_DHCP_ON          "    DHCP käytössä:                        Kyllä\n"
+    IDS_DHCP_OFF         "    DHCP käytössä:                        Ei\n"
+    IDS_NOIPADDRESS      "    IP-osoite:                            Ei mitään\n"
+    IDS_IPADDRESS        "    IP-osoite:                            %1!s!\n"
+    IDS_IPADDRESSES      "    IP-osoitteet:                         %1!s!\n"
+    IDS_NOSUBNETMASK     "    Aliverkon peite:                      Ei mitään\n"
+    IDS_SUBNETMASK       "    Aliverkon peite:                      %1!s!\n"
+    IDS_SUBNETMASKS      "    Aliverkon peitteet:                   %1!s!\n"
+    IDS_DEFAULTGATEWAY   "    Oletusyhdyskäytävä:                   %1!s!\n"
+    IDS_GATEWAYMETRIC    "    Yhdyskäytävän metriikka:              %1!s!\n"
+    IDS_INTERFACEMETRIC  "    Liittymän metriikka:                  %1!s!\n"
+    IDS_STATICNAMESERVER "    Staattiset DNS-palvelimet:            %1!s!\n"
+    IDS_DHCPNAMESERVER   "    DHCP:n määrittämät DNS-palvelimet:    %1!s!\n"
+    IDS_EMPTYLINE        "                                          %1!s!\n"
+
+    IDS_DUMP_NEWLINE     "\n"
+    IDS_DUMP_HEADERLINE  "# ----------------------------------\n"
+
+    IDS_DUMP_IP_HEADER    "# Liittymän IP-määritykset\n"
+    IDS_DUMP_IP_INTERFACE "# Liittymän ""%1!s!"" IP-määritykset\n"
+    IDS_DUMP_IP_FOOTER    "# Liittymän IP-määritysten loppu\n"
+
+    IDS_ERROR_INVALID_INTERFACE  "\nMääritetty liittymä %1!s! ei kelpaa.\n"
+    IDS_ERROR_BAD_VALUE "\n%1!s! ei ole hyväksyttävä arvo kohteelle %1!s!.\n"
+    IDS_ERROR_ALREADY_DHCP "\nDHCP on jo käytössä tässä liittymässä.\n"
+    IDS_ERROR_GET_PROPERTIES "\nVirhe haettaessa liittymän %1!s! määrityksiä.\n"
+
+    IDS_ERROR_ADD_DHCP_ADDRESS "\nStaattista IP-osoitetta ei voi lisätä liittymään, joka on määritetty käyttämään DHCP:tä.\n"
+    IDS_ERROR_DELETE_DHCP_ADDRESS "\nDHCP:n määrittämää IP-osoitetta ei voi poistaa.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HLP_IPV6_ADD                  "Lisää määritysmerkinnän taulukkoon.\n"
+    IDS_HLP_IPV6_ADD_ADDRESS          "Lisää IPv6-osoitteen liittymään.\n"
+    IDS_HLP_IPV6_ADD_ADDRESS_EX       "\nKäyttö: %1!s! [interface=]<merkkijono> [address=]<IPv6-osoite>[/<kokonaisluku>]\n             [[validlifetime=]<kokonaisluku>|infinite] [[preferredlifetime=]<kokonaisluku>|infinite]\n\nParametrit:\n\n      Tunniste          Arvo\n      interface         Liittymän nimi tai indeksi.\n      address           Lisättävä IPv6-osoite, jota voi seurata\n                        aliverkon etuliitteen pituus (oletus 64).\n      validlifetime     Aika, jonka osoite on voimassa.\n      preferredlifetime Aika, jonka osoite on ensisijainen.\n\nEsimerkkejä:\n\n      %1!s! ""Ethernet"" 2001:db8:1234::5/64\n"
+    IDS_HLP_IPV6_ADD_DNSSERVERS       "Lisää staattisen DNS-palvelimen osoitteen.\n"
+    IDS_HLP_IPV6_ADD_DNSSERVERS_EX    "\nKäyttö: %1!s! [interface=]<merkkijono> [address=]<IPv6-osoite> [[index=]<kokonaisluku>]\n\nParametrit:\n\n      Tunniste       Arvo\n      interface      Liittymän nimi tai indeksi.\n      address        DNS-palvelimen IPv6-osoite.\n      index          Palvelimen sijainti luettelossa.\n\nEsimerkkejä:\n\n      %1!s! ""Ethernet"" 2001:db8:1234::1\n"
+    IDS_HLP_IPV6_ADD_ROUTE            "Lisää reitin liittymään.\n"
+    IDS_HLP_IPV6_ADD_ROUTE_EX         "\nKäyttö: %1!s! [prefix=]<IPv6-osoite>/<kokonaisluku> [interface=]<merkkijono>\n             [[nexthop=]<IPv6-osoite>] [[metric=]<kokonaisluku>]\n\nParametrit:\n\n      Tunniste       Arvo\n      prefix         Etuliite, jolle reitti lisätään.\n      interface      Liittymän nimi tai indeksi.\n      nexthop        Yhdyskäytävän osoite, jos etuliite ei ole suoraan linkissä.\n      metric         Reitin metriikka.\n\nEsimerkkejä:\n\n      %1!s! ::/0 ""Ethernet"" fe80::1\n"
+    IDS_HLP_IPV6_DELETE               "Poistaa määritysmerkinnän taulukosta.\n"
+    IDS_HLP_IPV6_DELETE_ADDRESS       "Poistaa IPv6-osoitteen liittymästä.\n"
+    IDS_HLP_IPV6_DELETE_ADDRESS_EX    "\nKäyttö: %1!s! [interface=]<merkkijono> [address=]<IPv6-osoite>\n\nParametrit:\n\n      Tunniste       Arvo\n      interface      Liittymän nimi tai indeksi.\n      address        Poistettava IPv6-osoite.\n\nEsimerkkejä:\n\n      %1!s! ""Ethernet"" 2001:db8:1234::5\n"
+    IDS_HLP_IPV6_DELETE_DNSSERVERS    "Poistaa staattisen DNS-palvelimen osoitteen.\n"
+    IDS_HLP_IPV6_DELETE_DNSSERVERS_EX "\nKäyttö: %1!s! [interface=]<merkkijono> [address=]<IPv6-osoite>|all\n\nParametrit:\n\n      Tunniste       Arvo\n      interface      Liittymän nimi tai indeksi.\n      address        DNS-palvelimen IPv6-osoite tai all (kaikki).\n\nEsimerkkejä:\n\n      %1!s! ""Ethernet"" all\n"
+    IDS_HLP_IPV6_DELETE_ROUTE         "Poistaa reitin.\n"
+    IDS_HLP_IPV6_DELETE_ROUTE_EX      "\nKäyttö: %1!s! [prefix=]<IPv6-osoite>/<kokonaisluku> [interface=]<merkkijono> [[nexthop=]<IPv6-osoite>]\n\nParametrit:\n\n      Tunniste       Arvo\n      prefix         Poistettavan reitin etuliite.\n      interface      Liittymän nimi tai indeksi.\n      nexthop        Reitin yhdyskäytävän osoite.\n\nEsimerkkejä:\n\n      %1!s! ::/0 ""Ethernet"" fe80::1\n"
+    IDS_HLP_IPV6_SHOW                 "Näyttää tietoja.\n"
+    IDS_HLP_IPV6_SHOW_ADDRESSES       "Näyttää IPv6-osoitteet.\n"
+    IDS_HLP_IPV6_SHOW_ADDRESSES_EX    "\nKäyttö: %1!s! [[interface=]<merkkijono>]\n\nParametrit:\n\n      Tunniste       Arvo\n      interface      Liittymän nimi tai indeksi.\n\nHuomautuksia: Näyttää yhden tai kaikkien liittymien IPv6-osoitteet.\n"
+    IDS_HLP_IPV6_SHOW_DNSSERVERS      "Näyttää DNS-palvelinten osoitteet.\n"
+    IDS_HLP_IPV6_SHOW_DNSSERVERS_EX   "\nKäyttö: %1!s! [[name=]<merkkijono>]\n"
+    IDS_HLP_IPV6_SHOW_INTERFACES      "Näyttää liittymän parametrit.\n"
+    IDS_HLP_IPV6_SHOW_INTERFACES_EX   "\nKäyttö: %1!s!\n"
+    IDS_HLP_IPV6_SHOW_NEIGHBORS       "Näyttää naapurivälimuistin merkinnät.\n"
+    IDS_HLP_IPV6_SHOW_NEIGHBORS_EX    "\nKäyttö: %1!s!\n"
+    IDS_HLP_IPV6_SHOW_PREFIXPOLICIES  "Näyttää etuliitekäytännön merkinnät.\n"
+    IDS_HLP_IPV6_SHOW_PREFIXPOLICIES_EX "\nKäyttö: %1!s!\n"
+    IDS_HLP_IPV6_ADD_NEIGHBORS        "Lisää naapurin osoitteen.\n"
+    IDS_HLP_IPV6_ADD_NEIGHBORS_EX     "\nKäyttö: %1!s! [interface=]<merkkijono> [address=]<IPv6-osoite>\n             [neighbor=]<merkkijono> [[store=]active|persistent]\n\nParametrit:\n\n      Tunniste       Arvo\n      interface      Liittymän nimi tai indeksi.\n      address        Naapurin IPv6-osoite.\n      neighbor       Naapurin siirtokerroksen osoite.\n      store          active: lisäys on voimassa vain seuraavaan käynnistykseen asti.\n                     persistent: lisäys on pysyvä. Tämä on oletus.\n\nEsimerkkejä:\n\n      %1!s! ""Ethernet"" fe80::77 02-00-00-00-00-77\n"
+    IDS_HLP_IPV6_DELETE_NEIGHBORS     "Poistaa merkintöjä naapurivälimuistista.\n"
+    IDS_HLP_IPV6_DELETE_NEIGHBORS_EX  "\nKäyttö: %1!s! [interface=]<merkkijono> [[address=]<IPv6-osoite>] [[store=]active|persistent]\n\nParametrit:\n\n      Tunniste       Arvo\n      interface      Liittymän nimi tai indeksi.\n      address        Naapurin IPv6-osoite. Jos se jätetään pois, kaikki merkinnät poistetaan.\n      store          active: poisto on voimassa vain seuraavaan käynnistykseen asti.\n                     persistent: poisto on pysyvä. Tämä on oletus.\n\nEsimerkkejä:\n\n      %1!s! ""Ethernet"" fe80::77\n"
+    IDS_HLP_IPV6_SET                  "Asettaa määritystiedot.\n"
+    IDS_HLP_IPV6_SET_INTERFACE        "Muokkaa liittymän määritysparametreja.\n"
+    IDS_HLP_IPV6_SET_INTERFACE_EX     "\nKäyttö: %1!s! [interface=]<merkkijono> [[metric=]<kokonaisluku>] [[mtu=]<kokonaisluku>]\n             [[siteprefixlength=]<kokonaisluku>] [[routerdiscovery=]enabled|disabled|dhcp]\n             [[dadtransmits=]<kokonaisluku>] [[basereachabletime=]<kokonaisluku>]\n             [[retransmittime=]<kokonaisluku>] [[forwarding=]enabled|disabled]\n             [[advertise=]enabled|disabled] [[managedaddress=]enabled|disabled]\n             [[otherstateful=]enabled|disabled] [[weakhostsend=]enabled|disabled]\n             [[weakhostreceive=]enabled|disabled] [[ignoredefaultroutes=]enabled|disabled]\n             [[advertisedefaultroute=]enabled|disabled] [[store=]active|persistent]\n\nParametrit:\n\n      Tunniste           Arvo\n      interface          Liittymän nimi tai indeksi.\n      metric             Liittymän metriikka.\n      mtu                Liittymän MTU.\n      siteprefixlength   Sivuston yleisen etuliitteen pituus.\n      routerdiscovery    Reitittimen etsinnän toiminta.\n      dadtransmits       Päällekkäisten osoitteiden tunnistuslähetysten määrä.\n      basereachabletime  Perustavoitettavuusaika millisekunteina.\n      retransmittime     Uudelleenlähetysväli millisekunteina.\n      forwarding         Voidaanko tänne saapuvia paketteja välittää eteenpäin.\n      advertise          Lähetetäänkö reitittimen mainoksia.\n      managedaddress     Mainostettava hallitun osoitemäärityksen lippu.\n      otherstateful      Mainostettava muun tilallisen määrityksen lippu.\n      weakhostsend       Sallitaanko heikon isännän lähetykset.\n      weakhostreceive    Sallitaanko heikon isännän vastaanotot.\n      ignoredefaultroutes Ohitetaanko tämän liittymän oletusreitit.\n      advertisedefaultroute Mainostetaanko oletusreittiä.\n      store              active: asetus on voimassa vain seuraavaan käynnistykseen asti.\n                         persistent: asetus on pysyvä. Tämä on oletus.\n\nEsimerkkejä:\n\n      %1!s! ""Ethernet"" metric=20\n"
+    IDS_HLP_IPV6_SHOW_ROUTE           "Näyttää reititystaulukon merkinnät.\n"
+    IDS_HLP_IPV6_SHOW_ROUTE_EX        "\nKäyttö: %1!s!\n"
+    IDS_IPV6_ADDRESS_HEADER  "\nLiittymä %1!lu!: %2!s!\n\nOs.tyyppi  DAD-tila    Voim.aika  Ens.aika   Osoite\n---------  ----------- ---------- ---------- ------------------------\n"
+    IDS_IPV6_ROUTE_HEADER    "\nJulk.    Tyyppi    Met  Etuliite                  Ind  Yhdyskäytävä/liittymän nimi\n-------  --------  ---  ------------------------  ---  ------------------------\n"
+    IDS_IPV6_INTERFACE_HEADER "\nInd     Met         MTU          Tila                 Nimi\n---  ----------  ----------  ------------  ---------------------------\n"
+    IDS_IPV6_NEIGHBOR_HEADER "\nLiittymä %1!lu!: %2!s!\n\n\nInternet-osoite                               Fyysinen osoite    Tyyppi\n--------------------------------------------  -----------------  -----------\n"
+    IDS_IPV6_DNS_HEADER      "\nLiittymän ""%1!s!"" määritykset\n"
+    IDS_IPV6_DNS_DHCP        "    DHCP:n määrittämät DNS-palvelimet:    %1!s!\n"
+    IDS_IPV6_DNS_STATIC      "    Staattiset DNS-palvelimet:            %1!s!\n"
+    IDS_IPV6_DNS_NEXT        "                                          %1!s!\n"
+    IDS_IPV6_DNS_SUFFIX      "    Rekisteröintiliite:                   Vain ensisijainen\n"
+    IDS_IPV6_OK              "OK.\n\n"
+    IDS_IPV6_POLICY_HEADER   "Kysytään aktiivista tilaa...\n\nEtusija     Nimiö  Etuliite\n----------  -----  --------------------------------\n"
+END

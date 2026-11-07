@@ -1,0 +1,39 @@
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\n\
+Käyttö: tracert [-d] [-h enim_hypyt] [-j isäntäluettelo] [-w aikakatkaisu] kohdenimi\n\n\
+Asetukset:\n\
+    -d                 Älä selvitä osoitteita isäntänimiksi.\n\
+    -h enim_hypyt      Kohteen etsinnän hyppyjen enimmäismäärä.\n\
+    -j isäntäluettelo  Väljä lähdereititys isäntäluettelon kautta.\n\
+    -w aikakatkaisu    Odota kutakin vastausta aikakatkaisun verran millisekunteja.\n\
+    -4                 Pakota IPv4:n käyttö.\n\
+    -6                 Pakota IPv6:n käyttö.\n\
+\n"
+
+    IDS_INVALID_OPTION  "%1 ei ole kelvollinen komennon valitsin.\n"
+    IDS_TRACE_INFO      "\nJäljitetään reittiä kohteeseen %1 [%2]\nenintään %3!u! hypyn kautta:\n\n"
+    IDS_TRACE_COMPLETE  "\nJäljitys valmis.\n"
+    IDS_UNABLE_RESOLVE  "Kohdejärjestelmän nimeä %1 ei voi selvittää.\n"
+
+    IDS_GEN_FAILURE     "Yleinen virhe.\n"
+    IDS_TRANSMIT_FAILED "Lähetys epäonnistui. (Virhe %1!u!)\n"
+
+    IDS_HOP_COUNT       "%1!3lu!  %0\n"
+    IDS_HOP_TIME        "%1!4lu! ms  %0\n"
+    IDS_HOP_ZERO        "  <1 ms  %0\n"
+    IDS_TIMEOUT         "   *     %0\n"
+    IDS_HOP_RES_INFO    "%1 [%2]"
+    IDS_HOP_IP_INFO     "%1"
+    IDS_LINEBREAK       "\r\n"
+    IDS_REQ_TIMED_OUT   "Pyyntö aikakatkaistiin.\n"
+    IDS_HOP_RESPONSE    "  raportoi: "
+    IDS_DEST_HOST_UNREACHABLE "Kohdeisäntään ei saada yhteyttä.\n"
+    IDS_DEST_NET_UNREACHABLE  "Kohdeverkkoon ei saada yhteyttä.\n"
+    IDS_BAD_OPTION_VALUE      "Valitsimen %1!ls! arvo on virheellinen.\n"
+    IDS_MISSING_OPTION_VALUE  "Valitsimelle %1!ls! on annettava arvo.\n"
+    IDS_MISSING_TARGET "Kohteen nimi tai osoite on määritettävä.\n"
+END

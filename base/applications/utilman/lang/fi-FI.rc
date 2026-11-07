@@ -1,0 +1,14 @@
+/*
+ * PROJECT:         ReactOS Utility Manager (Accessibility)
+ * LICENSE:         GPL-2.0+ (https://spdx.org/licenses/GPL-2.0+)
+ * PURPOSE:         Finnish translation resource
+ * COPYRIGHT:       Copyright 2019-2020 George Bișoc (george.bisoc@reactos.org)
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_FAIL_INIT "Apuohjelmien hallinnan kirjaston alustaminen epäonnistui! Virhekoodi on %lu."
+    IDS_FAIL_INIT_TITLE "Alustusvirhe"
+END

@@ -1,0 +1,31 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE01 "RUNAS-KÄYTTÖ\n\n"
+    IDS_USAGE02 "RUNAS [ [/noprofile | /profile] [/env] [/savecred | /netonly] ]\n"
+    IDS_USAGE03 "      /user:<Käyttäjänimi> ohjelma\n\n"
+    IDS_USAGE04 "RUNAS [ [/noprofile | /profile] [/env] [/savecred | /netonly] ]\n"
+    IDS_USAGE05 "      /smartcard [/user:<Käyttäjänimi>] ohjelma\n\n"
+    IDS_USAGE06 "   /noprofile      määrittää, että käyttäjän profiilia ei ladata.\n"
+    IDS_USAGE07 "                   Tämä nopeuttaa sovelluksen latautumista, mutta\n"
+    IDS_USAGE08 "                   voi aiheuttaa joidenkin sovellusten virhetoimintaa.\n"
+    IDS_USAGE09 "   /profile        määrittää, että käyttäjän profiili ladataan.\n"
+    IDS_USAGE10 "                   Tämä on oletus.\n" 
+    IDS_USAGE11 "   /env            käytä nykyistä ympäristöä käyttäjän ympäristön sijaan.\n"
+    IDS_USAGE12 "   /netonly        käytä, jos annetut tunnistetiedot ovat vain\n"
+    IDS_USAGE13 "                   etäkäyttöä varten.\n"
+    IDS_USAGE14 "   /savecred       Ei vielä toteutettu.\n"
+    IDS_USAGE15 "   /smartcard      Ei vielä toteutettu.\n"
+    IDS_USAGE16 "   /user           <Käyttäjänimi> muodossa KÄYTTÄJÄ@TOIMIALUE tai TOIMIALUE\\KÄYTTÄJÄ\n"
+    IDS_USAGE17 "   ohjelma         EXE-tiedoston komentorivi.  Katso esimerkit alta\n\n"
+    IDS_USAGE18 "Esimerkki:\n"
+    IDS_USAGE19 "> runas /noprofile /user:mymachine\\administrator cmd\n\n"
+    IDS_USAGE20 "HUOMAUTUS:  /profile ei ole yhteensopiva valitsimen /netonly kanssa.\n"
+
+    IDS_START     "Yritetään käynnistää %s käyttäjänä ""%s\\%s""...\n"
+    IDS_RUN_ERROR "RUNAS-VIRHE: Kohdetta %s ei voi suorittaa\n"
+    IDS_INTERNAL_ERROR "RUNAS-VIRHE: Sisäinen virhe %ld\n"
+
+    IDS_PASSWORD  "Anna käyttäjän ""%s\\%s"" salasana: "
+END

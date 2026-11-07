@@ -35,6 +35,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/msvfw32_Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/msvfw32_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/msvfw32_Fr.rc"
 #endif

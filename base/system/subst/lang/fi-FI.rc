@@ -1,0 +1,20 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_INCORRECT_PARAMETER_COUNT "Väärä määrä parametreja - %s\n"
+    IDS_INVALID_PARAMETER "Väärä määrä parametreja - %s\n"
+    IDS_INVALID_PARAMETER2 "Virheellinen parametri - %s\n"
+    IDS_PATH_NOT_FOUND "Polkua ei löydy - %s\n"
+    IDS_ACCESS_DENIED "Käyttö estetty - %s\n"
+    IDS_DRIVE_ALREADY_SUBSTED "Asema on jo korvattu SUBST-komennolla\n"
+    IDS_FAILED_WITH_ERRORCODE "Epäonnistui, virhekoodi 0x%x: %s\n"
+    IDS_USAGE "Liittää polun asemakirjaimeen.\n\n\
+SUBST [asema1: [asema2:]polku]\n\
+SUBST asema1: /D\n\n\
+  asema1:        Määrittää näennäisaseman, johon haluat liittää polun.\n\
+  [asema2:]polku Määrittää fyysisen aseman ja polun, jonka haluat liittää\n\
+                 näennäisasemaan.\n\
+  /D             Poistaa korvatun (näennäis)aseman.\n\n\
+Näytä nykyiset näennäisasemat kirjoittamalla SUBST ilman parametreja.\n"
+END

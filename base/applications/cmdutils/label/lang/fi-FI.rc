@@ -1,0 +1,17 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    STRING_LABEL_HELP "Luo, muuttaa tai poistaa levyn taltion nimen.\n\n\
+LABEL [asema:][nimi]\n\n\
+  asema:          Määrittää aseman kirjaimen.\n\
+  nimi            Määrittää aseman taltion nimen."
+    STRING_LABEL_TEXT1 "Aseman %c: taltio on %s\n"
+    STRING_LABEL_TEXT2 "Aseman %c: taltiolla ei ole nimeä\n"
+    STRING_LABEL_TEXT3 "Taltion sarjanumero on %04X-%04X\n"
+    STRING_LABEL_TEXT4 "Taltion nimi (32 merkkiä, ENTER, jos ei mitään)? "
+    STRING_LABEL_PROMPT "Poistetaanko nykyinen taltion nimi (K/E)? "
+    STRING_LABEL_OPTIONS "KE"
+    STRING_ERROR_INVALID_DRIVE "Virheellinen asemamääritys\n"
+    STRING_ERROR_INVALID_LABEL "Virheellinen taltion nimi\n"
+END

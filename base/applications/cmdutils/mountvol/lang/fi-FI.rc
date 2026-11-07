@@ -1,0 +1,33 @@
+/*
+ * PROJECT:     LiberNT Mount Volume Command
+ * LICENSE:     GPL-3.0-or-later (https://spdx.org/licenses/GPL-3.0-or-later)
+ * PURPOSE:     Finnish resource file
+ * COPYRIGHT:   Copyright 2026 Ahmed ARIF <arif.ing@outlook.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Luo, poistaa tai luettelee taltion liitoskohdan.\n\n\
+MOUNTVOL [asema:]polku TaltionNimi\n\
+MOUNTVOL [asema:]polku /D\n\
+MOUNTVOL [asema:]polku /L\n\
+MOUNTVOL /R\n\
+MOUNTVOL /N\n\
+MOUNTVOL /E\n\
+MOUNTVOL asema: /S\n\n\
+    polku       Olemassa oleva tyhjä NTFS-hakemisto tai aseman tunnus,\n\
+                johon liitoskohta luodaan.\n\
+    TaltionNimi Liitettävä taltio muodossa \\\\?\\Volume{GUID}\\.\n\
+    /D          Poistaa taltion liitoskohdan polusta.\n\
+    /L          Näyttää polkuun liitetyn taltion nimen.\n\
+    /R          Poistaa sellaisten taltioiden liitoskohta-asetukset, joita\n\
+                ei enää ole järjestelmässä.\n\
+    /N          Poistaa uusien taltioiden automaattisen liittämisen käytöstä.\n\
+    /E          Ottaa uusien taltioiden automaattisen liittämisen uudelleen käyttöön.\n\
+    /S          Liittää EFI-järjestelmäosion asemaan.\n\n"
+    IDS_VOLUME_LIST "TaltionNimi-parametrin mahdolliset arvot ja nykyiset liitoskohdat:\n\n"
+    IDS_NO_MOUNT_POINTS "        *** EI LIITOSKOHTIA ***\n"
+    IDS_INVALID_PARAMETERS "Parametri on virheellinen.\n"
+END

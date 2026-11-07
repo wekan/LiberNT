@@ -1,0 +1,189 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_NETPROPERTIES DIALOGEX 0, 0, 246, 216
+STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL "", IDC_COMPONENTSLIST, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP, 9, 51, 230, 52
+    LTEXT "Yhdistä käyttäen:", -1, 9, 9, 217, 8
+    EDITTEXT IDC_NETCARDNAME, 9, 21, 165, 12, WS_BORDER | WS_TABSTOP | ES_READONLY
+    PUSHBUTTON "&Määritä", IDC_CONFIGURE, 179, 20, 60, 14
+    LTEXT "Tämä yhteys käyttää valittuja osia:", -1, 9, 39, 217, 8
+    PUSHBUTTON "&Asenna", IDC_INSTALL, 9, 105, 65, 14, WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON "&Poista asennus", IDC_UNINSTALL, 90, 105, 65, 14, WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON "&Ominaisuudet", IDC_PROPERTIES, 174, 105, 65, 14
+    GROUPBOX "Kuvaus", -1, 9, 128, 230, 46, BS_GROUPBOX
+    LTEXT "", IDC_DESCRIPTION, 15, 140, 217, 28, WS_GROUP
+    AUTOCHECKBOX "&Näytä kuvake tehtäväpalkissa, kun yhteys on muodostettu", IDC_SHOWTASKBAR, 9, 181, 230, 12, WS_TABSTOP
+    AUTOCHECKBOX "&Ilmoita, kun tämän yhteyden toiminta on rajoitettua tai yhteyttä ei ole", IDC_NOTIFYNOCONNECTION, 9, 195, 230, 20, BS_MULTILINE | BS_TOP | WS_TABSTOP
+END
+
+IDD_STATUS DIALOGEX 0, 0, 200, 180
+STYLE DS_SHELLFONT | WS_POPUP | WS_CAPTION | DS_MODALFRAME | WS_SYSMENU
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+END
+
+IDD_LAN_NETSTATUS DIALOGEX 0, 0, 200, 180
+STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Yhteys", -1, 9, 8, 190, 58, BS_GROUPBOX
+    LTEXT "Tila:", -1, 22, 20, 65, 8
+    LTEXT "Kesto:", -1, 22, 34, 65, 8
+    LTEXT "Nopeus:", -1, 22, 48, 65, 8
+    GROUPBOX "Toiminta", -1, 9, 74, 190, 70, BS_GROUPBOX
+    LTEXT "Lähetetty", -1, 60, 90, 60, 8
+    ICON "", IDC_NETSTAT, 110, 85, 32, 32
+    RTEXT "Vastaanotettu", -1, 146, 90, 44, 8
+    LTEXT "Tavuja:", -1, 22, 115, 32, 8
+    LTEXT "000.000.000", IDC_SEND, 60, 115, 44, 8
+    RTEXT "000.000.000", IDC_RECEIVED, 146, 115, 44, 8
+    PUSHBUTTON "&Ominaisuudet", IDC_STATUS_PROPERTIES, 10, 150, 60, 14
+    PUSHBUTTON "Poista &käytöstä", IDC_ENDISABLE, 76, 150, 60, 14
+    RTEXT "", IDC_STATUS, 90, 20, 100, 8
+    RTEXT "", IDC_DURATION, 90, 34, 100, 8
+    RTEXT "", IDC_SPEED, 90, 48, 100, 8
+END
+
+IDD_LAN_NETSTATUSADVANCED DIALOGEX 0, 0, 200, 180
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Tuki"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Yhteyden tila", -1, 9, 8, 190, 88, BS_GROUPBOX
+    LTEXT "Osoitteen tyyppi:", -1, 22, 20, 80, 8
+    LTEXT "IP-osoite:", -1, 22, 34, 80, 8
+    LTEXT "Aliverkon peite:", -1, 22, 48, 80, 8
+    LTEXT "Oletusyhdyskäytävä:", -1, 22, 62, 80, 8
+    RTEXT "-", IDC_DETAILSTYPE, 110, 20, 80, 8
+    RTEXT "000.000.000.000", IDC_DETAILSIP, 110, 34, 80, 8
+    RTEXT "000.000.000.000", IDC_DETAILSSUBNET, 110, 48, 80, 8
+    RTEXT "", IDC_DETAILSGATEWAY, 110, 62, 80, 8
+    PUSHBUTTON "&Tiedot...", IDC_DETAILS, 22, 76, 62, 14
+END
+
+IDD_LAN_NETSTATUSDETAILS DIALOGEX 0, 0, 190, 175
+STYLE DS_SHELLFONT | WS_POPUP | WS_CAPTION | DS_MODALFRAME
+CAPTION "Verkkoyhteyden tiedot"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Verkkoyhteyden &tiedot:", -1, 10, 4, 170, 12
+    CONTROL "", IDC_DETAILS, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP, 10, 15, 170, 130
+    DEFPUSHBUTTON "&Sulje", IDCANCEL, 120, 155, 60, 14
+END
+
+IDD_NETWORKINITPAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "LiberNT-asennus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON IDI_NET_SETUP, IDC_STATIC, 21, 10, 20, 20
+    LTEXT "Odota, kun LiberNT asentaa verkko-osia.", IDC_STATIC, 53, 7, 240, 20
+    CONTROL "", IDC_INSTALL_PROGRESS, "msctls_progress32", PBS_SMOOTH | WS_CHILD | WS_VISIBLE | WS_BORDER, 21, 58, 275, 11
+END
+
+IDD_NETWORKSETTINGSPAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "LiberNT-asennus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON IDI_NET_SETUP, IDC_STATIC, 21, 10, 20, 20
+    LTEXT "Valitse, käytetäänkö tyypillisiä vai mukautettuja asetuksia:", IDC_STATIC, 53, 7, 240, 20
+    AUTORADIOBUTTON "Tyypilliset asetukset", IDC_NETWORK_TYPICAL, 53, 27, 253, 18, WS_TABSTOP | WS_GROUP
+    AUTORADIOBUTTON "Mukautetut asetukset", IDC_NETWORK_CUSTOM, 53, 72, 253, 18, WS_TABSTOP
+    LTEXT "Luo verkkoyhteydet käyttäen LiberNT-verkkojen asiakasta, LiberNT-verkkojen tiedostojen ja tulostimien jakamista sekä TCP/IP-siirtoprotokollaa automaattisella osoitteistuksella.", IDC_STATIC, 65, 45, 240, 30
+    LTEXT "Voit määrittää verkko-osat itse.", IDC_STATIC, 65, 90, 243, 20
+END
+
+IDD_NETWORKCOMPONENTPAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "LiberNT-asennus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Laitteelle:", IDC_STATIC, 33, 2, 100, 20
+    LTEXT "-", IDC_NETWORK_DEVICE, 75, 2, 253, 20
+    LTEXT "Tämä yhteys käyttää valittuja osia:", IDC_STATIC, 33, 12, 253, 20
+    CONTROL "", IDC_COMPONENT_LIST, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP, 33, 22, 250, 50
+    PUSHBUTTON "&Asenna...", IDC_NETWORK_INSTALL, 122, 75, 50, 14, WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON "&Poista", IDC_NETWORK_UNINSTALL, 177, 75, 50, 14, WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON "&Ominaisuudet", IDC_NETWORK_PROPERTIES, 232, 75, 50, 14, WS_DISABLED | WS_TABSTOP
+    GROUPBOX "Kuvaus", IDC_STATIC, 33, 90, 250, 50, BS_GROUPBOX
+END
+
+IDD_NETWORKDOMAINPAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "LiberNT-asennus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Haluatko, että tämä tietokone on toimialueen jäsen?\n\
+(Saat nämä tiedot verkon järjestelmänvalvojalta.)", IDC_STATIC, 33, 2, 263, 50
+    AUTORADIOBUTTON "Ei, tämä tietokone kuuluu sen sijaan työryhmään.", IDC_SELECT_WORKGROUP, 33, 32, 253, 20, WS_TABSTOP | WS_GROUP
+    AUTORADIOBUTTON "Kyllä, tämä tietokone kuuluu toimialueeseen.", IDC_SELECT_DOMAIN, 33, 47, 253, 20, WS_TABSTOP
+    LTEXT "Työryhmän tai toimialueen nimi:", IDC_STATIC, 33, 72, 126, 10
+    EDITTEXT IDC_DOMAIN_NAME, 33, 82, 126, 14, WS_VISIBLE | WS_TABSTOP | ES_AUTOHSCROLL
+    LTEXT "HUOMAUTUS: Jos tietokone ei kuulu verkkoon, sinulla ei ole oikeutta liittyä toimialueeseen tai et tiedä, mitä kirjoittaa, valitse toistaiseksi työryhmä. Näitä asetuksia voi muuttaa myöhemmin.", IDC_STATIC, 33, 107, 263, 50
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PHYSICAL_ADDRESS "Fyysinen osoite"
+    IDS_IP_ADDRESS "IP-osoite"
+    IDS_SUBNET_MASK "Aliverkon peite"
+    IDS_DEF_GATEWAY "Oletusyhdyskäytävä"
+    IDS_DHCP_SERVER "DHCP-palvelin"
+    IDS_LEASE_OBTAINED "Vuokra saatu"
+    IDS_LEASE_EXPIRES "Vuokra vanhenee"
+    IDS_DNS_SERVERS "DNS-palvelimet"
+    IDS_WINS_SERVERS "WINS-palvelimet"
+    IDS_PROPERTY "Ominaisuus"
+    IDS_VALUE "Arvo"
+    IDS_NETWORKCONNECTION "Verkkoyhteydet"
+    IDS_SHV_COLUMN_NAME "Nimi"
+    IDS_SHV_COLUMN_TYPE "Tyyppi"
+    IDS_SHV_COLUMN_STATE "Tila"
+    IDS_SHV_COLUMN_DEVNAME "Laitteen nimi"
+    IDS_SHV_COLUMN_PHONE "Puhelinnumero tai isäntäosoite"
+    IDS_SHV_COLUMN_OWNER "Omistaja"
+    IDS_TYPE_ETHERNET "Lähiverkko tai nopea Internet-yhteys"
+    IDS_STATUS_NON_OPERATIONAL "Poistettu käytöstä"
+    IDS_STATUS_UNREACHABLE "Ei yhdistetty"
+    IDS_STATUS_DISCONNECTED "Verkkokaapeli irrotettu"
+    IDS_STATUS_CONNECTING "Haetaan verkko-osoitetta"
+    IDS_STATUS_CONNECTED "Yhdistetty"
+    IDS_STATUS_OPERATIONAL "Yhdistetty"
+    IDS_NET_ACTIVATE "Ota käyttöön"
+    IDS_NET_DEACTIVATE "Poista käytöstä"
+    IDS_NET_STATUS "Tila"
+    IDS_NET_REPAIR "Korjaa"
+    IDS_NET_CREATELINK "Luo pikakuvake"
+    IDS_NET_DELETE "Poista"
+    IDS_NET_RENAME "Nimeä uudelleen"
+    IDS_NET_PROPERTIES "Ominaisuudet"
+    IDS_NET_OPEN_CONNECTIONS "Avaa verkkoyhteydet"
+    IDS_FORMAT_BIT "%u bittiä/s"
+    IDS_FORMAT_KBIT "%u kbit/s"
+    IDS_FORMAT_MBIT "%u Mbit/s"
+    IDS_FORMAT_GBIT "%u Gbit/s"
+    IDS_DURATION_DAY "%d päivä %s"
+    IDS_DURATION_DAYS "%d päivää %s"
+    IDS_ASSIGNED_DHCP "DHCP:n määrittämä"
+    IDS_ASSIGNED_MANUAL "Määritetty manuaalisesti"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NETWORKINITTITLE "Verkon asennus"
+    IDS_NETWORKINITSUBTITLE "Asentaa tarvittavat verkko-osat."
+    IDS_NETWORKSETTINGSTITLE "Verkkoasetukset"
+    IDS_NETWORKSETTINGSSUBTITLE "Asentaa verkko-ohjelmiston, jolla muodostetaan yhteys muihin verkkoihin, tietokoneisiin ja Internetiin."
+    IDS_NETWORKCOMPONENTTITLE "Verkko-osat"
+    IDS_NETWORKCOMPONENTSUBTITLE "Määritä, mitä verkko-osia tietokoneessa käytetään. Voit lisätä uusia osia valitsemalla Asenna."
+    IDS_NETWORKDOMAINTITLE "Työryhmä tai verkon toimialue"
+    IDS_NETWORKDOMAINSUBTITLE "Määritä, miten tietokonetta käytetään - työryhmän osana vai verkon toimialueen osana."
+    IDS_REACTOS_SETUP "LiberNT-asennus"
+    IDS_WZD_DOMAIN_NAME "Asennus ei voi jatkua, ennen kuin\nkirjoitat toimialueen tai\ntyöryhmän nimen."
+END

@@ -1,0 +1,54 @@
+/*
+ * PROJECT:     ReactOS Replace Command
+ * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATOR:  Copyright 2007 Samuel Erdtman <samuel@erdtman.se>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    STRING_REPLACE_HELP1 "Korvaa tiedostoja.\n\n\
+REPLACE [asema1:][polku1]tiedostonimi [asema2:][polku2] [/A] [/P] [/R] [/W]\n\
+REPLACE [asema1:][polku1]tiedostonimi [asema2:][polku2] [/P] [/R] [/S] [/W] [/U]\n\n\
+  [asema1:][polku1]tiedostonimi Määrittää lähdetiedoston tai -tiedostot.\n\
+  [asema2:][polku2]         Määrittää hakemiston, jossa tiedostot\n\
+                           korvataan.\n\
+  /A                       Lisää uudet tiedostot kohdehakemistoon. Ei voi\n\
+                           käyttää valitsimien /S tai /U kanssa.\n\
+  /P                       Pyytää vahvistuksen ennen tiedoston korvaamista tai\n\
+                           lähdetiedoston lisäämistä.\n\
+  /R                       Korvaa vain luku -tiedostot sekä suojaamattomat\n\
+                           tiedostot.\n\
+  /S                       Korvaa tiedostot kohdehakemiston kaikissa\n\
+                           alihakemistoissa. Ei voi käyttää valitsimen /A\n\
+                           kanssa.\n\
+  /W                       Odottaa levyn asettamista ennen aloittamista.\n\
+  /U                       Korvaa (päivittää) vain lähdetiedostoja vanhemmat\n\
+                           tiedostot. Ei voi käyttää valitsimen /A kanssa.\n"
+    STRING_REPLACE_HELP2 "Lähdepolku vaaditaan\n"
+    STRING_REPLACE_HELP3 "Yhtään tiedostoa ei korvattu\n"
+    STRING_REPLACE_HELP4 "%lu tiedosto(a) korvattu\n"
+    STRING_REPLACE_HELP5 "Korvataan %s\n"
+    STRING_REPLACE_HELP7 "Yhtään tiedostoa ei lisätty\n"
+    STRING_REPLACE_HELP8 "%lu tiedosto(a) lisätty\n"
+    STRING_REPLACE_HELP9 "Lisätäänkö %s (K/E)? "
+    STRING_REPLACE_HELP10 "Korvataanko %s (K/E)? "
+    STRING_REPLACE_HELP11 "Lisätään %s\n"
+
+    STRING_REPLACE_ERROR1 "Virheellinen valitsin - %s\n"
+    STRING_REPLACE_ERROR2 "Polkua ei löydy - %s\n"
+    STRING_REPLACE_ERROR3 "Tiedostonimen, hakemistonimen tai taltion nimen syntaksi on virheellinen.\n"
+    STRING_REPLACE_ERROR4 "Virheellinen parametriyhdistelmä\n"
+    STRING_REPLACE_ERROR5 "Käyttö estetty - %s\n"
+    STRING_REPLACE_ERROR6 "Tiedostoja ei löytynyt - %s\n"
+    STRING_REPLACE_ERROR7 "Laajennettu virhe 32\n"
+
+    STRING_COPY_OPTION "KEA"
+    STRING_COPY_ERROR1 "Virhe: Lähdettä ei voi avata - %s!\n"
+    STRING_COPY_ERROR3 "Virhe kirjoitettaessa kohteeseen!\n"
+    STRING_ERROR_D_PAUSEMSG "Jatka painamalla mitä tahansa näppäintä . . . "
+    STRING_CONSOLE_ERROR "Tuntematon virhe: %d\n"
+    STRING_ERROR_OUT_OF_MEMORY "Muisti loppui.\n"
+END

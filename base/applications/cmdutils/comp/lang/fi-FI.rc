@@ -1,0 +1,23 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_HELP "Vertaa kahden tiedoston tai tiedostojoukon sisältöä.\n\n\
+COMP [/L] [/A] [data1] [data2]\n\n\
+  data1      Määrittää ensimmäisen verrattavan tiedoston sijainnin ja nimen.\n\
+  data2      Määrittää toisen verrattavan tiedoston sijainnin ja nimen.\n\
+  /A         Näyttää erot ASCII-merkkeinä (oletus: heksadesimaalisina).\n\
+  /L         Näyttää erojen rivinumerot.\n"
+    IDS_INVALIDSWITCH "Virheellinen valitsin - /%c\n"
+    IDS_BADSYNTAX "Virheellinen komentorivin syntaksi\n"
+    IDS_FILEERROR "Tiedostoa ei löydy tai sitä ei voi avata: %s\n"
+    IDS_COMPARING "Verrataan tiedostoja %s ja %s...\n"
+    IDS_FILESIZEERROR "Tiedoston kokoa ei voi selvittää: %s\n"
+    IDS_SIZEDIFFERS "Tiedostot ovat erikokoisia.\n"
+    IDS_READERROR "Tiedostojen lukuvirhe.\n"
+    IDS_MISMATCHLINE "Vertailuvirhe RIVILLÄ %d\n"
+    IDS_MISMATCHOFFSET "Vertailuvirhe SIIRTYMÄSSÄ 0x%X\n"
+    IDS_ASCIIDIFF "tiedosto%d = %c\n"
+    IDS_HEXADECIMALDIFF "tiedosto%d = %X\n"
+    IDS_MATCH "Tiedostojen vertailu OK\n"
+END

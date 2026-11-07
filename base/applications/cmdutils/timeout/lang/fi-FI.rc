@@ -1,0 +1,33 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "LiberNT Timeout -apuohjelma\n\
+\n\
+TIMEOUT [/?] [/T] viive [/NOBREAK]\n\
+\n\
+Kuvaus:\n\
+    Tämä työkalu odottaa, kunnes määritetty aika (sekunteina) on kulunut\n\
+    tai kunnes jotakin näppäintä painetaan. Lisäksi hyväksytään parametri,\n\
+    jolla näppäimen painallus ohitetaan.\n\
+\n\
+Parametrit:\n\
+    /?        Näyttää tämän ohjeen.\n\
+\n\
+    /T viive  Määrittää odotettavien sekuntien määrän (-1 - 99999).\n\
+              Arvo -1 tarkoittaa, että ohjelma odottaa näppäimen painallusta.\n\
+              Huomaa, että ""/T""-määritys on valinnainen; voit antaa\n\
+              viiveen arvon myös ilman sitä.\n\
+\n\
+    /NOBREAK  Ohittaa kaikki näppäinpainallukset paitsi Ctrl+C.\n\
+"
+    IDS_ERROR_OUT_OF_RANGE "VIRHE: Ajastimen arvon on oltava välillä -1 - 99999.\n"
+    IDS_ERROR_INVALID_HANDLE_VALUE "VIRHE: Konsolin vakiokahvaa ei voi noutaa (virhe %lu).\n"
+    IDS_ERROR_READ_INPUT "VIRHE: Konsolin syötettä ei voi lukea (virhe %lu).\n"
+    IDS_ERROR_NO_TIMER_VALUE "VIRHE: Ajastimen arvo on määritettävä (-1 - 99999).\n"
+    IDS_ERROR_ONE_TIME "VIRHE: Vain yksi ajastimen arvo tarvitaan.\n"
+    IDS_NOBREAK_INPUT "Lopeta painamalla Ctrl+C..."
+    IDS_USER_INPUT "Jatka painamalla mitä tahansa näppäintä..."
+    IDS_NOBREAK_INPUT_COUNT "Odotetaan %d sekunti(a), lopeta painamalla Ctrl+C..."
+    IDS_USER_INPUT_COUNT "Odotetaan %d sekunti(a), jatka painamalla mitä tahansa näppäintä..."
+END

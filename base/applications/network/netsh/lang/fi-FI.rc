@@ -1,0 +1,92 @@
+/*
+ * PROJECT:     ReactOS NetSh
+ * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATOR:  Copyright 2023 Eric Kohl <eric.kohl@reactos.org>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+/* Basic application information */
+STRINGTABLE
+BEGIN
+    IDS_APP_USAGE "\nKäyttö: netsh [-a aliastiedosto] [-c konteksti] [-r etäkone] \
+\n             [komento | -f komentosarjatiedosto]\n"
+    IDS_OPEN_FAILED      "Tiedostoa %ls ei voitu avata.\n"
+    IDS_THIS_COMMANDS    "\nTämän kontekstin komennot:\n"
+    IDS_CONTEXT_COMMANDS "\nKontekstin %s komennot:\n"
+    IDS_ALIAS_NOT_FOUND  "Seuraavaa aliasta ei löytynyt: %s.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HELP_HEADER       "\nSeuraavat komennot ovat käytettävissä:\n"
+    IDS_HELP_FOOTER       "\nSaat komennon ohjeen kirjoittamalla komennon, välilyönnin ja sen\n jälkeen merkin ?.\n\n"
+    IDS_SUBCONTEXT_HEADER "\nSeuraavat alikontekstit ovat käytettävissä:\n"
+
+    IDS_HLP_UP             "Siirtyy yhden kontekstitason ylöspäin.\n"
+    IDS_HLP_UP_EX          "\nKäyttö: %1!s!\n\n        Siirtyy yhden kontekstitason ylöspäin.\n"
+    IDS_HLP_EXIT           "Lopettaa ohjelman.\n"
+    IDS_HLP_EXIT_EX        "\nKäyttö: %1!s!\n\n        Lopettaa ohjelman.\n"
+    IDS_HLP_HELP           "Näyttää komentoluettelon.\n"
+    IDS_HLP_HELP_EX        "\nKäyttö: %1!s!\n\n        Näyttää komentoluettelon.\n"
+    IDS_HLP_POPD           "Vaihtaa pinossa olevaan kontekstiin.\n"
+    IDS_HLP_POPD_EX        "\nKäyttö: %1!s!\n\n        Vaihtaa pinossa olevaan kontekstiin.\n"
+    IDS_HLP_PUSHD          "Tallentaa nykyisen kontekstin pinoon.\n"
+    IDS_HLP_PUSHD_EX       "\nKäyttö: %1!s!\n\n        Tallentaa nykyisen kontekstin pinoon.\n"
+    IDS_HLP_EXEC           "Suorittaa komentosarjatiedoston.\n"
+    IDS_HLP_EXEC_EX        "\nKäyttö: %1!s! <komentosarjatiedoston nimi>\n\n        Lataa komentosarjatiedoston ja suorittaa sen.\n"
+    IDS_HLP_DUMP           "Näyttää määrityskomentosarjan.\n"
+    IDS_HLP_DUMP_EX        "\nKäyttö: %1!s!\n\n        Luo komentosarjan, joka sisältää nykyiset määritykset. Jos komentosarja\n\
+        tallennetaan tiedostoon, sillä voidaan palauttaa muutetut määritysasetukset.\n"
+    IDS_HLP_OFFLINE        "Asettaa nykyiseksi tilaksi offline-tilan.\n"
+    IDS_HLP_OFFLINE_EX     "\nKäyttö: %1!s!\n\n        Asettaa nykyiseksi tilaksi offline-tilan. Offline-tilassa tehdyt muutokset\n\
+        tallennetaan ja tehdään käynnissä oleviin määrityksiin, kun tila\n        vaihdetaan takaisin online-tilaan.\n"
+    IDS_HLP_ONLINE         "Asettaa nykyiseksi tilaksi online-tilan.\n"
+    IDS_HLP_ONLINE_EX      "\nKäyttö: %1!s!\n\n        Asettaa nykyiseksi tilaksi online-tilan. Online-tilassa tehdyt muutokset\n\
+        näkyvät heti käynnissä olevissa määrityksissä. Jos muutoksia\n        tehdään offline-tilassa, ne näkyvät käynnissä olevissa\n\
+        määrityksissä, kun tila vaihdetaan takaisin online-tilaan.\n"
+    IDS_HLP_ABORT          "Hylkää offline-tilassa tehdyt muutokset.\n"
+    IDS_HLP_ABORT_EX       "\nKäyttö: %1!s!\n\n        Hylkää offline-tilassa tehdyt muutokset. Tämä ei vaikuta\n\
+        online-tilassa tehtyihin muutoksiin.\n"
+    IDS_HLP_COMMIT         "Vahvistaa offline-tilassa tehdyt muutokset.\n"
+    IDS_HLP_COMMIT_EX      "\nKäyttö: %1!s!\n\n        Vahvistaa käynnissä oleviin määrityksiin muutokset, jotka tehtiin\n\
+        offline-tilassa. Online-tilassa tämä komento ei tee\n        mitään.\n"
+    IDS_HLP_ALIAS           "Lisää aliaksen.\n"
+    IDS_HLP_ALIAS_EX        "\nKäyttö : %1!s! [aliaksen-nimi] [merkkijono1 merkkijono2 ...]\n\n        Jos argumentteja ei määritetä, kaikki aliakset näytetään.\n\
+        Jos aliaksen nimi määritetään, sitä vastaava merkkijono\n        näytetään (jos se löytyy).\n\
+        Jos yksi tai useampi merkkijono määritetään, aliaksen arvoksi\n        asetetaan nämä merkkijonot.\n"
+    IDS_HLP_UNALIAS         "Poistaa aliaksen.\n"
+    IDS_HLP_UNALIAS_EX      "\nKäyttö : %1!s! aliaksen-nimi\n\n        Poistaa aliaksen aliaksen-nimi.\n"
+
+    IDS_HLP_ADD_HELPER     "Asentaa apu-DLL:n.\n"
+    IDS_HLP_ADD_HELPER_EX  "\nKäyttö: %1!s! <dll-tiedoston nimi>\n\n        Asentaa määritetyn apu-DLL:n netsh-ohjelmaan.\n"
+
+    IDS_HLP_DEL_HELPER     "Poistaa apu-DLL:n.\n"
+    IDS_HLP_DEL_HELPER_EX  "\nKäyttö: %1!s! <dll-tiedoston nimi>\n\n        Poistaa määritetyn apu-DLL:n netsh-ohjelmasta.\n"
+
+    IDS_HLP_SET_MACHINE    "Asettaa nykyisen koneen, jota käsitellään.\n"
+    IDS_HLP_SET_MACHINE_EX "\nKäyttö: %1!s! [[name=]<merkkijono>]\n\n        Asettaa nykyisen koneen, jota käsitellään. Jos koneen nimeä\n\
+        ei määritetä, käytetään paikallista konetta.\n"
+    IDS_HLP_SET_MODE       "Asettaa nykyiseksi tilaksi online- tai offline-tilan.\n"
+    IDS_HLP_SET_MODE_EX    "\nKäyttö: %1!s! [mode=]{online|offline}\n\n        Asettaa nykyiseksi tilaksi online- tai offline-tilan.\n"
+
+    IDS_HLP_SHOW_ALIAS     "Luettelee kaikki määritetyt aliakset.\n"
+    IDS_HLP_SHOW_ALIAS_EX  "\nKäyttö: %1!s!\n\n        Luettelee kaikki määritetyt aliakset.\n"
+    IDS_HLP_SHOW_HELPER    "Luettelee kaikki ylimmän tason apuohjelmat.\n"
+    IDS_HLP_SHOW_HELPER_EX "\nKäyttö: %1!s!\n\n        Luettelee kaikki ylimmän tason apuohjelmat.\n"
+    IDS_HLP_SHOW_MODE      "Näyttää nykyisen tilan.\n"
+    IDS_HLP_SHOW_MODE_EX   "\nKäyttö: %1!s!\n\n        Näyttää nykyisen tilan (offline tai online).\n"
+
+    IDS_HLP_GROUP_ADD      "Lisää määritysmerkinnän merkintöjen luetteloon.\n"
+    IDS_HLP_GROUP_DELETE   "Poistaa määritysmerkinnän merkintöjen luettelosta.\n"
+    IDS_HLP_GROUP_SET      "Päivittää määritysasetukset.\n"
+    IDS_HLP_GROUP_SHOW     "Näyttää tietoja.\n"
+END
+
+STRINGTABLE
+BEGIN
+    ERROR_INVALID_SYNTAX   "Tämän komennon syntaksi ei kelpaa. Katso oikea syntaksi ohjeesta.\n"
+    ERROR_CMD_NOT_FOUND    "Seuraavaa komentoa ei löytynyt: %1!s!.\n"
+    ERROR_OKAY             "OK.\n"
+END

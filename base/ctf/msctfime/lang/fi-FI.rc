@@ -1,0 +1,23 @@
+/*
+ * PROJECT:     ReactOS msctfime.ime
+ * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
+ * PURPOSE:     English (United States) resource file
+ * TRANSLATOR:  Copyright 2023 Katayama Hirofumi MZ <katayama.hirofumi.mz@gmail.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_OK               "OK"
+    IDS_CANCEL           "Peruuta"
+    IDS_ABORT            "&Keskeytä"
+    IDS_RETRY            "&Yritä uudelleen"
+    IDS_IGNORE           "&Ohita"
+    IDS_YES              "&Kyllä"
+    IDS_NO               "&Ei"
+
+    IDS_ENTER            "Enter"
+    IDS_FINALIZE_STRING  "Viimeistele merkkijono"
+    IDS_CONVERSION       "Muunnos"
+END

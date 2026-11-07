@@ -1,0 +1,66 @@
+/*
+ * FILE:        base/applications/network/ping/lang/es-US.rc
+ * PURPOSE:     English translations for ReactOS Ping Command
+ * TRANSLATORS:
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\n\
+Käyttö: ping [-t] [-a] [-n määrä] [-l koko] [-f] [-i TTL] [-v TOS]\n\
+            [-w aikakatkaisu] [-4] [-6] kohde\n\
+\n\
+Asetukset:\n\
+    -t          Lähettää ping-pyyntöjä isäntään, kunnes se pysäytetään.\n\
+                Näytä tilastot ja jatka painamalla Control-Break;\n\
+                Pysäytä painamalla Control-C.\n\
+    -a          Selvittää osoitteita vastaavat isäntänimet.\n\
+    -n määrä    Lähetettävien kaikupyyntöjen määrä.\n\
+    -l koko     Lähetyspuskurin koko.\n\
+    -f          Asettaa paketin Älä pirsto -lipun (vain IPv4).\n\
+    -i TTL      Elinaika (Time To Live).\n\
+    -v TOS      Palvelun tyyppi (vain IPv4. Tämä asetus on vanhentunut\n\
+                eikä se vaikuta IP-otsikon palvelutyyppi-\n\
+                kenttään).\n\
+    -w aikakatkaisu  Kunkin vastauksen odotusaika millisekunteina.\n\
+    -4          Pakottaa IPv4:n käytön.\n\
+    -6          Pakottaa IPv6:n käytön.\n\
+\n"
+
+    IDS_CTRL_BREAK "Control-Break\n"
+    IDS_CTRL_C "Control-C\n"
+    IDS_NO_RESOURCES "Resursseja ei ole tarpeeksi käytettävissä.\n"
+    IDS_MISSING_ADDRESS "IP-osoite on määritettävä.\n"
+    IDS_MISSING_VALUE "Valitsimelle %s on annettava arvo.\n"
+    IDS_BAD_OPTION "Virheellinen valitsin %s.\n"
+    IDS_BAD_PARAMETER "Virheellinen parametri %s.\n"
+    IDS_BAD_VALUE "Virheellinen arvo valitsimelle %s, sallittu alue on %u–%u.\n"
+    IDS_WRONG_FAMILY "Valitsinta %s tuetaan vain kohteelle %s.\n"
+    IDS_UNKNOWN_HOST "Ping ei löytänyt isäntää %s. Tarkista nimi ja yritä uudelleen.\n"
+    IDS_PINGING_ADDRESS "\nLähetetään ping-pyyntö kohteeseen %s "
+    IDS_PINGING_HOSTNAME "\nLähetetään ping-pyyntö kohteeseen %s [%s] "
+    IDS_SOURCE_ADDRESS "lähteestä %s %s"
+    IDS_PING_SIZE "%lu tavun tiedoilla:\n\n"
+    IDS_REPLY_FROM "Vastaus kohteesta %s: "
+    IDS_REPLY_BYTES "tavua=%d "
+    IDS_REPLY_TIME_MS "aika=%lums "
+    IDS_REPLY_TIME_0MS "aika<1ms "
+    IDS_REPLY_TTL "TTL=%d\n"
+    IDS_REPLY_STATUS "Kaikuvastaus palautti arvon %lu.\n"
+    IDS_DEST_HOST_UNREACHABLE "Kohdeisäntää ei tavoiteta.\n"
+    IDS_DEST_NET_UNREACHABLE "Kohdeverkkoa ei tavoiteta.\n"
+    IDS_REQUEST_TIMED_OUT "Pyyntö aikakatkaistiin.\n"
+    IDS_TTL_EXPIRED "TTL vanheni siirron aikana.\n"
+    IDS_TRANSMIT_FAILED "PING: lähetys epäonnistui. (Virhe %u)\n"
+
+    IDS_STATISTICS "\n\
+Ping-tilastot kohteelle %s:\n\
+    Paketit: Lähetetty = %d, Vastaanotettu = %d, Kadonnut = %d (%d%% menetetty),\n"
+
+    IDS_APPROXIMATE_RTT "Arvioitu edestakainen matka-aika millisekunteina:\n\
+    Minimi = %lums, Maksimi = %lums, Keskiarvo = %lums\n"
+
+    IDS_WINSOCK_FAIL "WinSockin alustaminen epäonnistui: %i\n"
+END

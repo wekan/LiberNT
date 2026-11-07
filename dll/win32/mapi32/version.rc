@@ -42,6 +42,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/Fr.rc"
 #endif

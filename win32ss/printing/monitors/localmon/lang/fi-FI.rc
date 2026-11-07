@@ -1,0 +1,7 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_LOCAL_PORT "Paikallinen portti"
+    IDS_LOCAL_MONITOR "Paikallinen valvonta"
+END

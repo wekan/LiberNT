@@ -1,0 +1,64 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_GENERAL DIALOGEX 0, 0, 242, 175
+STYLE DS_SHELLFONT | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX "Kirjautumisasetukset", IDC_STATIC, 7, 7, 228, 89
+    GROUPBOX "Yhteysasetukset", IDC_STATIC, 7, 103, 228, 65
+    ICON "", IDC_LOGONICON, 15, 19, 20, 20
+    LTEXT "Anna palvelimen osoite.", IDC_STATIC, 47, 24, 85, 8
+    LTEXT "&Palvelin:", IDC_STATIC, 47, 41, 25, 8
+    LTEXT "&Käyttäjänimi:", IDC_STATIC, 47, 58, 38, 8
+    COMBOBOX IDC_SERVERCOMBO, 89, 39, 131, 15, CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT IDC_NAMEEDIT, 89, 55, 131, 14, WS_TABSTOP | ES_AUTOHSCROLL
+    PUSHBUTTON "&Tallenna", IDC_SAVE, 67, 139, 50, 14
+    PUSHBUTTON "Tallenna &nimellä...", IDC_SAVEAS, 123, 139, 50, 14
+    PUSHBUTTON "&Avaa...", IDC_OPEN, 177, 139, 50, 14
+    ICON "", IDC_CONNICON, 16, 114, 20, 20
+    LTEXT "Tallenna nykyiset yhteysasetukset tai avaa aiemmin tallennettu määritys.", IDC_STATIC, 50, 115, 172, 20
+END
+
+IDD_DISPLAY DIALOGEX 0, 0, 242, 175
+STYLE DS_SHELLFONT | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX "&Etätyöpöydän koko", IDC_STATIC, 7, 7, 228, 68
+    GROUPBOX "&Värit", IDC_STATIC, 7, 83, 228, 85
+    ICON "", IDC_REMICON, 15, 19, 20, 20
+    ICON "", IDC_COLORSICON, 15, 98, 20, 20
+    LTEXT "Määritä etätyöpöydän näytön koko. Vedä liukusäädin oikeaan reunaan, niin saat koko näytön tilan.", IDC_STATIC, 53, 22, 175, 21
+    CONTROL "", IDC_GEOSLIDER, "msctls_trackbar32", TBS_AUTOTICKS | WS_TABSTOP, 56, 42, 124, 17
+    COMBOBOX IDC_BPPCOMBO, 56, 102, 128, 80, CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL "", IDC_COLORIMAGE, "Static", SS_OWNERDRAW | SS_SUNKEN, 56, 121, 127, 10
+    LTEXT "Huomautus: Etätietokoneen asetukset voivat ohittaa tämän asetuksen.", IDC_STATIC, 56, 143, 165, 18
+    LTEXT "Pieni", IDC_STATIC, 35, 42, 15, 8
+    LTEXT "Suuri", IDC_STATIC, 189, 42, 17, 8
+    LTEXT "", IDC_SETTINGS_RESOLUTION_TEXT, 56, 62, 120, 10, SS_CENTER
+END
+
+IDD_CONNECTDIALOG DIALOGEX 0, 0, 260, 262
+STYLE DS_SHELLFONT | DS_CENTER | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Etätyöpöytäyhteys"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON "&Yhdistä", IDOK, 147, 245, 50, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 203, 245, 50, 14
+    CONTROL "", IDC_TAB, "SysTabControl32", 0x0, 7, 50, 246, 190
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TAB_GENERAL "Yleiset"
+    IDS_TAB_DISPLAY "Näyttö"
+    IDS_256COLORS "256 väriä"
+    IDS_HIGHCOLOR15 "High Color (15-bittinen)"
+    IDS_HIGHCOLOR16 "High Color (16-bittinen)"
+    IDS_HIGHCOLOR24 "True Color (24-bittinen)"
+    IDS_HIGHCOLOR32 "Paras laatu (32-bittinen)"
+    IDS_PIXEL "%lux%lu kuvapistettä"
+    IDS_FULLSCREEN "Koko näyttö"
+    IDS_BROWSESERVER "<Selaa lisää...>"
+    IDS_HEADERTEXT1 "Etätyöpöytä"
+    IDS_HEADERTEXT2 "Yhteys"
+END

@@ -1,0 +1,259 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDM_CONSOLE_SMALL MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Uusi\tCtrl+N", IDM_FILE_NEW
+        MENUITEM "&Avaa...\tCtrl+O", IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Lopeta\tAlt+F4", IDM_FILE_EXIT
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Tietoja: ReactOS-hallintakonsoli", IDM_HELP_ABOUT_MMC
+    END
+END
+
+IDM_CONSOLE_LARGE MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Uusi\tCtrl+N", IDM_FILE_NEW
+        MENUITEM "&Avaa...\tCtrl+O", IDM_FILE_OPEN
+        MENUITEM "&Tallenna\tCtrl+S", IDM_FILE_SAVE
+        MENUITEM "Tallenna &nimellä...", IDM_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Lisää tai poista laajennus...\tCtrl+M", IDM_FILE_ADD
+        MENUITEM "Asetukset...", IDM_FILE_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Lopeta\tAlt+F4", IDM_FILE_EXIT
+    END
+    POPUP "&Toiminto"
+    BEGIN
+        MENUITEM "Uusi &ikkuna tästä", IDM_ACTION_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Nimeä uudelleen", IDM_ACTION_RENAME
+        MENUITEM "Vie &luettelo", IDM_ACTION_EXPORT_LIST
+    END
+    POPUP "&Näytä"
+    BEGIN
+        MENUITEM "Lisää tai poista sarakkeita", IDM_VIEW_COLUMNS
+        MENUITEM SEPARATOR
+        MENUITEM "Suuret kuvakkeet", IDM_VIEW_LARGE_ICONS
+        MENUITEM "Pienet kuvakkeet", IDM_VIEW_SMALL_ICONS
+        MENUITEM "Luettelo", IDM_VIEW_LIST
+        MENUITEM "Tiedot", IDM_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        MENUITEM "Mukauta...", IDM_VIEW_CUSTOMIZE
+    END
+    POPUP "&Suosikit"
+    BEGIN
+        MENUITEM "&Lisää suosikkeihin...", IDM_FAVORITES_ADD
+        MENUITEM "&Järjestä suosikit...", IDM_FAVORITES_ORGANIZE
+    END
+    POPUP "&Ikkuna"
+    BEGIN
+        MENUITEM "&Uusi ikkuna\tCtrl+W", IDM_WINDOWS_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Limittäin", IDM_WINDOWS_CASCADE
+        MENUITEM "&Vierekkäin vaakasuunnassa", IDM_WINDOWS_TILE
+        MENUITEM "&Järjestä kuvakkeet", IDM_WINDOWS_ARRANGE
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Ohjeen aiheet", IDM_HELP_TOPICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Tietoja: ReactOS-hallintakonsoli", IDM_HELP_ABOUT_MMC
+    END
+END
+
+IDM_TREEVIEW_CONTEXT MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Uusi &ikkuna tästä", IDM_ACTION_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Nimeä uudelleen", IDM_ACTION_RENAME
+    END
+
+    POPUP ""
+    BEGIN
+        POPUP "Näytä"
+        BEGIN
+            MENUITEM "Lisää tai poista sarakkeita", IDM_VIEW_COLUMNS
+            MENUITEM SEPARATOR
+            MENUITEM "Suuret kuvakkeet", IDM_VIEW_LARGE_ICONS
+            MENUITEM "Pienet kuvakkeet", IDM_VIEW_SMALL_ICONS
+            MENUITEM "Luettelo", IDM_VIEW_LIST
+            MENUITEM "Tiedot", IDM_VIEW_DETAILS
+            MENUITEM SEPARATOR
+            MENUITEM "Mukauta...", IDM_VIEW_CUSTOMIZE
+        END
+        MENUITEM "Uusi &ikkuna tästä", IDM_ACTION_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Nimeä uudelleen", IDM_ACTION_RENAME
+    END
+END
+
+IDD_DIALOG_ADD DIALOGEX 0, 0, 471, 274
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_VISIBLE | WS_CAPTION
+CAPTION "Lisää tai poista laajennuksia"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Voit valita tähän konsoliin laajennuksia tietokoneessa käytettävissä olevista ja määrittää valitut laajennukset. Laajennettavien laajennusten osalta voit määrittää, mitkä lisäosat ovat käytössä.", IDC_STATIC, 8, 7, 457, 23 
+    LTEXT           "Käytettävissä olevat laajennukset:", IDC_STATIC, 7, 30, 163, 8
+    CONTROL         "", IDC_ADD_LIST_AVAILABLE, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_EX_FULLROWSELECT | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_SHAREIMAGELISTS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP, 7, 40, 163, 157
+    PUSHBUTTON      "&Lisää >", IDC_ADD_BUTTON_ADD, 175, 40, 72, 14
+    PUSHBUTTON      "< &Poista", IDC_ADD_BUTTON_REMOVE, 175, 58, 72, 14
+    LTEXT           "Ylätason laajennus:", IDC_ADD_TEXT_PARENT, 256, 30, 127, 8, WS_CHILD | NOT WS_VISIBLE
+    CONTROL         "", IDC_ADD_LIST_PARENT, "ComboBoxEx32", CBS_DROPDOWNLIST | WS_CHILD | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP, 256, 40, 127, 81
+    LTEXT           "Valitut laajennukset:", IDC_ADD_TEXT_SELECTED, 256, 30, 127, 8
+    CONTROL         "", IDC_ADD_LIST_SELECTED, "SysTreeView32", TVS_HASBUTTONS | TVS_HASLINES | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP, 256, 40, 127, 157
+    PUSHBUTTON      "Siirrä &ylös", IDC_ADD_BUTTON_UP, 392, 40, 72, 14
+    PUSHBUTTON      "Siirrä &alas", IDC_ADD_BUTTON_DOWN, 392, 58, 72, 14
+
+    PUSHBUTTON      "Lisäasetukset...", IDC_ADD_ADVANCED, 392, 183, 72, 14
+
+    LTEXT           "Kuvaus:", IDC_STATIC, 7, 204, 162, 8
+    EDITTEXT        IDC_ADD_DESCRIPTION, 7, 214, 457, 33, ES_READONLY | ES_MULTILINE | WS_VSCROLL | WS_BORDER
+    DEFPUSHBUTTON   "OK", IDOK, 357, 254, 50, 14
+    PUSHBUTTON      "Peruuta", IDCANCEL, 414, 254, 50, 14
+END
+
+IDD_CUSTOMIZE DIALOGEX 0, 0, 214, 223
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_VISIBLE | WS_CAPTION
+CAPTION "Mukauta näkymää"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT "Valitse valintaruudut tai poista valinnat, jos haluat näyttää tai piilottaa konsoli-ikkunan kohteita.", IDC_STATIC, 7, 7, 194, 22
+    GROUPBOX "MMC", IDC_STATIC, 7, 31, 200, 111
+    AUTOCHECKBOX "&Konsolipuu", IDC_CUSTOMIZE_SCOPEPANE, 13, 42, 160, 10
+    AUTOCHECKBOX "&Vakiovalikot (Toiminto ja Näytä)", IDC_CUSTOMIZE_MENUS, 13, 56, 160, 10
+    AUTOCHECKBOX "Vakio&työkalurivi", IDC_CUSTOMIZE_TOOLBAR, 13, 70, 160, 10
+    AUTOCHECKBOX "&Tilarivi", IDC_CUSTOMIZE_STATUSBAR, 13, 84, 160, 10
+    AUTOCHECKBOX "K&uvausrivi", IDC_CUSTOMIZE_DESCRIPTIONBAR, 13, 98, 160, 10
+    AUTOCHECKBOX "Tehtävälevyn &siirtymisvälilehdet", IDC_CUSTOMIZE_TABS, 13, 112, 160, 10
+    AUTOCHECKBOX "T&oimintoruutu", IDC_CUSTOMIZE_ACTIONSPANE, 13, 126, 160, 10
+    GROUPBOX "Laajennus", IDC_STATIC, 7, 150, 200, 42
+    AUTOCHECKBOX "&Valikot", IDC_CUSTOMIZE_SNAPIN_MENUS, 13, 162, 160, 10
+    AUTOCHECKBOX "T&yökalurivit", IDC_CUSTOMIZE_SNAPIN_TOOLBARS, 13, 176, 160, 10
+    DEFPUSHBUTTON "OK", IDOK, 157, 200, 50, 14
+END
+
+IDD_CONSOLEOPTIONS DIALOGEX 0, 0, 252, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_VISIBLE | WS_CAPTION
+CAPTION "Konsoli"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON "", IDC_CONSOLEICON, 7, 7, 20, 20
+    EDITTEXT IDC_CONSOLENAME, 37, 11, 134, 12, NOT WS_TABSTOP | WS_BORDER | ES_AUTOHSCROLL
+    PUSHBUTTON "&Vaihda kuvake...", IDC_CONSOLESYMBOL, 177, 10, 68, 14
+
+    LTEXT "Nämä asetukset tulevat voimaan, kun avaat MMC:n seuraavan kerran.", IDC_STATIC, 7, 44, 238, 19
+    LTEXT "&Konsolitila:", IDC_STATIC, 7, 70, 56, 8
+    COMBOBOX IDC_CONSOLEMODE, 67, 68, 178, 130, CBS_DROPDOWNLIST | WS_GROUP
+    GROUPBOX "Kuvaus", IDC_STATIC, 7, 87, 238, 60
+    LTEXT "", IDC_CONSOLEDESCRIPTION, 14, 100, 224, 43
+
+    AUTOCHECKBOX "Älä &tallenna tämän konsolin muutoksia", IDC_CONSOLENOSAVE, 13, 160, 160, 10
+    AUTOCHECKBOX "Salli käyttäjän mukauttaa &näkymiä", IDC_CONSOLECUSTOM, 13, 172, 160, 10
+
+    DEFPUSHBUTTON   "OK",IDOK,140,197,50,14,WS_TABSTOP
+    PUSHBUTTON      "Peruuta",IDCANCEL,194,197,50,14,WS_TABSTOP
+END
+
+IDD_ABOUT_SNAPIN DIALOGEX 0, 0, 206, 127
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tietoja"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON "", IDC_ABOUT_ICON, 9, 9, 20, 20
+    EDITTEXT IDC_ABOUT_INFO, 53, 9, 136, 31, NOT WS_BORDER | ES_LEFT | ES_MULTILINE | ES_READONLY | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_TABSTOP
+    EDITTEXT IDC_ABOUT_DESCRIPTION, 9, 52, 188, 51, NOT WS_BORDER | ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON "OK", IDOK, 149, 106, 50, 14 
+END
+
+IDD_ADVANCED DIALOGEX 0, 0, 300, 73
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lisäasetukset"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT "Oletusarvoisesti laajennukset lisätään konsolin juureen. Kun valitset tämän valintaruudun, voit valita ylätason laajennuksen.", IDC_STATIC, 7, 7, 277, 27
+    AUTOCHECKBOX "Salli ylätason laajennuksen vaihtaminen", IDC_ADVANCED_CHECK, 7, 37, 278, 10 
+    DEFPUSHBUTTON "OK", IDOK, 189, 53, 50, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 243, 53, 50, 14
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE "ReactOS-hallintakonsoli"
+    IDS_CONSOLETITLE "Konsoli%1!u!"
+    IDS_MODULE "Moduuli"
+    IDS_VENDOR "Valmistaja"
+    IDS_ABOUTTITLE "Tietoja"
+
+    IDS_CONSOLEROOT "Konsolin juuri"
+
+    IDS_AUTHORMODE "Laatijatila"
+    IDS_USERMODE_FULL "Käyttäjätila - täydet käyttöoikeudet"
+    IDS_USERMODE_MULTIPLE "Käyttäjätila - rajoitetut oikeudet, useita ikkunoita"
+    IDS_USERMODE_SINGLE "Käyttäjätila - rajoitetut oikeudet, yksi ikkuna"
+
+    IDS_AUTHORMODE_DESC "Antaa käyttäjille täyden pääsyn kaikkiin MMC:n toimintoihin, kuten laajennusten lisäämiseen tai poistamiseen, uusien ikkunoiden ja tehtävälevynäkymien luomiseen sekä puun kaikkien osien tarkastelemiseen."
+    IDS_USERMODE_FULL_DESC "Estää käyttäjiä lisäämästä tai poistamasta laajennuksia ja muuttamasta laajennuskonsolin ominaisuuksia. Käyttäjillä on täysi pääsy puuhun."
+    IDS_USERMODE_MULTIPLE_DESC "Estää käyttäjiä käyttämästä puun osia, jotka eivät näy laajennuskonsolin ikkunoissa."
+    IDS_USERMODE_SINGLE_DESC "Avaa laajennuskonsolin yhden ikkunan tilassa ja estää käyttäjiä käyttämästä puun osia, jotka eivät näy kyseisessä laajennuskonsolin ikkunassa."
+
+    IDS_ABOUT_VERSION "Versio: "
+    IDS_ABOUT_SNAPIN "&Tietoja: %s..."
+END
+
+STRINGTABLE
+BEGIN
+    IDM_TB_UNDO         "Kumoa"
+    IDM_TB_REDO         "Tee uudelleen"
+    IDM_TB_UP           "Tasoa ylemmäs"
+    IDM_TB_SCOPE_PANE   "Näytä tai piilota konsolipuu"
+    IDM_TB_EXPORT_LIST  "Vie luettelo"
+    IDM_TB_HELP         "Ohje"
+    IDM_TB_ACTIONS_PANE "Näytä tai piilota toimintoruutu"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_FILE_NEW      "Luo uusi konsoli."
+    IDM_FILE_OPEN     "Avaa aiemmin luotu konsoli."
+    IDM_FILE_SAVE     "Tallenna nykyinen konsoli."
+    IDM_FILE_SAVEAS   "Tallenna nykyisen konsolin kopio erilliseen tiedostoon."
+    IDM_FILE_ADD      "Voit lisätä laajennuksia laajennuskonsoliin tai poistaa niitä siitä."
+    IDM_FILE_OPTIONS  "Muuttaa käyttäjän ja/tai laajennuskonsolin asetuksia."
+    IDM_FILE_RECENT1  "Avaa tämän laajennuskonsolin."
+    IDM_FILE_RECENT2       "Avaa tämän laajennuskonsolin."
+    IDM_FILE_RECENT3       "Avaa tämän laajennuskonsolin."
+    IDM_FILE_RECENT4       "Avaa tämän laajennuskonsolin."
+    IDM_FILE_EXIT          "Lopettaa ohjelman ja kehottaa tallentamaan tiedostot."
+
+    IDM_ACTION_NEW         "Avaa uuden ikkunan, jonka juurena on tämä solmu."
+    IDM_ACTION_RENAME      "Nimeää nykyisen valinnan uudelleen."
+    IDM_ACTION_EXPORT_LIST "Vie nykyisen luettelon tiedostoon."
+
+    IDM_VIEW_COLUMNS       "Avaa valintaikkunan, jossa voit muokata tulosruudun sarakkeita."
+    IDM_VIEW_LARGE_ICONS   "Näyttää kohteet suurina kuvakkeina."
+    IDM_VIEW_SMALL_ICONS   "Näyttää kohteet pieninä kuvakkeina."
+    IDM_VIEW_LIST          "Näyttää kohteet luettelona."
+    IDM_VIEW_DETAILS       "Näyttää ikkunassa tietoja kustakin kohteesta."
+    IDM_VIEW_CUSTOMIZE     "Muuttaa näkymän asetuksia."
+
+    IDM_FAVORITES_ADD      "Lisää nykyisen näkymän Suosikit-luetteloon."
+    IDM_FAVORITES_ORGANIZE "Voit järjestää suosikit kansioihin."
+
+    IDM_WINDOWS_NEW        "Uusi ikkuna."
+    IDM_WINDOWS_CASCADE    "Järjestää ikkunat limittäin."
+    IDM_WINDOWS_TILE       "Järjestää ikkunat vierekkäin."
+    IDM_WINDOWS_ARRANGE    "Järjestää kuvakkeet ikkunan alareunaan."
+
+    IDM_HELP_TOPICS        "Avaa ohjeen."
+    IDM_HELP_ABOUT_MMC     "Näyttää ohjelman tiedot, versionumeron ja tekijänoikeudet."
+    IDM_HELP_ABOUT_SNAPIN  "Näyttää laajennuksen tiedot, versionumeron ja tekijänoikeudet."
+END

@@ -1,0 +1,7 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_DllNotLoaded "LoadLibrary ei pystynyt lataamaan kohdetta '%s'"
+    IDS_MissingEntry "Aloituskohta puuttuu:%s\nKohteessa %s"
+END

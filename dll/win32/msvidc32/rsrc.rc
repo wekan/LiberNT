@@ -41,6 +41,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/msvidc32_Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/msvidc32_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/msvidc32_Fr.rc"
 #endif

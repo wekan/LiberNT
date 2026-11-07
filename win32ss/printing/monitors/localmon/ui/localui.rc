@@ -51,6 +51,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/ui_Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/ui_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/ui_Fr.rc"
 #endif

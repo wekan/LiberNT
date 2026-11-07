@@ -1,0 +1,56 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USER_HEADER "KÄYTTÄJÄTIEDOT"
+    IDS_GROU_HEADER "RYHMÄTIEDOT"
+    IDS_PRIV_HEADER "OIKEUSTIEDOT"
+    IDS_COL_USER_NAME "Käyttäjänimi"
+    IDS_COL_GROUP_NAME "Ryhmän nimi"
+    IDS_COL_TYPE "Tyyppi"
+    IDS_COL_SID "SID"
+    IDS_COL_ATTRIB "Määritteet"
+    IDS_COL_PRIV_NAME "Oikeuden nimi"
+    IDS_COL_DESCRIPTION "Kuvaus"
+    IDS_COL_STATE "Tila"
+    IDS_TP_WELL_KNOWN_GROUP "Tunnettu ryhmä"
+    IDS_TP_ALIAS "Alias"
+    IDS_TP_LABEL "Nimiö"
+
+    /* [!] important note from the programmer: the program tries to remove
+       the last ', ' after concatenating, so keep than in mind when translating.
+
+       you can test your translation of these attributes by using 'whoami /groups' */
+
+    IDS_ATTR_GROUP_MANDATORY "Pakollinen ryhmä, "
+    IDS_ATTR_GROUP_ENABLED_BY_DEFAULT "Oletusarvoisesti käytössä, "
+    IDS_ATTR_GROUP_ENABLED "Käytössä oleva ryhmä, "
+    IDS_ATTR_GROUP_OWNER "Ryhmän omistaja, "
+    IDS_UNKNOWN_DESCRIPTION "???"
+    IDS_STATE_ENABLED "Käytössä"
+    IDS_STATE_DISABLED "Ei käytössä"
+    IDS_ERROR_UPN "VIRHE: Käyttäjän täydellistä nimeä (UPN) ei voi hakea, koska nykyinen\nkirjautunut käyttäjä ei ole toimialueen käyttäjä.\n"
+    IDS_ERROR_FQDN "VIRHE: Täydellistä erottuvaa nimeä (FQDN) ei voi hakea, koska nykyinen\nkirjautunut käyttäjä ei ole toimialueen käyttäjä.\n"
+    IDS_ERROR_VALUEXPECTED "VIRHE: Virheellinen syntaksi. Valitsimelle '/fo' odotettiin arvoa.\nKirjoita ""WHOAMI /?"" saadaksesi käyttöohjeet.\n"
+    IDS_ERROR_VALUENOTALLOWED "VIRHE: Virheellinen syntaksi. Arvo '%s' ei ole sallittu valitsimelle '/fo'.\nKirjoita ""WHOAMI /?"" saadaksesi käyttöohjeet.\n"
+    IDS_ERROR_1TIMES "VIRHE: Virheellinen syntaksi. Valitsinta '%s' ei saa käyttää useammin kuin '1' kerta(a).\nKirjoita ""WHOAMI /?"" saadaksesi käyttöohjeet.\n"
+    IDS_ERROR_INVALIDSYNTAX "VIRHE: Virheellinen syntaksi.\nKirjoita ""WHOAMI /?"" saadaksesi käyttöohjeet.\n"
+    IDS_ERROR_INVALIDARG "VIRHE: Virheellinen argumentti tai valitsin - '%s'.\nKirjoita ""WHOAMI /?"" saadaksesi käyttöohjeet.\n"
+    IDS_ERROR_NH_LIST "VIRHE: Valitsinta /NH ei voi käyttää LIST-muodon kanssa.\nKirjoita ""WHOAMI /?"" saadaksesi käyttöohjeet.\n"
+    IDS_HELP "KUVAUS:\n\
+  Näyttää paikallisesti kirjautuneen käyttäjän käyttäjä-, ryhmä- ja oikeustiedot.\n\
+  Jos argumentteja ei anneta, näyttää nykyisen toimialueen ja käyttäjänimen.\n\
+\n\
+  Valitsimen '/fo' käytettävissä olevat tulostusmuodot ovat 'csv', 'list' ja 'table'.\n\
+  Piilota otsikot valitsimella '/nh'. Oletusarvoisesti tiedot näytetään taulukkona.\n\
+\n\
+SYNTAKSI:\n\
+  whoami [/upn | /fqdn | /logonid]\n\
+  whoami {[/user] [/groups] [/priv]} [/fo <Muoto>] [/nh]\n\
+  whoami /all [/fo <Muoto>] [/nh]\n\
+\n\
+ESIMERKKEJÄ:\n\
+  whoami /groups /priv /nh /fo csv\n\
+  whoami /logonid\n\
+  whoami\n"
+END

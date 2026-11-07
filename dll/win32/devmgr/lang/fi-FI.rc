@@ -1,0 +1,352 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_NAME "Nimi"
+    IDS_TYPE "Tyyppi"
+    IDS_MANUFACTURER "Valmistaja: %1"
+    IDS_LOCATION "Sijainti: %1"
+    IDS_STATUS "Laitteen tila: %1"
+    IDS_UNKNOWN "Tuntematon"
+    IDS_LOCATIONSTR "Sijainti %1!u! (%2)"
+    IDS_DEVCODE " (Koodi %1!u!)"
+    IDS_DEVCODE2 " (Koodi %2!u!)"
+    IDS_ENABLEDEVICE "Käytä tätä laitetta (ota käyttöön)"
+    IDS_DISABLEDEVICE "Älä käytä tätä laitetta (poista käytöstä)"
+    IDS_UNKNOWNDEVICE "Tuntematon laite"
+    IDS_NODRIVERLOADED "Tälle laitteelle ei ole asennettu ohjaimia."
+    IDS_DEVONPARENT "kohteessa %1"
+    IDS_TROUBLESHOOTDEV "&Vianmääritys..."
+    IDS_ENABLEDEV "&Ota laite käyttöön"
+    IDS_REINSTALLDRV "&Asenna ohjain uudelleen"
+    IDS_PROPERTIES "O&minaisuudet"
+    IDS_UPDATEDRV "&Päivitä ohjain..."
+    IDS_REBOOT "Käynnistä &tietokone uudelleen..."
+    IDS_NOTAVAILABLE "Ei käytettävissä"
+    IDS_NOTDIGITALLYSIGNED "Ei digitaalisesti allekirjoitettu"
+    IDS_NODRIVERS "Tämä laite ei tarvitse ohjaintiedostoja, tai niitä ei ole ladattu."
+    IDS_RESOURCE_COLUMN "Resurssin tyyppi"
+    IDS_SETTING_COLUMN "Asetus"
+    IDS_RESOURCE_MEMORY_RANGE "Muistialue"
+    IDS_RESOURCE_INTERRUPT "IRQ"
+    IDS_RESOURCE_DMA "DMA"
+    IDS_RESOURCE_PORT "I/O-alue"
+    IDS_COPY "&Kopioi"
+END
+
+/* error messages, source: http://www.z123.org/techsupport/medm.htm */
+STRINGTABLE
+BEGIN
+    IDS_DEV_NO_PROBLEM "Tämä laite toimii oikein."
+    IDS_DEV_NOT_CONFIGURED "Tätä laitetta ei ole määritetty oikein."
+    IDS_DEV_DEVLOADER_FAILED "LiberNT ei voinut ladata tämän laitteen ohjainta, koska tietokone ilmoittaa kaksi %1-väylätyyppiä."
+    IDS_DEV_DEVLOADER_FAILED2 "Tämän laitteen %1-laitelataajat eivät voineet ladata laiteohjainta."
+    IDS_DEV_OUT_OF_MEMORY "Tämän laitteen ohjain voi olla viallinen, tai järjestelmän muisti tai muut resurssit voivat olla vähissä."
+    IDS_DEV_ENTRY_IS_WRONG_TYPE "Tämä laite ei toimi oikein, koska jokin sen ohjaimista tai rekisteri voi olla viallinen."
+    IDS_DEV_LACKED_ARBITRATOR "Tämän laitteen ohjain pyysi resurssia, jota LiberNT ei osaa käsitellä."
+    IDS_DEV_BOOT_CONFIG_CONFLICT "Toinen laite käyttää resursseja, joita tämä laite tarvitsee."
+    IDS_DEV_FAILED_FILTER "Tämän laitteen ohjaimet on asennettava uudelleen."
+    IDS_DEV_DEVLOADER_NOT_FOUND "Tämä laite ei toimi oikein, koska LiberNT ei voi ladata tiedostoa %1, joka lataa laitteen ohjaimet."
+    IDS_DEV_DEVLOADER_NOT_FOUND2 "Tämä laite ei toimi oikein, koska tiedosto %1, joka lataa tämän laitteen ohjaimet, on viallinen."
+    IDS_DEV_DEVLOADER_NOT_FOUND3 "Laitevika: Yritä vaihtaa tämän laitteen ohjain. Jos se ei auta, katso laitteiston ohjeista."
+    IDS_DEV_INVALID_DATA "Tämä laite ei toimi oikein, koska tietokoneen BIOS ilmoittaa laitteen resurssit väärin."
+    IDS_DEV_INVALID_DATA2 "Tämä laite ei toimi oikein, koska laitteen BIOS ilmoittaa laitteen resurssit väärin. "
+    IDS_DEV_FAILED_START "Tämä laite ei ole läsnä, ei toimi oikein, tai sen kaikkia ohjaimia ei ole asennettu."
+    IDS_DEV_LIAR "LiberNT lakkasi vastaamasta yrittäessään käynnistää tämän laitteen, eikä siksi yritä käynnistää tätä laitetta enää uudelleen."
+    IDS_DEV_NORMAL_CONFLICT "Tämä laite ei löydä käytettäväksi yhtään vapaata %1-resurssia."
+    IDS_DEV_NOT_VERIFIED "Tämä laite ei ole läsnä, ei toimi oikein, tai sen kaikkia ohjaimia ei ole asennettu."
+    IDS_DEV_NEED_RESTART "Tämä laite ei voi toimia oikein, ennen kuin käynnistät tietokoneen uudelleen."
+    IDS_DEV_REENUMERATION "Tämä laite aiheuttaa resurssiristiriidan."
+    IDS_DEV_PARTIAL_LOG_CONF "LiberNT ei voinut tunnistaa kaikkia tämän laitteen käyttämiä resursseja."
+    IDS_DEV_UNKNOWN_RESOURCE "Ohjaimen tietotiedosto %1 käskee tätä alilaitetta käyttämään resurssia, jota ylälaitteella ei ole tai jota se ei tunnista."
+    IDS_DEV_REINSTALL "Tämän laitteen ohjaimet on asennettava uudelleen."
+    IDS_DEV_REGISTRY "Rekisteri voi olla viallinen."
+    IDS_DEV_WILL_BE_REMOVED "LiberNT poistaa tätä laitetta."
+    IDS_DEV_DISABLED "Tätä laitetta ei ole käynnistetty."
+    IDS_DEV_DISABLED2 "Tämä laite on poistettu käytöstä."
+    IDS_DEV_DEVLOADER_NOT_READY "Tämän laitteen lataajat eivät voi ladata tarvittavia ohjaimia."
+    IDS_DEV_DEVLOADER_NOT_READY2 "" /* unused */
+    IDS_DEV_DEVLOADER_NOT_READY3 "" /* unused */
+    IDS_DEV_DEVICE_NOT_THERE "Tämä laite ei ole läsnä, ei toimi oikein, tai sen kaikkia ohjaimia ei ole asennettu."
+    IDS_DEV_MOVED "LiberNT on määrittämässä tätä laitetta."
+    IDS_DEV_TOO_EARLY "LiberNT on määrittämässä tätä laitetta."
+    IDS_DEV_NO_VALID_LOG_CONF "LiberNT ei voi määrittää tämän laitteen resursseja."
+    IDS_DEV_FAILED_INSTALL "Tämän laitteen ohjaimia ei ole asennettu."
+    IDS_DEV_HARDWARE_DISABLED "Tämä laite on poistettu käytöstä, koska laitteen BIOS ei antanut sille resursseja."
+    IDS_DEV_CANT_SHARE_IRQ "Tämä laite käyttää keskeytyspyyntöresurssia (IRQ), jota toinen laite käyttää ja jota ei voi jakaa.\nMuuta ristiriitainen asetus tai poista ristiriidan aiheuttava reaalitilan ohjain."
+    IDS_DEV_FAILED_ADD "Tämä laite ei toimi oikein, koska LiberNT ei voi ladata laitteen tarvitsemia ohjaimia."
+    IDS_DEV_DISABLED_SERVICE "LiberNT ei voi asentaa tämän laitteen ohjaimia, koska se ei pääse asemaan tai verkkosijaintiin, jossa asennustiedostot ovat."
+    IDS_DEV_TRANSLATION_FAILED "Tämä laite ei vastaa ohjaimelleen."
+    IDS_DEV_NO_SOFTCONFIG "LiberNT ei voi selvittää tämän laitteen asetuksia. Katso laitteen mukana tulleita ohjeita ja määritä asetukset Resurssit-välilehdellä."
+    IDS_DEV_BIOS_TABLE "Tietokoneen järjestelmän laiteohjelmisto ei sisällä riittävästi tietoja tämän laitteen määrittämiseen ja käyttämiseen.\nJos haluat käyttää tätä laitetta, hanki laiteohjelmisto- tai BIOS-päivitys tietokoneen valmistajalta."
+    IDS_DEV_IRQ_TRANSLATION_FAILED "Tämä laite pyytää PCI-keskeytystä, mutta se on määritetty ISA-keskeytykselle (tai päinvastoin).\nMääritä laitteen keskeytys uudelleen tietokoneen järjestelmän asetusohjelmalla."
+    IDS_DEV_FAILED_DRIVER_ENTRY "LiberNT ei voi alustaa tämän laitteiston laiteohjainta."
+    IDS_DEV_DRIVER_FAILED_PRIOR_UNLOAD "LiberNT ei voi ladata tämän laitteiston laiteohjainta, koska laiteohjaimen aiempi esiintymä on yhä muistissa."
+    IDS_DEV_DRIVER_FAILED_LOAD "LiberNT ei voi ladata tämän laitteiston laiteohjainta. Ohjain voi olla vioittunut tai puuttua."
+    IDS_DEV_DRIVER_SERVICE_KEY_INVALID "LiberNT ei pääse käyttämään tätä laitteistoa, koska sen palveluavaimen tiedot puuttuvat rekisteristä tai ne on tallennettu väärin."
+    IDS_DEV_LEGACY_SERVICE_NO_DEVICES "LiberNT latasi tämän laitteiston laiteohjaimen, mutta ei löydä laitetta."
+    IDS_DEV_DUPLICATE_DEVICE "LiberNT ei voi ladata tämän laitteiston laiteohjainta, koska järjestelmässä on jo käynnissä samanlainen laite."
+    IDS_DEV_FAILED_POST_START "LiberNT on pysäyttänyt tämän laitteen, koska se on ilmoittanut ongelmista."
+    IDS_DEV_HALTED "Sovellus tai palvelu on sammuttanut tämän laitteen."
+    IDS_DEV_PHANTOM "Tätä laitetta ei ole tällä hetkellä liitetty tietokoneeseen."
+    IDS_DEV_SYSTEM_SHUTDOWN "LiberNT ei pääse käyttämään tätä laitetta, koska käyttöjärjestelmä on sammumassa."
+    IDS_DEV_HELD_FOR_EJECT "LiberNT ei voi käyttää tätä laitetta, koska se on valmisteltu turvallista poistamista varten, mutta sitä ei ole irrotettu tietokoneesta"
+    IDS_DEV_DRIVER_BLOCKED "Tämän laitteen ohjelmiston käynnistyminen on estetty, koska sillä tiedetään olevan ongelmia LiberNT:n kanssa. Pyydä uusi ohjain laitteiston toimittajalta."
+    IDS_DEV_REGISTRY_TOO_LARGE "LiberNT ei voi käynnistää uusia laitteita, koska järjestelmän rekisteriryhmä on liian suuri (ylittää rekisterin kokorajoituksen)."
+    IDS_DEV_SETPROPERTIES_FAILED "LiberNT ei pystynyt muuttamaan tämän laitteen asetuksia."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PROP_DEVICEID "Laitteen esiintymän tunnus"
+    IDS_PROP_HARDWAREIDS "Laitteistotunnukset"
+    IDS_PROP_COMPATIBLEIDS "Yhteensopivat tunnukset"
+    IDS_PROP_MATCHINGDEVICEID "Vastaava laitetunnus"
+    IDS_PROP_SERVICE "Palvelu"
+    IDS_PROP_ENUMERATOR "Luetteloija"
+    IDS_PROP_CAPABILITIES "Ominaisuudet"
+    IDS_PROP_DEVNODEFLAGS "Laitesolmun liput"
+    IDS_PROP_CONFIGFLAGS "Määrityksen liput"
+    IDS_PROP_CSCONFIGFLAGS "CSConfig-liput"
+    IDS_PROP_EJECTIONRELATIONS "Poistosuhteet"
+    IDS_PROP_REMOVALRELATIONS "Irrotussuhteet"
+    IDS_PROP_BUSRELATIONS "Väyläsuhteet"
+    IDS_PROP_DEVUPPERFILTERS "Laitteen ylemmät suodattimet"
+    IDS_PROP_DEVLOWERFILTERS "Laitteen alemmat suodattimet"
+    IDS_PROP_CLASSUPPERFILTERS "Luokan ylemmät suodattimet"
+    IDS_PROP_CLASSLOWERFILTERS "Luokan alemmat suodattimet"
+    IDS_PROP_CLASSINSTALLER "Luokan asennusohjelmat"
+    IDS_PROP_CLASSCOINSTALLER "Luokan lisäasennusohjelmat"
+    IDS_PROP_DEVICECOINSTALLER "Laitteen lisäasennusohjelmat"
+    IDS_PROP_FIRMWAREREVISION "Laiteohjelmiston versio"
+    IDS_PROP_CURRENTPOWERSTATE "Nykyinen virtatila"
+    IDS_PROP_POWERCAPABILITIES "Virranhallintaominaisuudet"
+    IDS_PROP_POWERSTATEMAPPINGS "Virtatilojen vastaavuudet"
+END
+
+IDD_HARDWARE DIALOGEX 0, 0, 300, 400
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CAPTION | DS_SHELLFONT
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Laitteet:", IDC_DEVICES, 7, 6, 196, 10
+    CONTROL "", IDC_LV_DEVICES, "SysListView32", LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS |
+            LVS_SHAREIMAGELISTS | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP, 7, 16, 196, 50
+    GROUPBOX "Laitteen ominaisuudet", IDC_PROPERTIESGROUP, 7, 76, 196, 105
+    LTEXT "", IDC_MANUFACTURER, 14, 88, 183, 10, SS_ENDELLIPSIS
+    LTEXT "", IDC_LOCATION, 14, 100, 183, 10, SS_ENDELLIPSIS
+    LTEXT "", IDC_STATUS, 14, 112, 183, 30
+    PUSHBUTTON "&Vianmääritys...", IDC_TROUBLESHOOT, 80, 140, 60, 14, BS_PUSHBUTTON | WS_CHILD | WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON "O&minaisuudet", IDC_PROPERTIES, 146, 140, 50, 14
+END
+
+IDD_DEVICEGENERAL DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON "", IDC_DEVICON, 7, 7, 20, 20
+    LTEXT "", IDC_DEVNAME, 37, 9, 174, 16, SS_NOPREFIX
+    LTEXT "Laitteen tyyppi:", -1, 37, 39, 60, 8, SS_NOPREFIX
+    EDITTEXT IDC_DEVTYPE, 100, 39, 146, 12, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT "Valmistaja:", -1, 37, 53, 60, 8, SS_NOPREFIX
+    EDITTEXT IDC_DEVMANUFACTURER, 100, 53, 145, 12, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT "Sijainti:", -1, 37, 67, 60, 8, SS_NOPREFIX
+    EDITTEXT IDC_DEVLOCATION, 100, 67, 145, 12, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX "Laitteen tila", IDC_DEVSTATUSGROUP, 7, 83, 238, 100
+    EDITTEXT IDC_DEVSTATUS, 14, 96, 224, 61, NOT WS_TABSTOP | ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON "&Vianmääritys...", IDC_DEVPROBLEM, 148, 163, 90, 15
+    LTEXT "&Laitteen käyttö:", IDC_DEVUSAGELABEL, 7, 188, 222, 8, WS_DISABLED
+    COMBOBOX IDC_DEVUSAGE, 7, 198, 239, 40, CBS_DROPDOWNLIST | WS_VSCROLL | WS_DISABLED
+END
+
+IDD_DEVICEDRIVER DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjain"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON "", IDC_DEVICON, 7, 7, 20, 20
+    LTEXT "", IDC_DEVNAME, 37, 9, 174, 16, SS_NOPREFIX
+    LTEXT "Toimittaja:", -1, 37, 39, 60, 8, SS_NOPREFIX
+    EDITTEXT IDC_DRVPROVIDER, 100, 39, 146, 12, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT "Päivämäärä:", -1, 37, 53, 60, 8, SS_NOPREFIX
+    EDITTEXT IDC_DRVDATE, 100, 53, 145, 12, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT "Versio:", -1, 37, 67, 60, 8, SS_NOPREFIX
+    EDITTEXT IDC_DRVVERSION, 100, 67, 145, 12, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT "Allekirjoittaja:", -1, 37, 81, 60, 8, SS_NOPREFIX
+    EDITTEXT IDC_DIGITALSIGNER, 100, 81, 145, 12, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON "&Ohjaimen tiedot...", IDC_DRIVERDETAILS, 7, 106, 75, 15
+    LTEXT "Näytä ohjaintiedostojen tiedot.", -1, 91, 110, 154, 17, SS_NOPREFIX
+    PUSHBUTTON "&Päivitä ohjain...", IDC_UPDATEDRIVER, 7, 134, 75, 15
+    LTEXT "Päivitä laiteohjain.", -1, 91, 138, 154, 17, SS_NOPREFIX
+    PUSHBUTTON "P&alauta ohjain", IDC_ROLLBACKDRIVER, 7, 162, 75, 15
+    LTEXT "Jos laite ei toimi ohjaimen päivittämisen jälkeen, palauta aiemmin asennettu ohjain.", -1, 91, 162, 154, 25, SS_NOPREFIX
+    PUSHBUTTON "Poista a&sennus", IDC_UNINSTALLDRIVER, 7, 190, 75, 15
+    LTEXT "Poista ohjaimen asennus (lisäasetus).", -1, 91, 194, 154, 17, SS_NOPREFIX
+END
+
+IDD_DRIVERDETAILS DIALOGEX 0, 0, 224, 230
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_VISIBLE | WS_DLGFRAME
+CAPTION "Ohjaintiedoston tiedot"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON "", IDC_DEVICON, 7, 7, 20, 20
+    LTEXT "", IDC_DEVNAME, 37, 9, 174, 16, SS_NOPREFIX
+    LTEXT "&Ohjaintiedostot:", -1, 7, 36, 204, 8
+    CONTROL "", IDC_DRIVERFILES, "SysListView32", LVS_REPORT | LVS_NOCOLUMNHEADER |
+            LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_SORTASCENDING |
+            LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP, 7, 46, 209, 80
+    LTEXT "Toimittaja:", -1, 14, 134, 50, 8
+    EDITTEXT IDC_FILEPROVIDER, 66, 134, 155, 8, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT "Versio:", -1, 14, 150, 50, 8
+    EDITTEXT IDC_FILEVERSION, 66, 150, 155, 8, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT "Tekijänoikeus:", -1, 14, 166, 50, 8
+    EDITTEXT IDC_FILECOPYRIGHT, 66, 166, 155, 8, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT "Allekirjoittaja:", -1, 14, 182, 50, 8
+    EDITTEXT IDC_DIGITALSIGNER, 66, 182, 155, 8, NOT WS_TABSTOP | NOT WS_BORDER | ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON "OK", IDOK, 167, 208, 50, 14
+END
+
+IDD_DEVICEDETAILS DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Tiedot"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON "", IDC_DEVICON, 7, 7, 20, 20
+    LTEXT "", IDC_DEVNAME, 37, 9, 174, 16, SS_NOPREFIX
+    COMBOBOX IDC_DETAILSPROPNAME, 7, 36, 238, 165, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL "", IDC_DETAILSPROPVALUE, "SysListView32", LVS_REPORT | LVS_NOCOLUMNHEADER |
+            LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS |
+            LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP, 7, 58, 238, 155
+END
+
+IDD_DEVICERESOURCES DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Resurssit"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON "", IDC_DEVICON, 7, 7, 20, 20
+    LTEXT "", IDC_DEVNAME, 37, 9, 174, 16, SS_NOPREFIX
+    LTEXT "Resurssiasetukset:", -1, 7, 36, 204, 8
+    CONTROL "", IDC_DRIVERRESOURCES, "SysListView32", LVS_REPORT |
+            LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_SORTASCENDING |
+            LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP, 7, 46, 238, 80
+END
+
+IDD_DEVICEPOWER DIALOGEX 0, 0, 252, 218
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Virranhallinta"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON "", IDC_DEVICON, 7, 7, 20, 20
+    LTEXT "", IDC_DEVNAME, 37, 9, 174, 16, SS_NOPREFIX
+END
+
+IDD_UNINSTALLDRIVER DIALOGEX 0, 0, 224, 121
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_VISIBLE | WS_DLGFRAME
+CAPTION "Vahvista laitteen poisto"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON "", IDC_DEVICON, 7, 7, 20, 20
+    LTEXT "", IDC_DEVNAME, 40, 9, 174, 16, SS_NOPREFIX
+    LTEXT "Varoitus: Olet poistamassa tämän laitteen järjestelmästä.", -1, 7, 37, 204, 50
+    DEFPUSHBUTTON "OK", IDOK, 110, 100, 50, 14
+    PUSHBUTTON "Peruuta", IDCANCEL, 166, 100, 50, 14
+END
+
+
+/*
+ This code relates to the device manager GUI
+ */
+
+IDM_MAINMENU MENU
+BEGIN
+    POPUP "&Tiedosto"
+    BEGIN
+        MENUITEM "&Lopeta",                       IDM_EXIT
+    END
+    POPUP "To&iminto"
+    BEGIN
+        MENUITEM "Etsi laitteistomuutoksia",   IDM_SCAN_HARDWARE
+        MENUITEM "Lisää laitteisto",                IDM_ADD_HARDWARE
+    END
+    POPUP "&Näytä"
+    BEGIN
+        MENUITEM "&Laitteet tyypin mukaan",             IDM_DEVBYTYPE
+        MENUITEM "La&itteet yhteyden mukaan",       IDM_DEVBYCONN
+        MENUITEM "&Resurssit tyypin mukaan",           IDM_RESBYTYPE
+        MENUITEM "R&esurssit yhteyden mukaan",     IDM_RESBYCONN, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Näytä piilotetut laitteet",         IDM_SHOWHIDDEN
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Tietoja",                       IDM_ABOUT
+    END
+END
+
+
+STRINGTABLE
+BEGIN
+  IDS_APPNAME               "LiberNT-laitehallinta"
+  IDS_APP_AUTHORS           "Copyright 2015 Ged Murphy"
+  IDS_CONFIRM_DISABLE       "Jos poistat tämän laitteen käytöstä, se lakkaa toimimasta.\nHaluatko varmasti poistaa sen käytöstä?"
+  IDS_CONFIRM_UNINSTALL     "Varoitus: Olet poistamassa tämän laitteen järjestelmästä.\nHaluatko jatkaa?"
+END
+
+STRINGTABLE
+BEGIN
+  IDS_MENU_UPDATE           "Päivitä ohjainohjelmisto..."
+  IDS_MENU_ENABLE           "Ota käyttöön"
+  IDS_MENU_DISABLE          "Poista käytöstä"
+  IDS_MENU_UNINSTALL        "Poista asennus"
+  IDS_MENU_SCAN             "Etsi laitteistomuutoksia"
+  IDS_MENU_ADD              "Lisää laitteisto"
+  IDS_MENU_PROPERTIES       "Ominaisuudet"
+END
+
+STRINGTABLE
+BEGIN
+  IDS_TOOLTIP_PROPERTIES    "Ominaisuudet"
+  IDS_TOOLTIP_SCAN          "Etsi laitteistomuutoksia"
+  IDS_TOOLTIP_ENABLE        "Ota käyttöön"
+  IDS_TOOLTIP_DISABLE       "Poista käytöstä"
+  IDS_TOOLTIP_UPDATE        "Päivitä ohjainohjelmisto"
+  IDS_TOOLTIP_UNINSTALL     "Poista asennus"
+END
+
+STRINGTABLE
+BEGIN
+  IDS_TYPE_MEMORY           "Muisti"
+  IDS_TYPE_PORT             "Siirräntä (IO)"
+  IDS_TYPE_DMA              "Suora muistihaku (DMA)"
+  IDS_TYPE_IRQ              "Keskeytyspyyntö (IRQ)"
+  IDS_TYPE_LARGEMEMORY      "Suuri muisti"
+END
+
+/* Hints */
+STRINGTABLE
+BEGIN
+  IDS_HINT_BLANK        " "
+  IDS_HINT_PROPERTIES   " Avaa valitun kohteen ominaisuusikkunan."
+  IDS_HINT_SCAN         " Etsii muuttuneita tai uusia Plug and Play -laitteita."
+  IDS_HINT_ENABLE       " Ottaa valitun laitteen käyttöön."
+  IDS_HINT_DISABLE      " Poistaa valitun laitteen käytöstä."
+  IDS_HINT_UPDATE       " Käynnistää valitun laitteen ohjainohjelmiston päivityksen ohjatun toiminnon."
+  IDS_HINT_UNINSTALL    " Poistaa valitun laitteen ohjaimen asennuksen."
+  IDS_HINT_ADD          " Lisää tietokoneeseen vanhan laitteen (ei Plug and Play)."
+  IDS_HINT_ABOUT        " Tietoja LiberNT-laitehallinnasta."
+  IDS_HINT_EXIT         " Lopettaa ohjelman."
+
+  IDS_HINT_DEV_BY_TYPE  " Näyttää laitteet laitteistotyypin mukaan."
+  IDS_HINT_DEV_BY_CONN  " Näyttää laitteet yhteyden mukaan."
+  IDS_HINT_RES_BY_TYPE  " Näyttää resurssit tyypin mukaan."
+  IDS_HINT_RES_BY_CONN  " Näyttää resurssit yhteystyypin mukaan."
+  IDS_HINT_SHOW_HIDDEN  " Näyttää vanhat laitteet ja laitteet, joita ei enää ole asennettu."
+
+  IDS_HINT_SYS_RESTORE  " Palauttaa ikkunan normaalikokoon."
+  IDS_HINT_SYS_MOVE     " Siirtää ikkunaa."
+  IDS_HINT_SYS_SIZE     " Muuttaa ikkunan kokoa."
+  IDS_HINT_SYS_MINIMIZE " Pienentää ikkunan kuvakkeeksi."
+  IDS_HINT_SYS_MAXIMIZE " Suurentaa ikkunan koko näytön kokoiseksi."
+  IDS_HINT_SYS_CLOSE    " Sulkee ikkunan."
+END

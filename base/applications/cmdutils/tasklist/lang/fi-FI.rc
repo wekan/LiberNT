@@ -1,0 +1,31 @@
+/*
+ * PROJECT:     ReactOS Tasklist Command
+ * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATOR:  Copyright 2021 He Yang <1160386205@qq.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE, "Käyttö: TASKLIST [/?] [/NH] [/FI suodatin]\n"
+    IDS_DESCRIPTION, "\n\
+Kuvaus:\
+    Tämä työkalu näyttää luettelon koneessa parhaillaan\n\
+    käynnissä olevista prosesseista.\n"
+    IDS_OPTION_TOO_MUCH, "Virhe: Virheellinen syntaksi. Valitsinta '%1' ei saa käyttää useammin kuin '%2!d!' kerta(a).\n"
+    IDS_INVALID_SYNTAX, "Virhe: Virheellinen syntaksi.\n"
+    IDS_INVALID_OPTION, "Virhe: Annettiin tuntematon tai virheellinen komentorivin valitsin.\n"
+    IDS_ENUM_FAILED, "Virhe: Prosessiluetteloa ei voi luetella.\n"
+    IDS_OUT_OF_MEMORY, "Virhe: Muisti loppui.\n"
+    IDS_HEADER_IMAGENAME, "Näköistiedoston nimi"
+    IDS_HEADER_PID, "PID"
+    IDS_HEADER_SESSION, "Istunto#"
+    IDS_HEADER_MEMUSAGE, "Muistin käyttö"
+    IDS_MEMORY_STR, "%s kt"
+    IDS_FILTER_INVALID, "VIRHE: Hakusuodatinta ei tunnisteta.\n"
+    IDS_VALUE_EXPECTED, "VIRHE: Virheellinen syntaksi. Valitsimelle '%1' odotettiin arvoa.\n"
+    IDS_TYPE_HELP, "Kirjoita ""TASKLIST /?"" saadaksesi käyttöohjeet.\n"
+    IDS_NO_MATCHING_TASKS, "TIETO: Määritettyjä ehtoja vastaavia tehtäviä ei ole käynnissä.\n"
+END

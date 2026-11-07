@@ -1,0 +1,27 @@
+<MSCONFIGTOOLFILE>
+
+<_locDefinition>
+  <_locDefault _loc="locNone"/>
+  <_locTag _locAttrData="NAME,HELP">TOOL</_locTag>
+</_locDefinition>
+
+<MSCONFIGTOOLS>
+  <TOOL _locID="About ReactOS" NAME="Tietoja ReactOSista" PATH="%windir%\system32\winver.exe" DEFAULT_OPT="" ADV_OPT="" HELP="Näytä ReactOSin versiotiedot."/>
+  <TOOL _locID="Action Center" NAME="Toimintokeskus" PATH="%windir%\System32\wscui.cpl" DEFAULT_OPT="" ADV_OPT="" HELP="Avaa toimintokeskus."/>
+  <TOOL _locID="Computer Management" NAME="Tietokoneen hallinta" PATH="%windir%\System32\compmgmt.msc" DEFAULT_OPT="" ADV_OPT="" HELP="Näytä ja määritä järjestelmän asetuksia ja osia."/>
+  <TOOL _locID="System Information" NAME="Järjestelmätiedot" PATH="%windir%\System32\msinfo32.exe" DEFAULT_OPT="" ADV_OPT="" HELP="Näytä tarkempia tietoja laitteiston ja ohjelmiston asetuksista."/>
+  <TOOL _locID="Event Viewer" NAME="Tapahtumienvalvonta" PATH="%windir%\System32\eventvwr.exe" DEFAULT_OPT="" ADV_OPT="" HELP="Näytä valvonta- ja vianmääritysviestit."/>
+  <TOOL _locID="Programs" NAME="Ohjelmat" PATH="%windir%\System32\appwiz.cpl" DEFAULT_OPT="" ADV_OPT="" HELP="Käynnistä, lisää tai poista ohjelmia ja ReactOSin osia."/>
+  <TOOL _locID="System Properties" NAME="Järjestelmän ominaisuudet" PATH="%windir%\System32\control.exe" DEFAULT_OPT="system" ADV_OPT="" HELP="Näytä tietokoneesi järjestelmäasetusten perustiedot."/>
+  <TOOL _locID="Internet Options" NAME="Internet-asetukset" PATH="%windir%\System32\inetcpl.cpl" DEFAULT_OPT="" ADV_OPT="" HELP="Näytä Internetin ominaisuudet."/>
+  <TOOL _locID="Internet Protocol Configuration" NAME="Internet-protokollan määritys" PATH="%windir%\System32\cmd.exe" DEFAULT_OPT="/k %windir%\system32\ipconfig.exe" ADV_OPT="/k %windir%\system32\ipconfig.exe /all" HELP="Näytä ja määritä verkko-osoitteiden asetukset."/>
+  <TOOL _locID="Performance Monitor" NAME="Suorituskyvyn valvonta" PATH="%windir%\System32\perfmon.exe" DEFAULT_OPT="" ADV_OPT="/sys" HELP="Valvo paikallisten tai etätietokoneiden suorituskykyä."/>
+  <TOOL _locID="Resource Monitor" NAME="Resurssien valvonta" PATH="%windir%\System32\resmon.exe" DEFAULT_OPT="" ADV_OPT="" HELP="Valvo paikallisen tietokoneen suorituskykyä ja resurssien käyttöä."/>
+  <TOOL _locID="Task Manager" NAME="Tehtävienhallinta" PATH="%windir%\System32\taskmgr.exe" DEFAULT_OPT="" ADV_OPT="" HELP="Näytä tietoja tietokoneessasi käynnissä olevista ohjelmista ja prosesseista."/>
+  <TOOL _locID="Command Prompt" NAME="Komentokehote" PATH="%windir%\System32\cmd.exe" DEFAULT_OPT="" ADV_OPT="" HELP="Avaa komentokehoteikkuna."/>
+  <TOOL _locID="Registry Editor" NAME="Rekisterieditori" PATH="%windir%\System32\regedt32.exe" DEFAULT_OPT="" ADV_OPT="" HELP="Tee muutoksia ReactOSin rekisteriin."/>
+  <TOOL _locID="Remote Assistance" NAME="Etätuki" PATH="%windir%\System32\msra.exe" DEFAULT_OPT="" ADV_OPT="" HELP="Pyydä apua ystävältä (tai tarjoa apua) Internetin kautta."/>
+  <TOOL _locID="System Restore" NAME="Järjestelmän palauttaminen" PATH="%windir%\System32\rstrui.exe" DEFAULT_OPT="" ADV_OPT="" HELP="Palauta tietokoneesi järjestelmä aiempaan tilaan."/>
+</MSCONFIGTOOLS>
+
+</MSCONFIGTOOLFILE>

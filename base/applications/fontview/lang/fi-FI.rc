@@ -1,0 +1,35 @@
+/*
+ * PROJECT:     ReactOS Font Viewer
+ * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
+ * PURPOSE:     English (United States) resource file
+ * TRANSLATOR:  Copyright 2007 Timo Kreuzer <timo.kreuzer@reactos.org>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_INSTALL "&Asenna"
+    IDS_PRINT "&Tulosta"
+    IDS_STRING "Törkylempijävongahdus. 1234567890"
+    IDS_OPEN "Avaa fontti..."
+    IDS_ERROR "Virhe"
+    IDS_ERROR_NOMEM "Muisti ei riitä toiminnon suorittamiseen."
+    IDS_ERROR_NOFONT "Tiedosto %1 ei ole kelvollinen fonttitiedosto."
+    IDS_ERROR_NOCLASS "Ikkunaluokan alustaminen epäonnistui."
+    IDS_ERROR_ISINSTALLED "Tämä fontti on jo asennettu!" 
+    IDS_ERROR_FONTCPY "Fonttitiedoston kopioiminen epäonnistui!"
+    IDS_ERROR_OPENKEY "Fonttien rekisteriavaimen avaaminen epäonnistui!"
+    IDS_ERROR_REGISTER "Uuden fontin rekisteröinti epäonnistui!"
+    IDS_SUCCESS "Onnistui"
+    IDS_COMPLETED "Fontin asennus on valmis."
+    IDS_FILTER_LIST "Kaikki tuetut fontit (*.fon;*.fnt;*.ttf;*.ttc;*.otf;*.otc)\0*.fon;*.fnt;*.ttf;*.ttc;*.otf;*.otc\0\
+Fonttitiedosto (*.fon;*.fnt)\0*.fon;*.fnt\0\
+TrueType-fontti (*.ttf)\0*.ttf\0\
+TrueType-fonttikokoelma (*.ttc)\0*.ttc\0\
+OpenType-fontti (*.otf)\0*.otf\0\
+OpenType-fonttikokoelma (*.otc)\0*.otc\0\
+Kaikki tiedostot (*.*)\0*.*\0"
+    IDS_PREVIOUS "< &Edellinen"
+    IDS_NEXT "&Seuraava >"
+END

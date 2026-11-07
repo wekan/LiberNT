@@ -1,0 +1,72 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Määrittää järjestelmän laitteet.\n\n\
+Laitteen tila:     MODE [laite] [/STATUS]\n\
+Sarjaportti:       MODE COMm[:] [BAUD=b] [PARITY=p] [DATA=d] [STOP=s]\n\
+                                [to=on|off] [xon=on|off] [odsr=on|off]\n\
+                                [octs=on|off] [dtr=on|off|hs]\n\
+                                [rts=on|off|hs|tg] [idsr=on|off]\n\
+Tulostuksen ohjaus: MODE LPTn[:]=COMm[:]\n\
+Valitse koodisivu: MODE CON[:] CP SELECT=yyy\n\
+Koodisivun tila:   MODE CON[:] CP [/STATUS]\n\
+Näyttötila:        MODE CON[:] [COLS=c] [LINES=n]\n\
+Toistonopeus:      MODE CON[:] [RATE=r DELAY=d]\n"
+
+    IDS_QUERY_SERIAL_FOUND "Löytyi sarjalaite - %s\n"
+    IDS_QUERY_PRINTER_FOUND "Löytyi tulostinlaite - %s\n"
+    IDS_QUERY_PARALLEL_FOUND "Löytyi rinnakkaislaite - %s\n"
+    IDS_QUERY_DOSDEV_FOUND "Löytyi DOS-laite - %s\n"
+    // IDS_QUERY_MISC_FOUND "Found other device - %s\n"
+
+    // IDS_QUERY_DEVICE_FOUND "Found %s device - %s\n"
+    // IDS_SERIAL  "serial"
+    // IDS_PRINTER "parallel"
+    // IDS_OTHER   "other"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DEVICE_STATUS_HEADER "Laitteen %s tila:"
+
+    IDS_COM_STATUS_BAUD             "    Siirtonopeus:     %ld\n"
+    IDS_COM_STATUS_PARITY           "    Pariteetti:       %s\n"
+    IDS_COM_STATUS_DATA_BITS        "    Databitit:        %d\n"
+    IDS_COM_STATUS_STOP_BITS        "    Lopetusbitit:     %s\n"
+    IDS_COM_STATUS_TIMEOUT          "    Aikakatkaisu:     %s\n"
+    IDS_COM_STATUS_XON_XOFF         "    XON/XOFF:         %s\n"
+    IDS_COM_STATUS_CTS_HANDSHAKING  "    CTS-kättely:      %s\n"
+    IDS_COM_STATUS_DSR_HANDSHAKING  "    DSR-kättely:      %s\n"
+    IDS_COM_STATUS_DSR_SENSITIVITY  "    DSR-herkkyys:     %s\n"
+    IDS_COM_STATUS_DTR_CIRCUIT      "    DTR-piiri:        %s\n"
+    IDS_COM_STATUS_RTS_CIRCUIT      "    RTS-piiri:        %s\n"
+
+    IDS_CONSOLE_STATUS_LINES    "    Rivit:          %d\n"
+    IDS_CONSOLE_STATUS_COLS     "    Sarakkeet:      %d\n"
+    IDS_CONSOLE_KBD_RATE        "    Toistonopeus:   %ld\n"
+    IDS_CONSOLE_KBD_DELAY       "    Toistoviive:    %ld\n"
+    IDS_CONSOLE_CODEPAGE        "    Koodisivu:      %d\n"
+
+    IDS_PRINTER_OUTPUT_NOT_REROUTED     "    Tulostinta ei ole ohjattu uudelleen.\n"
+    IDS_PRINTER_OUTPUT_REROUTED_SERIAL  "    Tulostin on ohjattu sarjaporttiin %s.\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR_QUERY_DEVICES "VIRHE: DOS-laitteiden kysely epäonnistui (0x%lx).\n"
+    IDS_ERROR_QUERY_DEVICES_FORM "    QueryDosDeviceW(%s) palautti tunnistamattoman muodon %s.\n"
+    IDS_ERROR_SET_PARALLEL_STATE "VIRHE: SetParallelState(%d) - DefineDosDevice(%s) (0x%lx)\n"
+    IDS_ERROR_INVALID_PARAMETER "Virheellinen parametri - %s\n"
+    IDS_ERROR_ILLEGAL_DEVICE_NAME "Virheellinen laitenimi - %s (0x%lx)\n"
+    IDS_ERROR_DEVICE_NOT_AVAILABLE "Laite %s ei ole tällä hetkellä käytettävissä.\n"
+    IDS_ERROR_STATUS_GET_DEVICE "Laitteen %s tilan hakeminen epäonnistui:\n"
+    IDS_ERROR_STATUS_SET_DEVICE "Laitteen %s tilan asettaminen epäonnistui:\n"
+    IDS_ERROR_TIMEOUT_GET_DEVICE "Laitteen %s aikakatkaisun hakeminen epäonnistui:\n"
+    IDS_ERROR_TIMEOUT_SET_DEVICE "Laitteen %s aikakatkaisun asettaminen epäonnistui:\n"
+    IDS_ERROR_INVALID_PARITY_BITS "VIRHE: Virheellinen pariteettibittien arvo %d:\n"
+    IDS_ERROR_INVALID_STOP_BITS "VIRHE: Virheellinen lopetusbittien arvo %d:\n"
+    IDS_ERROR_NO_MEMORY "VIRHE: Muisti ei riitä.\n"
+    IDS_ERROR_SCREEN_LINES_COL "Näyttöä ei voi asettaa määritettyyn rivi- ja sarakemäärään.\n"
+    IDS_ERROR_INVALID_CODEPAGE "Määritetty koodisivu ei kelpaa.\n"
+END

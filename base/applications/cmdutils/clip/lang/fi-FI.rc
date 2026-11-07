@@ -1,0 +1,9 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\nKäyttöohjeet saat kirjoittamalla ""CLIP /?"".\n"
+    IDS_HELP "\nOhjaa komentoriviohjelmien tulosteen leikepöydälle.\n\n\
+CLIP [/?]\n\n\
+    /?  Näyttää tämän ohjeen.\n"
+END

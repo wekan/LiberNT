@@ -1,0 +1,102 @@
+/*
+ * PROJECT:     ReactOS Zip Shell Extension
+ * LICENSE:     GPL-2.0+ (https://spdx.org/licenses/GPL-2.0+)
+ * PURPOSE:     Finnish resource translation
+ * COPYRIGHT:   Copyright 2017-2019 Mark Jansen (mark.jansen@reactos.org)
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_PROPPAGEDESTINATION DIALOGEX 0, 0, 260, 156
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Valitse kohde"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "Valitse kohdekansio",IDC_STATIC,86,12,189,8
+    EDITTEXT        IDC_DIRECTORY,86,24,157,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Selaa...",IDC_BROWSE,189,42,54,14
+    PUSHBUTTON      "Salasana",IDC_PASSWORD,189,66,54,14
+    LTEXT           "Pura valitsemalla Seuraava",IDC_STATUSTEXT,86,114,80,8
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,86,126,157,6
+    CONTROL         IDB_ZIPFLDR,-1,"STATIC",SS_BITMAP | WS_CHILD | WS_VISIBLE,0,0,78,138
+END
+
+IDD_PROPPAGECOMPLETE DIALOGEX 0, 0, 260, 156
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Purkaminen valmis"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "Tiedostot on purettu seuraavaan kansioon:",IDC_STATIC,86,12,157,18
+    LTEXT           "%s",IDC_DESTDIR,86,36,157,8
+    CONTROL         "Näytä puretut tiedostot",IDC_SHOW_EXTRACTED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,86,66,81,10
+    LTEXT           "Jatka valitsemalla Valmis.",IDC_STATIC,86,84,89,8
+    CONTROL         IDB_ZIPFLDR,-1,"STATIC",SS_BITMAP | WS_CHILD | WS_VISIBLE,0,0,78,138
+END
+
+IDD_CONFIRM_FILE_REPLACE DIALOGEX 0, 0, 273, 56
+STYLE DS_MODALFRAME | DS_SHELLFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vahvista tiedoston korvaaminen"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Kyllä",IDYES,6,36,62,14
+    PUSHBUTTON      "Kyllä k&aikkiin",IDYESALL,72,36,62,14
+    PUSHBUTTON      "&Ei",IDNO,138,36,62,14
+    PUSHBUTTON      "Peruuta",IDCANCEL,204,36,62,14
+    ICON            "",IDC_EXCLAMATION_ICON,6,6,24,22
+    LTEXT           "",IDC_MESSAGE,36,6,228,24
+END
+
+IDD_PASSWORD DIALOGEX 0, 0, 243, 62
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Salasana tarvitaan"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PASSWORD,72,42,108,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,186,6,50,14
+    PUSHBUTTON      "Ohita tiedosto",IDSKIP,186,24,50,14
+    PUSHBUTTON      "Peruuta",IDCANCEL,186,42,50,14
+    LTEXT           "Static",IDC_MESSAGE,24,6,156,30
+    LTEXT           "Salasana:",IDC_STATIC,24,44,44,8
+END
+
+STRINGTABLE
+BEGIN
+    IDS_COL_NAME "Nimi"
+    IDS_COL_TYPE "Tyyppi"
+    IDS_COL_COMPRSIZE "Pakattu koko"
+    IDS_COL_PASSWORD "Salasana"
+    IDS_COL_SIZE "Koko"
+    IDS_COL_RATIO "Suhde"
+    IDS_COL_DATE_MOD "Muokattu"
+    IDS_YES "Kyllä"
+    IDS_NO "Ei"
+    IDS_ERRORTITLE "Pakattujen kansioiden virhe"
+    IDS_CANTSTARTTHREAD "Tiedostojen pakkaamisen säiettä ei voi käynnistää."
+    IDS_NOFILES "Määritetty kansio '%s' on tyhjä, joten Pakatut kansiot ei voi lisätä sitä arkistoon."
+    IDS_CANTCREATEZIP "Pakatun kansion '%s' luominen epäonnistui (virhekoodi: %d)."
+    IDS_CANTREADFILE "Tiedostoa '%s' ei voi lukea."
+    IDS_EXTRACTING "Puretaan..."
+    IDS_CANTEXTRACTFILE "Tiedostoa '%1' ei voi purkaa."
+    IDS_DECOMPRESSERROR "Pakkausmenetelmää %d ei tueta. Haluatko jatkaa?"
+    IDS_UNKNOWNERROR "Tuntematon virhe 0x%08x."
+    IDS_CANTDELETEFILE "Tiedostojen poistaminen epäonnistui."
+    IDS_DRAGEXTRACT "&Pura..."
+
+    IDS_WIZ_TITLE "Ohjattu purkaminen"
+    IDS_WIZ_DEST_TITLE "Valitse kohde"
+    IDS_WIZ_DEST_SUBTITLE "Zip-arkiston tiedostot puretaan määritettyyn sijaintiin."
+    IDS_WIZ_COMPL_TITLE "Purkaminen valmis"
+    IDS_WIZ_COMPL_SUBTITLE "Zip-arkiston tiedostot on purettu."
+    IDS_WIZ_BROWSE_TITLE "Valitse paikka, johon haluat purkaa valitut kohteet."
+
+    IDS_OVERWRITEFILE_TEXT "Tässä kansiossa on jo tiedosto nimeltä '%1'.\nHaluatko korvata sen?"
+    IDS_PASSWORD_FILE_TEXT "Tiedosto '%1' on suojattu salasanalla. Anna salasana."
+    IDS_PASSWORD_ZIP_TEXT "Anna salasana, jota käytetään tämän zip-tiedoston purkamisessa."
+    IDS_CONFIRMDELETE_TEXT "Haluatko poistaa tiedostot?"
+
+    IDS_MENUITEM "Pura &kaikki..."
+    IDS_HELPTEXT "Purkaa kansion sisällön"
+    IDS_MENUITEM_HERE "Pura &tähän"
+    IDS_HELPTEXT_HERE "Purkaa sisällön tähän kansioon"
+    IDS_FRIENDLYNAME "Pakattu (zip) kansio"
+END

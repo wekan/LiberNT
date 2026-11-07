@@ -1,0 +1,470 @@
+/*
+ * cryptui dll resources
+ *
+ * Copyright 2008 Juan Lang
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+    IDS_CERTIFICATE "Varmenne"
+    IDS_CERTIFICATEINFORMATION "Varmenteen tiedot"
+    IDS_CERT_INFO_BAD_SIG "Varmenteen allekirjoitus ei ole kelvollinen. Varmennetta on ehkä muutettu tai se on vioittunut."
+    IDS_CERT_INFO_UNTRUSTED_CA "Tähän päävarmenteeseen ei luoteta. Jos haluat luottaa siihen, lisää se järjestelmän luotettujen päävarmenteiden säilöön."
+    IDS_CERT_INFO_UNTRUSTED_ROOT "Varmennetta ei voitu vahvistaa luotettuun päävarmenteeseen asti."
+    IDS_CERT_INFO_PARTIAL_CHAIN "Varmenteen myöntäjää ei löytynyt."
+    IDS_CERT_INFO_BAD_PURPOSES "Kaikkia tämän varmenteen käyttötarkoituksia ei voitu vahvistaa."
+    IDS_CERT_INFO_PURPOSES "Tämä varmenne on tarkoitettu seuraaviin käyttötarkoituksiin:"
+    IDS_SUBJECT_HEADING "Myönnetty: "
+    IDS_ISSUER_HEADING "Myöntäjä: "
+    IDS_VALID_FROM "Voimassa "
+    IDS_VALID_TO " - "
+    IDS_CERTIFICATE_BAD_SIGNATURE "Varmenteen allekirjoitus ei ole kelvollinen."
+    IDS_CERTIFICATE_BAD_TIME "Varmenne on vanhentunut tai se ei ole vielä voimassa."
+    IDS_CERTIFICATE_BAD_TIMENEST "Varmenteen voimassaoloaika ylittää sen myöntäjän voimassaoloajan."
+    IDS_CERTIFICATE_REVOKED "Myöntäjä on kumonnut tämän varmenteen."
+    IDS_CERTIFICATE_VALID "Tämä varmenne on kunnossa."
+    IDS_FIELD "Kenttä"
+    IDS_VALUE "Arvo"
+    IDS_FIELDS_ALL "<Kaikki>"
+    IDS_FIELDS_V1 "Vain version 1 kentät"
+    IDS_FIELDS_EXTENSIONS "Vain laajennukset"
+    IDS_FIELDS_CRITICAL_EXTENSIONS "Vain kriittiset laajennukset"
+    IDS_FIELDS_PROPERTIES "Vain ominaisuudet"
+    IDS_FIELD_VERSION "Versio"
+    IDS_FIELD_SERIAL_NUMBER "Sarjanumero"
+    IDS_FIELD_ISSUER "Myöntäjä"
+    IDS_FIELD_VALID_FROM "Voimassa alkaen"
+    IDS_FIELD_VALID_TO "Voimassa asti"
+    IDS_FIELD_SUBJECT "Kohde"
+    IDS_FIELD_PUBLIC_KEY "Julkinen avain"
+    IDS_FIELD_PUBLIC_KEY_FORMAT "%1 (%2!d! bittiä)"
+    IDS_PROP_HASH "SHA1-hajautusarvo"
+    IDS_PROP_ENHKEY_USAGE "Laajennettu avaimen käyttö (ominaisuus)"
+    IDS_PROP_FRIENDLY_NAME "Kutsumanimi"
+    IDS_PROP_DESCRIPTION "Kuvaus"
+    IDS_CERTIFICATE_PROPERTIES "Varmenteen ominaisuudet"
+    IDS_CERTIFICATE_PURPOSE_ERROR "Anna OID muodossa 1.2.3.4"
+    IDS_CERTIFICATE_PURPOSE_EXISTS "Antamasi OID on jo olemassa."
+    IDS_SELECT_STORE_TITLE "Valitse varmennesäilö"
+    IDS_SELECT_STORE "Valitse varmennesäilö."
+    IDS_IMPORT_WIZARD "Ohjattu varmenteiden tuominen"
+    IDS_IMPORT_TYPE_MISMATCH "Tiedosto sisältää objekteja, jotka eivät vastaa annettuja ehtoja. Valitse toinen tiedosto."
+    IDS_IMPORT_FILE_TITLE "Tuotava tiedosto"
+    IDS_IMPORT_FILE_SUBTITLE "Määritä tiedosto, jonka haluat tuoda."
+    IDS_IMPORT_STORE_TITLE "Varmennesäilö"
+    IDS_IMPORT_STORE_SUBTITLE "Varmennesäilöt ovat varmenteiden, varmenteiden kumoamisluetteloiden ja varmenteiden luottamusluetteloiden kokoelmia."
+    IDS_IMPORT_FILTER_CERT "X.509-varmenne (*.cer; *.crt)"
+    IDS_IMPORT_FILTER_PFX "Henkilötietojen vaihto (*.pfx; *.p12)"
+    IDS_IMPORT_FILTER_CRL "Varmenteiden kumoamisluettelo (*.crl)"
+    IDS_IMPORT_FILTER_CTL "Varmenteiden luottamusluettelo (*.stl)"
+    IDS_IMPORT_FILTER_SERIALIZED_STORE "Microsoftin sarjoitettu varmennesäilö (*.sst)"
+    IDS_IMPORT_FILTER_CMS "CMS/PKCS #7 -sanomat (*.spc; *.p7b)"
+    IDS_IMPORT_FILTER_ALL "Kaikki tiedostot (*.*)"
+    IDS_IMPORT_EMPTY_FILE "Valitse tiedosto."
+    IDS_IMPORT_BAD_FORMAT "Tiedostomuotoa ei tunnistettu. Valitse toinen tiedosto."
+    IDS_IMPORT_OPEN_FAILED "Ei voitu avata: "
+    IDS_IMPORT_DEST_DETERMINED "Ohjelman määrittämä"
+    IDS_IMPORT_SELECT_STORE "Valitse säilö"
+    IDS_IMPORT_STORE_SELECTION "Valittu varmennesäilö"
+    IDS_IMPORT_DEST_AUTOMATIC "Ohjelman automaattisesti määrittämä"
+    IDS_IMPORT_FILE "Tiedosto"
+    IDS_IMPORT_CONTENT "Sisältö"
+    IDS_IMPORT_CONTENT_CERT "Varmenne"
+    IDS_IMPORT_CONTENT_CRL "Varmenteiden kumoamisluettelo"
+    IDS_IMPORT_CONTENT_CTL "Varmenteiden luottamusluettelo"
+    IDS_IMPORT_CONTENT_CMS "CMS/PKCS #7 -sanoma"
+    IDS_IMPORT_CONTENT_PFX "Henkilötietojen vaihto"
+    IDS_IMPORT_CONTENT_STORE "Varmennesäilö"
+    IDS_IMPORT_SUCCEEDED "Tuonti onnistui."
+    IDS_IMPORT_FAILED "Tuonti epäonnistui."
+    IDS_WIZARD_TITLE_FONT "Arial"
+    IDS_PURPOSE_ALL "<Kaikki>"
+    IDS_PURPOSE_ADVANCED "<Lisäkäyttötarkoitukset>"
+    IDS_SUBJECT_COLUMN "Myönnetty"
+    IDS_ISSUER_COLUMN "Myöntäjä"
+    IDS_EXPIRATION_COLUMN "Vanhenemispäivä"
+    IDS_FRIENDLY_NAME_COLUMN "Kutsumanimi"
+    IDS_ALLOWED_PURPOSE_ALL "<Kaikki>"
+    IDS_ALLOWED_PURPOSE_NONE "<Ei mitään>"
+    IDS_WARN_REMOVE_MY "Et voi enää purkaa sanomien salausta tai allekirjoittaa sanomia tällä varmenteella.\nHaluatko varmasti poistaa tämän varmenteen?"
+    IDS_WARN_REMOVE_PLURAL_MY "Et voi enää purkaa sanomien salausta tai allekirjoittaa sanomia näillä varmenteilla.\nHaluatko varmasti poistaa nämä varmenteet?"
+    IDS_WARN_REMOVE_ADDRESSBOOK "Et voi enää salata sanomia tällä varmenteella etkä tarkistaa sillä allekirjoitettuja sanomia.\nHaluatko varmasti poistaa tämän varmenteen?"
+    IDS_WARN_REMOVE_PLURAL_ADDRESSBOOK "Et voi enää salata sanomia näillä varmenteilla etkä tarkistaa niillä allekirjoitettuja sanomia.\nHaluatko varmasti poistaa nämä varmenteet?"
+    IDS_WARN_REMOVE_CA "Tämän varmenteiden myöntäjän myöntämiin varmenteisiin ei enää luoteta.\nHaluatko varmasti poistaa tämän varmenteen?"
+    IDS_WARN_REMOVE_PLURAL_CA "Näiden varmenteiden myöntäjien myöntämiin varmenteisiin ei enää luoteta.\nHaluatko varmasti poistaa nämä varmenteet?"
+    IDS_WARN_REMOVE_ROOT "Tämän päämyöntäjän tai sen valtuuttamien myöntäjien myöntämiin varmenteisiin ei enää luoteta.\nHaluatko varmasti poistaa tämän luotetun päävarmenteen?"
+    IDS_WARN_REMOVE_PLURAL_ROOT "Näiden päämyöntäjien tai niiden valtuuttamien myöntäjien myöntämiin varmenteisiin ei enää luoteta.\nHaluatko varmasti poistaa nämä luotetut päävarmenteet?"
+    IDS_WARN_REMOVE_TRUSTEDPUBLISHER "Tämän julkaisijan allekirjoittamaan ohjelmistoon ei enää luoteta.\nHaluatko varmasti poistaa tämän varmenteen?"
+    IDS_WARN_REMOVE_PLURAL_TRUSTEDPUBLISHER "Näiden julkaisijoiden allekirjoittamaan ohjelmistoon ei enää luoteta.\nHaluatko varmasti poistaa nämä varmenteet?"
+    IDS_WARN_REMOVE_DEFAULT "Haluatko varmasti poistaa tämän varmenteen?"
+    IDS_WARN_REMOVE_PLURAL_DEFAULT "Haluatko varmasti poistaa nämä varmenteet?"
+    IDS_CERT_MGR "Varmenteet"
+    IDS_FRIENDLY_NAME_NONE "<Ei mitään>"
+    IDS_PURPOSE_SERVER_AUTH "Varmistaa etätietokoneen henkilöllisyyden"
+    IDS_PURPOSE_CLIENT_AUTH "Todistaa henkilöllisyytesi etätietokoneelle"
+    IDS_PURPOSE_CODE_SIGNING "Varmistaa, että ohjelmisto on peräisin julkaisijalta\nSuojaa ohjelmistoa muutoksilta julkaisun jälkeen"
+    IDS_PURPOSE_EMAIL_PROTECTION "Suojaa sähköpostiviestit"
+    IDS_PURPOSE_IPSEC "Mahdollistaa suojatun tiedonsiirron Internetissä"
+    IDS_PURPOSE_TIMESTAMP_SIGNING "Mahdollistaa tietojen allekirjoittamisen nykyisellä ajalla"
+    IDS_PURPOSE_CTL_USAGE_SIGNING "Mahdollistaa varmenteiden luottamusluettelon digitaalisen allekirjoittamisen"
+    IDS_PURPOSE_EFS "Mahdollistaa levyllä olevien tietojen salaamisen"
+    IDS_PURPOSE_EFS_RECOVERY "Tiedostojen palautus"
+    IDS_PURPOSE_WHQL "Windows-laiteohjainten vahvistus"
+    IDS_PURPOSE_NT5 "Windows-järjestelmäosien vahvistus"
+    IDS_PURPOSE_OEM_WHQL "OEM-Windows-järjestelmäosien vahvistus"
+    IDS_PURPOSE_EMBEDDED_NT "Upotetun Windowsin järjestelmäosien vahvistus"
+    IDS_PURPOSE_ROOT_LIST_SIGNER "Pääluettelon allekirjoittaja"
+    IDS_PURPOSE_QUALIFIED_SUBORDINATION "Hyväksytty alistaminen"
+    IDS_PURPOSE_KEY_RECOVERY "Avaimen palautus"
+    IDS_PURPOSE_DOCUMENT_SIGNING "Asiakirjojen allekirjoitus"
+    IDS_PURPOSE_LIFETIME_SIGNING "Elinikäinen allekirjoitus"
+    IDS_PURPOSE_DRM "Digitaaliset oikeudet"
+    IDS_PURPOSE_LICENSES "Avainpakettien käyttöoikeudet"
+    IDS_PURPOSE_LICENSE_SERVER "Käyttöoikeuspalvelimen vahvistus"
+    IDS_PURPOSE_ENROLLMENT_AGENT "Varmennepyyntöjen asiamies"
+    IDS_PURPOSE_SMARTCARD_LOGON "Kirjautuminen älykortilla"
+    IDS_PURPOSE_CA_EXCHANGE "Yksityisen avaimen arkistointi"
+    IDS_PURPOSE_KEY_RECOVERY_AGENT "Avaimen palautuksen asiamies"
+    IDS_PURPOSE_DS_EMAIL_REPLICATION "Hakemistopalvelun sähköpostireplikointi"
+    IDS_EXPORT_WIZARD "Ohjattu varmenteiden vienti"
+    IDS_EXPORT_FORMAT_TITLE "Vientimuoto"
+    IDS_EXPORT_FORMAT_SUBTITLE "Valitse muoto, jossa sisältö tallennetaan."
+    IDS_EXPORT_FILE_TITLE "Viedyn tiedoston nimi"
+    IDS_EXPORT_FILE_SUBTITLE "Määritä sen tiedoston nimi, johon sisältö tallennetaan."
+    IDS_EXPORT_FILE_EXISTS "Määritetty tiedosto on jo olemassa. Haluatko korvata sen?"
+    IDS_EXPORT_FILTER_CERT "DER-koodattu binaarinen X.509 (*.cer)"
+    IDS_EXPORT_FILTER_BASE64_CERT "Base64-koodattu X.509 (*.cer)"
+    IDS_EXPORT_FILTER_CRL "Varmenteiden kumoamisluettelo (*.crl)"
+    IDS_EXPORT_FILTER_CTL "Varmenteiden luottamusluettelo (*.stl)"
+    IDS_EXPORT_FILTER_CMS "CMS/PKCS #7 -sanomat (*.p7b)"
+    IDS_EXPORT_FILTER_PFX "Henkilötietojen vaihto (*.pfx)"
+    IDS_EXPORT_FILTER_SERIALIZED_CERT_STORE "Microsoftin sarjoitettu varmennesäilö (*.sst)"
+    IDS_EXPORT_FORMAT "Tiedostomuoto"
+    IDS_EXPORT_INCLUDE_CHAIN "Sisällytä kaikki varmennepolun varmenteet"
+    IDS_EXPORT_KEYS "Vie avaimet"
+    IDS_YES "Kyllä"
+    IDS_NO "Ei"
+    IDS_EXPORT_SUCCEEDED "Vienti onnistui."
+    IDS_EXPORT_FAILED "Vienti epäonnistui."
+    IDS_EXPORT_PRIVATE_KEY_TITLE "Vie yksityinen avain"
+    IDS_EXPORT_PRIVATE_KEY_SUBTITLE "Varmenne sisältää yksityisen avaimen, joka voidaan viedä varmenteen mukana."
+    IDS_EXPORT_PASSWORD_TITLE "Anna salasana"
+    IDS_EXPORT_PASSWORD_SUBTITLE "Voit suojata yksityisen avaimen salasanalla."
+    IDS_EXPORT_PASSWORD_MISMATCH "Salasanat eivät täsmää."
+    IDS_EXPORT_PRIVATE_KEY_UNAVAILABLE "Huomautus: Tämän varmenteen yksityistä avainta ei voitu avata."
+    IDS_EXPORT_PRIVATE_KEY_NON_EXPORTABLE "Huomautus: Tämän varmenteen yksityistä avainta ei voi viedä."
+    IDS_INTENDED_USE_COLUMN "Käyttötarkoitus"
+    IDS_LOCATION_COLUMN "Sijainti"
+    IDS_SELECT_CERT_TITLE "Valitse varmenne"
+    IDS_SELECT_CERT "Valitse varmenne"
+    IDS_NO_IMPL "Ei vielä toteutettu"
+}
+
+IDD_GENERAL DIALOGEX 0, 0, 255, 236
+CAPTION "Yleiset"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  CONTROL "", -1, "Static", WS_BORDER|SS_WHITERECT, 6,10,241,200
+  CONTROL "", IDC_CERTIFICATE_ICON,"RichEdit20W", ES_READONLY|WS_DISABLED,8,11,26,26
+  CONTROL "", IDC_CERTIFICATE_INFO,"RichEdit20W", ES_READONLY|WS_DISABLED,34,11,212,26
+  CONTROL "", -1, "Static", SS_BLACKFRAME, 16,37,222,1
+  CONTROL "", IDC_CERTIFICATE_STATUS,"RichEdit20W", ES_READONLY|ES_MULTILINE,8,38,238,78
+  CONTROL "", -1, "Static", SS_BLACKFRAME, 16,116,222,1
+  CONTROL "", IDC_CERTIFICATE_NAMES,"RichEdit20W", ES_READONLY|ES_MULTILINE|WS_DISABLED,8,118,238,90
+  PUSHBUTTON "&Asenna varmenne...", IDC_ADDTOSTORE,53,216,95,14
+  PUSHBUTTON "Myöntäjän &lausunto", IDC_ISSUERSTATEMENT,152,216,95,14
+END
+
+IDD_DETAIL DIALOGEX 0, 0, 255, 236
+CAPTION "Tiedot"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "&Näytä:", -1, 6,12,40,14
+  COMBOBOX IDC_DETAIL_SELECT, 48,10,100,60, CBS_DROPDOWNLIST|WS_BORDER|WS_VSCROLL|WS_TABSTOP
+  CONTROL "", IDC_DETAIL_LIST, "SysListView32",
+    LVS_REPORT|LVS_SINGLESEL|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER, 6,28,241,100
+  CONTROL "", IDC_DETAIL_VALUE, "RichEdit20W", ES_READONLY|ES_MULTILINE|WS_TABSTOP, 6,136,241,70
+  PUSHBUTTON "&Muokkaa ominaisuuksia...", IDC_EDITPROPERTIES,53,216,95,14
+  PUSHBUTTON "&Kopioi tiedostoon...", IDC_EXPORT,152,216,95,14
+END
+
+IDD_HIERARCHY DIALOGEX 0, 0, 255, 236
+CAPTION "Varmennepolku"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  GROUPBOX "Varmennepolku", -1,6,10,245,165, BS_GROUPBOX
+  CONTROL "",IDC_CERTPATH, "SysTreeView32", TVS_HASLINES|WS_BORDER,
+    13,22,231,130
+  PUSHBUTTON "&Näytä varmenne", IDC_VIEWCERTIFICATE,155,156,90,14
+  LTEXT "Varmenteen &tila:", IDC_CERTIFICATESTATUS,6,183,200,14
+  CONTROL "", IDC_CERTIFICATESTATUSTEXT,"RichEdit20W",
+    WS_BORDER|ES_READONLY|ES_MULTILINE|WS_DISABLED,6,195,245,36
+END
+
+IDD_USERNOTICE DIALOGEX 0, 0, 255, 256
+CAPTION "Vastuuvapauslauseke"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  CONTROL "", IDC_USERNOTICE,"RichEdit20W",
+    WS_BORDER|ES_READONLY|ES_MULTILINE|WS_DISABLED,6,10,241,200
+  PUSHBUTTON "Sulje", IDOK,73,216,85,14
+  PUSHBUTTON "&Lisätietoja", IDC_CPS,162,216,85,14
+END
+
+IDD_CERT_PROPERTIES_GENERAL DIALOGEX 0, 0, 255, 236
+CAPTION "Yleiset"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "&Kutsumanimi:", -1, 6,14,60,14
+  EDITTEXT IDC_FRIENDLY_NAME, 70,12,181,14, ES_AUTOHSCROLL|WS_TABSTOP
+  LTEXT "K&uvaus:", -1, 6,32,60,14
+  EDITTEXT IDC_DESCRIPTION, 70,30,181,14, ES_AUTOVSCROLL|ES_MULTILINE|WS_TABSTOP|WS_VSCROLL
+  GROUPBOX "Varmenteen käyttötarkoitukset", -1,6,48,245,185, BS_GROUPBOX
+  AUTORADIOBUTTON "&Ota käyttöön kaikki tämän varmenteen käyttötarkoitukset",
+    IDC_ENABLE_ALL_PURPOSES, 12,58,230,14, BS_AUTORADIOBUTTON|WS_TABSTOP
+  AUTORADIOBUTTON "&Poista käytöstä kaikki tämän varmenteen käyttötarkoitukset",
+    IDC_DISABLE_ALL_PURPOSES, 12,70,230,14, BS_AUTORADIOBUTTON
+  AUTORADIOBUTTON "Ota käyttöön &vain seuraavat tämän varmenteen käyttötarkoitukset:",
+    IDC_ENABLE_SELECTED_PURPOSES, 12,82,230,14, BS_AUTORADIOBUTTON
+  CONTROL "", IDC_CERTIFICATE_USAGES,"SysListView32",
+    LVS_REPORT|LVS_NOCOLUMNHEADER|LVS_SINGLESEL|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER,
+    24,100,220,106
+  PUSHBUTTON "&Lisää käyttötarkoitus...", IDC_ADD_PURPOSE,168,212,76,14
+END
+
+IDD_ADD_CERT_PURPOSE DIALOGEX 0,0,200,68
+CAPTION "Lisää käyttötarkoitus"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Anna lisättävän varmenteen käyttötarkoituksen objektitunniste (OID):",
+    -1, 6,6,190,28
+  EDITTEXT IDC_NEW_PURPOSE, 6,28,190,14, ES_AUTOVSCROLL|ES_MULTILINE|WS_TABSTOP|WS_VSCROLL
+  PUSHBUTTON "OK", IDOK, 33,48,60,14
+  PUSHBUTTON "Peruuta", IDCANCEL, 100,48,60,14
+END
+
+IDD_SELECT_STORE DIALOGEX 0,0,200,136
+CAPTION "Valitse varmennesäilö"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Valitse varmennesäilö, jota haluat käyttää:", IDC_STORE_TEXT, 6,6,190,28
+  CONTROL "",IDC_STORE_LIST, "SysTreeView32", TVS_HASLINES|WS_BORDER|WS_TABSTOP,
+    6,28,188,70
+  CHECKBOX "&Näytä fyysiset säilöt", IDC_SHOW_PHYSICAL_STORES, 6,102,180,14, BS_AUTOCHECKBOX|WS_TABSTOP
+  PUSHBUTTON "OK", IDOK, 90,118,50,14, BS_DEFPUSHBUTTON
+  PUSHBUTTON "Peruuta", IDCANCEL, 144,118,50,14
+END
+
+IDD_IMPORT_WELCOME DIALOGEX 0,0,317,143
+CAPTION "Ohjattu varmenteiden tuominen"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Tervetuloa ohjattuun varmenteiden tuomiseen", IDC_IMPORT_TITLE, 115,7,195,30
+  LTEXT "Tämän ohjatun toiminnon avulla voit tuoda varmenteita, varmenteiden kumoamisluetteloita ja varmenteiden luottamusluetteloita tiedostosta varmennesäilöön.\n\nTietokoneet voivat käyttää varmenteita tunnistamiseen ja allekirjoittamiseen.",
+    -1, 115,40,195,120
+END
+
+IDD_IMPORT_FILE DIALOGEX 0,0,317,178
+CAPTION "Ohjattu varmenteiden tuominen"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "&Tiedostonimi:", -1, 21,1,195,10
+  EDITTEXT IDC_IMPORT_FILENAME, 21,11,208,14, ES_AUTOHSCROLL|WS_TABSTOP
+  PUSHBUTTON "&Selaa...", IDC_IMPORT_BROWSE_FILE, 236,11,60,14
+  LTEXT "Huomautus: Seuraavat tiedostomuodot voivat sisältää useita varmenteita, varmenteiden kumoamisluetteloita tai varmenteiden luottamusluetteloita:",
+    -1, 21,30,265,16
+  LTEXT "Salattujen sanomien syntaksistandardi/PKCS #7 -sanomat (*.p7b)",
+    -1, 31,53,265,10
+  LTEXT "Henkilötietojen vaihto/PKCS #12 (*.pfx; *.p12)",
+    -1, 31,68,265,10
+  LTEXT "Microsoftin sarjoitettu varmennesäilö (*.sst)",
+    -1, 31,83,265,10
+END
+
+IDD_IMPORT_STORE DIALOGEX 0,0,317,143
+CAPTION "Ohjattu varmenteiden tuominen"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Wine voi valita varmennesäilön automaattisesti, tai voit määrittää varmenteiden sijainnin itse.",
+    -1, 21,1,220,25
+  AUTORADIOBUTTON "&Valitse varmennesäilö automaattisesti",
+    IDC_IMPORT_AUTO_STORE, 31,28,220,12, BS_AUTORADIOBUTTON|WS_TABSTOP
+  AUTORADIOBUTTON "&Sijoita kaikki varmenteet seuraavaan säilöön:",
+    IDC_IMPORT_SPECIFY_STORE, 31,42,220,12, BS_AUTORADIOBUTTON
+  EDITTEXT IDC_IMPORT_STORE, 44,61,185,14, ES_READONLY
+  PUSHBUTTON "&Selaa...", IDC_IMPORT_BROWSE_STORE, 236,61,60,14
+END
+
+IDD_IMPORT_FINISH DIALOGEX 0,0,317,178
+CAPTION "Ohjattu varmenteiden tuominen"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Ohjatun varmenteiden tuomisen viimeistely", IDC_IMPORT_TITLE,
+    115,1,195,40
+  LTEXT "Ohjattu varmenteiden tuominen on suoritettu.",
+    -1, 115,33,195,24
+  LTEXT "Olet määrittänyt seuraavat asetukset:",
+    -1, 115,57,195,12
+  CONTROL "", IDC_IMPORT_SETTINGS, "SysListView32",
+    LVS_REPORT|LVS_NOCOLUMNHEADER|LVS_SINGLESEL|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER,
+    115,67,174,100
+END
+
+IDD_CERT_MGR DIALOGEX 0,0,335,270
+CAPTION "Varmenteet"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "&Käyttötarkoitus:", -1, 7,9,100,12
+  COMBOBOX IDC_MGR_PURPOSE_SELECTION, 83,7,245,60, CBS_DROPDOWNLIST|WS_BORDER|WS_VSCROLL|WS_TABSTOP
+  CONTROL "", IDC_MGR_STORES, "SysTabControl32", WS_CLIPSIBLINGS|WS_TABSTOP, 7,25,321,140
+  CONTROL "", IDC_MGR_CERTS, "SysListView32", LVS_REPORT|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER, 15,46,305,111
+  PUSHBUTTON "&Tuo...", IDC_MGR_IMPORT, 7,172,65,14
+  PUSHBUTTON "&Vie...", IDC_MGR_EXPORT, 76,172,65,14, WS_DISABLED
+  PUSHBUTTON "&Poista", IDC_MGR_REMOVE, 145,172,65,14, WS_DISABLED
+  PUSHBUTTON "&Lisäasetukset...", IDC_MGR_ADVANCED, 263,172,65,14
+  GROUPBOX "Varmenteen käyttötarkoitukset", -1,7,194,321,47, BS_GROUPBOX
+  LTEXT "", IDC_MGR_PURPOSES, 13,206,252,32
+  PUSHBUTTON "&Näytä", IDC_MGR_VIEW, 269,218,51,14, WS_DISABLED
+  PUSHBUTTON "&Sulje", IDCANCEL, 277,249,51,14, BS_DEFPUSHBUTTON
+END
+
+IDD_CERT_MGR_ADVANCED DIALOGEX 0,0,248,176
+CAPTION "Lisäasetukset"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  GROUPBOX "Varmenteen käyttötarkoitus", -1, 7,7,234,141, BS_GROUPBOX
+  LTEXT "Valitse yksi tai useampi käyttötarkoitus, joka näytetään, kun Lisäkäyttötarkoitukset on valittu.",
+    -1, 14,18,220,16
+  LTEXT "&Varmenteen käyttötarkoitukset:", -1, 14,41,90,12, WS_TABSTOP
+  CONTROL "", IDC_CERTIFICATE_USAGES,"SysListView32",
+    LVS_REPORT|LVS_NOCOLUMNHEADER|LVS_SINGLESEL|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER,
+    14,51,220,90
+  PUSHBUTTON "OK", IDOK, 132,155,51,14, BS_DEFPUSHBUTTON
+  PUSHBUTTON "Peruuta", IDCANCEL, 190,155,51,14
+END
+
+IDD_EXPORT_WELCOME DIALOGEX 0,0,317,143
+CAPTION "Ohjattu varmenteiden vienti"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Tervetuloa ohjattuun varmenteiden vientiin", IDC_EXPORT_TITLE, 115,7,195,30
+  LTEXT "Tämän ohjatun toiminnon avulla voit viedä varmenteita, varmenteiden kumoamisluetteloita ja varmenteiden luottamusluetteloita varmennesäilöstä tiedostoon.\n\nTietokoneet voivat käyttää varmenteita tunnistamiseen ja allekirjoittamiseen.",
+    -1, 115,40,195,120
+END
+
+IDD_EXPORT_PRIVATE_KEY DIALOGEX 0,0,317,143
+CAPTION "Ohjattu varmenteiden vienti"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Jos päätät viedä yksityisen avaimen, sinulta pyydetään myöhemmällä sivulla salasana sen suojaamiseksi.", -1, 21,1,195,25
+  LTEXT "Haluatko viedä yksityisen avaimen?", -1, 21,27,195,10
+  AUTORADIOBUTTON "&Kyllä, vie yksityinen avain",
+    IDC_EXPORT_PRIVATE_KEY_YES, 31,36,200,12, BS_AUTORADIOBUTTON|WS_TABSTOP
+  AUTORADIOBUTTON "&Ei, älä vie yksityistä avainta",
+    IDC_EXPORT_PRIVATE_KEY_NO, 31,48,200,12, BS_AUTORADIOBUTTON
+  LTEXT "", IDC_EXPORT_PRIVATE_KEY_UNAVAILABLE, 21,60,200,24
+END
+
+IDD_EXPORT_PASSWORD DIALOGEX 0,0,317,143
+CAPTION "Ohjattu varmenteiden vienti"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "&Salasana:", -1, 21,1,195,10
+  EDITTEXT IDC_EXPORT_PASSWORD, 21,11,208,14, ES_AUTOHSCROLL|WS_TABSTOP
+  LTEXT "&Vahvista salasana:", -1, 21,35,195,10
+  EDITTEXT IDC_EXPORT_PASSWORD_CONFIRM, 21,45,208,14, ES_AUTOHSCROLL|WS_TABSTOP
+END
+
+IDD_EXPORT_FORMAT DIALOGEX 0,0,317,143
+CAPTION "Ohjattu varmenteiden vienti"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Valitse käytettävä muoto:", -1, 21,1,195,10
+  AUTORADIOBUTTON "&DER-koodattu X.509 (*.cer)",
+    IDC_EXPORT_FORMAT_DER, 31,18,280,12, BS_AUTORADIOBUTTON|WS_TABSTOP
+  AUTORADIOBUTTON "Base&64-koodattu X.509 (*.cer):",
+    IDC_EXPORT_FORMAT_BASE64, 31,30,280,12, BS_AUTORADIOBUTTON
+  AUTORADIOBUTTON "Sa&lattujen sanomien syntaksistandardi/PKCS #7 -sanoma (*.p7b)",
+    IDC_EXPORT_FORMAT_CMS, 31,42,280,12, BS_AUTORADIOBUTTON
+  CHECKBOX "&Sisällytä mahdollisuuksien mukaan kaikki varmennepolun varmenteet",
+    IDC_EXPORT_CMS_INCLUDE_CHAIN, 44,57,280,8, BS_AUTOCHECKBOX|WS_TABSTOP|WS_DISABLED
+  AUTORADIOBUTTON "&Henkilötietojen vaihto/PKCS #12 (*.pfx)",
+    IDC_EXPORT_FORMAT_PFX, 31,72,280,12, BS_AUTORADIOBUTTON|WS_DISABLED
+  CHECKBOX "Sisällytä &mahdollisuuksien mukaan kaikki varmennepolun varmenteet",
+    IDC_EXPORT_PFX_INCLUDE_CHAIN, 44,87,280,8, BS_AUTOCHECKBOX|WS_TABSTOP|WS_DISABLED
+  CHECKBOX "&Ota käyttöön vahva salaus",
+    IDC_EXPORT_PFX_STRONG_ENCRYPTION, 44,102,280,8, BS_AUTOCHECKBOX|WS_TABSTOP|WS_DISABLED
+  CHECKBOX "&Poista yksityinen avain, jos vienti onnistuu",
+    IDC_EXPORT_PFX_DELETE_PRIVATE_KEY, 44,117,280,8, BS_AUTOCHECKBOX|WS_TABSTOP|WS_DISABLED
+END
+
+IDD_EXPORT_FILE DIALOGEX 0,0,317,143
+CAPTION "Ohjattu varmenteiden vienti"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "&Tiedostonimi:", -1, 21,1,195,10
+  EDITTEXT IDC_EXPORT_FILENAME, 21,11,208,14, ES_AUTOHSCROLL|WS_TABSTOP
+  PUSHBUTTON "&Selaa...", IDC_EXPORT_BROWSE_FILE, 236,11,60,14
+END
+
+IDD_EXPORT_FINISH DIALOGEX 0,0,317,178
+CAPTION "Ohjattu varmenteiden vienti"
+STYLE DS_SHELLFONT | WS_VISIBLE | DS_MODALFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Ohjatun varmenteiden viennin viimeistely", IDC_EXPORT_TITLE,
+    115,1,195,40
+  LTEXT "Ohjattu varmenteiden vienti on suoritettu.",
+    -1, 115,33,195,24
+  LTEXT "Olet määrittänyt seuraavat asetukset:",
+    -1, 115,57,195,12
+  CONTROL "", IDC_EXPORT_SETTINGS, "SysListView32",
+    LVS_REPORT|LVS_NOCOLUMNHEADER|LVS_SINGLESEL|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER,
+    115,67,174,100
+END
+
+IDD_SELECT_CERT DIALOG 0,0,278,157
+CAPTION "Valitse varmenne"
+FONT 8, "MS Shell Dlg"
+BEGIN
+  LTEXT "Valitse käytettävä varmenne", IDC_SELECT_DISPLAY_STRING, 7,7,264,26
+  CONTROL "", IDC_SELECT_CERTS, "SysListView32",
+    LVS_REPORT|LVS_SINGLESEL|WS_CHILD|WS_VISIBLE|WS_TABSTOP|WS_BORDER, 7,40,264,89
+  PUSHBUTTON "OK", IDOK, 91,136,51,14, BS_DEFPUSHBUTTON
+  PUSHBUTTON "Peruuta", IDCANCEL, 149,136,51,14
+  PUSHBUTTON "&Näytä varmenne", IDC_SELECT_VIEW_CERT, 207,136,65,14, WS_DISABLED
+END

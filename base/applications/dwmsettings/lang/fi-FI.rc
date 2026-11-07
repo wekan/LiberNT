@@ -1,0 +1,39 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2026 Ahmed ARIF <arif193@gmail.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_SETTINGS DIALOGEX 0, 0, 282, 284
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DWM-asetukset"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    LTEXT "Mukauta työpöydän ikkunatehosteita. Jokainen muutos tallennetaan heti.", -1, 12, 12, 258, 26
+    GROUPBOX "GPU-ikkunatehosteet", IDC_EFFECTS_GROUP, 12, 42, 258, 110
+    AUTOCHECKBOX "&Ikkunoiden animaatiot", IDC_ANIMATIONS, 24, 58, 230, 12
+    AUTOCHECKBOX "Ikkunoiden &varjot", IDC_SHADOWS, 24, 76, 230, 12
+    AUTOCHECKBOX "Ota &lasiulkoasu käyttöön", IDC_ACRYLIC, 24, 94, 230, 12
+    AUTOCHECKBOX "Sumenna ikkunoiden &otsikot", IDC_BLUR, 36, 112, 218, 12
+    AUTOCHECKBOX "Sumenna ikkunoiden &sisältö", IDC_CONTENT_BLUR, 36, 130, 218, 12
+    GROUPBOX "Värimalli", IDC_SCHEME_GROUP, 12, 158, 258, 60
+    AUTORADIOBUTTON "V&aalea", IDC_SCHEME_LIGHT, 24, 176, 100, 12, WS_GROUP
+    AUTORADIOBUTTON "&Tumma", IDC_SCHEME_DARK, 140, 176, 100, 12
+    LTEXT "Valitse ensin Windows 8 -visuaalinen tyyli, jotta voit käyttää lasiulkoasua ja värimallia.", IDC_THEME_NOTE, 24, 194, 238, 18
+    LTEXT "", IDC_STATUS, 12, 228, 258, 28
+    DEFPUSHBUTTON "Sulje", IDCANCEL, 210, 262, 60, 14
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ACTIVE "GPU-koostaminen on käytössä. Muutokset tulevat voimaan ilman DWM:n uudelleenkäynnistystä."
+    IDS_APPLIED "Tallennettu. DWM on ladannut tehosteet uudelleen seuraavaa GPU-kehystään varten. Uudelleenkäynnistystä ei tarvita."
+    IDS_INACTIVE "Tallennettu. DWM on ladannut tehosteet uudelleen seuraavaa ohjelmistokehystään varten. Uudelleenkäynnistystä ei tarvita."
+    IDS_UNAVAILABLE "Tallennettu. DWM ei kuitannut muutosta. Käynnistä DWM uudelleen, jos tehosteet eivät päivity."
+    IDS_RELOAD_FAILED "Tallennettu, mutta DWM ei voinut lukea kaikkia asetuksia. Jotkin tehosteet saattavat yhä käyttää aiempia asetuksiaan."
+    IDS_READ_FAILED "Tallennettuja asetuksia ei voitu lukea. Virhe %lu."
+    IDS_WRITE_FAILED "Muutosta ei voitu tallentaa. Virhe %lu."
+    IDS_MISMATCH "Tallennettu, mutta DWM:n käytössä olevat asetukset poikkeavat. Yritä uudelleen valitsemalla asetus uudelleen."
+    IDS_DISCONNECTED "DWM ei ole yhteydessä tähän paneeliin. Muutokset tallennetaan; käynnistä DWM uudelleen, jos ne eivät tule voimaan."
+    IDS_GPU_UNAVAILABLE "Ohjelmistokoostaminen on käytössä. Muutokset tulevat voimaan ilman DWM:n uudelleenkäynnistystä."
+END

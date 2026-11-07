@@ -1,0 +1,87 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_PROPPAGECOMPUTER DIALOGEX 0, 0, 256, 218
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Tietokoneen nimi"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON IDI_COMPNAME, IDC_STATIC, 4, 3, 26, 24, SS_ICON
+    LTEXT "LiberNT tunnistaa tietokoneen verkossa seuraavien tietojen avulla.", IDC_STATIC, 40, 5, 204, 20
+    LTEXT "Tietokoneen kuvaus:", IDC_STATIC, 7, 40, 90, 9
+    EDITTEXT IDC_COMPDESC, 98, 38, 146, 13, WS_CHILD | WS_VISIBLE | WS_TABSTOP
+    LTEXT "Koko tietokonenimi:", IDC_STATIC, 7, 68, 85, 9
+    EDITTEXT IDC_COMPUTERNAME, 98, 68, 144, 12, ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT "Työryhmä:", IDC_WORKGROUPDOMAIN, 7, 84, 64, 9
+    EDITTEXT IDC_WORKGROUPDOMAIN_NAME, 98, 84, 144, 12, ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT "Voit liittyä toimialueeseen ja luoda paikallisen käyttäjän ohjatulla verkkotunnistustoiminnolla valitsemalla ""Verkkotunnus"".", IDC_STATIC, 7, 113, 172, 24
+    PUSHBUTTON "&Verkkotunnus...", IDC_NETWORK_ID, 190, 114, 58, 15
+    LTEXT "Voit nimetä tietokoneen uudelleen tai liittyä toimialueeseen valitsemalla ""Muuta"".", IDC_STATIC, 7, 149, 170, 17
+    PUSHBUTTON "&Muuta...", IDC_NETWORK_PROPERTY, 190, 149, 58, 15
+    LTEXT "", IDC_MESSAGETEXT, 7, 179, 242, 46
+    ICON IDI_WARNINGICO, IDC_RESTARTICON, 7, 194, 20, 20, SS_ICON | SS_REALSIZEIMAGE
+    LTEXT "Muutokset tulevat voimaan, kun tietokone käynnistetään uudelleen.", IDC_RESTARTTEXT, 25, 195, 209, 8
+END
+
+IDD_PROPPAGECOMPNAMECHENGE DIALOGEX 0, 0, 232, 222
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Tietokoneen nimen muutokset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "(viesti tähän)", 1017, 7, 5, 218, 30
+    LTEXT "&Tietokoneen nimi:", -1, 7, 41, 219, 8
+    EDITTEXT 1002, 7, 53, 218, 14, ES_AUTOHSCROLL | ES_OEMCONVERT
+    LTEXT "Koko tietokonenimi:", 1016, 7, 72, 218, 10
+    EDITTEXT 1001, 7, 82, 219, 14, ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    PUSHBUTTON "&Lisää...", 1003, 150, 102, 75, 14
+    GROUPBOX "Jäsenenä kohteessa", 1018, 7, 119, 219, 73
+    AUTORADIOBUTTON "T&oimialue:", 1008, 17, 132, 192, 10, WS_GROUP
+    AUTORADIOBUTTON "T&yöryhmä:", 1004, 17, 161, 191, 10
+    EDITTEXT 116, 28, 144, 181, 14, ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON "&Etsi toimialue", 1010, 7, 203, 109, 14, NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT 1007, 28, 172, 181, 14, ES_UPPERCASE | ES_AUTOHSCROLL | ES_OEMCONVERT
+    DEFPUSHBUTTON "OK", 1, 121, 203, 50, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 176, 203, 50, 14
+END
+
+IDD_PROPPAGEDNSANDNETBIOS DIALOGEX 0, 0, 266, 125
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "DNS-liite ja NetBIOS-tietokonenimi"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Tämän tietokoneen &ensisijainen DNS-liite:", -1, 7, 5, 253, 8
+    EDITTEXT 1011, 7, 17, 252, 14, ES_AUTOHSCROLL
+    AUTOCHECKBOX "&Muuta ensisijaista DNS-liitettä, kun toimialueen jäsenyys muuttuu", 115, 11, 39, 250, 10
+    LTEXT "&NetBIOS-tietokonenimi:", -1, 7, 57, 148, 8
+    EDITTEXT 1013, 7, 69, 150, 14, ES_UPPERCASE | ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON "OK", 1, 153, 104, 50, 14
+    PUSHBUTTON "Peruuta", 2, 209, 104, 50, 14
+    LTEXT "Tätä nimeä käytetään yhteentoimivuuteen vanhempien tietokoneiden ja palvelujen kanssa.", 13, 7, 88, 253, 8
+END
+
+STRINGTABLE
+BEGIN
+    1 "* Tuntematon *"
+    2 "WORKGROUP"
+    3 "Toimialueen jäsenyystietojen lukemisessa tapahtui seuraava virhe:"
+    4 "Tietokoneen nimen muutokset"
+    5 "Työryhmä:"
+    6 "Toimialue:"
+    7 "Toimialueen nimi ""%1"" ei ole Internetin DNS-määritysten mukainen, vaikka se on kelvollinen LiberNT-nimi. Muille kuin vakionimille on käytettävä LiberNT:n DNS-palvelinta."
+    8 "Toimialueen nimen ""%1"" muoto on virheellinen. Toimialueet erotetaan pisteillä (.). Kunkin toimialueen enimmäispituus on 63 merkkiä. Esimerkki: domain-1.reactos.org."
+    10 "Uusi tietokoneen nimi ""%1"" on liian pitkä. Nimi saa olla enintään 63 merkkiä pitkä."
+    11 "Annetun uuden tietokoneen nimen muoto on virheellinen. Vakionimissä voi olla kirjaimia (a-z, A-Z), numeroita (0-9) ja yhdysmerkkejä (-), mutta ei välilyöntejä eikä pisteitä (.). Nimi ei saa koostua pelkistä numeroista."
+    22 "Tervetuloa työryhmään %1."
+    23 "Tervetuloa toimialueeseen %1."
+    24 "Tietokone on käynnistettävä uudelleen, jotta muutokset tulevat voimaan."
+    25 "Voit muuttaa tämän tietokoneen nimeä ja jäsenyyttä. Muutokset voivat vaikuttaa verkkoresurssien käyttöön."
+    1021 "Huomautus: Vain järjestelmänvalvojat voivat muuttaa tämän tietokoneen tunnistetietoja."
+    1022 "Huomautus: Tietokoneen tunnistetietoja ei voi muuttaa, koska:"
+    1029 "Uusi tietokoneen nimi ""%1"" on numero. Nimi ei saa olla numero."
+    1030 "Uudessa tietokoneen nimessä ""%1"" on merkkejä, jotka eivät ole sallittuja. Kiellettyjä merkkejä ovat ` ~ ! @ # $ %% ^ & * ( ) = + [ ] { } \\ | ; : ' "" , < > / ja ?"
+    1031 "Toimialueen nimen ""%1"" ensimmäinen osa on numero. Ensimmäinen osa ei saa olla numero."
+    1032 "Toimialueen nimessä ""%1"" on merkkejä, jotka eivät ole sallittuja. Tavallisissa DNS-nimissä voi olla kirjaimia (a-z, A-Z), numeroita (0-9) ja yhdysmerkkejä, mutta ei välilyöntejä. Toimialueet erotetaan pisteillä (.). Esimerkki: domain-1.reactos.org."
+    3210 "&Tiedot >>"
+    3220 "<< &Tiedot"
+    4000 "Tiedot"
+    4001 "Uutta tietokoneen nimeä ei voi asettaa!"
+END

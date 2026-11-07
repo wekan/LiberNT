@@ -1,0 +1,21 @@
+/*
+ * PROJECT:     ReactOS uxtheme.dll
+ * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATORS: Copyright 2014 Giannis Adamopoulos <gadamopoulos@reactos.org>
+ *              Copyright 2023 Ethan Rodensky <splitwirez@gmail.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+/* Strings */
+
+STRINGTABLE
+BEGIN
+    IDS_MESSAGEBOX "Sanomaruutu"
+    IDS_ACTIVEWIN "Aktiivinen ikkuna"
+    IDS_INACTIVEWIN "Passiivinen ikkuna"
+    IDS_OK "OK"
+    IDS_WINTEXT "Ikkunan teksti"
+    IDS_ERR_UNKNOWN_PROPERTY "Täytyy olla Primitive, enum tai type: %1"
+END

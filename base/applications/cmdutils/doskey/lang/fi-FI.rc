@@ -1,0 +1,24 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_HELP "Hallitsee komentorivin muokkausasetuksia, historiaa ja makroja.\n\
+\n\
+DOSKEY [/INSERT | /OVERSTRIKE] [/EXENAME=exe] [/HISTORY] [/LISTSIZE=koko]\n\
+       [/REINSTALL] [/MACROS[:exe | :ALL]] [/MACROFILE=tiedosto] [makronimi=[teksti]]\n\
+\n\
+  /INSERT             Ottaa lisäystilan käyttöön.\n\
+  /OVERSTRIKE         Poistaa lisäystilan käytöstä.\n\
+  /EXENAME=exenimi    Määrittää ohjelman, jonka historiaa ja makroja\n\
+                      näytetään tai muutetaan. Oletus on cmd.exe.\n\
+  /HISTORY            Näyttää komentohistorian.\n\
+  /LISTSIZE=koko      Määrittää komentojen määrän historiapuskuria kohden.\n\
+  /REINSTALL          Tyhjentää komentohistorian.\n\
+  /MACROS             Näyttää makromääritykset.\n\
+  /MACROS:exenimi     Näyttää tietyn ohjelman makromääritykset.\n\
+  /MACROS:ALL         Näyttää kaikkien ohjelmien makromääritykset.\n\
+  /MACROFILE=tiedosto Lataa makromääritykset tiedostosta.\n\
+  makronimi           Määrittää luotavan makron nimen.\n\
+  teksti              Määrittää makron korvaavan tekstin.\n"
+    IDS_INVALID_MACRO_DEF "Virheellinen makromääritys: %s\n"
+END

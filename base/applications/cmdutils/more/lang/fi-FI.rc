@@ -1,0 +1,52 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Näyttää tiedot näytössä sivu kerrallaan.\n\
+\n\
+MORE [/E [valinnat]] < [asema:][polku]tiedostonimi\n\
+komento | MORE [/E [valinnat]]\n\
+\n\
+    [asema:][polku]tiedostonimi  Tiedosto, jonka sisältö näytetään.\n\
+    komento                      Komento, jonka tuloste näytetään.\n\
+\n\
+Kun laajennetut ominaisuudet ovat käytössä, tuetaan seuraavaa muotoa:\n\
+MORE [/E] [valinnat] [tiedostot]\n\
+\n\
+Valinnat:\n\
+    /E       Ottaa laajennetut ominaisuudet käyttöön.\n\
+    Laajennettujen ominaisuuksien oletustilaa ohjaavat CMD.EXE:n\n\
+    oletusrekisteriasetukset. Lisätietoja asetusten muuttamisesta on\n\
+    CMD.EXE:n ohjeen kohdassa ""Komentolaajennukset"".\n\
+\n\
+    Kun laajennetut ominaisuudet ovat käytössä, käytettävissä ovat valinnat:\n\
+    /C       Tyhjentää näytön ennen sivun näyttämistä.\n\
+    /P       Laajentaa sivunvaihtomerkit.\n\
+    /S       Tiivistää peräkkäiset tyhjät rivit yhdeksi riviksi.\n\
+    /Tn      Laajentaa sarkaimet n välilyönniksi (oletus: 8).\n\
+\n\
+    Nämä valinnat voidaan määrittää MORE-ympäristömuuttujassa.\n\
+\n\
+    +n       Aloittaa ensimmäisen tiedoston näyttämisen riviltä n.\n\
+    tiedostot  Näytettävien tiedostojen luettelo välilyönnein eroteltuna.\n\
+\n\
+Kun laajennetut ominaisuudet ovat käytössä, ""-- Jatkuu --""-kehotteessa\n\
+ovat käytettävissä seuraavat komennot:\n\
+\n\
+    P n      Näyttää seuraavat n riviä.\n\
+    S n      Ohittaa seuraavat n riviä.\n\
+    F        Näyttää seuraavan tiedoston.\n\
+    Q        Lopettaa.\n\
+    =        Näyttää rivinumeron.\n\
+    ?        Näyttää ohjerivin.\n\
+    <Välilyönti>  Näyttää seuraavan sivun.\n\
+    <Enter>  Näyttää seuraavan rivin.\n"
+
+    IDS_BAD_FLAG "Virheellinen argumentti - '%s'\n"
+    IDS_FILE_ACCESS "Tiedostoa %s ei voi käyttää.\n"
+    IDS_CONTINUE_PROMPT  "-- Jatkuu%1%2%3 --%4"
+    IDS_CONTINUE_PERCENT " (%d%%)"
+    IDS_CONTINUE_LINE_AT " [Rivi: %d]"
+    IDS_CONTINUE_OPTIONS " [Valinnat: psfq=<Space><Enter>]"
+    IDS_CONTINUE_LINES   " Rivit: "
+END

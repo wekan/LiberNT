@@ -1,0 +1,37 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+1000, "LiberNT-oletus"
+}
+
+STRINGTABLE
+{
+2000, "LiberNT-oletus"
+}
+
+STRINGTABLE
+{
+3000, "Normaali"
+3001, "Suuret fontit"
+3002, "Erittäin suuret fontit"
+}
+
+STRINGTABLE
+{
+4000, "Normaali"
+4001, "Suuret fontit"
+4002, "Erittäin suuret fontit"
+}
+
+STRINGTABLE
+{
+5000, "LiberNT-oletus"
+5001, "Visuaalinen tyyli"
+5002, "ReactOS Project"
+5003, "Litteä Windows 8 -tyylinen teema"
+5004, "Julkaistu GNU/GPL 2.0 -lisenssillä"
+5005, "https://reactos.org/"
+5006, "1.0"
+5007, "Litteä Windows 8 -visuaalinen tyyli LiberNT:lle"
+}

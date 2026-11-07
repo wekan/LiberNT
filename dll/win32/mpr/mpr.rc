@@ -45,6 +45,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/mpr_Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/mpr_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/mpr_Fr.rc"
 #endif

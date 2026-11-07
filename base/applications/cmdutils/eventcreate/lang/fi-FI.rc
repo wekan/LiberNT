@@ -1,0 +1,69 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Käyttöohjeet: kirjoita ""EVENTCREATE /?"".\n"
+    IDS_HELP "\n\
+EVENTCREATE [/S tietokone [/U [toimialue\\]käyttäjä [/P salasana]]] /ID tapahtumatunnus\n\
+            {[/L lokinimi] | [/SO lähde]} /T tyyppi /C luokka /D kuvaus\n\
+\n\
+Kuvaus:\n\
+    Tällä työkalulla järjestelmänvalvoja voi luoda mukautetun tapahtuman\n\
+    määritettyyn tapahtumalokiin.\n\
+\n\
+Parametrit:\n\
+    /S  tietokone         Määrittää etätietokoneen, johon muodostetaan yhteys.\n\
+\n\
+    /U  [toimialue\\]käyttäjä Määrittää käyttäjätilin, jonka oikeuksilla komento\n\
+                          suoritetaan.\n\
+\n\
+    /P  [salasana]        Määrittää käyttäjätilin salasanan.\n\
+                          Kysytään, jos se jätetään pois.\n\
+\n\
+    /L  lokinimi          Määrittää lokin nimen, johon tapahtuma\n\
+                          luodaan. Kelvolliset nimet ovat:\n\
+                          Application, System, Security\n\
+                          (viimeinen on varattu vain SYSTEM-tilille).\n\
+\n\
+    /SO lähde             Määrittää tapahtumalle käytettävän lähteen nimen\n\
+                          (jos sitä ei määritetä, lähteen oletusnimi\n\
+                           on 'eventcreate').\n\
+                          Kelvollinen lähde voi olla mikä tahansa merkkijono, ja sen\n\
+                          tulisi kuvata sovellusta tai osaa, joka luo\n\
+                          tapahtuman.\n\
+\n\
+    /T  tyyppi            Määrittää luotavan tapahtuman tyypin.\n\
+                          Kelvolliset tyypit ovat: SUCCESS, ERROR, WARNING,\n\
+                          INFORMATION.\n\
+\n\
+    /C  luokka            Määrittää tapahtuman luokan (kokonaisluku).\n\
+\n\
+    /ID tapahtumatunnus   Määrittää tapahtuman tunnuksen. Sen on oltava\n\
+                          kokonaisluku väliltä 0 - 65535.\n\
+\n\
+    /D  kuvaus            Määrittää uuden tapahtuman\n\
+                          kuvauksen.\n\
+\n\
+    /?                    Näyttää tämän ohjeen.\n\
+"
+    IDS_INVALIDSWITCH "Virheellinen valitsin - '%s'.\n"
+    IDS_BADSYNTAX_0 "Virheellinen komentorivin syntaksi.\n"
+    IDS_BADSYNTAX_1 "Virheellinen komentorivin syntaksi. Valitsin '%s' vaatii arvon.\n"
+    IDS_BADSYNTAX_2 "Virheellinen komentorivin syntaksi. Valitsimen '%s' arvo ei voi olla tyhjä.\n"
+    IDS_BADSYNTAX_3 "Virheellinen komentorivin syntaksi. Arvoa '%s' ei sallita valitsimelle '%s'.\n"
+    IDS_BADSYNTAX_4 "Virheellinen komentorivin syntaksi. Valitsimelle '%s' ei voi määrittää arvoa.\n"
+    IDS_BADSYNTAX_5 "Virheellinen komentorivin syntaksi. Valitsinta '%s' ei sallita useammin kuin %lu kertaa.\n"
+    IDS_BADSYNTAX_6 "Virheellinen komentorivin syntaksi. Pakollinen valitsin '%s' puuttuu.\n"
+    // IDS_BADSYNTAX_7 "Bad command line syntax. The value for the option '%s' is outside the allowed range.\n"
+    IDS_BADSYNTAX_7 "Virheellinen komentorivin syntaksi. Valitsimen '%s' arvon on oltava väliltä %d - %d.\n"
+
+    IDS_LOG_NOT_FOUND "Lokia '%s' ei ole. Tapahtumaa ei voi luoda.\n"
+    IDS_SOURCE_NOCREATE "Uutta lähdettä ei voi luoda, koska lokin nimeä ei ole määritetty.\nMääritä lokin nimi /L-valitsimella.\n"
+    IDS_SOURCE_EXISTS "Lähde on jo lokissa '%s', eikä sitä voi monistaa.\n"
+    IDS_SOURCE_NOT_CUSTOM "Source-parametrilla tunnistetaan mukautetut komentosarjat/sovellukset\n(ei asennettuja sovelluksia).\n"
+
+    IDS_SUCCESS_1   "Toiminto onnistui: tyypin '%s' tapahtuma on luotu lokiin '%s'.\n"
+    IDS_SUCCESS_2   "Toiminto onnistui: tyypin '%s' tapahtuma on luotu lähteellä '%s'.\n"
+    IDS_SUCCESS_3   "Toiminto onnistui: tyypin '%s' tapahtuma on luotu\nlokiin '%s' lähteellä '%s'.\n"
+    IDS_SWITCH_UNIMPLEMENTED "Valitsinta '%s' ei tällä hetkellä tueta, pahoittelemme haittaa!\n"
+END

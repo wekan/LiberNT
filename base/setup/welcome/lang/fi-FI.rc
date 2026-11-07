@@ -1,0 +1,38 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+/* String Tables */
+
+/* Default settings */
+STRINGTABLE
+BEGIN
+    IDS_APPTITLE "LiberNT - Tervetuloa"
+    IDS_DEFAULT_TOPIC_TITLE "LiberNT"
+    IDS_DEFAULT_TOPIC_DESC "Tervetuloa LiberNT-käyttöjärjestelmään.\n\nNapsauta aihetta vasemmalla."
+    IDS_FONTNAME "Tahoma"
+    IDS_CHECKTEXT "&Näytä tämä valintaikkuna uudelleen"
+    IDS_CLOSETEXT "&Lopeta"
+END
+
+/* Topic buttons */
+STRINGTABLE
+BEGIN
+    IDS_TOPIC_BUTTON0 "&Asenna LiberNT"
+    IDS_TOPIC_BUTTON1 "&Selaa tätä CD-levyä"
+    IDS_TOPIC_BUTTON2 "&Lopeta"
+END
+
+/* Topic titles */
+STRINGTABLE
+BEGIN
+    IDS_TOPIC_TITLE0 "Asenna LiberNT"
+    IDS_TOPIC_TITLE1 "Selaa tätä CD-levyä"
+    IDS_TOPIC_TITLE2 "Lopeta"
+END
+
+/* Topic descriptions */
+STRINGTABLE
+BEGIN
+    IDS_TOPIC_DESC0 "Luo uusi LiberNT-asennus tietokoneellesi tai päivitä olemassa oleva asennus."
+    IDS_TOPIC_DESC1 "Selaa CD-levyä."
+    IDS_TOPIC_DESC2 "Napsauta lopettaaksesi tämän sovelluksen."
+END

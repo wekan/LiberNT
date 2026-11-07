@@ -1,0 +1,37 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\nMäärittää WLAN-sovittimen.\n\n\
+WLANCONF [-c SSID [-w WEP] [-a]] [-d] [-s]\n\n\
+\t-c SSID\t\tYhdistää annettuun SSID:hen.\n\
+\t-w WEP\t\tMäärittää käytettävän WEP-avaimen.\n\
+\t-a\t\tMäärittää, että kohdeverkko on ad hoc -verkko.\n\
+\t-d\t\tKatkaisee yhteyden nykyiseen tukiasemaan.\n\
+\t-s\t\tEtsii ja näyttää luettelon kantoalueella\n\
+\t\t\tolevista tukiasemista.\n\n\
+Ilman parametreja tulostetaan tiedot nykyisestä WLAN-yhteydestä.\n"
+    IDS_NO_NETWORK "Kantoalueella ei löytynyt verkkoja\n"
+    IDS_NO_WLAN_ADAPTER "Järjestelmästä ei löytynyt WLAN-sovitinta\n"
+    IDS_SUCCESS "Toiminto onnistui.\n"
+    IDS_WLAN_DISCONNECT "\nWLAN-yhteys katkaistu\n"
+    IDS_MSG_WEP_ENABLED "WEP käytössä: %s\n"
+    IDS_MSG_NETWORK_MODE "Verkkotila: %s\n"
+    IDS_MSG_CURRENT_WIRELESS "\nNykyiset langattoman yhteyden asetukset:\n\n"
+    IDS_MSG_ENCRYPTED "Salattu: %s\n"
+    IDS_MSG_NETWORK_TYPE "Verkon tyyppi: %s\n"
+    IDS_MSG_RSSI "RSSI: %i dBm\n"
+    IDS_MSG_SUPPORT_RATE "Tuetut nopeudet (Mbps): "
+    IDS_MSG_TRANSMISSION_POWER "Lähetysteho: %d mW\n"
+    IDS_MSG_ANTENNA_COUNT "Antennien määrä: %d\n"
+    IDS_MSG_TRANSMIT_ANTENNA "Lähetysantenni: %d\n"
+    IDS_MSG_TRANSMIT_ANTENNA_ANY "Lähetysantenni: Mikä tahansa\n"
+    IDS_MSG_RECEIVE_ANTENNA "Vastaanottoantenni: %d\n"
+    IDS_MSG_RECEIVE_ANTENNA_ANY "Vastaanottoantenni: Mikä tahansa\n"
+    IDS_MSG_FRAGMENT_THRESHOLD "Pirstoutumiskynnys: %d tavua\n"
+    IDS_MSG_RTS_THRESHOLD "RTS-kynnys: %d tavua\n"
+    IDS_YES "Kyllä"
+    IDS_NO "Ei"
+    IDS_ADHOC "Ad hoc"
+    IDS_INFRASTRUCTURE "Infrastruktuuri"
+END

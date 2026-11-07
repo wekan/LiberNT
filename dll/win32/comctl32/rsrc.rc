@@ -143,6 +143,9 @@ IDI_TT_ERROR_MD ICON idi_tt_error_md.ico
 #ifdef LANGUAGE_EU_ES
     #include "lang/comctl_Eu.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/comctl_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/comctl_Fr.rc"
 #endif

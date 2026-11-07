@@ -35,6 +35,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "lang/cryptdlg_Es.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/cryptdlg_Fi.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "lang/cryptdlg_Fr.rc"
 #endif

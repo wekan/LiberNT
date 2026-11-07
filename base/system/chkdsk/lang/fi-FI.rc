@@ -1,0 +1,32 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\n\
+Käyttö: %s [asema:] [-F] [-V] [-R] [-C]\n\n\
+[asema:]    Määrittää tarkistettavan aseman.\n\
+-F          Korjaa levyn virheet.\n\
+-V          Näyttää levyn jokaisen tiedoston koko polun.\n\
+-R          Paikantaa vialliset sektorit ja palauttaa luettavat tiedot.\n\
+-C          Tarkistaa aseman vain, jos se on merkitty likaiseksi.\n\
+\n"
+
+    IDS_PERCENT_COMPL "%d prosenttia valmiina.\r"
+    IDS_FILE_SYSTEM "Tiedostojärjestelmän tyyppi on %s taltiossa %s.\n"
+    IDS_ABOUT "\n\
+Chkdskx v1.0.1, tekijä Mark Russinovich\n\
+Systems Internals - http://www.sysinternals.com\n\
+ReactOS-sovitus 1999, Emanuele Aliberti\n\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VOLUME_IN_USE "Taltio on käytössä, eikä sitä voi lukita\n"
+    IDS_CHKDSK_FAIL "Chkdsk ei voinut suorittaa tarkistusta loppuun. Virhe: 0x%08X.\n"
+    IDS_NO_ENTRY_POINT "FMIFS-aloituskohtia ei löytynyt.\n\n"
+    IDS_BAD_ARGUMENT "Tuntematon argumentti: %s\n"
+    IDS_NO_CURRENT_DIR "Nykyistä kansiota ei saatu. Virhekoodi: "
+    IDS_NO_QUERY_VOL "Taltiota ei voitu kysellä. Virhekoodi: "
+    IDS_VOLUME_IN_USE_PROC "Chkdsk ei voi käynnistyä, koska toinen prosessi käyttää taltiota.\n\n"
+    IDS_RUN_AGAIN "Ongelman voi ehkä korjata suorittamalla chkdsk uudelleen.\n\n"
+END

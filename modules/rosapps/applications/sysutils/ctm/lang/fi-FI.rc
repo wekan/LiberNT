@@ -1,0 +1,32 @@
+// Finnish resources
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+   IDS_APP_TITLE           "Konsolin Tehtävienhallinta, tekijä Aleksey Bragin <aleksey@reactos.org>"
+
+   IDS_COLUMN_NUMBER       "# "
+   IDS_COLUMN_IMAGENAME    "Näköistiedoston nimi        "
+   IDS_COLUMN_PID          "PID  "
+   IDS_COLUMN_CPU          "CPU"
+   IDS_COLUMN_MEM          "Muisti"
+   IDS_COLUMN_MEM_UNIT     "kt"
+   IDS_COLUMN_PF           "Sivuvirheet"
+
+   IDS_IDLE_PROCESS        "Järjestelmän joutoprosessi"
+   IDS_YES                 "K"
+   IDS_NO                  "E"
+
+   IDS_MENU                "Paina: q - lopeta, k - lopeta prosessi"
+   IDS_MENU_QUIT           "Q"
+   IDS_MENU_KILL_PROCESS   "K"
+
+   IDS_KILL_PROCESS        "Haluatko varmasti lopettaa tämän prosessin? (k/e)"
+   IDS_KILL_PROCESS_ERR1   "Tätä prosessia ei voi lopettaa..."
+   IDS_KILL_PROCESS_ERR2   "Prosessia %d ei voi lopettaa (OpenProcess epäonnistui)"
+
+   IDS_CTM_GENERAL_ERR1    "ctm: konsolia ei voi käyttää."
+   IDS_CTM_GENERAL_ERR2    "ctm: GetConsoleMode() epäonnistui syöttökonsolille."
+   IDS_CTM_GENERAL_ERR3    "ctm: GetConsoleMode() epäonnistui tulostuskonsolille."
+END

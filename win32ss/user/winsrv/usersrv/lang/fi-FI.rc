@@ -1,0 +1,41 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_END_NOW DIALOGEX 0, 0, 200, 95
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lopeta ohjelma - "
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Lopetetaan ohjelmaa... Odota", IDC_STATIC, 7, 7, 186, 11
+    CONTROL "Edistyminen", IDC_PROGRESS, "msctls_progress32", WS_BORDER, 7, 20, 186, 13
+    LTEXT "Jos lopetat ohjelman heti, menetät kaikki tallentamattomat tiedot. Voit lopettaa ohjelman nyt valitsemalla Lopeta nyt.", IDC_STATIC, 7, 40, 186, 26
+    DEFPUSHBUTTON "&Lopeta nyt", IDC_END_NOW, 130, 71, 63, 17
+END
+
+IDD_NOT_RESPONDING DIALOGEX 0, 0, 192, 122
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lopeta ohjelma - "
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON "Peruuta", IDCANCEL, 142, 98, 43, 17
+    PUSHBUTTON "&Lopeta nyt", IDC_END_NOW, 74, 98, 63, 17
+    LTEXT "Tämä ohjelma ei vastaa.", IDC_STATIC, 7, 7, 178, 8
+    LTEXT "Voit palata LiberNT:hen ja tarkistaa ohjelman tilan valitsemalla Peruuta.", IDC_STATIC, 7, 26, 178, 16
+    LTEXT "Jos lopetat ohjelman heti, menetät kaikki tallentamattomat tiedot. Voit lopettaa ohjelman nyt valitsemalla Lopeta nyt.", IDC_STATIC, 7, 53, 178, 33
+END
+
+
+STRINGTABLE
+BEGIN
+    IDS_SEVERITY_SUCCESS        "Onnistui"
+    IDS_SEVERITY_INFORMATIONAL  "Järjestelmän ilmoitus"
+    IDS_SEVERITY_WARNING        "Järjestelmän varoitus"
+    IDS_SEVERITY_ERROR          "Järjestelmävirhe"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SYSTEM_PROCESS          "Järjestelmäprosessi"
+    IDS_UNKNOWN_SOFTWARE_EXCEPT "tuntematon ohjelmistopoikkeus"
+    IDS_OK_TERMINATE_PROGRAM    "Lopeta ohjelma valitsemalla OK."
+    IDS_CANCEL_DEBUG_PROGRAM    "Voit korjata ohjelman virheitä valitsemalla PERUUTA."
+END

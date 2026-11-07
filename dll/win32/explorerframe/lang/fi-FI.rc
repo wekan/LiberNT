@@ -1,0 +1,354 @@
+/*
+ * Copyright 2009 Andrew Hill
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+/* Menus */
+
+IDM_CABINET_CONTEXTMENU MENUEX
+BEGIN
+    POPUP "", 264,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Vakiopainikkeet", IDM_TOOLBARS_STANDARDBUTTONS, MFT_STRING, MFS_ENABLED
+        MENUITEM "&Osoiterivi", IDM_TOOLBARS_ADDRESSBAR, MFT_STRING, MFS_ENABLED
+        MENUITEM "&Linkit", IDM_TOOLBARS_LINKSBAR, MFT_STRING, MFS_ENABLED
+        MENUITEM "", -1, MFT_SEPARATOR
+        MENUITEM "Lukitse &työkalurivit", IDM_TOOLBARS_LOCKTOOLBARS, MFT_STRING, MFS_ENABLED
+        MENUITEM "&Mukauta...", IDM_TOOLBARS_CUSTOMIZE, MFT_STRING, MFS_ENABLED
+        MENUITEM "Te&kstiselitteet", IDM_TOOLBARS_TEXTLABELS, MFT_STRING, MFS_ENABLED
+        MENUITEM "&Siirry-painike", IDM_TOOLBARS_GOBUTTON, MFT_STRING, MFS_ENABLED
+    END
+END
+
+IDM_CABINET_MAINMENU MENUEX
+BEGIN
+    POPUP "&Tiedosto", FCIDM_MENU_FILE
+    BEGIN
+        MENUITEM "", -1, MFT_SEPARATOR
+        MENUITEM "&Sulje", IDM_FILE_CLOSE
+    END
+    POPUP "&Muokkaa", FCIDM_MENU_EDIT
+    BEGIN
+        MENUITEM "", -1, MFT_SEPARATOR
+    END
+    POPUP "&Näytä", FCIDM_MENU_VIEW
+    BEGIN
+        POPUP "&Työkalurivit", IDM_VIEW_TOOLBARS
+        BEGIN
+            MENUITEM "", -1, MFT_SEPARATOR
+        END
+        MENUITEM "Tila&rivi", IDM_VIEW_STATUSBAR
+        POPUP "R&esurssienhallinnan palkki", IDM_VIEW_EXPLORERBAR
+        BEGIN
+            MENUITEM "&Haku\tCtrl+E", IDM_EXPLORERBAR_SEARCH
+            MENUITEM "&Suosikit\tCtrl+I", IDM_EXPLORERBAR_FAVORITES
+            MENUITEM "&Media", IDM_EXPLORERBAR_MEDIA
+            MENUITEM "His&toria\tCtrl+H", IDM_EXPLORERBAR_HISTORY
+            MENUITEM "&Kansiot", IDM_EXPLORERBAR_FOLDERS
+            MENUITEM "", IDM_EXPLORERBAR_SEPARATOR
+        END
+        MENUITEM "", FCIDM_MENU_VIEW_SEP_OPTIONS, MFT_SEPARATOR
+        POPUP "&Siirry", FCIDM_MENU_EXPLORE
+        BEGIN
+            MENUITEM "&Edellinen\tAlt+Vasen nuoli", IDM_GOTO_BACK
+            MENUITEM "&Seuraava\tAlt+Oikea nuoli", IDM_GOTO_FORWARD
+            MENUITEM "&Ylös yksi taso", IDM_GOTO_UPONELEVEL
+            MENUITEM "", -1, MFT_SEPARATOR
+            MENUITEM "&Aloitussivu\tAlt+Home", IDM_GOTO_HOMEPAGE
+        END
+        MENUITEM "&Päivitä", IDM_VIEW_REFRESH
+    END
+    POPUP "S&uosikit", FCIDM_MENU_FAVORITES
+    BEGIN
+        MENUITEM "&Lisää suosikkeihin...", IDM_FAVORITES_ADDTOFAVORITES
+        MENUITEM "&Järjestä suosikit...", IDM_FAVORITES_ORGANIZEFAVORITES
+        MENUITEM "", -1, MFT_SEPARATOR
+        MENUITEM "(Tyhjä)", IDM_FAVORITES_EMPTY
+    END
+    POPUP "T&yökalut", FCIDM_MENU_TOOLS
+    BEGIN
+        MENUITEM "Yhdistä &verkkoasema...", IDM_TOOLS_MAPNETWORKDRIVE
+        MENUITEM "&Katkaise verkkoaseman yhteys...", IDM_TOOLS_DISCONNECTNETWORKDRIVE
+        MENUITEM "&Synkronoi...", IDM_TOOLS_SYNCHRONIZE
+        MENUITEM "", -1, MFT_SEPARATOR
+        MENUITEM "Kansio&asetukset...", IDM_TOOLS_FOLDEROPTIONS
+    END
+    POPUP "&Ohje", FCIDM_MENU_HELP
+    BEGIN
+        MENUITEM "&Tietoja LiberNT:stä", IDM_HELP_ABOUT
+    END
+END
+
+IDM_TASKBAR_TOOLBARS MENUEX
+BEGIN
+    POPUP "&Työkalurivit", -1, MFT_STRING, MFS_ENABLED, 0
+    BEGIN
+        MENUITEM "&Työpöytä", IDM_TASKBAR_TOOLBARS_DESKTOP, MFT_STRING
+        MENUITEM "&Pikakäynnistys", IDM_TASKBAR_TOOLBARS_QUICKLAUNCH, MFT_STRING
+        MENUITEM "", -1, MFT_SEPARATOR, MFS_ENABLED
+        MENUITEM "&Uusi työkalurivi...", IDM_TASKBAR_TOOLBARS_NEW, MFT_STRING
+    END
+END
+
+IDM_BAND_MENU MENUEX
+BEGIN
+    MENUITEM "&Näytä otsikko", IDM_BAND_TITLE
+    MENUITEM "&Sulje työkalurivi", IDM_BAND_CLOSE
+END
+
+/* Dialogs */
+
+IDD_PROGRESS_DLG DIALOGEX 0, 0, 260, 85
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL "", IDC_ANIMATION, ANIMATE_CLASSA, 0, 12, 10, 236, 30 /* TODO: style */
+    LTEXT "", IDC_TEXT_LINE,     7, 45, 250, 10, SS_LEFT|SS_NOPREFIX
+    LTEXT "", IDC_TEXT_LINE + 1, 7, 55, 250, 10, SS_LEFT|SS_NOPREFIX
+    LTEXT "", IDC_TEXT_LINE + 2, 7, 75, 190, 10, SS_LEFT|SS_NOPREFIX
+    CONTROL "", IDC_PROGRESS_BAR, PROGRESS_CLASSA, WS_BORDER, 7, 65, 190, 8
+    PUSHBUTTON "Peruuta", IDCANCEL, 205, 65, 50, 15, WS_GROUP | WS_TABSTOP | WS_VISIBLE
+END
+
+IDD_CUSTOMIZETOOLBAREX DIALOGEX 0, 0, 357, 33
+STYLE DS_SHELLFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT "&Tekstiasetukset:", -1, 4, 2, 48, 15
+    COMBOBOX IDC_TEXTOPTIONS, 52, 0, 123, 57, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT "K&uvakeasetukset:", -1, 4, 20, 48, 15
+    COMBOBOX IDC_ICONOPTIONS, 52, 18, 123, 57, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SEARCH_DLG DIALOGEX 0, 0, 260, 85
+STYLE DS_SHELLFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_DLGFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Hae minkä tahansa tai kaikkien alla olevien ehtojen perusteella.", IDC_SEARCH_LABEL, 4, 2, 120, 20
+
+    LTEXT "Tiedostonimi tai sen &osa:", -1, 10, 25, 500, 10
+    EDITTEXT IDC_SEARCH_FILENAME, 10, 35, 100, 12, ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP
+
+    LTEXT "&Sana tai lause tiedostossa:", -1, 10, 50, 500, 10
+    EDITTEXT IDC_SEARCH_QUERY, 10, 60, 100, 12, ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP
+
+    LTEXT "Etsi &kohteesta:", -1, 10, 75, 500, 10
+    CONTROL "", IDC_SEARCH_COMBOBOX, WC_COMBOBOXEXW, WS_CHILD | WS_VISIBLE | WS_CLIPCHILDREN | WS_TABSTOP | CCS_NODIVIDER | CCS_NOMOVEY, 10, 85, 200, 200
+
+    DEFPUSHBUTTON "&Hae", IDC_SEARCH_BUTTON, 80, 110, 40, 15, WS_GROUP | WS_TABSTOP | WS_VISIBLE
+    PUSHBUTTON "&Pysäytä", IDC_SEARCH_STOP_BUTTON, 80, 110, 40, 15, WS_GROUP | WS_TABSTOP
+
+    AUTOCHECKBOX "Hae piilotetuista tiedostoista ja kansioista",
+                 IDC_SEARCH_HIDDEN, 4, 130, 130, 8, WS_VISIBLE | WS_GROUP | WS_TABSTOP
+
+    CONTROL "", IDC_PROGRESS_BAR, PROGRESS_CLASSA, WS_BORDER | PBS_MARQUEE, 10, 155, 200, 8
+END
+
+/* Accelerators */
+
+IDR_ACCELERATORS ACCELERATORS
+BEGIN
+    VK_F5, IDM_VIEW_REFRESH, VIRTKEY, NOINVERT
+    VK_F5, IDM_VIEW_REFRESH, VIRTKEY, CONTROL, NOINVERT
+    "R", IDM_VIEW_REFRESH, VIRTKEY, CONTROL, NOINVERT
+    VK_HOME, IDM_GOTO_HOMEPAGE, VIRTKEY, ALT, NOINVERT
+    "D", IDM_FAVORITES_ADDTOFAVORITES, VIRTKEY, CONTROL, NOINVERT
+    "B", IDM_FAVORITES_ORGANIZEFAVORITES, VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT, IDM_GOTO_BACK, VIRTKEY, ALT
+    VK_RIGHT, IDM_GOTO_FORWARD, VIRTKEY, ALT
+    VK_UP, IDM_GOTO_UPONELEVEL, VIRTKEY, ALT
+    VK_BACK, 41010, NOINVERT, VIRTKEY
+    "W", IDM_FILE_CLOSE, VIRTKEY, CONTROL, NOINVERT
+    "E", IDM_EXPLORERBAR_SEARCH, VIRTKEY, CONTROL, NOINVERT
+    "I", IDM_EXPLORERBAR_FAVORITES, VIRTKEY, CONTROL, NOINVERT
+    "H", IDM_EXPLORERBAR_HISTORY, VIRTKEY, CONTROL, NOINVERT
+    VK_F11, FCIDM_BROWSER_TOGGLEFULLSCREEN, VIRTKEY, NOINVERT
+END
+
+/* Strings */
+
+STRINGTABLE
+BEGIN
+    IDS_CANCELLING "Peruutetaan..."
+    IDS_REMAINING1 "%1!u! %2 jäljellä"
+    IDS_REMAINING2 "%1!u! %2 ja %3!u! %4 jäljellä"
+    IDS_SECONDS    "sekuntia"
+    IDS_MINUTES    "minuuttia"
+    IDS_HOURS      "tuntia"
+END
+
+STRINGTABLE
+BEGIN
+    800 "Sisältää valittujen kohteiden käsittelykomennot."
+END
+
+STRINGTABLE
+BEGIN
+    864 "Sisältää muokkauskomennot."
+END
+
+STRINGTABLE
+BEGIN
+    928 "Sisältää näkymän käsittelykomennot."
+END
+
+STRINGTABLE
+BEGIN
+    992 "Sisältää työkalukomennot."
+END
+
+STRINGTABLE
+BEGIN
+    1056 "Sisältää ohjeen näyttämisen komennot."
+END
+
+STRINGTABLE
+BEGIN
+    9025 "Sulkee ikkunan."
+    9026 "Siirtyy yhden tason ylöspäin."
+END
+
+STRINGTABLE
+BEGIN
+    9121 "Muodostaa yhteyden verkkoasemaan."
+    9122 "Katkaisee yhteyden verkkoasemaan."
+END
+
+STRINGTABLE
+BEGIN
+    9250 "Näyttää ohjelman tiedot, versionumeron ja tekijänoikeustiedot."
+    9252 "Näyttää virheenkorjaustietoja."
+END
+
+STRINGTABLE
+BEGIN
+    9281 "Siirtyy edelliselle sivulle."
+    9282 "Siirtyy seuraavalle sivulle."
+    9283 "Mahdollistaa asetusten muuttamisen."
+    9285 "Siirtyy aloitussivulle."
+END
+
+STRINGTABLE
+BEGIN
+    9362 "Avaa Suosikit-kansion."
+    9363 "Lisää nykyisen sivun suosikkeihin."
+END
+
+STRINGTABLE
+BEGIN
+    9505 "Näyttää tai piilottaa työkalurivit."
+    9506 "Näyttää tai piilottaa tilarivin."
+    9508 "Näyttää vakiopainikkeiden työkalurivin."
+    9509 "Näyttää osoiterivin."
+    9510 "Näyttää pikalinkkirivin."
+    9516 "Lukitsee työkalurivien koon ja sijainnin."
+END
+
+STRINGTABLE
+BEGIN
+    9533 "Mukauttaa työkaluriviä."
+END
+
+STRINGTABLE
+BEGIN
+    9552 "Näyttää tai piilottaa resurssienhallinnan palkin."
+    9553 "Näyttää hakupalkin."
+    9554 "Näyttää suosikkipalkin."
+    9555 "Näyttää historiapalkin."
+    9557 "Näyttää kansiopalkin."
+    9559 "Näyttää mediapalkin."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SMALLICONS "Pienet kuvakkeet"
+    IDS_LARGEICONS "Suuret kuvakkeet"
+    IDS_SHOWTEXTLABELS "Näytä tekstiselitteet"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NOTEXTLABELS "Ei tekstiselitteitä"
+    IDS_SELECTIVETEXTONRIGHT "Valikoiva teksti oikealla"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_GOBUTTONLABEL "|Siirry||"
+    IDS_GOBUTTONTIPTEMPLATE "Siirry kohteeseen ""%s"""
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SEARCHLABEL "Haku"
+    IDS_ADDRESSBANDLABEL "&Osoite"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ADDRESSMENUTEXT "&Osoite"
+    IDS_HISTORYTEXT "His&toria\tCtrl+H"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UP "Ylös"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BACK "Takaisin kohteeseen %s"
+    IDS_FORWARD "Eteenpäin kohteeseen %s"
+    IDS_FOLDER_OPTIONS "Kansioasetukset"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STANDARD_TOOLBAR, "|Edellinen|Seuraava|Ylös|Haku|Kansiot|Siirrä kohteeseen|Kopioi kohteeseen|Poista|Kumoa|Näkymät|Pysäytä|Päivitä|Aloitussivu|Yhdistä asema|Katkaise yhteys|Suosikit|Historia|Koko näyttö|Ominaisuudet|Leikkaa|Kopioi|Liitä|Kansioasetukset||"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BROWSEFORNEWTOOLAR "Valitse kansio"
+    IDS_TOOLBAR_ERR_TITLE "Työkalurivi"
+    IDS_TOOLBAR_ERR_TEXT "Työkaluriviä ei voi luoda."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SEARCH_RESULTS "Hakutulokset"
+    IDS_SEARCHINVALID "'%1' ei ole kelvollinen kansio."
+    IDS_SEARCH_FOLDER "Haetaan kohteesta %s"
+    IDS_SEARCH_FILES_FOUND "%u tiedostoa löytyi"
+    IDS_SEARCH_OPEN_FOLDER "Avaa sisältävä &kansio"
+    IDS_COL_NAME "Nimi"
+    IDS_COL_LOCATION "Kansiossa"
+    IDS_COL_RELEVANCE "Osuvuus"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PARSE_ADDR_ERR_TITLE "LiberNT-resurssienhallinta"
+    IDS_PARSE_ADDR_ERR_TEXT "LiberNT-resurssienhallinta ei löydä kohdetta '%1'. Tarkista kirjoitusasu ja yritä uudelleen."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BROWSER_NAME "Resurssienhallinta"
+END

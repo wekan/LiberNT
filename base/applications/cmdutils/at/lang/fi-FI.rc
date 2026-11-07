@@ -1,0 +1,56 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "AT-komento ajoittaa komennot ja ohjelmat suoritettaviksi tietokoneessa\n\
+määritettynä aikana ja päivänä. Schedule-palvelun on oltava käynnissä,\n\
+jotta AT-komentoa voi käyttää.\n\n\
+AT [\\\\tietokonenimi] [ [tunnus] [/DELETE] | /DELETE [/YES]]\n\
+AT [\\\\tietokonenimi] aika [/INTERACTIVE]\n\
+    [ /EVERY:päivä[,...] | /NEXT:päivä[,...]] ""komento""\n\n\
+\\\\tietokonenimi    Määrittää etätietokoneen. Jos tämä parametri jätetään\n\
+                   pois, komennot ajoitetaan paikalliseen tietokoneeseen.\n\
+tunnus             Ajoitetulle komennolle määritetty\n\
+                   tunnusnumero.\n\
+/DELETE            Peruuttaa ajoitetun komennon. Jos tunnus jätetään pois,\n\
+                   kaikki tietokoneen ajoitetut komennot peruutetaan.\n\
+/YES               Käytetään kaikkien tehtävien peruutuskomennon kanssa,\n\
+                   kun lisävahvistusta ei haluta.\n\
+aika               Määrittää ajan, jolloin komento suoritetaan.\n\
+/INTERACTIVE       Sallii tehtävän olla vuorovaikutuksessa sen käyttäjän\n\
+                   työpöydän kanssa, joka on kirjautuneena tehtävän aikana.\n\
+/EVERY:päivä[,...] Suorittaa komennon jokaisena määritettynä viikon- tai\n\
+                   kuukaudenpäivänä. Jos päivä jätetään pois, oletuksena on\n\
+                   kuukauden kuluva päivä.\n\
+/NEXT:päivä[,...]  Suorittaa komennon seuraavan kerran, kun päivä toistuu\n\
+                   (esimerkiksi seuraavana torstaina). Jos päivä jätetään pois,\n\
+                   oletuksena on kuukauden kuluva päivä.\n\
+""komento""          Suoritettava komento tai komentojono-ohjelma.\n"
+
+    IDS_DELETE_ALL "Tämä toiminto poistaa kaikki ajoitetut tehtävät.\n"
+    IDS_NEW_JOB "Lisättiin uusi tehtävä, jonka tunnus = %lu\n"
+    IDS_JOBS_LIST "Tila Tunnus Päivä                   Aika          Komentorivi\n"
+    IDS_NO_ENTRIES "Luettelossa ei ole merkintöjä.\n"
+
+    IDS_CONFIRM_QUESTION "Haluatko jatkaa tätä toimintoa? (K/E) [E]: "
+    IDS_CONFIRM_INVALID  "\nTämä on virheellinen vastaus.\n"
+    IDS_CONFIRM_YES "K"
+    IDS_CONFIRM_NO "E"
+
+    IDS_TODAY "Tänään"
+    IDS_TOMORROW "Huomenna"
+    IDS_EVERY "Joka"
+    IDS_NEXT "Seuraava"
+
+    IDS_YES "Kyllä"
+    IDS_NO "Ei"
+    IDS_ERROR "VIRHE"
+    IDS_OK "OK"
+
+    IDS_TASKID      "Tehtävän tunnus: %lu\n"
+    IDS_STATUS      "Tila:          %s\n"
+    IDS_SCHEDULE    "Aikataulu:     %s\n"
+    IDS_TIME        "Kellonaika:    %s\n"
+    IDS_INTERACTIVE "Vuorovaikutteinen: %s\n"
+    IDS_COMMAND     "Komento:       %s\n"
+END

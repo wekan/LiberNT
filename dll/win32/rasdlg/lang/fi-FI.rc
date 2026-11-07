@@ -1,0 +1,2373 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+102 DIALOGEX 0, 0, 255, 265
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Vaihtoehtoiset puhelinnumerot"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Määritä vaihtoehtoiset puhelinnumerot, joita haluat käyttää tämän yhteyden muodostamiseen.", 1018, 7, 5, 243, 16
+    LTEXT "&Puhelinnumerot:", 1019, 7, 27, 238, 8
+    CONTROL "", 1012, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000848D, 7, 38, 217, 144
+    PUSHBUTTON "Siirrä &ylös", 1017, 230, 40, 18, 16, BS_ICON
+    PUSHBUTTON "Siirrä &alas", 1015, 230, 61, 18, 16, BS_ICON
+    PUSHBUTTON "&Lisää...", 1013, 7, 187, 70, 14
+    PUSHBUTTON "&Muokkaa...", 1016, 81, 187, 70, 14
+    PUSHBUTTON "P&oista", 1014, 154, 187, 70, 14
+    AUTOCHECKBOX "Jos &numero ei vastaa, kokeile seuraavaa numeroa", 1011, 8, 210, 243, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Siirrä toimiva numero luettelon alkuun", 1010, 8, 228, 243, 10, BS_TOP | BS_MULTILINE
+    DEFPUSHBUTTON "OK", 1, 122, 245, 60, 14
+    PUSHBUTTON "Peruuta", 2, 188, 245, 60, 14
+END
+
+103 DIALOGEX 6, 18, 250, 170
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Verkkoyhteydet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "", 1029, 5, 5, 241, 35, NOT WS_GROUP
+    LTEXT "&Yhteydet:", -1, 5, 46, 238, 10
+    CONTROL "List1", 1677, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000440D, 5, 57, 240, 57
+    AUTOCHECKBOX "&Älä kysy uudelleen ennen seuraavaa kirjautumista", 1022, 8, 125, 235, 10
+    PUSHBUTTON "&Asetukset", 1026, 7, 149, 60, 14
+    DEFPUSHBUTTON "&Yhdistä...", 1024, 117, 149, 60, 14
+    PUSHBUTTON "Peruuta", 1025, 183, 149, 60, 14
+END
+
+104 DIALOGEX 6, 18, 269, 263
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Linjojen niputusvirheet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 32516, 1031, 7, 7, 20, 20
+    LTEXT "Yksi tai useampi lisälinja ei muodostanut yhteyttä.", 1033, 37, 8, 216, 20
+    CONTROL "", 1032, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x00008401, 37, 83, 224, 136
+    AUTOCHECKBOX "&Älä yritä epäonnistuneita linjoja jatkossa", 1030, 38, 226, 222, 10
+    DEFPUSHBUTTON "&Hyväksy", 1, 135, 242, 60, 14
+    PUSHBUTTON "&Katkaise", 2, 201, 242, 60, 14
+    LTEXT "Jos vain yksi linja muodosti yhteyden, palvelinta ei ehkä ole määritetty hyväksymään monilinjapuheluja. Valitse 'Älä yritä epäonnistuneita linjoja', jotta vältät tällöin tarpeettomat yhteysmaksut.", -1, 37, 36, 224, 44
+END
+
+105 DIALOGEX 0, 0, 261, 253
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Suojauksen lisäasetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Kirjautumisen suojaus", 1547, 7, 33, 246, 191
+    LTEXT "&Tietojen salaus:", 1546, 7, 5, 247, 10
+    COMBOBOX 1495, 7, 17, 247, 76, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    AUTORADIOBUTTON "Käytä &EAP (Extensible Authentication Protocol) -protokollaa", 1544, 17, 47, 226, 8, WS_GROUP
+    LTEXT "EAP-tyyppi", -1, 18, 64, 35, 8, NOT WS_VISIBLE | NOT WS_GROUP
+    COMBOBOX 1034, 53, 62, 191, 42, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "&Ominaisuudet", 1035, 184, 77, 60, 14
+    AUTORADIOBUTTON "Salli nämä &protokollat", 1545, 17, 92, 224, 10
+    AUTOCHECKBOX "&Salaamaton salasana (PAP)", 1491, 28, 105, 215, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTOCHECKBOX "S&hiva Password Authentication Protocol (SPAP)", 1496, 28, 119, 214, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Challenge Handshake Authentication Protocol (CHAP)", 1494, 28, 133, 215, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&MS CHAP (MS-CHAP)", 1493, 28, 148, 212, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Salli vanhempi MS-CHAP-versio &Win 95 -palvelimille", 200, 46, 162, 198, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "M&icrosoft CHAP versio 2 (MS-CHAP v2)", 1492, 28, 176, 200, 10, BS_TOP | BS_MULTILINE
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 28, 189, 208, 1
+    AUTOCHECKBOX "&Käytä MS-CHAP-pohjaisissa protokollissa automaattisesti LiberNT-kirjautumisnimeäni ja -salasanaani (ja toimialuetta, jos sellainen on)", 1549, 28, 195, 213, 24, BS_TOP | BS_MULTILINE
+    DEFPUSHBUTTON "OK", 1, 127, 232, 60, 14
+    PUSHBUTTON "Peruuta", 2, 192, 232, 60, 14
+END
+
+106 DIALOGEX 6, 18, 255, 109
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Yhteys muodostettu"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON "OK", 1, 97, 91, 60, 14
+    ICON 563, 1046, 7, 7, 20, 20
+    LTEXT "'Yhteyden nimi' on nyt yhdistetty.", 1047, 40, 7, 212, 16
+    LTEXT "Voit tarkistaa yhteyden tilan tai katkaista sen napsauttamalla sen kuvaketta hiiren kakkospainikkeella Verkkoyhteydet-kansiossa tai napsauttamalla sen kuvaketta tehtäväpalkissa (jos se on näkyvissä).", -1, 40, 30, 212, 34
+    AUTOCHECKBOX "&Älä näytä tätä sanomaa uudelleen", 1045, 40, 69, 212, 10, BS_TOP | BS_MULTILINE
+END
+
+107 DIALOGEX 0, 0, 258, 167
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Puhelinnumero", 1053, 7, 5, 243, 92
+    LTEXT "&Suuntanumero:", 1055, 18, 17, 54, 8
+    COMBOBOX 1049, 17, 30, 55, 129, CBS_DROPDOWN | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "&Puhelinnumero:", 1057, 77, 17, 166, 8, NOT WS_GROUP
+    EDITTEXT 1051, 77, 30, 163, 14, ES_AUTOHSCROLL
+    LTEXT "&Maa- tai aluekoodi:", 1056, 18, 48, 221, 8, NOT WS_GROUP
+    COMBOBOX 1054, 17, 61, 224, 93, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    AUTOCHECKBOX "&Käytä valintasääntöjä", 1048, 20, 81, 219, 10, BS_TOP | BS_MULTILINE
+    GROUPBOX "&Kommentti", 1052, 7, 102, 243, 36
+    EDITTEXT 1050, 17, 115, 224, 14, ES_AUTOHSCROLL
+    DEFPUSHBUTTON "OK", 1, 127, 147, 60, 14
+    PUSHBUTTON "Peruuta", 2, 191, 147, 60, 14
+END
+
+108 DIALOGEX 6, 18, 222, 104
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Vaihda salasana"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Salasanasi etäverkossa on vanhentunut. Kirjoita salasanat ja aseta uusi salasana valitsemalla OK.", 1062, 7, 5, 210, 24
+    LTEXT "&Uusi salasana:", 1064, 8, 43, 108, 8
+    EDITTEXT 1060, 118, 38, 98, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Vahvista uusi salasana:", 1061, 8, 61, 102, 8
+    EDITTEXT 1058, 118, 57, 98, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON "OK", 1, 90, 84, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 154, 84, 60, 14
+END
+
+109 DIALOGEX 6, 18, 223, 122
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Vaihda salasana"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Salasanasi etäverkossa on vanhentunut. Kirjoita salasanat ja aseta uusi salasana valitsemalla OK.", 1062, 7, 5, 212, 29
+    LTEXT "&Vanha salasana:", 1063, 7, 42, 108, 8
+    EDITTEXT 1059, 116, 38, 100, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Uusi salasana:", 1064, 7, 60, 108, 8
+    EDITTEXT 1060, 116, 56, 100, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Vahvista uusi salasana:", 1061, 7, 78, 108, 8
+    EDITTEXT 1058, 116, 74, 100, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON "OK", 1, 92, 101, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 156, 101, 60, 14
+END
+
+110 DIALOGEX 12, 16, 230, 105
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Takaisinsoitto"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Sinulla on palvelimella 'Soittajan määrittämä' -takaisinsoitto-oikeus. Valitse OK, niin palvelin soittaa sinulle takaisin alla olevaan numeroon. Ohita takaisinsoitto valitsemalla Peruuta.", 1066, 5, 5, 221, 39, SS_NOPREFIX
+    LTEXT "&Kirjoita modeemisi puhelinnumero:", 1067, 5, 46, 222, 8, NOT WS_GROUP
+    EDITTEXT 1065, 5, 57, 221, 14, ES_AUTOHSCROLL
+    DEFPUSHBUTTON "OK", 1, 100, 85, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 164, 85, 60, 14
+END
+
+111 DIALOGEX 6, 19, 265, 135
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Virhe yhdistettäessä kohteeseen %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 32515, 1068, 7, 7, 20, 20, WS_GROUP
+    LTEXT "", 1070, 34, 7, 226, 105
+    DEFPUSHBUTTON "Älä valitse=88", 1, 4, 117, 128, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 136, 117, 60, 14
+    PUSHBUTTON "&Lisätietoja", 1069, 200, 117, 60, 14
+END
+
+112 DIALOGEX 6, 18, 263, 219
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Automaattinen soitto ja katkaisu"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "LiberNT voi automaattisesti soittaa ja katkaista laitteita sen mukaan, kuinka paljon tietoa lähetetään ja vastaanotetaan.", 1085, 9, 7, 253, 30
+    GROUPBOX "Automaattinen soitto", -1, 6, 38, 249, 71
+    LTEXT "Soita toiseen linjaan, kun tämä yhteys täyttää molemmat seuraavista ehdoista:", 1083, 16, 51, 237, 16, NOT WS_GROUP
+    LTEXT "Toiminta &vähintään:", -1, 16, 73, 100, 8
+    COMBOBOX 1079, 117, 70, 60, 100, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "&Kesto vähintään:", 1084, 16, 92, 99, 8, NOT WS_GROUP
+    COMBOBOX 1080, 117, 89, 90, 162, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    GROUPBOX "Automaattinen katkaisu", -1, 6, 113, 248, 81
+    LTEXT "Katkaise kaikki tämän yhteyden käyttämät laitteet, kun yhteys täyttää molemmat seuraavista ehdoista:", 1086, 16, 127, 230, 18, NOT WS_GROUP
+    LTEXT "Toiminta &enintään:", -1, 16, 150, 92, 8
+    COMBOBOX 1081, 115, 146, 60, 100, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "K&esto vähintään:", 1087, 16, 168, 92, 8, NOT WS_GROUP
+    COMBOBOX 1082, 115, 166, 90, 151, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    DEFPUSHBUTTON "OK", 1, 131, 199, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 194, 199, 60, 14
+END
+
+113 DIALOGEX 21, 46, 225, 65
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Yhdistetään %1..."
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 563, 1417, 7, 7, 20, 20
+    LTEXT "", 1097, 36, 7, 185, 35, SS_NOPREFIX
+    PUSHBUTTON "Peruuta", 2, 83, 47, 60, 14
+END
+
+114 DIALOGEX 6, 18, 225, 60
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Puhelinverkkoyhteydet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 563, 1098, 7, 6, 20, 20, WS_GROUP
+    LTEXT "Automaattinen soittoyritys epäonnistui. Haluatko poistaa automaattisen soiton käytöstä tässä sijainnissa?", 1099, 40, 6, 181, 34, NOT WS_GROUP
+    PUSHBUTTON "&Kyllä", 1, 60, 42, 50, 14
+    DEFPUSHBUTTON "&Ei", 2, 115, 42, 50, 14
+END
+
+115 DIALOGEX 0, 0, 263, 124
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 263, 50
+    LTEXT "&Soita:", 1412, 9, 60, 68, 8
+    COMBOBOX 1416, 88, 56, 165, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Soitto&paikka:", 1415, 9, 77, 71, 8
+    COMBOBOX 1414, 88, 75, 89, 112, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "Valinta&säännöt", 1108, 181, 75, 72, 14
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 8, 96, 245, 1
+    DEFPUSHBUTTON "&Soita", 1590, 8, 103, 61, 14
+    PUSHBUTTON "Peruuta", 1591, 70, 103, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 132, 103, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 194, 103, 60, 14
+END
+
+116 DIALOGEX 0, 0, 265, 176
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 8, 60, 88, 8
+    EDITTEXT 1104, 103, 57, 154, 14, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1112, 8, 79, 88, 8
+    EDITTEXT 1103, 103, 76, 154, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN, 8, 97, 248, 1
+    AUTOCHECKBOX "&Tallenna tämä käyttäjänimi ja salasana seuraaville käyttäjille:", 1101, 14, 105, 239, 13, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "Vain m&inulle", 1622, 26, 120, 226, 11, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Kaikille tämän tietokoneen käyttäjille", 1623, 26, 134, 229, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 8, 149, 248, 1
+    DEFPUSHBUTTON "&Soita", 1590, 8, 156, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 1591, 71, 156, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 133, 156, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 195, 156, 60, 14
+END
+
+117 DIALOGEX 0, 0, 263, 192
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 9, 61, 92, 8
+    EDITTEXT 1104, 102, 57, 154, 14, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1112, 9, 80, 92, 8
+    EDITTEXT 1103, 102, 76, 154, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Toimialue:", 1110, 9, 99, 91, 8
+    EDITTEXT 1102, 102, 95, 154, 14, ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN, 9, 116, 247, 1
+    AUTOCHECKBOX "&Tallenna tämä käyttäjänimi ja salasana seuraaville käyttäjille:", 1101, 12, 123, 243, 13, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "Vain m&inulle", 1622, 25, 137, 229, 11, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Kaikille tämän tietokoneen käyttäjille", 1623, 25, 151, 230, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 9, 167, 247, 1
+    DEFPUSHBUTTON "&Soita", 1590, 8, 173, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 1591, 71, 173, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 133, 173, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 195, 173, 60, 14
+END
+
+118 DIALOGEX 0, 0, 265, 220
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 10, 61, 92, 8
+    EDITTEXT 1104, 104, 57, 154, 14, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1112, 10, 80, 92, 8
+    EDITTEXT 1103, 104, 76, 154, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Toimialue:", 1110, 10, 100, 92, 8
+    EDITTEXT 1102, 104, 95, 154, 14, ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN, 11, 116, 247, 1
+    AUTOCHECKBOX "&Tallenna tämä käyttäjänimi ja salasana seuraaville käyttäjille:", 1101, 16, 124, 239, 13, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "Vain m&inulle", 1622, 29, 139, 225, 11, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Kaikille tämän tietokoneen käyttäjille", 1623, 29, 152, 225, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 167, 247, 1
+    LTEXT "&Soita:", 1412, 10, 177, 90, 8
+    COMBOBOX 1416, 102, 173, 154, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 192, 247, 1
+    DEFPUSHBUTTON "&Soita", 1590, 10, 199, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 1591, 72, 199, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 134, 199, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 196, 199, 60, 14
+END
+
+119 DIALOGEX 0, 0, 265, 200
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 10, 62, 91, 8
+    EDITTEXT 1104, 104, 58, 154, 14, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1112, 10, 81, 92, 8
+    EDITTEXT 1103, 104, 77, 154, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN, 10, 97, 247, 1
+    AUTOCHECKBOX "&Tallenna tämä käyttäjänimi ja salasana seuraaville käyttäjille:", 1101, 12, 103, 243, 13, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "Vain m&inulle", 1622, 24, 117, 229, 11, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Kaikille tämän tietokoneen käyttäjille", 1623, 24, 132, 229, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 147, 247, 1
+    LTEXT "&Soita:", 1412, 13, 157, 88, 8
+    COMBOBOX 1416, 103, 154, 154, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 173, 247, 1
+    DEFPUSHBUTTON "&Soita", 1590, 10, 180, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 1591, 72, 180, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 134, 180, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 197, 180, 60, 14
+END
+
+121 DIALOGEX 6, 18, 230, 131
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "ISDN-määritys"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Linjatyyppi:", 1155, 9, 9, 65, 8
+    COMBOBOX 1153, 76, 7, 148, 42, CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    AUTOCHECKBOX "&Neuvottele linjatyyppi", 1150, 23, 26, 199, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    GROUPBOX "    ", 1152, 8, 48, 214, 51, WS_GROUP
+    AUTOCHECKBOX "&Käytä vanhaa omaa protokollaa", 1149, 17, 48, 102, 10, BS_TOP | BS_MULTILINE
+    LTEXT "&Käytettävät kanavat:", 1154, 16, 65, 100, 8, NOT WS_GROUP
+    EDITTEXT 1151, 119, 61, 94, 14, ES_AUTOHSCROLL
+    AUTOCHECKBOX "&Ota laitteistopakkaus käyttöön", 1148, 16, 82, 198, 10, BS_TOP | BS_MULTILINE
+    PUSHBUTTON "OK", 1, 99, 109, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 163, 109, 60, 14
+END
+
+122 DIALOGEX 6, 18, 220, 68
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "ISDN-määritys"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Linjatyyppi:", 1155, 9, 11, 55, 8
+    COMBOBOX 1153, 67, 7, 148, 43, CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    AUTOCHECKBOX "&Neuvottele linjatyyppi", 1150, 21, 28, 194, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    PUSHBUTTON "OK", 1, 90, 49, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 154, 49, 60, 14
+END
+
+123 DIALOGEX 11, 20, 350, 275
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT 1161, 5, 5, 338, 236, ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL | WS_GROUP
+    LTEXT "I&P-osoite:", 1163, 7, 253, 68, 8
+    CONTROL "", 1160, "RASIPADDRESS", WS_TABSTOP, 76, 250, 117, 14
+    DEFPUSHBUTTON "", 1162, 197, 252, 16, 13, NOT WS_VISIBLE | WS_GROUP | NOT WS_TABSTOP
+    PUSHBUTTON "&Valmis", 1, 219, 252, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 283, 252, 60, 14
+END
+
+124 DIALOGEX 6, 17, 350, 266
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT 1161, 5, 4, 340, 236, ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL | WS_GROUP
+    DEFPUSHBUTTON "", 1162, 7, 247, 50, 14, NOT WS_VISIBLE | WS_GROUP | NOT WS_TABSTOP
+    PUSHBUTTON "&Valmis", 1, 222, 247, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 286, 247, 60, 14
+END
+
+125 DIALOGEX 12, 16, 261, 190
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Modeemin määritys"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 15102, 1238, 7, 7, 20, 20
+    LTEXT "Modeemi", -1, 25, 27, 24, 8, NOT WS_VISIBLE | NOT WS_GROUP
+    EDITTEXT 1235, 40, 7, 214, 16, ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    LTEXT "&Enimmäisnopeus (bps):", 1243, 7, 36, 110, 8
+    COMBOBOX 1239, 119, 34, 136, 186, CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Modeemin &protokolla", 1244, 7, 52, 111, 8
+    COMBOBOX 1245, 119, 50, 136, 186, CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    GROUPBOX "Laitteiston ominaisuudet", 1237, 6, 70, 248, 61, WS_GROUP
+    AUTOCHECKBOX "&Ota laitteiston vuonohjaus käyttöön", 1232, 19, 82, 217, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Ota modeemin &virheenkorjaus käyttöön", 1231, 19, 98, 217, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Ota m&odeemin pakkaus käyttöön", 1229, 19, 115, 217, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Näytä pääteikkuna", 1234, 8, 136, 246, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Ota mo&deemin kaiutin käyttöön", 1230, 8, 151, 247, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    DEFPUSHBUTTON "OK", 1, 129, 171, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 194, 171, 60, 14
+END
+
+126 DIALOGEX 0, 0, 270, 117
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Valitse verkkokomponentin tyyppi"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse asennettavan verkkokomponentin tyyppi:", -1, 8, 7, 258, 8
+    CONTROL "", 1251, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000C04D, 8, 20, 188, 58
+    GROUPBOX "", -1, 8, 81, 188, 30
+    LTEXT "", 1250, 12, 90, 177, 17
+    DEFPUSHBUTTON "&Lisää...", 1252, 205, 20, 60, 14
+    PUSHBUTTON "Peruuta", 2, 205, 38, 60, 14
+END
+
+127 DIALOGEX 16, 20, 260, 135
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "NetWare-yhteydet tai yhteensopivat yhteydet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 32515, 1278, 7, 7, 21, 20, WS_GROUP
+    LTEXT "Sinulla on yhteyksiä NetWare-yhteensopivaan verkkoon. Nämä yhteydet suljetaan, kun PPP IPX -yhteys muodostetaan.", 1279, 42, 7, 215, 37
+    LTEXT "Välttääksesi tietojen menetyksen sulje ennen soittamista kaikki näitä yhteyksiä käyttävät tiedostot tai poista IPX:n valinta tämän merkinnän verkkoprotokolla-asetuksista.", 1280, 42, 46, 215, 38, NOT WS_GROUP
+    AUTOCHECKBOX "&Älä näytä tätä sanomaa jatkossa", 1277, 42, 86, 215, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    DEFPUSHBUTTON "OK", 1, 65, 112, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 134, 112, 60, 14
+END
+
+128 DIALOGEX 7, 22, 236, 90
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Manuaalinen soitto"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Nosta kuuloke ja valitse numero (tai pyydä operaattoria valitsemaan). Kun numero on valittu, valitse OK. Kuuntele kuuloketta, kunnes se hiljenee, ja laske se sitten paikalleen.", 1281, 8, 8, 219, 32
+    LTEXT "Puhelinnumero:", 1282, 8, 46, 91, 8
+    LTEXT "", 1283, 103, 46, 126, 8, NOT WS_GROUP
+    DEFPUSHBUTTON "OK", 1, 104, 70, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 168, 70, 60, 14
+END
+
+129 DIALOGEX 6, 20, 260, 85
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Verkkoprotokollan yhteyden tulos"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 32516, 1328, 7, 7, 21, 20, WS_GROUP
+    LTEXT "", 1329, 38, 7, 216, 24, NOT WS_GROUP
+    AUTOCHECKBOX "&Älä pyydä epäonnistuneita protokollia ensi kerralla", 1327, 40, 44, 215, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    PUSHBUTTON "&Hyväksy", 1, 129, 64, 60, 14
+    PUSHBUTTON "&Katkaise", 2, 193, 64, 60, 14
+END
+
+133 DIALOGEX 6, 18, 231, 211
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "X.25-kirjautumisasetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse X.25-verkkopalvelusi ja kirjoita etäpalvelimen X.121-osoite:", 1408, 7, 4, 220, 27
+    LTEXT "&Verkko:", 1410, 9, 35, 213, 8, NOT WS_GROUP
+    COMBOBOX 1406, 9, 46, 215, 125, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "X.121-&osoite:", 1407, 9, 66, 213, 8, NOT WS_GROUP
+    EDITTEXT 1402, 8, 77, 215, 14, ES_AUTOHSCROLL
+    GROUPBOX "Valinnainen", 1405, 8, 95, 215, 79
+    LTEXT "&Käyttäjätiedot:", 1411, 19, 109, 182, 8, NOT WS_GROUP
+    EDITTEXT 1404, 19, 120, 193, 14, ES_AUTOHSCROLL
+    LTEXT "&Palvelut:", 1409, 19, 138, 182, 8, NOT WS_GROUP
+    EDITTEXT 1403, 19, 149, 193, 14, ES_AUTOHSCROLL
+    DEFPUSHBUTTON "OK", 1, 100, 189, 60, 14
+    PUSHBUTTON "Peruuta", 2, 164, 189, 60, 14
+END
+
+146 DIALOGEX 6, 18, 230, 210
+STYLE DS_SHELLFONT | WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "Automaattinen soitto"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Jos yhteys verkkoon katkeaa, automaattinen soitto yrittää muodostaa yhteyden verkkoon aina, kun yrität käyttää etätietoja.", -1, 7, 4, 219, 32
+    LTEXT "&Ota automaattinen soitto käyttöön sijainnin mukaan:", 1006, 8, 42, 213, 8
+    CONTROL "", 1004, "SYSLISTVIEW32", WS_BORDER | WS_GROUP | WS_TABSTOP | 0x0000C401, 7, 53, 216, 109
+    AUTOCHECKBOX "&Kysy aina ennen automaattista soittoa", 1496, 8, 170, 218, 9, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Poista automaattinen soitto käytöstä, kun olen kirjautunut", 1550, 8, 185, 217, 9, BS_TOP | BS_MULTILINE
+END
+
+147 DIALOGEX 6, 18, 230, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "Soitto"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Nämä asetukset koskevat Ctrl-Alt-Del-kirjautumisen 'Kirjaudu puhelinverkkoyhteyden avulla' -toimintoa. Järjestelmänvalvojana voit käyttää tätä välilehteä.", 1007, 7, 4, 221, 40, NOT WS_GROUP
+    LTEXT "&Uudelleensoittoyritysten määrä:", 1005, 7, 55, 154, 8
+    EDITTEXT 1001, 164, 52, 60, 14, ES_AUTOHSCROLL
+    LTEXT "&Sekuntia uudelleensoittoyritysten välillä:", 1009, 7, 73, 156, 8, NOT WS_GROUP
+    EDITTEXT 1003, 164, 70, 60, 14, ES_AUTOHSCROLL
+    LTEXT "&Joutosekunnit ennen katkaisua:", 1008, 7, 91, 154, 8, NOT WS_GROUP
+    EDITTEXT 1002, 164, 88, 60, 14, ES_AUTOHSCROLL
+END
+
+148 DIALOGEX 6, 18, 230, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "Takaisinsoitto"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kun soitat palvelimeen, se voi tarjoutua soittamaan sinulle takaisin puhelinkulujen vähentämiseksi. Määritä, haluatko takaisinsoiton. (Takaisinsoittoa ei tueta VPN-yhteyksissä.)", 1043, 8, 4, 219, 43
+    AUTORADIOBUTTON "&Ei takaisinsoittoa", 1041, 7, 48, 219, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "K&ysy soitettaessa, kun palvelin tarjoaa sitä", 1040, 7, 61, 219, 10, BS_TOP | BS_MULTILINE
+    AUTORADIOBUTTON "Soita minulle &aina takaisin alla oleviin numeroihin:", 1042, 7, 74, 219, 10, BS_TOP | BS_MULTILINE
+    CONTROL "", 1037, "SYSLISTVIEW32", WS_BORDER | WS_GROUP | WS_TABSTOP | 0x00008401, 16, 88, 204, 94
+    PUSHBUTTON "&Muokkaa...", 1039, 96, 190, 60, 14
+    PUSHBUTTON "P&oista", 1038, 159, 190, 60, 14
+END
+
+149 DIALOGEX 6, 18, 317, 142
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Sinun on määritettävä tunnistetiedot, joita etäreitittimet käyttävät soittaessaan tähän liittymään. Tälle reitittimelle luodaan käyttäjätili tässä antamillasi tiedoilla.", 1094, 8, 5, 307, 35
+    LTEXT "&Käyttäjänimi:", 1078, 8, 47, 124, 8, NOT WS_GROUP
+    EDITTEXT 1074, 135, 45, 175, 12, ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT "&Salasana:", 1077, 8, 68, 124, 8, NOT WS_GROUP
+    EDITTEXT 1073, 135, 66, 175, 12, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Vahvista salasana:", 1075, 8, 90, 124, 8, NOT WS_GROUP
+    EDITTEXT 1071, 135, 87, 175, 12, ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+150 DIALOGEX 6, 18, 321, 144
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Sinun on määritettävä tunnistetiedot, joita tämä liittymä käyttää yhdistäessään etäreitittimeen. Näiden tunnistetietojen on vastattava etäreitittimeen määritettyjä tunnistetietoja.", 1094, 8, 5, 308, 33
+    LTEXT "&Käyttäjänimi:", 1096, 8, 43, 130, 8, NOT WS_GROUP
+    EDITTEXT 1091, 140, 40, 175, 12, ES_AUTOHSCROLL
+    LTEXT "&Toimialue:", 1093, 8, 63, 130, 8, NOT WS_GROUP
+    EDITTEXT 1089, 140, 60, 175, 12, ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1095, 8, 81, 130, 8, NOT WS_GROUP
+    EDITTEXT 1090, 140, 78, 175, 12, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Vahvista salasana:", 1092, 8, 99, 130, 8, NOT WS_GROUP
+    EDITTEXT 1088, 140, 96, 175, 12, ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+153 DIALOGEX 0, 0, 315, 140
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita tälle yhteydelle haluamasi nimi:", -1, 8, 4, 190, 8
+    EDITTEXT 1114, 8, 17, 190, 12, ES_AUTOHSCROLL
+    LTEXT "Tallenna yhteys Verkkoyhteydet-kansioon valitsemalla Valmis.", -1, 8, 38, 193, 8
+    LTEXT "Voit muokata yhteyttä myöhemmin valitsemalla sen, valitsemalla Tiedosto-valikon ja valitsemalla sitten Ominaisuudet.", -1, 8, 58, 193, 16
+END
+
+155 DIALOGEX 0, 0, 231, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Yhdistä käyttäen:", 1124, 7, 5, 219, 8
+    CONTROL "", 1128, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x00004C0D, 7, 17, 198, 44, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Ylös", 1132, 210, 18, 16, 14, BS_ICON
+    PUSHBUTTON "&Alas", 1131, 210, 36, 16, 14, BS_ICON
+    AUTOCHECKBOX "&Kaikki laitteet soittavat samoihin numeroihin", 1119, 9, 66, 133, 14, BS_TOP | BS_MULTILINE
+    PUSHBUTTON "&Määritä...", 1130, 144, 66, 60, 14
+    GROUPBOX "Esimerkkityyppi", 1125, 8, 84, 215, 100, WS_GROUP
+    LTEXT "&Suuntanumero:", 1133, 17, 102, 52, 8
+    COMBOBOX 1122, 17, 112, 52, 110, CBS_DROPDOWN | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "&Puhelinnumero:", 1135, 71, 102, 139, 8
+    EDITTEXT 1123, 73, 112, 79, 14, ES_AUTOHSCROLL
+    PUSHBUTTON "Vaihtoehtoiset &numerot", 1129, 154, 112, 60, 14
+    LTEXT "&Maa- tai aluekoodi:", 1134, 17, 132, 197, 8
+    COMBOBOX 1126, 17, 143, 193, 130, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    AUTOCHECKBOX "K&äytä valintasääntöjä", 1121, 17, 163, 132, 14, BS_TOP | BS_MULTILINE
+    PUSHBUTTON "Valinta&säännöt", 1136, 151, 161, 60, 14
+    AUTOCHECKBOX "Näytä &kuvake ilmaisinalueella yhteyden ollessa muodostettu", 1120, 10, 192, 214, 19, BS_TOP | BS_MULTILINE
+END
+
+156 DIALOGEX 0, 0, 231, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON "&Määritä...", 1130, 164, 38, 60, 14
+    GROUPBOX "Esimerkkiteksti", 1125, 8, 55, 217, 100, WS_GROUP
+    LTEXT "&Suuntanumero:", 1133, 17, 72, 48, 8
+    COMBOBOX 1122, 17, 83, 48, 119, CBS_DROPDOWN | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "&Puhelinnumero:", 1135, 71, 72, 146, 8
+    EDITTEXT 1123, 71, 83, 81, 14, ES_AUTOHSCROLL
+    PUSHBUTTON "Vaihtoehtoiset &numerot", 1129, 155, 83, 63, 14
+    LTEXT "&Maa- tai aluekoodi:", 1134, 17, 103, 193, 8
+    COMBOBOX 1126, 17, 114, 201, 130, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    AUTOCHECKBOX "K&äytä valintasääntöjä", 1121, 19, 134, 136, 12, BS_TOP | BS_MULTILINE
+    PUSHBUTTON "Valinta&säännöt", 1136, 157, 132, 60, 14
+    AUTOCHECKBOX "Näytä &kuvake ilmaisinalueella yhteyden ollessa muodostettu", 1120, 12, 164, 209, 18, BS_TOP | BS_MULTILINE
+    LTEXT "Yhdistä käyttäen:", 1124, 8, 5, 217, 8
+    CONTROL "", 1127, "SYSLISTVIEW32", WS_DISABLED | WS_BORDER | 0x0000EC0D, 7, 18, 217, 15
+END
+
+157 DIALOGEX 6, 18, 235, 160
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Ulkoasu"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTOCHECKBOX "&Esikatsele puhelinnumerot ennen soittamista", 1142, 8, 10, 224, 10, WS_GROUP
+    AUTOCHECKBOX "Näytä &sijaintiasetus ennen soittamista", 1139, 8, 27, 224, 10
+    AUTOCHECKBOX "Salli sijainnin &muokkaus kirjautumisen aikana", 1140, 21, 43, 212, 10
+    AUTOCHECKBOX "Näytä &yhteyden eteneminen soitettaessa", 1143, 8, 59, 224, 10
+    AUTOCHECKBOX "&Sulje soitettaessa", 1137, 8, 76, 224, 10
+    AUTOCHECKBOX "Salli puhelinluettelon m&uokkaus kirjautumisen aikana", 1141, 8, 94, 224, 10
+    AUTOCHECKBOX "&Luo uudet puhelinluettelon merkinnät ohjatulla toiminnolla", 1144, 22, 111, 210, 10
+END
+
+158 DIALOGEX 6, 18, 235, 160
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Ulkoasu"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTOCHECKBOX "&Esikatsele puhelinnumerot ennen soittamista", 1142, 8, 10, 223, 10, WS_GROUP
+    AUTOCHECKBOX "Näytä &sijaintiasetus ennen soittamista", 1139, 8, 27, 206, 10
+    AUTOCHECKBOX "Käynnistä puhelinverkkoyhteyksien &valvonta ennen soittamista", 1138, 8, 44, 226, 10
+    AUTOCHECKBOX "Näytä &yhteyden eteneminen soitettaessa", 1143, 8, 61, 224, 10
+    AUTOCHECKBOX "&Sulje soitettaessa", 1137, 8, 79, 220, 10
+    AUTOCHECKBOX "&Luo uudet puhelinluettelon merkinnät ohjatulla toiminnolla", 1144, 8, 97, 220, 10
+    AUTOCHECKBOX "Kysy aina &ennen automaattista soittoa", 1136, 8, 114, 220, 10
+END
+
+160 DIALOGEX 6, 18, 320, 145
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_CHILD | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse nimi tälle tarvittaessa soitettavalle liittymälle. Liittymät nimetään yleensä sen verkon tai reitittimen mukaan, johon ne muodostavat yhteyden.", 1158, 7, 5, 309, 29
+    LTEXT "&Liittymän nimi:", 1159, 17, 41, 285, 8, NOT WS_GROUP
+    EDITTEXT 1157, 17, 53, 284, 12, ES_AUTOHSCROLL
+    AUTOCHECKBOX "&Tunnen tarvittaessa soitettavat liittymät ja muokkaan mieluummin ominaisuuksia suoraan", 1156, 24, 100, 258, 31, BS_TOP | BS_MULTILINE | NOT WS_VISIBLE | WS_DISABLED
+END
+
+162 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
+CAPTION "Suojaus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Suojausasetukset", 1580, 8, 3, 215, 139
+    AUTORADIOBUTTON "&Tyypillinen (suositellut asetukset)", 1540, 14, 16, 201, 9, BS_NOTIFY | WS_GROUP
+    AUTORADIOBUTTON "&Lisäasetukset (mukautetut asetukset)", 1541, 14, 102, 198, 8, BS_NOTIFY
+    LTEXT "&Vahvista henkilöllisyyteni seuraavasti:", 1537, 26, 29, 187, 8, NOT WS_GROUP
+    COMBOBOX 1178, 26, 40, 184, 78, CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    AUTOCHECKBOX "&Käytä automaattisesti LiberNT-kirjautumisnimeäni ja -salasanaani (ja toimialuetta, jos sellainen on)", 1174, 26, 58, 184, 20, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Vaadi tietojen &salaus (katkaise, jos ei ole)", 1169, 26, 82, 183, 10, BS_TOP | BS_MULTILINE
+    LTEXT "Näiden asetusten käyttäminen edellyttää suojausprotokollien tuntemusta.", 1539, 15, 114, 134, 20
+    PUSHBUTTON "&Asetukset...", 1180, 151, 115, 60, 14
+    GROUPBOX "Vuorovaikutteinen kirjautuminen ja komentosarjat", 1177, 8, 146, 215, 62, WS_GROUP
+    AUTOCHECKBOX "&Näytä pääteikkuna", 1173, 14, 159, 198, 11, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Suorita komentosarja:", 1172, 14, 172, 57, 10, BS_TOP | BS_MULTILINE
+    COMBOBOX 1179, 72, 171, 140, 104, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "&Muokkaa...", 1182, 87, 187, 60, 14
+    PUSHBUTTON "&Selaa...", 1181, 151, 187, 60, 14
+END
+
+163 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Tietokoneessasi on useita puhelinverkkolaitteita.", -1, 6, 3, 307, 13
+    LTEXT "&Valitse tässä yhteydessä käytettävät laitteet:", -1, 6, 15, 307, 11
+    CONTROL "", 1228, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000C415, 7, 28, 304, 77
+END
+
+165 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Verkko"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Soitettavan puhelinverkkopalvelimen tyyppi:", 1583, 7, 4, 219, 8
+    COMBOBOX 1418, 7, 17, 215, 46, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "&Asetukset", 1419, 160, 35, 60, 14
+    LTEXT "Tämä &yhteys käyttää seuraavia kohteita:", 1684, 8, 64, 219, 10
+    CONTROL "", 1251, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000C40D, 7, 75, 216, 53
+    PUSHBUTTON "&Asenna...", 1252, 7, 133, 67, 14
+    PUSHBUTTON "&Poista asennus", 1254, 80, 133, 67, 14
+    PUSHBUTTON "&Ominaisuudet", 1253, 153, 133, 67, 14
+    GROUPBOX "Kuvaus", 1585, 9, 158, 213, 43
+    LTEXT "", 1250, 18, 167, 195, 25
+END
+
+166 DIALOGEX 6, 18, 320, 145
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita etäverkon DNS- tai WINS-palvelimen IP-osoite tai jätä arvoksi 0.0.0.0, jos oletat etäreitittimen antavan ne tai et tiedä.", 1275, 7, 2, 311, 25
+    LTEXT "&DNS-palvelin:", 1274, 7, 29, 160, 8, NOT WS_GROUP
+    CONTROL "", 1272, "RASIPADDRESS", WS_TABSTOP, 21, 41, 85, 12
+    LTEXT "&WINS-palvelin:", 1276, 7, 65, 166, 8, NOT WS_GROUP
+    CONTROL "", 1273, "RASIPADDRESS", WS_TABSTOP, 21, 77, 85, 12
+END
+
+167 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
+CAPTION "Asetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Soittoasetukset", 1289, 7, 2, 213, 64
+    AUTOCHECKBOX "&Näytä eteneminen yhdistettäessä", 1284, 16, 14, 201, 10
+    AUTOCHECKBOX "&Kysy nimeä ja salasanaa, varmennetta jne.", 1554, 16, 27, 201, 10
+    AUTOCHECKBOX "Sisällytä &LiberNT-kirjautumistoimialue", 1555, 16, 39, 201, 10
+    AUTOCHECKBOX "Kysy puhelin&numeroa", 1285, 16, 52, 200, 10, BS_TOP | BS_MULTILINE
+    GROUPBOX "Uudelleensoiton asetukset", 1290, 6, 72, 213, 79
+    LTEXT "&Uudelleensoittoyritykset:", 1300, 16, 87, 123, 8
+    EDITTEXT 1287, 141, 84, 69, 14, ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT "&Aika uudelleensoittoyritysten välillä:", 1301, 16, 103, 123, 8
+    COMBOBOX 1292, 141, 101, 70, 123, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "&Joutoaika ennen katkaisua:", 1299, 16, 120, 123, 8
+    COMBOBOX 1291, 141, 116, 70, 108, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    AUTOCHECKBOX "Soita uudelleen, jos &linja katkeaa", 1286, 16, 136, 199, 10, BS_TOP | BS_MULTILINE
+    GROUPBOX "Useita laitteita", 1288, 7, 156, 213, 32
+    COMBOBOX 1551, 16, 169, 128, 45, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "&Määritä...", 1293, 150, 168, 60, 14
+    PUSHBUTTON "&X.25", 1295, 7, 194, 50, 14
+    PUSHBUTTON "&Näennäinen ""tunneli""-yhteys", 1294, 62, 194, 120, 14, NOT WS_VISIBLE | WS_DISABLED
+END
+
+168 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita puhelinnumero alle.", -1, 7, 4, 306, 14
+    LTEXT "&Puhelinnumero:", 1308, 7, 19, 130, 8
+    EDITTEXT 1304, 7, 30, 304, 14, ES_AUTOHSCROLL
+    LTEXT "Saatat joutua lisäämään numeron ""1"" tai suuntanumeron tai molemmat. Jos et ole varma lisänumeroiden tarpeesta, valitse numero puhelimellasi. Jos kuulet modeemin äänen, valittu numero on oikea.", -1, 20, 50, 291, 53
+END
+
+169 DIALOGEX 6, 18, 235, 135
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Puhelinluettelo"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Käytä tätä puhelinluetteloa:", 1326, 8, 8, 222, 8
+    AUTORADIOBUTTON "&Järjestelmän puhelinluettelo", 1325, 14, 22, 216, 10, WS_GROUP
+    AUTORADIOBUTTON "&Oma puhelinluettelo", 1324, 14, 34, 216, 10
+    AUTORADIOBUTTON "Tämä &vaihtoehtoinen puhelinluettelo:", 1323, 14, 46, 217, 10
+    COMBOBOX 1321, 26, 61, 201, 77, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | NOT WS_TABSTOP
+    PUSHBUTTON "&Selaa...", 1322, 167, 81, 60, 14
+END
+
+170 DIALOGEX 6, 18, 235, 135
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Puhelinluettelo"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Käytä tätä puhelinluetteloa:", 1326, 8, 8, 223, 8
+    AUTORADIOBUTTON "&Järjestelmän puhelinluettelo", 1325, 14, 22, 217, 10, WS_GROUP
+    AUTORADIOBUTTON "Tämä &vaihtoehtoinen puhelinluettelo:", 1323, 14, 36, 216, 10
+    COMBOBOX 1321, 26, 51, 203, 77, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_GROUP | NOT WS_TABSTOP
+    PUSHBUTTON "&Selaa...", 1322, 169, 69, 60, 14
+END
+
+171 DIALOGEX 6, 18, 317, 144
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita tämän reitittimen IP-osoite etäverkossa tai jätä arvoksi 0.0.0.0, jos oletat etäreitittimen antavan osoitteen. Etäverkon tai reitittimen ylläpitäjä yleensä kertoo, mitä käyttää.", 1331, 5, 4, 308, 35
+    LTEXT "Oma &IP-osoite:", 1332, 4, 51, 100, 8, NOT WS_GROUP
+    CONTROL "", 1330, "RASIPADDRESS", WS_TABSTOP, 21, 62, 104, 12
+    LTEXT "Huomautus: Jos tietokoneeseen on asennettu verkkosovitin, ÄLÄ valitse samaa osoitetta kuin verkkosovittimella.", 1333, 5, 94, 306, 36, NOT WS_GROUP
+END
+
+172 DIALOGEX 6, 18, 317, 144
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Jotkin puhelinverkkopalvelimet ja reitittimet vaativat vuorovaikutteisen kirjautumisen yhteyden muodostamisen jälkeen. Voit suorittaa komentosarjan, joka vastaa puolestasi automaattisesti.", 1339, 5, 3, 309, 27
+    AUTOCHECKBOX "Näytä &pääteikkuna", 1462, 15, 31, 162, 10
+    AUTOCHECKBOX "&Suorita komentosarja:", 1463, 15, 45, 58, 10
+    COMBOBOX 1334, 30, 60, 275, 88, CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "&Muokkaa...", 1335, 180, 77, 60, 14
+    PUSHBUTTON "&Selaa...", 1465, 244, 77, 60, 14
+END
+
+173 DIALOGEX 6, 18, 230, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "Soitto"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Soittokäytäntö", 1344, 9, 4, 213, 53, WS_GROUP
+    LTEXT "&Uudelleensoittoyritysten määrä:", 1349, 16, 22, 140, 8, NOT WS_GROUP
+    EDITTEXT 1340, 158, 19, 56, 14, ES_AUTOHSCROLL
+    LTEXT "&Sekuntia uudelleensoittoyritysten välillä:", 1351, 16, 38, 140, 8, NOT WS_GROUP
+    EDITTEXT 1342, 158, 36, 56, 14, ES_AUTOHSCROLL
+    GROUPBOX "Yhteyden tyyppi", 1343, 9, 63, 213, 56, WS_GROUP
+    LTEXT "&Joutosekunnit ennen katkaisua:", 1350, 28, 88, 124, 8, NOT WS_GROUP
+    AUTORADIOBUTTON "&Tarvittaessa soitettava yhteys", 1347, 16, 78, 135, 10, WS_GROUP
+    AUTORADIOBUTTON "&Pysyvä yhteys", 1348, 16, 103, 199, 10, NOT WS_TABSTOP, WS_EX_TRANSPARENT
+    EDITTEXT 1341, 159, 85, 56, 14, ES_AUTOHSCROLL
+    PUSHBUTTON "&Takaisinsoitto...", 1345, 150, 125, 70, 14, WS_GROUP
+    PUSHBUTTON "&Useita linjoja...", 1346, 74, 125, 70, 14
+END
+
+174 DIALOGEX 0, 0, 215, 226
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Reititin"
+FONT 8, "MS Shell Dlg"
+BEGIN
+ CTEXT "NYI...need spec from KCrocker", -1, 57, 86, 106, 28
+END
+
+175 DIALOGEX 6, 18, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Ohjattu tarvittaessa soitettavan liittymän luonti on valmis.", 1352, 122, 5, 192, 32
+    LTEXT "Luo tämä liittymä ja ota se käyttöön reitittimessä valitsemalla Valmis.", 1354, 122, 41, 192, 26, NOT WS_GROUP
+    LTEXT "Voit muokata tätä liittymää Reititys ja etäkäyttö -hallinnassa valitsemalla sen kohdassa Reitityksen liittymät ja valitsemalla Ominaisuudet.", 1355, 122, 68, 190, 39, NOT WS_GROUP
+END
+
+179 DIALOGEX 6, 18, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse &modeemi tai sovitin, jota tämä liittymä käyttää.", 1356, 7, 4, 306, 11
+    CONTROL "", 1355, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000C415, 6, 15, 305, 80
+    LTEXT "Luettelossa ovat reititystä varten määritetyt laitteet.", 1357, 15, 98, 288, 37, NOT WS_GROUP
+END
+
+180 DIALOGEX 6, 18, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita soitettavan puhelinverkkopalvelimen tai reitittimen puhelinnumero. Mahdolliset vaihtoehtoiset numerot valitaan automaattisesti, jos ensisijaiseen numeroon ei saada yhteyttä.", 1360, 7, 4, 305, 42
+    LTEXT "&Puhelinnumero tai osoite:", 1361, 7, 50, 275, 8, NOT WS_GROUP
+    EDITTEXT 1358, 7, 62, 304, 14, ES_AUTOHSCROLL
+    PUSHBUTTON "Vaihtoehtoiset...", 1359, 250, 80, 60, 14
+END
+
+181 DIALOGEX 6, 18, 230, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "Suojaus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Todennus- ja salauskäytäntö", 1367, 6, 8, 216, 103, WS_GROUP
+    AUTORADIOBUTTON "&Hyväksy mikä tahansa todennus, myös selväteksti", 1370, 16, 20, 195, 10, BS_TOP | BS_MULTILINE
+    AUTORADIOBUTTON "H&yväksy vain salattu todennus", 1373, 16, 36, 195, 10, BS_TOP | BS_MULTILINE
+    AUTORADIOBUTTON "Hyväksy &vain MS-salattu todennus", 1374, 16, 52, 195, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Vaadi tietojen salaus", 1363, 27, 65, 184, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTOCHECKBOX "Vaadi &vahva tietojen salaus", 1364, 41, 80, 172, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Käytä &kaksisuuntaista todennusta", 1362, 17, 95, 194, 10, BS_TOP | BS_MULTILINE
+    PUSHBUTTON "&Poista salasanan tallennus", 1369, 59, 117, 80, 14, WS_GROUP
+    PUSHBUTTON "&Lisäasetukset...", 1368, 142, 117, 80, 14, NOT WS_VISIBLE | WS_DISABLED
+    AUTOCHECKBOX "&Tunnista tiedostojen ja tulostimien jakaminen ennen soittoa", 1365, 7, 198, 218, 10, BS_TOP | BS_MULTILINE | NOT WS_VISIBLE | WS_DISABLED
+END
+
+182 DIALOGEX 6, 18, 248, 148
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Suojaus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Todennus- ja salauskäytäntö", 1367, 7, 8, 200, 98, WS_GROUP
+    AUTORADIOBUTTON "Hyväksy mikä tahansa todennus, myös &selväteksti", 1370, 14, 24, 183, 10
+    AUTORADIOBUTTON "Hyväksy vain &salattu todennus", 1373, 14, 39, 183, 10
+    AUTORADIOBUTTON "Hyväksy vain &MS-salattu todennus", 1374, 14, 53, 184, 10
+    AUTOCHECKBOX "Vaadi &tietojen salaus", 1363, 33, 67, 165, 10, WS_GROUP
+    AUTOCHECKBOX "Vaadi &vahva tietojen salaus", 1364, 48, 79, 152, 10
+    AUTOCHECKBOX "&Käytä nykyistä käyttäjänimeä ja salasanaa ", 1366, 31, 91, 165, 10
+    PUSHBUTTON "Poista &salasanan tallennus", 1369, 6, 114, 100, 14, WS_GROUP
+    PUSHBUTTON "&Lisäasetukset...", 1368, 109, 114, 60, 14, NOT WS_VISIBLE | WS_DISABLED
+    AUTOCHECKBOX "Tunnista &tiedostojen ja tulostimien jakaminen ennen soittoa", 1365, 14, 134, 193, 10, NOT WS_VISIBLE | WS_DISABLED
+END
+
+183 DIALOGEX 6, 18, 317, 144
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse kaikki sopivat:", 1388, 7, 4, 296, 9
+    AUTOCHECKBOX "Reititä &IP-paketit tässä liittymässä.", 1386, 20, 19, 285, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Reititä IP&X-paketit tässä liittymässä.", 1387, 20, 35, 287, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Lisää käyttäjätili, jotta etäreititin voi soittaa sisään.", 1382, 20, 52, 287, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Lähetä &selväkielinen salasana, jos yhteyttä ei voi muodostaa muuten.", 1385, 20, 70, 287, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Käytä komentosarjaa yhteyden muodostamiseen etäreitittimeen.", 1384, 20, 87, 289, 22, BS_LEFT | BS_TOP | BS_MULTILINE
+END
+
+184 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED
+FONT 8, "MS Shell Dlg"
+BEGIN
+END
+
+186 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Vain omaan käyttöösi luotu yhteys tallennetaan käyttäjätiliisi, eikä se ole käytettävissä, ellet ole kirjautunut.", -1, 7, 4, 306, 23
+    LTEXT "Luo tämä yhteys:", -1, 14, 27, 288, 12
+    AUTORADIOBUTTON "&Kaikkien käyttöön", 1400, 26, 40, 265, 10, BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    AUTORADIOBUTTON "&Vain omaan käyttööni", 1401, 26, 55, 265, 10, BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+END
+
+498 DIALOGEX 12, 16, 215, 126
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "LiberNT ei pystynyt muodostamaan yhteyttä verkkoon antamallasi käyttäjänimellä ja salasanalla. Kirjoita käyttäjänimi ja salasana uudelleen.", 1396, 7, 6, 206, 36
+    LTEXT "&Käyttäjänimi:", 1399, 8, 51, 49, 8
+    EDITTEXT 1394, 66, 46, 143, 14, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1397, 8, 70, 49, 8, NOT WS_GROUP
+    EDITTEXT 1393, 66, 64, 143, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    AUTOCHECKBOX "&Tallenna salasana", 1391, 66, 84, 143, 10
+    CONTROL "", 1398, "STATIC", SS_ETCHEDHORZ | WS_GROUP, 7, 98, 200, 1
+    DEFPUSHBUTTON "OK", 1, 81, 104, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 145, 104, 60, 14
+END
+
+500 DIALOGEX 12, 16, 215, 173
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "LiberNT ei pystynyt muodostamaan yhteyttä verkkoon antamallasi käyttäjänimellä ja salasanalla. Kirjoita käyttäjänimi ja salasana uudelleen.", 1396, 7, 6, 209, 26
+    LTEXT "&Käyttäjänimi:", 1399, 7, 72, 44, 8
+    EDITTEXT 1394, 97, 69, 115, 14, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1397, 7, 90, 45, 8, NOT WS_GROUP
+    EDITTEXT 1393, 97, 87, 115, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Toimialue:", 1395, 7, 108, 53, 8, NOT WS_GROUP
+    EDITTEXT 1392, 97, 105, 115, 14, ES_UPPERCASE | ES_AUTOHSCROLL
+    AUTOCHECKBOX "&Tallenna käyttäjänimi ja salasana", 1391, 85, 125, 123, 10, BS_TOP | BS_MULTILINE
+    DEFPUSHBUTTON "OK", 1, 87, 146, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 151, 146, 60, 14
+    CONTROL "", 1398, "STATIC", SS_ETCHEDHORZ | WS_GROUP, 7, 140, 205, 1
+    LTEXT "Voit kirjoittaa toimialueen nimen tai jättää toimialuekentän tyhjäksi.\n(Toimialueen nimiä ei tarvita Internet-yhteyksissä)", -1, 8, 38, 209, 26
+END
+
+502 DIALOGEX 20, 60, 215, 73
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "PPP-asetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTOCHECKBOX "&Ota LCP-laajennukset käyttöön", 1423, 9, 7, 200, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Ota ohjelmistopakkaus käyttöön", 1424, 9, 22, 201, 10, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Neuvottele &monilinja yksilinjaisille yhteyksille", 1557, 9, 37, 202, 10, BS_TOP | BS_MULTILINE
+    DEFPUSHBUTTON "OK", 1, 82, 53, 60, 14
+    PUSHBUTTON "Peruuta", 2, 148, 53, 60, 14
+END
+
+509 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse tämän tietokoneen rooli:", -1, 10, 5, 275, 9
+    AUTORADIOBUTTON "&Isäntä", 1483, 31, 20, 265, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Vieras", 1484, 31, 44, 265, 10, BS_TOP | BS_MULTILINE
+    LTEXT "Tässä tietokoneessa on tiedot, joita haluat käyttää.", -1, 43, 31, 253, 13, NOT WS_GROUP | WS_TABSTOP
+    LTEXT "Tällä tietokoneella käytetään isäntätietokoneen tietoja.", -1, 43, 56, 253, 23, NOT WS_GROUP
+END
+
+511 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Valitse laite:", -1, 8, 5, 261, 8
+    COMBOBOX 1485, 9, 18, 302, 62, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+528 DIALOGEX 0, 0, 227, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
+CAPTION "Yhteydet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Kirjautumisoikeudet", 1582, 8, 10, 213, 63
+    LTEXT "Muut kuin järjestelmänvalvojat voivat saada luvan luoda tai muokata yhteyksiä ennen kirjautumista.", 1581, 16, 21, 194, 30
+    AUTOCHECKBOX "&Salli yhteyksien luominen ja muokkaaminen ennen kirjautumista", 1497, 16, 56, 195, 10, BS_TOP | BS_MULTILINE
+END
+
+532 DIALOGEX 0, 0, 263, 263
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Reitittimen takaisinsoitto"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kun soitat reitittimeen, se voi tarjoutua soittamaan sinulle takaisin puhelinkulujen vähentämiseksi tai suojauksen parantamiseksi. Määritä, haluatko takaisinsoiton.", 1043, 7, 5, 253, 24
+    AUTORADIOBUTTON "&Ei takaisinsoittoa", 1501, 9, 36, 252, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "Soita minulle &aina takaisin alla oleviin numeroihin:", 1502, 9, 48, 252, 10, BS_TOP | BS_MULTILINE, WS_EX_TRANSPARENT
+    CONTROL "", 1503, "SYSLISTVIEW32", WS_BORDER | WS_GROUP | WS_TABSTOP | 0x00008401, 15, 63, 240, 143
+    PUSHBUTTON "&Muokkaa...", 1504, 131, 213, 60, 14
+    PUSHBUTTON "P&oista", 1505, 194, 213, 60, 14
+    CONTROL "", -1, "STATIC", SS_ETCHEDHORZ, 7, 233, 249, 1
+    DEFPUSHBUTTON "OK", 1, 132, 242, 60, 14
+    PUSHBUTTON "Peruuta", 2, 196, 242, 60, 14
+END
+
+534 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
+CAPTION "Asetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Yhteyden tyyppi", 1289, 7, 7, 215, 55
+    AUTORADIOBUTTON "&Tarvittaessa soitto", 1506, 16, 20, 199, 9, BS_TOP | BS_MULTILINE | WS_GROUP | NOT WS_TABSTOP
+    LTEXT "&Joutoaika ennen katkaisua:", 1299, 27, 33, 99, 8, NOT WS_GROUP
+    COMBOBOX 1291, 144, 30, 70, 108, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    AUTORADIOBUTTON "&Pysyvä yhteys", 1507, 16, 47, 197, 9, BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    GROUPBOX "Soittokäytäntö", 1290, 7, 66, 215, 48
+    LTEXT "&Uudelleensoittoyritykset:", 1300, 14, 79, 123, 8
+    EDITTEXT 1287, 143, 76, 70, 14, ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT "&Keskimääräiset uudelleensoittovälit:", 1301, 14, 96, 123, 8
+    COMBOBOX 1292, 143, 94, 70, 123, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    GROUPBOX "Useita laitteita", 1288, 7, 116, 215, 35
+    COMBOBOX 1551, 16, 130, 128, 41, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "&Määritä...", 1293, 150, 129, 65, 14
+    PUSHBUTTON "&Takaisinsoitto", 1302, 8, 195, 60, 14
+    PUSHBUTTON "&X.25", 1295, 73, 195, 50, 14
+END
+
+539 DIALOGEX 0, 0, 265, 110
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 14, 64, 84, 8
+    EDITTEXT 1104, 102, 62, 154, 14, ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 9, 82, 247, 1
+    DEFPUSHBUTTON "&Soita", 1590, 8, 89, 60, 14
+    PUSHBUTTON "Peruuta", 1591, 71, 89, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 133, 89, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 195, 89, 60, 14
+END
+
+540 DIALOGEX 0, 0, 265, 133
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 10, 64, 90, 8
+    EDITTEXT 1104, 105, 60, 154, 14, ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 7, 80, 252, 1
+    LTEXT "&Soita:", 1412, 10, 91, 92, 10
+    COMBOBOX 1416, 105, 88, 154, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 7, 107, 251, 1
+    DEFPUSHBUTTON "&Soita", 1590, 8, 113, 60, 14
+    PUSHBUTTON "Peruuta", 1591, 71, 113, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 134, 113, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 197, 113, 60, 14
+END
+
+541 DIALOGEX 0, 0, 265, 157
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 10, 67, 87, 8
+    EDITTEXT 1104, 103, 63, 154, 14, ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 9, 84, 248, 1
+    LTEXT "&Soita:", 1412, 11, 96, 48, 8
+    COMBOBOX 1416, 103, 92, 154, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Soitto&paikka:", 1415, 10, 114, 46, 8
+    COMBOBOX 1414, 103, 110, 87, 112, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "Valinta&säännöt", 1108, 193, 110, 64, 14
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 7, 130, 250, 1
+    DEFPUSHBUTTON "&Soita", 1590, 6, 136, 60, 14
+    PUSHBUTTON "Peruuta", 1591, 69, 136, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 132, 136, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 196, 136, 60, 14
+END
+
+544 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Internet-yhteyden jakaminen sallii lähiverkon muiden tietokoneiden käyttää ulkoisia resursseja tämän yhteyden kautta.", -1, 10, 5, 300, 22
+    AUTOCHECKBOX "&Ota Internet-yhteyden jakaminen käyttöön tälle yhteydelle", 1512, 21, 31, 272, 10
+    LTEXT "Jos haluat tämän yhteyden muodostuvan automaattisesti, kun lähiverkon tietokone yrittää käyttää ulkoisia resursseja, valitse seuraava valintaruutu.", 1514, 10, 56, 294, 22
+    AUTOCHECKBOX "&Ota tarvittaessa soitto käyttöön", 1513, 21, 86, 260, 10
+END
+
+545 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Jaettu käyttö sallii lähiverkon muiden tietokoneiden käyttää ulkoisia resursseja tämän puhelinverkkoyhteyden kautta. Voit ottaa jaetun käytön käyttöön yhdelle yhteydelle ja yhdelle lähiverkolle kerrallaan.", -1, 10, 5, 300, 25
+    LTEXT "&Valitse lähiverkko, joka käyttää resursseja tämän yhteyden kautta:", -1, 21, 35, 285, 8
+    COMBOBOX 1522, 21, 48, 231, 56, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+546 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Voit määrittää tämän yhteyden käyttämään älykorttiasi kirjautumiseen etäverkkoon. Valitse, käytetäänkö älykorttiasi tämän yhteyden kanssa.", -1, 10, 5, 303, 22
+    AUTORADIOBUTTON "&Käytä älykorttiani ", 1524, 26, 29, 264, 12, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP | NOT WS_TABSTOP
+    AUTORADIOBUTTON "&Älä käytä älykorttiani ", 1525, 26, 44, 261, 16, BS_LEFT | BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+END
+
+547 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Ohjattu tarvittaessa soitettavan liittymän luonti"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Tervetuloa tarvittaessa soitettavan liittymän ohjattuun luontiin.", 1530, 122, 8, 192, 32
+    LTEXT "Tämän ohjatun toiminnon avulla voit luoda tarvittaessa soitettavan liittymän, jolla tämä reititin muodostaa yhteyden muihin reitittimiin.", 1531, 122, 43, 192, 37
+    LTEXT "Jatka valitsemalla Seuraava.", 1532, 122, 85, 191, 29
+END
+
+548 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTORADIOBUTTON "Yhdistä käyttäen &modeemia, ISDN-sovitinta tai muuta fyysistä laitetta.", 1531, 21, 17, 290, 15, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP | NOT WS_TABSTOP
+    AUTORADIOBUTTON "Yhdistä käyttäen &näennäistä yksityisverkkoa (VPN)", 1532, 21, 38, 291, 15, BS_LEFT | BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    AUTORADIOBUTTON "Yhdistä käyttäen PPP over Ethernet -yhteyttä (PPPoE)", 1688, 21, 58, 290, 12, NOT WS_TABSTOP
+END
+
+550 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_CHILD | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita sen reitittimen nimi tai IP-osoite, johon muodostat yhteyden.", 1535, 10, 8, 289, 18
+    LTEXT "&Isäntänimi tai IP-osoite (esimerkiksi reactos.org tai 145.52.0.1):", 1537, 21, 35, 285, 8
+    EDITTEXT 1536, 21, 47, 285, 14, ES_AUTOHSCROLL
+END
+
+551 DIALOGEX 0, 0, 265, 127
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 12, 62, 89, 8
+    EDITTEXT 1104, 104, 58, 154, 14, ES_AUTOHSCROLL
+    LTEXT "&Toimialue:", 1110, 12, 82, 90, 8
+    EDITTEXT 1102, 104, 79, 154, 14, ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 99, 248, 1
+    DEFPUSHBUTTON "&Soita", 1590, 9, 106, 61, 14
+    PUSHBUTTON "Peruuta", 1591, 72, 106, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 135, 106, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 198, 106, 60, 14
+END
+
+552 DIALOGEX 0, 0, 265, 159
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 10, 67, 91, 10
+    EDITTEXT 1104, 104, 64, 154, 14, ES_AUTOHSCROLL
+    LTEXT "&Toimialue:", 1110, 10, 86, 91, 8
+    EDITTEXT 1102, 104, 83, 154, 14, ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 103, 248, 1
+    LTEXT "&Soita:", 1412, 10, 115, 91, 8
+    COMBOBOX 1416, 104, 111, 154, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 132, 248, 1
+    DEFPUSHBUTTON "&Soita", 1590, 8, 139, 60, 14
+    PUSHBUTTON "Peruuta", 1591, 71, 139, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 134, 139, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 198, 139, 60, 14
+END
+
+553 DIALOGEX 0, 0, 265, 183
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 10, 68, 92, 10
+    EDITTEXT 1104, 104, 65, 154, 14, ES_AUTOHSCROLL
+    LTEXT "&Toimialue:", 1110, 10, 90, 91, 8
+    EDITTEXT 1102, 104, 86, 154, 14, ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 106, 248, 1
+    LTEXT "&Soita:", 1412, 10, 118, 92, 8
+    COMBOBOX 1416, 104, 114, 154, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Soitto&paikka:", 1415, 10, 137, 91, 8
+    COMBOBOX 1414, 104, 134, 87, 112, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "Valinta&säännöt", 1108, 194, 134, 65, 14
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 154, 248, 1
+    DEFPUSHBUTTON "&Soita", 1590, 8, 162, 60, 14
+    PUSHBUTTON "Peruuta", 1591, 71, 162, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 134, 162, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 198, 162, 60, 14
+END
+
+554 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Yhdistä käyttäen:", 1124, 7, 4, 193, 8
+    CONTROL "", 1128, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x00004C0D, 7, 17, 195, 44, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Ylös", 1132, 208, 18, 16, 14, BS_ICON
+    PUSHBUTTON "&Alas", 1131, 208, 36, 16, 14, BS_ICON
+    AUTOCHECKBOX "&Kaikki laitteet soittavat samoihin numeroihin", 1119, 7, 65, 131, 21, BS_TOP | BS_MULTILINE
+    PUSHBUTTON "&Määritä...", 1130, 140, 66, 60, 14
+    GROUPBOX "Esimerkkityyppi", 1125, 7, 87, 213, 56, WS_GROUP
+    LTEXT "&Puhelinnumero:", 1135, 19, 102, 191, 8
+    EDITTEXT 1123, 17, 112, 138, 14, ES_AUTOHSCROLL
+    PUSHBUTTON "Vaihtoehtoiset &numerot", 1129, 161, 112, 50, 14
+    AUTOCHECKBOX "Näytä &kuvake ilmaisinalueella yhteyden ollessa muodostettu", 1120, 11, 194, 212, 20, BS_TOP | BS_MULTILINE
+END
+
+555 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON "&Määritä...", 1130, 160, 38, 60, 14
+    LTEXT "&Puhelinnumero:", 1135, 8, 72, 194, 8
+    EDITTEXT 1123, 8, 83, 148, 14, ES_AUTOHSCROLL
+    PUSHBUTTON "Vaihtoehtoiset &numerot", 1129, 160, 83, 60, 14
+    AUTOCHECKBOX "Näytä &kuvake ilmaisinalueella yhteyden ollessa muodostettu", 1120, 11, 194, 213, 10, BS_TOP | BS_MULTILINE
+    LTEXT "&Yhdistä käyttäen:", 1124, 8, 5, 214, 8
+    CONTROL "", 1127, "SYSLISTVIEW32", WS_DISABLED | WS_BORDER | 0x0000EC0D, 7, 18, 214, 15
+END
+
+556 DIALOGEX 0, 0, 220, 165
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Ohjelman asetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Verkossasi toimivan ohjelman &kuvaus:", -1, 7, 5, 203, 8
+    EDITTEXT 1565, 7, 17, 206, 14, ES_AUTOHSCROLL
+    LTEXT "&Internet-palvelimen porttinumero:", -1, 7, 35, 202, 8
+    EDITTEXT 1566, 7, 47, 113, 14, ES_AUTOHSCROLL | ES_NUMBER
+    AUTORADIOBUTTON "&TCP", 1548, 128, 49, 30, 10, NOT WS_TABSTOP
+    AUTORADIOBUTTON "&UDP", 1567, 166, 49, 31, 10, NOT WS_TABSTOP
+    LTEXT "&Kuuntele Internet-palvelimen vastauksia portista tai porttialueelta:\n(esimerkiksi: 1024-1209, 1300-1310, 1450)", -1, 7, 70, 207, 22
+    LTEXT "T&CP:", -1, 7, 100, 28, 8
+    EDITTEXT 1569, 50, 97, 162, 14, ES_AUTOHSCROLL
+    LTEXT "UD&P:", -1, 7, 121, 30, 8
+    EDITTEXT 1551, 50, 117, 162, 14, ES_AUTOHSCROLL
+    DEFPUSHBUTTON "OK", 1, 90, 144, 60, 14
+    PUSHBUTTON "Peruuta", 2, 154, 144, 60, 14
+END
+
+557 DIALOGEX 0, 0, 217, 164
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Palvelun asetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Palvelun &kuvaus:", -1, 7, 5, 203, 8
+    EDITTEXT 1552, 7, 18, 205, 14, ES_AUTOHSCROLL
+    LTEXT "Tätä palvelua verkossasi isännöivän tietokoneen &nimi tai IP-osoite (esimerkiksi 192.168.0.12):", -1, 7, 37, 208, 16
+    EDITTEXT 1556, 7, 57, 203, 14, ES_AUTOHSCROLL
+    LTEXT "&Porttinumero, jossa palvelu toimii:", -1, 7, 85, 203, 8
+    EDITTEXT 1553, 7, 97, 113, 14, ES_AUTOHSCROLL | ES_NUMBER
+    AUTORADIOBUTTON "&TCP", 1554, 128, 99, 30, 10, NOT WS_TABSTOP
+    AUTORADIOBUTTON "&UDP", 1555, 166, 99, 31, 10, NOT WS_TABSTOP
+    DEFPUSHBUTTON "OK", 1, 86, 143, 60, 14
+    PUSHBUTTON "Peruuta", 2, 150, 143, 60, 14
+END
+
+558 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Ohjelmat"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Tämän tietokoneen Internet-yhteys on mukautettu niin, että seuraavat ohjelmat toimivat oikein verkossasi:", -1, 7, 7, 218, 28
+    CONTROL "List1", 1558, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000441D, 7, 37, 215, 155, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Lisää...", 1538, 7, 197, 67, 14
+    PUSHBUTTON "&Muokkaa...", 1559, 80, 197, 67, 14
+    PUSHBUTTON "&Poista", 1568, 153, 197, 67, 14
+END
+
+559 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Palvelut"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Valitse verkossasi toimivat palvelut, joita Internetin käyttäjät voivat käyttää.", -1, 7, 5, 216, 22
+    LTEXT "Palvelut:", -1, 7, 27, 143, 8
+    CONTROL "List1", 1560, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000441D, 7, 37, 215, 155, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Lisää...", 1561, 7, 197, 67, 14
+    PUSHBUTTON "&Muokkaa...", 1563, 80, 197, 67, 14
+    PUSHBUTTON "&Poista", 1562, 153, 197, 67, 14
+END
+
+560 DIALOGEX 6, 18, 240, 88
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Alkuyhteys"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON "&Kyllä", 6, 68, 68, 50, 14
+    PUSHBUTTON "&Ei", 7, 125, 68, 50, 14
+    ICON 32516, 1575, 7, 7, 20, 20
+    LTEXT "", 1576, 40, 7, 190, 33
+    AUTOCHECKBOX "&Älä näytä tätä muistutusta uudelleen", 1579, 40, 48, 192, 11, BS_TOP | BS_MULTILINE
+END
+
+567 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita palvelusi nimi seuraavaan tekstiruutuun. Jos jätät tekstiruudun tyhjäksi, LiberNT tunnistaa ja määrittää palvelusi automaattisesti, kun muodostat yhteyden.", -1, 10, 7, 301, 25
+    LTEXT "&Palvelun nimi (valinnainen):", -1, 22, 32, 229, 8
+    EDITTEXT 1593, 22, 44, 275, 14, ES_AUTOHSCROLL
+END
+
+568 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Palvelun nimi:", 1686, 7, 5, 217, 10
+    EDITTEXT 1594, 7, 17, 217, 14, ES_AUTOHSCROLL
+    AUTOCHECKBOX "Näytä &kuvake ilmaisinalueella yhteyden ollessa muodostettu", 1120, 9, 196, 215, 8
+END
+
+569 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
+CAPTION "Suojaus"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Suojausasetukset", 1580, 8, 4, 213, 151
+    AUTORADIOBUTTON "&Tyypillinen (suositellut asetukset)", 1540, 14, 16, 197, 9, BS_NOTIFY | WS_GROUP
+    AUTORADIOBUTTON "&Lisäasetukset (mukautetut asetukset)", 1541, 14, 100, 197, 8, BS_NOTIFY
+    LTEXT "&Vahvista henkilöllisyyteni seuraavasti:", 1537, 26, 29, 183, 8, NOT WS_GROUP
+    COMBOBOX 1178, 26, 40, 184, 78, CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    AUTOCHECKBOX "&Käytä automaattisesti LiberNT-kirjautumisnimeäni ja -salasanaani (ja toimialuetta, jos sellainen on)", 1174, 26, 59, 182, 20, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Vaadi tietojen &salaus (katkaise, jos ei ole)", 1169, 26, 83, 182, 10, BS_TOP | BS_MULTILINE
+    LTEXT "Näiden asetusten käyttäminen edellyttää suojausprotokollien tuntemusta.", 1539, 26, 111, 136, 20
+    PUSHBUTTON "&Asetukset...", 1180, 151, 134, 60, 14
+    PUSHBUTTON "I&PSec-asetukset...", 1598, 126, 163, 85, 14
+END
+
+570 DIALOGEX 0, 0, 265, 126
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "IPSec-asetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON "OK", 1, 151, 104, 50, 14
+    PUSHBUTTON "Peruuta", 2, 207, 104, 50, 14
+    AUTOCHECKBOX "&Käytä todennukseen esijaettua avainta", 1604, 21, 15, 217, 10
+    LTEXT "&Avain:", 1602, 20, 31, 44, 12
+    EDITTEXT 1605, 66, 30, 172, 12, ES_AUTOHSCROLL
+    AUTOCHECKBOX "Salli käyttäjävarastoni varmenteet konevarmenteiden lisäksi", 1606, 20, 50, 242, 13, WS_DISABLED
+    AUTOCHECKBOX "Käytä tiettyä varmennetta", 1607, 20, 67, 239, 10, WS_DISABLED
+    PUSHBUTTON "Valitse", 1608, 31, 84, 50, 14, WS_DISABLED
+    COMBOBOX 1610, 91, 84, 135, 30, CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+571 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Suojausloki"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Lokiasetukset:", -1, 6, 8, 216, 47
+    AUTOCHECKBOX "Kirjaa epäonnistuneet &saapuvat yhteysyritykset", 1642, 14, 22, 201, 10
+    AUTOCHECKBOX "Kirjaa onnistuneet &lähtevät yhteydet", 1641, 14, 37, 200, 10
+    GROUPBOX "Lokitiedoston asetukset:", -1, 7, 64, 215, 91
+    LTEXT "&Nimi:", -1, 14, 78, 199, 8
+    EDITTEXT 1674, 14, 90, 199, 14, ES_READONLY
+    PUSHBUTTON "&Selaa...", 1639, 153, 108, 60, 14
+    LTEXT "&Kokorajoitus:", -1, 14, 133, 67, 8
+    EDITTEXT 1640, 86, 130, 50, 14, ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT "kt", -1, 140, 133, 20, 8
+    PUSHBUTTON "&Palauta oletukset", 1643, 135, 197, 85, 14
+END
+
+572 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "ICMP"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&ICMP (Internet Control Message Protocol) sallii verkon tietokoneiden jakaa virhe- ja tilatietoja. Valitse Internetistä tulevat tietopyynnöt, joihin tämä tietokone vastaa:", -1, 7, 5, 215, 37
+    CONTROL "IList1", 1644, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000440D, 7, 45, 215, 100, WS_EX_CLIENTEDGE
+    GROUPBOX "Kuvaus:", -1, 7, 153, 215, 55
+    LTEXT "", 1645, 14, 171, 199, 32
+END
+
+574 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Lisäasetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "", 575, 7, 60, 213, 100
+END
+
+577 DIALOGEX 0, 0, 312, 144
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita Internet-palveluntarjoajan nimi seuraavaan tekstiruutuun.", 1681, 10, 3, 296, 11
+    LTEXT "&Nimi:", 1690, 18, 20, 127, 10
+    EDITTEXT 1680, 17, 32, 222, 14, ES_AUTOHSCROLL
+    LTEXT "Tähän kirjoittamastasi nimestä tulee luotavan yhteyden nimi.", 1683, 17, 52, 282, 42
+END
+
+580 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_CHILD | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTORADIOBUTTON "&Automaattinen valinta", 1534, 21, 20, 288, 11, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP | NOT WS_TABSTOP
+    AUTORADIOBUTTON "&Point to Point Tunneling Protocol (PPTP)", 1532, 21, 39, 290, 11, BS_LEFT | BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    AUTORADIOBUTTON "&Layer 2 Tunneling Protocol (L2TP)", 1533, 21, 56, 286, 11, BS_LEFT | BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+END
+
+1420 DIALOGEX 0, 0, 265, 108
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Soita:", 1412, 14, 63, 86, 8
+    COMBOBOX 1416, 104, 60, 154, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 80, 248, 1
+    DEFPUSHBUTTON "&Soita", 1590, 9, 87, 60, 14
+    PUSHBUTTON "Peruuta", 1591, 72, 87, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 135, 87, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 198, 87, 60, 14
+END
+
+1421 DIALOGEX 0, 0, 265, 223
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 10, 61, 90, 8
+    EDITTEXT 1104, 104, 58, 154, 14, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1112, 11, 81, 90, 8
+    EDITTEXT 1103, 104, 77, 154, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN, 10, 98, 248, 1
+    AUTOCHECKBOX "&Tallenna tämä käyttäjänimi ja salasana seuraaville käyttäjille:", 1101, 14, 105, 242, 13, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "Vain m&inulle", 1622, 26, 119, 225, 11, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Kaikille tämän tietokoneen käyttäjille", 1623, 26, 133, 225, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 149, 248, 1
+    LTEXT "&Soita:", 1412, 14, 161, 87, 8
+    COMBOBOX 1416, 104, 157, 154, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Soitto&paikka:", 1415, 14, 178, 88, 8
+    COMBOBOX 1414, 104, 175, 87, 112, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "Valinta&säännöt", 1108, 193, 175, 65, 14
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 196, 248, 1
+    DEFPUSHBUTTON "&Soita", 1590, 9, 202, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 1591, 72, 202, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 135, 202, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 198, 202, 60, 14
+END
+
+1422 DIALOGEX 0, 0, 265, 242
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yhdistä %1"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL 1678, 1100, "STATIC", SS_BITMAP, 0, 0, 265, 50
+    LTEXT "&Käyttäjänimi:", 1413, 10, 67, 91, 8
+    EDITTEXT 1104, 104, 63, 154, 14, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1112, 10, 85, 92, 8
+    EDITTEXT 1103, 104, 82, 154, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Toimialue:", 1110, 10, 104, 92, 8
+    EDITTEXT 1102, 104, 101, 154, 14, ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN, 10, 121, 248, 1
+    AUTOCHECKBOX "&Tallenna tämä käyttäjänimi ja salasana seuraaville käyttäjille:", 1101, 12, 127, 242, 13, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "Vain m&inulle", 1622, 24, 141, 227, 11, BS_LEFT | BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Kaikille tämän tietokoneen käyttäjille", 1623, 24, 155, 230, 11, BS_LEFT | BS_TOP | BS_MULTILINE
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 170, 248, 1
+    LTEXT "&Soita:", 1412, 14, 182, 87, 8
+    COMBOBOX 1416, 104, 178, 154, 112, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Soitto&paikka:", 1415, 14, 198, 87, 8
+    COMBOBOX 1414, 104, 195, 87, 112, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON "Valinta&säännöt", 1108, 193, 195, 65, 14
+    CONTROL "", -1, "STATIC", SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP, 10, 215, 248, 1
+    DEFPUSHBUTTON "&Soita", 1590, 8, 221, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 1591, 71, 221, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1107, 134, 221, 60, 14
+    PUSHBUTTON "&Ohje", 1592, 198, 221, 60, 14
+END
+
+1425 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Kohteen isäntänimi tai IP-osoite (esimerkiksi reactos.org tai 145.52.0.1):", 1430, 7, 5, 217, 18
+    EDITTEXT 1427, 7, 25, 215, 14, ES_AUTOHSCROLL
+    GROUPBOX "Ensimmäinen yhteys", 1431, 9, 48, 213, 78
+    LTEXT "LiberNT voi ensin muodostaa yhteyden julkiseen verkkoon, kuten Internetiin, ennen kuin se yrittää muodostaa tämän näennäisen yhteyden.", 1432, 17, 63, 199, 24
+    AUTOCHECKBOX "&Muodosta ensin toinen yhteys:", 1428, 19, 89, 183, 10
+    COMBOBOX 1429, 29, 103, 182, 87, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    AUTOCHECKBOX "Näytä &kuvake ilmaisinalueella yhteyden ollessa muodostettu", 1120, 10, 192, 213, 13
+END
+
+1426 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | WS_CHILD | WS_CAPTION
+CAPTION "Asetukset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Soittoasetukset", 1289, 8, 7, 214, 56
+    AUTOCHECKBOX "&Näytä eteneminen yhdistettäessä", 1284, 16, 17, 199, 10
+    AUTOCHECKBOX "&Kysy nimeä ja salasanaa, varmennetta jne.", 1554, 16, 32, 199, 10
+    AUTOCHECKBOX "Sisällytä &LiberNT-kirjautumistoimialue", 1555, 16, 47, 178, 10
+    GROUPBOX "Uudelleensoiton asetukset", 1290, 8, 68, 214, 89
+    LTEXT "&Uudelleensoittoyritykset:", 1300, 16, 81, 121, 8
+    EDITTEXT 1287, 140, 77, 70, 14, ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT "&Aika uudelleensoittoyritysten välillä:", 1301, 16, 99, 121, 8
+    COMBOBOX 1292, 141, 95, 70, 123, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "&Joutoaika ennen katkaisua:", 1299, 16, 117, 121, 8
+    COMBOBOX 1291, 141, 113, 70, 108, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    AUTOCHECKBOX "Soita uudelleen, jos &linja katkeaa", 1286, 16, 138, 199, 10, BS_TOP | BS_MULTILINE
+END
+
+1427 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita sen tietokoneen isäntänimi tai IP-osoite, johon muodostat yhteyden.", -1, 10, 6, 275, 16
+    LTEXT "&Isäntänimi tai IP-osoite (esimerkiksi reactos.org tai 145.52.0.1 ):", -1, 21, 28, 277, 11
+    EDITTEXT 1433, 21, 42, 275, 14, ES_AUTOHSCROLL
+END
+
+1428 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "LiberNT voi automaattisesti muodostaa alkuyhteyden Internetiin tai muuhun julkiseen verkkoon ennen näennäisen yhteyden muodostamista.", -1, 10, 6, 275, 24
+    AUTORADIOBUTTON "&Älä muodosta alkuyhteyttä.", 1509, 32, 31, 271, 10, BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    AUTORADIOBUTTON "&Muodosta tämä alkuyhteys automaattisesti:", 1510, 32, 45, 269, 10, BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    COMBOBOX 1435, 43, 62, 253, 87, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+1436 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Valitse laite:", 1597, 8, 5, 213, 8
+    COMBOBOX 1437, 7, 17, 217, 166, CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | NOT WS_TABSTOP
+    AUTOCHECKBOX "Näytä &kuvake ilmaisinalueella yhteyden ollessa muodostettu", 1120, 11, 195, 213, 10, BS_TOP | BS_MULTILINE
+    PUSHBUTTON "&Määritä...", 1130, 160, 34, 60, 14
+END
+
+1448 DIALOGEX 10, 20, 265, 71
+STYLE DS_SHELLFONT | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Verkkoyhteydet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Valitse verkkoyhteys:", 1456, 7, 7, 251, 10
+    COMBOBOX 1457, 8, 18, 250, 140, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | NOT WS_TABSTOP
+    DEFPUSHBUTTON "&Yhdistä...", 1449, 7, 50, 60, 14
+    PUSHBUTTON "Peruuta", 1455, 70, 50, 60, 14
+    PUSHBUTTON "&Uusi...", 1459, 134, 50, 60, 14
+    PUSHBUTTON "&Ominaisuudet", 1460, 198, 50, 60, 14
+END
+
+1466 DIALOGEX 6, 18, 265, 262
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Esimerkkiteksti", 1469, 7, 7, 251, 8
+    EDITTEXT 1470, 7, 17, 193, 14, ES_AUTOHSCROLL
+    PUSHBUTTON "&Lisää", 1471, 77, 36, 60, 14
+    PUSHBUTTON "&Korvaa", 1472, 141, 36, 60, 14
+    LTEXT "Esimerkkiteksti", 1473, 7, 57, 193, 8
+    LISTBOX 1474, 7, 68, 193, 145, WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON "", 1475, 206, 68, 51, 14, BS_BITMAP | WS_GROUP
+    PUSHBUTTON "&Alas", 1476, 206, 86, 51, 14, BS_BITMAP
+    PUSHBUTTON "&Poista", 1477, 141, 215, 60, 14
+    CONTROL "", 1479, "STATIC", SS_ETCHEDHORZ, 7, 233, 249, 1
+    PUSHBUTTON "OK", 1, 132, 242, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 196, 242, 60, 14
+END
+
+1467 DIALOGEX 6, 18, 263, 263
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Esimerkkiteksti", 1469, 7, 7, 197, 8
+    EDITTEXT 1470, 7, 17, 193, 14, ES_AUTOHSCROLL
+    PUSHBUTTON "&Lisää", 1471, 76, 36, 60, 14
+    PUSHBUTTON "&Korvaa", 1472, 141, 36, 60, 14
+    LTEXT "Esimerkkiteksti", 1473, 7, 57, 193, 8
+    LISTBOX 1474, 7, 68, 193, 135, WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON "&Ylös", 1475, 206, 68, 51, 14, BS_BITMAP | WS_GROUP
+    PUSHBUTTON "&Alas", 1476, 206, 86, 51, 14, BS_BITMAP
+    PUSHBUTTON "&Poista", 1477, 141, 204, 60, 14
+    AUTOCHECKBOX "Esimerkkiteksti", 1478, 7, 225, 249, 10, BS_TOP | BS_MULTILINE
+    PUSHBUTTON "OK", 1, 132, 242, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 196, 242, 60, 14
+END
+
+1468 DIALOGEX 6, 18, 263, 263
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Esimerkkiteksti", 1469, 7, 5, 249, 8
+    EDITTEXT 1470, 7, 17, 249, 14, ES_AUTOHSCROLL
+    PUSHBUTTON "&Lisää", 1471, 132, 36, 60, 14
+    PUSHBUTTON "&Korvaa", 1472, 196, 36, 60, 14
+    LTEXT "Esimerkkiteksti", 1473, 7, 55, 251, 8
+    LISTBOX 1474, 7, 68, 249, 140, LBS_STANDARD | WS_TABSTOP
+    PUSHBUTTON "&Poista", 1477, 196, 214, 60, 14, WS_GROUP
+    CONTROL "", 1479, "STATIC", SS_ETCHEDHORZ, 7, 233, 249, 1
+    PUSHBUTTON "OK", 1, 132, 242, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 196, 242, 60, 14
+END
+
+1469 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTORADIOBUTTON "Soitto &yksityisverkkoon.", 1488, 24, 9, 116, 10, NOT WS_TABSTOP
+    AUTORADIOBUTTON "Yhdistä yksityisverkkoon &Internetin kautta.", 1489, 24, 34, 206, 10, NOT WS_TABSTOP
+    AUTORADIOBUTTON "Yhdistä &suoraan toiseen tietokoneeseen.", 1490, 24, 59, 157, 10, NOT WS_TABSTOP
+    AUTORADIOBUTTON "Yhdistä verkkoon &laajakaistan kautta", 1491, 24, 83, 273, 10, NOT WS_TABSTOP
+    LTEXT "Yhdistä puhelinlinjallani (modeemi tai ISDN).", -1, 45, 21, 156, 8
+    LTEXT "Luo VPN-yhteys (Virtual Private Network) tai tunneli Internetin kautta.", -1, 45, 46, 266, 8
+    LTEXT "Yhdistä sarja-, rinnakkais- tai infrapunaportin kautta.", -1, 45, 71, 266, 8
+    LTEXT "Yhdistä laajakaistayhteyteni kautta.", -1, 45, 95, 266, 8
+END
+
+1480 DIALOGEX 0, 0, 230, 61
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Puhelinnumeron muokkain"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Kirjoita uusi puhelinnumero:", 1481, 7, 7, 218, 8
+    EDITTEXT 1482, 7, 17, 217, 15, ES_AUTOHSCROLL
+    DEFPUSHBUTTON "OK", 1, 99, 40, 60, 14
+    PUSHBUTTON "Peruuta", 2, 163, 40, 60, 14
+END
+
+1481 DIALOGEX 0, 0, 321, 157
+STYLE DS_SHELLFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Ohjattu uuden yhteyden muodostaminen"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Kirjoita palveluntarjoajan tilin nimi ja salasana, kirjoita tiedot sitten muistiin ja säilytä ne turvallisessa paikassa. (Jos olet unohtanut olemassa olevan tilin nimen tai salasanan, ota yhteys palveluntarjoajaan.)", 1689, 10, 4, 308, 25
+    LTEXT "&Käyttäjänimi:", 1636, 23, 35, 89, 15
+    EDITTEXT 1614, 115, 34, 190, 15, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", 1637, 23, 55, 90, 13
+    EDITTEXT 1615, 115, 54, 190, 15, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Vahvista salasana:", 1638, 23, 74, 88, 13
+    EDITTEXT 1616, 115, 73, 190, 15, ES_PASSWORD | ES_AUTOHSCROLL
+    AUTOCHECKBOX "&Käytä tätä tilin nimeä ja salasanaa, kun joku muodostaa Internet-yhteyden tästä tietokoneesta", 1596, 23, 91, 291, 17, BS_LEFT | BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "&Tee tästä Internet-oletusyhteys", 1595, 23, 112, 288, 14
+    AUTOCHECKBOX "&Ota Internet-yhteyden palomuuri käyttöön tälle yhteydelle", 1682, 23, 133, 290, 14
+END
+
+1660 DIALOGEX 0, 0, 258, 78
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Internet-yhteyden palomuuri"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 32515, -1, 7, 7, 20, 20
+    LTEXT "Internet-yhteyden palomuurin poistaminen käytöstä voi altistaa tietokoneesi luvattomalle käytölle Internetin kautta. Haluatko varmasti poistaa sen käytöstä?", -1, 44, 5, 212, 24
+    AUTOCHECKBOX "&Älä näytä tätä valintaikkunaa uudelleen", 1662, 42, 40, 210, 10
+    DEFPUSHBUTTON "&Kyllä", 6, 74, 60, 50, 14
+    PUSHBUTTON "&Ei", 7, 128, 60, 50, 14
+END
+
+7000 DIALOGEX 0, 0, 215, 103
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Käyttäjänimi:", -1, 7, 8, 90, 12, SS_CENTERIMAGE
+    EDITTEXT 7001, 101, 7, 108, 14, ES_AUTOHSCROLL
+    LTEXT "&Koko nimi:", -1, 7, 26, 90, 12
+    EDITTEXT 7002, 101, 25, 108, 14, ES_AUTOHSCROLL
+    LTEXT "&Salasana:", -1, 7, 44, 90, 12
+    EDITTEXT 7003, 101, 43, 108, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT "&Vahvista salasana:", -1, 7, 62, 91, 12
+    EDITTEXT 7004, 101, 61, 108, 14, ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON "OK", 1, 84, 82, 60, 14
+    PUSHBUTTON "Peruuta", 2, 149, 82, 60, 14
+END
+
+7005 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_CONTEXTHELP | WS_CHILD | WS_CAPTION
+CAPTION "Takaisinsoitto"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTORADIOBUTTON "&Älä salli takaisinsoittoa", 7009, 9, 7, 219, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "Salli &soittajan määrittää takaisinsoittonumero", 7006, 9, 20, 218, 10, BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    AUTORADIOBUTTON "Käytä &aina seuraavaa takaisinsoittonumeroa:", 7007, 9, 34, 217, 10, BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    EDITTEXT 7008, 19, 49, 204, 14, ES_AUTOHSCROLL | WS_GROUP
+END
+
+7010 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_CONTEXTHELP | WS_CHILD | WS_CAPTION
+CAPTION "Yleiset"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Saapuvat yhteydet", -1, 7, 4, 214, 110, WS_GROUP
+    LTEXT "Salli saapuvat yhteydet näissä laitteissa.", -1, 17, 17, 195, 8
+    LTEXT "&Laitteet:", -1, 17, 29, 29, 8
+    CONTROL "", 7011, "SYSLISTVIEW32", WS_BORDER | WS_GROUP | WS_TABSTOP | 0x00004405, 17, 41, 193, 47, WS_EX_CLIENTEDGE
+    AUTOCHECKBOX "&Ota monilinja käyttöön", 7012, 17, 96, 121, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    PUSHBUTTON "&Ominaisuudet", 7013, 145, 94, 65, 14, WS_GROUP
+    GROUPBOX "Näennäinen yksityisverkko", -1, 6, 122, 214, 49, WS_GROUP
+    AUTOCHECKBOX "&Salli muiden muodostaa yksityisiä yhteyksiä tietokoneeseeni tunneloimalla Internetin tai muun verkon kautta", 7014, 17, 137, 195, 27, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTOCHECKBOX "&Näytä kuvake ilmaisinalueella yhteyden ollessa muodostettu", 7015, 12, 184, 209, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+END
+
+7016 DIALOGEX 0, 0, 265, 190
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Saapuvan TCP/IP:n ominaisuudet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Verkon käyttö", -1, 6, 5, 252, 32
+    AUTOCHECKBOX "Salli &soittajien käyttää lähiverkkoani", 7017, 20, 20, 228, 9, BS_LEFT | BS_TOP | BS_MULTILINE
+    GROUPBOX "TCP/IP-osoitteiden määritys", -1, 6, 42, 250, 122
+    AUTORADIOBUTTON "&Määritä TCP/IP-osoitteet automaattisesti DHCP:n avulla", 7019, 20, 54, 231, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Määritä TCP/IP-osoitteet", 7020, 20, 71, 231, 10, BS_TOP | BS_MULTILINE
+    LTEXT "&Mistä:", -1, 29, 88, 53, 8
+    CONTROL "", 7018, "RASIPADDRESS", WS_GROUP | WS_TABSTOP, 90, 85, 103, 13
+    LTEXT "M&ihin:", -1, 29, 105, 53, 8
+    CONTROL "", 7021, "RASIPADDRESS", WS_GROUP | WS_TABSTOP, 90, 102, 103, 13
+    LTEXT "Yhteensä:", -1, 29, 124, 53, 10
+    LTEXT "", 7024, 90, 121, 150, 14, 0, WS_EX_STATICEDGE
+    AUTOCHECKBOX "Salli &soittavan tietokoneen määrittää oma IP-osoitteensa", 7022, 20, 144, 231, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    DEFPUSHBUTTON "OK", 1, 133, 169, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 197, 169, 60, 14
+END
+
+7025 DIALOGEX 0, 0, 250, 157
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Saapuvan IPX:n ominaisuudet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX "Verkon käyttö", -1, 8, 6, 234, 32
+    AUTOCHECKBOX "Salli &soittajien käyttää lähiverkkoani", 7032, 18, 19, 194, 12, BS_LEFT | BS_TOP | BS_MULTILINE
+    GROUPBOX "Verkkonumeron määritys", -1, 8, 43, 234, 87
+    AUTOCHECKBOX "&Määritä sama verkkonumero kaikille tietokoneille", 7028, 17, 56, 203, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "Määritä &verkkonumerot automaattisesti", 7026, 28, 68, 191, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Määritä verkkonumerot:", 7027, 28, 81, 189, 10, BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    EDITTEXT 7029, 40, 92, 154, 14, ES_UPPERCASE | WS_GROUP
+    AUTOCHECKBOX "Salli &soittajien määrittää omat solmunumeronsa", 7031, 17, 113, 208, 11, BS_TOP | BS_MULTILINE | WS_GROUP
+    DEFPUSHBUTTON "OK", 1, 116, 136, 60, 14, WS_GROUP
+    PUSHBUTTON "Peruuta", 2, 181, 136, 60, 14
+END
+
+7033 DIALOGEX 0, 0, 220, 50
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Saapuvan protokollan ominaisuudet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    AUTOCHECKBOX "Salli &soittajien käyttää lähiverkkoani", 7034, 7, 7, 208, 18, BS_LEFT | BS_TOP | BS_MULTILINE
+    DEFPUSHBUTTON "OK", 1, 86, 30, 60, 14
+    PUSHBUTTON "Peruuta", 2, 151, 30, 60, 14
+END
+
+7035 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_CAPTION
+CAPTION "Verkko"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Verkkokomponentit:", -1, 7, 7, 217, 9
+    CONTROL "", 7036, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000440D, 7, 17, 215, 89, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Asenna...", 7037, 9, 110, 67, 14, WS_GROUP
+    PUSHBUTTON "&Poista asennus", 7038, 80, 110, 67, 14, WS_GROUP
+    PUSHBUTTON "&Ominaisuudet", 7039, 153, 110, 67, 14, WS_GROUP
+    GROUPBOX "Kuvaus", -1, 7, 138, 213, 69
+    LTEXT "<protokollan kuvaus>", 7040, 17, 150, 193, 48
+END
+
+7042 DIALOGEX 0, 0, 230, 215
+STYLE DS_SHELLFONT | DS_CONTEXTHELP | WS_CHILD | WS_CAPTION
+CAPTION "Käyttäjät"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Käyttäjät, joilla on yhteyslupa:", -1, 7, 5, 213, 8
+    CONTROL "", 7043, "SYSLISTVIEW32", WS_BORDER | WS_GROUP | WS_TABSTOP | 0x0000440D, 7, 19, 214, 83, WS_EX_CLIENTEDGE
+    PUSHBUTTON "&Uusi...", 7044, 7, 107, 67, 14, WS_GROUP
+    PUSHBUTTON "P&oista", 7045, 80, 107, 67, 14, WS_GROUP
+    PUSHBUTTON "&Ominaisuudet", 7046, 153, 107, 67, 14, WS_GROUP
+    AUTOCHECKBOX "&Vaadi kaikkia käyttäjiä suojaamaan salasanansa ja tietonsa.", 7048, 8, 151, 217, 12, BS_TOP | BS_MULTILINE
+    AUTOCHECKBOX "Salli &aina suoraan yhdistettyjen laitteiden, kuten kämmentietokoneiden, muodostaa yhteys ilman salasanaa.", 7049, 8, 169, 217, 23, BS_TOP | BS_MULTILINE
+    LTEXT "Huomaa, että muut tekijät, kuten käytöstä poistettu käyttäjätili, voivat vaikuttaa käyttäjän mahdollisuuteen muodostaa yhteys.", -1, 9, 126, 212, 23
+END
+
+7049 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse valintaruutu jokaisen käyttäjän kohdalla, jolle sallitaan yhteys tähän tietokoneeseen. Huomaa, että muut tekijät, kuten käytöstä poistettu käyttäjätili, voivat vaikuttaa käyttäjän mahdollisuuteen muodostaa yhteys.", -1, 10, 1, 275, 27
+    LTEXT "&Käyttäjät, joilla on yhteyslupa:", -1, 10, 28, 275, 8
+    CONTROL "", 7043, "SYSLISTVIEW32", WS_BORDER | WS_GROUP | WS_TABSTOP | 0x0000440D, 10, 42, 275, 73
+    PUSHBUTTON "&Lisää...", 7044, 10, 122, 65, 14, WS_GROUP
+    PUSHBUTTON "&Poista", 7045, 79, 122, 65, 14, WS_GROUP
+    PUSHBUTTON "&Ominaisuudet", 7046, 147, 122, 65, 14, WS_GROUP
+END
+
+7050 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse valintaruutu jokaisen laitteen kohdalla, jota haluat käyttää saapuviin yhteyksiin.", -1, 10, 4, 299, 10
+    LTEXT "&Yhteyslaitteet:", -1, 10, 16, 275, 8
+    CONTROL "", 7011, "SYSLISTVIEW32", WS_BORDER | WS_GROUP | WS_TABSTOP | 0x0000440D, 10, 26, 297, 87
+    PUSHBUTTON "&Ominaisuudet", 7013, 243, 120, 65, 14, WS_GROUP
+END
+
+7051 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Valitse valintaruutu jokaisen verkko-ohjelmistotyypin kohdalla, joka otetaan käyttöön saapuvia yhteyksiä varten.", -1, 10, 1, 288, 20
+    LTEXT "Verkko-&ohjelmisto:", -1, 10, 24, 274, 8
+    CONTROL "", 7036, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000440D, 10, 34, 286, 33
+    PUSHBUTTON "&Asenna...", 7037, 108, 71, 60, 14, WS_GROUP
+    PUSHBUTTON "&Poista asennus", 7038, 172, 71, 60, 14, WS_GROUP
+    PUSHBUTTON "&Ominaisuudet", 7039, 236, 71, 60, 14, WS_GROUP
+    LTEXT "<protokollan kuvaus>", 7040, 21, 105, 273, 38
+    LTEXT "Kuvaus:", -1, 21, 95, 275, 8
+END
+
+7052 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "Näennäiset yksityiset yhteydet tietokoneeseesi Internetin kautta ovat mahdollisia vain, jos tietokoneellasi on tunnettu nimi tai IP-osoite Internetissä.", -1, 10, 4, 290, 20
+    AUTORADIOBUTTON "&Salli näennäiset yksityiset yhteydet", 7053, 29, 63, 265, 10, BS_TOP | BS_MULTILINE | WS_GROUP
+    AUTORADIOBUTTON "&Älä salli näennäisiä yksityisiä yhteyksiä", 7054, 29, 78, 265, 10, BS_TOP | BS_MULTILINE | NOT WS_TABSTOP
+    LTEXT "Haluatko sallia näennäiset yksityiset yhteydet tähän tietokoneeseen?", -1, 17, 49, 275, 8
+    LTEXT " Jos sallit VPN-yhteydet, LiberNT muuttaa Internet-yhteyden palomuuria niin, että tietokoneesi voi lähettää ja vastaanottaa VPN-paketteja.", -1, 10, 25, 293, 25
+END
+
+7055 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT "&Tämän yhteyden laite:", -1, 23, 24, 275, 8
+    COMBOBOX 7056, 22, 36, 275, 125, CBS_DROPDOWNLIST | WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT "Muihin kuin valitsemaasi laitteeseen ei vaikuteta, ja niitä voidaan käyttää muihin tarkoituksiin.", -1, 10, 4, 275, 17
+    PUSHBUTTON "&Ominaisuudet", 7061, 232, 53, 65, 14, WS_GROUP
+END
+
+7379 DIALOGEX 0, 0, 317, 143
+STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Shell Dlg"
+BEGIN
+END
+
+19900 DIALOGEX 0, 0, 156, 44
+STYLE DS_SHELLFONT | WS_POPUP | WS_CAPTION
+CAPTION "Puhelinverkkoyhteydet"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    ICON 563, 19901, 10, 10, 18, 20
+    LTEXT "Odotetaan palvelujen käynnistymistä...", 19902, 34, 16, 120, 8
+END
+
+STRINGTABLE
+BEGIN
+    187 "&Ei, älä soita\0"
+    188 "Sinä (tai ohjelma) pyysit tietoja kohteesta %1. Mitä yhteyttä haluat käyttää?\0"
+    189 "Lisää vaihtoehtoinen puhelinnumero\0"
+    190 "Soita vain ensimmäiseen käytettävissä olevaan laitteeseen\0"
+    191 "Soita kaikkiin laitteisiin\0"
+    192 "Soita laitteisiin vain tarvittaessa\0"
+    193 "Kirjoita käyttäjänimi ja salasana, joilla on etäverkon toimialueen käyttöoikeus.\0"
+    194 "Verkko-osoitteen käännös (NAT) on tällä hetkellä asennettu reititysprotokollaksi,\nja se on poistettava ennen Internet-yhteyden jakamisen käyttöönottoa.\nPoista verkko-osoitteen käännös avaamalla Reititys ja etäkäyttö -hallinnan\nlaajennus ja laajentamalla reitittimen merkintä vasemmassa ruudussa.\nPoista verkko-osoitteen käännöksen reititysprotokolla IP-\nreititysprotokollien luettelosta.\0"
+    195 "Suuntanumerossa saa olla vain numeroita 0–9.\0"
+    196 "Merkinnän nimessä on oltava vähintään yksi muu kuin välilyöntimerkki, eikä se saa alkaa pisteellä. Valitse toinen nimi.\0"
+    197 "Tämän kentän arvon on oltava välillä %1–%2.\0"
+    198 "Mukautetun todennuksen määritys-DLL:ää ei voitu ladata. Varmista, että mukautettu todennuspaketti on asennettu oikein.\0"
+    199 "Valitun yhteyden muodosti monen protokollan reititin.\nKatkaise yhteys 'Routing and RAS Admin' -työkalulla.\0"
+    200 "Kommentti\0"
+    201 "Mukautetun todennuspaketin määritys epäonnistui.\0"
+    202 "TCP/IP ei ole asennettu tai se on poistettu käytöstä Reititys ja etäkäyttö -palvelulta. Käynnistä Ohjauspaneelissa Verkko, siirry Palvelut-sivulle, valitse 'Reititys ja etäkäyttö -palvelu' -kohteen Ominaisuudet ja valitse Verkko-painike.\0"
+    203 "IPX ei ole asennettu tai se on poistettu käytöstä Reititys ja etäkäyttö -palvelulta. Voit asentaa tai ottaa IPX:n käyttöön tarkastelemalla minkä tahansa ""Yhteydet""-kansion yhteyden ominaisuuksia.\0"
+    204 "Poistetaanko valitut laitteet luettelosta?\0"
+    205 "Poistetaanko %1 puhelinluettelosta?\0"
+    206 "Katkaistaanko yhteys kohteeseen %1?\0"
+    207 "Tiedosto nimeltä %1 on jo olemassa. Korvataanko se?\0"
+    208 "Komentosarjasta löytyi syntaksivirheitä. Haluatko tarkastella virhelokia?\0"
+    209 "'%1' on nyt yhdistetty.\0"
+    210 "Voit katkaista yhteyden tai tarkistaa sen tilan napsauttamalla tehtäväpalkin Puhelinverkkoyhteyksien valvontaa hiiren kakkospainikkeella.\0"
+    212 "Yhteys muodostettiin.\0"
+    213 "Valittu mukautettu todennusmenetelmä on alustettava valitsemalla Ominaisuudet.\0"
+    214 "lnk\0"
+    215 "Puhelinverkon pikakuvaketiedostot (*.rnk)\0"
+    216 "*.rnk\0"
+    217 "Luo puhelinverkon pikakuvake\0"
+    218 "Linkki kohteeseen %1 epäonnistui. Uudelleenyhdistäminen odottaa...\0"
+    219 "Kehystystietoja ei voi noutaa.\0"
+    220 "Porttitietoja ei voi noutaa.\0"
+    221 "Projektiotietoja ei voi noutaa.\0"
+    222 "Yhteysluetteloa ei voi ladata.\0"
+    223 "Asiakas:\0"
+    224 "Tiedot\0"
+    225 "Laite:\0"
+    226 "Verkko:\0"
+    227 "(ei yhdistetty)\0"
+    228 "&Yhdistä...\0"
+    229 "&Katkaise\0"
+    230 "Puhelinverkkoyhteys\0"
+    231 "Modeemin asetukset palautettu oletuksiin\0"
+    232 "COM1\0"
+    233 "Etäreititin\0"
+    234 "Modeemi tai laite\0"
+    235 "Kirjoita käyttäjänimi tämän liittymän tilille etäreitittimessä.\0"
+    236 "Merkintä nimeltä %1 on jo olemassa. Valitse toinen nimi.\0"
+    237 "Haluat ehkä sallia salasanan lähettämisen salaamattomana.\0"
+    238 "Salasanan salaus\0"
+    239 "Ohjattu toiminto on valmis luomaan yhteytesi.\0"
+    240 "Valmis\0"
+    241 "Puhelin&numero:\0"
+    242 "Soita minulle takaisin numeroon\0"
+    243 "Muokkaa vaihtoehtoista puhelinnumeroa\0"
+    244 "Koska tämä yhteys on tällä hetkellä käytössä, jotkin asetukset tulevat voimaan vasta seuraavalla soittokerralla.\0"
+    245 "Kaikille käyttäjille ei ole käytettävissä yhteyksiä. Sinun on kirjauduttava ennen soittamista.\0"
+    246 "Puhelinluettelo on tyhjä.\n\nLisää merkintä valitsemalla OK.\0"
+    247 "Tuonti- ja vientirajoitusten vuoksi tietojen salaus ei ole käytettävissä tässä LiberNT-versiossa.\0"
+    248 "Kirjoita X.25-osoite seuraavalla näytöllä.\0"
+    249 "Virhe %1: %2\0"
+    250 "%1\n\nVirhe %2: %3\0"
+    251 "%1\n\nVirhe %2: %3\nDiagnostiikka: %4\0"
+    252 "%1\n\nVirhe %2: %3\nVirhekoodi: %4\0"
+    253 "%1\n\nVirhe %2: %3\n\nLisätietoja saat painamalla F1.\0"
+    254 "%1\n\nVirhe %2: %3\nNimi: %4\0"
+    255 "%1\n\n%4\0"
+    256 "%1\n\nVirhe %2: %3\nVastaus: %4\0"
+    257 "Virhekoodi: 0x%1\n\0"
+    258 "Nimi: %1\n\0"
+    259 "%1 CP ilmoitti virheestä %2: %3\n\0"
+    260 "%1 CP yhdistetty.\n\0"
+    261 "Voit valita käytettävän puhelinverkkoprotokollan.\0"
+    262 "Valitse puhelinverkkoprotokolla\0"
+    263 "Tallenna '%1' valitsemalla Valmis.\0"
+    264 "netcfg.hlp\0"
+    265 "&Siirrä toimiva numero luettelon alkuun yhteyttä muodostettaessa\0"
+    266 "&Uusi puhelinnumero:\0"
+    267 "&Puhelinnumerot:\0"
+    268 "Puhelinnumerot\0"
+    269 "Voit antaa kiinteän IP-osoitteen.\0"
+    270 "IP-osoite\0"
+    271 "Internet-protokollia (TCP/IP) ei ole asennettu tai ne on poistettu käytöstä etäkäytöltä. Käynnistä Ohjauspaneelissa Verkko, siirry Palvelut-sivulle, valitse 'Etäkäyttöpalvelu'-kohteen Ominaisuudet ja valitse Verkko-painike.\0"
+    272 "TCP/IP\0"
+    273 "IPSec, oletuskäytäntö\0"
+    274 "IPX/SPX tai yhteensopiva\0"
+    275 " (nykyinen sijainti)\0"
+    276 "ISDN\0"
+    277 "Kaikki käytettävissä olevat ISDN-linjat monilinjattuina\0"
+    278 "64K digitaalinen\0"
+    279 "56K digitaalinen\0"
+    280 "56K puhe\0"
+    281 "Saatat tarvita erityistoimenpiteen ennen yhteyden muodostamista.\0"
+    282 "Valitse kirjautumisasetukset\0"
+    283 "%d%%\0"
+    284 "Puhelinnumero kohteelle %s\0"
+    285 "&Uusi sijainti:\0"
+    286 "&Sijainnit:\0"
+    287 "Sijainnit\0"
+    288 "Tätä laitetta käytetään yhteyden muodostamiseen.\0"
+    289 "Valitse laite\0"
+    290 "Useita linjoja voi niputtaa vain soitettaessa PPP-palvelimeen.\0"
+    291 "Modeemi\0"
+    292 "Modeemia ei ole asennettu.\0"
+    293 "MS Point-to-Point -salaus, 128-bittinen RSA/RC4\0"
+    294 "MS Point-to-Point -salaus, 40-bittinen RSA/RC4\0"
+    295 "Useita linjoja\0"
+    296 "(Määritä valitsemalla Määritä)\0"
+    297 "Voit antaa kiinteät DNS- ja WINS-osoitteet.\0"
+    298 "Nimipalvelinten osoitteet\0"
+    299 "Vanhempi RAS\0"
+    300 "PPP\0"
+    301 "PPP-monilinja\0"
+    302 "SLIP\0"
+    303 "NetBEUI\0"
+    304 "Henkilökohtainen puhelinluettelo on luotu ja alustettu järjestelmän puhelinluettelon sisällöllä.\0"
+    305 "Vaihtoehtoista puhelinluetteloa ei ole valittu.\0"
+    306 "Laitetta ei voi määrittää dynaamisesti.\0"
+    307 "Merkintää ei voi poistaa, koska se on yhdistetty.\0"
+    308 "Merkintää ei ole valittu. Luo merkintä valitsemalla Uusi.\0"
+    309 "Kun 'määritä IP-osoite' on valittu, on annettava IP-osoite, joka ei ole nolla.\0"
+    310 "X.25-osoite tarvitaan, kun X.25-puhelinverkko tai X.25-laite on valittu.\0"
+    311 "(ei mitään)\0"
+    312 "'%1' on jo luettelossa.\0"
+    313 "Suojaa salasanani ja tietoni\0"
+    314 "Protokollaa %1 ei voi valita, koska sitä ei ole asennettu tai se on poistettu käytöstä etäkäytöltä. Voit muuttaa tätä käynnistämällä Ohjauspaneelissa Verkko, valitsemalla Palvelut-sivun ja Etäkäytön ominaisuudet ja valitsemalla Verkko-painikkeen.\0"
+    315 "Salasanaa ei voi tallentaa.\0"
+    316 "Tietoja ei voi näyttää.\0"
+    317 "Automaattisen soiton tietoja ei voi noutaa.\0"
+    318 "Valintaikkunaa ei voi ladata.\0"
+    319 "Jaettua käyttöä ei voi poistaa käytöstä.\0"
+    320 "Ominaisuussivua ei voi ladata.\0"
+    321 "Puhelinluetteloa ei voi ladata.\0"
+    322 "RAS Managerin porttitietoja ei voi ladata.\0"
+    323 "Käyttäjäasetuksia ei voi lukea rekisteristä.\0"
+    324 "Komentosarjan tietoja ei voi ladata.\0"
+    325 "Tiedostoa script.log ei voi tarkastella ohjelmalla notepad.exe\0"
+    326 "Tiedostoa switch.inf ei voi muokata ohjelmalla notepad.exe\0"
+    327 "TAPI-tietoja ei voi ladata.\0"
+    328 "X.25-tietoja ei voi ladata.\0"
+    329 "Uutta puhelinluetteloa ei voi luoda.\0"
+    330 "Jaettua käyttöä ei voi ottaa käyttöön.\0"
+    331 "Puhelinluettelon merkintää ei voi yhdistää.\0"
+    332 "Lähetys- tai vastaanottopuskuria ei voi saada.\0"
+    333 "Portin tilatietoja ei voi saada.\0"
+    334 "Protokollatietoja ei voi noutaa.\0"
+    335 "Puskuria ei voi vastaanottaa laitteesta.\0"
+    336 "Puskuria ei voi lähettää laitteeseen.\0"
+    337 "Tietoja ei voi noutaa.\0"
+    338 "TAPI-tietoja ei voi tallentaa.\0"
+    339 "Tietoja ei voi tallentaa.\0"
+    340 "Komentosarja on pysähtynyt.\0"
+    341 "Komentosarja on pysähtynyt virheen vuoksi. Haluatko tarkastella virhelokia?\0"
+    342 "Automaattisen soiton tietoja ei voi asettaa.\0"
+    343 "Tallennettua salasanaa ei voi poistaa.\0"
+    344 "Puhelinluetteloa ei voi kirjoittaa.\0"
+    345 "Kirjoitetaan asetuksia rekisteriin\0"
+    346 "Pikakuvaketiedostoa ei voi kirjoittaa.\0"
+    347 "OK\0"
+    348 "Mikä on palveluntarjoajasi puhelinnumero?\0"
+    349 "Soitettava puhelinnumero\0"
+    350 "Salasana- ja Vahvista salasana -kentät eivät täsmää.\0"
+    351 "Uusi salasana- ja Vahvista uusi salasana -kentät eivät täsmää.\0"
+    352 "pbk\0"
+    353 "Puhelinluettelotiedostot (*.pbk)\0"
+    354 "*.pbk\0"
+    355 "Avaa puhelinluettelo\0"
+    356 "Kloonaa puhelinluettelon merkintä\0"
+    357 "Muokkaa puhelinluettelon merkintää\0"
+    358 "Uusi puhelinluettelon merkintä\0"
+    359 "Puhelinnumero\0"
+    360 "Puhelinnumerot\0"
+    361 "Verkkoyhteydet\0"
+    362 "Sinun on valittava vähintään yksi verkkoprotokolla.\0"
+    363 "Ennen kuin voit soittaa PPP-palvelimiin, sinun on asennettava verkkoprotokolla Ohjauspaneelin Verkko-sovelmalla.\0"
+    364 "&Uusi etuliite:\0"
+    365 "&Etuliitteet:\0"
+    366 "Puhelinnumeroiden etuliitteet\0"
+    367 "Yksi tai useampi pyydetty verkkoprotokolla ei muodostanut yhteyttä.\n\n\0"
+    368 "Käytä yhteyttä sellaisenaan valitsemalla Hyväksy tai katkaise yhteys valitsemalla Katkaise.\0"
+    369 "Point-to-point-protokollan asetukset, joita käytetään, kun %1 aloittaa tarvittaessa soitettavan yhteyden liittymässä %2:\0"
+    370 "[Vaihda tallennettu salasana napsauttamalla tätä]\0"
+    405 "Vanhempiin RAS-palvelimiin soittaminen edellyttää NetBEUI-protokollaa.\0"
+    406 "Ennen kuin voit soittaa vanhempiin RAS-palvelimiin, sinun on asennettava NetBEUI-protokolla. NetBEUI voidaan asentaa Ohjauspaneelin Verkko-sovelmalla.\0"
+    407 "&Soita uudelleen\0"
+    408 "Olet päättänyt poistaa käytöstä yhden tai useamman siirtoprotokollan. Tämä edellyttää, että poistettujen siirtoprotokollien reitityksen hallinnat ja reititysprotokollat poistetaan tästä tarvittaessa soitettavasta liittymästä.\nJatka valitsemalla Kyllä tai ota siirtoprotokollat uudelleen käyttöön valitsemalla Ei.\0"
+    409 "Internet-yhteyden jakaminen\0"
+    410 "Tarvittaessa soitettavan liittymän sisäänsoittotili.\0"
+    411 "Sinun on nyt määritettävä tunnistetiedot, joita liittymä '%1' käyttää yhdistäessään etäreitittimeen. Näiden tunnistetietojen on vastattava etäreitittimeen määritettyjä sisäänsoiton tunnistetietoja. Kun yhdistät Win NT4/2000 -reitittimeen, käyttäjänimen on myös vastattava etäreitittimen liittymän nimeä.\0"
+    412 "mpradmin.hlp\0"
+    413 "&Siirrä toimiva numero tai osoite luettelon alkuun yhteyttä muodostettaessa\0"
+    414 "&Uusi puhelinnumero tai osoite:\0"
+    415 "&Puhelinnumerot tai osoitteet:\0"
+    416 "Numerot ja osoitteet\0"
+    417 "PPP: Win 95/98/NT4/2000, Internet\0"
+    418 "Ei mitään\0"
+    419 "SLIP: Unix-yhteys\0"
+    420 "Kaikki laitteet yhdistetty.\0"
+    421 "Vastaanotetaan rekisteröinnin tulosta...\0"
+    422 "Lähetetään takaisinsoiton tietoja...\0"
+    423 "Lähetetään uutta salasanaa...\0"
+    424 "Lasketaan linkin nopeutta...\0"
+    425 "Tarkistetaan todennuksen tilaa...\0"
+    426 "Rekisteröidään tietokonettasi verkkoon...\0"
+    427 "Yritetään todennusta uudelleen...\0"
+    428 "Tarkistetaan käyttäjänimeä ja salasanaa...\0"
+    429 "Todennettu.\0"
+    430 "Yhdistetään kohteen %1 kautta...\0"
+    431 "Soitetaan...\0"
+    432 "Modeemit yhdistävät...\0"
+    433 "Yhdistetään kaapelin kautta...\0"
+    434 "Soitetaan numeroon %1...\0"
+    435 "Yhdistetään X.25:n kautta kohteeseen %1...\0"
+    436 "Jälkiyhdistetään kohteen %1 kautta...\0"
+    437 "Esiyhdistetään kohteen %1 kautta...\0"
+    438 "Yhdistetty.\0"
+    439 "Laite yhdistetty.\0"
+    440 "Yhteys katkaistu.\0"
+    441 "Modeemi yhdistetty.\0"
+    442 "Kaapeli yhdistetty.\0"
+    443 "Avataan porttia...\0"
+    444 "X.25 yhdistetty.\0"
+    445 "Portti avattu.\0"
+    446 "Jälkiyhdistäminen valmis.\0"
+    447 "Esiyhdistäminen valmis.\0"
+    448 "Valmistaudutaan takaisinsoittoon...\0"
+    449 "Tarkistetaan verkkoprotokollien yhteyksiä...\0"
+    450 "Tarkistetaan käyttäjänimeä ja salasanaa...\0"
+    451 "Yhdistetty, niputetaan lisälinjoja\0"
+    452 "Tuntematon tila.\0"
+    453 "Odotetaan takaisinsoittoa...\0"
+    454 "Odotetaan modeemin nollausta...\0"
+    455 "Tehdäänkö puhelinnumeron muutoksesta pysyvä?\0"
+    456 "scp\0"
+    457 "*.scp\0"
+    458 "Puhelinverkon komentosarjatiedostot (*.scp)\0"
+    459 "Selaa puhelinverkon komentosarjoja\0"
+    460 "Sinun on valittava vähintään yksi modeemi tai sovitin.\0"
+    461 "Puhelinnumero\0"
+    462 "SLIP-palvelimiin soittaminen edellyttää TCP/IP-protokollaa.\0"
+    463 "Ennen kuin voit soittaa SLIP-palvelimiin, sinun on asennettava TCP/IP-protokolla. TCP/IP voidaan asentaa Ohjauspaneelin Verkko-sovelmalla.\0"
+    464 "Tila\0"
+    465 "&Uusi jälkiliite:\0"
+    466 "&Jälkiliitteet:\0"
+    467 "Puhelinnumeroiden jälkiliitteet\0"
+    468 "Voit tarvittaessa valita erityisasetuksia.\0"
+    469 "Mukautetut asetukset\0"
+    470 "Modeemin manuaalikomentojen pääte\0"
+    471 "Soiton jälkeinen pääte\0"
+    472 "Soittoa edeltävä pääte\0"
+    473 "SLIP-kirjautumispääte\0"
+    474 "10 minuuttia\0"
+    475 "10 sekuntia\0"
+    476 "1 tunti\0"
+    477 "1 minuutti\0"
+    478 "24 tuntia\0"
+    479 "2 tuntia\0"
+    480 "2 minuuttia\0"
+    481 "30 minuuttia\0"
+    482 "30 sekuntia\0"
+    483 "3 sekuntia\0"
+    484 "4 tuntia\0"
+    485 "4 minuuttia\0"
+    486 "5 minuuttia\0"
+    487 "5 sekuntia\0"
+    488 "8 tuntia\0"
+    489 "ei koskaan\0"
+    490 "Voit asettaa uuden yhteyden kaikkien käyttäjien tai vain omaan käyttöösi.\0"
+    491 "Yhteyden käytettävyys\0"
+    492 "Hylätäänkö merkinnän useiden linjojen asetukset?\0"
+    493 "Laite ei käytettävissä\0"
+    494 "Kirjautumisasetukset\0"
+    495 "Puhelinverkkoasetukset\0"
+    496 "X.25\0"
+    497 "X.25 PAD\0"
+    498 "Voit antaa muiden tietokoneiden käyttää resursseja tämän puhelinverkkoyhteyden kautta.\0"
+    499 "VPN-palvelimen valinta\0"
+    500 "Tarvittaessa soittoa ei voi ottaa käyttöön.\0"
+    501 "Mikä on VPN-palvelimen nimi tai osoite?\0"
+    502 "Tarvittaessa soittoa ei voi poistaa käytöstä.\0"
+    503 "Julkinen verkko\0"
+    504 "LiberNT voi varmistaa, että yhteys julkiseen verkkoon on ensin muodostettu.\0"
+    505 "VPN1\0"
+    506 "Internet-yhteyden jakaminen\0"
+    507 "Voit antaa lähiverkon käyttää resursseja tämän puhelinverkkoyhteyden kautta.\0"
+    508 "Isäntä vai vieras?\0"
+    509 "Internet-yhteyden jakaminen on tällä hetkellä käytössä yhteydessä '%1'.\n\nSe otetaan nyt sen sijaan käyttöön yhteydessä '%2'.\0"
+    510 "Jotta kaksi tietokonetta voidaan yhdistää, tietokoneesi on määritettävä joko isännäksi tai vieraaksi.\0"
+    511 "Kun Internet-yhteyden jakaminen on käytössä, lähiverkkosovittimesi asetetaan käyttämään IP-osoitetta 192.168.0.1. Tietokoneesi voi menettää yhteyden verkon muihin tietokoneisiin. Jos muilla tietokoneilla on kiinteät IP-osoitteet, määritä ne hakemaan IP-osoitteensa automaattisesti. Haluatko varmasti ottaa Internet-yhteyden jakamisen käyttöön?\0"
+    512 "Valitse laite\0"
+    513 "Tätä laitetta käytetään yhteyden muodostamiseen.\0"
+    514 "&Yhdistä\0"
+    515 "Anna palvelimen määrittää salaus\0"
+    516 "Salaa tietoni aina\0"
+    517 "Käytä MPPE-40-tietojen salausta\0"
+    518 "Käytä MPPE-128-tietojen salausta\0"
+    519 "Nykyinen salausvalinta edellyttää MS-CHAP- tai EAP-todennusta.\0"
+    520 "Mukautetun todennuksen sanoma\0"
+    521 "Yhdistetään kohteeseen %1...\0"
+    522 "Yhteyden nimi\0"
+    523 "Automaattinen\0"
+    524 "PPTP VPN\0"
+    525 "L2TP IPSec VPN\0"
+    526 "Valitse yhteyden tyyppi.\0"
+    527 "Yhteyden tyyppi\0"
+    528 "hh.exe netcfg.chm::/trouble_all.htm\0"
+    529 "Näennäinen yksityinen yhteys\0"
+    530 "Käytä mitä tahansa vaadittua todennusta, myös selvätekstiä. Älä salaa tietoja.\0"
+    531 "Käytä mitä tahansa todennusta, joka edellyttää salasanojen salausta. Älä salaa tietoja.\0"
+    532 "Kirjoita merkinnälle nimi.\0"
+    533 "Salaa salasanat ja tiedot.\0"
+    534 "Kirjoita porttinumero väliltä 1–65535.\0"
+    535 "Määritä mukautettu todennus ja tietojen salaus Asetukset-painikkeella.\0"
+    536 "Käytä mitä tahansa todennusta, joka edellyttää salattuja salasanoja. Älä salaa tietoja.\0"
+    537 "Salaa salasanat ja tiedot.\0"
+    538 "Määritä mukautettu todennus ja tietojen salaus Asetukset-painikkeella.\0"
+    539 "Porttinumero on jo toisen merkinnän käytössä.\nKirjoita yksilöllinen porttinumero.\0"
+    540 "Anna yksi tai useampi portti saapuville vastauksille.\0"
+    541 "Valitse poistettava merkintä.\0"
+    542 "1 sekunti\0"
+    543 "Valitse muokattava merkintä.\0"
+    549 "Mikä on sen toisen tietokoneen nimi, johon muodostat yhteyden?\0"
+    576 "20 minuuttia\0"
+    579 "Määritä nimi tälle työpaikkasi yhteydelle.\0"
+    581 "Verkkosovelluksen asetukset\0"
+    582 "Kirjoita tämän yhteyden nimi seuraavaan ruutuun.\0"
+    583 "Kirjoita toisen tietokoneen nimi seuraavaan ruutuun.\0"
+    584 "Kirjoita palveluntarjoajasi nimi seuraavaan ruutuun.\0"
+    585 "Mikä on Internet-yhteytesi tarjoavan palvelun nimi?\0"
+    586 "Kirjoita yksityisverkon palvelintietokoneen IP-osoite.\0"
+    587 "Lisäasetukset\0"
+    588 "Merkinnän nimi alkaa pisteellä tai sisältää virheellisiä merkkejä.\nValitse toinen nimi.\0"
+    589 "Ominaisuudet\0"
+    1512 "Tietoliikenneportti\0"
+    1523 " kanava\0"
+    1526 "Älykortit\0"
+    1527 "Voit käyttää älykorttiasi tämän yhteyden kanssa.\0"
+    1528 "Suora yhteys\0"
+    1529 "Valitse tälle yhteydelle laite.\0"
+    1530 "Verdana Bold\0"
+    1531 "12\0"
+    1532 "Yhteyden tyyppi\0"
+    1533 "Valitse luotavan tarvittaessa soitettavan liittymän tyyppi.\0"
+    1534 "Valitse laite\0"
+    1535 "Tätä laitetta käytetään yhteyden muodostamiseen.\0"
+    1536 "Puhelinnumero\0"
+    1537 "Kirjoita soitettavan etäpalvelimen tai reitittimen puhelinnumero.\0"
+    1538 "VPN-tyyppi\0"
+    1539 "Valitse luotavan VPN-liittymän tyyppi.\0"
+    1540 "Kohdeosoite\0"
+    1541 "Mikä on etäreitittimen nimi tai osoite?\0"
+    1544 "IP-osoite\0"
+    1545 "Määritä tämän reitittimen IP-osoite tälle liittymälle.\0"
+    1546 "Nimipalvelinten osoitteet\0"
+    1547 "Määritä tämän liittymän käyttämät DNS- ja WINS-osoitteet.\0"
+    1548 "Reitittimen komentosarjat\0"
+    1549 "Voit määrittää komentosarjan etäreitittimeen yhdistämistä varten.\0"
+    1550 "Sisäänsoiton tunnistetiedot\0"
+    1551 "Määritä käyttäjänimi ja salasana, joita etäreititin käyttää soittaessaan tähän palvelimeen.\0"
+    1552 "Ulossoiton tunnistetiedot\0"
+    1553 "Määritä käyttäjänimi ja salasana, joita käytetään etäreitittimeen yhdistettäessä.\0"
+    1554 "Liittymän nimi\0"
+    1555 "Valitse nimi, jolla uusi liittymä tunnetaan.\0"
+    1556 "Ei käytettävissä olevia laitteita\0"
+    1557 "Paikallisessa tietokoneessa on jo käyttäjätili nimeltä %1. Määritetäänkö tarvittaessa soitettava liittymä käyttämään tätä käyttäjätiliä?\0"
+    1558 "SLIP-palvelinyhteyksille ei ole suojausprotokolla-asetuksia.\0"
+    1559 "Salli suojaamaton salasana\0"
+    1560 "Vaadi suojattu salasana\0"
+    1561 "Käytä älykorttia\0"
+    1562 "Sinun on valittava vähintään yksi salasanan todennusprotokolla.\0"
+    1563 "Salausta ei sallita (palvelin katkaisee yhteyden, jos se vaatii salausta)\0"
+    1564 "Valinnainen salaus (yhdistä, vaikka salausta ei ole)\0"
+    1565 "Vaadi salaus (katkaise, jos palvelin kieltäytyy)\0"
+    1566 "Vahvin salaus (katkaise, jos palvelin kieltäytyy)\0"
+    1567 " (salaus käytössä)\0"
+    1568 "Internet-tilin tiedot\0"
+    1569 "Tarvitset tilin nimen ja salasanan kirjautuaksesi Internet-tilillesi.\0"
+    1570 "Valittu EAP-paketti ei tarjoa salausavaimia. Valitse EAP-paketti, joka tarjoaa avaimet, tai valitse, ettei salausta käytetä.\0"
+    1571 "Nykyinen salausvalinta edellyttää EAP:tä tai jotakin MS-CHAP-version kirjautumisen suojausmenetelmää.\0"
+    1572 "Protokollat ja suojaus\0"
+    1573 "Valitse tämän yhteyden siirtoprotokollat ja suojausasetukset.\0"
+    1574 "Valitsemiisi protokolliin kuuluu PAP, SPAP ja/tai CHAP. Jos jokin niistä neuvotellaan, tietoja ei salata. Haluatko säilyttää nämä asetukset?\0"
+    1575 "Jotta voit muodostaa yhteyden kohteeseen '%1', sinun on ensin muodostettava yhteys kohteeseen '%2'. Haluatko muodostaa yhteyden kohteeseen '%2' nyt?\0"
+    1576 "Yhdistetään rinnakkaiskaapelin kautta...\0"
+    1577 "Yhdistetään infrapunan kautta...\0"
+    1578 "Rinnakkaiskaapeli yhdistetty.\0"
+    1579 "Infrapuna yhdistetty.\0"
+    1580 "Tämä yhteys oli määritetty käyttämään tietojen salauksen vahvuutta, jota asennettu ohjelmisto ei tue. Yhteyden suojausominaisuudet on palautettu käytettävissä oleviin salausvahvuuksiin.\0"
+    1581 "&VPN-tyyppi:\0"
+    1582 "Kirjoita käyttäjänimi.\0"
+    1583 "Tämä käyttäjänimi ja salasana tallennetaan omaan käyttöösi. Yhteyden kaikille muille käyttäjille on jo tallennettu käyttäjänimi ja salasana. Haluatko poistaa kaikille muille käyttäjille tallennetun käyttäjänimen ja salasanan?\0"
+    1584 "Voit kirjoittaa esimerkiksi työpaikkasi nimen tai sen palvelimen nimen, johon muodostat yhteyden.\0"
+    1585 "Tilin tiedot\0"
+    1586 "Tämän ominaisuussivun ohjausobjektit ovat poissa käytöstä, koska järjestelmä on käynnistettävä uudelleen ennen kuin määritysmuutoksia voidaan tehdä.\0"
+    1587 "Tämän ominaisuussivun ohjausobjektit ovat poissa käytöstä, koska yksi tai useampi muu verkon ominaisuussivu on jo avoinna. Jos haluat käyttää näitä ohjausobjekteja, sulje kaikki nämä ominaisuussivut ja avaa tämä sivu uudelleen.\0"
+    1588 "Jotkin tämän ominaisuussivun ohjausobjektit ovat poissa käytöstä, koska sinulla ei ole riittäviä oikeuksia niiden käyttämiseen.\0"
+    1589 "Palveluntarjoajaltasi vastaanotettiin seuraava sanoma:\r\n\r\n%1\0"
+    1590 "Yhdistä uudelleen %1\0"
+    1591 "Palvelun nimi\0"
+    1592 "Mikä on laajakaistayhteytesi tarjoavan palvelun nimi?\0"
+    1593 "Tarvitset tilin nimen ja salasanan kirjautuaksesi tilillesi\0"
+    1594 "PPPOE1-0\0"
+    1595 "PPPoE (Point-to-Point Protocol over Ethernet)\0"
+    1596 "Muodostettavan &laajakaistayhteyden tyyppi:\0"
+    1611 "Laajakaistayhteys\0"
+    1612 "Olet valinnut esijaetun avaimen käytön, mutta et ole antanut avainta.\nAnna esijaettu avain.\0"
+    1613 "Tunnistetietoja ei voi tallentaa\0"
+    1634 "Koska WMI (Windows Management Instrumentation) -palvelu on poistettu käytöstä, LiberNT ei voi näyttää tämän yhteyden tai kotiverkon ominaisuuksia.\n\nJotta voit määrittää tämän yhteyden tai kotiverkkosi ominaisuudet, sinun on ensin otettava WMI-palvelu käyttöön. Kaksoisnapsauta Valvontatyökalut-ohjauspaneelissa Palvelut, napsauta Windows Management Instrumentation -kohdetta hiiren kakkospainikkeella ja valitse Käynnistä.\0"
+    1635 "LiberNT ei voi näyttää tämän yhteyden ominaisuuksia. WMI (Windows Management Instrumentation) -tiedot saattavat olla vioittuneet. Voit korjata tämän palauttamalla LiberNT:n aiempaan ajankohtaan (palautuspisteeseen) Järjestelmän palautuksella. Järjestelmän palautus on Apuohjelmat-kohdan Järjestelmätyökalut-kansiossa.\0"
+    1646 "Salli saapuva kaikupyyntö\0"
+    1647 "Salli saapuva aikaleimapyyntö\0"
+    1648 "Salli saapuva peitepyyntö\0"
+    1649 "Salli saapuva reititinpyyntö\0"
+    1650 "Salli lähtevä 'kohde ei tavoitettavissa'\0"
+    1651 "Salli lähtevä lähteen hidastus\0"
+    1652 "Salli lähtevä parametriongelma\0"
+    1653 "Salli lähtevä 'aika ylittyi'\0"
+    1654 "Salli uudelleenohjaus\0"
+    1655 "log\0"
+    1656 "*.log\0"
+    1657 "Palomuurin lokitiedostot (*.log)\0"
+    1658 "Selaa\0"
+    1663 "Valitse yksityisverkon yhteys\0"
+    1664 "Internet-yhteyden jakamisen käyttöönotto edellyttää, että yksityisverkolle valitaan yhteys. Valitse yhteys käytettävissä olevien yhteyksien luettelosta.\0"
+    1665 "Tähän tietokoneeseen lähetetyt viestit toistetaan takaisin lähettäjälle. Tätä käytetään yleisesti vianmääritykseen, esimerkiksi koneen pingaamiseen.\0"
+    1666 "Tähän tietokoneeseen lähetetyt tiedot voidaan kuitata vahvistussanomalla, joka ilmoittaa tietojen vastaanottoajan.\0"
+    1667 "Tämä tietokone kuuntelee ja vastaa pyyntöihin, joissa kysytään lisätietoja julkisesta verkosta, johon se on liitetty.\0"
+    1668 "Tämä tietokone vastaa pyyntöihin, joissa kysytään sen tuntemia reittejä.\0"
+    1669 "Internetin kautta lähetetyt tiedot, jotka eivät virheen vuoksi saavu tähän tietokoneeseen, hylätään ja kuitataan ""kohde ei tavoitettavissa"" -sanomalla, joka selittää virheen.\0"
+    1670 "Kun tämän tietokoneen kyky käsitellä saapuvia tietoja ei pysy siirron tahdissa, tietoja hylätään ja lähettäjää pyydetään hidastamaan.\0"
+    1671 "Kun tämä tietokone hylkää vastaanottamansa tiedot virheellisen otsikon vuoksi, se vastaa lähettäjälle ""virheellinen otsikko"" -virhesanomalla.\0"
+    1672 "Kun tämä tietokone hylkää keskeneräisen tiedonsiirron, koska koko siirto vaati sallittua enemmän aikaa, se vastaa lähettäjälle ""aika umpeutui"" -sanomalla.\0"
+    1673 "Tästä tietokoneesta lähetetyt tiedot reititetään uudelleen, jos oletuspolku muuttuu.\0"
+    1675 "Lokitiedoston kooksi annettu arvo ei kelpaa. Anna arvo väliltä 1–32767 kt.\0"
+    1685 "Käyttäjätililläsi ei ole oikeutta käyttää tätä yhteyttä. Yleensä tämä johtuu siitä, että olet kirjautunut Vieras-tilillä.\0"
+    1686 "Kirjoita tilin nimi ja salasana. (Jos olet unohtanut olemassa olevan tilin nimen tai salasanan, ota yhteys verkon järjestelmänvalvojaan.)\0"
+    1687 "Tietokoneen &nimi\0"
+    1688 "Palveluntarjoajan &nimi\0"
+    1689 "Yrityksen &nimi\0"
+    1690 "Mitä puhelinnumeroa käytät tämän yhteyden muodostamiseen?\n\0"
+    7301 "Saapuvan TCP/IP:n ominaisuudet\0"
+    7302 "Tämän kentän arvon on oltava välillä %1–%2.\0"
+    7306 "Saapuvien yhteyksien virhe\0"
+    7307 "Saapuvien yhteyksien yleinen virhe\0"
+    7308 "Saapuvat yhteydet\0"
+    7309 "Saapuvien yhteyksien verkkovirhe\0"
+    7310 "Saapuvien yhteyksien monilinjan tilavirhe\0"
+    7311 "Saapuvien yhteyksien virhe\0"
+    7312 "Saapuvien yhteyksien alustusvirhe\0"
+    7313 "Saapuvien yhteyksien TCP/IP-ominaisuuksien virhe\0"
+    7314 "Saapuvien yhteyksien IPX-ominaisuuksien virhe\0"
+    7315 "Saapuvien yhteyksien virhe\0"
+    7316 "Yleinen\0"
+    7317 "Laite\0"
+    7318 "Muut tiedot -tietokanta\0"
+    7319 "Käyttäjätietokanta\0"
+    7320 "Protokollatietokanta\0"
+    7321 "Sinun on annettava uudelle käyttäjälle kirjautumisnimi tai valittava Peruuta.\0"
+    7322 "Antamasi salasana oli liian lyhyt.\0"
+    7323 "Annetut salasanat eivät ole samat. Kirjoita ne uudelleen.\0"
+    7324 "Tapahtui sisäinen virhe.\0"
+    7325 "Listview\0"
+    7326 "Tehtyjen muutosten tallentamisessa paikalliseen käyttäjätietokantaan tapahtui virhe.\0"
+    7327 "Sinulla ei ole riittäviä oikeuksia lisätä käyttäjää paikalliseen järjestelmätietokantaan.\0"
+    7328 "Käyttäjä, jota yrität luoda, on jo paikallisessa käyttäjätietokannassa.\0"
+    7329 "Käyttäjää ei lisätty paikalliseen käyttäjätietokantaan, koska antamasi salasana hylättiin.\0"
+    7330 "Järjestelmän käyttäjätietokantaa ei voi ladata uudelleen sisäisen virheen vuoksi.\0"
+    7331 "Tapahtui sisäinen virhe: Paikallisen käyttäjätietokannan kahva on vioittunut.\0"
+    7332 "Käyttäjä-välilehden näyttämiseen tarvittavia resursseja ei voi ladata.\0"
+    7333 "Paikalliseen käyttäjätietokantaan tekemiesi muutosten peruuttamisessa tapahtui sisäinen virhe.\0"
+    7334 "Laitetietokannan kahva on vioittunut.\0"
+    7335 "Yleiset-välilehden näyttämiseen tarvittavia resursseja ei voi ladata.\0"
+    7336 "Joidenkin tekemiesi laite- tai VPN-muutosten tallentamisessa tapahtui virhe.\0"
+    7337 "Tapahtui sisäinen virhe.\0"
+    7338 "Tapahtui sisäinen virhe: Verkkokomponenttitietokannan kahva on vioittunut.\0"
+    7339 "Tapahtui sisäinen virhe.\0"
+    7340 "Verkkokomponentteihin tekemiesi muutosten tallentamisessa tapahtui virhe.\0"
+    7341 "Tapahtui sisäinen virhe.\0"
+    7342 "TCP/IP-protokollaan tekemiäsi muutoksia ei voi tallentaa järjestelmään.\0"
+    7343 "IPX-protokollaan tekemiäsi muutoksia ei voi tallentaa järjestelmään.\0"
+    7344 "TCP/IP-ominaisuuksia ei voi näyttää.\0"
+    7345 "IPX-ominaisuuksia ei voi näyttää.\0"
+    7346 "TCP/IP-ominaisuuksia ei voi ladata järjestelmästä.\0"
+    7347 "IPX-ominaisuuksia ei voi ladata järjestelmästä.\0"
+    7348 "Saapuvat yhteydet edellyttävät Reititys ja etäkäyttö -palvelua, jota ei voitu käynnistää. Lisätietoja on järjestelmän tapahtumalokissa.\0"
+    7349 "Verkkokomponenttien muokkaamista ei voi sallia nyt, koska niitä muokataan parhaillaan muualla.\0"
+    7350 "Antamaasi uutta käyttäjää ei lisätty paikalliseen käyttäjätietokantaan, koska annettu nimi tai salasana rikkoi järjestelmäkäytäntöä (se oli liian pitkä, liian lyhyt tai väärin muotoiltu).\0"
+    7351 "Järjestelmä ei voi poistaa pyydettyä käyttäjää.\0"
+    7352 "Valittua verkkokomponenttia ei voi poistaa, koska se on käytössä.\0"
+    7353 "Saapuvien yhteyksien varoitus\0"
+    7354 "Poistamasi käyttäjät poistetaan järjestelmästä pysyvästi, vaikka valitsisit Peruuta. Haluatko varmasti poistaa käyttäjän %s pysyvästi?\0"
+    7355 "Olet siirtymässä järjestelmänhallintakonsoliin. Tämä Saapuvat yhteydet -ominaisuussivu suljetaan, ja mahdolliset tekemäsi muutokset tallennetaan järjestelmään. Haluatko jatkaa?\0"
+    7356 "Verkon peitteen arvoa on muutettu. Peitteen nollabittiä voi seurata vain muita nollabittejä. Esimerkiksi desimaalipistemerkinnällä ilmaistu verkon peitteen arvo 255.255.0.0 on kelvollinen, mutta 255.0.255.0 ei ole.\n\0"
+    7357 "Käyttäjäoikeudet\0"
+    7358 "Voit määrittää käyttäjät, jotka voivat muodostaa yhteyden tähän tietokoneeseen.\0"
+    7359 "Saapuvien yhteyksien laitteet\0"
+    7360 "Voit valita laitteet, joilla tietokoneesi vastaanottaa saapuvia yhteyksiä.\0"
+    7361 "Saapuva VPN-yhteys (Virtual Private Network)\0"
+    7362 "Toinen tietokone voi muodostaa yhteyden omaasi VPN-yhteyden kautta\0"
+    7363 "Verkko-ohjelmisto\0"
+    7364 "Verkko-ohjelmiston avulla tämä tietokone voi vastaanottaa yhteyksiä muunlaisista tietokoneista.\0"
+    7365 "Ohjattu uuden yhteyden muodostaminen on valmis\0"
+    7366 " \0"
+    7367 "Saapuvat yhteydet\0"
+    7371 "Puheluja vastaanottamaan pystyvää laitteistoa ei ole asennettu.\0"
+    7372 " \0"
+    7373 "Määritä annettu &verkkonumero:\0"
+    7374 "Määritä &verkkonumerot järjestyksessä alkaen:\0"
+    7375 "Uusi käyttäjä\0"
+    7376 "Yhteyslaite\0"
+    7377 "Mitä laitetta haluat käyttää tämän yhteyden muodostamiseen?\0"
+    7378 "Suoria yhteyksiä vastaanottamaan pystyviä laitteita ei ole asennettu.\0"
+    7379 "Uuden saapuvan yhteyden varoitus\0"
+    7380 "Koska tämä Win 2000 Server kuuluu toimialueeseen tai hallitsee sitä, sinun on määritettävä tämä kone vastaanottamaan saapuvia yhteyksiä Reititys ja etäkäyttö -järjestelmäkonsolilla. Peruutetaanko muutokset ja siirrytäänkö tähän konsoliin?\n\0"
+    7381 "&Määritä verkkonumero automaattisesti\0"
+    7382 "&Määritä verkkonumerot automaattisesti\0"
+    7383 "Saapuvat yhteydet ei voi myöntää IPX-verkkonumeroita 00000000 tai FFFFFFFF. Muuta määritettyjä verkkonumeroita tai käytä automaattista verkkonumeroiden määritystä.\0"
+    7384 "–\0"
+    7385 "Tietoliikenneportti (%s)\0"
+    7386 "Verkkoyhteydet ei näytä joitakin saapuvien yhteyksien erityisasetuksia, jotka on määritetty Paikallisten käyttäjien hallinta- tai Etäkäyttökäytäntö-konsolilla. Saat täydelliset ja oikeat tiedot saapuvista yhteyksistä näiden konsolien avulla.\0"
+    7387 "Valitsemasi käyttäjän takaisinsoittotila edellyttää kelvollisen takaisinsoittonumeron antamista.\0"
+    7388 "LiberNT on käynnistettävä uudelleen toiminnon viimeistelemiseksi. Käynnistetäänkö uudelleen nyt?\0"
+    7389 "Valitulla laitteella ei ole määritysasetuksia.\0"
+    7390 "Virheellinen alue\0"
+    7391 "Olet pyytänyt, että '%1' poistetaan käytöstä saapuvista yhteyksistä. Tämä edellyttää, että pysäytät 'Server'-palvelun. Kun palvelu on pysäytetty, tämän tietokoneen jaetut hakemistot ja tulostimet eivät ole enää muiden tietokoneiden käytettävissä. Haluatko avata järjestelmäkonsolin, jossa voit pysäyttää 'Server'-palvelun?\r\n\nValitse Tietokoneen hallinnassa Järjestelmätyökalut ja sitten Palvelut. Napsauta oikeassa ruudussa Server-kohdetta hiiren kakkospainikkeella ja valitse Pysäytä.\0"
+    7392 "Tätä sarjaporttia ei ole otettu käyttöön suoraa yhteyttä varten toiseen tietokoneeseen. Se otetaan käyttöön, kun olet suorittanut tämän ohjatun toiminnon loppuun. Voit sitten määrittää portin nopeuden ja muut ominaisuudet napsauttamalla tämän yhteyden kuvaketta hiiren kakkospainikkeella ja valitsemalla Ominaisuudet.\n\0"
+    7393 "Saapuvat yhteydet\0"
+    7394 "Antamasi IP-osoitevaranto on virheellinen.\0"
+    7395 "Annettu peite on virheellinen.\0"
+    7396 "TCP/IP-varannolle annettu aloitusosoite on virheellinen. Sen on oltava välillä 1.0.0.0–224.0.0.0, eikä se saa olla muotoa 127.x.x.x.\0"
+    7397 "Annettu TCP/IP-varanto on virheellinen, koska osoite on peitettä tarkempi.\0"
+    7398 "Aloitusosoitteen on oltava pienempi kuin loppuosoite.\0"
+    7399 "Reititys ja etäkäyttö -palvelu on pysähtymässä. Saapuvat yhteydet -vaihtoehto ei ole käytettävissä ennen kuin palvelu on pysähtynyt. Odota hetki ja yritä uudelleen.\0"
+    7400 "%s (%s)\0"
+    7401 "%s (%d kanavaa)\0"
+    7402 "Saapuvan yhteyden VPN (PPTP)\0"
+    7403 "Saapuvan yhteyden VPN (L2TP)\0"
+    7404 "IP-suojaus (IKE)\0"
+    7405 "127.0.0.1\0"
+    7406 "Sinulla ei ole riittäviä oikeuksia määrittää saapuvia yhteyksiä\0"
+    29900 "Etäkäytön yhteyksien hallinta -palvelua ei voi ladata.\0"
+    29901 "Tiedostoa MPRAPI.DLL ei voi ladata system32-hakemistosta.\0"
+END

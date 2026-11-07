@@ -1,0 +1,312 @@
+/*
+ * PROJECT:     LiberNT Command Processor
+ * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
+ * PURPOSE:     Finnish resources
+ * COPYRIGHT:   Copyright 1999 D A Pickles, J Edmeades and the Wine authors
+ *              Copyright 2026 Ahmed ARIF <arif.ing@outlook.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+{
+    WCMD_CALL, "CALL <komentojonotiedosto> suorittaa komentojonotiedostossa komentoja\n\
+toisesta komentojonotiedostosta. Kun komentojonotiedosto päättyy, hallinta palaa\n\
+tiedostoon, joka kutsui sitä. CALL-komento voi välittää parametreja kutsutulle\n\
+toiminnolle.\n\
+\n\
+Kutsutussa toiminnossa tehdyt muutokset oletushakemistoon, ympäristömuuttujiin\n\
+ym. periytyvät kutsujalle.\n"
+    WCMD_CD, "CD <hakemisto> on CHDIR-komennon lyhyt muoto. Se vaihtaa nykyisen\n\
+oletushakemiston.\n"
+    WCMD_CHDIR, "CHDIR <hakemisto> vaihtaa nykyisen oletushakemiston.\n"
+    WCMD_CLS, "CLS tyhjentää konsolin näytön.\n"
+    WCMD_BREAK, "BREAK ottaa käyttöön tai poistaa laajennetun CTRL+C-tarkistuksen DOSissa. Sillä\n\
+ei ole vaikutusta Windowsissa, ja se on säilytetty DOS-komentojonotiedostoja varten.\n"
+    WCMD_COPY, "COPY <tiedostonimi> kopioi tiedoston.\n"
+    WCMD_DATE, "DATE näyttää tai muuttaa järjestelmän päivämäärän.\n"
+    WCMD_DEL, "DEL <tiedostonimi> poistaa tiedoston tai tiedostojoukon.\n"
+    WCMD_DIR, "DIR luettelee hakemiston sisällön.\n"
+    WCMD_ECHO, "ECHO <merkkijono> näyttää <merkkijonon> nykyisessä päätelaitteessa.\n\
+\n\
+ECHO ON saa kaikki komentojonotiedoston seuraavat komennot näkymään\n\
+päätelaitteessa ennen niiden suorittamista.\n\
+\n\
+ECHO OFF kumoaa aiemman ECHO ON -komennon vaikutuksen (ECHO on oletusarvoisesti\n\
+OFF). ECHO OFF -komennon näkyminen voidaan estää kirjoittamalla\n\
+sen eteen @-merkki.\n"
+    WCMD_ERASE, "ERASE <tiedostonimi> poistaa tiedoston tai tiedostojoukon.\n"
+    WCMD_FOR, "FOR-komennolla suoritetaan komento jokaiselle tiedostojoukon tiedostolle.\n\
+\n\
+Käyttö: FOR %muuttuja IN (joukko) DO komento\n\
+\n\
+Merkki % syötetään kahdesti, kun FOR-komentoa käytetään komentojonotiedostossa.\n"
+    WCMD_GOTO, "GOTO-komento siirtää suorituksen toiseen lauseeseen komentojono-\n\
+tiedostossa.\n\
+\n\
+GOTO-komennon kohteena oleva nimiö voi olla enintään 255 merkkiä pitkä,\n\
+mutta se ei saa sisältää välilyöntejä (tämä poikkeaa muista käyttö-\n\
+järjestelmistä). Jos komentojonotiedostossa on kaksi tai useampia samanlaisia\n\
+nimiöitä, ensimmäinen suoritetaan aina. Yritys siirtyä GOTO-komennolla\n\
+olemattomaan nimiöön lopettaa komentojonotiedoston suorituksen.\n\
+\n\
+GOTO-komennolla ei ole vaikutusta vuorovaikutteisessa käytössä.\n"
+    WCMD_HELP, "HELP <komento> näyttää lyhyen ohjeen aiheesta.\n\
+HELP ilman argumenttia näyttää kaikki CMD:n sisäiset komennot.\n"
+    WCMD_IF, "IF-komennolla suoritetaan komento ehdollisesti.\n\
+\n\
+Syntaksi: IF [NOT] EXIST tiedostonimi komento\n\
+          IF [NOT] merkkijono1==merkkijono2 komento\n\
+          IF [NOT] ERRORLEVEL numero komento\n\
+\n\
+Komennon toisessa muodossa merkkijono1 ja merkkijono2 on kirjoitettava\n\
+lainausmerkkeihin. Vertailussa kirjainkoolla ei ole merkitystä.\n"
+    WCMD_LABEL, "LABEL-komennolla asetetaan levyn taltion nimi.\n\
+\n\
+Syntaksi: LABEL [asema:]\n\
+Komento kysyy annetun aseman taltion uutta nimeä.\n\
+Levyn taltion nimen voi näyttää VOL-komennolla.\n"
+    WCMD_MD, "MD <nimi> on MKDIR-komennon lyhyt muoto. Se luo alihakemiston.\n"
+    WCMD_MKDIR, "MKDIR <nimi> luo alihakemiston.\n"
+    WCMD_MOVE, "MOVE siirtää tiedoston tai hakemiston uuteen paikkaan tiedostojärjestelmässä.\n\
+\n\
+Jos siirrettävä kohde on hakemisto, myös kaikki sen alla olevat tiedostot\n\
+ja alihakemistot siirretään.\n\
+\n\
+MOVE epäonnistuu, jos vanha ja uusi sijainti ovat eri DOS-asemakirjaimilla.\n"
+    WCMD_PATH, "PATH näyttää tai muuttaa cmd:n hakupolun.\n\
+\n\
+Pelkkä PATH näyttää nykyisen PATH-asetuksen (joka luetaan aluksi\n\
+rekisteristä). Muuta asetusta kirjoittamalla PATH-komennon perään uusi\n\
+arvo.\n\
+\n\
+PATH-asetusta voi muuttaa myös PATH-ympäristömuuttujan avulla,\n\
+esimerkiksi:\n\
+PATH %PATH%;c:\\temp\n"
+    WCMD_PAUSE, "PAUSE näyttää näytöllä viestin, joka pyytää käyttäjää painamaan näppäintä.\n\
+\n\
+Se on hyödyllinen lähinnä komentojonotiedostoissa, jotta käyttäjä ehtii lukea\n\
+edellisen komennon tulosteen ennen kuin se vierii pois näytöltä.\n"
+    WCMD_PROMPT, "PROMPT asettaa komentorivin kehotteen.\n\
+\n\
+PROMPT-komentoa (ja sitä välittömästi seuraavaa välilyöntiä) seuraava merkkijono\n\
+näkyy rivin alussa, kun cmd odottaa syötettä.\n\
+\n\
+Seuraavilla merkkijonoilla on alla näytetty erityismerkitys:\n\
+\n\
+$$    Dollarimerkki       $_    Rivinvaihto         $b    Putkimerkki (|)\n\
+$d    Nykyinen päivämäärä $e    Escape              $g    Merkki >\n\
+$l    Merkki <            $n    Nykyinen asema      $p    Nykyinen polku\n\
+$q    Yhtäsuuruusmerkki   $t    Nykyinen aika       $v    cmd:n versio\n\
+\n\
+Huomaa, että PROMPT-komento ilman kehotemerkkijonoa palauttaa kehotteen\n\
+oletukseksi, joka on nykyinen hakemisto (sisältäen nykyisen\n\
+asemakirjaimen) ja sen perässä suurempi kuin -merkki (>).\n\
+(kuten komento PROMPT $p$g).\n\
+\n\
+Kehotetta voi muuttaa myös muuttamalla PROMPT-ympäristömuuttujaa,\n\
+joten komennolla 'SET PROMPT=teksti' on sama vaikutus kuin komennolla 'PROMPT teksti'.\n"
+    WCMD_REM, "REM-sanalla (ja sitä seuraavalla välilyönnillä) alkava komentorivi ei tee mitään,\n\
+joten sitä voi käyttää kommenttina komentojonotiedostossa.\n"
+    WCMD_REN, "REN <tiedostonimi> on RENAME-komennon lyhyt muoto. Se nimeää tiedoston uudelleen.\n"
+    WCMD_RENAME, "RENAME <tiedostonimi> nimeää tiedoston uudelleen.\n"
+    WCMD_RD, "RD <hakemisto> on RMDIR-komennon lyhyt muoto. Se poistaa hakemiston.\n"
+    WCMD_RMDIR, "RMDIR <hakemisto> poistaa hakemiston.\n"
+    WCMD_START, "Käynnistää ohjelman tai avaa asiakirjan ohjelmassa, jota tavallisesti käytetään\n\
+tiedostoille, joilla on kyseinen tunniste.\n\
+Käyttö:\n\
+start [valitsimet] ohjelman_tiedostonimi [...]\n\
+start [valitsimet] asiakirjan_tiedostonimi\n\
+\n\
+Valitsimet:\n\
+""otsikko""      Määrittää aliikkunoiden otsikon.\n\
+/d hakemisto   Käynnistää ohjelman määritetyssä hakemistossa.\n\
+/b             Ei luo ohjelmalle uutta konsolia.\n\
+/i             Käynnistää ohjelman uusilla ympäristömuuttujilla.\n\
+/min           Käynnistää ohjelman pienennettynä.\n\
+/max           Käynnistää ohjelman suurennettuna.\n\
+/low           Käynnistää ohjelman joutoprioriteettiluokassa.\n\
+/normal        Käynnistää ohjelman normaalissa prioriteettiluokassa.\n\
+/high          Käynnistää ohjelman korkeassa prioriteettiluokassa.\n\
+/realtime      Käynnistää ohjelman reaaliaikaisessa prioriteettiluokassa.\n\
+/abovenormal   Käynnistää ohjelman normaalia korkeammassa prioriteettiluokassa.\n\
+/belownormal   Käynnistää ohjelman normaalia matalammassa prioriteettiluokassa.\n\
+/node n        Käynnistää ohjelman määritetyssä NUMA-solmussa.\n\
+/affinity peite Käynnistää ohjelman määritetyllä affiniteettipeitteellä.\n\
+/wait          Odottaa käynnistetyn ohjelman päättymistä ja lopettaa sitten sen\n\
+paluukoodilla.\n\
+/unix          Käyttää Unix-tiedostonimeä ja käynnistää tiedoston kuten Windowsin\n\
+Resurssienhallinta.\n\
+/ProgIDOpen    Avaa asiakirjan määritetyllä progID:llä.\n\
+/?             Näyttää tämän ohjeen ja lopettaa.\n"
+    WCMD_SET, "SET näyttää tai muuttaa cmd:n ympäristömuuttujia.\n\
+\n\
+SET ilman parametreja näyttää koko nykyisen ympäristön.\n\
+\n\
+Ympäristömuuttuja luodaan tai sitä muutetaan syntaksilla:\n\
+\n\
+SET <muuttuja>=<arvo>\n\
+\n\
+missä <muuttuja> ja <arvo> ovat merkkijonoja. Yhtäsuuruusmerkin edessä\n\
+ei saa olla välilyöntiä, eikä muuttujan nimessä saa olla välilyöntejä.\n\
+\n\
+Winessä alla olevan käyttöjärjestelmän ympäristö sisällytetään\n\
+Win32-ympäristöön, joten arvoja on yleensä paljon enemmän kuin\n\
+alkuperäisessä Win32-toteutuksessa. Huomaa, että käyttöjärjestelmän\n\
+ympäristöön ei voi vaikuttaa cmd:n sisältä.\n"
+    WCMD_SHIFT, "SHIFT-komennolla poistetaan komentojonotiedostossa yksi parametri luettelon\n\
+alusta, jolloin parametrista 2 tulee parametri 1 jne. Sillä ei ole vaikutusta,\n\
+jos sitä kutsutaan komentoriviltä.\n"
+    WCMD_TIME, "TIME asettaa tai näyttää järjestelmän nykyisen ajan.\n"
+    WCMD_TITLE, "TITLE <merkkijono> asettaa cmd-ikkunan otsikon.\n"
+    WCMD_TYPE, "TYPE <tiedostonimi> kopioi <tiedostonimen> konsolilaitteeseen (tai muualle, jos\n\
+tuloste on uudelleenohjattu). Tiedoston luettavuutta tekstinä ei tarkisteta.\n"
+    WCMD_VERIFY, "VERIFY-komennolla asetetaan, poistetaan tai testataan tarkistuslippu. Kelvolliset muodot:\n\
+\n\
+VERIFY ON\tAsettaa lipun.\n\
+VERIFY OFF\tPoistaa lipun.\n\
+VERIFY\t\tNäyttää tilanteen mukaan ON tai OFF.\n\
+\n\
+Tarkistuslipulla ei ole toimintoa Winessä.\n"
+    WCMD_VER, "VER näyttää käytössä olevan cmd:n version.\n"
+    WCMD_VOL, "VOL näyttää levylaitteen taltion nimen.\n"
+    WCMD_ENDLOCAL, "ENDLOCAL lopettaa komentojonotiedostossa ympäristömuutosten paikallistamisen,\n\
+jonka edeltävä SETLOCAL aloitti.\n"
+    WCMD_SETLOCAL, "SETLOCAL aloittaa ympäristömuutosten paikallistamisen komentojonotiedostossa.\n\
+\n\
+SETLOCAL-komennon jälkeen tehdyt ympäristömuutokset ovat paikallisia komentojono-\n\
+tiedostossa, ja ne säilyvät, kunnes seuraava ENDLOCAL tulee vastaan (tai\n\
+tiedosto päättyy, kumpi tahansa tulee ensin), jolloin aiemmat ympäristö-\n\
+asetukset palautetaan.\n"
+    WCMD_PUSHD, "PUSHD <hakemisto> tallentaa nykyisen hakemiston pinoon ja\n\
+vaihtaa sitten nykyiseksi hakemistoksi annetun hakemiston.\n"
+    WCMD_POPD, "POPD vaihtaa nykyiseksi hakemistoksi viimeksi PUSHD:llä tallennetun hakemiston.\n"
+    WCMD_ASSOC, "ASSOC näyttää tai muuttaa tiedostotunnisteiden kytkentöjä.\n\
+\n\
+Syntaksi: ASSOC [.tunniste[=[tiedostotyyppi]]]\n\
+\n\
+ASSOC ilman parametreja näyttää nykyiset tiedostokytkennät.\n\
+Jos annetaan pelkkä tiedostotunniste, näyttää nykyisen kytkennän.\n\
+Jos yhtäsuuruusmerkin jälkeen ei määritetä tiedostotyyppiä, nykyinen\n\
+kytkentä poistetaan, jos sellainen on.\n"
+    WCMD_FTYPE, "FTYPE näyttää tai muuttaa tiedostotyyppeihin liitettyjä avauskomentoja.\n\
+\n\
+Syntaksi: FTYPE [tiedostotyyppi[=[avauskomento]]]\n\
+\n\
+Ilman parametreja näyttää tiedostotyypit, joille avauskomentomerkkijono on\n\
+tällä hetkellä määritetty.\n\
+Jos annetaan pelkkä tiedostotyyppi, näyttää siihen liitetyn avauskomennon,\n\
+jos sellainen on.\n\
+Jos yhtäsuuruusmerkin jälkeen ei määritetä avauskomentoa, määritettyyn\n\
+tiedostotyyppiin liitetty komentomerkkijono poistetaan.\n"
+    WCMD_MORE, "MORE näyttää tiedostojen tai putkitetun syötteen tulosteen sivuittain.\n"
+    WCMD_CHOICE, "CHOICE näyttää tekstin ja odottaa, kunnes käyttäjä painaa sallittua näppäintä\n\
+valittavissa olevasta luettelosta.\n\
+CHOICE-komentoa käytetään lähinnä valikkojen tekemiseen komentojonotiedostoissa.\n"
+    WCMD_EXIT, "EXIT lopettaa nykyisen komentoistunnon ja palaa käyttöjärjestelmään\n\
+tai komentotulkkiin, josta cmd käynnistettiin.\n"
+    WCMD_MKLINK, "Luo symbolisen linkin.\n\
+\n\
+Syntaksi: MKLINK [valitsimet] linkin_nimi kohde\n\
+\n\
+Valitsimet:\n\
+/d             Luo hakemiston symbolisen linkin.\n\
+/h             Luo kiinteän linkin.\n\
+/j             Luo hakemistoliitoksen.\n\
+linkin_nimi on uuden symbolisen linkin nimi.\n\
+kohde on polku, johon linkin_nimi osoittaa.\n"
+    WCMD_ALLHELP, "CMD:n sisäiset komennot ovat:\n\
+ASSOC\t\tNäytä tai muuta tiedostotunnisteiden kytkentöjä\n\
+ATTRIB\t\tNäytä tai muuta DOS-tiedostomääritteitä\n\
+CALL\t\tKutsu komentojonotiedostoa toisen sisältä\n\
+CD (CHDIR)\tVaihda nykyinen oletushakemisto\n\
+CHOICE\t\tOdota näppäinpainallusta valittavissa olevasta luettelosta\n\
+CLS\t\tTyhjennä konsolin näyttö\n\
+COPY\t\tKopioi tiedosto\n\
+CTTY\t\tVaihda syöte- ja tulostelaite\n\
+DATE\t\tNäytä tai muuta järjestelmän päivämäärä\n\
+DEL (ERASE)\tPoista tiedosto tai tiedostojoukko\n\
+DIR\t\tLuettele hakemiston sisältö\n\
+ECHO\t\tKopioi teksti suoraan konsolin tulosteeseen\n\
+ENDLOCAL\tLopeta ympäristömuutosten paikallistaminen komentojonotiedostossa\n\
+FTYPE\t\tNäytä tai muuta tiedostotyyppeihin liitettyjä avauskomentoja\n\
+HELP\t\tNäytä lyhyt ohje aiheesta\n\
+MD (MKDIR)\tLuo alihakemisto\n\
+MKLINK\tLuo symbolinen linkki\n\
+MORE\t\tNäytä tuloste sivuittain\n\
+MOVE\t\tSiirrä tiedosto, tiedostojoukko tai hakemistopuu\n\
+PATH\t\tAseta tai näytä hakupolku\n\
+PAUSE\t\tKeskeytä komentojonotiedoston suoritus\n\
+POPD\t\tPalauta hakemistoksi viimeksi PUSHD:llä tallennettu\n\
+PROMPT\t\tMuuta komentokehote\n\
+PUSHD\t\tVaihda uuteen hakemistoon ja tallenna nykyinen\n\
+REN (RENAME)\tNimeä tiedosto uudelleen\n\
+RD (RMDIR)\tPoista alihakemisto\n\
+SET\t\tAseta tai näytä ympäristömuuttujat\n\
+SETLOCAL\tAloita ympäristömuutosten paikallistaminen komentojonotiedostossa\n\
+START\t\tKäynnistä ohjelma tai avaa asiakirja siihen liitetyssä ohjelmassa\n\
+TIME\t\tAseta tai näytä järjestelmän nykyinen aika\n\
+TITLE\t\tAseta CMD-istunnon ikkunan otsikko\n\
+TYPE\t\tNäytä tekstitiedoston sisältö\n\
+VER\t\tNäytä CMD:n nykyinen versio\n\
+VOL\t\tNäytä levylaitteen taltion nimi\n\
+XCOPY\t\tKopioi lähdetiedostot tai hakemistopuut kohteeseen\n\
+EXIT\t\tSulje CMD\n\
+\n\
+Kirjoita HELP <komento>, niin saat lisätietoja mistä tahansa yllä olevasta komennosta.\n"
+    WCMD_CONFIRM, "Oletko varma?"
+    WCMD_YES, "K"
+    WCMD_NO, "E"
+    WCMD_NOASSOC, "Tiedostotunnisteelle %1 ei ole kytkentää\n"
+    WCMD_NOFTYPE, "Tiedostotyyppiin '%1' ei ole liitetty avauskomentoa\n"
+    WCMD_OVERWRITE, "Korvataanko %1?"
+    WCMD_MORESTR, "Lisää..."
+    WCMD_TRUNCATEDLINE, "Komentojonon käsittelyssä rivi on mahdollisesti katkaistu. Käytetään:\n"
+    WCMD_NYI, "Ei vielä toteutettu\n\
+\n"
+    WCMD_NOARG, "Argumentti puuttuu\n"
+    WCMD_SYNTAXERR, "Syntaksivirhe\n"
+    WCMD_FILENOTFOUND, "%1: Tiedostoa ei löydy\n"
+    WCMD_NOCMDHELP, "Kohteelle %1 ei ole ohjetta\n"
+    WCMD_NOTARGET, "GOTO-komennon kohdetta ei löydy\n"
+    WCMD_CURRENTDATE, "Nykyinen päivämäärä on %1\n"
+    WCMD_CURRENTTIME, "Nykyinen aika on %1\n"
+    WCMD_NEWDATE, "Anna uusi päivämäärä: "
+    WCMD_NEWTIME, "Anna uusi aika: "
+    WCMD_MISSINGENV, "Ympäristömuuttujaa %1 ei ole määritetty\n"
+    WCMD_READFAIL, "Kohteen '%1' avaaminen epäonnistui\n"
+    WCMD_CALLINSCRIPT, "Komentojonon nimiötä ei voi kutsua komentojonotiedoston ulkopuolelta\n"
+    WCMD_ALL, "A"
+    WCMD_DELPROMPT, "Poistetaanko %1?"
+    WCMD_ECHOPROMPT, "Echo on %1\n"
+    WCMD_VERIFYPROMPT, "Verify on %1\n"
+    WCMD_VERIFYERR, "Verify-arvon on oltava ON tai OFF\n"
+    WCMD_ARGERR, "Parametrivirhe\n"
+    WCMD_VOLUMESERIALNO, "Taltion sarjanumero on %1!04x!-%2!04x!\n\
+\n"
+    WCMD_VOLUMEPROMPT, "Taltion nimi (11 merkkiä, <Enter>, jos ei mitään)?"
+    WCMD_ANYKEY, "Jatka painamalla mitä tahansa näppäintä... "
+    WCMD_CONSTITLE, "Wine-komentokehote"
+    WCMD_VERSION, "Microsoft Windows [Versio %1!S!]\n"
+    WCMD_BANNER, "LiberNT [Versio %1!S! %2!S!]\n\
+(C) Copyright %3!S! LiberNT Team.\n"
+    WCMD_MOREPROMPT, "Lisää? "
+    WCMD_LINETOOLONG, "Syöterivi on liian pitkä.\n"
+    WCMD_VOLUMELABEL, "Aseman %1!c! taltio on %2\n"
+    WCMD_VOLUMENOLABEL, "Aseman %1!c! taltiolla ei ole nimeä.\n"
+    WCMD_YESNO, " (Kyllä|Ei)"
+    WCMD_YESNOALL, " (Kyllä|Ei|Aina)"
+    WCMD_NO_COMMAND_FOUND, "'%1' ei ole tunnistettu sisäiseksi tai ulkoiseksi komennoksi eikä komentojonotiedostoksi.\n"
+    WCMD_DIVIDEBYZERO, "Nollalla jakamisen virhe.\n"
+    WCMD_NOOPERAND, "Odotettiin operandia.\n"
+    WCMD_NOOPERATOR, "Odotettiin operaattoria.\n"
+    WCMD_BADPAREN, "Sulkeet eivät täsmää.\n"
+    WCMD_BADHEXOCT, "Virheellisesti muodostettu luku - on oltava desimaaliluku (12),\n\
+ heksadesimaaliluku (0x34) tai oktaaliluku (056).\n"
+    WCMD_FILENAMETOOLONG, "Tiedostonimi on liian pitkä.\n"
+    WCMD_BADTOKEN, "Syntaksivirhe: odottamaton %1\n"
+    WCMD_ENDOFLINE, "Rivin loppu"
+    WCMD_ENDOFFILE, "Tiedoston loppu"
+    WCMD_NUMCOPIED, "%t%1!u! tiedosto(a) kopioitu\n"
+    WCMD_NOCOPYTOSELF, "Tiedostoa ei voi kopioida itsensä päälle.\n"
+}

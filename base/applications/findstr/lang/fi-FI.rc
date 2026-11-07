@@ -1,0 +1,40 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "Etsii tiedostoista rivejä, joissa on annettuja merkkijonoja.\n\n\
+FINDSTR [/B] [/E] [/L] [/R] [/S] [/I] [/X] [/V] [/N] [/M] [/O] [/P]\n\
+        [/F:file] [/C:string] [/G:file] [/D:directories] [/A:color]\n\
+        [/OFF[LINE]] strings [[drive:][path]filename [...]]\n\n\
+  /B           Vastaavuus vain rivin alussa.\n\
+  /E           Vastaavuus vain rivin lopussa.\n\
+  /L           Käsittelee hakumerkkijonot kirjaimellisena tekstinä.\n\
+  /R           Käsittelee hakumerkkijonot säännöllisinä lausekkeina.\n\
+  /S           Etsii vastaavia tiedostoja myös kaikista alihakemistoista.\n\
+  /I           Ei erottele isoja ja pieniä kirjaimia.\n\
+  /X           Vastaavuus vain riveihin, jotka ovat samat kuin hakumerkkijono.\n\
+  /V           Tulostaa rivit, jotka eivät vastaa hakua.\n\
+  /N           Tulostaa rivinumeron ennen kutakin riviä.\n\
+  /M           Tulostaa vain vastaavien tiedostojen nimet.\n\
+  /O           Tulostaa kunkin rivin siirtymän tiedostossaan.\n\
+  /P           Ohittaa tiedostot, joissa on tulostumattomia merkkejä.\n\
+  /OFF[LINE]   Etsii myös offline-tilaan merkityistä tiedostoista.\n\
+  /A:color     Tulostaa tiedostonimet tällä värillä (kaksi heksanumeroa, ks. COLOR /?).\n\
+  /F:file      Lukee etsittävien tiedostojen nimet tiedostosta (/ on konsoli).\n\
+  /C:string    Etsii merkkijonoa yhtenä kirjaimellisena merkkijonona välilyönteineen.\n\
+  /G:file      Lukee hakumerkkijonot tiedostosta (/ on konsoli).\n\
+  /D:dirs      Etsii puolipisteillä erotetusta hakemistoluettelosta.\n\
+  strings      Etsittävä teksti; välilyönnit erottavat vaihtoehtoiset merkkijonot.\n\
+  filename     Etsittävät tiedostot; yleismerkit ovat sallittuja. Jos tiedostoa\n\
+               ei anneta, luetaan vakiosyötettä.\n\n\
+Hakumerkkijonot ovat kirjaimellisia, ellei /R ole annettu tai ensimmäinen\n\
+sisällä säännöllisen lausekkeen merkkiä. /C-merkkijonot ovat kirjaimellisia, ellei /R ole annettu.\n\n\
+Säännölliset lausekkeet:\n\
+  .       mikä tahansa merkki      *       toistaa edellisen kohteen\n\
+  ^       rivin alku               $       rivin loppu\n\
+  [set]   yksi merkki joukosta     [^set]  yksi merkki joukon ulkopuolelta\n\
+  [a-z]   yksi merkki väliltä      \\x      merkki x itse\n\
+  \\<      sanan alku               \\>      sanan loppu"
+    IDS_NO_SUCH_FILE "FINDSTR: Tiedostoa %s ei voi avata\n"
+    IDS_CANNOT_OPEN "FINDSTR: Tiedostoa %s ei voi avata\n"
+END

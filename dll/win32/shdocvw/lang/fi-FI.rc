@@ -1,0 +1,23 @@
+/*
+ * PROJECT:     ReactOS shdocvw
+ * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
+ * PURPOSE:     Finnish resource file
+ * TRANSLATORS: Copyright 2009 Andrew Hill <ash77@reactos.org>
+ *              Copyright 2024 Katayama Hirofumi MZ <katayama.hirofumi.mz@gmail.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_ADD "Lisää..."
+    IDS_ORGANIZE "Järjestä..."
+    IDS_FOLDERSLABEL "Kansiot"
+    IDS_ATTACHMENT_TITLE "Tiedoston lataus"
+    IDS_ATTACHMENT_OPEN "Haluatko avata tämän tiedoston?"
+    IDS_ATTACHMENT_SAVE "Haluatko tallentaa tämän tiedoston?"
+    IDS_ATTACHMENT_OPENSAVE "Haluatko avata vai tallentaa tämän tiedoston? Valitse Kyllä avataksesi sen tai Ei tallentaaksesi sen."
+    IDS_ATTACHMENT_BLOCKED "Tämä tiedosto estettiin, koska se voisi vahingoittaa tietokonettasi."
+    IDS_ATTACHMENT_NAME "Nimi: %s"
+    IDS_ATTACHMENT_FROM "Lähde: %s"
+END

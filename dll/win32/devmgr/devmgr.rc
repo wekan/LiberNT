@@ -45,6 +45,9 @@ IDB_TOOLBAR     BITMAP  "resources/toolbar.bmp"
 #ifdef LANGUAGE_ET_EE
     #include "lang/et-EE.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "lang/fi-FI.rc"
+#endif
 #ifdef LANGUAGE_HE_IL
     #include "lang/he-IL.rc"
 #endif

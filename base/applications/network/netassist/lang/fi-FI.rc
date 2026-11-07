@@ -1,0 +1,33 @@
+/*
+ * PROJECT:     LiberNT Network Assistance
+ * LICENSE:     GPL-3.0-or-later (https://spdx.org/licenses/GPL-3.0-or-later)
+ * PURPOSE:     Finnish resources
+ * COPYRIGHT:   Copyright 2026 Ahmed ARIF <arif.ing@outlook.com>
+ */
+
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+IDD_ASSIST DIALOGEX 0, 0, 264, 204
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX
+CAPTION "Verkkotuki"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    ICON IDI_ASSIST, -1, 12, 12, 20, 20
+    LTEXT "", IDC_STATE, 40, 16, 212, 12
+    LTEXT "", IDC_DETAIL, 12, 40, 240, 82
+    EDITTEXT IDC_KEY, 12, 126, 240, 14, ES_CENTER | ES_READONLY | ES_AUTOHSCROLL
+    PUSHBUTTON "&Kopioi avain", IDC_COPY, 12, 146, 64, 14
+    CONTROL "Ota ensin yhteyttä tiimiin: <a href=""https://discord.gg/BpcKg7FZ2"">Discord</a> tai <a href=""https://matrix.to/#/#libernt:matrix.org"">Matrix</a>.", IDC_LINKS, "SysLink", WS_TABSTOP, 12, 168, 240, 10
+    DEFPUSHBUTTON "Sulje", IDCANCEL, 188, 182, 64, 14
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ON "Verkkotuki on käytössä"
+    IDS_ON_DETAIL "Tämä käynnistys tehtiin verkkotuki käytössä. LiberNT-kehittäjä, jolla on alla oleva avain, voi muodostaa yhteyden tämän koneen ytimen virheenkorjaimeen ja tutkia konetta.\n\nLähetä avain yksityisviestinä sille kehittäjälle, joka auttaa sinua. Avain on voimassa seuraavaan uudelleenkäynnistykseen asti."
+    IDS_OFF "Verkkotuki ei ole käytössä"
+    IDS_OFF_DETAIL "LiberNT-kehittäjä voi tutkia tämän koneen vikaa verkon kautta, kun kone käynnistetään verkkotuki käytössä:\n\n1. Käynnistä tietokone uudelleen.\n2. Paina käynnistysvalikossa F8.\n3. Valitse ""Debugging"".\n4. Käynnistä tämä ohjelma uudelleen ja lähetä avain kehittäjälle."
+    IDS_DENIED_DETAIL "Tämä käynnistys tehtiin verkkotuki käytössä, mutta tällä tilillä ei ole oikeutta lukea avainta. Avain näkyy myös työpöydän kulmassa."
+    IDS_COPIED "Kopioitu"
+    IDS_LINK_FAILED "Tätä osoitetta ei voitu avata tässä. Avaa se toisella laitteella:\n\n%s"
+END
