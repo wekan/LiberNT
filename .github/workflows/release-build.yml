@@ -1,0 +1,278 @@
+name: Release build
+
+# Shared by "Release All" (release-all.yml) and "Release All Missing"
+# (release-all-missing.yml). It is called, never run by itself, so the
+# platform table and the build steps exist once and the two cannot drift apart.
+#
+# WHAT IT BUILDS: the boot CD and disk images of every platform that LiberNT's
+# own CI (build.yml, build-linux) builds images for, configured the same way:
+#
+#   id                    compiler  arch     profile
+#   i386                  gcc       i386     -
+#   amd64                 clang     amd64    -
+#   arm64-raspberry       clang     arm64    profile_raspberry
+#   riscv64-spacemit-k1   clang     riscv64  profile_spacemit_k1
+#   ppc                   clang     ppc      -
+#
+# Each one gives bootcd.iso, LiberNT.img, LiberNT.vhd and LiberNT.vhdx. They go
+# on the release zipped (a GitHub release asset must be under 2 GiB, and an
+# image compresses well), each zip with a .sha256 beside it:
+#
+#   LiberNT-<tag>-<id>-bootcd.iso.zip       LiberNT-<tag>-<id>-bootcd.iso.zip.sha256
+#   LiberNT-<tag>-<id>-LiberNT.img.zip      ...
+#
+# build.yml's build-msvc job (amd64, i386, arm64) only compiles; it builds no
+# image, so it has nothing to release and the same CPUs are covered above.
+#
+# mode: all      every platform, uploads with --clobber.
+#       missing  only the platforms whose release lacks a zip or a .sha256,
+#                uploading only the files the release does not have.
+
+on:
+  workflow_call:
+    inputs:
+      mode:
+        description: 'all or missing'
+        required: true
+        type: string
+      tag:
+        description: 'Release tag (empty = a new one for "all", the newest release for "missing")'
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+env:
+  IMAGES: bootcd.iso LiberNT.img LiberNT.vhd LiberNT.vhdx
+
+jobs:
+  plan:
+    name: plan the release
+    runs-on: ubuntu-24.04
+    outputs:
+      tag: ${{ steps.plan.outputs.tag }}
+      sha: ${{ steps.plan.outputs.sha }}
+      matrix: ${{ steps.plan.outputs.matrix }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - name: Source checkout
+        uses: actions/checkout@v6
+
+      - name: Resolve the tag and plan the platforms
+        id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MODE: ${{ inputs.mode }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+          PLATFORMS='[
+            {"id": "i386",                "compiler": "gcc",   "arch": "i386",    "profile": ""},
+            {"id": "amd64",               "compiler": "clang", "arch": "amd64",   "profile": ""},
+            {"id": "arm64-raspberry",     "compiler": "clang", "arch": "arm64",   "profile": "profile_raspberry"},
+            {"id": "riscv64-spacemit-k1", "compiler": "clang", "arch": "riscv64", "profile": "profile_spacemit_k1"},
+            {"id": "ppc",                 "compiler": "clang", "arch": "ppc",     "profile": ""}
+          ]'
+
+          ver() { sed -n "s/^set(KERNEL_VERSION_$1 \"\(.*\)\")$/\1/p" sdk/include/reactos/version.cmake; }
+          BUILD_TYPE="$(ver BUILD_TYPE)"
+
+          if [ -z "$TAG" ] && [ "$MODE" = "missing" ]; then
+            TAG="$(gh release list --repo "$GITHUB_REPOSITORY" --exclude-drafts --limit 1 --json tagName --jq '.[0].tagName // empty')"
+            [ -n "$TAG" ] || { echo "::error::There is no release yet. Run Release All first."; exit 1; }
+          fi
+          if [ -z "$TAG" ]; then
+            # LiberNT has no release tags of its own: the version in
+            # version.cmake, the build date (KERNEL_VERSION_BUILD is the same
+            # date) and the commit.
+            TAG="v$(ver MAJOR).$(ver MINOR).$(ver PATCH_LEVEL)${BUILD_TYPE:+-$BUILD_TYPE}-$(date -u +%Y%m%d)-${GITHUB_SHA::7}"
+          fi
+
+          # The commit to build: the tag's, when the tag exists, so a missing
+          # platform is built from the same source as the others on its release.
+          if SHA="$(gh api "repos/$GITHUB_REPOSITORY/commits/$TAG" --jq .sha 2>/dev/null)"; then
+            echo "Tag $TAG is commit $SHA."
+          elif [ "$MODE" = "missing" ]; then
+            echo "::error::Tag $TAG does not exist, so there is no commit to complete it from."; exit 1
+          else
+            SHA="$GITHUB_SHA"
+            echo "Tag $TAG is new; it will point at $SHA."
+          fi
+
+          if ! gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            PRE=""; [ -n "$BUILD_TYPE" ] && PRE="--prerelease"
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --target "$SHA" $PRE --title "LiberNT $TAG" --notes "$(cat <<'NOTES'
+          LiberNT boot CD and disk images, built by the Release All workflow of wekan/LiberNT with the same configuration as LiberNT's own CI.
+
+          | Platform | Compiler | Board profile |
+          | --- | --- | --- |
+          | i386 | GCC | - |
+          | amd64 | Clang | - |
+          | arm64-raspberry | Clang | Raspberry Pi |
+          | riscv64-spacemit-k1 | Clang | SpacemiT K1 |
+          | ppc | Clang | - |
+
+          Each platform has bootcd.iso, LiberNT.img, LiberNT.vhd and LiberNT.vhdx, zipped, each with a .sha256 beside it.
+          NOTES
+          )"
+          fi
+
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | sort > existing.txt
+          echo "$TAG carries $(wc -l < existing.txt | tr -d ' ') asset(s)."
+
+          # A platform is complete when every image zip AND its .sha256 is on
+          # the release: an image whose checksum upload failed is half-published.
+          echo "$PLATFORMS" | jq -c '.[]' > platforms.jsonl
+          : > wanted.jsonl
+          while IFS= read -r p; do
+            id="$(jq -r .id <<<"$p")"
+            missing=""
+            for img in $IMAGES; do
+              for f in "LiberNT-$TAG-$id-$img.zip" "LiberNT-$TAG-$id-$img.zip.sha256"; do
+                grep -qxF "$f" existing.txt || missing="$missing $f"
+              done
+            done
+            if [ "$MODE" = "all" ] || [ -n "$missing" ]; then
+              echo "$p" >> wanted.jsonl
+              echo "  $id: build${missing:+ (missing:$missing)}"
+            else
+              echo "  $id: complete"
+            fi
+          done < platforms.jsonl
+
+          MATRIX="$(jq -cs '{include: .}' wanted.jsonl)"
+          COUNT="$(wc -l < wanted.jsonl | tr -d ' ')"
+          {
+            echo "tag=$TAG"
+            echo "sha=$SHA"
+            echo "matrix=$MATRIX"
+            echo "count=$COUNT"
+          } >> "$GITHUB_OUTPUT"
+          {
+            echo "### $TAG ($MODE)"
+            echo ""
+            if [ "$COUNT" -eq 0 ]; then echo "Nothing is missing - the release is complete."
+            else echo "Building: $(jq -r '[.include[].id] | join(", ")' <<<"$MATRIX")"; fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  build:
+    name: build ${{ matrix.id }}
+    needs: plan
+    if: ${{ needs.plan.outputs.count != '0' }}
+    strategy:
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+      fail-fast: false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    env:
+      TAG: ${{ needs.plan.outputs.tag }}
+    steps:
+    - name: Free disk space
+      run: |
+        df -h /
+        sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL /usr/share/swift /usr/lib/jvm /usr/local/share/powershell /usr/local/share/chromium
+        sudo docker system prune --all --force
+        df -h /
+
+    - name: Source checkout
+      uses: actions/checkout@v6
+      with:
+        ref: ${{ needs.plan.outputs.sha }}
+
+    - name: Install host build tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake ninja-build flex bison ccache wget xz-utils tar python3-mako python3-yaml python3-packaging glslang-tools msitools zip
+
+    - name: Compute RosBE bootstrap SHA
+      id: rosbe_spec
+      run: |
+        curl -fsSL https://raw.githubusercontent.com/LiberNT/libernt-build-toolchain/main/rosbe-unix-bootstrap.sh -o /tmp/rosbe-bootstrap.sh
+        echo "sha=$(sha1sum /tmp/rosbe-bootstrap.sh | awk '{print $1}')" >> "$GITHUB_OUTPUT"
+
+    - name: Cache RosBE
+      id: cache_rosbe
+      uses: actions/cache@v5
+      with:
+        path: ~/.local/opt/rosbe
+        key: rosbe-${{runner.os}}-${{steps.rosbe_spec.outputs.sha}}
+
+    - name: Install RosBE
+      if: ${{ steps.cache_rosbe.outputs.cache-hit != 'true' }}
+      run: sh /tmp/rosbe-bootstrap.sh
+
+    - name: Configure
+      id: configure
+      run: |
+        . "$HOME/.local/opt/rosbe/rosbe-env.sh"
+        FLAGS=""
+        [ "${{matrix.compiler}}" = "clang" ] && FLAGS="$FLAGS --clang"
+        [ "${{matrix.compiler}}" = "gcc" ] && FLAGS="$FLAGS --gcc"
+        [ -n "${{matrix.profile}}" ] && FLAGS="$FLAGS -DROSCONFIG_PROFILE=${{matrix.profile}}"
+        [ "${{matrix.compiler}}" = "clang" ] && case "${{matrix.arch}}" in amd64|arm64|riscv64) FLAGS="$FLAGS -DENABLE_MESA_LLVMPIPE=ON" ;; esac
+        ./configure.sh $FLAGS -a ${{matrix.arch}} \
+          -DREACTOS_TARGET_NT=0xA00 \
+          -DDIAGDATA_CHANNEL= \
+          -DENABLE_CCACHE=0
+        ENV_NAME=$([ "${{matrix.compiler}}" = "clang" ] && echo Clang || echo GCC)
+        echo "outdir=output-$ENV_NAME-${{matrix.arch}}-debug" >> "$GITHUB_OUTPUT"
+
+    - name: Build submodules
+      run: |
+        . "$HOME/.local/opt/rosbe/rosbe-env.sh"
+        ninja -C ${{steps.configure.outputs.outdir}} submodules
+
+    - name: Build images
+      run: |
+        . "$HOME/.local/opt/rosbe/rosbe-env.sh"
+        ninja -C ${{steps.configure.outputs.outdir}} bootcd liberntimg liberntvhd -k0
+
+    - name: Package the images
+      env:
+        OUTDIR: ${{steps.configure.outputs.outdir}}
+        ID: ${{ matrix.id }}
+      run: |
+        set -euo pipefail
+        mkdir -p dist
+        for img in $IMAGES; do
+          # `-k0` keeps building past a failure, so an image can be absent:
+          # that is a failed platform, not one to publish without it.
+          [ -f "$OUTDIR/$img" ] || { echo "::error::$ID: $img was not built."; exit 1; }
+          zip -9 -j "dist/LiberNT-$TAG-$ID-$img.zip" "$OUTDIR/$img"
+        done
+        cd dist
+        for z in *.zip; do
+          size="$(stat -c %s "$z")"
+          [ "$size" -lt $((2 * 1024 * 1024 * 1024)) ] || { echo "::error::$z is $size bytes, over GitHub's 2 GiB asset limit."; exit 1; }
+          sha256sum "$z" > "$z.sha256"
+        done
+        ls -l
+
+    - name: Upload to the release
+      env:
+        GH_TOKEN: ${{ github.token }}
+        MODE: ${{ inputs.mode }}
+      run: |
+        set -euo pipefail
+        shopt -s nullglob
+        files=( dist/* )
+        if [ "$MODE" = "all" ]; then
+          gh release upload "$TAG" "${files[@]}" --repo "$GITHUB_REPOSITORY" --clobber
+          echo "Uploaded ${#files[@]} file(s) to $TAG."
+          exit 0
+        fi
+        # missing: only files the release does not have, so a platform rebuilt
+        # for one absent file does not replace the bytes of the others.
+        gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | sort > existing.txt
+        new=()
+        for f in "${files[@]}"; do
+          grep -qxF "$(basename "$f")" existing.txt || new+=( "$f" )
+        done
+        if [ "${#new[@]}" -eq 0 ]; then
+          echo "::notice::$TAG already had every file of ${{ matrix.id }}."
+          exit 0
+        fi
+        gh release upload "$TAG" "${new[@]}" --repo "$GITHUB_REPOSITORY"
+        printf 'Added %s\n' "${new[@]#dist/}"

@@ -1,0 +1,33 @@
+name: Release All Missing
+
+# Build only the platforms a release does not fully carry and upload only the
+# files it lacks. A platform is rebuilt when any of its four images, or the
+# .sha256 of one, is absent - a build that failed or an upload that did. Files
+# already on the release are never replaced. The platforms and the build are in
+# release-build.yml; the source is the commit the release's tag points at.
+#
+# Usage:
+#   gh workflow run release-all-missing.yml              # the newest release
+#   gh workflow run release-all-missing.yml -f tag=v0.4.17-dev-20261107-5a85856
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to complete (empty = the newest release)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: libernt-release-${{ inputs.tag || 'newest' }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    uses: ./.github/workflows/release-build.yml
+    with:
+      mode: missing
+      tag: ${{ inputs.tag }}
