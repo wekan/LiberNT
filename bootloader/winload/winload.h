@@ -145,6 +145,11 @@ AppendBootTimeOptions(
     _In_ SIZE_T BootOptionsSize,
     _In_ PBM_STARTUP Startup);
 
+VOID
+OslTrace(
+    _In_z_ _Printf_format_string_ PCSTR Format,
+    ...);
+
 BOOLEAN
 OslBuildRamdisk(
     _In_ PBCD_DEVICE BcdDevice,
@@ -167,6 +172,10 @@ OslFinishRamdiskMove(VOID);
 
 VOID
 OslArchPlaceRamdisk(VOID);
+
+VOID
+OslArchReserveFirmwareMemory(
+    _In_ PLOADER_PARAMETER_BLOCK LoaderBlock);
 
 VOID
 OslArchInitialize(VOID);
@@ -225,6 +234,14 @@ OslHttpSync(
     _In_ PDK_DEVICE OsDevice,
     _In_ PCSTR Url,
     _In_opt_ PCSTR Address);
+
+VOID
+OslInstallImage(
+    _In_ PDK_DEVICE OsDevice,
+    _In_z_ PCSTR SystemRoot,
+    _In_z_ PCSTR ImagePath,
+    _In_opt_z_ PCSTR ImageHash,
+    _In_ BOOLEAN Undo);
 
 VOID
 OslHiberMarkOwned(

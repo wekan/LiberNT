@@ -1,0 +1,480 @@
+/*
+ * PROJECT:     LiberNT Cache Manager
+ * FILE:        ntoskrnl/cc/api/ccinit.c
+ * PURPOSE:     Cache manager and file cache initialization
+ *
+ * SPDX-FileCopyrightText: 2026 Ahmed ARIF
+ * SPDX-License-Identifier: GPL-3.0-only
+ */
+
+#include "ccnt.h"
+
+typedef struct _CC_NT_DEFERRED_WRITE
+{
+    LIST_ENTRY Link;
+    PFILE_OBJECT FileObject;
+    PCC_POST_DEFERRED_WRITE PostRoutine;
+    PVOID Context1;
+    PVOID Context2;
+    ULONG BytesToWrite;
+} CC_NT_DEFERRED_WRITE, *PCC_NT_DEFERRED_WRITE;
+
+typedef struct _CC_NT_LAZY_WAITER
+{
+    LIST_ENTRY Link;
+    KEVENT Event;
+} CC_NT_LAZY_WAITER, *PCC_NT_LAZY_WAITER;
+
+CC_CACHE CcNtCache;
+
+BOOLEAN CcPfEnablePrefetcher;
+
+ULONG CcLazyWritePages;
+ULONG CcLazyWriteIos;
+ULONG CcMapDataWait;
+ULONG CcMapDataNoWait;
+ULONG CcPinReadWait;
+ULONG CcPinReadNoWait;
+ULONG CcPinMappedDataCount;
+ULONG CcDataPages;
+ULONG CcDataFlushes;
+ULONG CcFastMdlReadNotPossible;
+ULONG CcFastMdlReadWait;
+ULONG CcFastReadNoWait;
+ULONG CcFastReadNotPossible;
+ULONG CcFastReadResourceMiss;
+ULONG CcFastReadWait;
+
+static KEVENT CcNtLazyWriterEvent;
+static LIST_ENTRY CcNtDeferredWrites;
+static KSPIN_LOCK CcNtDeferredLock;
+static LIST_ENTRY CcNtLazyWaiters;
+static KSPIN_LOCK CcNtLazyWaitLock;
+static BOOLEAN CcNtReady;
+
+NTSTATUS
+CcNtFlushMap(
+    _Inout_ PCC_NT_MAP NtMap,
+    _In_ ULONG64 Offset,
+    _In_ ULONG64 Length,
+    _In_ ULONG MaximumPages,
+    _Out_opt_ PULONG PagesFlushed)
+{
+    ULONG64 End = (Length == (ULONG64)-1 || Offset + Length < Offset) ? (ULONG64)-1 : Offset + Length;
+    ULONG64 Generation = CcBcbBeginFlush(&NtMap->Map);
+    ULONG Flushed = 0;
+    NTSTATUS Status;
+
+    if (NtMap->FlushToLsn != NULL && NtMap->LogHandle != NULL)
+    {
+        ULONG64 Oldest, Newest;
+        ULONG DirtyBcbs;
+
+        if (CcBcbDirtyLsns(&NtMap->Map, &Oldest, &Newest, &DirtyBcbs) && Newest != 0)
+        {
+            LARGE_INTEGER Lsn;
+
+            Lsn.QuadPart = (LONGLONG)Newest;
+            NtMap->FlushToLsn(NtMap->LogHandle, Lsn);
+        }
+    }
+
+    Status = CcDirtyFlush(&NtMap->Map, Offset, Length, MaximumPages, &Flushed);
+
+    if (NT_SUCCESS(Status) && MaximumPages == ~0u)
+        CcBcbCompleteFlush(&NtMap->Map, Offset, End, Generation);
+
+    if (Flushed != 0)
+    {
+        CcDataFlushes++;
+        CcDataPages += Flushed;
+    }
+
+    if (PagesFlushed != NULL)
+        *PagesFlushed = Flushed;
+
+    return Status;
+}
+
+VOID
+CcNtKickLazyWriter(VOID)
+{
+    if (CcNtReady)
+        KeSetEvent(&CcNtLazyWriterEvent, IO_NO_INCREMENT, FALSE);
+}
+
+ULONG
+CcUnmapIdleViews(
+    _In_ SIZE_T Bytes)
+{
+    ULONG64 Views = ((ULONG64)Bytes >> CC_VIEW_SHIFT) + 2;
+
+    if (!CcNtReady)
+        return 0;
+
+    return CcCacheReleaseIdle(&CcNtCache, (ULONG)min(Views, (ULONG64)MAXULONG));
+}
+
+VOID
+CcNtProcessDeferredWrites(VOID)
+{
+    for (;;)
+    {
+        PCC_NT_DEFERRED_WRITE Deferred = NULL;
+        KIRQL OldIrql;
+
+        if (ReadPointerNoFence((PVOID const volatile *)&CcNtDeferredWrites.Flink) == &CcNtDeferredWrites)
+            return;
+
+        KeAcquireSpinLock(&CcNtDeferredLock, &OldIrql);
+
+        if (!IsListEmpty(&CcNtDeferredWrites))
+        {
+            PCC_NT_DEFERRED_WRITE First = CONTAINING_RECORD(CcNtDeferredWrites.Flink, CC_NT_DEFERRED_WRITE, Link);
+
+            if (CcDirtyCanWrite(&CcNtCache, NULL, First->BytesToWrite))
+            {
+                RemoveEntryList(&First->Link);
+                Deferred = First;
+            }
+        }
+
+        KeReleaseSpinLock(&CcNtDeferredLock, OldIrql);
+
+        if (Deferred == NULL)
+            return;
+
+        Deferred->PostRoutine(Deferred->Context1, Deferred->Context2);
+        ExFreePoolWithTag(Deferred, 'wDcC');
+    }
+}
+
+VOID
+NTAPI
+CcDeferWrite(
+    _In_ PFILE_OBJECT FileObject,
+    _In_ PCC_POST_DEFERRED_WRITE PostRoutine,
+    _In_ PVOID Context1,
+    _In_ PVOID Context2,
+    _In_ ULONG BytesToWrite,
+    _In_ BOOLEAN Retrying)
+{
+    PCC_NT_DEFERRED_WRITE Deferred = ExAllocatePoolWithTag(NonPagedPool, sizeof(*Deferred), 'wDcC');
+    KIRQL OldIrql;
+
+    if (Deferred == NULL)
+    {
+        PostRoutine(Context1, Context2);
+        return;
+    }
+
+    Deferred->FileObject = FileObject;
+    Deferred->PostRoutine = PostRoutine;
+    Deferred->Context1 = Context1;
+    Deferred->Context2 = Context2;
+    Deferred->BytesToWrite = BytesToWrite;
+
+    KeAcquireSpinLock(&CcNtDeferredLock, &OldIrql);
+    if (Retrying)
+        InsertHeadList(&CcNtDeferredWrites, &Deferred->Link);
+    else
+        InsertTailList(&CcNtDeferredWrites, &Deferred->Link);
+    KeReleaseSpinLock(&CcNtDeferredLock, OldIrql);
+
+    CcNtKickLazyWriter();
+}
+
+static
+BOOLEAN
+CcNtReferenceDirtyMap(
+    _In_ PCC_MAP Map)
+{
+    PCC_NT_MAP Candidate = CONTAINING_RECORD(Map, CC_NT_MAP, Map);
+    PCC_NT_MAP_BUCKET Bucket = CcNtMapBucket(Candidate->Pointers);
+    BOOLEAN Live;
+
+    KeAcquireSpinLockAtDpcLevel(&Bucket->Lock);
+    Live = !IsListEmpty(&Candidate->Link);
+    if (Live)
+        InterlockedIncrement(&Candidate->ReferenceCount);
+    KeReleaseSpinLockFromDpcLevel(&Bucket->Lock);
+
+    return Live;
+}
+
+static
+PCC_NT_MAP
+CcNtNextDirtyMap(VOID)
+{
+    BOOLEAN Accepted;
+    PCC_MAP Map;
+    ULONG Tries;
+
+    for (Tries = 0; Tries < 16; Tries++)
+    {
+        Map = CcDirtyNextMapAccept(&CcNtCache, CcNtReferenceDirtyMap, &Accepted);
+        if (Map == NULL)
+            break;
+
+        if (Accepted)
+            return CONTAINING_RECORD(Map, CC_NT_MAP, Map);
+    }
+
+    return NULL;
+}
+
+NTSTATUS
+CcRosFlushDirtyPages(
+    ULONG Target,
+    PULONG Count,
+    BOOLEAN Wait,
+    BOOLEAN CalledFromLazy)
+{
+    ULONG Total = 0;
+    ULONG Visited = 0;
+
+    UNREFERENCED_PARAMETER(Wait);
+
+    while (Total < Target && Visited++ < 256)
+    {
+        PCC_NT_MAP NtMap = CcNtNextDirtyMap();
+        ULONG Flushed = 0;
+
+        if (NtMap == NULL)
+            break;
+
+        KeEnterCriticalRegion();
+        KeWaitForSingleObject(&NtMap->LazyWriteGate, Executive, KernelMode, FALSE, NULL);
+        if (NtMap->Callbacks.AcquireForLazyWrite == NULL ||
+            NtMap->Callbacks.AcquireForLazyWrite(NtMap->LazyWriteContext, Wait))
+        {
+            CcNtFlushMap(NtMap, 0, (ULONG64)-1, Target - Total, &Flushed);
+
+            if (NtMap->Callbacks.ReleaseFromLazyWrite != NULL)
+                NtMap->Callbacks.ReleaseFromLazyWrite(NtMap->LazyWriteContext);
+        }
+        KeSetEvent(&NtMap->LazyWriteGate, IO_NO_INCREMENT, FALSE);
+        KeLeaveCriticalRegion();
+
+        if (CalledFromLazy && Flushed != 0)
+        {
+            CcLazyWriteIos++;
+            CcLazyWritePages += Flushed;
+        }
+
+        Total += Flushed;
+        CcNtDereferenceMap(NtMap);
+    }
+
+    if (Count != NULL)
+        *Count = Total;
+
+    return STATUS_SUCCESS;
+}
+
+static
+VOID
+CcNtTakeLazyWaiters(
+    _Out_ PLIST_ENTRY Waiters)
+{
+    KIRQL OldIrql;
+
+    InitializeListHead(Waiters);
+    KeAcquireSpinLock(&CcNtLazyWaitLock, &OldIrql);
+    while (!IsListEmpty(&CcNtLazyWaiters))
+        InsertTailList(Waiters, RemoveHeadList(&CcNtLazyWaiters));
+    KeReleaseSpinLock(&CcNtLazyWaitLock, OldIrql);
+}
+
+static
+VOID
+CcNtReleaseLazyWaiters(
+    _Inout_ PLIST_ENTRY Waiters)
+{
+    while (!IsListEmpty(Waiters))
+    {
+        PCC_NT_LAZY_WAITER Waiter = CONTAINING_RECORD(RemoveHeadList(Waiters), CC_NT_LAZY_WAITER, Link);
+
+        KeSetEvent(&Waiter->Event, IO_NO_INCREMENT, FALSE);
+    }
+}
+
+static
+VOID
+NTAPI
+CcNtLazyWriter(
+    _In_ PVOID Context)
+{
+    LARGE_INTEGER Period;
+
+    UNREFERENCED_PARAMETER(Context);
+    Period.QuadPart = -10 * 1000 * 1000;
+
+    for (;;)
+    {
+        LIST_ENTRY Waiters;
+        ULONG Target;
+
+        KeWaitForSingleObject(&CcNtLazyWriterEvent, Executive, KernelMode, FALSE, &Period);
+
+        CcNtTakeLazyWaiters(&Waiters);
+        Target = CcDirtyLazyTarget(&CcNtCache);
+        if (Target != 0)
+            CcRosFlushDirtyPages(Target, NULL, TRUE, TRUE);
+
+        CcNtExpireClosedMaps();
+        CcNtProcessDeferredWrites();
+        CcNtReleaseLazyWaiters(&Waiters);
+    }
+}
+
+NTSTATUS
+NTAPI
+CcWaitForCurrentLazyWriterActivity(VOID)
+{
+    CC_NT_LAZY_WAITER Waiter;
+    KIRQL OldIrql;
+
+    if (!CcNtReady)
+        return STATUS_SUCCESS;
+
+    KeInitializeEvent(&Waiter.Event, NotificationEvent, FALSE);
+    KeAcquireSpinLock(&CcNtLazyWaitLock, &OldIrql);
+    InsertTailList(&CcNtLazyWaiters, &Waiter.Link);
+    KeReleaseSpinLock(&CcNtLazyWaitLock, OldIrql);
+
+    CcNtKickLazyWriter();
+    return KeWaitForSingleObject(&Waiter.Event, Executive, KernelMode, FALSE, NULL);
+}
+
+CODE_SEG("INIT")
+BOOLEAN
+CcInitializeCacheManager(VOID)
+{
+    OBJECT_ATTRIBUTES ObjectAttributes;
+    ULONG64 PhysicalBytes = (ULONG64)MmNumberOfPhysicalPages << PAGE_SHIFT;
+    ULONG64 ViewBytes = min(PhysicalBytes, MiSpaceFreeBytes(&MiSystem.SystemSpace)) / 2;
+    ULONG Views = (ULONG)min(ViewBytes >> CC_VIEW_SHIFT, (ULONG64)MAXULONG);
+    LONG64 DirtyThreshold = (LONG64)(MmNumberOfPhysicalPages / 8);
+    HANDLE Handle;
+
+    if (Views < CC_MIN_VIEWS)
+        Views = CC_MIN_VIEWS;
+
+    if (Views > CC_MAX_VIEWS)
+        Views = CC_MAX_VIEWS;
+
+    if (!NT_SUCCESS(CcCacheInitialize(&CcNtCache, Views, DirtyThreshold)))
+        return FALSE;
+
+    CcNtCache.BcbBytes = sizeof(CC_NT_BCB);
+    CcNtCache.BcbCreated = CcNtBcbCreated;
+    CcNtCache.BcbDeleting = CcNtBcbDeleting;
+
+    CcNtInitializeMapTable();
+    InitializeListHead(&CcNtDeferredWrites);
+    KeInitializeSpinLock(&CcNtDeferredLock);
+    InitializeListHead(&CcNtLazyWaiters);
+    KeInitializeSpinLock(&CcNtLazyWaitLock);
+    KeInitializeEvent(&CcNtLazyWriterEvent, SynchronizationEvent, FALSE);
+
+    InitializeObjectAttributes(&ObjectAttributes, NULL, OBJ_KERNEL_HANDLE, NULL, NULL);
+    if (!NT_SUCCESS(PsCreateSystemThread(&Handle, THREAD_ALL_ACCESS, &ObjectAttributes, NULL, NULL, CcNtLazyWriter,
+                                         NULL)))
+    {
+        return FALSE;
+    }
+
+    ZwClose(Handle);
+    CcNtReady = TRUE;
+    return TRUE;
+}
+
+VOID
+NTAPI
+CcShutdownSystem(VOID)
+{
+    ULONG Round;
+
+    for (Round = 0; Round < 64; Round++)
+    {
+        ULONG Flushed = 0;
+
+        CcRosFlushDirtyPages(~0u, &Flushed, TRUE, FALSE);
+        if (Flushed == 0)
+            break;
+    }
+    CcNtExpireClosedMaps();
+}
+
+CODE_SEG("INIT")
+VOID
+NTAPI
+CcPfInitializePrefetcher(VOID)
+{
+}
+
+VOID
+NTAPI
+CcNtQueryDirtyPages(
+    _Out_ PULONG TotalDirtyPages,
+    _Out_ PULONG DirtyPageThreshold)
+{
+    *TotalDirtyPages = (ULONG)CC_ATOMIC_READ64(&CcNtCache.TotalDirtyPages);
+    *DirtyPageThreshold = (ULONG)CcNtCache.DirtyPageThreshold;
+}
+
+VOID
+NTAPI
+CcNtSetDirtyPageThreshold(
+    _In_ ULONG DirtyPageThreshold)
+{
+    CcNtCache.DirtyPageThreshold = DirtyPageThreshold;
+}
+
+#ifdef KDBG
+#include <kdbg/kdb.h>
+
+BOOLEAN
+ExpKdbgExtFileCache(
+    ULONG Argc,
+    PCHAR Argv[])
+{
+    PLIST_ENTRY Entry;
+    ULONG Index;
+
+    UNREFERENCED_PARAMETER(Argc);
+    UNREFERENCED_PARAMETER(Argv);
+
+    KdbpPrint("views %lu hits %I64d misses %I64d reclaims %I64d dirty %I64d\n", CcNtCache.ViewCount,
+              CcNtCache.ViewHits, CcNtCache.ViewMisses, CcNtCache.ViewReclaims, CcNtCache.TotalDirtyPages);
+
+    for (Index = 0; Index < CC_NT_MAP_BUCKETS; Index++)
+    {
+        for (Entry = CcNtMapBuckets[Index].List.Flink; Entry != &CcNtMapBuckets[Index].List; Entry = Entry->Flink)
+        {
+            PCC_NT_MAP NtMap = CONTAINING_RECORD(Entry, CC_NT_MAP, Link);
+
+            KdbpPrint("%p size %I64d views %lu dirty %I64d ", NtMap, (LONGLONG)NtMap->Map.FileSize,
+                      NtMap->Map.ViewsAttached, NtMap->Map.DirtyPages);
+            KdbpPrintUnicodeString(&NtMap->FileObject->FileName);
+            KdbpPrint("\n");
+        }
+    }
+
+    return TRUE;
+}
+
+BOOLEAN
+ExpKdbgExtDefWrites(
+    ULONG Argc,
+    PCHAR Argv[])
+{
+    UNREFERENCED_PARAMETER(Argc);
+    UNREFERENCED_PARAMETER(Argv);
+
+    KdbpPrint("dirty pages %I64d threshold %I64d deferred %s\n", CcNtCache.TotalDirtyPages,
+              CcNtCache.DirtyPageThreshold, IsListEmpty(&CcNtDeferredWrites) ? "none" : "pending");
+    return TRUE;
+}
+#endif

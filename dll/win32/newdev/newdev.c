@@ -197,22 +197,25 @@ UpdateDriverForPlugAndPlayDevicesW(
     OUT PBOOL bRebootRequired OPTIONAL)
 {
     DEVINSTDATA DevInstData;
-    DWORD i;
+    DWORD i, LastError;
     LPWSTR Buffer = NULL;
     DWORD BufferSize;
     LPCWSTR CurrentHardwareId; /* Pointer into Buffer */
     DWORD Property;
     BOOL FoundHardwareId, FoundAtLeastOneDevice = FALSE;
     BOOL FoundCurrentDriver = FALSE;
-    BOOL ret = FALSE;
+    BOOL ret = FALSE, Wow64 = FALSE;
 
     DevInstData.hDevInfo = INVALID_HANDLE_VALUE;
 
     TRACE("UpdateDriverForPlugAndPlayDevicesW(%p %s %s 0x%x %p)\n",
         hwndParent, debugstr_w(HardwareId), debugstr_w(FullInfPath), InstallFlags, bRebootRequired);
 
-    if (bRebootRequired)
-        *bRebootRequired = FALSE;
+    if (IsWow64Process(GetCurrentProcess(), &Wow64) && Wow64)
+    {
+        SetLastError(ERROR_IN_WOW64);
+        return FALSE;
+    }
 
     if (!HardwareId || !FullInfPath)
     {
@@ -233,6 +236,9 @@ UpdateDriverForPlugAndPlayDevicesW(
         SetLastError(ERROR_FILE_NOT_FOUND);
         goto cleanup;
     }
+
+    if (bRebootRequired)
+        *bRebootRequired = FALSE;
 
     /* Enumerate all devices of the system */
     DevInstData.hDevInfo = SetupDiGetClassDevsW(NULL, NULL, hwndParent, DIGCF_ALLCLASSES | DIGCF_PRESENT);
@@ -366,7 +372,6 @@ UpdateDriverForPlugAndPlayDevicesW(
         //if (!InstallCurrentDriver(&DevInstData))
         if (!InstallCurrentDriver(&DevInstData) && GetLastError() != ERROR_PRIVILEGE_NOT_HELD)
         {
-            TRACE("InstallCurrentDriver() failed with error 0x%x\n", GetLastError());
             continue;
         }
 
@@ -392,9 +397,11 @@ UpdateDriverForPlugAndPlayDevicesW(
     }
 
 cleanup:
+    LastError = GetLastError();
     if (DevInstData.hDevInfo != INVALID_HANDLE_VALUE)
         SetupDiDestroyDeviceInfoList(DevInstData.hDevInfo);
     HeapFree(GetProcessHeap(), 0, Buffer);
+    SetLastError(LastError);
     return ret;
 }
 
@@ -1318,7 +1325,6 @@ InstallCurrentDriver(
         &DevInstData->devInfoData);
     if (!ret)
     {
-        TRACE("SetupDiCallClassInstaller(DIF_SELECTBESTCOMPATDRV) failed with error 0x%x\n", GetLastError());
         return FALSE;
     }
 
@@ -1418,7 +1424,6 @@ InstallSelectedDriver(
         &DevInstData->devInfoData);
     if (!ret)
     {
-        TRACE("SetupDiCallClassInstaller(DIF_INSTALLDEVICEFILES) failed with error 0x%x\n", GetLastError());
         return FALSE;
     }
 
@@ -1428,7 +1433,6 @@ InstallSelectedDriver(
         &DevInstData->devInfoData);
     if (!ret)
     {
-        TRACE("SetupDiCallClassInstaller(DIF_REGISTER_COINSTALLERS) failed with error 0x%x\n", GetLastError());
         return FALSE;
     }
 
@@ -1438,7 +1442,6 @@ InstallSelectedDriver(
         &DevInstData->devInfoData);
     if (!ret)
     {
-        TRACE("SetupDiCallClassInstaller(DIF_INSTALLINTERFACES) failed with error 0x%x\n", GetLastError());
         return FALSE;
     }
 
@@ -1448,7 +1451,6 @@ InstallSelectedDriver(
         &DevInstData->devInfoData);
     if (!ret)
     {
-        TRACE("SetupDiCallClassInstaller(DIF_INSTALLDEVICE) failed with error 0x%x\n", GetLastError());
         return FALSE;
     }
 

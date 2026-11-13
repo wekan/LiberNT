@@ -46,7 +46,7 @@ add_library(felix86_zydis OBJECT ${FELIX86_ZYDIS_SOURCES})
 target_include_directories(felix86_zydis PRIVATE ${FELIX86_INCLUDE_DIRECTORIES})
 target_compile_definitions(felix86_zydis PRIVATE
     ${FELIX86_ZYDIS_DEFINITIONS}
-    ZYAN_NO_LIBC
+    NDEBUG
     ZYDIS_DISABLE_ENCODER
     ZYDIS_DISABLE_AVX512
     ZYDIS_DISABLE_KNC)
@@ -125,9 +125,9 @@ set_module_type(amd64emu win32dll ENTRYPOINT 0 IMAGEBASE 0x3d00000000)
 target_include_directories(amd64emu BEFORE PRIVATE ${_felix86_adapter}/compat)
 target_include_directories(amd64emu PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
-    ${REACTOS_SOURCE_DIR}/ntoskrnl/include
-    ${REACTOS_SOURCE_DIR}/win32ss
-    ${REACTOS_SOURCE_DIR}/win32ss/include
+    ${REACTOS_SOURCE_DIR}/ntos/include
+    ${REACTOS_SOURCE_DIR}/subsystems/win/win32k
+    ${REACTOS_SOURCE_DIR}/subsystems/win/win32k/include
     ${REACTOS_SOURCE_DIR}/sdk/lib/crt/math)
 target_compile_definitions(amd64emu PRIVATE
     NTDDI_VERSION=${REACTOS_TARGET_NTDDI}

@@ -885,20 +885,13 @@ ScheduleFirstBootSetup(VOID)
     RegCloseKey(hKey);
 }
 
-static BOOL
-ExpandStorageAndRestart(
+static VOID
+ExpandStorage(
     _In_ HWND hwndDlg)
 {
     WCHAR Text[512];
     HCURSOR hCursor;
     DWORD Error;
-
-    if (SetupMessage(GetParent(hwndDlg), TD_INFORMATION_ICON, TDCBF_OK_BUTTON | TDCBF_CANCEL_BUTTON, IDOK,
-                     MAKEINTRESOURCEW(IDS_OOBE_EXPAND_RESTART),
-                     MAKEINTRESOURCEW(IDS_OOBE_EXPAND_RESTART_TEXT)) != IDOK)
-    {
-        return FALSE;
-    }
 
     hCursor = SetCursor(LoadCursorW(NULL, IDC_WAIT));
     Error = RunExpandStorage(L"/y");
@@ -908,21 +901,7 @@ ExpandStorageAndRestart(
     {
         LoadPrintfW(Text, ARRAYSIZE(Text), IDS_OOBE_EXPAND_FAILED, Error);
         SetupMessage(GetParent(hwndDlg), TD_ERROR_ICON, TDCBF_OK_BUTTON, IDOK, NULL, Text);
-        return TRUE;
     }
-
-    ScheduleFirstBootSetup();
-    EnableTokenPrivilege(SE_SHUTDOWN_NAME);
-    if (!ExitWindowsEx(EWX_REBOOT, SHTDN_REASON_MAJOR_OPERATINGSYSTEM | SHTDN_REASON_MINOR_RECONFIG |
-                                   SHTDN_REASON_FLAG_PLANNED))
-    {
-        DPRINT1("Restart after the storage expansion failed, error %lu\n", GetLastError());
-        EndFirstBootSetup();
-        return TRUE;
-    }
-
-    EndDialog(GetParent(hwndDlg), IDCANCEL);
-    return FALSE;
 }
 
 static INT_PTR
@@ -952,12 +931,57 @@ StoragePageProc(
             return TRUE;
 
         case SPN_WIZNEXT:
-            SetWindowLongPtrW(hwndDlg, DWLP_MSGRESULT,
-                              (IsDlgButtonChecked(hwndDlg, IDC_EXPANDNOW) == BST_CHECKED &&
-                               !ExpandStorageAndRestart(hwndDlg)) ? -1 : 0);
+            if (IsDlgButtonChecked(hwndDlg, IDC_EXPANDNOW) == BST_CHECKED)
+                ExpandStorage(hwndDlg);
+            SetWindowLongPtrW(hwndDlg, DWLP_MSGRESULT, 0);
             return TRUE;
     }
 
+    return FALSE;
+}
+
+static BOOL
+UpgradeInstalledCopy(VOID)
+{
+    WCHAR SystemDrive[MAX_PATH];
+    WCHAR Architecture[32];
+    WCHAR Path[MAX_PATH];
+    WCHAR CommandLine[MAX_PATH + 16];
+    STARTUPINFOW StartupInfo;
+    PROCESS_INFORMATION ProcessInfo;
+    DWORD ExitCode = ERROR_GEN_FAILURE;
+
+    if (!GetEnvironmentVariableW(L"SystemDrive", SystemDrive, ARRAYSIZE(SystemDrive)) ||
+        !GetEnvironmentVariableW(L"PROCESSOR_ARCHITECTURE", Architecture, ARRAYSIZE(Architecture)) ||
+        FAILED(StringCchPrintfW(Path, ARRAYSIZE(Path), L"%s\\%s\\libernt.exe", SystemDrive,
+                                _wcsicmp(Architecture, L"x86") == 0 ? L"I386" : Architecture)) ||
+        GetFileAttributesW(Path) == INVALID_FILE_ATTRIBUTES ||
+        FAILED(StringCchPrintfW(CommandLine, ARRAYSIZE(CommandLine), L"\"%s\" /upgrade", Path)))
+    {
+        return FALSE;
+    }
+
+    ScheduleFirstBootSetup();
+    ZeroMemory(&StartupInfo, sizeof(StartupInfo));
+    StartupInfo.cb = sizeof(StartupInfo);
+    if (CreateProcessW(Path, CommandLine, NULL, NULL, FALSE, 0, NULL, NULL, &StartupInfo, &ProcessInfo))
+    {
+        WaitForSingleObject(ProcessInfo.hProcess, INFINITE);
+        if (!GetExitCodeProcess(ProcessInfo.hProcess, &ExitCode))
+            ExitCode = GetLastError();
+        CloseHandle(ProcessInfo.hThread);
+        CloseHandle(ProcessInfo.hProcess);
+    }
+    else
+    {
+        ExitCode = GetLastError();
+    }
+
+    DPRINT1("Upgrade of the installed copy finished with %lu\n", ExitCode);
+    if (ExitCode == ERROR_SUCCESS)
+        return TRUE;
+
+    EndFirstBootSetup();
     return FALSE;
 }
 
@@ -1000,7 +1024,10 @@ wWinMain(
     FirstBootRun = EndFirstBootSetup();
     if (!ComponentsOnly)
         DPRINT1("Disk signature check finished with exit code %lu\n", RunExpandStorage(L"/u"));
-    if (!ComponentsOnly && (IsUnattendedFirstBoot() || HasAutomationPayload()))
+    /* An automated session's tests own BITS and the network, so no component is downloaded under them */
+    if (!ComponentsOnly && HasAutomationPayload())
+        return OOBE_SKIPPED;
+    if (!ComponentsOnly && IsUnattendedFirstBoot())
     {
         InstallUnattendedComponents();
         return OOBE_SKIPPED;
@@ -1021,6 +1048,13 @@ wWinMain(
     SetupData.AutoDaylight = TRUE;
     OobeAppCount = LoadOobeApps(&OobeApps, ComponentsOnly);
     DPRINT1("First-boot setup lists %lu components\n", OobeAppCount);
+
+    if (!ComponentsOnly && UpgradeInstalledCopy())
+    {
+        if (SUCCEEDED(hrCom))
+            CoUninitialize();
+        return OOBE_SKIPPED;
+    }
 
     if (!ComponentsOnly)
     {

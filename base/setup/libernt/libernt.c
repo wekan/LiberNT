@@ -18,6 +18,7 @@
 #include <delayimp.h>
 
 #include "resource.h"
+#include "host.h"
 
 #define NDEBUG
 #include <debug.h>
@@ -509,17 +510,19 @@ ConfigureInstalledSystem(
                                 L"Password=%s\n"
                                 L"TimeZoneIndex=%lu\n"
                                 L"AutoDaylight=%u\n"
-                                L"Components=%u\n",
+                                L"Components=%u\n"
+                                L"Upgrade=%u\n",
                                 (int)(wcslen(REGISTRY_SETUP_MACHINE) - 1), REGISTRY_SETUP_MACHINE,
                                 (int)(wcslen(REGISTRY_SETUP_USER) - 1), REGISTRY_SETUP_USER,
                                 InstallVolume->Info.DeviceName,
                                 SystemRoot,
-                                pSetupData->ComputerName,
-                                pSetupData->UserName,
-                                pSetupData->Password,
+                                pSetupData->bUpgrade ? L"" : pSetupData->ComputerName,
+                                pSetupData->bUpgrade ? L"" : pSetupData->UserName,
+                                pSetupData->bUpgrade ? L"" : pSetupData->Password,
                                 pSetupData->TimeZoneIndex,
                                 pSetupData->AutoDaylight ? 1 : 0,
-                                pSetupData->bUnattend ? 0 : 1)))
+                                (pSetupData->bUnattend || pSetupData->bUpgrade) ? 0 : 1,
+                                pSetupData->bUpgrade ? 1 : 0)))
     {
         HeapFree(ProcessHeap, 0, Settings);
         return ERROR_BUFFER_OVERFLOW;
@@ -554,6 +557,7 @@ PrepareAndDoCopyThread(
     COPYCONTEXT CopyContext;
     ERROR_NUMBER ErrorNumber;
     BOOLEAN Success = FALSE;
+    BOOLEAN BackupEnabled = FALSE, RestoreEnabled = FALSE;
     NTSTATUS Status;
     DWORD Error;
 
@@ -589,9 +593,16 @@ PrepareAndDoCopyThread(
         goto Quit;
     }
 
+    if (pSetupData->bUpgrade)
+    {
+        RtlAdjustPrivilege(SE_BACKUP_PRIVILEGE, TRUE, FALSE, &BackupEnabled);
+        RtlAdjustPrivilege(SE_RESTORE_PRIVILEGE, TRUE, FALSE, &RestoreEnabled);
+    }
+
     SetActivity(IDS_PREPARE_FILES);
     SetMarquee(TRUE);
-    Success = PrepareFileCopy(&pSetupData->USetupData, NULL);
+    Success = pSetupData->bUpgrade ? PrepareUpgradeFileCopy(&pSetupData->USetupData, NULL)
+                                   : PrepareFileCopy(&pSetupData->USetupData, NULL);
     SetMarquee(FALSE);
     if (!Success)
     {
@@ -605,6 +616,11 @@ PrepareAndDoCopyThread(
     CopyContext.TotalOperations = 0;
     CopyContext.CompletedOperations = 0;
     Success = DoFileCopy(&pSetupData->USetupData, FileCopyCallback, &CopyContext);
+    if (pSetupData->bUpgrade)
+    {
+        RtlAdjustPrivilege(SE_RESTORE_PRIVILEGE, RestoreEnabled, FALSE, &RestoreEnabled);
+        RtlAdjustPrivilege(SE_BACKUP_PRIVILEGE, BackupEnabled, FALSE, &BackupEnabled);
+    }
     if (!Success)
     {
         if (!pSetupData->bAbortInstall)
@@ -620,7 +636,7 @@ PrepareAndDoCopyThread(
     SendMessageW(UiContext.hWndProgress, PBM_SETSTEP, 1, 0);
     SendMessageW(UiContext.hWndProgress, PBM_SETPOS, 0, 0);
     ErrorNumber = UpdateRegistry(&pSetupData->USetupData,
-                                 FALSE,
+                                 !!pSetupData->bUpgrade,
                                  pSetupData->PartitionList,
                                  InstallVolume->Info.DriveLetter,
                                  pSetupData->SelectedLanguageId,
@@ -656,11 +672,23 @@ PrepareAndDoCopyThread(
                                                   &pSetupData->USetupData.SourceRootPath,
                                                   &pSetupData->USetupData.DestinationArcPath,
                                                   ((pSetupData->USetupData.BootLoaderLocation == 2) ? 1 : 0) |
-                                                  (pSetupData->bWindowsFirst ? BOOT_OPTION_AFTER_WINDOWS : 0));
+                                                  (pSetupData->bWindowsFirst ? BOOT_OPTION_AFTER_WINDOWS : 0) |
+                                                  (pSetupData->bUpgrade ? BOOT_OPTION_KEEP_ORDER : 0));
         if (Status != STATUS_SUCCESS)
         {
             ReportStepFailure(IDS_INSTALL_BOOTLOADER, Status);
             goto Quit;
+        }
+
+        if (pSetupData->bPrepared)
+        {
+            Status = RemoveHostSetupBoot(&pSetupData->USetupData.SystemRootPath);
+            DPRINT1("Boot files of Setup started on Windows removed: 0x%08lx\n", Status);
+        }
+        if (pSetupData->bUpgrade)
+        {
+            Error = HostSetBootManagerFirst(pSetupData->bWindowsFirst);
+            DPRINT1("%S Boot Manager starts first: %lu\n", pSetupData->bWindowsFirst ? L"Windows" : L"LiberNT", Error);
         }
     }
 
@@ -698,6 +726,8 @@ InstallPageProc(
             return TRUE;
 
         case SPN_SETACTIVE:
+            if (pSetupData->bUpgrade)
+                SetupFrameSetTitle(hwndDlg, IDS_UPGRADE_PROCESSTITLE, IDS_UPGRADE_PROCESSSUBTITLE);
             SetupFrameShowButtons(hwndDlg, FALSE, FALSE, TRUE);
             PostMessageW(hwndDlg, PM_INSTALL_START, 0, 0);
             return TRUE;
@@ -1299,9 +1329,11 @@ wWinMain(
     HANDLE hHotkeyThread;
     HRESULT hrCom;
     ULONG Error;
+    ULONG UpgradeResult = ERROR_GEN_FAILURE;
 
+    SetupData.bUpgradeOnly = (wcsstr(lpszCmdLine, L"/upgrade") != NULL);
     if (IsSetupAlreadyRunning(hInst))
-        return 0;
+        return SetupData.bUpgradeOnly ? ERROR_ALREADY_EXISTS : 0;
 
     ProcessHeap = GetProcessHeap();
     SetupData.hInstance = hInst;
@@ -1309,6 +1341,14 @@ wWinMain(
     iccx.dwSize = sizeof(iccx);
     iccx.dwICC = ICC_LISTVIEW_CLASSES | ICC_PROGRESS_CLASS | ICC_UPDOWN_CLASS | ICC_BAR_CLASSES;
     InitCommonControlsEx(&iccx);
+
+    if (HostIsWindows())
+    {
+        Error = (ULONG)RunHostSetup(&SetupData, lpszCmdLine);
+        if (SetupData.bMustReboot)
+            RestartComputer();
+        return (int)Error;
+    }
 
     Error = InitializeSetup(&SetupData.USetupData, NULL, &SpFileExports, &SpInfExports);
     if (Error != ERROR_SUCCESS)
@@ -1321,6 +1361,7 @@ wWinMain(
     SetupData.bUnattend = CheckUnattendedSetup(&SetupData.USetupData);
     if (!LoadSetupData(&SetupData))
         goto Quit;
+    PlanPreparedInstall(&SetupData);
     SetSetupLanguage(SetupData.DefaultLanguage);
 
     if (wcsstr(lpszCmdLine, L"--selftest") || SetupData.USetupData.SelfTest)
@@ -1330,10 +1371,24 @@ wWinMain(
         return (int)Error;
     }
 
+    if ((SetupData.bUpgradeOnly || SetupData.USetupData.Upgrade) && FindUpgradeTargets(&SetupData) == 0)
+    {
+        DPRINT1("No LiberNT installation to upgrade\n");
+        FinishSetup(&SetupData.USetupData);
+        return ERROR_NOT_FOUND;
+    }
+    if (SetupData.bUnattend && SetupData.USetupData.Upgrade && !SelectUnattendedUpgrade(&SetupData))
+    {
+        DPRINT1("The LiberNT installation cannot be upgraded unattended\n");
+        FinishSetup(&SetupData.USetupData);
+        return ERROR_NOT_READY;
+    }
+
     hHotkeyThread = CreateThread(NULL, 0, HotkeyThread, NULL, 0, NULL);
     hrCom = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED);
 
     RunSetupWizard(&SetupData);
+    UpgradeResult = !SetupData.bUpgrade ? ERROR_CANCELLED : SetupData.bInstalled ? ERROR_SUCCESS : ERROR_INSTALL_FAILURE;
 
     if (SUCCEEDED(hrCom))
         CoUninitialize();
@@ -1347,5 +1402,5 @@ Quit:
     FinishSetup(&SetupData.USetupData);
     if (SetupData.bMustReboot)
         RestartComputer();
-    return 0;
+    return SetupData.bUpgradeOnly ? (int)UpgradeResult : 0;
 }

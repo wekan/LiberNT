@@ -9,9 +9,15 @@
 #include <apitest.h>
 
 extern void func_MissingSecurity(void);
+extern void func_IndexMetadata(void);
+extern void func_FullBaseGrowth(void);
+extern void func_FreeClusters(void);
 
 const struct test winetest_testlist[] =
 {
     { "MissingSecurity", func_MissingSecurity },
+    { "IndexMetadata", func_IndexMetadata },
+    { "FullBaseGrowth", func_FullBaseGrowth },
+    { "FreeClusters", func_FreeClusters },
     { 0, 0 }
 };

@@ -6,17 +6,21 @@ list(APPEND SOURCE
     MulticastInterface.c
     ReuseDelivery.c
     addresslistsort.c
+    afunix.c
     bind.c
     broadcast.c
     close.c
+    connect_any.c
     connect_select.c
     dualstack.c
+    dualstack_mapped.c
     getaddrinfo.c
     gethostname.c
     getnameinfo.c
     getservbyname.c
     getservbyport.c
     helpers.c
+    loopback_pingpong.c
     ioctlsocket.c
     nonblocking.c
     nostartup.c
@@ -24,6 +28,8 @@ list(APPEND SOURCE
     pollable_event.c
     recv.c
     send.c
+    sendto_neighbor.c
+    udp_queue.c
     udp_quic.c
     WSAAsync.c
     WSAIoctl.c

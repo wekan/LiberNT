@@ -46,7 +46,7 @@ END
 STRINGTABLE
 BEGIN
     IDS_PROGRAMFILES "%SystemDrive%\\Ohjelmat"
-    IDS_COMMONFILES "Yhteiset Tiedostot"
+    IDS_COMMONFILES "Yhteiset tiedostot"
 END
 
 STRINGTABLE

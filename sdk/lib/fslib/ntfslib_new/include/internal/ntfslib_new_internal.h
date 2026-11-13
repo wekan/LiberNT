@@ -557,6 +557,10 @@ public:
     ULONGLONG ReservedClusters = 0;
     BOOLEAN ReservedClustersKnown = FALSE;
 
+    /* Clear bits of $Bitmap, counted once and kept by every allocation and release */
+    ULONGLONG FreeClusterCount = 0;
+    BOOLEAN FreeClusterCountKnown = FALSE;
+
     /* Parsed $Bitmap record, built once: its layout never changes and its
      * data is served through the block cache, so re-parsing it for every
      * cluster allocate/release only burned CPU. */
@@ -886,6 +890,11 @@ public:
             const UCHAR* Buffer,
         _In_ ULONG BufferLength);
     NTSTATUS DeleteExternalBacking();
+    NTSTATUS ReadObjectId(_Out_ PObjectIdEx ObjectId);
+    NTSTATUS SetObjectId(_In_ const ObjectIdEx* ObjectId);
+    NTSTATUS SetObjectIdExtended(_In_reads_bytes_(48) const UCHAR* ExtendedInfo);
+    NTSTATUS DeleteObjectId();
+    NTSTATUS RenameDataStream(_In_opt_ PWSTR OldName, _In_opt_ PWSTR NewName, _In_ BOOLEAN ReplaceIfExists);
     NTSTATUS ReadExtendedAttributes(
         _In_opt_ PUCHAR Buffer,
         _Inout_ PULONG BufferLength,
@@ -1204,7 +1213,7 @@ private:
         _Out_ PBOOLEAN OwnerReferenced);
 
     NTSTATUS
-    CreateInitialAttributeList();
+    CreateInitialAttributeList(_In_opt_ PAttribute GrowingData = NULL);
 
     NTSTATUS
     EnsureAttributeListForMappingGrowth(
@@ -1316,6 +1325,9 @@ private:
         _In_ ULONGLONG RequestedAllocationSize);
 
     NTSTATUS
+    SynchronizeExtensionDataSizes();
+
+    NTSTATUS
     UpdateFileNameSizes(_In_ ULONGLONG AllocatedSize,
                         _In_ ULONGLONG DataSize);
 
@@ -1366,6 +1378,15 @@ private:
         _In_opt_ const UCHAR* Buffer,
         _In_ ULONG BufferLength,
         _In_ BOOLEAN Delete);
+
+    NTSTATUS
+    MakeObjectIdSpace(_In_ ULONG Required);
+
+    NTSTATUS
+    InsertObjectIdAttribute(_In_ const ObjectIdEx* ObjectId);
+
+    NTSTATUS
+    RemoveObjectIdAttribute();
 
     // ./write.cpp
     NTSTATUS
@@ -1429,6 +1450,17 @@ NtfsUpdateReparseIndex(
     _In_ BOOLEAN Remove);
 
 NTSTATUS
+NtfsCheckObjectIdSupport(
+    _In_ PVolume DiskVolume);
+
+NTSTATUS
+NtfsUpdateObjectIdIndex(
+    _In_ PVolume DiskVolume,
+    _In_ const ObjectIdEx* ObjectId,
+    _In_ ULONGLONG FileReference,
+    _In_ BOOLEAN Remove);
+
+NTSTATUS
 NtfsNextReparseIndexEntry(
     _In_ PVolume DiskVolume,
     _In_ ULONG StartTag,
@@ -1445,6 +1477,17 @@ typedef struct IndexSearchKey
     ULONG ValueLength;
     BOOLEAN CaseSensitive;
 } IndexSearchKey, *PIndexSearchKey;
+
+NTSTATUS
+NtfsFindIndexInsertionPoint(
+    _In_ PVolume DiskVolume,
+    _In_ PIndexNodeHeader Header,
+    _In_ ULONG HeaderBytes,
+    _In_ const IndexSearchKey* Key,
+    _Out_ PULONG InsertionOffset,
+    _Out_ PULONGLONG ChildVcn,
+    _Out_ PBOOLEAN Descend,
+    _Out_opt_ PBOOLEAN FoundExact = NULL);
 
 typedef class Directory : BTree
 {
@@ -1817,6 +1860,13 @@ public:
         _In_ ULONGLONG ParentReference,
         _In_ PUNICODE_STRING Name,
         _Out_ PUNICODE_STRING ShortName);
+
+    NTSTATUS
+    EnumerateLinks(
+        _In_ PFileRecord File,
+        _Inout_ PULONG Context,
+        _Out_ PULONGLONG ParentReference,
+        _Out_ PUNICODE_STRING LinkName);
 
     NTSTATUS
     IsDescendantDirectory(

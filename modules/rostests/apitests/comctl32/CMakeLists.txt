@@ -6,8 +6,10 @@ list(APPEND SOURCE
     ListViewGroups.c
     LoadIconWithScaleDown.c
     propsheet.c
+    PropSheetRecalc.c
     TabControlKeys.c
     StatusBarResize.c
+    SysLinkIdealSize.c
     TaskDialogTitle.c
     testlist.c
     themestate.c

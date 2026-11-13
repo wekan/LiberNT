@@ -1,5 +1,5 @@
 
-include_directories(${REACTOS_SOURCE_DIR}/win32ss ../gditools)
+include_directories(${REACTOS_SOURCE_DIR}/subsystems/win/win32k ../gditools)
 
 list(APPEND SOURCE
     AddFontMemResourceEx.c
@@ -31,6 +31,7 @@ list(APPEND SOURCE
     ExtCreatePen.c
     ExtCreateRegion.c
     ExtTextOut.c
+    GdiBatch.c
     FrameRgn.c
     GdiConvertBitmap.c
     GdiConvertBrush.c
@@ -69,6 +70,7 @@ list(APPEND SOURCE
     PatBlt.c
     Rectangle.c
     RealizePalette.c
+    ScreenRows.c
     SelectObject.c
     SetBoundsRect.c
     SetBrushOrgEx.c

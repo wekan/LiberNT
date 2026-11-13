@@ -254,11 +254,11 @@ LiberNT/
 ├── hal/             # Hardware abstraction layers for x86, Arm, Arm64, PowerPC and RISC-V
 ├── media/           # Fonts, themes, INF files, sounds and branding
 ├── modules/         # Optional applications, tests and wallpapers
-├── ntoskrnl/        # The NT kernel and executive
+├── ntos/            # The NT kernel and executive
 ├── sdk/             # Headers, libraries and build tools
 ├── submodules/      # Recipes and patches for external components
 ├── subsystems/      # CSRSS and the Windows subsystem
-├── win32ss/         # win32k, USER, GDI and display drivers
+│   └── win/win32k/  # win32k, USER, GDI and display drivers
 ├── configure.sh     # Sets up a build on Linux, macOS and WSL2
 └── configure.cmd    # Sets up a build on Windows
 ```
@@ -299,6 +299,8 @@ Like any other tool, AI is there to help us achieve our goals. It follows the sa
 LiberNT is licensed under the [GNU GPL 3.0](COPYING). Code inherited from other projects keeps the licence stated in its file headers, most of it GPL 2.0 or later. The GPL 2.0, LGPL 2.1 and BSD texts those files refer to are in [COPYING2](COPYING2), [COPYING.LIB](COPYING.LIB) and [COPYING.ARM](COPYING.ARM).
 
 The changes made in LiberNT are Copyright © 2026 the LiberNT contributors. Inherited and third-party code keeps the copyright notices of its authors. See [CREDITS.md](CREDITS.md).
+
+The GPL covers the code, not the brand. LiberNT™ and the LiberNT logo are the project's marks, and the artwork in `media/graphics/branding` is copyright its author, all rights reserved. [TRADEMARK.md](TRADEMARK.md) says what you may do with them without asking: refer to the project, redistribute an official build unchanged, link to us. A modified build needs its own name.
 
 LiberNT is an independent project. It is not affiliated with, endorsed by or sponsored by Microsoft. Windows® is a registered trademark of Microsoft Corporation.
 

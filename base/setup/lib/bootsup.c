@@ -844,6 +844,7 @@ InstallBootloaderFiles(
     WCHAR SrcPath[MAX_PATH];
     WCHAR DstPath[MAX_PATH];
 
+    /* FIXME: A preinstalled image has no \loader directory, so Setup started from it cannot write the BIOS boot code. */
     /* Copy FreeLoader to the system partition, always overwriting the older version */
     CombinePaths(SrcPath, ARRAYSIZE(SrcPath), 2, SourceRootPath->Buffer, L"\\loader\\freeldr.sys");
     CombinePaths(DstPath, ARRAYSIZE(DstPath), 2, SystemRootPath->Buffer, L"freeldr.sys");
@@ -897,6 +898,8 @@ InstallBootloaderFiles(
 #define EFI_BOOT_MANAGER_DESCRIPTION    L"LiberNT Boot Manager"
 #define EFI_BOOT_MANAGER_FILE           L"\\EFI\\LiberNT\\Boot\\bootmgfw.efi"
 #define EFI_WINDOWS_BOOT_MANAGER_FILE   L"\\EFI\\Microsoft\\Boot\\bootmgfw.efi"
+#define EFI_HOST_SETUP_DIRECTORY        L"EFI\\LiberNT\\Setup"
+#define EFI_HOST_SETUP_MANAGER_FILE     L"\\EFI\\LiberNT\\Setup\\bootmgfw.efi"
 #define GPT_HEADER_ENTRIES_LBA_OFFSET   72
 #define GPT_HEADER_ENTRY_COUNT_OFFSET   80
 #define GPT_HEADER_ENTRY_SIZE_OFFSET    84
@@ -1634,11 +1637,11 @@ IsSameLoadOption(
 
 static
 BOOLEAN
-IsWindowsBootManagerOption(
+IsLoadOptionForFile(
     _In_reads_bytes_(OptionLength) const UCHAR* Option,
-    _In_ ULONG OptionLength)
+    _In_ ULONG OptionLength,
+    _In_ PCWSTR File)
 {
-    static const WCHAR WindowsFile[] = EFI_WINDOWS_BOOT_MANAGER_FILE;
     ULONG Offset = EFI_LOAD_OPTION_HEADER_SIZE, End, NodeLength, Chars;
 
     if (OptionLength < EFI_LOAD_OPTION_HEADER_SIZE)
@@ -1663,8 +1666,8 @@ IsWindowsBootManagerOption(
             Chars = (NodeLength - EFI_DEVICE_PATH_HEADER_SIZE) / sizeof(WCHAR);
             while (Chars && ((const WCHAR*)(Option + Offset + EFI_DEVICE_PATH_HEADER_SIZE))[Chars - 1] == UNICODE_NULL)
                 Chars--;
-            if (Chars == ARRAYSIZE(WindowsFile) - 1 &&
-                _wcsnicmp((const WCHAR*)(Option + Offset + EFI_DEVICE_PATH_HEADER_SIZE), WindowsFile, Chars) == 0)
+            if (Chars == wcslen(File) &&
+                _wcsnicmp((const WCHAR*)(Option + Offset + EFI_DEVICE_PATH_HEADER_SIZE), File, Chars) == 0)
             {
                 return TRUE;
             }
@@ -1679,8 +1682,9 @@ static
 NTSTATUS
 InstallFirmwareBootEntry(
     _In_ PCUNICODE_STRING SystemRootPath,
-    _In_ BOOLEAN AfterWindows)
+    _In_ ULONG_PTR Options)
 {
+    BOOLEAN AfterWindows = !!(Options & BOOT_OPTION_AFTER_WINDOWS);
     STORAGE_DEVICE_NUMBER DeviceNumber;
     UCHAR Option[EFI_LOAD_OPTION_MAX];
     UCHAR Existing[EFI_LOAD_OPTION_MAX];
@@ -1688,9 +1692,9 @@ InstallFirmwareBootEntry(
     PUCHAR FilePath, Node;
     WCHAR Name[16];
     ULONG DescriptionSize, FileSize, OptionSize, Length, OrderCount, Number = 0, Position = 0, i, j;
-    USHORT FilePathLength;
+    USHORT FilePathLength, Next;
     BOOLEAN Found = FALSE, PrivilegeSet = FALSE;
-    NTSTATUS Status;
+    NTSTATUS Status, NextStatus;
 
     Status = GetPartitionDeviceNumber(SystemRootPath, &DeviceNumber);
     if (!NT_SUCCESS(Status))
@@ -1768,7 +1772,7 @@ InstallFirmwareBootEntry(
         Status = SetFirmwareVariable(Name, Option, OptionSize);
     }
 
-    if (NT_SUCCESS(Status))
+    if (NT_SUCCESS(Status) && !(Found && (Options & BOOT_OPTION_KEEP_ORDER)))
     {
         for (i = 0, j = 0; i < OrderCount; i++)
         {
@@ -1780,7 +1784,7 @@ InstallFirmwareBootEntry(
             RtlStringCchPrintfW(Name, ARRAYSIZE(Name), L"Boot%04X", Order[i]);
             Length = sizeof(Existing);
             if (NT_SUCCESS(QueryFirmwareVariable(Name, Existing, &Length)) &&
-                IsWindowsBootManagerOption(Existing, Length))
+                IsLoadOptionForFile(Existing, Length, EFI_WINDOWS_BOOT_MANAGER_FILE))
             {
                 Position = i + 1;
                 break;
@@ -1791,8 +1795,108 @@ InstallFirmwareBootEntry(
         Status = SetFirmwareVariable(L"BootOrder", Order, (j + 1) * sizeof(USHORT));
     }
 
+    if (NT_SUCCESS(Status) && AfterWindows)
+    {
+        Next = (USHORT)Number;
+        NextStatus = SetFirmwareVariable(L"BootNext", &Next, sizeof(Next));
+        DPRINT1("Boot%04X starts once after Setup: 0x%08lx\n", Next, NextStatus);
+    }
+
     RtlAdjustPrivilege(SE_SYSTEM_ENVIRONMENT_PRIVILEGE, PrivilegeSet, FALSE, &PrivilegeSet);
     return Status;
+}
+
+NTSTATUS
+NTAPI
+RemoveHostSetupBoot(
+    _In_ PCUNICODE_STRING SystemRootPath)
+{
+    static const PCWSTR Files[] = { L"bootmgfw.efi", L"winload.efi", L"BCD" };
+    UCHAR Option[EFI_LOAD_OPTION_MAX];
+    USHORT Order[EFI_BOOT_ORDER_MAX / sizeof(USHORT) + 1];
+    FILE_DISPOSITION_INFORMATION Disposition;
+    OBJECT_ATTRIBUTES ObjectAttributes;
+    IO_STATUS_BLOCK IoStatusBlock;
+    UNICODE_STRING Name;
+    WCHAR Variable[16], Path[MAX_PATH];
+    ULONG Length, OrderCount = 0, Number, i, j;
+    BOOLEAN PrivilegeSet = FALSE, OrderChanged = FALSE;
+    HANDLE Directory;
+    NTSTATUS Status, Result = STATUS_SUCCESS;
+
+    Status = RtlAdjustPrivilege(SE_SYSTEM_ENVIRONMENT_PRIVILEGE, TRUE, FALSE, &PrivilegeSet);
+    if (NT_SUCCESS(Status))
+    {
+        Length = EFI_BOOT_ORDER_MAX;
+        if (NT_SUCCESS(QueryFirmwareVariable(L"BootOrder", Order, &Length)))
+            OrderCount = Length / sizeof(USHORT);
+
+        for (Number = 0; Number < EFI_BOOT_OPTION_SEARCH_MAX; Number++)
+        {
+            RtlStringCchPrintfW(Variable, ARRAYSIZE(Variable), L"Boot%04X", Number);
+            Length = sizeof(Option);
+            if (!NT_SUCCESS(QueryFirmwareVariable(Variable, Option, &Length)) ||
+                !IsLoadOptionForFile(Option, Length, EFI_HOST_SETUP_MANAGER_FILE))
+            {
+                continue;
+            }
+
+            Status = SetFirmwareVariable(Variable, NULL, 0);
+            DPRINT1("Firmware option %S of Setup started on Windows removed: 0x%08lx\n", Variable, Status);
+            if (!NT_SUCCESS(Status) && NT_SUCCESS(Result))
+                Result = Status;
+            for (i = 0, j = 0; i < OrderCount; i++)
+            {
+                if (Order[i] != Number)
+                    Order[j++] = Order[i];
+            }
+            OrderChanged = OrderChanged || j != OrderCount;
+            OrderCount = j;
+        }
+
+        if (OrderChanged)
+        {
+            Status = SetFirmwareVariable(L"BootOrder", Order, OrderCount * sizeof(USHORT));
+            if (!NT_SUCCESS(Status) && NT_SUCCESS(Result))
+                Result = Status;
+        }
+        RtlAdjustPrivilege(SE_SYSTEM_ENVIRONMENT_PRIVILEGE, PrivilegeSet, FALSE, &PrivilegeSet);
+    }
+    else
+    {
+        Result = Status;
+    }
+
+    for (i = 0; i < ARRAYSIZE(Files); i++)
+    {
+        CombinePaths(Path, ARRAYSIZE(Path), 3, SystemRootPath->Buffer, EFI_HOST_SETUP_DIRECTORY, Files[i]);
+        Status = SetupDeleteFile(Path, TRUE);
+        if (!NT_SUCCESS(Status) && Status != STATUS_OBJECT_NAME_NOT_FOUND &&
+            Status != STATUS_OBJECT_PATH_NOT_FOUND && NT_SUCCESS(Result))
+        {
+            Result = Status;
+        }
+    }
+
+    CombinePaths(Path, ARRAYSIZE(Path), 2, SystemRootPath->Buffer, EFI_HOST_SETUP_DIRECTORY);
+    RtlInitUnicodeString(&Name, Path);
+    InitializeObjectAttributes(&ObjectAttributes, &Name, OBJ_CASE_INSENSITIVE, NULL, NULL);
+    Status = NtOpenFile(&Directory, DELETE | SYNCHRONIZE, &ObjectAttributes, &IoStatusBlock,
+                        FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE,
+                        FILE_DIRECTORY_FILE | FILE_SYNCHRONOUS_IO_NONALERT | FILE_OPEN_FOR_BACKUP_INTENT);
+    if (NT_SUCCESS(Status))
+    {
+        Disposition.DeleteFile = TRUE;
+        Status = NtSetInformationFile(Directory, &IoStatusBlock, &Disposition, sizeof(Disposition),
+                                      FileDispositionInformation);
+        NtClose(Directory);
+    }
+    if (!NT_SUCCESS(Status) && Status != STATUS_OBJECT_NAME_NOT_FOUND &&
+        Status != STATUS_OBJECT_PATH_NOT_FOUND && NT_SUCCESS(Result))
+    {
+        Result = Status;
+    }
+    return Result;
 }
 
 static
@@ -1801,7 +1905,7 @@ InstallBcdFromTemplate(
     _In_ PCUNICODE_STRING SystemRootPath,
     _In_ PCUNICODE_STRING SourceRootPath,
     _In_ PCUNICODE_STRING DestinationArcPath,
-    _In_ BOOLEAN AfterWindows,
+    _In_ ULONG_PTR Options,
     _Out_opt_ PBOOLEAN FirmwareEntry,
     _Out_ PNTSTATUS Status)
 {
@@ -1860,7 +1964,7 @@ InstallBcdFromTemplate(
         return TRUE;
     }
 
-    EntryStatus = InstallFirmwareBootEntry(SystemRootPath, AfterWindows);
+    EntryStatus = InstallFirmwareBootEntry(SystemRootPath, Options);
     if (!NT_SUCCESS(EntryStatus))
         DPRINT1("Writing the firmware boot entry failed (Status %lx)\n", EntryStatus);
     else if (FirmwareEntry)
@@ -1874,7 +1978,7 @@ InstallEfiSystemPartition(
     _In_ PCUNICODE_STRING SystemRootPath,
     _In_ PCUNICODE_STRING SourceRootPath,
     _In_ PCUNICODE_STRING DestinationArcPath,
-    _In_ BOOLEAN AfterWindows)
+    _In_ ULONG_PTR Options)
 {
     NTSTATUS Status;
     WCHAR SrcDir[MAX_PATH];
@@ -1897,7 +2001,7 @@ InstallEfiSystemPartition(
         return Status;
     }
 
-    if (InstallBcdFromTemplate(SystemRootPath, SourceRootPath, DestinationArcPath, AfterWindows,
+    if (InstallBcdFromTemplate(SystemRootPath, SourceRootPath, DestinationArcPath, Options,
                                &FirmwareEntry, &Status))
     {
         if (NT_SUCCESS(Status) && FallbackKept && !FirmwareEntry)
@@ -1951,7 +2055,7 @@ InstallFatBootcodeToPartition(
         return Status;
     }
 
-    InstallBcdFromTemplate(SystemRootPath, SourceRootPath, DestinationArcPath, FALSE, NULL, &Status);
+    InstallBcdFromTemplate(SystemRootPath, SourceRootPath, DestinationArcPath, 0, NULL, &Status);
 
     /* Prepare for possibly updating 'freeldr.ini' */
     DoesFreeLdrExist = DoesFileExist_2(SystemRootPath->Buffer, L"freeldr.ini");
@@ -2507,9 +2611,8 @@ InstallBootManagerAndBootEntriesWorker(
     BOOLEAN IsBIOS = ((ArchType == ARCH_PcAT) || (ArchType == ARCH_NEC98x86));
     UCHAR InstallType = (Options & 0x03);
 
-    if (DiskStyle == PARTITION_STYLE_GPT)
-        return InstallEfiSystemPartition(SystemRootPath, SourceRootPath, DestinationArcPath,
-                                         !!(Options & BOOT_OPTION_AFTER_WINDOWS));
+    if (DiskStyle == PARTITION_STYLE_GPT || IsUefiFirmware())
+        return InstallEfiSystemPartition(SystemRootPath, SourceRootPath, DestinationArcPath, Options);
 
     // FIXME: We currently only support BIOS-based PCs
     // TODO: Support other platforms

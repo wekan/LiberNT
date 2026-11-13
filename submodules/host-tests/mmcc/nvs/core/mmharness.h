@@ -9,7 +9,7 @@
 
 #pragma once
 
-#include <nvs/include/mm.h>
+#include <mm/include/mm.h>
 #include "../machine/machine.h"
 #include <pthread.h>
 #include <time.h>
@@ -31,6 +31,8 @@ typedef struct _TEST_PAGEFILE
     PMI_RWLOCK ProbeLock;
     volatile LONG IoUnderLock;
     volatile LONG WriteCalls;
+    void (*AfterWrite)(PVOID Context);
+    PVOID AfterWriteContext;
 } TEST_PAGEFILE;
 
 typedef struct _TEST_FILE

@@ -109,8 +109,12 @@ typedef struct _SETUPDATA
 
     PPARTLIST PartitionList;
     BOOL bInstalled;
+    BOOL bUpgrade;
+    BOOL bUpgradeOnly;
     BOOL bAlongside;
     BOOL bWindowsFirst;
+    BOOL bPrepared;
+    BOOL bWindowsHost;
     WCHAR WindowsName[32];
 
     /* txtsetup.sif data */
@@ -165,6 +169,7 @@ typedef struct _VOL_CREATE_INFO
 
 typedef enum _SETUP_PAGE
 {
+    SETUP_PAGE_UPGRADE,
     SETUP_PAGE_LANGUAGE,
     SETUP_PAGE_TYPE,
     SETUP_PAGE_DISK,
@@ -181,6 +186,7 @@ typedef enum _SETUP_PAGE
 #define SETUP_PAGE_NO_CANCEL        0x4
 #define SETUP_PAGE_CLOSE            0x8
 #define SETUP_PAGE_OPTIONAL         0x10
+#define SETUP_PAGE_SKIP_UPGRADE     0x20
 
 typedef struct _SETUP_PAGE_INFO
 {
@@ -204,6 +210,12 @@ typedef struct _SETUP_PAGE_INFO
 PVOL_CREATE_INFO
 FindVolumeFormatPlan(
     _In_ PVOLENTRY Volume);
+
+BOOLEAN
+PlanVolumeFormat(
+    _In_ PVOLENTRY Volume,
+    _In_ PCWSTR FileSystem,
+    _In_opt_ PCWSTR Label);
 
 VOID
 FormatDiskSize(
@@ -247,6 +259,74 @@ PlanAlongsideInstall(
     _In_ ULONG DiskNumber,
     _In_ ULONGLONG StartSector,
     _In_ ULONGLONG ShrinkBytes);
+
+BOOLEAN
+IsWindowsHibernated(
+    _In_ PCWSTR DeviceName);
+
+HBITMAP
+CreateAlphaLogo(
+    _In_ HINSTANCE hInstance,
+    _Out_ PSIZE Size);
+
+VOID
+DrawLogo(
+    _In_ LPDRAWITEMSTRUCT DrawItem,
+    _In_ HBITMAP hLogo,
+    _In_ PSIZE Size);
+
+BOOLEAN
+PlanPreparedInstall(
+    _Inout_ PSETUPDATA pSetupData);
+
+VOID
+PaintSplitChannel(
+    _In_ HWND hTrack,
+    _In_ HDC hdc,
+    _In_ const RECT *Channel);
+
+BOOL
+ReadInventoryVersion(
+    _In_ PCWSTR Path,
+    _Out_writes_(cchVersion) PWSTR Version,
+    _In_ SIZE_T cchVersion);
+
+BOOL
+GetKernelMachine(
+    _In_ PCWSTR Path,
+    _Out_ PWORD Machine);
+
+BOOL
+IsLiberNtKernel(
+    _In_ PCWSTR Path);
+
+ULONG
+FindUpgradeTargets(
+    _In_ PSETUPDATA pSetupData);
+
+BOOL
+SelectUnattendedUpgrade(
+    _Inout_ PSETUPDATA pSetupData);
+
+VOID
+DescribeUpgrade(
+    _Inout_ PSETUPDATA pSetupData,
+    _Out_writes_(cchText) PWSTR Text,
+    _In_ SIZE_T cchText);
+
+VOID
+UpdateBootChoice(
+    _In_ HWND hwndDlg,
+    _In_ PCWSTR WindowsName,
+    _In_ BOOL Show);
+
+INT_PTR
+CALLBACK
+UpgradePageProc(
+    _In_ HWND hwndDlg,
+    _In_ UINT uMsg,
+    _In_ WPARAM wParam,
+    _In_ LPARAM lParam);
 
 INT_PTR
 CALLBACK

@@ -47,10 +47,13 @@ list(APPEND SOURCE
     ldr/ldrpe.c
     ldr/ldrutils.c
     ldr/verifier.c
+    rtl/barrier.c
     rtl/exit.c
     rtl/mui.c
     rtl/nls.c
+    rtl/secmem.c
     rtl/telemetry.c
+    rtl/transaction.c
     rtl/userpfn.c
     rtl/wnf.c
     rtl/time.c
@@ -159,7 +162,7 @@ add_dependencies(ntdll ntstatus asm)
 add_cd_file(TARGET ntdll DESTINATION reactos/system32 NO_CAB FOR all)
 
 if(ARM64EC_RUNTIME)
-    include_directories(${REACTOS_SOURCE_DIR}/ntoskrnl/include)
+    include_directories(${REACTOS_SOURCE_DIR}/ntos/include)
     add_arm64ec_x64_source(NTDLL_CHPE_X64_SOURCE chpebridge_x64.c)
 endif()
 
