@@ -26,6 +26,7 @@ LanguageNames=(English=0x409:MSG00409
                Turkish=0x41F:MSG0041F
                Chinese=0x804:MSG00804
                Taiwanese=0x404:MSG00404
+               Finnish=0x40B:MSG0040B
               )
 
 
@@ -72,6 +73,11 @@ Language=Taiwanese
 NET ACCOUNTS [/FORCELOGOFF:{分鐘|NO}] [/MINPWLEN:長度]
              [/MAXPWAGE:{天|UNLIMITED}] [/MINPWAGE:天]
              [/UNIQUEPW:計數] [/DOMAIN]
+.
+Language=Finnish
+NET ACCOUNTS [/FORCELOGOFF:{minuutit|NO}] [/MINPWLEN:pituus]
+             [/MAXPWAGE:{päivät|UNLIMITED}] [/MINPWAGE:päivät]
+             [/UNIQUEPW:määrä] [/DOMAIN]
 .
 
 
@@ -429,6 +435,46 @@ NET ACCOUNTS to take effect.
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET ACCOUNTS päivittää käyttäjätilitietokannan ja muuttaa kaikkien tilien
+salasana- ja kirjautumisvaatimuksia.
+Ilman parametreja NET ACCOUNTS näyttää salasanojen, kirjautumisrajoitusten ja
+toimialueen nykyiset asetukset.
+
+NET ACCOUNTS -komennon valintojen voimaantuloon tarvitaan kaksi ehtoa.
+
+- Salasana- ja kirjautumisvaatimukset ovat voimassa vain, jos
+  käyttäjätilit on luotu (Käyttäjien hallinnalla tai NET USER -komennolla).
+
+- Net Logon -palvelun on oltava käynnissä kaikilla toimialueen palvelimilla,
+  jotka tarkistavat kirjautumisen. Net Logon käynnistyy automaattisesti, kun
+  käyttöjärjestelmä käynnistyy.
+
+/FORECELOGOFF:{minuutit | NO}  Määrittää, montako minuuttia käyttäjällä on
+                               aikaa ennen kuin hänet kirjataan ulos, kun
+                               tili tai sallitut kirjautumisajat päättyvät.
+                               Oletusarvo NO estää pakotetun uloskirjauksen.
+/MINPWLEN:pituus               Määrittää salasanan merkkien vähimmäismäärän.
+                               Arvo on 0-14 merkkiä; oletus on 6 merkkiä.
+/MAXPWAGE:{päivät | UNLIMITED} Määrittää, montako päivää salasana on
+                               enintään voimassa. UNLIMITED poistaa
+                               rajoituksen. /MAXPWAGE ei voi olla pienempi
+                               kuin /MINPWAGE. Arvo on 1-999; oletuksena
+                               arvoa ei muuteta.
+/MINPWAGE:päivät               Määrittää, montako päivää on kuluttava ennen
+                               kuin käyttäjä voi vaihtaa salasanan. Arvo 0
+                               ei aseta vähimmäisaikaa. Arvo on 0-999;
+                               oletus on 0 päivää. /MINPWAGE ei voi olla
+                               suurempi kuin /MAXPWAGE.
+/UNIQUEPW:määrä                Edellyttää, että käyttäjän salasanat ovat
+                               erilaisia annetun määrän salasananvaihtoja
+                               ajan. Suurin arvo on 24.
+/DOMAIN                        Suorittaa toiminnon nykyisen toimialueen
+                               toimialueen ohjauskoneessa. Muuten toiminto
+                               suoritetaan paikallisessa tietokoneessa.
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10002
@@ -458,6 +504,9 @@ NET COMPUTER \\computername {/ADD | /DEL}
 .
 Language=Taiwanese
 NET COMPUTER \\computername {/ADD | /DEL}
+.
+Language=Finnish
+NET COMPUTER \\tietokoneen_nimi {/ADD | /DEL}
 .
 
 
@@ -539,6 +588,15 @@ command is available only on server operating systems.
 /ADD             Adds the specified computer to the domain.
 /DEL             Removes the specified computer from the domain.
 .
+Language=Finnish
+NET COMPUTER lisää tietokoneita toimialueen tietokantaan tai poistaa niitä
+siitä. Komento on käytettävissä vain palvelinkäyttöjärjestelmissä.
+
+\\tietokoneen_nimi Määrittää tietokoneen, joka lisätään toimialueeseen
+                  tai poistetaan siitä.
+/ADD              Lisää tietokoneen toimialueeseen.
+/DEL              Poistaa tietokoneen toimialueesta.
+.
 
 
 MessageId=10004
@@ -567,6 +625,9 @@ Language=Chinese
 NET CONFIG [SERVER | WORKSTATION]
 .
 Language=Taiwanese
+NET CONFIG [SERVER | WORKSTATION]
+.
+Language=Finnish
 NET CONFIG [SERVER | WORKSTATION]
 .
 
@@ -677,6 +738,17 @@ WORKSTATION   Displays information about the configuration of the
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET CONFIG näyttää Workstation- tai Server-palvelun määritystiedot.
+Ilman WORKSTATION- tai SERVER-valitsinta se näyttää määritettävissä
+olevien palveluiden luettelon. Saat ohjeen palvelun määrittämiseen
+kirjoittamalla NET HELP CONFIG palvelu.
+
+SERVER        Näyttää Server-palvelun määritystiedot.
+WORKSTATION   Näyttää Workstation-palvelun määritystiedot.
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10006
@@ -713,6 +785,10 @@ NET CONFIG SERVER [/AUTODISCONNECT:time] [/SRVCOMMENT:"text"]
 .
 Language=Taiwanese
 NET CONFIG SERVER [/AUTODISCONNECT:time] [/SRVCOMMENT:"text"]
+                  [/HIDDEN:{YES | NO}]
+.
+Language=Finnish
+NET CONFIG SERVER [/AUTODISCONNECT:aika] [/SRVCOMMENT:"teksti"]
                   [/HIDDEN:{YES | NO}]
 .
 
@@ -882,6 +958,26 @@ type NET CONFIG SERVER without parameters.
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET CONFIG SERVER näyttää tai muuttaa Server-palvelun asetuksia.
+
+/AUTODISCONNECT:aika    Määrittää, montako minuuttia käyttäjän istunto voi
+                        olla enintään käyttämättä ennen yhteyden
+                        katkaisemista. Arvo -1 ei katkaise yhteyttä koskaan.
+                        Arvo on -1-65535 minuuttia; oletus on 15.
+/SRVCOMMENT:"teksti"    Lisää palvelimelle kommentin, joka näkyy näytöllä
+                        ja NET VIEW -komennossa.
+                        Kirjoita teksti lainausmerkkeihin.
+/HIDDEN:{YES | NO}      Määrittää, näkyykö palvelimen tietokoneen nimi
+                        palvelinluetteloissa. Huomaa, että palvelimen
+                        piilottaminen ei muuta palvelimen käyttöoikeuksia.
+                        Oletus on NO.
+
+Saat Server-palvelun nykyiset määritykset näkyviin kirjoittamalla
+NET CONFIG SERVER ilman parametreja.
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10008
@@ -911,6 +1007,9 @@ NET CONTINUE <Service Name>
 .
 Language=Taiwanese
 NET CONTINUE <服務名稱>
+.
+Language=Finnish
+NET CONTINUE palvelu
 .
 
 
@@ -1022,6 +1121,19 @@ service             Is the paused service
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET CONTINUE jatkaa palvelua, joka on keskeytetty NET PAUSE -komennolla.
+
+palvelu             Keskeytetty palvelu,
+                    esimerkiksi jokin seuraavista:
+                    NET LOGON
+                    NT LM SECURITY SUPPORT PROVIDER
+                    SCHEDULE
+                    SERVER
+                    WORKSTATION
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10010
@@ -1051,6 +1163,9 @@ NET FILE [id [/CLOSE]]
 .
 Language=Taiwanese
 NET FILE [id [/CLOSE]]
+.
+Language=Finnish
+NET FILE [tunnus [/CLOSE]]
 .
 
 
@@ -1087,6 +1202,10 @@ NET FILE
 ...
 .
 Language=Taiwanese
+NET FILE
+...
+.
+Language=Finnish
 NET FILE
 ...
 .
@@ -1135,6 +1254,11 @@ Language=Taiwanese
 NET GROUP [groupname [/COMMENT:"text"]] [/DOMAIN]
           groupname {/ADD [/COMMENT:"text"] | /DELETE} [/DOMAIN]
           groupname username [...] {/ADD | /DELETE} [/DOMAIN]
+.
+Language=Finnish
+NET GROUP [ryhmän_nimi [/COMMENT:"teksti"]] [/DOMAIN]
+          ryhmän_nimi {/ADD [/COMMENT:"teksti"] | /DELETE} [/DOMAIN]
+          ryhmän_nimi käyttäjänimi [...] {/ADD | /DELETE} [/DOMAIN]
 .
 
 
@@ -1300,6 +1424,25 @@ username[ ...]   List one or more usernames to add to or remove from
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET GROUP lisää, näyttää tai muuttaa palvelimien yleisiä ryhmiä. Ilman
+parametreja se näyttää palvelimen ryhmien nimet.
+
+ryhmän_nimi      Lisättävän, laajennettavan tai poistettavan ryhmän nimi.
+                 Anna pelkkä ryhmän nimi, niin näet ryhmän käyttäjien
+                 luettelon.
+/COMMENT:"teksti" Lisää kommentin uudelle tai aiemmalle ryhmälle.
+                 Kirjoita teksti lainausmerkkeihin.
+/DOMAIN          Suorittaa toiminnon nykyisen toimialueen toimialueen
+                 ohjauskoneessa. Muuten toiminto suoritetaan
+                 paikallisessa tietokoneessa.
+käyttäjänimi[ ...] Yksi tai useampi käyttäjänimi, joka lisätään ryhmään tai
+                 poistetaan siitä. Erota käyttäjänimet välilyönneillä.
+/ADD             Lisää ryhmän tai lisää käyttäjänimen ryhmään.
+/DELETE          Poistaa ryhmän tai poistaa käyttäjänimen ryhmästä.
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10014
@@ -1345,6 +1488,11 @@ Language=Taiwanese
 NET HELP <命令>
    - 或 -
 NET <命令> /HELP
+.
+Language=Finnish
+NET HELP komento
+   - tai -
+NET komento /HELP
 .
 
 
@@ -1472,6 +1620,21 @@ Language=Taiwanese
    NET HELP SYNTAX explains how to read NET HELP syntax lines.
    NET HELP command | MORE displays Help one screen at a time.
 .
+Language=Finnish
+   Käytettävissä ovat seuraavat komennot:
+
+   NET ACCOUNTS             NET HELP                 NET STOP
+   NET COMPUTER             NET HELPMSG              NET TIME
+   NET CONFIG               NET LOCALGROUP           NET USE
+   NET CONFIG SERVER        NET PAUSE                NET USER
+   NET CONFIG WORKSTATION   NET SESSION              NET VIEW
+   NET CONTINUE             NET SHARE
+   NET FILE                 NET START
+   NET GROUP                NET STATISTCS
+
+   NET HELP SYNTAX kertoo, miten NET HELP -syntaksirivejä luetaan.
+   NET HELP komento | MORE näyttää ohjeen yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10016
@@ -1501,6 +1664,9 @@ NET HELPMSG message#
 .
 Language=Taiwanese
 NET HELPMSG <錯誤程式碼>
+.
+Language=Finnish
+NET HELPMSG viestin_numero
 .
 
 
@@ -1573,6 +1739,14 @@ message and suggested actions you can take to solve the problem.
 
 message#   Is the numerical error with which you need help.
 .
+Language=Finnish
+NET HELPMSG näyttää tietoja verkkoviesteistä (kuten virhe-, varoitus- ja
+hälytysviesteistä). Kun kirjoitat NET HELPMSG ja virheen numeron (esimerkiksi
+"net helpmsg 2182"), saat tietoja viestistä ja ehdotuksia toimista, joilla
+voit ratkaista ongelman.
+
+viestin_numero Sen virheen numero, johon tarvitset ohjetta.
+.
 
 
 MessageId=10018
@@ -1618,6 +1792,11 @@ Language=Taiwanese
 NET LOCALGROUP [組名 [/COMMENT:"文字"]] [/DOMAIN]
                組名 {/ADD [/COMMENT:"文字"] | /DELETE} [/DOMAIN]
                組名稱 [...] {/ADD | /DELETE} [/DOMAIN]
+.
+Language=Finnish
+NET LOCALGROUP [ryhmän_nimi [/COMMENT:"teksti"]] [/DOMAIN]
+               ryhmän_nimi {/ADD [/COMMENT:"teksti"] | /DELETE} [/DOMAIN]
+               ryhmän_nimi nimi [...] {/ADD | /DELETE} [/DOMAIN]
 .
 
 
@@ -1830,6 +2009,32 @@ name[ ...]       List one or more usernames or groupnams to add to or
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET LOCALGROUP lisää, näyttää tai muuttaa tietokoneiden paikallisia ryhmiä.
+Ilman parametreja se näyttää tietokoneen paikalliset ryhmät.
+
+ryhmän_nimi      Lisättävän, laajennettavan tai poistettavan paikallisen
+                 ryhmän nimi. Anna pelkkä ryhmän nimi, niin näet
+                 paikallisen ryhmän käyttäjien tai yleisten ryhmien
+                 luettelon.
+/COMMENT:"teksti" Lisää kommentin uudelle tai aiemmalle ryhmälle.
+                 Kirjoita teksti lainausmerkkeihin.
+/DOMAIN          Suorittaa toiminnon nykyisen toimialueen toimialueen
+                 ohjauskoneessa. Muuten toiminto suoritetaan
+                 paikallisessa tietokoneessa.
+nimi[ ...]       Yksi tai useampi käyttäjä- tai ryhmänimi, joka lisätään
+                 paikalliseen ryhmään tai poistetaan siitä. Erota nimet
+                 välilyönneillä. Nimet voivat olla käyttäjiä tai yleisiä
+                 ryhmiä, mutta eivät muita paikallisia ryhmiä. Jos käyttäjä
+                 on toisesta toimialueesta, kirjoita käyttäjänimen eteen
+                 toimialueen nimi (esimerkiksi SALES\RALPHR).
+/ADD             Lisää ryhmän tai käyttäjän nimen paikalliseen ryhmään.
+                 Tällä komennolla paikalliseen ryhmään lisätyillä
+                 käyttäjillä tai yleisillä ryhmillä on oltava tili.
+/DELETE          Poistaa ryhmän tai käyttäjän nimen paikallisesta ryhmästä.
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10020
@@ -1859,6 +2064,9 @@ NET PAUSE service
 .
 Language=Taiwanese
 NET PAUSE <服務名稱>
+.
+Language=Finnish
+NET PAUSE palvelu
 .
 
 
@@ -1921,6 +2129,13 @@ service   The name of the service to be paused.
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET PAUSE keskeyttää palvelun. Keskeytetty palvelu on pidossa.
+
+palvelu   Keskeytettävän palvelun nimi.
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10022
@@ -1949,6 +2164,9 @@ Language=Chinese
 NET SESSION ...
 .
 Language=Taiwanese
+NET SESSION ...
+.
+Language=Finnish
 NET SESSION ...
 .
 
@@ -1986,6 +2204,10 @@ SESSION
 ...
 .
 Language=Taiwanese
+SESSION
+...
+.
+Language=Finnish
 SESSION
 ...
 .
@@ -2074,6 +2296,16 @@ NET SHARE sharename=drive:path [/GRANT:user,[READ | CHANGE | FULL]]
                     [/REMARK:"text"]
                     [/CACHE:Manual | Documents | Programs | None]
           {sharename | devicename | drive:path} /DELETE
+.
+Language=Finnish
+NET SHARE jaettu_nimi=asema:polku [/GRANT:käyttäjä,[READ | CHANGE | FULL]]
+                               [/USERS:määrä | /UNLIMITED]
+                               [/REMARK:"teksti"]
+                               [/CACHE:Manual | Documents| Programs | None]
+          jaettu_nimi [/USERS:määrä | /UNLIMITED]
+                    [/REMARK:"teksti"]
+                    [/CACHE:Manual | Documents | Programs | None]
+          {jaettu_nimi | laitenimi | asema:polku} /DELETE
 .
 
 
@@ -2362,6 +2594,38 @@ devicename         Is one or more printers (LPT1: through LPT9:)
 
 NET HELP command | MORE displays Help one screen at a time.
 .
+Language=Finnish
+NET SHARE asettaa palvelimen resurssit verkon käyttäjien käyttöön. Ilman
+valintoja se näyttää tiedot kaikista tietokoneen jaetuista resursseista.
+Jokaisesta resurssista näytetään laitenimet tai polkunimet ja niihin liittyvä
+kuvaava kommentti.
+
+jaettu_nimi        Jaetun resurssin verkkonimi. Kirjoita NET SHARE ja pelkkä
+                   jaettu nimi, niin näet kyseisen jaon tiedot.
+asema:polku        Määrittää jaettavan hakemiston absoluuttisen polun.
+/GRANT:käyttäjä,oikeus Luo jaon suojauskuvauksella, joka antaa annetulle
+                   käyttäjälle pyydetyt oikeudet. Valintaa voi käyttää
+                   useammin kuin kerran, jos jaon oikeudet annetaan usealle
+                   käyttäjälle.
+/USERS:määrä       Määrittää, montako käyttäjää voi enintään käyttää jaettua
+                   resurssia samanaikaisesti.
+/UNLIMITED         Määrittää, että rajaton määrä käyttäjiä voi käyttää
+                   jaettua resurssia samanaikaisesti.
+/REMARK:"teksti"   Lisää resurssista kuvaavan kommentin.
+                   Kirjoita teksti lainausmerkkeihin.
+laitenimi          Yksi tai useampi tulostin (LPT1: - LPT9:), joka on jaettu
+                   jaetulla nimellä.
+/DELETE            Lopettaa resurssin jakamisen.
+/CACHE:Manual      Ottaa käyttöön tämän jaon ohjelmien ja tiedostojen
+                   manuaalisen asiakasvälimuistin.
+/CACHE:Documents   Ottaa käyttöön tämän jaon tiedostojen automaattisen
+                   välimuistin.
+/CACHE:Programs    Ottaa käyttöön tämän jaon tiedostojen ja ohjelmien
+                   automaattisen välimuistin.
+/CACHE:None        Poistaa tämän jaon välimuistin käytöstä.
+
+NET HELP komento | MORE näyttää ohjeen yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10026
@@ -2391,6 +2655,9 @@ NET START [service]
 .
 Language=Taiwanese
 NET START [service]
+.
+Language=Finnish
+NET START [palvelu]
 .
 
 
@@ -2486,6 +2753,17 @@ starts the net logon service.
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET START käynnistää palveluita tai näyttää käynnissä olevat palvelut.
+
+palvelu   Käynnistettävän palvelun nimi.
+
+Kun palvelun nimessä on kaksi tai useampia sanoja, se on kirjoitettava
+komentokehotteessa lainausmerkkeihin. Esimerkiksi NET START "NET LOGON"
+käynnistää Net Logon -palvelun.
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10028
@@ -2514,6 +2792,9 @@ Language=Chinese
 NET STATISTICS [SERVER | WORKSTATION]
 .
 Language=Taiwanese
+NET STATISTICS [SERVER | WORKSTATION]
+.
+Language=Finnish
 NET STATISTICS [SERVER | WORKSTATION]
 .
 
@@ -2602,6 +2883,16 @@ WORKSTATION   Displays the Workstation service statistics.
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET STATISTICS näyttää paikallisen Workstation- tai Server-palvelun
+tilastolokin. Ilman parametreja NET STATISTICS näyttää palvelut, joista
+tilastoja on saatavilla.
+
+SERVER        Näyttää Server-palvelun tilastot.
+WORKSTATION   Näyttää Workstation-palvelun tilastot.
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10030
@@ -2631,6 +2922,9 @@ NET STOP service
 .
 Language=Taiwanese
 NET STOP <服務名稱>
+.
+Language=Finnish
+NET STOP palvelu
 .
 
 
@@ -2726,6 +3020,17 @@ service can stop others. Some services cannot be stopped.
 
 NET HELP command | MORE displays one screen at a time.
 .
+Language=Finnish
+NET STOP pysäyttää palveluita.
+
+palvelu   Pysäytettävän palvelun nimi.
+
+Palvelun pysäyttäminen katkaisee kaikki palvelun käyttämät verkkoyhteydet.
+Lisäksi jotkin palvelut ovat riippuvaisia toisista. Yhden palvelun
+pysäyttäminen voi pysäyttää muitakin. Joitakin palveluita ei voi pysäyttää.
+
+NET HELP komento | MORE näyttää yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10032
@@ -2754,6 +3059,9 @@ Language=Chinese
 NET TIME ...
 .
 Language=Taiwanese
+NET TIME ...
+.
+Language=Finnish
 NET TIME ...
 .
 
@@ -2794,6 +3102,10 @@ Language=Taiwanese
 TIME
 ...
 .
+Language=Finnish
+TIME
+...
+.
 
 
 MessageId=10034
@@ -2822,6 +3134,9 @@ Language=Chinese
 NET USE ...
 .
 Language=Taiwanese
+NET USE ...
+.
+Language=Finnish
 NET USE ...
 .
 
@@ -2859,6 +3174,10 @@ USE
 ...
 .
 Language=Taiwanese
+USE
+...
+.
+Language=Finnish
 USE
 ...
 .
@@ -2907,6 +3226,11 @@ Language=Taiwanese
 NET USER [使用者名 [密碼 | *] [選項]] [/DOMAIN]
          使用者名 {密碼 | *} /ADD [選項] [/DOMAIN]
          使用者名 [/DELETE] [/DOMAIN]
+.
+Language=Finnish
+NET USER [käyttäjänimi [salasana | *] [valinnat]] [/DOMAIN]
+         käyttäjänimi {salasana | *} /ADD [valinnat] [/DOMAIN]
+         käyttäjänimi [/DELETE] [/DOMAIN]
 .
 
 
@@ -3536,6 +3860,84 @@ Options      Are as follows:
 
 NET HELP command | MORE displays Help one screen at a time.
 .
+Language=Finnish
+NET USER luo ja muuttaa tietokoneiden käyttäjätilejä. Ilman valitsimia se
+näyttää tietokoneen käyttäjätilit. Käyttäjätilien tiedot tallennetaan
+käyttäjätilitietokantaan.
+
+käyttäjänimi Lisättävän, poistettavan, muutettavan tai tarkasteltavan
+             käyttäjätilin nimi. Käyttäjätilin nimessä voi olla enintään
+             20 merkkiä.
+salasana     Määrittää tai vaihtaa käyttäjän tilin salasanan.
+             Salasanan on täytettävä NET ACCOUNTS -komennon
+             /MINPWLEN-valinnalla asetettu vähimmäispituus. Siinä voi olla
+             enintään 14 merkkiä.
+*            Kysyy salasanaa. Salasana ei näy, kun kirjoitat sen
+             salasanakehotteeseen.
+/DOMAIN      Suorittaa toiminnon nykyisen toimialueen toimialueen
+             ohjauskoneessa.
+/ADD         Lisää käyttäjätilin käyttäjätilitietokantaan.
+/DELETE      Poistaa käyttäjätilin käyttäjätilitietokannasta.
+
+Valinnat     Ovat seuraavat:
+
+   Valinnat                   Kuvaus
+   --------------------------------------------------------------------
+   /ACTIVE:{YES | NO}         Ottaa tilin käyttöön tai poistaa sen
+                              käytöstä. Jos tili ei ole käytössä,
+                              käyttäjä ei voi käyttää palvelinta.
+                              Oletus on YES.
+   /COMMENT:"teksti"          Antaa käyttäjän tilille kuvaavan
+                              kommentin.  Kirjoita teksti
+                              lainausmerkkeihin.
+   /COUNTRYCODE:nnn           Käyttää käyttöjärjestelmän maakoodia
+                              käyttäjän ohje- ja virheilmoitusten
+                              kielitiedostojen valintaan. Arvo 0
+                              tarkoittaa oletusmaakoodia.
+   /EXPIRES:{päivämäärä | NEVER} Saa tilin vanhenemaan, jos päivämäärä
+                              on asetettu. NEVER ei aseta tilille
+                              aikarajaa. Vanhenemispäivä annetaan
+                              muodossa kk/pp/vv(vv). Kuukauden voi antaa
+                              numerona, kokonaan kirjoitettuna tai
+                              kolmen kirjaimen lyhenteenä. Vuodessa voi
+                              olla kaksi tai neljä numeroa. Erota
+                              päivämäärän osat kauttaviivoilla (/)
+                              ilman välilyöntejä.
+   /FULLNAME:"nimi"           Käyttäjän koko nimi (käyttäjänimen
+                              sijaan). Kirjoita nimi lainausmerkkeihin.
+   /HOMEDIR:polku             Määrittää käyttäjän kotihakemiston polun.
+                              Polun on oltava olemassa.
+   /PASSWORDCHG:{YES | NO}    Määrittää, voivatko käyttäjät vaihtaa
+                              oman salasanansa. Oletus on YES.
+   /PASSWORDREQ:{YES | NO}    Määrittää, onko käyttäjätilillä oltava
+                              salasana. Oletus on YES.
+   /PROFILEPATH[:polku]       Määrittää käyttäjän kirjautumisprofiilin
+                              polun.
+   /SCRIPTPATH:polku          Käyttäjän kirjautumiskomentosarjan
+                              sijainti.
+   /TIMES:{ajat | ALL}        Kirjautumisajat. TIMES ilmaistaan muodossa
+                              päivä[-päivä][,päivä[-päivä]],aika[-aika]
+                              [,aika[-aika]], tunnin tarkkuudella.
+                              Päivät voi kirjoittaa kokonaan tai
+                              lyhentää. Ajat voi antaa 12 tai 24 tunnin
+                              muodossa. 12 tunnin muodossa käytä
+                              merkintöjä am, pm, a.m. tai p.m. ALL
+                              tarkoittaa, että käyttäjä voi aina
+                              kirjautua, ja tyhjä arvo, että käyttäjä ei
+                              voi koskaan kirjautua. Erota päivä- ja
+                              aikamerkinnät pilkulla ja useat päivä- ja
+                              aikamerkinnät puolipisteellä.
+   /USERCOMMENT:"teksti"      Sallii järjestelmänvalvojan lisätä tai
+                              muuttaa tilin käyttäjäkommentin.
+   /WORKSTATIONS:{tietokoneen_nimi[,...] | *}
+                              Luettelee enintään kahdeksan tietokonetta,
+                              joista käyttäjä voi kirjautua verkkoon. Jos
+                              /WORKSTATIONS-luetteloa ei ole tai luettelo
+                              on *, käyttäjä voi kirjautua mistä tahansa
+                              tietokoneesta.
+
+NET HELP komento | MORE näyttää ohjeen yhden näytöllisen kerrallaan.
+.
 
 
 MessageId=10038
@@ -3564,6 +3966,9 @@ Language=Chinese
 NET VIEW ...
 .
 Language=Taiwanese
+NET VIEW ...
+.
+Language=Finnish
 NET VIEW ...
 .
 
@@ -3601,6 +4006,10 @@ VIEW
 ...
 .
 Language=Taiwanese
+VIEW
+...
+.
+Language=Finnish
 VIEW
 ...
 .
@@ -3646,6 +4055,11 @@ NET [ ACCOUNTS | COMPUTER | CONFIG | CONTINUE | FILE | GROUP | HELP |
       STATISTICS | STOP | TIME | USE | USER | VIEW ]
 .
 Language=Taiwanese
+NET [ ACCOUNTS | COMPUTER | CONFIG | CONTINUE | FILE | GROUP | HELP |
+      HELPMSG | LOCALGROUP | PAUSE | SESSION | SHARE | START |
+      STATISTICS | STOP | TIME | USE | USER | VIEW ]
+.
+Language=Finnish
 NET [ ACCOUNTS | COMPUTER | CONFIG | CONTINUE | FILE | GROUP | HELP |
       HELPMSG | LOCALGROUP | PAUSE | SESSION | SHARE | START |
       STATISTICS | STOP | TIME | USE | USER | VIEW ]
@@ -3899,4 +4313,34 @@ The following conventions are used to indicate command syntax:
 -  When typed at the command prompt, service names of two words or
    more must be enclosed in quotation marks. For example,
    NET START "COMPUTER BROWSER" starts the computer browser service.
+.
+Language=Finnish
+SYNTAKSI
+Komentojen syntaksissa käytetään seuraavia merkintöjä:
+
+-  Isot kirjaimet ovat sanoja, jotka kirjoitetaan sellaisinaan. Pienet
+   kirjaimet ovat vaihtuvien kohteiden, kuten tiedostonimien, nimiä.
+
+-  Merkit [ ja ] ympäröivät valinnaisia kohteita, jotka voi antaa
+   komennon kanssa.
+
+-  Merkit { ja } ympäröivät kohteiden luetteloita. Komennon kanssa on
+   annettava yksi luettelon kohteista.
+
+-  Merkki | erottaa luettelon kohteet. Komennon kanssa voi antaa vain
+   yhden kohteista.
+
+   Esimerkiksi seuraavassa syntaksissa on kirjoitettava NET COMMAND ja joko
+   SWITCH1 tai SWITCH2. Nimen antaminen on valinnaista.
+       NET COMMAND [nimi] {SWITCH1 | SWITCH2}
+
+-  Merkit [...] tarkoittavat, että edellisen kohteen voi toistaa.
+   Erota kohteet välilyönneillä.
+
+-  Merkit [,...] tarkoittavat, että edellisen kohteen voi toistaa, mutta
+   kohteet on erotettava pilkuilla tai puolipisteillä, ei välilyönneillä.
+
+-  Kun palvelun nimessä on kaksi tai useampia sanoja, se on kirjoitettava
+   komentokehotteessa lainausmerkkeihin. Esimerkiksi
+   NET START "COMPUTER BROWSER" käynnistää Computer Browser -palvelun.
 .

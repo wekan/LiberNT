@@ -11,7 +11,8 @@ FacilityNames=(System=0x0:FACILITY_SYSTEM
 
 LanguageNames=(English=0x409:MSG00409
                Polish=0x415:MSG00415
-               Romanian=0x418:MSG00418)
+               Romanian=0x418:MSG00418
+               Finnish=0x40B:MSG0040B)
 
 MessageId=10000
 SymbolicName=MSG_ARP_SYNTAX
@@ -115,6 +116,36 @@ Exemplu:
   > arp -s 157.55.85.212   00-aa-00-62-c6-09  .... Adaugă o intrare statică.
   > arp -a                                    .... Afișează tabelul arp.
 .
+Language=Finnish
+Näyttää ja muuttaa osoitteenselvitysprotokollan (ARP) käyttämiä IP-osoitteiden
+ja fyysisten osoitteiden muunnostaulukoita.
+
+ARP -s inet_addr eth_addr [if_addr]
+ARP -d inet_addr [if_addr]
+ARP -a [inet_addr] [-N if_addr]
+
+  -a            Näyttää nykyiset ARP-merkinnät kysymällä nykyiset
+                protokollatiedot.  Jos inet_addr annetaan, vain annetun
+                tietokoneen IP-osoite ja fyysinen osoite näytetään.  Jos
+                useampi kuin yksi verkkoliitäntä käyttää ARP:tä, jokaisen
+                ARP-taulukon merkinnät näytetään.
+  -g            Sama kuin -a.
+  inet_addr     Määrittää Internet-osoitteen.
+  -N if_addr    Näyttää verkkoliitännän if_addr ARP-merkinnät.
+  -d            Poistaa isännän inet_addr. inet_addr voi sisältää
+                yleismerkin *, jolloin kaikki isännät poistetaan.
+  -s            Lisää isännän ja liittää Internet-osoitteen inet_addr
+                fyysiseen osoitteeseen eth_addr.  Fyysinen osoite annetaan
+                kuutena heksadesimaalitavuna, jotka erotetaan
+                yhdysmerkeillä. Merkintä on pysyvä.
+  eth_addr      Määrittää fyysisen osoitteen.
+  if_addr       Jos tämä annetaan, se määrittää sen liitännän
+                Internet-osoitteen, jonka osoitteenmuunnostaulukkoa muutetaan.
+                Jos sitä ei anneta, käytetään ensimmäistä sopivaa liitäntää.
+Esimerkki:
+  > arp -s 157.55.85.212   00-aa-00-62-c6-09  .... Lisää pysyvän merkinnän.
+  > arp -a                                    .... Näyttää ARP-taulukon.
+.
 
 MessageId=10001
 SymbolicName=MSG_ARP_BAD_IP_ADDRESS
@@ -129,6 +160,9 @@ ARP: zły adres IP: %1
 Language=Romanian
 ARP: adresă IP greșită: %1
 .
+Language=Finnish
+ARP: virheellinen IP-osoite: %1
+.
 
 MessageId=10002
 SymbolicName=MSG_ARP_BAD_ARGUMENT
@@ -142,6 +176,9 @@ ARP: zły argument: %1
 .
 Language=Romanian
 ARP: argument greșit: %1
+.
+Language=Finnish
+ARP: virheellinen argumentti: %1
 .
 
 MessageId=10003
@@ -163,6 +200,11 @@ Language=Romanian
 Interfață: %1!s! --- 0x%2!lx!
   Adresă de Internet      Adresă fizică      Tip
 .
+Language=Finnish
+
+Liitäntä: %1!s! --- 0x%2!lx!
+  Internet-osoite       Fyysinen osoite       Tyyppi
+.
 
 MessageId=10004
 SymbolicName=MSG_ARP_NO_MEMORY
@@ -176,6 +218,9 @@ ARP: za mało pamięci
 .
 Language=Romanian
 ARP: memorie insuficientă
+.
+Language=Finnish
+ARP: muisti ei riitä
 .
 
 MessageId=10005
@@ -191,6 +236,9 @@ inny%0
 Language=Romanian
 altele%0
 .
+Language=Finnish
+muu%0
+.
 
 MessageId=10006
 SymbolicName=MSG_ARP_INVALID
@@ -204,6 +252,9 @@ nieprawidłowy%0
 .
 Language=Romanian
 nevalid%0
+.
+Language=Finnish
+virheellinen%0
 .
 
 MessageId=10007
@@ -219,6 +270,9 @@ dynamiczny%0
 Language=Romanian
 dinamic%0
 .
+Language=Finnish
+dynaaminen%0
+.
 
 MessageId=10008
 SymbolicName=MSG_ARP_STATIC
@@ -232,6 +286,9 @@ statyczny%0
 .
 Language=Romanian
 static%0
+.
+Language=Finnish
+pysyvä%0
 .
 
 MessageId=10013
@@ -247,6 +304,9 @@ Language=Polish
 Language=Romanian
   %1!-20s!  %2!-20s!  %3!-10s!
 .
+Language=Finnish
+  %1!-20s!  %2!-20s!  %3!-10s!
+.
 
 MessageId=10018
 SymbolicName=MSG_ARP_NO_ENTRIES
@@ -260,4 +320,7 @@ Nie znaleziono żadnych wpisów ARP
 .
 Language=Romanian
 Nu au fost găsite intrări ARP
+.
+Language=Finnish
+ARP-merkintöjä ei löytynyt
 .
