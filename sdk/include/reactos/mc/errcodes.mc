@@ -25,7 +25,8 @@ LanguageNames=(English=0x409:MSG00409
                Russian=0x419:MSG00419
                Polish=0x415:MSG00415
                Romanian=0x418:MSG00418
-               Japanese=0x411:MSG00411)
+               Japanese=0x411:MSG00411
+               Finnish=0x40B:MSG0040B)
 
 MessageId=0
 Severity=Success
@@ -45,6 +46,9 @@ Operația a fost finalizată cu succes.
 .
 Language=Japanese
 操作は正常に完了しました。
+.
+Language=Finnish
+Toiminto onnistui.
 .
 
 MessageId=1
@@ -66,6 +70,9 @@ Funcție eronată.
 Language=Japanese
 関数が正しくありません。
 .
+Language=Finnish
+Virheellinen toiminto.
+.
 
 MessageId=2
 Severity=Success
@@ -85,6 +92,9 @@ Fișierul specificat nu poate fi găsit.
 .
 Language=Japanese
 指定されたファイルが見つかりません。
+.
+Language=Finnish
+Järjestelmä ei löydä määritettyä tiedostoa.
 .
 
 MessageId=3
@@ -106,6 +116,9 @@ Calea specificată nu a fost găsită.
 Language=Japanese
 指定されたパスが見つかりません。
 .
+Language=Finnish
+Järjestelmä ei löydä määritettyä polkua.
+.
 
 MessageId=4
 Severity=Success
@@ -125,6 +138,9 @@ Fișierul nu poate fi deschis.
 .
 Language=Japanese
 システムがファイルを開けません。
+.
+Language=Finnish
+Järjestelmä ei voi avata tiedostoa.
 .
 
 MessageId=5
@@ -146,6 +162,9 @@ Acces respins.
 Language=Japanese
 アクセスが拒否されました。
 .
+Language=Finnish
+Käyttö estetty.
+.
 
 MessageId=6
 Severity=Success
@@ -165,6 +184,9 @@ Identificator de gestiune eronat.
 .
 Language=Japanese
 ハンドルが無効です。
+.
+Language=Finnish
+Kahva on virheellinen.
 .
 
 MessageId=7
@@ -186,6 +208,9 @@ Blocurile de control al stocării au fost deteriorate.
 Language=Japanese
 ストレージ制御ブロックが破壊されました。
 .
+Language=Finnish
+Muistin ohjauslohkot tuhoutuivat.
+.
 
 MessageId=8
 Severity=Success
@@ -205,6 +230,9 @@ Spațiul de stocare disponibil este insuficient pentru procesarea acestei comanz
 .
 Language=Japanese
 このコマンドを処理するのに十分なメモリ リソースがありません。
+.
+Language=Finnish
+Muisti ei riitä tämän komennon käsittelyyn.
 .
 
 MessageId=9
@@ -226,6 +254,9 @@ Adresa blocului de control al stocării nu este validă.
 Language=Japanese
 ストレージ コントロール ブロック アドレスが無効です。
 .
+Language=Finnish
+Muistin ohjauslohkon osoite on virheellinen.
+.
 
 MessageId=10
 Severity=Success
@@ -245,6 +276,9 @@ Mediul current nu corespunde.
 .
 Language=Japanese
 環境が不正です。
+.
+Language=Finnish
+Ympäristö on virheellinen.
 .
 
 MessageId=11
@@ -266,6 +300,9 @@ Program cu format necorespunzător.
 Language=Japanese
 不正なフォーマットでプログラムをロードしようとしました。
 .
+Language=Finnish
+Yritettiin ladata ohjelma, jonka muoto on virheellinen.
+.
 
 MessageId=12
 Severity=Success
@@ -285,6 +322,9 @@ Codul de acces nu este valid.
 .
 Language=Japanese
 アクセス コードが無効です。
+.
+Language=Finnish
+Käyttökoodi on virheellinen.
 .
 
 MessageId=13
@@ -306,6 +346,9 @@ Date nevalide.
 Language=Japanese
 データが無効です。
 .
+Language=Finnish
+Tiedot ovat virheellisiä.
+.
 
 MessageId=14
 Severity=Success
@@ -325,6 +368,9 @@ Spațiul de stocare disponibil este insuficient pentru completarea acestei opera
 .
 Language=Japanese
 この操作を完了するのに十分なメモリ リソースがありません。
+.
+Language=Finnish
+Muisti ei riitä tämän toiminnon suorittamiseen.
 .
 
 MessageId=15
@@ -346,6 +392,9 @@ Unitatea de stocare specificată a fost găsită.
 Language=Japanese
 指定されたドライブが見つかりません。
 .
+Language=Finnish
+Järjestelmä ei löydä määritettyä asemaa.
+.
 
 MessageId=16
 Severity=Success
@@ -365,6 +414,9 @@ Directorul nu poate fi eliminat.
 .
 Language=Japanese
 ディレクトリを削除できません。
+.
+Language=Finnish
+Hakemistoa ei voi poistaa.
 .
 
 MessageId=17
@@ -386,6 +438,9 @@ Fișierul nu poate fi mutat pe o altă unitate de stocare.
 Language=Japanese
 システムはファイルを別のディスク ドライブに移動できません。
 .
+Language=Finnish
+Järjestelmä ei voi siirtää tiedostoa toiseen levyasemaan.
+.
 
 MessageId=18
 Severity=Success
@@ -405,6 +460,9 @@ Fișierul nu poate fi mutat pe o altă unitate de stocare.
 .
 Language=Japanese
 ファイルがありません。
+.
+Language=Finnish
+Tiedostoja ei ole enempää.
 .
 
 MessageId=19
@@ -426,6 +484,9 @@ Mediul de stocare este protejat la scriere.
 Language=Japanese
 メディアが書き込み保護されています。
 .
+Language=Finnish
+Tietoväline on kirjoitussuojattu.
+.
 
 MessageId=20
 Severity=Success
@@ -445,6 +506,9 @@ Dispozitivul specificat a fost găsit.
 .
 Language=Japanese
 指定されたデバイスが見つかりません。
+.
+Language=Finnish
+Järjestelmä ei löydä määritettyä laitetta.
 .
 
 MessageId=21
@@ -466,6 +530,9 @@ Dispozitivul nu este disponibil.
 Language=Japanese
 デバイスの準備ができていません。
 .
+Language=Finnish
+Laite ei ole valmis.
+.
 
 MessageId=22
 Severity=Success
@@ -485,6 +552,9 @@ Dispozitivul nu recunoaște comanda.
 .
 Language=Japanese
 デバイスがコマンドを認識しません。
+.
+Language=Finnish
+Laite ei tunnista komentoa.
 .
 
 MessageId=23
@@ -506,6 +576,9 @@ Eroare de date (sumă de control necorespunzătoare).
 Language=Japanese
 データエラー (巡回冗長検査) です。
 .
+Language=Finnish
+Tietovirhe (syklinen pariteettitarkistus).
+.
 
 MessageId=24
 Severity=Success
@@ -525,6 +598,9 @@ Comanda emisă de program are o lungime necorespunzătoare.
 .
 Language=Japanese
 プログラムがコマンドを発行しましたが、コマンド長が正しくありません。
+.
+Language=Finnish
+Ohjelma antoi komennon, mutta komennon pituus on virheellinen.
 .
 
 MessageId=25
@@ -546,6 +622,9 @@ Unitatea de stocare nu poate localiza o anumită zonă sau pistă de pe disc.
 Language=Japanese
 ドライブがディスク上の特定の領域またはトラックを検索できません。
 .
+Language=Finnish
+Asema ei löydä levyltä tiettyä aluetta tai uraa.
+.
 
 MessageId=26
 Severity=Success
@@ -565,6 +644,9 @@ Discul dur sau flexibil specificat nu poate fi accesat.
 .
 Language=Japanese
 指定されたディスクまたはディスケットにアクセスできません。
+.
+Language=Finnish
+Määritettyä levyä tai levykettä ei voi käyttää.
 .
 
 MessageId=27
@@ -586,6 +668,9 @@ Unitatea de stocare nu poate găsi sectorul solicitat.
 Language=Japanese
 ドライブが要求されたセクタを見つけることができません。
 .
+Language=Finnish
+Asema ei löydä pyydettyä sektoria.
+.
 
 MessageId=28
 Severity=Success
@@ -605,6 +690,9 @@ Imprimanta nu mai are hârtie.
 .
 Language=Japanese
 プリンタの用紙がありません。
+.
+Language=Finnish
+Tulostimesta on paperi lopussa.
 .
 
 MessageId=29
@@ -626,6 +714,9 @@ Imprimanta nu mai are hârtie.
 Language=Japanese
 システムは指定されたデバイスに書き込めません。
 .
+Language=Finnish
+Järjestelmä ei voi kirjoittaa määritettyyn laitteeseen.
+.
 
 MessageId=30
 Severity=Success
@@ -645,6 +736,9 @@ Eșec la citirea de pe dispozitivul specificat.
 .
 Language=Japanese
 指定されたデバイスから読み取ることができません。
+.
+Language=Finnish
+Järjestelmä ei voi lukea määritetystä laitteesta.
 .
 
 MessageId=31
@@ -666,6 +760,9 @@ Dispozitivul atașat nu funcționează.
 Language=Japanese
 システムに接続されたデバイスが機能していません。
 .
+Language=Finnish
+Järjestelmään liitetty laite ei toimi.
+.
 
 MessageId=32
 Severity=Success
@@ -685,6 +782,9 @@ Fișierul nu poate fi accesat în acest proces deoarece este utilizat într-un a
 .
 Language=Japanese
 他のプロセスによって使用されているため、プロセスはファイルにアクセスできません。
+.
+Language=Finnish
+Prosessi ei voi käyttää tiedostoa, koska toinen prosessi käyttää sitä.
 .
 
 MessageId=33
@@ -706,6 +806,9 @@ Fișierul nu poate fi accesat în acest proces deoarece o porțiune a sa a fost 
 Language=Japanese
 他のプロセスがファイルの一部をロックしたため、プロセスがファイルにアクセスできません。
 .
+Language=Finnish
+Prosessi ei voi käyttää tiedostoa, koska toinen prosessi on lukinnut osan tiedostosta.
+.
 
 MessageId=34
 Severity=Success
@@ -725,6 +828,9 @@ Discul flexibil din unitate nu este necorespunzător. Introduceți %2 (Număr Se
 .
 Language=Japanese
 誤ったディスケットがドライブに入っています。ドライブ %1 に %2 (ボリューム シリアル番号: %3)  を挿入してください。
+.
+Language=Finnish
+Asemassa on väärä levyke. Aseta levyke %2 (taltion sarjanumero: %3) asemaan %1.
 .
 
 MessageId=36
@@ -746,6 +852,9 @@ Numărul de fișiere deschise pentru partajare este prea mare.
 Language=Japanese
 共有で開いているファイルが多すぎます。
 .
+Language=Finnish
+Jakamista varten on avattu liian monta tiedostoa.
+.
 
 MessageId=38
 Severity=Success
@@ -765,6 +874,9 @@ Sfârșitul fișierului a fost atins.
 .
 Language=Japanese
 ファイルの最後に到達しました。
+.
+Language=Finnish
+Tiedoston loppu saavutettiin.
 .
 
 MessageId=39
@@ -786,6 +898,9 @@ Discul este plin.
 Language=Japanese
 ディスクがいっぱいです。
 .
+Language=Finnish
+Levy on täynnä.
+.
 
 MessageId=50
 Severity=Success
@@ -805,6 +920,9 @@ Solicitarea nu este acceptată.
 .
 Language=Japanese
 そのリクエストはサポートされていません。
+.
+Language=Finnish
+Pyyntöä ei tueta.
 .
 
 MessageId=51
@@ -826,6 +944,9 @@ Calea în rețea nu a fost găsită. Asigurați-vă că este corectă și că de
 Language=Japanese
 LiberNTでネットワークパスが見つかりません。ネットワークパスが正しく、宛先コンピュータがビジー状態または電源オフになっていないことを確認します。それでもLiberNTがネットワークパスを見つけられない場合は、ネットワーク管理者に連絡してください。
 .
+Language=Finnish
+LiberNT ei löydä verkkopolkua. Varmista, että verkkopolku on oikea ja että kohdetietokone ei ole varattu tai sammutettu. Jos LiberNT ei vieläkään löydä verkkopolkua, ota yhteyttä verkon järjestelmänvalvojaan.
+.
 
 MessageId=52
 Severity=Success
@@ -845,6 +966,9 @@ Nu poate fi realizată o conexiune deoarece un nume duplicat există deja în re
 .
 Language=Japanese
 ネットワーク上に重複した名前が存在するため、接続できませんでした。ドメインに参加している場合は、コントロールパネルの[システム]でコンピュータ名を変更し、再試行してください。ワークグループに参加している場合は、別のワークグループ名を選択してください。
+.
+Language=Finnish
+Yhteyttä ei muodostettu, koska verkossa on jo sama nimi. Vaihda tietokoneen nimi Ohjauspaneelin Järjestelmä-kohdassa ja yritä uudelleen.
 .
 
 MessageId=53
@@ -866,6 +990,9 @@ Calea în rețea a fost găsită.
 Language=Japanese
 ネットワークパスが見つかりませんでした。
 .
+Language=Finnish
+Verkkopolkua ei löytynyt.
+.
 
 MessageId=54
 Severity=Success
@@ -885,6 +1012,9 @@ Rețeaua este ocupată.
 .
 Language=Japanese
 ネットワークがビジーです。
+.
+Language=Finnish
+Verkko on varattu.
 .
 
 MessageId=55
@@ -906,6 +1036,9 @@ Dispozitivul specificat sau resursa în rețea nu mai este disponibilă.
 Language=Japanese
 指定されたネットワークリソースまたはデバイスは使用できなくなりました。
 .
+Language=Finnish
+Määritetty verkkoresurssi tai laite ei ole enää käytettävissä.
+.
 
 MessageId=56
 Severity=Success
@@ -925,6 +1058,9 @@ Limita pentru comanda BIOS de rețea a fost atinsă.
 .
 Language=Japanese
 ネットワーク BIOS コマンドの上限に達しました。
+.
+Language=Finnish
+Verkko-BIOSin komentoraja on saavutettu.
 .
 
 MessageId=57
@@ -946,6 +1082,9 @@ Dispozitivul de rețea a raportat o eroare.
 Language=Japanese
 ネットワーク アダプタのハードウェア エラーが発生しました。
 .
+Language=Finnish
+Tapahtui verkkosovittimen laitteistovirhe.
+.
 
 MessageId=58
 Severity=Success
@@ -965,6 +1104,9 @@ Serverul specificat nu poate îndeplini operația solicitată.
 .
 Language=Japanese
 指定されたサーバーは要求された操作を実行できません。
+.
+Language=Finnish
+Määritetty palvelin ei voi suorittaa pyydettyä toimintoa.
 .
 
 MessageId=59
@@ -986,6 +1128,9 @@ Eroare neașteptată de rețea.
 Language=Japanese
 予期しないネットワーク エラーが発生しました。
 .
+Language=Finnish
+Tapahtui odottamaton verkkovirhe.
+.
 
 MessageId=60
 Severity=Success
@@ -1005,6 +1150,9 @@ Adaptor de rețea necompatibil.
 .
 Language=Japanese
 リモート アダプタに互換性がありません。
+.
+Language=Finnish
+Etäsovitin ei ole yhteensopiva.
 .
 
 MessageId=61
@@ -1026,6 +1174,9 @@ Lista comenzilor de imprimare este plină.
 Language=Japanese
 プリンタキューがいっぱいです。
 .
+Language=Finnish
+Tulostusjono on täynnä.
+.
 
 MessageId=62
 Severity=Success
@@ -1045,6 +1196,9 @@ Serviciul de imprimare nu mai dispune de spațiu pentru fișierele în așteptar
 .
 Language=Japanese
 印刷待機中のファイルを保存する領域がサーバーにありません。
+.
+Language=Finnish
+Palvelimella ei ole tilaa tulostusta odottavan tiedoston tallentamiseen.
 .
 
 MessageId=63
@@ -1066,6 +1220,9 @@ Fișierul dvs. în așteptarea imprimării a fost eliminat.
 Language=Japanese
 印刷待機中のファイルが削除されました。
 .
+Language=Finnish
+Tulostusta odottanut tiedostosi poistettiin.
+.
 
 MessageId=64
 Severity=Success
@@ -1085,6 +1242,9 @@ Numele de rețea specificat nu mai este disponibil.
 .
 Language=Japanese
 指定されたネットワーク名は使用できなくなりました。
+.
+Language=Finnish
+Määritetty verkkonimi ei ole enää käytettävissä.
 .
 
 MessageId=65
@@ -1106,6 +1266,9 @@ Accesul la rețea este respins.
 Language=Japanese
 ネットワークアクセスが拒否されました。
 .
+Language=Finnish
+Verkon käyttö estetty.
+.
 
 MessageId=66
 Severity=Success
@@ -1125,6 +1288,9 @@ Tipul resursei de rețea nu este corespunzător.
 .
 Language=Japanese
 ネットワークリソースのタイプが正しくありません。
+.
+Language=Finnish
+Verkkoresurssin tyyppi on virheellinen.
 .
 
 MessageId=67
@@ -1146,6 +1312,9 @@ Numele de rețea nu este găsit.
 Language=Japanese
 ネットワーク名が見つかりません。
 .
+Language=Finnish
+Verkkonimeä ei löydy.
+.
 
 MessageId=68
 Severity=Success
@@ -1165,6 +1334,9 @@ Limita pentru numele plăcii adaptorului de rețea al calculatorului local a fos
 .
 Language=Japanese
 ローカル コンピュータのネットワーク アダプタ カードの名前の制限を超えました。
+.
+Language=Finnish
+Paikallisen tietokoneen verkkosovitinkortin nimiraja ylittyi.
 .
 
 MessageId=69
@@ -1186,6 +1358,9 @@ Limita pentru sesiunea BIOS de rețea a fost depășită.
 Language=Japanese
 ネットワークBIOSセッションの制限を超えました。
 .
+Language=Finnish
+Verkko-BIOSin istuntoraja ylittyi.
+.
 
 MessageId=70
 Severity=Success
@@ -1205,6 +1380,9 @@ Serverul accesat la distanță fie este în pauză fie este în curs de repornir
 .
 Language=Japanese
 リモートサーバーが一時停止されたか、起動中です。
+.
+Language=Finnish
+Etäpalvelin on keskeytetty tai sitä ollaan käynnistämässä.
 .
 
 MessageId=71
@@ -1226,6 +1404,9 @@ Calculatorul accesat la distanță nu acceptă mai multe conexiuni deoarece limi
 Language=Japanese
 このコンピュータが受け入れられるだけの接続がすでにあるため、現時点ではこのリモートコンピュータにこれ以上接続できません。
 .
+Language=Finnish
+Tähän etätietokoneeseen ei voi tällä hetkellä muodostaa enempää yhteyksiä, koska yhteyksiä on jo niin monta kuin tietokone voi hyväksyä.
+.
 
 MessageId=72
 Severity=Success
@@ -1245,6 +1426,9 @@ Dispozitivul de disc sau imprimanta specificată este în pauză.
 .
 Language=Japanese
 指定されたプリンタまたはディスクデバイスが一時停止しました。
+.
+Language=Finnish
+Määritetty tulostin tai levylaite on keskeytetty.
 .
 
 MessageId=80
@@ -1266,6 +1450,9 @@ Fișierul există.
 Language=Japanese
 ファイルが存在します。
 .
+Language=Finnish
+Tiedosto on olemassa.
+.
 
 MessageId=82
 Severity=Success
@@ -1285,6 +1472,9 @@ Fișierul sau directorul dat nu poate fi creat.
 .
 Language=Japanese
 ディレクトリまたはファイルを作成できません。
+.
+Language=Finnish
+Hakemistoa tai tiedostoa ei voi luoda.
 .
 
 MessageId=83
@@ -1306,6 +1496,9 @@ Eroare la INT 24.
 Language=Japanese
 INT 24で失敗しました。
 .
+Language=Finnish
+INT 24 epäonnistui.
+.
 
 MessageId=84
 Severity=Success
@@ -1325,6 +1518,9 @@ Necesarul de spațiu pentru această solicitare nu este disponibil.
 .
 Language=Japanese
 この要求を処理するストレージがありません。
+.
+Language=Finnish
+Tämän pyynnön käsittelyyn ei ole muistia käytettävissä.
 .
 
 MessageId=85
@@ -1346,6 +1542,9 @@ Acest nume de dispozitiv local este deja în uz.
 Language=Japanese
 ローカルデバイス名はすでに使用中です。
 .
+Language=Finnish
+Paikallisen laitteen nimi on jo käytössä.
+.
 
 MessageId=86
 Severity=Success
@@ -1365,6 +1564,9 @@ Parola specificată de rețea nu este corectă.
 .
 Language=Japanese
 指定されたネットワークパスワードが正しくありません。
+.
+Language=Finnish
+Määritetty verkkosalasana ei ole oikea.
 .
 
 MessageId=87
@@ -1386,6 +1588,9 @@ Parametru necorespunzător.
 Language=Japanese
 パラメータが不正です。
 .
+Language=Finnish
+Parametri on virheellinen.
+.
 
 MessageId=88
 Severity=Success
@@ -1405,6 +1610,9 @@ Eroare de scriere în rețea.
 .
 Language=Japanese
 ネットワークで書き込みエラーが発生しました。
+.
+Language=Finnish
+Verkossa tapahtui kirjoitusvirhe.
 .
 
 MessageId=89
@@ -1426,6 +1634,9 @@ La moment în sistem nu pot fi lansate noi procese.
 Language=Japanese
 システムは現時点で別のプロセスを開始できません。
 .
+Language=Finnish
+Järjestelmä ei voi tällä hetkellä käynnistää uutta prosessia.
+.
 
 MessageId=100
 Severity=Success
@@ -1445,6 +1656,9 @@ Un semafor nou de sistem nu poate fi creat.
 .
 Language=Japanese
 別のシステム セマフォを作成できません。
+.
+Language=Finnish
+Uutta järjestelmäsemaforia ei voi luoda.
 .
 
 MessageId=101
@@ -1466,6 +1680,9 @@ Semaforul exclusiv aparține unui alt proces.
 Language=Japanese
 排他セマフォが他のプロセスによって所有されています。
 .
+Language=Finnish
+Yksinoikeudellinen semafori on toisen prosessin omistuksessa.
+.
 
 MessageId=102
 Severity=Success
@@ -1485,6 +1702,9 @@ Semaforul este activ și nu poate fi închis.
 .
 Language=Japanese
 セマフォが設定されていて閉じることができない
+.
+Language=Finnish
+Semafori on asetettu, eikä sitä voi sulkea.
 .
 
 MessageId=103
@@ -1506,6 +1726,9 @@ Semaforul nu poate fi reactivat.
 Language=Japanese
 セマフォを再び設定できません。
 .
+Language=Finnish
+Semaforia ei voi asettaa uudelleen.
+.
 
 MessageId=104
 Severity=Success
@@ -1525,6 +1748,9 @@ Cererea de acces exclusiv la semafoare nu este permisă în timpul unei întreru
 .
 Language=Japanese
 割り込み時に排他セマフォを要求できません。
+.
+Language=Finnish
+Yksinoikeudellisia semaforeja ei voi pyytää keskeytyksen aikana.
 .
 
 MessageId=105
@@ -1546,6 +1772,9 @@ Apartenența acestui semafor la procesul său a luat sfârșit.
 Language=Japanese
 このセマフォの以前の所有権は終了しました。
 .
+Language=Finnish
+Tämän semaforin aiempi omistus on päättynyt.
+.
 
 MessageId=106
 Severity=Success
@@ -1565,6 +1794,9 @@ Introduceți discul flexibil pentru unitatea %1.
 .
 Language=Japanese
 ドライブ %1 用のディスケットを挿入してください。
+.
+Language=Finnish
+Aseta levyke asemaan %1.
 .
 
 MessageId=107
@@ -1586,6 +1818,9 @@ Programul a fost oprit deoarece nu a fost introdus un disc flexibil alternativ.
 Language=Japanese
 代替ディスケットが挿入されていないため、プログラムが停止しました。
 .
+Language=Finnish
+Ohjelma pysähtyi, koska toista levykettä ei asetettu.
+.
 
 MessageId=108
 Severity=Success
@@ -1605,6 +1840,9 @@ Discul este în uz sau este blocat de un alt proces.
 .
 Language=Japanese
 ディスクが使用中か、他のプロセスによってロックされています。
+.
+Language=Finnish
+Levy on käytössä tai toinen prosessi on lukinnut sen.
 .
 
 MessageId=109
@@ -1626,6 +1864,9 @@ Canalul a fost închis.
 Language=Japanese
 パイプが終了しました。
 .
+Language=Finnish
+Putki on päättynyt.
+.
 
 MessageId=110
 Severity=Success
@@ -1645,6 +1886,9 @@ Dispozitivul sau fișierul specificat nu poate fi deschis.
 .
 Language=Japanese
 システムは指定されたデバイスまたはファイルを開けません。
+.
+Language=Finnish
+Järjestelmä ei voi avata määritettyä laitetta tai tiedostoa.
 .
 
 MessageId=111
@@ -1666,6 +1910,9 @@ Numele de fișier este prea lung.
 Language=Japanese
 ファイル名が長すぎます。
 .
+Language=Finnish
+Tiedostonimi on liian pitkä.
+.
 
 MessageId=112
 Severity=Success
@@ -1685,6 +1932,9 @@ Nu mai este spațiu suficient pe disc.
 .
 Language=Japanese
 ディスクに十分な空き容量がありません。
+.
+Language=Finnish
+Levyllä ei ole tarpeeksi tilaa.
 .
 
 MessageId=113
@@ -1706,6 +1956,9 @@ Nu mai sunt disponibili identificatori interni de fișier.
 Language=Japanese
 使用可能な内部ファイル識別子がありません。
 .
+Language=Finnish
+Sisäisiä tiedostotunnisteita ei ole enää käytettävissä.
+.
 
 MessageId=114
 Severity=Success
@@ -1725,6 +1978,9 @@ Identificatorul intern de fișier țintă este necorespunzător.
 .
 Language=Japanese
 対象の内部ファイル識別子が不正です。
+.
+Language=Finnish
+Kohteen sisäinen tiedostotunniste on virheellinen.
 .
 
 MessageId=117
@@ -1746,6 +2002,9 @@ Apelul IOCTL efectuat de programul aplicație nu este corespunzător.
 Language=Japanese
 アプリケーション プログラムが行った IOCTL コールが正しくありません。
 .
+Language=Finnish
+Sovellusohjelman tekemä IOCTL-kutsu on virheellinen.
+.
 
 MessageId=118
 Severity=Success
@@ -1765,6 +2024,9 @@ Valoarea parametrului de verificare la scriere nu este corespunzătoare.
 .
 Language=Japanese
 ベリファイ オン ライトのスイッチパラメータ値が正しくありません。
+.
+Language=Finnish
+Kirjoituksen tarkistuksen valitsimen arvo on virheellinen.
 .
 
 MessageId=119
@@ -1786,6 +2048,9 @@ Comanda solicitată nu este acceptată.
 Language=Japanese
 システムは要求されたコマンドをサポートしていません。
 .
+Language=Finnish
+Järjestelmä ei tue pyydettyä komentoa.
+.
 
 MessageId=120
 Severity=Success
@@ -1805,6 +2070,9 @@ Această funcție nu este acceptată în acest sistem.
 .
 Language=Japanese
 この機能はこのシステムではサポートされていません。
+.
+Language=Finnish
+Tätä toimintoa ei tueta tässä järjestelmässä.
 .
 
 MessageId=121
@@ -1826,6 +2094,9 @@ Perioada de valabilitate a semaforului a expirat.
 Language=Japanese
 セマフォのタイムアウト期間が切れました。
 .
+Language=Finnish
+Semaforin aikakatkaisuaika on kulunut umpeen.
+.
 
 MessageId=122
 Severity=Success
@@ -1845,6 +2116,9 @@ Zona de date pasată unui apelul de sistem este prea mică.
 .
 Language=Japanese
 システムコールに渡されたデータ領域が小さすぎます。
+.
+Language=Finnish
+Järjestelmäkutsulle välitetty tietoalue on liian pieni.
 .
 
 MessageId=123
@@ -1866,6 +2140,9 @@ Zona de date pasată unui apelul de sistem este prea mică.
 Language=Japanese
 ファイル名、ディレクトリ名、またはボリューム ラベルの構文が正しくありません。
 .
+Language=Finnish
+Tiedostonimen, hakemistonimen tai taltion nimen syntaksi on virheellinen.
+.
 
 MessageId=124
 Severity=Success
@@ -1885,6 +2162,9 @@ Nivelul apelului de sistem nu este corespunzător.
 .
 Language=Japanese
 システム コール レベルが正しくありません。
+.
+Language=Finnish
+Järjestelmäkutsun taso on virheellinen.
 .
 
 MessageId=125
@@ -1906,6 +2186,9 @@ Discul nu are etichetă de volum.
 Language=Japanese
 ディスクにボリューム ラベルがありません。
 .
+Language=Finnish
+Levyllä ei ole taltion nimeä.
+.
 
 MessageId=126
 Severity=Success
@@ -1925,6 +2208,9 @@ Modulul specificat nu a fost găsit.
 .
 Language=Japanese
 指定されたモジュールが見つかりません。
+.
+Language=Finnish
+Määritettyä moduulia ei löytynyt.
 .
 
 MessageId=127
@@ -1946,6 +2232,9 @@ Procedura specificată nu a fost găsită.
 Language=Japanese
 指定されたプロシージャが見つかりません。
 .
+Language=Finnish
+Määritettyä proseduuria ei löytynyt.
+.
 
 MessageId=128
 Severity=Success
@@ -1965,6 +2254,9 @@ Nu a mai rămas de așteptat nici un sub-proces.
 .
 Language=Japanese
 待機する子プロセスがありません。
+.
+Language=Finnish
+Odotettavia aliprosesseja ei ole.
 .
 
 MessageId=129
@@ -1986,6 +2278,9 @@ Aplicația «%1» nu poate fi lansată în mod Win32.
 Language=Japanese
 %1 アプリケーションは Win32 モードで実行できません。
 .
+Language=Finnish
+Sovellusta %1 ei voi suorittaa Win32-tilassa.
+.
 
 MessageId=130
 Severity=Success
@@ -2005,6 +2300,9 @@ Language=Romanian
 .
 Language=Japanese
 開いているディスク パーティションへのファイル ハンドルを生のディスク I/O 以外の操作に使用しようとしました。
+.
+Language=Finnish
+Avoimen levyosion tiedostokahvaa yritettiin käyttää muuhun toimintoon kuin levyn raakaan I/O-käsittelyyn.
 .
 
 MessageId=131
@@ -2026,6 +2324,9 @@ Language=Romanian
 Language=Japanese
 ファイルポインタをファイルの先頭より前に移動しようとしました。
 .
+Language=Finnish
+Tiedosto-osoitinta yritettiin siirtää ennen tiedoston alkua.
+.
 
 MessageId=132
 Severity=Success
@@ -2045,6 +2346,9 @@ Indicatorul de fișier nu poate fi plasat pe fișierul sau dispozitivul specific
 .
 Language=Japanese
 指定されたデバイスまたはファイルにファイルポインタを設定できません。
+.
+Language=Finnish
+Tiedosto-osoitinta ei voi asettaa määritetyssä laitteessa tai tiedostossa.
 .
 
 MessageId=133
@@ -2066,6 +2370,9 @@ O comandă JOIN sau SUBST nu poate fi lansată pentru o unitate de stocare care 
 Language=Japanese
 JOIN または SUBST コマンドは、以前に結合されたドライブを含むドライブには使用できません。
 .
+Language=Finnish
+JOIN- tai SUBST-komentoa ei voi käyttää asemaan, joka sisältää aiemmin yhdistettyjä asemia.
+.
 
 MessageId=134
 Severity=Success
@@ -2085,6 +2392,9 @@ Language=Romanian
 .
 Language=Japanese
 すでに結合されているドライブでJOINまたはSUBSTコマンドを使用しようとしました。
+.
+Language=Finnish
+JOIN- tai SUBST-komentoa yritettiin käyttää asemaan, joka on jo yhdistetty.
 .
 
 MessageId=135
@@ -2106,6 +2416,9 @@ Language=Romanian
 Language=Japanese
 既に置換されているドライブで JOIN コマンドまたは SUBST コマンドを使用しようとしました。
 .
+Language=Finnish
+JOIN- tai SUBST-komentoa yritettiin käyttää asemaan, joka on jo korvattu.
+.
 
 MessageId=136
 Severity=Success
@@ -2125,6 +2438,9 @@ Language=Romanian
 .
 Language=Japanese
 参加していないドライブの JOIN を削除しようとしました。
+.
+Language=Finnish
+Järjestelmä yritti poistaa sellaisen aseman yhdistämisen, jota ei ole yhdistetty.
 .
 
 MessageId=137
@@ -2146,6 +2462,9 @@ Language=Romanian
 Language=Japanese
 システムは、置換されていないドライブの置換を削除しようとしました。
 .
+Language=Finnish
+Järjestelmä yritti poistaa sellaisen aseman korvauksen, jota ei ole korvattu.
+.
 
 MessageId=138
 Severity=Success
@@ -2165,6 +2484,9 @@ Language=Romanian
 .
 Language=Japanese
 システムは、結合されたドライブ上のディレクトリにドライブを結合しようとしました。
+.
+Language=Finnish
+Järjestelmä yritti yhdistää aseman yhdistetyn aseman hakemistoon.
 .
 
 MessageId=139
@@ -2186,6 +2508,9 @@ Language=Romanian
 Language=Japanese
 システムは、置換されたドライブ上のディレクトリにドライブを置換しようとしました。
 .
+Language=Finnish
+Järjestelmä yritti korvata aseman korvatun aseman hakemistolla.
+.
 
 MessageId=140
 Severity=Success
@@ -2205,6 +2530,9 @@ Language=Romanian
 .
 Language=Japanese
 システムは、置換されたドライブ上のディレクトリにドライブを結合しようとしました。
+.
+Language=Finnish
+Järjestelmä yritti yhdistää aseman korvatun aseman hakemistoon.
 .
 
 MessageId=141
@@ -2226,6 +2554,9 @@ Language=Romanian
 Language=Japanese
 システムは、結合されたドライブ上のディレクトリにドライブをサブストしようとしました。
 .
+Language=Finnish
+Järjestelmä yritti korvata aseman (SUBST) yhdistetyn aseman hakemistolla.
+.
 
 MessageId=142
 Severity=Success
@@ -2245,6 +2576,9 @@ Deocamdată nu pot fi efectuate operații de asociere sau substituție.
 .
 Language=Japanese
 システムは現在 JOIN または SUBST を実行できません。
+.
+Language=Finnish
+Järjestelmä ei voi suorittaa JOIN- tai SUBST-toimintoa tällä hetkellä.
 .
 
 MessageId=143
@@ -2266,6 +2600,9 @@ O unitate de stocare la sau pentru un director de pe aceiași unitate de stocare
 Language=Japanese
 システムは、同じドライブ上のディレクトリに、または同じドライブ上のディレクトリを結合または置換できません。
 .
+Language=Finnish
+Järjestelmä ei voi yhdistää tai korvata asemaa saman aseman hakemistoon tai hakemistolla.
+.
 
 MessageId=144
 Severity=Success
@@ -2285,6 +2622,9 @@ Directorul nu este subdirector al directorului rădăcină.
 .
 Language=Japanese
 ディレクトリはルート ディレクトリのサブディレクトリではありません。
+.
+Language=Finnish
+Hakemisto ei ole juurihakemiston alihakemisto.
 .
 
 MessageId=145
@@ -2306,6 +2646,9 @@ Directorul nu este gol.
 Language=Japanese
 ディレクトリが空ではありません。
 .
+Language=Finnish
+Hakemisto ei ole tyhjä.
+.
 
 MessageId=146
 Severity=Success
@@ -2325,6 +2668,9 @@ Calea specificată este deja utilizată într-o substituție.
 .
 Language=Japanese
 指定されたパスが置換で使用されています。
+.
+Language=Finnish
+Määritetty polku on käytössä korvauksessa.
 .
 
 MessageId=147
@@ -2346,6 +2692,9 @@ Nu există suficiente resurse disponibile pentru a executa această comandă.
 Language=Japanese
 このコマンドを処理するのに十分なリソースがありません。
 .
+Language=Finnish
+Resurssit eivät riitä tämän komennon käsittelyyn.
+.
 
 MessageId=148
 Severity=Success
@@ -2365,6 +2714,9 @@ Calea specificată nu poate fi utilizată deocamdată.
 .
 Language=Japanese
 指定されたパスは現在使用できません。
+.
+Language=Finnish
+Määritettyä polkua ei voi käyttää tällä hetkellä.
 .
 
 MessageId=149
@@ -2386,6 +2738,9 @@ Language=Romanian
 Language=Japanese
 ドライブ上のディレクトリが以前の置換の対象であるドライブに参加または置換しようとしました。
 .
+Language=Finnish
+Yritettiin yhdistää tai korvata asema, jonka hakemisto on aiemman korvauksen kohde.
+.
 
 MessageId=150
 Severity=Success
@@ -2405,6 +2760,9 @@ Language=Romanian
 .
 Language=Japanese
 システム トレース情報がCONFIG.SYSファイルで指定されていないか、トレースが許可されていません。
+.
+Language=Finnish
+Järjestelmän jäljitystietoja ei määritetty CONFIG.SYS-tiedostossa, tai jäljitys ei ole sallittua.
 .
 
 MessageId=151
@@ -2426,6 +2784,9 @@ Numărul evenimentelor de semafor specificate pentru DosMuxSemWait nu este cores
 Language=Japanese
 DosMuxSemWaitの指定されたセマフォ イベント数が正しくありません。
 .
+Language=Finnish
+DosMuxSemWait-kutsulle määritettyjen semaforitapahtumien määrä on virheellinen.
+.
 
 MessageId=152
 Severity=Success
@@ -2445,6 +2806,9 @@ DosMuxSemWait nu a fost lansat; deja sunt prea multe semafoare active.
 .
 Language=Japanese
 DosMuxSemWaitが実行されませんでした。すでに設定されているセマフォが多すぎます。
+.
+Language=Finnish
+DosMuxSemWait ei suorittunut; liian monta semaforia on jo asetettu.
 .
 
 MessageId=153
@@ -2466,6 +2830,9 @@ Lista DosMuxSemWait nu este corespunzătoare.
 Language=Japanese
 DosMuxSemWaitリストが正しくありません。
 .
+Language=Finnish
+DosMuxSemWait-luettelo on virheellinen.
+.
 
 MessageId=154
 Severity=Success
@@ -2485,6 +2852,9 @@ Lungimea pentru eticheta de volum depășește limita corespunzătoare etichetei
 .
 Language=Japanese
 入力したボリュームラベルがターゲットファイルシステムのラベル文字数制限を超えています。
+.
+Language=Finnish
+Antamasi taltion nimi ylittää kohdetiedostojärjestelmän nimen merkkirajan.
 .
 
 MessageId=155
@@ -2506,6 +2876,9 @@ Un alt fir de execuție nu poate fi creat.
 Language=Japanese
 別のスレッドを作成できません。
 .
+Language=Finnish
+Uutta säiettä ei voi luoda.
+.
 
 MessageId=156
 Severity=Success
@@ -2525,6 +2898,9 @@ Procesul recipient a refuzat semnalul.
 .
 Language=Japanese
 受け側のプロセスがシグナルを拒否しました。
+.
+Language=Finnish
+Vastaanottava prosessi on hylännyt signaalin.
 .
 
 MessageId=157
@@ -2546,6 +2922,9 @@ Segmentul deja a fost înlăturat și nu poate fi blocat.
 Language=Japanese
 セグメントはすでに破棄されており、ロックできません。
 .
+Language=Finnish
+Segmentti on jo hylätty, eikä sitä voi lukita.
+.
 
 MessageId=158
 Severity=Success
@@ -2565,6 +2944,9 @@ Segmentul deja este deblocat.
 .
 Language=Japanese
 セグメントはすでにアンロックされています。
+.
+Language=Finnish
+Segmentin lukitus on jo avattu.
 .
 
 MessageId=159
@@ -2586,6 +2968,9 @@ Adresa pentru ID de fir de execuție nu este corespunzător.
 Language=Japanese
 スレッド ID のアドレスが正しくありません。
 .
+Language=Finnish
+Säikeen tunnuksen osoite on virheellinen.
+.
 
 MessageId=160
 Severity=Success
@@ -2605,6 +2990,9 @@ Language=Romanian
 .
 Language=Japanese
 1つ以上の引数が正しくありません。
+.
+Language=Finnish
+DosExecPgm-kutsulle välitetty argumenttimerkkijono on virheellinen.
 .
 
 MessageId=161
@@ -2626,6 +3014,9 @@ Calea specificată nu este validă.
 Language=Japanese
 指定されたパスが無効です。
 .
+Language=Finnish
+Määritetty polku on virheellinen.
+.
 
 MessageId=162
 Severity=Success
@@ -2645,6 +3036,9 @@ Semnalul deja este în așteptare.
 .
 Language=Japanese
 信号が既に保留されています。
+.
+Language=Finnish
+Signaali odottaa jo käsittelyä.
 .
 
 MessageId=164
@@ -2666,6 +3060,9 @@ Mai multe fire de execuție nu pot fi create.
 Language=Japanese
 システム内にスレッドを作成できません。
 .
+Language=Finnish
+Järjestelmään ei voi luoda enempää säikeitä.
+.
 
 MessageId=167
 Severity=Success
@@ -2685,6 +3082,9 @@ O parte din fișier nu a putut fi blocată.
 .
 Language=Japanese
 ファイルの領域をロックできません。
+.
+Language=Finnish
+Tiedoston aluetta ei voi lukita.
 .
 
 MessageId=170
@@ -2706,6 +3106,9 @@ Resursa solicitată este deja în uz.
 Language=Japanese
 要求されたリソースは使用中です。
 .
+Language=Finnish
+Pyydetty resurssi on käytössä.
+.
 
 MessageId=173
 Severity=Success
@@ -2725,6 +3128,9 @@ Pentru zona de anulare furnizată există o cerere de blocare neadresată.
 .
 Language=Japanese
 供給されたキャンセル領域に対するロック要求が未処理です。
+.
+Language=Finnish
+Annetulle peruutettavalle alueelle ei ollut avointa lukituspyyntöä.
 .
 
 MessageId=174
@@ -2746,6 +3152,9 @@ Sistemul de fișiere nu permite blocări pentru modificări atomice.
 Language=Japanese
 ファイルシステムはロックタイプのアトミックな変更に対応していません。
 .
+Language=Finnish
+Tiedostojärjestelmä ei tue lukitustyypin atomisia muutoksia.
+.
 
 MessageId=180
 Severity=Success
@@ -2765,6 +3174,9 @@ Un număr de segment a fost identificat ca fiind necorespunzător.
 .
 Language=Japanese
 正常でないセグメント番号が検出されました。
+.
+Language=Finnish
+Järjestelmä havaitsi virheellisen segmentin numeron.
 .
 
 MessageId=182
@@ -2786,6 +3198,9 @@ Language=Romanian
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
 .
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
+.
 
 MessageId=183
 Severity=Success
@@ -2805,6 +3220,9 @@ Nu poate fi creat un fișier când acesta deja există.
 .
 Language=Japanese
 ファイルが既に存在する場合はファイルを作成できません。
+.
+Language=Finnish
+Tiedostoa ei voi luoda, koska se on jo olemassa.
 .
 
 MessageId=186
@@ -2826,6 +3244,9 @@ Fanionul furnizat nu este corespunzător.
 Language=Japanese
 渡されたフラグが正しくありません。
 .
+Language=Finnish
+Välitetty lippu on virheellinen.
+.
 
 MessageId=187
 Severity=Success
@@ -2845,6 +3266,9 @@ Numele de semafor specificat nu a fost găsit.
 .
 Language=Japanese
 指定されたシステム セマフォ名が見つかりません。
+.
+Language=Finnish
+Määritettyä järjestelmäsemaforin nimeä ei löytynyt.
 .
 
 MessageId=188
@@ -2866,6 +3290,9 @@ Sistemul de operare nu poate lansa «%1».
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
 .
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
+.
 
 MessageId=189
 Severity=Success
@@ -2885,6 +3312,9 @@ Sistemul de operare nu poate lansa «%1».
 .
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
+.
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
 .
 
 MessageId=190
@@ -2906,6 +3336,9 @@ Sistemul de operare nu poate lansa «%1».
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
 .
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
+.
 
 MessageId=191
 Severity=Success
@@ -2925,6 +3358,9 @@ Language=Romanian
 .
 Language=Japanese
 Win32 モードで %1 を実行できません。
+.
+Language=Finnish
+Sovellusta %1 ei voi suorittaa Win32-tilassa.
 .
 
 MessageId=192
@@ -2946,6 +3382,9 @@ Sistemul de operare nu poate lansa «%1».
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
 .
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
+.
 
 MessageId=193
 Severity=Success
@@ -2965,6 +3404,9 @@ Language=Romanian
 .
 Language=Japanese
 %1 は有効な Win32 アプリケーションではありません。
+.
+Language=Finnish
+%1 ei ole kelvollinen Win32-sovellus.
 .
 
 MessageId=194
@@ -2986,6 +3428,9 @@ Sistemul de operare nu poate lansa «%1».
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
 .
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
+.
 
 MessageId=195
 Severity=Success
@@ -3005,6 +3450,9 @@ Sistemul de operare nu poate lansa «%1».
 .
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
+.
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
 .
 
 MessageId=196
@@ -3026,6 +3474,9 @@ Aplicația program nu poate fi lansată.
 Language=Japanese
 オペレーティング システムはこのアプリケーション プログラムを実行できません。
 .
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa tätä sovellusohjelmaa.
+.
 
 MessageId=197
 Severity=Success
@@ -3045,6 +3496,9 @@ Sistemul de operare nu este deocamdată configurat pentru a putea lansa această
 .
 Language=Japanese
 オペレーティング システムは現在、このアプリケーションを実行するように構成されていません。
+.
+Language=Finnish
+Käyttöjärjestelmää ei ole tällä hetkellä määritetty suorittamaan tätä sovellusta.
 .
 
 MessageId=198
@@ -3066,6 +3520,9 @@ Sistemul de operare nu poate lansa «%1».
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
 .
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
+.
 
 MessageId=199
 Severity=Success
@@ -3085,6 +3542,9 @@ Aplicația program nu poate fi lansată.
 .
 Language=Japanese
 オペレーティング システムはこのアプリケーション プログラムを実行できません。
+.
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa tätä sovellusohjelmaa.
 .
 
 MessageId=200
@@ -3106,6 +3566,9 @@ Lungimea codului de segment nu poate fi egală cu sau depăși 64 Кo.
 Language=Japanese
 コードセグメントが 64K 以上ではありません。
 .
+Language=Finnish
+Koodisegmentti ei voi olla 64 kt tai suurempi.
+.
 
 MessageId=201
 Severity=Success
@@ -3125,6 +3588,9 @@ Sistemul de operare nu poate lansa «%1».
 .
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
+.
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
 .
 
 MessageId=202
@@ -3146,6 +3612,9 @@ Sistemul de operare nu poate lansa «%1».
 Language=Japanese
 オペレーティング システムは %1 を実行できません。
 .
+Language=Finnish
+Käyttöjärjestelmä ei voi suorittaa sovellusta %1.
+.
 
 MessageId=203
 Severity=Success
@@ -3165,6 +3634,9 @@ Opțiunea de mediu introdusă nu a fost găsită.
 .
 Language=Japanese
 入力された環境オプションが見つかりません。
+.
+Language=Finnish
+Järjestelmä ei löytänyt annettua ympäristön asetusta.
 .
 
 MessageId=205
@@ -3186,6 +3658,9 @@ Nici un proces din subarborele de comandă nu are un identificator de gestiune p
 Language=Japanese
 コマンドのサブツリーにシグナル ハンドラを持つプロセスがありません。
 .
+Language=Finnish
+Komennon alipuun yhdelläkään prosessilla ei ole signaalinkäsittelijää.
+.
 
 MessageId=206
 Severity=Success
@@ -3205,6 +3680,9 @@ Lungimea numelui de fișier sau a extensiei sale este prea mare.
 .
 Language=Japanese
 ファイル名または拡張子が長すぎます。
+.
+Language=Finnish
+Tiedostonimi tai tunniste on liian pitkä.
 .
 
 MessageId=207
@@ -3226,6 +3704,9 @@ Stiva pentru inelul 2 este în uz.
 Language=Japanese
 リング2スタックが使用中です。
 .
+Language=Finnish
+Renkaan 2 pino on käytössä.
+.
 
 MessageId=208
 Severity=Success
@@ -3245,6 +3726,9 @@ Fie are loc o utilizare greșită a caracterelor-mască «*» sau «?», fie sun
 .
 Language=Japanese
 グローバル ファイル名で文字 * または ? が間違って入力されたか、グローバル ファイル名文字が多すぎます。
+.
+Language=Finnish
+Tiedostonimien yleismerkit * tai ? on annettu väärin tai niitä on annettu liian monta.
 .
 
 MessageId=209
@@ -3266,6 +3750,9 @@ Semnalul postat nu este corespunzător.
 Language=Japanese
 書き込まれた信号が正しくありません。
 .
+Language=Finnish
+Lähetettävä signaali on virheellinen.
+.
 
 MessageId=210
 Severity=Success
@@ -3285,6 +3772,9 @@ Identificatorul de gestiune de semnale nu poate fi activat.
 .
 Language=Japanese
 シグナル ハンドラを設定できません。
+.
+Language=Finnish
+Signaalinkäsittelijää ei voi asettaa.
 .
 
 MessageId=212
@@ -3306,6 +3796,9 @@ Segmentul este blocat și nu poate fi realocat.
 Language=Japanese
 セグメントがロックされており、再割り当てできません。
 .
+Language=Finnish
+Segmentti on lukittu, eikä sitä voi varata uudelleen.
+.
 
 MessageId=214
 Severity=Success
@@ -3325,6 +3818,9 @@ Către acest program sau modul dinamic au fost atașate prea multe module dinami
 .
 Language=Japanese
 このプログラムまたは動的リンク モジュールにアタッチされている動的リンク モジュールが多すぎます。
+.
+Language=Finnish
+Tähän ohjelmaan tai dynaamisesti linkitettävään moduuliin on liitetty liian monta dynaamisesti linkitettävää moduulia.
 .
 
 MessageId=215
@@ -3346,6 +3842,9 @@ LoadModule nu poate conține apeluri imbricate.
 Language=Japanese
 LoadModule への呼び出しをネストできません。
 .
+Language=Finnish
+LoadModule-kutsuja ei voi sisäkkäistää.
+.
 
 MessageId=216
 Severity=Success
@@ -3365,6 +3864,9 @@ Fișierul imagine «%1» este valid, însă nu pentru tipul mașinii de calcul c
 .
 Language=Japanese
 このバージョンの %1 は、実行している LiberNT のバージョンと互換性がありません。コンピュータのシステム情報を確認してから、ソフトウェア発行元に連絡してください。
+.
+Language=Finnish
+Näköistiedosto %1 on kelvollinen, mutta se on tarkoitettu eri konetyypille kuin nykyinen kone.
 .
 
 MessageId=217
@@ -3386,6 +3888,9 @@ Fișierul imagine «%1» este semnat electronic, nu poate fi modificat.
 Language=Japanese
 イメージファイル %1 は署名されています。
 .
+Language=Finnish
+Näköistiedosto %1 on allekirjoitettu, eikä sitä voi muokata.
+.
 
 MessageId=218
 Severity=Success
@@ -3405,6 +3910,9 @@ Fișierul imagine «%1» este semnat electronic puternic, nu poate fi modificat.
 .
 Language=Japanese
 イメージ ファイル %1 は強く署名されています。
+.
+Language=Finnish
+Näköistiedosto %1 on allekirjoitettu vahvalla allekirjoituksella, eikä sitä voi muokata.
 .
 
 MessageId=230
@@ -3426,6 +3934,9 @@ Starea canalului nu este validă.
 Language=Japanese
 パイプの状態が無効です。
 .
+Language=Finnish
+Putken tila on virheellinen.
+.
 
 MessageId=231
 Severity=Success
@@ -3445,6 +3956,9 @@ Toate instanțele canalului sunt ocupate.
 .
 Language=Japanese
 すべてのパイプインスタンスがビジーです。
+.
+Language=Finnish
+Kaikki putken esiintymät ovat varattuja.
 .
 
 MessageId=232
@@ -3466,6 +3980,9 @@ Canalul este închis.
 Language=Japanese
 パイプが閉じられています。
 .
+Language=Finnish
+Putkea ollaan sulkemassa.
+.
 
 MessageId=233
 Severity=Success
@@ -3485,6 +4002,9 @@ La celălalt capăt al canalului nu se află nici un proces.
 .
 Language=Japanese
 パイプのもう一方の端にプロセスがありません。
+.
+Language=Finnish
+Putken toisessa päässä ei ole prosessia.
 .
 
 MessageId=234
@@ -3506,6 +4026,9 @@ Sunt disponibile mai multe date.
 Language=Japanese
 より多くのデータが利用可能です。
 .
+Language=Finnish
+Tietoja on saatavilla enemmän.
+.
 
 MessageId=240
 Severity=Success
@@ -3525,6 +4048,9 @@ Sesiunea a fost anulată.
 .
 Language=Japanese
 セッションがキャンセルされました。
+.
+Language=Finnish
+Istunto peruutettiin.
 .
 
 MessageId=254
@@ -3546,6 +4072,9 @@ Numele atributului extins care a fost specificat nu este corespunzător.
 Language=Japanese
 指定された拡張属性名が無効です。
 .
+Language=Finnish
+Määritetty laajennetun määritteen nimi oli virheellinen.
+.
 
 MessageId=255
 Severity=Success
@@ -3565,6 +4094,9 @@ Atributele extinse nu sunt consistente.
 .
 Language=Japanese
 拡張属性に矛盾があります。
+.
+Language=Finnish
+Laajennetut määritteet ovat ristiriitaisia.
 .
 
 MessageId=258
@@ -3586,6 +4118,9 @@ Operația de așteptare a expirat.
 Language=Japanese
 待機操作はタイムアウトしました。
 .
+Language=Finnish
+Odotustoiminto aikakatkaistiin.
+.
 
 MessageId=259
 Severity=Success
@@ -3605,6 +4140,9 @@ Nu sunt disponibile mai multe date.
 .
 Language=Japanese
 使用可能なデータはありません。
+.
+Language=Finnish
+Tietoja ei ole saatavilla enempää.
 .
 
 MessageId=266
@@ -3626,6 +4164,9 @@ Funcțiile de copiere nu pot fi utilizate.
 Language=Japanese
 コピー関数は使用できません。
 .
+Language=Finnish
+Kopiointitoimintoja ei voi käyttää.
+.
 
 MessageId=267
 Severity=Success
@@ -3645,6 +4186,9 @@ Numele directorului nu este corespunzător.
 .
 Language=Japanese
 ディレクトリ名が無効です。
+.
+Language=Finnish
+Hakemiston nimi on virheellinen.
 .
 
 MessageId=275
@@ -3666,6 +4210,9 @@ Atributul extins nu a încăput în memorie.
 Language=Japanese
 拡張属性がバッファに収まりませんでした。
 .
+Language=Finnish
+Laajennetut määritteet eivät mahtuneet puskuriin.
+.
 
 MessageId=276
 Severity=Success
@@ -3685,6 +4232,9 @@ Fișierul cu tabela de atribute extinse de pe sistemul de fișiere montat este d
 .
 Language=Japanese
 マウントされたファイルシステムの拡張属性ファイルが壊れています。
+.
+Language=Finnish
+Liitetyn tiedostojärjestelmän laajennettujen määritteiden tiedosto on vioittunut.
 .
 
 MessageId=277
@@ -3706,6 +4256,9 @@ Fișierul cu tabela de atribute extinse este plin.
 Language=Japanese
 拡張属性テーブルファイルがいっぱいです。
 .
+Language=Finnish
+Laajennettujen määritteiden taulukkotiedosto on täynnä.
+.
 
 MessageId=278
 Severity=Success
@@ -3725,6 +4278,9 @@ Identificatorul de gestiune al atributului extins nu este valid.
 .
 Language=Japanese
 指定された拡張属性ハンドルが無効です。
+.
+Language=Finnish
+Määritetty laajennetun määritteen kahva on virheellinen.
 .
 
 MessageId=282
@@ -3746,6 +4302,9 @@ Sistemul de fișiere atașat nu permite atribute extinse.
 Language=Japanese
 マウントされたファイルシステムは拡張属性をサポートしていません。
 .
+Language=Finnish
+Liitetty tiedostojärjestelmä ei tue laajennettuja määritteitä.
+.
 
 MessageId=288
 Severity=Success
@@ -3765,6 +4324,9 @@ Tentativă de cedare a unui mutex în afara posesiei curente.
 .
 Language=Japanese
 呼び出し元が所有していないミューテックスを解放しようとしました。
+.
+Language=Finnish
+Yritettiin vapauttaa mutex, jota kutsuja ei omista.
 .
 
 MessageId=298
@@ -3786,6 +4348,9 @@ Număr de plasamente peste limită adresate unui semafor.
 Language=Japanese
 セマフォへのポストが多すぎます。
 .
+Language=Finnish
+Semaforille tehtiin liian monta ilmoitusta.
+.
 
 MessageId=299
 Severity=Success
@@ -3805,6 +4370,9 @@ Cererea ReadProcessMemory sau WriteProcessMemory a fost îndeplinită doar parț
 .
 Language=Japanese
 ReadProcessMemoryまたはWriteProcessMemory要求の一部のみが完了しました。
+.
+Language=Finnish
+Vain osa ReadProcessMemory- tai WriteProcessMemory-pyynnöstä suoritettiin.
 .
 
 MessageId=300
@@ -3826,6 +4394,9 @@ Cererea pentru blocare oportună (oplock) a fost respintă.
 Language=Japanese
 オプロック要求が拒否されました。
 .
+Language=Finnish
+Oplock-pyyntö hylättiin.
+.
 
 MessageId=301
 Severity=Success
@@ -3845,6 +4416,9 @@ Confirmarea primită pentru blocarea oportună (oplock) nu este validă.
 .
 Language=Japanese
 無効なオプロック承認がシステムによって受信されました。
+.
+Language=Finnish
+Järjestelmä vastaanotti virheellisen oplock-kuittauksen.
 .
 
 MessageId=302
@@ -3866,6 +4440,9 @@ Volumul este prea fragmentat pentru a îndeplini această operație.
 Language=Japanese
 ボリュームが断片化されているため、この操作を完了できません。
 .
+Language=Finnish
+Taltio on liian pirstoutunut tämän toiminnon suorittamiseen.
+.
 
 MessageId=303
 Severity=Success
@@ -3885,6 +4462,9 @@ Fișierul nu poate fi deschis deoarece este în curs de ștergere.
 .
 Language=Japanese
 ファイルは削除中なので開けません。
+.
+Language=Finnish
+Tiedostoa ei voi avata, koska sitä ollaan poistamassa.
 .
 
 MessageId=317
@@ -3906,6 +4486,9 @@ Textul pentru mesajul cu numărul 0x%1 din fișierul de mesaja pentru %2 nu a pu
 Language=Japanese
 %2 のメッセージ ファイルにメッセージ番号 0x%1 のメッセージ テキストが見つかりません。
 .
+Language=Finnish
+Järjestelmä ei löydä viestin numeron 0x%1 tekstiä viestitiedostosta kohteelle %2.
+.
 
 MessageId=318
 Severity=Success
@@ -3925,6 +4508,9 @@ Domeniul de acțiune specificat nu a fost găsit.
 .
 Language=Japanese
 指定されたスコープが見つかりません。
+.
+Language=Finnish
+Määritettyä aluetta ei löytynyt.
 .
 
 MessageId=487
@@ -3946,6 +4532,9 @@ Tentativă de acces a unei adrese nevalide.
 Language=Japanese
 無効なアドレスへのアクセスを試みました。
 .
+Language=Finnish
+Yritettiin käyttää virheellistä osoitetta.
+.
 
 MessageId=534
 Severity=Success
@@ -3965,6 +4554,9 @@ Rezultatul aritmetic depășește 32 de biți.
 .
 Language=Japanese
 演算結果が32ビットを超えた。
+.
+Language=Finnish
+Aritmeettinen tulos ylitti 32 bittiä.
 .
 
 MessageId=535
@@ -3986,6 +4578,9 @@ La celălalt capăt al conectorului (pipe) deja există un proces.
 Language=Japanese
 パイプの反対側にプロセスがある。
 .
+Language=Finnish
+Putken toisessa päässä on prosessi.
+.
 
 MessageId=536
 Severity=Success
@@ -4006,6 +4601,9 @@ Un proces este așteptat la capătul complementar al conectorului (pipe).
 Language=Japanese
 パイプのもう一方の端を開くプロセスを待機している。
 .
+Language=Finnish
+Odotetaan, että prosessi avaa putken toisen pään.
+.
 
 MessageId=537
 Severity=Success
@@ -4025,6 +4623,9 @@ Language=Romanian
 .
 Language=Japanese
 ACPIサブシステムでエラーが発生しました。
+.
+Language=Finnish
+ACPI-alijärjestelmässä tapahtui virhe.
 .
 
 
@@ -4047,6 +4648,9 @@ Language=Romanian
 Language=Japanese
 ABIOSサブシステムでエラーが発生しました。
 .
+Language=Finnish
+ABIOS-alijärjestelmässä tapahtui virhe
+.
 
 MessageId=539
 Severity=Success
@@ -4066,6 +4670,9 @@ Există un avertisment referitor la subsistemul WX86.
 .
 Language=Japanese
 WX86サブシステムで警告が発生しました。
+.
+Language=Finnish
+WX86-alijärjestelmässä annettiin varoitus.
 .
 
 MessageId=540
@@ -4087,6 +4694,9 @@ Language=Romanian
 Language=Japanese
 WX86サブシステムでエラーが発生しました。
 .
+Language=Finnish
+WX86-alijärjestelmässä tapahtui virhe.
+.
 
 MessageId=541
 Severity=Success
@@ -4106,6 +4716,9 @@ A avut loc o încercare de a institui sau destitui un cronometru cu un APC asoci
 .
 Language=Japanese
 関連する APC を持つタイマーをキャンセルまたは設定しようとしましたが、対象のスレッドは、関連する APC ルーチンを持つタイマーを最初に設定したスレッドではありません。
+.
+Language=Finnish
+Yritettiin peruuttaa tai asettaa ajastinta, johon liittyy APC, mutta kohdesäie ei ole se säie, joka alun perin asetti ajastimen ja siihen liittyvän APC-rutiinin.
 .
 
 MessageId=542
@@ -4127,6 +4740,9 @@ Eșec la deducția codului de eroare.
 Language=Japanese
 巻き戻し例外コードです。
 .
+Language=Finnish
+Purkamisen poikkeuskoodi.
+.
 
 MessageId=543
 Severity=Success
@@ -4146,6 +4762,9 @@ Stivă nealiniată sau nevalidă în operația de deducție a unui cod de eroare
 .
 Language=Japanese
 巻き戻し操作中に無効なスタックまたはアラインされていないスタックに遭遇しました。
+.
+Language=Finnish
+Purkamisen aikana havaittiin virheellinen tai väärin tasattu pino.
 .
 
 MessageId=544
@@ -4167,6 +4786,9 @@ Destinație nevalidă în operația de deducție a unui cod de eroare.
 Language=Japanese
 巻き戻し操作中に無効な巻き戻しターゲットに遭遇しました。
 .
+Language=Finnish
+Purkamisen aikana havaittiin virheellinen purkamisen kohde.
+.
 
 MessageId=545
 Severity=Success
@@ -4186,6 +4808,9 @@ Atribute nevalide de obiect sau de port specificate către NtCreatePort sau resp
 .
 Language=Japanese
 NtCreatePort に指定されたオブジェクト属性が無効、または NtConnectPort に指定されたポート属性が無効です。
+.
+Language=Finnish
+NtCreatePort-kutsulle annettiin virheelliset objektimääritteet tai NtConnectPort-kutsulle virheelliset porttimääritteet
 .
 
 MessageId=546
@@ -4207,6 +4832,9 @@ Lungimea mesajului specificat în NtRequestPort sau NtRequestWaitReplyPort depă
 Language=Japanese
 NtRequestPortまたはNtRequestWaitReplyPortに渡されたメッセージの長さが、ポートで許容される最大メッセージより長いです。
 .
+Language=Finnish
+NtRequestPort- tai NtRequestWaitReplyPort-kutsulle välitetty viesti oli pidempi kuin portin sallima enimmäispituus.
+.
 
 MessageId=547
 Severity=Success
@@ -4226,6 +4854,9 @@ A avut loc o încercare de a scădea limita cotei sub cea utilizată.
 .
 Language=Japanese
 クォータ制限を現在の使用量より低くしようとしました。
+.
+Language=Finnish
+Kiintiörajaa yritettiin laskea nykyistä käyttöä pienemmäksi.
 .
 
 MessageId=548
@@ -4247,6 +4878,9 @@ A avut loc o încercare de a atașa un dispozitiv deja atașat de un alt dispozi
 Language=Japanese
 すでに別のデバイスにアタッチされているデバイスにアタッチしようとしました。
 .
+Language=Finnish
+Yritettiin liittyä laitteeseen, joka oli jo liitetty toiseen laitteeseen.
+.
 
 MessageId=549
 Severity=Success
@@ -4266,6 +4900,9 @@ A avut loc o încercare de a executa o instrucțiune de la o adresă nealiniată
 .
 Language=Japanese
 非整列アドレスで命令を実行しようとしましたが、ホスト システムは非整列命令参照をサポートしていません。
+.
+Language=Finnish
+Yritettiin suorittaa käsky tasaamattomassa osoitteessa, eikä isäntäjärjestelmä tue tasaamattomia käskyviittauksia.
 .
 
 MessageId=550
@@ -4287,6 +4924,9 @@ Profilarea nu este pornită.
 Language=Japanese
 プロファイリングが開始されていません。
 .
+Language=Finnish
+Profilointia ei ole aloitettu.
+.
 
 MessageId=551
 Severity=Success
@@ -4306,6 +4946,9 @@ Profiling not stopped.
 .
 Language=Japanese
 プロファイリングが停止していません。
+.
+Language=Finnish
+Profilointia ei ole lopetettu.
 .
 
 MessageId=552
@@ -4327,6 +4970,9 @@ The passed ACL did not contain the minimum required information.
 Language=Japanese
 渡されたACLに必要最低限の情報が含まれていません。
 .
+Language=Finnish
+Välitetyssä käyttöoikeusluettelossa (ACL) ei ollut tarvittavia vähimmäistietoja.
+.
 
 MessageId=553
 Severity=Success
@@ -4346,6 +4992,9 @@ The number of active profiling objects is at the maximum and no more may be star
 .
 Language=Japanese
 アクティブなプロファイリング オブジェクトの数が最大です。
+.
+Language=Finnish
+Aktiivisia profilointiobjekteja on enimmäismäärä, eikä uusia voi aloittaa.
 .
 
 MessageId=554
@@ -4367,6 +5016,9 @@ Used to indicate that an operation cannot continue without blocking for I/O.
 Language=Japanese
 操作がI/Oのためにブロックされずに継続できないことを示すために使用されます。
 .
+Language=Finnish
+Ilmaisee, että toimintoa ei voi jatkaa ilman I/O-odotusta.
+.
 
 MessageId=555
 Severity=Success
@@ -4386,6 +5038,9 @@ Indicates that a thread attempted to terminate itself by default (called NtTermi
 .
 Language=Japanese
 スレッドがデフォルトで終了しようとし (NULLでNtTerminateThreadを呼び出し) 、それが現在のプロセスの最後のスレッドであったことを示します。
+.
+Language=Finnish
+Ilmaisee, että säie yritti lopettaa itsensä oletustavalla (kutsui NtTerminateThread-funktiota arvolla NULL) ja se oli nykyisen prosessin viimeinen säie.
 .
 
 MessageId=556
@@ -4408,6 +5063,9 @@ Language=Japanese
 標準のFsRtlフィルタで定義されていないMMエラーが返された場合、フィルタで保証されている以下のエラーの1つに変換されます。
 この場合、情報は失われますが、フィルタは例外を正しく処理します。
 .
+Language=Finnish
+Jos palautetaan muistinhallinnan virhe, jota ei ole määritetty vakio-FsRtl-suodattimessa, se muunnetaan yhdeksi seuraavista virheistä, joka on varmasti suodattimessa. Tällöin tietoja menetetään, mutta suodatin käsittelee poikkeuksen oikein.
+.
 
 MessageId=557
 Severity=Success
@@ -4428,6 +5086,9 @@ If an MM error is returned which is not defined in the standard FsRtl filter, it
 Language=Japanese
 標準のFsRtlフィルタで定義されていないMMエラーが返された場合、フィルタで保証されている以下のエラーのいずれかに変換されます。
 この場合、情報は失われますが、フィルタは例外を正しく処理します。
+.
+Language=Finnish
+Jos palautetaan muistinhallinnan virhe, jota ei ole määritetty vakio-FsRtl-suodattimessa, se muunnetaan yhdeksi seuraavista virheistä, joka on varmasti suodattimessa. Tällöin tietoja menetetään, mutta suodatin käsittelee poikkeuksen oikein.
 .
 
 MessageId=558
@@ -4450,6 +5111,9 @@ Language=Japanese
 標準のFsRtlフィルタで定義されていないMMエラーが返された場合、フィルタで保証されている以下のエラーのいずれかに変換されます。
 この場合、情報は失われますが、フィルタは例外を正しく処理します。
 .
+Language=Finnish
+Jos palautetaan muistinhallinnan virhe, jota ei ole määritetty vakio-FsRtl-suodattimessa, se muunnetaan yhdeksi seuraavista virheistä, joka on varmasti suodattimessa. Tällöin tietoja menetetään, mutta suodatin käsittelee poikkeuksen oikein.
+.
 
 MessageId=559
 Severity=Success
@@ -4469,6 +5133,9 @@ A malformed function table was encountered during an unwind operation.
 .
 Language=Japanese
 巻き戻し操作中に不正なファンクション テーブルが発生しました。
+.
+Language=Finnish
+Purkamisen aikana havaittiin virheellisesti muodostettu funktiotaulukko.
 .
 
 MessageId=560
@@ -4491,6 +5158,9 @@ Language=Japanese
 ファイルシステムのファイルまたはディレクトリに保護を割り当てようとしたときに、セキュリティ記述子のSIDの1つをファイルシステムに格納できるGUIDに変換できなかったことを示します。
 このため、保護の試みが失敗し、ファイル作成の試みが失敗することがあります。
 .
+Language=Finnish
+Ilmaisee, että tiedostojärjestelmän tiedostolle tai hakemistolle yritettiin määrittää suojaus, mutta yhtä suojauskuvauksen SID-tunnuksista ei voitu muuntaa GUID-tunnukseksi, jonka tiedostojärjestelmä voisi tallentaa. Tämä saa suojausyrityksen epäonnistumaan, mikä voi saada tiedoston luontiyrityksen epäonnistumaan.
+.
 
 MessageId=561
 Severity=Success
@@ -4510,6 +5180,9 @@ Indicates that an attempt was made to grow an LDT by setting its size, or that t
 .
 Language=Japanese
 LDTのサイズを設定してLDTを大きくしようとした、またはサイズがセレクタの偶数でなかったことを示します。
+.
+Language=Finnish
+Ilmaisee, että LDT:tä yritettiin kasvattaa asettamalla sen koko tai että koko ei ollut valitsimien parillinen määrä.
 .
 
 MessageId=563
@@ -4531,6 +5204,9 @@ Indicates that the starting value for the LDT information was not an integral mu
 Language=Japanese
 LDT情報の開始値がセレクタ サイズの整数倍でなかったことを示す。
 .
+Language=Finnish
+Ilmaisee, että LDT-tietojen alkuarvo ei ollut valitsimen koon kokonaislukumonikerta.
+.
 
 MessageId=564
 Severity=Success
@@ -4550,6 +5226,9 @@ Indicates that the user supplied an invalid descriptor when trying to set up Ldt
 .
 Language=Japanese
 LDTディスクリプタを設定しようとしたときに、ユーザーが無効なディスクリプタを提供したことを示します。
+.
+Language=Finnish
+Ilmaisee, että käyttäjä antoi virheellisen kuvaajan yrittäessään määrittää LDT-kuvaajia.
 .
 
 MessageId=565
@@ -4571,6 +5250,9 @@ Indicates a process has too many threads to perform the requested action. For ex
 Language=Japanese
 プロセスに要求されたアクションを実行するスレッドが多すぎることを示します。例えば、プライマリ トークンの割り当ては、プロセスのスレッド数が0または1の場合にのみ実行できます。
 .
+Language=Finnish
+Ilmaisee, että prosessilla on liian monta säiettä pyydetyn toiminnon suorittamiseen. Esimerkiksi ensisijaisen tunnussanoman voi määrittää vain, kun prosessilla on nolla tai yksi säie.
+.
 
 MessageId=566
 Severity=Success
@@ -4590,6 +5272,9 @@ An attempt was made to operate on a thread within a specific process, but the th
 .
 Language=Japanese
 特定のプロセス内のスレッドを操作しようとしましたが、指定されたスレッドは指定されたプロセス内にありません。
+.
+Language=Finnish
+Yritettiin käsitellä tietyn prosessin säiettä, mutta annettu säie ei ole annetussa prosessissa.
 .
 
 MessageId=567
@@ -4611,6 +5296,9 @@ Page file quota was exceeded.
 Language=Japanese
 ページファイルのクォータを超過しました。
 .
+Language=Finnish
+Sivutustiedoston kiintiö ylittyi.
+.
 
 MessageId=568
 Severity=Success
@@ -4630,6 +5318,9 @@ The Netlogon service cannot start because another Netlogon service running in th
 .
 Language=Japanese
 ドメインで実行されている別のNetlogonサービスが指定されたロールと競合するため、Netlogonサービスを開始できません。
+.
+Language=Finnish
+Netlogon-palvelu ei voi käynnistyä, koska toimialueella käynnissä oleva toinen Netlogon-palvelu on ristiriidassa annetun roolin kanssa.
 .
 
 MessageId=569
@@ -4651,6 +5342,9 @@ The SAM database on a Windows Server is significantly out of synchronization wit
 Language=Japanese
 LiberNT Server上のSAMデータベースがドメイン コントローラー上のコピーと同期していません。完全な同期が必要です。
 .
+Language=Finnish
+Windows-palvelimen SAM-tietokanta on huomattavasti epätahdissa toimialueen ohjauskoneen kopion kanssa. Täydellinen synkronointi tarvitaan.
+.
 
 MessageId=570
 Severity=Success
@@ -4670,6 +5364,9 @@ The NtCreateFile API failed. This error should never be returned to an applicati
 .
 Language=Japanese
 NtCreateFile APIが失敗しました。このエラーはLiberNT Lan Manager Redirectorが内部のエラーマップルーチンで使用するプレースホルダーです。
+.
+Language=Finnish
+NtCreateFile-ohjelmointirajapinta epäonnistui. Tätä virhettä ei pitäisi koskaan palauttaa sovellukselle; se on Windowsin Lan Manager -uudelleenohjaimen sisäisten virhemuunnosrutiinien käyttämä paikkamerkki.
 .
 
 MessageId=571
@@ -4691,6 +5388,9 @@ The I/O permissions for the process could not be changed.
 Language=Japanese
 プロセスのI/O権限を変更できませんでした。
 .
+Language=Finnish
+Prosessin I/O-oikeuksia ei voitu muuttaa.
+.
 
 MessageId=572
 Severity=Success
@@ -4710,6 +5410,9 @@ The application terminated as a result of a CTRL+C.
 .
 Language=Japanese
 CTRL+Cの結果としてアプリケーションが終了しました。
+.
+Language=Finnish
+Sovellus lopetettiin CTRL+C-näppäinyhdistelmällä.
 .
 
 MessageId=573
@@ -4731,6 +5434,9 @@ The required system file %hs is bad or missing.
 Language=Japanese
 必要なシステム ファイル %hs が壊れているか見つかりません。
 .
+Language=Finnish
+Tarvittava järjestelmätiedosto %hs on virheellinen tai puuttuu.
+.
 
 MessageId=574
 Severity=Success
@@ -4750,6 +5456,9 @@ The exception %s (0x%08lx) occurred in the application at location 0x%08lx.
 .
 Language=Japanese
 例外 %s (0x)  が発生しました。
+.
+Language=Finnish
+Sovelluksessa tapahtui poikkeus %s (0x%08lx) kohdassa 0x%08lx.
 .
 
 MessageId=575
@@ -4771,6 +5480,9 @@ The application failed to initialize properly (0x%lx). Click on OK to terminate 
 Language=Japanese
 アプリケーションを正しく起動できませんでした (0x%lx) 。OK]をクリックしてアプリケーションを閉じます。
 .
+Language=Finnish
+Sovelluksen alustus epäonnistui (0x%lx). Lopeta sovellus valitsemalla OK.
+.
 
 MessageId=576
 Severity=Success
@@ -4790,6 +5502,9 @@ The creation of the paging file %hs failed (%lx). The requested size was %ld.
 .
 Language=Japanese
 ページング ファイル %hs の作成に失敗しました (%lx) 。要求されたサイズは %ld です。
+.
+Language=Finnish
+Sivutustiedoston %hs luominen epäonnistui (%lx). Pyydetty koko oli %ld.
 .
 
 MessageId=578
@@ -4811,6 +5526,9 @@ No paging file was specified in the system configuration.
 Language=Japanese
 システム構成でページング ファイルが指定されていません。
 .
+Language=Finnish
+Järjestelmän kokoonpanossa ei ole määritetty sivutustiedostoa.
+.
 
 MessageId=579
 Severity=Success
@@ -4830,6 +5548,9 @@ A real-mode application issued a floating-point instruction and floating-point h
 .
 Language=Japanese
  リアルモードアプリケーションが浮動小数点命令を発行しましたが、浮動小数点ハードウェアが存在しませんでした。
+.
+Language=Finnish
+Reaalitilan sovellus antoi liukulukukäskyn, mutta liukulukulaitteistoa ei ole.
 .
 
 MessageId=580
@@ -4851,6 +5572,9 @@ An event pair synchronization operation was performed using the thread specific 
 Language=Japanese
 イベント ペア同期操作がスレッド固有のクライアント/サーバー イベント ペア オブジェクトを使用して実行されましたが、イベント ペア オブジェクトがスレッドに関連付けられていませんでした。
 .
+Language=Finnish
+Tapahtumaparin synkronointi suoritettiin säikeen asiakas-palvelin-tapahtumapariobjektilla, mutta säikeeseen ei ollut liitetty tapahtumapariobjektia.
+.
 
 MessageId=581
 Severity=Success
@@ -4870,6 +5594,9 @@ A Windows Server has an incorrect configuration.
 .
 Language=Japanese
 LiberNTサーバーの構成が正しくありません。
+.
+Language=Finnish
+Windows-palvelimen kokoonpano on virheellinen.
 .
 
 MessageId=582
@@ -4891,6 +5618,9 @@ An illegal character was encountered. For a multi-byte character set this includ
 Language=Japanese
 不正な文字が見つかりました。マルチバイト文字セットには、後続のトレールバイトがないリードバイトが含まれます。Unicode文字セットの場合、これには0xFFFFと0xFFFEが含まれます。
 .
+Language=Finnish
+Havaittiin kelpaamaton merkki. Monitavuisessa merkistössä tämä tarkoittaa myös aloitustavua ilman sitä seuraavaa jatkotavua. Unicode-merkistössä tämä koskee myös merkkejä 0xFFFF ja 0xFFFE.
+.
 
 MessageId=583
 Severity=Success
@@ -4910,6 +5640,9 @@ The Unicode character is not defined in the Unicode character set installed on t
 .
 Language=Japanese
 そのUnicode文字はシステムにインストールされているUnicode文字セットに定義されていません。
+.
+Language=Finnish
+Unicode-merkkiä ei ole määritetty järjestelmään asennetussa Unicode-merkistössä.
 .
 
 MessageId=584
@@ -4931,6 +5664,9 @@ The paging file cannot be created on a floppy diskette.
 Language=Japanese
 ページング ファイルをフロッピー ディスク上に作成できません。
 .
+Language=Finnish
+Sivutustiedostoa ei voi luoda levykkeelle.
+.
 
 MessageId=585
 Severity=Success
@@ -4950,6 +5686,9 @@ The system bios failed to connect a system interrupt to the device or bus for wh
 .
 Language=Japanese
 システムBIOSが、デバイスが接続されているデバイスまたはバスへのシステム割り込みの接続に失敗しました。
+.
+Language=Finnish
+Järjestelmän BIOS ei pystynyt liittämään järjestelmän keskeytystä laitteeseen tai väylään, johon laite on liitetty.
 .
 
 MessageId=586
@@ -4971,6 +5710,9 @@ This operation is only allowed for the Primary Domain Controller of the domain.
 Language=Japanese
 この操作はドメインのプライマリドメイン コントローラーにのみ許可されています。
 .
+Language=Finnish
+Tämä toiminto on sallittu vain toimialueen ensisijaisessa toimialueen ohjauskoneessa.
+.
 
 MessageId=587
 Severity=Success
@@ -4990,6 +5732,9 @@ An attempt was made to acquire a mutant such that its maximum count would have b
 .
 Language=Japanese
 変異体の最大カウントを超える変異体を取得しようとしました。
+.
+Language=Finnish
+Mutant-objektia yritettiin varata niin, että sen enimmäismäärä olisi ylittynyt.
 .
 
 MessageId=588
@@ -5011,6 +5756,9 @@ A volume has been accessed for which a file system driver is required that has n
 Language=Japanese
 まだロードされていないファイル システム ドライバが必要なボリュームにアクセスされました。
 .
+Language=Finnish
+Taltiota on käytetty, vaikka sen vaatimaa tiedostojärjestelmän ajuria ei ole vielä ladattu.
+.
 
 MessageId=589
 Severity=Success
@@ -5030,6 +5778,9 @@ The registry cannot load the hive (file): %hs or its log or alternate. It is cor
 .
 Language=Japanese
 レジストリはハイブ (ファイル): %hs またはそのログまたは代替ファイルをロードできません。
+.
+Language=Finnish
+Rekisteri ei voi ladata rekisteripesää (tiedostoa): %hs tai sen lokia tai varakopiota. Se on vioittunut, puuttuu tai ei ole kirjoitettavissa.
 .
 
 MessageId=590
@@ -5051,6 +5802,9 @@ An unexpected failure occurred while processing a DebugActiveProcess API request
 Language=Japanese
 DebugActiveProcess API要求の処理中に予期しない失敗が発生しました。プロセスを終了する場合は [OK] を、エラーを無視する場合は [キャンセル] を選択してください。
 .
+Language=Finnish
+DebugActiveProcess-ohjelmointirajapinnan pyyntöä käsiteltäessä tapahtui odottamaton virhe. Voit lopettaa prosessin valitsemalla OK tai ohittaa virheen valitsemalla Peruuta.
+.
 
 MessageId=591
 Severity=Success
@@ -5070,6 +5824,9 @@ The %hs system process terminated unexpectedly with a status of 0x%08x (0x%08x 0
 .
 Language=Japanese
 %hs システム プロセスがステータス 0x で予期せず終了しました。
+.
+Language=Finnish
+Järjestelmäprosessi %hs päättyi odottamatta tilalla 0x%08x (0x%08x 0x%08x). Järjestelmä on sammutettu.
 .
 
 MessageId=592
@@ -5091,6 +5848,9 @@ The TDI client could not handle the data received during an indication.
 Language=Japanese
  TDI クライアントが指示中に受信したデータを処理できませんでした。
 .
+Language=Finnish
+TDI-asiakas ei pystynyt käsittelemään ilmoituksen aikana vastaanotettuja tietoja.
+.
 
 MessageId=593
 Severity=Success
@@ -5110,6 +5870,9 @@ NTVDM encountered a hard error.
 .
 Language=Japanese
 NTVDMでハードエラーが発生しました。
+.
+Language=Finnish
+NTVDM kohtasi vakavan virheen.
 .
 
 MessageId=594
@@ -5131,6 +5894,9 @@ The driver %hs failed to complete a cancelled I/O request in the allotted time.
 Language=Japanese
 ドライバ %hs が割り当てられた時間内にキャンセルされた I/O 要求を完了できませんでした。
 .
+Language=Finnish
+Ajuri %hs ei suorittanut peruutettua I/O-pyyntöä annetussa ajassa.
+.
 
 MessageId=595
 Severity=Success
@@ -5150,6 +5916,9 @@ An attempt was made to reply to an LPC message, but the thread specified by the 
 .
 Language=Japanese
 LPC メッセージに返信しようとしましたが、メッセージ内のクライアント ID で指定されたスレッドはそのメッセージを待機していませんでした。
+.
+Language=Finnish
+LPC-viestiin yritettiin vastata, mutta viestin asiakastunnuksen määrittämä säie ei odottanut sitä viestiä.
 .
 
 MessageId=596
@@ -5172,6 +5941,9 @@ Language=Japanese
 LiberNT はファイル %hs のすべてのデータを保存できませんでした。
 このエラーは、コンピュータのハードウェアまたはネットワーク接続の障害によって発生した可能性があります。このファイルを別の場所に保存してください。
 .
+Language=Finnish
+LiberNT ei voinut tallentaa kaikkia tiedoston %hs tietoja. Tiedot ovat kadonneet. Virheen voi aiheuttaa tietokoneen laitteiston tai verkkoyhteyden vika. Yritä tallentaa tiedosto muualle.
+.
 
 MessageId=597
 Severity=Success
@@ -5191,6 +5963,9 @@ The parameter(s) passed to the server in the client/server shared memory window 
 .
 Language=Japanese
 クライアント/サーバー共有メモリ ウィンドウでサーバーに渡されたパラメータが無効です。共有メモリ ウィンドウにデータが多すぎる可能性があります。
+.
+Language=Finnish
+Asiakas-palvelin-jaetussa muistiikkunassa palvelimelle välitetyt parametrit olivat virheellisiä. Jaettuun muistiikkunaan on ehkä sijoitettu liikaa tietoja.
 .
 
 MessageId=598
@@ -5212,6 +5987,9 @@ The stream is not a tiny stream.
 Language=Japanese
 ストリームがタイニー ストリームではありません。
 .
+Language=Finnish
+Tietovirta ei ole pieni tietovirta.
+.
 
 MessageId=599
 Severity=Success
@@ -5231,6 +6009,9 @@ The request must be handled by the stack overflow code.
 .
 Language=Japanese
 リクエストはスタック オーバーフロー コードで処理する必要があります。
+.
+Language=Finnish
+Pyyntö on käsiteltävä pinon ylivuotokoodilla.
 .
 
 MessageId=600
@@ -5252,6 +6033,9 @@ Internal OFS status codes indicating how an allocation operation is handled. Eit
 Language=Japanese
 割り当て操作がどのように処理されるかを示す内部 OFS ステータスコード。含むオノードが移動された後に再試行されるか、エクステントストリームがラージストリームに変換されます。
 .
+Language=Finnish
+OFS:n sisäiset tilakoodit, jotka ilmaisevat, miten varaustoiminto käsitellään. Sitä yritetään uudelleen, kun sisältävä onode on siirretty, tai laajennustietovirta muunnetaan suureksi tietovirraksi.
+.
 
 MessageId=601
 Severity=Success
@@ -5271,6 +6055,9 @@ The attempt to find the object found an object matching by ID on the volume but 
 .
 Language=Japanese
 オブジェクトを検索しようとしたところ、ボリューム上にIDが一致するオブジェクトが見つかりましたが、操作に使用したハンドルの範囲外でした。
+.
+Language=Finnish
+Objektin haku löysi taltiolta tunnusta vastaavan objektin, mutta se on toiminnossa käytetyn kahvan alueen ulkopuolella.
 .
 
 MessageId=602
@@ -5292,6 +6079,9 @@ The bucket array must be grown. Retry transaction after doing so.
 Language=Japanese
 バケット配列を成長させる必要があります。そうしてからトランザクションを再試行してください。
 .
+Language=Finnish
+Säiliötaulukkoa on kasvatettava. Yritä tapahtumaa uudelleen sen jälkeen.
+.
 
 MessageId=603
 Severity=Success
@@ -5311,6 +6101,9 @@ The user/kernel marshalling buffer has overflowed.
 .
 Language=Japanese
 ユーザー/カーネルのマーシャリング バッファがオーバーフローしました。
+.
+Language=Finnish
+Käyttäjä- ja ydintilan välinen marshalling-puskuri on vuotanut yli.
 .
 
 MessageId=604
@@ -5332,6 +6125,9 @@ The supplied variant structure contains invalid data.
 Language=Japanese
 指定されたバリアント構造体に無効なデータが含まれています。
 .
+Language=Finnish
+Annetussa variant-rakenteessa on virheellisiä tietoja.
+.
 
 MessageId=605
 Severity=Success
@@ -5351,6 +6147,9 @@ The specified buffer contains ill-formed data.
 .
 Language=Japanese
 指定されたバッファに不正なデータが含まれています。
+.
+Language=Finnish
+Annetussa puskurissa on väärin muodostettuja tietoja.
 .
 
 MessageId=606
@@ -5372,6 +6171,9 @@ An attempt to generate a security audit failed.
 Language=Japanese
 セキュリティ監査の生成に失敗しました。
 .
+Language=Finnish
+Suojausvalvonnan merkinnän luominen epäonnistui.
+.
 
 MessageId=607
 Severity=Success
@@ -5391,6 +6193,9 @@ The timer resolution was not previously set by the current process.
 .
 Language=Japanese
 タイマー分解能が現在のプロセスによって以前に設定されていません。
+.
+Language=Finnish
+Nykyinen prosessi ei ollut aiemmin asettanut ajastimen tarkkuutta.
 .
 
 MessageId=608
@@ -5412,6 +6217,9 @@ There is insufficient account information to log you on.
 Language=Japanese
 ログオンするためのアカウント情報が不足しています。
 .
+Language=Finnish
+Tilitiedot eivät riitä kirjautumiseesi.
+.
 
 MessageId=609
 Severity=Success
@@ -5431,6 +6239,9 @@ The dynamic link library %hs is not written correctly. The stack pointer has bee
 .
 Language=Japanese
 動的リンク ライブラリ %hs が正しく記述されていません。エントリポイントは WINAPI または STDCALL として宣言する必要があります。DLL ロードに失敗するには「はい」を選択してください。実行を続行するには「いいえ」を選択します。いいえを選択すると、アプリケーションが正しく動作しないことがあります。
+.
+Language=Finnish
+Dynaamisesti linkitettävää kirjastoa %hs ei ole kirjoitettu oikein. Pino-osoitin on jätetty ristiriitaiseen tilaan. Aloituskohta on määritettävä WINAPI- tai STDCALL-tyyppiseksi. Hylkää DLL-tiedoston lataus valitsemalla KYLLÄ. Jatka suoritusta valitsemalla EI. EI-vaihtoehto voi saada sovelluksen toimimaan väärin.
 .
 
 MessageId=610
@@ -5453,6 +6264,9 @@ Language=Japanese
 %hs サービスが正しく書き込まれていません。
 コールバック エントリポイントは WINAPI または STDCALL として宣言する必要があります。OKを選択すると、サービスは動作を継続します。ただし、サービス プロセスが正しく動作しない可能性があります。
 .
+Language=Finnish
+Palvelua %hs ei ole kirjoitettu oikein. Pino-osoitin on jätetty ristiriitaiseen tilaan. Takaisinkutsun aloituskohta on määritettävä WINAPI- tai STDCALL-tyyppiseksi. OK-vaihtoehdolla palvelu jatkaa toimintaansa. Palveluprosessi voi kuitenkin toimia väärin.
+.
 
 MessageId=611
 Severity=Success
@@ -5472,6 +6286,9 @@ There is an IP address conflict with another system on the network
 .
 Language=Japanese
 ネットワーク上の他のシステムとIPアドレスが競合しています。
+.
+Language=Finnish
+IP-osoite on ristiriidassa toisen verkon järjestelmän kanssa
 .
 
 MessageId=612
@@ -5493,6 +6310,9 @@ There is an IP address conflict with another system on the network
 Language=Japanese
 ネットワーク上の他のシステムとIPアドレスが競合しています。
 .
+Language=Finnish
+IP-osoite on ristiriidassa toisen verkon järjestelmän kanssa
+.
 
 MessageId=613
 Severity=Success
@@ -5512,6 +6332,9 @@ The system has reached the maximum size allowed for the system part of the regis
 .
 Language=Japanese
  システムはレジストリのシステム部分で許容される最大サイズに達しました。追加のストレージ要求は無視されます。
+.
+Language=Finnish
+Järjestelmä on saavuttanut rekisterin järjestelmäosan suurimman sallitun koon. Lisätallennuspyynnöt ohitetaan.
 .
 
 MessageId=614
@@ -5533,6 +6356,9 @@ A callback return system service cannot be executed when no callback is active.
 Language=Japanese
 コールバックがアクティブでない場合、コールバック リターン システム サービスは実行できません。
 .
+Language=Finnish
+Takaisinkutsusta palaavaa järjestelmäpalvelua ei voi suorittaa, kun mikään takaisinkutsu ei ole aktiivinen.
+.
 
 MessageId=615
 Severity=Success
@@ -5553,6 +6379,9 @@ The password provided is too short to meet the policy of your user account. Plea
 Language=Japanese
 指定されたパスワードが短すぎて、ユーザー アカウントのポリシーに適合しません。
 長いパスワードを選択してください。
+.
+Language=Finnish
+Annettu salasana on liian lyhyt täyttääkseen käyttäjätilisi käytännön. Valitse pidempi salasana.
 .
 
 MessageId=616
@@ -5576,6 +6405,9 @@ Language=Japanese
 これは、ユーザーが使い慣れた、しかし発見される可能性のあるパスワードに変更することを防ぐために行われます。
 パスワードが漏洩したと思われる場合は、すぐに管理者に連絡して新しいパスワードを割り当ててください。
 .
+Language=Finnish
+Käyttäjätilisi käytäntö ei salli salasanan vaihtamista liian usein. Näin estetään käyttäjiä palaamasta tuttuun mutta mahdollisesti paljastuneeseen salasanaan. Jos epäilet salasanasi vaarantuneen, ota heti yhteyttä järjestelmänvalvojaan uuden salasanan saamiseksi.
+.
 
 MessageId=617
 Severity=Success
@@ -5598,6 +6430,9 @@ Language=Japanese
 ユーザー アカウントのポリシーでは許可されていません。
 過去に使用したことのないパスワードを選択してください。
 .
+Language=Finnish
+Yritit vaihtaa salasanaksi salasanan, jota olet käyttänyt aiemmin. Käyttäjätilisi käytäntö ei salli tätä. Valitse salasana, jota et ole käyttänyt aiemmin.
+.
 
 MessageId=618
 Severity=Success
@@ -5617,6 +6452,9 @@ The specified compression format is unsupported.
 .
 Language=Japanese
 指定された圧縮形式はサポートされていません。
+.
+Language=Finnish
+Määritettyä pakkausmuotoa ei tueta.
 .
 
 MessageId=619
@@ -5638,6 +6476,9 @@ The specified hardware profile configuration is invalid.
 Language=Japanese
 指定されたハードウェア プロファイル構成が無効です。
 .
+Language=Finnish
+Annettu laitteistoprofiilin määritys on virheellinen.
+.
 
 MessageId=620
 Severity=Success
@@ -5657,6 +6498,9 @@ The specified Plug and Play registry device path is invalid.
 .
 Language=Japanese
 指定された プラグ＆プレイ レジストリ デバイス パスが無効です。
+.
+Language=Finnish
+Annettu Plug and Play -rekisterin laitepolku on virheellinen.
 .
 
 MessageId=621
@@ -5678,6 +6522,9 @@ The specified quota list is internally inconsistent with its descriptor.
 Language=Japanese
 指定されたクォータ リストは、その記述子と内部的に矛盾しています。
 .
+Language=Finnish
+Annettu kiintiöluettelo on sisäisesti ristiriidassa kuvaajansa kanssa.
+.
 
 MessageId=622
 Severity=Success
@@ -5697,6 +6544,9 @@ The evaluation period for this installation of Windows has expired. This system 
 .
 Language=Japanese
 このLiberNTインストールの評価期間が終了しました。このシステムは1時間後にシャットダウンされます。LiberNTのこのインストールへのアクセスを回復するには、この製品のライセンス配布を使用してこのインストールをアップグレードしてください。
+.
+Language=Finnish
+Tämän Windows-asennuksen arviointijakso on päättynyt. Järjestelmä sammuu tunnin kuluttua. Jos haluat palauttaa tämän Windows-asennuksen käytön, päivitä asennus tämän tuotteen lisensoidulla jakeluversiolla.
 .
 
 MessageId=623
@@ -5718,6 +6568,9 @@ The system DLL %hs was relocated in memory. The application will not run properl
 Language=Japanese
 システム DLL %hs がメモリ内に再配置されました。アプリは適切に動作しないかもしれません。再配置は、DLL %hs が LiberNT システム DLL 用に予約されているアドレス範囲を占有していたために発生しました。DLL を提供しているベンダーに連絡して、新しい DLL を入手してください。
 .
+Language=Finnish
+Järjestelmän DLL-tiedosto %hs siirrettiin muistissa. Sovellus ei toimi oikein. Siirto tapahtui, koska DLL-tiedosto %hs varasi LiberNT:n järjestelmän DLL-tiedostoille varatun osoitealueen. Pyydä DLL-tiedoston toimittajalta uusi DLL-tiedosto.
+.
 
 MessageId=624
 Severity=Success
@@ -5737,6 +6590,9 @@ The application failed to initialize because the window station is shutting down
 .
 Language=Japanese
 ウィンドウ ステーションがシャットダウンされたため、アプリケーションの初期化に失敗しました。
+.
+Language=Finnish
+Sovelluksen alustus epäonnistui, koska ikkuna-asema on sammumassa.
 .
 
 MessageId=625
@@ -5758,6 +6614,9 @@ The validation process needs to continue on to the next step.
 Language=Japanese
 検証プロセスを次のステップに続行する必要があります。
 .
+Language=Finnish
+Vahvistusprosessin on jatkettava seuraavaan vaiheeseen.
+.
 
 MessageId=626
 Severity=Success
@@ -5777,6 +6636,9 @@ There are no more matches for the current index enumeration.
 .
 Language=Japanese
 現在のインデックス列挙に一致するものはありません。
+.
+Language=Finnish
+Nykyisessä indeksin luetteloinnissa ei ole enää osumia.
 .
 
 MessageId=627
@@ -5798,6 +6660,9 @@ The range could not be added to the range list because of a conflict.
 Language=Japanese
 範囲が競合しているため、範囲を範囲リストに追加できませんでした。
 .
+Language=Finnish
+Aluetta ei voitu lisätä alueluetteloon ristiriidan vuoksi.
+.
 
 MessageId=628
 Severity=Success
@@ -5817,6 +6682,9 @@ The server process is running under a SID different than that required by client
 .
 Language=Japanese
 サーバー プロセスがクライアントが要求するSIDと異なるSIDで実行されています。
+.
+Language=Finnish
+Palvelinprosessi on käynnissä eri SID-tunnuksella kuin asiakas vaatii.
 .
 
 MessageId=629
@@ -5838,6 +6706,9 @@ A group marked use for deny only cannot be enabled.
 Language=Japanese
 拒否にのみ使用するようにマークされたグループを有効にできません。
 .
+Language=Finnish
+Vain estämiseen käytettäväksi merkittyä ryhmää ei voi ottaa käyttöön.
+.
 
 MessageId=630
 Severity=Success
@@ -5857,6 +6728,9 @@ Multiple floating point faults.
 .
 Language=Japanese
 複数の浮動小数点フォールトです。
+.
+Language=Finnish
+Useita liukulukuvirheitä.
 .
 
 MessageId=631
@@ -5878,6 +6752,9 @@ Multiple floating point traps.
 Language=Japanese
 複数の浮動小数点トラップ複数の浮動小数点トラップです。
 .
+Language=Finnish
+Useita liukulukukeskeytyksiä.
+.
 
 MessageId=632
 Severity=Success
@@ -5897,6 +6774,9 @@ The requested interface is not supported.
 .
 Language=Japanese
 要求されたインタフェースはサポートされていません。
+.
+Language=Finnish
+Pyydettyä liittymää ei tueta.
 .
 
 MessageId=633
@@ -5918,6 +6798,9 @@ The driver %hs does not support standby mode. Updating this driver may allow the
 Language=Japanese
 ドライバ %hs はスタンバイ モードをサポートしていません。このドライバを更新すると、システムがスタンバイ モードになることがあります。
 .
+Language=Finnish
+Ajuri %hs ei tue valmiustilaa. Tämän ajurin päivittäminen voi sallia järjestelmän siirtyä valmiustilaan.
+.
 
 MessageId=634
 Severity=Success
@@ -5937,6 +6820,9 @@ The system file %1 has become corrupt and has been replaced.
 .
 Language=Japanese
 システム ファイル %1 が破損したので置換しました。
+.
+Language=Finnish
+Järjestelmätiedosto %1 on vioittunut, ja se on korvattu.
 .
 
 MessageId=635
@@ -5958,6 +6844,9 @@ Your system is low on virtual memory. LiberNT is increasing the size of your vir
 Language=Japanese
 システムの仮想メモリが不足しています。このプロセスの間、一部のアプリケーションのメモリ要求が拒否されることがあります。詳細については、ヘルプを参照してください。
 .
+Language=Finnish
+Järjestelmän näennäismuisti on vähissä. LiberNT kasvattaa näennäismuistin sivutustiedoston kokoa. Tämän aikana joidenkin sovellusten muistipyynnöt voidaan hylätä. Lisätietoja on Ohjeessa.
+.
 
 MessageId=636
 Severity=Success
@@ -5977,6 +6866,9 @@ A device was removed so enumeration must be restarted.
 .
 Language=Japanese
 デバイスが削除されたため、列挙を再開する必要があります。
+.
+Language=Finnish
+Laite poistettiin, joten luettelointi on aloitettava uudelleen.
 .
 
 MessageId=637
@@ -6000,6 +6892,9 @@ Language=Japanese
 ファイルは署名されたファイルに置き換えられました。
 システムはシャットダウンされました。
 .
+Language=Finnish
+Järjestelmän näköistiedostoa %s ei ole allekirjoitettu oikein. Tiedosto on korvattu allekirjoitetulla tiedostolla. Järjestelmä on sammutettu.
+.
 
 MessageId=638
 Severity=Success
@@ -6019,6 +6914,9 @@ Device will not start without a reboot.
 .
 Language=Japanese
 再起動しないとデバイスが起動しない
+.
+Language=Finnish
+Laite ei käynnisty ilman uudelleenkäynnistystä.
 .
 
 MessageId=639
@@ -6040,6 +6938,9 @@ There is not enough power to complete the requested operation.
 Language=Japanese
 要求された操作を完了するのに十分な電力がありません。
 .
+Language=Finnish
+Virta ei riitä pyydetyn toiminnon suorittamiseen.
+.
 
 MessageId=641
 Severity=Success
@@ -6059,6 +6960,9 @@ The system is in the process of shutting down.
 .
 Language=Japanese
 システムがシャットダウン中です。
+.
+Language=Finnish
+Järjestelmä on sammumassa.
 .
 
 MessageId=642
@@ -6080,6 +6984,9 @@ An attempt to remove a processes DebugPort was made, but a port was not already 
 Language=Japanese
 プロセスのDebugPortを削除しようとしましたが、ポートがまだプロセスに関連付けられていませんでした。
 .
+Language=Finnish
+Prosessin DebugPort-porttia yritettiin poistaa, mutta prosessiin ei ollut liitetty porttia.
+.
 
 MessageId=643
 Severity=Success
@@ -6099,6 +7006,9 @@ This version of LiberNT is not compatible with the behavior version of directory
 .
 Language=Japanese
 このバージョンのLiberNTは、ディレクトリ フォレスト、ドメイン、またはドメイン コントローラの動作バージョンと互換性がありません。
+.
+Language=Finnish
+Tämä LiberNT-versio ei ole yhteensopiva hakemistometsän, toimialueen tai toimialueen ohjauskoneen toimintaversion kanssa.
 .
 
 MessageId=644
@@ -6120,6 +7030,9 @@ The specified range could not be found in the range list.
 Language=Japanese
 指定された範囲が範囲リストに見つかりませんでした。
 .
+Language=Finnish
+Annettua aluetta ei löytynyt alueluettelosta.
+.
 
 MessageId=646
 Severity=Success
@@ -6139,6 +7052,9 @@ The driver was not loaded because the system is booting into safe mode.
 .
 Language=Japanese
 システムがセーフ モードで起動しているため、ドライバがロードされませんでした。
+.
+Language=Finnish
+Ajuria ei ladattu, koska järjestelmä käynnistyy vikasietotilaan.
 .
 
 MessageId=647
@@ -6160,6 +7076,9 @@ The driver was not loaded because it failed its initialization call.
 Language=Japanese
 ドライバの初期化コールに失敗したため、ドライバがロードされませんでした。
 .
+Language=Finnish
+Ajuria ei ladattu, koska sen alustuskutsu epäonnistui.
+.
 
 MessageId=648
 Severity=Success
@@ -6179,6 +7098,9 @@ The \"%hs\" encountered an error while applying power or reading the device conf
 .
 Language=Japanese
 「%hs」は、電源の投入またはデバイス構成の読み取り中にエラーが発生しました。<CR><LF>ハードウェアの故障または接続不良が原因である可能性があります。
+.
+Language=Finnish
+\"%hs\" kohtasi virheen, kun virtaa kytkettiin tai laitteen kokoonpanoa luettiin. Syy voi olla laitteistovika tai huono liitäntä.
 .
 
 MessageId=649
@@ -6200,6 +7122,9 @@ The create operation failed because the name contained at least one mount point 
 Language=Japanese
 名前に、指定されたデバッグ対象のボリュームに解決するマウント ポイントが少なくとも 1 つ含まれていたため、作成操作に失敗しました。
 .
+Language=Finnish
+Luontitoiminto epäonnistui, koska nimessä oli vähintään yksi liitoskohta, joka viittaa taltioon, johon annettua laiteobjektia ei ole liitetty.
+.
 
 MessageId=650
 Severity=Success
@@ -6219,6 +7144,9 @@ The device object parameter is either not a valid device object or is not attach
 .
 Language=Japanese
 デバイス オブジェクト パラメータが有効なデバイス オブジェクトでないか、ファイル名で指定されたボリュームにアタッチされていません。
+.
+Language=Finnish
+Laiteobjektiparametri ei ole kelvollinen laiteobjekti tai sitä ei ole liitetty tiedostonimen määrittämään taltioon.
 .
 
 MessageId=651
@@ -6240,6 +7168,9 @@ A Machine Check Error has occurred. Please check the system eventlog for additio
 Language=Japanese
 マシン チェック エラーが発生しました。追加情報については、システムのイベントログを確認してください。
 .
+Language=Finnish
+On tapahtunut koneentarkistusvirhe (Machine Check). Lisätietoja on järjestelmän tapahtumalokissa.
+.
 
 MessageId=652
 Severity=Success
@@ -6259,6 +7190,9 @@ There was error [%2] processing the driver database.
 .
 Language=Japanese
 ドライバ データベースを処理するエラー [%2] が発生しました。
+.
+Language=Finnish
+Ajuritietokannan käsittelyssä tapahtui virhe [%2].
 .
 
 MessageId=653
@@ -6280,6 +7214,9 @@ System hive size has exceeded its limit.
 Language=Japanese
 システム ハイブのサイズが制限を超えました。
 .
+Language=Finnish
+Järjestelmän rekisteripesän koko on ylittänyt rajansa.
+.
 
 MessageId=654
 Severity=Success
@@ -6299,6 +7236,9 @@ The driver could not be loaded because a previous version of the driver is still
 .
 Language=Japanese
 以前のバージョンのドライバがメモリ内に残っているため、ドライバをロードできませんでした。
+.
+Language=Finnish
+Ajuria ei voitu ladata, koska ajurin edellinen versio on yhä muistissa.
 .
 
 MessageId=655
@@ -6320,6 +7260,9 @@ Please wait while the Volume Shadow Copy Service prepares volume %hs for hiberna
 Language=Japanese
 ボリューム シャドウ コピー サービスがボリューム %hs をハイバネーション用に準備するまでお待ちください。
 .
+Language=Finnish
+Odota, kun varjokopiopalvelu valmistelee taltiota %hs horrostilaa varten.
+.
 
 MessageId=656
 Severity=Success
@@ -6339,6 +7282,9 @@ The system has failed to hibernate (The error code is %hs). Hibernation will be 
 .
 Language=Japanese
 システムの休止に失敗しました (エラー コードは %hs) 。システムが再起動されるまで休止は無効になります。
+.
+Language=Finnish
+Järjestelmän siirtäminen horrostilaan epäonnistui (virhekoodi on %hs). Horrostila poistetaan käytöstä, kunnes järjestelmä käynnistetään uudelleen.
 .
 
 MessageId=657
@@ -6360,6 +7306,9 @@ The %hs display driver has stopped working normally. Save your work and reboot t
 Language=Japanese
 ディスプレイドライバ%hsが正常に動作しなくなりました。作業を保存してシステムを再起動し、ディスプレイ機能を完全に回復してください。次にマシンを再起動するとダイアログが表示され、LiberNTにこの障害を報告することができます。
 .
+Language=Finnish
+Näyttöajuri %hs on lakannut toimimasta normaalisti. Tallenna työsi ja käynnistä järjestelmä uudelleen, jotta näytön kaikki toiminnot palautuvat. Kun seuraavan kerran käynnistät koneen uudelleen, näyttöön tulee valintaikkuna, jossa voit ilmoittaa tästä virheestä Microsoftille.
+.
 
 MessageId=665
 Severity=Success
@@ -6379,6 +7328,9 @@ The requested operation could not be completed due to a file system limitation.
 .
 Language=Japanese
 ファイル システムの制限により、要求された操作を完了できませんでした。
+.
+Language=Finnish
+Pyydettyä toimintoa ei voitu suorittaa tiedostojärjestelmän rajoituksen vuoksi.
 .
 
 MessageId=668
@@ -6400,6 +7352,9 @@ An assertion failure has occurred.
 Language=Japanese
 アサーションに失敗しました。
 .
+Language=Finnish
+On tapahtunut väittämävirhe.
+.
 
 MessageId=669
 Severity=Success
@@ -6420,6 +7375,9 @@ Application verifier has found an error in the current process.
 Language=Japanese
 ACPIサブシステムでエラーが発生しました。
 .
+Language=Finnish
+Sovelluksen tarkistaja on löytänyt virheen nykyisestä prosessista.
+.
 
 MessageId=670
 Severity=Success
@@ -6439,6 +7397,9 @@ WOW Assertion Error.
 .
 Language=Japanese
 WOWアサーション エラーです。
+.
+Language=Finnish
+WOW-väittämävirhe.
 .
 
 MessageId=671
@@ -6461,6 +7422,9 @@ Language=Japanese
 システム BIOS MPS テーブルにデバイスがありません。
 システムBIOSのアップデートについては、システムベンダにお問い合わせください。
 .
+Language=Finnish
+Järjestelmän BIOSin MPS-taulukosta puuttuu laite. Tätä laitetta ei käytetä. Pyydä järjestelmän toimittajalta BIOS-päivitys.
+.
 
 MessageId=672
 Severity=Success
@@ -6480,6 +7444,9 @@ A translator failed to translate resources.
 .
 Language=Japanese
 トランスレータがリソースの翻訳に失敗しました。
+.
+Language=Finnish
+Muunnin ei onnistunut muuntamaan resursseja.
 .
 
 MessageId=673
@@ -6501,6 +7468,9 @@ A IRQ translator failed to translate resources.
 Language=Japanese
 IRQ トランスレータがリソースの変換に失敗しました。
 .
+Language=Finnish
+IRQ-muunnin ei onnistunut muuntamaan resursseja.
+.
 
 MessageId=674
 Severity=Success
@@ -6520,6 +7490,9 @@ Driver %2 returned invalid ID for a child device (%3).
 .
 Language=Japanese
 ドライバ %2 は子デバイス (%3)  に対して無効な ID を返しました。
+.
+Language=Finnish
+Ajuri %2 palautti aliaitteelle (%3) virheellisen tunnuksen.
 .
 
 MessageId=675
@@ -6541,6 +7514,9 @@ The system debugger was awakened by an interrupt.
 Language=Japanese
 割り込みによってシステム デバッガが起動されました。
 .
+Language=Finnish
+Keskeytys herätti järjestelmän virheenkorjaimen.
+.
 
 MessageId=676
 Severity=Success
@@ -6561,6 +7537,9 @@ Handles to objects have been automatically closed as a result of the requested o
 Language=Japanese
 要求された操作の結果、オブジェクトへのハンドルが自動的に閉じられました。
 .
+Language=Finnish
+Objektien kahvat on suljettu automaattisesti pyydetyn toiminnon seurauksena.
+.
 
 MessageId=677
 Severity=Success
@@ -6580,6 +7559,9 @@ The specified access control list (ACL) contained more information than was expe
 .
 Language=Japanese
 指定されたアクセス制御リスト (ACL) に予想以上の情報が含まれていました。
+.
+Language=Finnish
+Annetussa käyttöoikeusluettelossa (ACL) oli odotettua enemmän tietoja.
 .
 
 MessageId=678
@@ -6602,6 +7584,9 @@ Language=Japanese
 この警告レベルのステータスは、レジストリ サブツリーに対してトランザクション状態がすでに存在するが、トランザクション コミットが以前に中止されたことを示します。
 コミットは完了していませんが、ロールバックもされていません (そのため、必要であればまだコミットできます) 。
 .
+Language=Finnish
+Tämä varoitustason tila ilmaisee, että rekisterin alipuun tapahtumatila on jo olemassa, mutta tapahtuman vahvistus keskeytettiin aiemmin. Vahvistusta EI ole suoritettu, mutta sitä ei ole myöskään peruttu (joten sen voi yhä vahvistaa haluttaessa).
+.
 
 MessageId=679
 Severity=Success
@@ -6621,6 +7606,9 @@ The media may have changed.
 .
 Language=Japanese
 メディアが変更された可能性があります。
+.
+Language=Finnish
+Tietoväline on ehkä vaihtunut.
 .
 
 MessageId=680
@@ -6642,6 +7630,9 @@ During the translation of a global identifier (GUID) to a Windows security ID (S
 Language=Japanese
 グローバル識別子 (GUID)  から LiberNT セキュリティ ID (SID)  への変換中に、管理上定義された GUID 接頭辞が見つかりませんでした。システムのセキュリティを損なわない代替接頭辞が使用されました。代替接頭辞が使用されました。
 .
+Language=Finnish
+Kun yleistä tunnusta (GUID) muunnettiin Windowsin suojaustunnukseksi (SID), hallinnollisesti määritettyä GUID-etuliitettä ei löytynyt. Sen sijaan käytettiin korvaavaa etuliitettä, joka ei vaaranna järjestelmän suojausta. Tämä voi kuitenkin antaa tarkoitettua rajoitetumman käyttöoikeuden.
+.
 
 MessageId=681
 Severity=Success
@@ -6661,6 +7652,9 @@ The create operation stopped after reaching a symbolic link.
 .
 Language=Japanese
 作成操作がシンボリック リンクに達した後に停止しました。
+.
+Language=Finnish
+Luontitoiminto pysähtyi saavutettuaan symbolisen linkin.
 .
 
 MessageId=682
@@ -6682,6 +7676,9 @@ A long jump has been executed.
 Language=Japanese
 ロング ジャンプが実行されました。
 .
+Language=Finnish
+Pitkä hyppy on suoritettu.
+.
 
 MessageId=683
 Severity=Success
@@ -6701,6 +7698,9 @@ The Plug and Play query operation was not successful.
 .
 Language=Japanese
 プラグ アンド プレイのクエリ操作は成功しませんでした。
+.
+Language=Finnish
+Plug and Play -kyselytoiminto ei onnistunut.
 .
 
 MessageId=684
@@ -6722,6 +7722,9 @@ A frame consolidation has been executed.
 Language=Japanese
 フレーム連結が実行されました。
 .
+Language=Finnish
+Kehysten yhdistäminen on suoritettu.
+.
 
 MessageId=685
 Severity=Success
@@ -6741,6 +7744,9 @@ Registry hive (file): %hs was corrupted and it has been recovered. Some data mig
 .
 Language=Japanese
 レジストリ ハイブ (ファイル): %hs が破損していたため回復しました。一部のデータが失われた可能性があります。
+.
+Language=Finnish
+Rekisteripesä (tiedosto) %hs oli vioittunut, ja se on palautettu. Joitakin tietoja on ehkä menetetty.
 .
 
 MessageId=686
@@ -6762,6 +7768,9 @@ The application is attempting to run executable code from the module %hs. This m
 Language=Japanese
 アプリケーションは、モジュール %hs から実行可能コードを実行しようとしています。これは安全でない可能性があります。代替のモジュール %hs を使用できます。アプリケーションは安全なモジュール %hs を使用しますか?
 .
+Language=Finnish
+Sovellus yrittää suorittaa ohjelmakoodia moduulista %hs. Tämä ei ehkä ole turvallista. Vaihtoehto %hs on käytettävissä. Käyttääkö sovellus turvallista moduulia %hs?
+.
 
 MessageId=687
 Severity=Success
@@ -6781,6 +7790,9 @@ The application is loading executable code from the module %hs. This is secure, 
 .
 Language=Japanese
 アプリケーションは、モジュール %hs から実行可能コードをロードしています。これは安全ですが、オペレーティング システムの以前のリリースと互換性がない可能性があります。代替のモジュール %hs を使用できます。アプリケーションは安全なモジュール %hs を使用しますか?
+.
+Language=Finnish
+Sovellus lataa ohjelmakoodia moduulista %hs. Tämä on turvallista, mutta ei ehkä ole yhteensopiva käyttöjärjestelmän aiempien versioiden kanssa. Vaihtoehto %hs on käytettävissä. Käyttääkö sovellus turvallista moduulia %hs?
 .
 
 MessageId=688
@@ -6802,6 +7814,9 @@ Debugger did not handle the exception.
 Language=Japanese
 デバッガが例外を処理しませんでした。
 .
+Language=Finnish
+Virheenkorjain ei käsitellyt poikkeusta.
+.
 
 MessageId=689
 Severity=Success
@@ -6821,6 +7836,9 @@ Debugger will reply later.
 .
 Language=Japanese
 デバッガは後で応答します。
+.
+Language=Finnish
+Virheenkorjain vastaa myöhemmin.
 .
 
 MessageId=690
@@ -6842,6 +7860,9 @@ Debugger can not provide handle.
 Language=Japanese
 デバッガはハンドルを提供できません。
 .
+Language=Finnish
+Virheenkorjain ei voi antaa kahvaa.
+.
 
 MessageId=691
 Severity=Success
@@ -6861,6 +7882,9 @@ Debugger terminated thread.
 .
 Language=Japanese
 デバッガがスレッドを終了しました。
+.
+Language=Finnish
+Virheenkorjain lopetti säikeen.
 .
 
 MessageId=692
@@ -6882,6 +7906,9 @@ Debugger terminated process.
 Language=Japanese
 デバッガがプロセスを終了しました。
 .
+Language=Finnish
+Virheenkorjain lopetti prosessin.
+.
 
 MessageId=693
 Severity=Success
@@ -6901,6 +7928,9 @@ Debugger got control C.
 .
 Language=Japanese
 デバッガがコントロールCを取得しました。
+.
+Language=Finnish
+Virheenkorjain vastaanotti Ctrl+C:n.
 .
 
 MessageId=694
@@ -6922,6 +7952,9 @@ Debugger printed exception on control C.
 Language=Japanese
 デバッガがコントロール C に例外を出力しました。
 .
+Language=Finnish
+Virheenkorjain tulosti poikkeuksen Ctrl+C:llä.
+.
 
 MessageId=695
 Severity=Success
@@ -6941,6 +7974,9 @@ Debugger received RIP exception.
 .
 Language=Japanese
 デバッガが RIP 例外を受信しました。
+.
+Language=Finnish
+Virheenkorjain vastaanotti RIP-poikkeuksen.
 .
 
 MessageId=696
@@ -6962,6 +7998,9 @@ Debugger received control break.
 Language=Japanese
 デバッガが制御ブレークを受信しました。
 .
+Language=Finnish
+Virheenkorjain vastaanotti Ctrl+Break-keskeytyksen.
+.
 
 MessageId=697
 Severity=Success
@@ -6981,6 +8020,9 @@ Debugger command communication exception.
 .
 Language=Japanese
 デバッガコマンド通信例外です。
+.
+Language=Finnish
+Virheenkorjaimen komentoviestinnän poikkeus.
 .
 
 MessageId=698
@@ -7002,6 +8044,9 @@ An attempt was made to create an object and the object name already existed.
 Language=Japanese
 オブジェクトを作成しようとしましたが、オブジェクト名が既に存在しました。
 .
+Language=Finnish
+Objektia yritettiin luoda, mutta objektin nimi oli jo olemassa.
+.
 
 MessageId=699
 Severity=Success
@@ -7021,6 +8066,9 @@ A thread termination occurred while the thread was suspended. The thread was res
 .
 Language=Japanese
 スレッドのサスペンド中にスレッドの終了が発生しました。スレッドは再開され、終了が続行されました。
+.
+Language=Finnish
+Säie lopetettiin, kun se oli keskeytettynä. Säiettä jatkettiin, ja lopetus suoritettiin.
 .
 
 MessageId=700
@@ -7042,6 +8090,9 @@ An image file could not be mapped at the address specified in the image file. Lo
 Language=Japanese
 イメージ ファイルで指定されたアドレスにイメージ ファイルをマッピングできませんでした。このイメージに対してローカル フィックスアップを実行する必要があります。
 .
+Language=Finnish
+Näköistiedostoa ei voitu liittää näköistiedostossa määritettyyn osoitteeseen. Näköistiedostolle on tehtävä paikalliset korjaukset.
+.
 
 MessageId=701
 Severity=Success
@@ -7061,6 +8112,9 @@ This informational level status indicates that a specified registry sub-tree tra
 .
 Language=Japanese
 この情報レベルのステータスは、指定されたレジストリのサブツリーのトランザクション状態がまだ存在せず、作成する必要があることを示します。
+.
+Language=Finnish
+Tämä tiedottava tila ilmaisee, että annetun rekisterin alipuun tapahtumatilaa ei vielä ollut, ja se oli luotava.
 .
 
 MessageId=702
@@ -7082,6 +8136,9 @@ A virtual DOS machine (VDM) is loading, unloading, or moving an MS-DOS or Win16 
 Language=Japanese
 仮想DOSマシン (VDM) がMS-DOSまたはWin16プログラムセグメントイメージをロード、アンロード、または移動しています。デバッガがこれらの16ビットセグメント内のシンボルとブレークポイントをロード、アンロード、または追跡できるように例外が発生します。
 .
+Language=Finnish
+Näennäinen DOS-kone (VDM) lataa, purkaa tai siirtää MS-DOS- tai Win16-ohjelman segmenttinäköistiedostoa. Poikkeus nostetaan, jotta virheenkorjain voi ladata, purkaa tai seurata näiden 16-bittisten segmenttien symboleita ja keskeytyskohtia.
+.
 
 MessageId=703
 Severity=Success
@@ -7101,6 +8158,9 @@ The process cannot switch to the startup current directory %hs. Select OK to set
 .
 Language=Japanese
 プロセスが起動時のカレント ディレクトリ %hs に切り替えられません。[OK] を選択してカレント ディレクトリを %hs に設定するか、[キャンセル] を選択して終了します。
+.
+Language=Finnish
+Prosessi ei voi siirtyä käynnistyksen nykyiseen hakemistoon %hs. Aseta nykyiseksi hakemistoksi %hs valitsemalla OK tai lopeta valitsemalla PERUUTA.
 .
 
 MessageId=704
@@ -7122,6 +8182,9 @@ To satisfy a read request, the NT fault-tolerant file system successfully read t
 Language=Japanese
 読み取り要求を満たすために、NTフォールト トレラント ファイル システムは要求されたデータを冗長コピーから正常に読み取りました。これは、ファイル システムでフォールト トレラント ボリュームのメンバに障害が発生したが、デバイスの障害領域を再割り当てできなかったためです。
 .
+Language=Finnish
+Lukupyynnön täyttämiseksi NT:n vikasietoinen tiedostojärjestelmä luki pyydetyt tiedot onnistuneesti varakopiosta. Näin tehtiin, koska tiedostojärjestelmä kohtasi virheen vikasietoisen taltion jäsenessä, mutta ei voinut sijoittaa laitteen virheellistä aluetta uudelleen.
+.
 
 MessageId=705
 Severity=Success
@@ -7141,6 +8204,9 @@ To satisfy a write request, the NT fault-tolerant file system successfully wrote
 .
 Language=Japanese
 書き込み要求を満たすために、NTフォールト トレラント ファイル システムは情報の冗長コピーを正常に書き込みました。これは、ファイル システムでフォールト トレラント ボリュームのメンバに障害が発生したが、デバイスの障害領域を再割り当てできなかったためです。
+.
+Language=Finnish
+Kirjoituspyynnön täyttämiseksi NT:n vikasietoinen tiedostojärjestelmä kirjoitti tiedoista onnistuneesti varakopion. Näin tehtiin, koska tiedostojärjestelmä kohtasi virheen vikasietoisen taltion jäsenessä, mutta ei voinut sijoittaa laitteen virheellistä aluetta uudelleen.
 .
 
 MessageId=706
@@ -7162,6 +8228,9 @@ The image file %hs is valid, but is for a machine type other than the current ma
 Language=Japanese
 イメージ ファイル %hs は有効ですが、現在のマシン以外のマシン タイプ用です。続行するにはOKを、DLLのロードに失敗するにはキャンセルを選択してください。
 .
+Language=Finnish
+Näköistiedosto %hs on kelvollinen, mutta se on tarkoitettu eri konetyypille kuin nykyinen kone. Jatka valitsemalla OK tai hylkää DLL-tiedoston lataus valitsemalla PERUUTA.
+.
 
 MessageId=707
 Severity=Success
@@ -7181,6 +8250,9 @@ The network transport returned partial data to its client. The remaining data wi
 .
 Language=Japanese
 ネットワーク トランスポートがクライアントに部分的なデータを返しました。残りのデータは後で送信されます。
+.
+Language=Finnish
+Verkkosiirto palautti asiakkaalleen osittaiset tiedot. Loput tiedot lähetetään myöhemmin.
 .
 
 MessageId=708
@@ -7202,6 +8274,9 @@ The network transport returned data to its client that was marked as expedited b
 Language=Japanese
 ネットワークトランスポートは、リモートシステムによって迅速化としてマークされたデータをクライアントに返しました。
 .
+Language=Finnish
+Verkkosiirto palautti asiakkaalleen tietoja, jotka etäjärjestelmä oli merkinnyt kiireellisiksi.
+.
 
 MessageId=709
 Severity=Success
@@ -7221,6 +8296,9 @@ The network transport returned partial data to its client and this data was mark
 .
 Language=Japanese
 ネットワーク トランスポートはクライアントに部分的なデータを返しました。残りのデータは後で送信されます。
+.
+Language=Finnish
+Verkkosiirto palautti asiakkaalleen osittaiset tiedot, jotka etäjärjestelmä oli merkinnyt kiireellisiksi. Loput tiedot lähetetään myöhemmin.
 .
 
 MessageId=710
@@ -7242,6 +8320,9 @@ The TDI indication has completed successfully.
 Language=Japanese
 TDI指示が正常に完了しました。
 .
+Language=Finnish
+TDI-ilmoitus on valmistunut onnistuneesti.
+.
 
 MessageId=711
 Severity=Success
@@ -7261,6 +8342,9 @@ The TDI indication has entered the pending state.
 .
 Language=Japanese
 TDI指示が保留状態に入りました。
+.
+Language=Finnish
+TDI-ilmoitus on siirtynyt odotustilaan.
 .
 
 MessageId=712
@@ -7282,6 +8366,9 @@ Checking file system on %wZ.
 Language=Japanese
 %wZ でファイル システムをチェックしています。
 .
+Language=Finnish
+Tarkistetaan tiedostojärjestelmää kohteessa %wZ.
+.
 
 MessageId=714
 Severity=Success
@@ -7301,6 +8388,9 @@ The specified registry key is referenced by a predefined handle.
 .
 Language=Japanese
 指定されたレジストリ キーは定義済みのハンドルによって参照されます。
+.
+Language=Finnish
+Annettuun rekisteriavaimeen viitataan ennalta määritetyllä kahvalla.
 .
 
 MessageId=715
@@ -7322,6 +8412,9 @@ The page protection of a locked page was changed to 'No Access' and the page was
 Language=Japanese
 ロックされたページのページ保護が「アクセスなし」に変更され、メモリからもプロセスからもロックが解除されました。
 .
+Language=Finnish
+Lukitun sivun suojaukseksi muutettiin 'Ei käyttöä', ja sivun lukitus avattiin muistista ja prosessista.
+.
 
 MessageId=717
 Severity=Success
@@ -7341,6 +8434,9 @@ One of the pages to lock was already locked.
 .
 Language=Japanese
 ロックするページの1つが既にロックされています。
+.
+Language=Finnish
+Yksi lukittavista sivuista oli jo lukittu.
 .
 
 MessageId=720
@@ -7362,6 +8458,9 @@ The image file %hs is valid, but is for a machine type other than the current ma
 Language=Japanese
 イメージ ファイル %hs は有効ですが、現在のマシン以外のマシン タイプ用です。
 .
+Language=Finnish
+Näköistiedosto %hs on kelvollinen, mutta se on tarkoitettu eri konetyypille kuin nykyinen kone.
+.
 
 MessageId=721
 Severity=Success
@@ -7381,6 +8480,9 @@ A yield execution was performed and no thread was available to run.
 .
 Language=Japanese
 降伏実行が実行され、実行可能なスレッドがありませんでした。
+.
+Language=Finnish
+Suoritusvuoro luovutettiin, eikä yksikään säie ollut valmis suoritettavaksi.
 .
 
 MessageId=722
@@ -7402,6 +8504,9 @@ The resumable flag to a timer API was ignored.
 Language=Japanese
 タイマーAPIへの再開可能フラグが無視されました。
 .
+Language=Finnish
+Ajastinrajapinnan jatkettavuuslippu ohitettiin.
+.
 
 MessageId=723
 Severity=Success
@@ -7421,6 +8526,9 @@ The arbiter has deferred arbitration of these resources to its parent.
 .
 Language=Japanese
 アービタはこれらのリソースのアービトレーションを親に延期しました。
+.
+Language=Finnish
+Välittäjä on siirtänyt näiden resurssien välityksen ylemmälle tasolle.
 .
 
 MessageId=724
@@ -7442,6 +8550,9 @@ The device \"%hs\" has detected a CardBus card in its slot, but the firmware on 
 Language=Japanese
 「%hs」の設定エラーのため、挿入されたCardBusデバイスが起動できません。
 .
+Language=Finnish
+Laite \"%hs\" on havainnut paikassaan CardBus-kortin, mutta tämän järjestelmän laiteohjelmistoa ei ole määritetty sallimaan CardBus-ohjaimen käyttöä CardBus-tilassa. Käyttöjärjestelmä hyväksyy tässä ohjaimessa tällä hetkellä vain 16-bittiset (R2) PC-kortit.
+.
 
 MessageId=725
 Severity=Success
@@ -7461,6 +8572,9 @@ The CPUs in this multiprocessor system are not all the same revision level. To u
 .
 Language=Japanese
 このマルチ プロセッサ システムのCPUは、すべて同じリビジョン レベルではありません。すべてのプロセッサを使用するために、オペレーティング システムはシステム内で最も性能の低いプロセッサの機能に制限しています。このシステムで問題が発生した場合は、CPUメーカーに問い合わせて、このプロセッサの組み合わせがサポートされているかどうかを確認してください。
+.
+Language=Finnish
+Tämän moniprosessorijärjestelmän suorittimet eivät ole kaikki samaa versiotasoa. Jotta kaikkia suorittimia voidaan käyttää, käyttöjärjestelmä rajoittuu järjestelmän heikoimman suorittimen ominaisuuksiin. Jos tässä järjestelmässä ilmenee ongelmia, kysy suorittimen valmistajalta, tuetaanko tätä suoritinyhdistelmää.
 .
 
 MessageId=726
@@ -7482,6 +8596,9 @@ The system was put into hibernation.
 Language=Japanese
 システムは休止状態になりました。
 .
+Language=Finnish
+Järjestelmä siirrettiin horrostilaan.
+.
 
 MessageId=727
 Severity=Success
@@ -7501,6 +8618,9 @@ The system was resumed from hibernation.
 .
 Language=Japanese
 システムは休止状態から再開されました。
+.
+Language=Finnish
+Järjestelmä palasi horrostilasta.
 .
 
 MessageId=728
@@ -7522,6 +8642,9 @@ LiberNT has detected that the system firmware (BIOS) was updated [previous firmw
 Language=Japanese
 LiberNT はシステムのファームウェア (BIOS)  が更新されたことを検出しました [以前のファームウェアの日付 = %2、現在のファームウェアの日付 %3]。
 .
+Language=Finnish
+LiberNT on havainnut, että järjestelmän laiteohjelmisto (BIOS) on päivitetty [aiemman laiteohjelmiston päivämäärä = %2, nykyisen laiteohjelmiston päivämäärä %3].
+.
 
 MessageId=729
 Severity=Success
@@ -7541,6 +8664,9 @@ A device driver is leaking locked I/O pages causing system degradation. The syst
 .
 Language=Japanese
 デバイス ドライバがロックされた I/O ページをリークしてシステムの低下を引き起こしています。システムは自動的に追跡コードを有効にして、犯人を捕まえようとしています。
+.
+Language=Finnish
+Laiteajuri vuotaa lukittuja I/O-sivuja, mikä heikentää järjestelmää. Järjestelmä on ottanut automaattisesti käyttöön seurantakoodin syyllisen löytämiseksi.
 .
 
 MessageId=730
@@ -7562,6 +8688,9 @@ The system has awoken
 Language=Japanese
 システムが起動しました。
 .
+Language=Finnish
+Järjestelmä on herännyt
+.
 
 MessageId=740
 Severity=Success
@@ -7581,6 +8710,9 @@ The requested operation requires elevation.
 .
 Language=Japanese
 The requested operation requires elevation.
+.
+Language=Finnish
+Pyydetty toiminto vaatii korotetut oikeudet.
 .
 
 MessageId=741
@@ -7602,6 +8734,9 @@ A reparse should be performed by the Object Manager since the name of the file r
 Language=Japanese
 ファイル名がシンボリック リンクであったため、オブジェクト マネージャで再解析を実行する必要があります。
 .
+Language=Finnish
+Objektinhallinnan on jäsennettävä nimi uudelleen, koska tiedoston nimi johti symboliseen linkkiin.
+.
 
 MessageId=742
 Severity=Success
@@ -7621,6 +8756,9 @@ An open/create operation completed while an oplock break is underway.
 .
 Language=Japanese
 オプロック解除中にオープン/クリエイト操作が完了しました。
+.
+Language=Finnish
+Avaus- tai luontitoiminto valmistui, kun oplock-katkaisu oli käynnissä.
 .
 
 MessageId=743
@@ -7642,6 +8780,9 @@ A new volume has been mounted by a file system.
 Language=Japanese
 新しいボリュームがファイルシステムによってマウントされました。
 .
+Language=Finnish
+Tiedostojärjestelmä on liittänyt uuden taltion.
+.
 
 MessageId=744
 Severity=Success
@@ -7661,6 +8802,9 @@ This success level status indicates that the transaction state already exists fo
 .
 Language=Japanese
 この成功レベルのステータスは、レジストリ サブツリーに対してトランザクション状態がすでに存在するが、トランザクション コミットが以前に中止されたことを示します。
+.
+Language=Finnish
+Tämä onnistumistason tila ilmaisee, että rekisterin alipuun tapahtumatila on jo olemassa, mutta tapahtuman vahvistus keskeytettiin aiemmin. Vahvistus on nyt suoritettu.
 .
 
 MessageId=745
@@ -7682,6 +8826,9 @@ This indicates that a notify change request has been completed due to closing th
 Language=Japanese
 これは、通知変更要求を行ったハンドルを閉じることにより、通知変更要求が完了したことを示します。
 .
+Language=Finnish
+Ilmaisee, että muutosilmoituspyyntö on valmistunut, koska pyynnön tehnyt kahva suljettiin.
+.
 
 MessageId=746
 Severity=Success
@@ -7701,6 +8848,9 @@ An attempt was made to connect to the remote server %hs on the primary transport
 .
 Language=Japanese
 プライマリ トランスポートでリモート サーバ %hs に接続しようとしましたが、接続に失敗しました。
+.
+Language=Finnish
+Etäpalvelimeen %hs yritettiin muodostaa yhteys ensisijaista siirtoa käyttäen, mutta yhteys epäonnistui. Tietokone PYSTYI muodostamaan yhteyden toissijaista siirtoa käyttäen.
 .
 
 MessageId=747
@@ -7722,6 +8872,9 @@ Page fault was a transition fault.
 Language=Japanese
 ページフォルトはトランジションフォルトでした。
 .
+Language=Finnish
+Sivuvirhe oli siirtymävirhe.
+.
 
 MessageId=748
 Severity=Success
@@ -7741,6 +8894,9 @@ Page fault was a demand zero fault.
 .
 Language=Japanese
 ページフォルトはデマンドゼロのフォールトでした。
+.
+Language=Finnish
+Sivuvirhe oli nollasivun pyyntövirhe.
 .
 
 MessageId=749
@@ -7762,6 +8918,9 @@ Page fault was a demand zero fault.
 Language=Japanese
 ページフォルトはデマンドゼロのフォールトでした。
 .
+Language=Finnish
+Sivuvirhe oli nollasivun pyyntövirhe.
+.
 
 MessageId=750
 Severity=Success
@@ -7781,6 +8940,9 @@ Page fault was a demand zero fault.
 .
 Language=Japanese
 ページフォルトはデマンドゼロのフォールトでした。
+.
+Language=Finnish
+Sivuvirhe oli nollasivun pyyntövirhe.
 .
 
 MessageId=751
@@ -7802,6 +8964,9 @@ Page fault was satisfied by reading from a secondary storage device.
 Language=Japanese
 ページフォルトはセカンダリストレージデバイスからの読み取りによって満たされました。
 .
+Language=Finnish
+Sivuvirhe käsiteltiin lukemalla toissijaiselta tallennuslaitteelta.
+.
 
 MessageId=752
 Severity=Success
@@ -7821,6 +8986,9 @@ Cached page was locked during operation.
 .
 Language=Japanese
 操作中にキャッシュされたページがロックされました。
+.
+Language=Finnish
+Välimuistin sivu oli lukittuna toiminnon aikana.
 .
 
 MessageId=753
@@ -7842,6 +9010,9 @@ Crash dump exists in paging file.
 Language=Japanese
 ページング ファイルにクラッシュ ダンプが存在します。
 .
+Language=Finnish
+Sivutustiedostossa on kaatumisvedos.
+.
 
 MessageId=754
 Severity=Success
@@ -7861,6 +9032,9 @@ Specified buffer contains all zeros.
 .
 Language=Japanese
 指定されたバッファにすべてのゼロが含まれています。
+.
+Language=Finnish
+Annetun puskurin kaikki tavut ovat nollia.
 .
 
 MessageId=755
@@ -7882,6 +9056,9 @@ A reparse should be performed by the Object Manager since the name of the file r
 Language=Japanese
 ファイル名がシンボリック リンクであったため、オブジェクト マネージャで再解析を実行する必要があります。
 .
+Language=Finnish
+Objektinhallinnan on jäsennettävä nimi uudelleen, koska tiedoston nimi johti symboliseen linkkiin.
+.
 
 MessageId=756
 Severity=Success
@@ -7901,6 +9078,9 @@ The device has succeeded a query-stop and its resource requirements have changed
 .
 Language=Japanese
 デバイスがクエリ停止に成功し、リソース要件が変更されました。
+.
+Language=Finnish
+Laite on hyväksynyt pysäytyskyselyn, ja sen resurssivaatimukset ovat muuttuneet.
 .
 
 MessageId=757
@@ -7922,6 +9102,9 @@ The translator has translated these resources into the global space and no furth
 Language=Japanese
 トランスレータはこれらのリソースをグローバル空間に変換しました。
 .
+Language=Finnish
+Muunnin on muuntanut nämä resurssit yleiseen tilaan, eikä muita muunnoksia pidä tehdä.
+.
 
 MessageId=758
 Severity=Success
@@ -7941,6 +9124,9 @@ A process being terminated has no threads to terminate.
 .
 Language=Japanese
 終了するプロセスには終了するスレッドがありません。
+.
+Language=Finnish
+Lopetettavalla prosessilla ei ole lopetettavia säikeitä.
 .
 
 MessageId=759
@@ -7962,6 +9148,9 @@ The specified process is not part of a job.
 Language=Japanese
 指定されたプロセスはジョブの一部ではありません。
 .
+Language=Finnish
+Annettu prosessi ei kuulu työhön.
+.
 
 MessageId=760
 Severity=Success
@@ -7981,6 +9170,9 @@ The specified process is part of a job.
 .
 Language=Japanese
 指定されたプロセスはジョブの一部です。
+.
+Language=Finnish
+Annettu prosessi kuuluu työhön.
 .
 
 MessageId=761
@@ -8002,6 +9194,9 @@ The system is now ready for hibernation.
 Language=Japanese
 システムは休止状態への準備が整いました。
 .
+Language=Finnish
+Järjestelmä on nyt valmis horrostilaan.
+.
 
 MessageId=762
 Severity=Success
@@ -8021,6 +9216,9 @@ A file system or file system filter driver has successfully completed an FsFilte
 .
 Language=Japanese
 ファイル システムまたはファイル システム フィルタ ドライバーが FsFilter 操作を正常に完了しました。
+.
+Language=Finnish
+Tiedostojärjestelmä tai tiedostojärjestelmän suodatinajuri on suorittanut FsFilter-toiminnon onnistuneesti.
 .
 
 MessageId=763
@@ -8042,6 +9240,9 @@ The specified interrupt vector was already connected.
 Language=Japanese
 指定された割り込みベクタはすでに接続されています。
 .
+Language=Finnish
+Määritetty keskeytysvektori oli jo liitetty.
+.
 
 MessageId=764
 Severity=Success
@@ -8061,6 +9262,9 @@ The specified interrupt vector is still connected.
 .
 Language=Japanese
 指定された割り込みベクタはまだ接続されています。
+.
+Language=Finnish
+Määritetty keskeytysvektori on yhä liitetty.
 .
 
 MessageId=765
@@ -8082,6 +9286,9 @@ An operation is blocked waiting for an oplock.
 Language=Japanese
 操作がブロックされました。
 .
+Language=Finnish
+Toiminto on estetty odottamaan oplock-lukitusta.
+.
 
 MessageId=766
 Severity=Success
@@ -8101,6 +9308,9 @@ Debugger handled exception.
 .
 Language=Japanese
 デバッガが例外を処理しました。
+.
+Language=Finnish
+Virheenkorjain käsitteli poikkeuksen.
 .
 
 MessageId=767
@@ -8122,6 +9332,9 @@ Debugger continued
 Language=Japanese
 デバッガ継続。
 .
+Language=Finnish
+Virheenkorjain jatkoi
+.
 
 MessageId=768
 Severity=Success
@@ -8141,6 +9354,9 @@ An exception occurred in a user mode callback and the kernel callback frame shou
 .
 Language=Japanese
 ユーザー モード コールバックで例外が発生したため、カーネル コールバック フレームを削除する必要があります。
+.
+Language=Finnish
+Käyttäjätilan takaisinkutsussa tapahtui poikkeus, ja ytimen takaisinkutsukehys on poistettava.
 .
 
 MessageId=769
@@ -8162,6 +9378,9 @@ Compression is disabled for this volume.
 Language=Japanese
 このボリュームでは圧縮が無効になっています。
 .
+Language=Finnish
+Pakkaus on poistettu käytöstä tällä taltiolla.
+.
 
 MessageId=770
 Severity=Success
@@ -8181,6 +9400,9 @@ The data provider cannot fetch backwards through a result set.
 .
 Language=Japanese
 データ プロバイダーは結果セットを後方にフェッチできません。
+.
+Language=Finnish
+Tietojen tarjoaja ei voi noutaa tulosjoukkoa taaksepäin.
 .
 
 MessageId=771
@@ -8202,6 +9424,9 @@ The data provider cannot scroll backwards through a result set.
 Language=Japanese
 データ プロバイダーは結果セットを逆方向にスクロールできません。
 .
+Language=Finnish
+Tietojen tarjoaja ei voi vierittää tulosjoukkoa taaksepäin.
+.
 
 MessageId=772
 Severity=Success
@@ -8221,6 +9446,9 @@ The data provider requires that previously fetched data is released before askin
 .
 Language=Japanese
 データ プロバイダーは、さらにデータを要求する前に、以前にフェッチされたデータを解放する必要があります。
+.
+Language=Finnish
+Tietojen tarjoaja vaatii, että aiemmin noudetut tiedot vapautetaan ennen kuin uusia tietoja pyydetään.
 .
 
 MessageId=773
@@ -8242,6 +9470,9 @@ The data provider was not able to interpret the flags set for a column binding i
 Language=Japanese
 データ プロバイダーが、アクセサ内の列バインディングに設定されたフラグを解釈できませんでした。
 .
+Language=Finnish
+Tietojen tarjoaja ei pystynyt tulkitsemaan käyttöobjektin sarakesidokselle asetettuja lippuja.
+.
 
 MessageId=774
 Severity=Success
@@ -8261,6 +9492,9 @@ One or more errors occurred while processing the request.
 .
 Language=Japanese
 要求の処理中に1つ以上のエラーが発生しました。
+.
+Language=Finnish
+Pyyntöä käsiteltäessä tapahtui yksi tai useampi virhe.
 .
 
 MessageId=775
@@ -8282,6 +9516,9 @@ The implementation is not capable of performing the request.
 Language=Japanese
 実装が要求を実行できません。
 .
+Language=Finnish
+Toteutus ei pysty suorittamaan pyyntöä.
+.
 
 MessageId=776
 Severity=Success
@@ -8301,6 +9538,9 @@ The client of a component requested an operation which is not valid given the st
 .
 Language=Japanese
 コンポーネントのクライアントが、コンポーネント インスタンスの状態を考慮して有効でない操作を要求しました。
+.
+Language=Finnish
+Osan asiakas pyysi toimintoa, joka ei ole kelvollinen osan esiintymän tilassa.
 .
 
 MessageId=777
@@ -8322,6 +9562,9 @@ A version number could not be parsed.
 Language=Japanese
 バージョン番号を解析できませんでした。
 .
+Language=Finnish
+Versionumeroa ei voitu jäsentää.
+.
 
 MessageId=778
 Severity=Success
@@ -8341,6 +9584,9 @@ The iterator's start position is invalid.
 .
 Language=Japanese
 イテレータの開始位置が無効です。
+.
+Language=Finnish
+Iteraattorin aloituskohta on virheellinen.
 .
 
 MessageId=994
@@ -8362,6 +9608,9 @@ Access to the extended attribute was denied.
 Language=Japanese
 拡張属性へのアクセスが拒否されました。
 .
+Language=Finnish
+Laajennetun määritteen käyttö estettiin.
+.
 
 MessageId=995
 Severity=Success
@@ -8381,6 +9630,9 @@ The I/O operation has been aborted because of either a thread exit or an applica
 .
 Language=Japanese
 スレッド終了またはアプリケーション要求によりI/O操作が中断されました。
+.
+Language=Finnish
+I/O-toiminto on keskeytetty säikeen lopetuksen tai sovelluksen pyynnön vuoksi.
 .
 
 MessageId=996
@@ -8402,6 +9654,9 @@ Overlapped I/O event is not in a signaled state.
 Language=Japanese
 オーバーラップしたI/Oイベントがシグナルされた状態にありません。
 .
+Language=Finnish
+Päällekkäinen I/O-tapahtuma ei ole signaloidussa tilassa.
+.
 
 MessageId=997
 Severity=Success
@@ -8421,6 +9676,9 @@ Overlapped I/O operation is in progress.
 .
 Language=Japanese
 オーバーラップI/Oオペレーションが進行中です。
+.
+Language=Finnish
+Päällekkäinen I/O-toiminto on käynnissä.
 .
 
 MessageId=998
@@ -8442,6 +9700,9 @@ Invalid access to memory location.
 Language=Japanese
 メモリー ロケーションへのアクセスが無効です。
 .
+Language=Finnish
+Virheellinen muistipaikan käyttö.
+.
 
 MessageId=999
 Severity=Success
@@ -8461,6 +9722,9 @@ Error performing inpage operation.
 .
 Language=Japanese
 ページ内操作の実行エラーです。
+.
+Language=Finnish
+Virhe sivun sisäänlukutoiminnossa.
 .
 
 MessageId=1001
@@ -8482,6 +9746,9 @@ Recursion too deep; the stack overflowed.
 Language=Japanese
 再帰が深すぎます。スタックがオーバーフローしました。
 .
+Language=Finnish
+Rekursio liian syvä; pino vuoti yli.
+.
 
 MessageId=1002
 Severity=Success
@@ -8501,6 +9768,9 @@ The window cannot act on the sent message.
 .
 Language=Japanese
 ウィンドウは送信されたメッセージを処理できません。
+.
+Language=Finnish
+Ikkuna ei voi käsitellä lähetettyä viestiä.
 .
 
 MessageId=1003
@@ -8522,6 +9792,9 @@ Cannot complete this function.
 Language=Japanese
 この関数を完了できません。
 .
+Language=Finnish
+Tätä toimintoa ei voi suorittaa loppuun.
+.
 
 MessageId=1004
 Severity=Success
@@ -8541,6 +9814,9 @@ Invalid flags.
 .
 Language=Japanese
 無効なフラグです。
+.
+Language=Finnish
+Virheelliset liput.
 .
 
 MessageId=1005
@@ -8563,6 +9839,9 @@ Language=Japanese
 ボリュームに認識されるファイル システムが含まれていません。
 必要なファイル システム ドライバがすべてロードされていること、およびボリュームが壊れていないことを確認してください。
 .
+Language=Finnish
+Taltiolla ei ole tunnistettua tiedostojärjestelmää. Varmista, että kaikki tarvittavat tiedostojärjestelmän ajurit on ladattu ja että taltio ei ole vioittunut.
+.
 
 MessageId=1006
 Severity=Success
@@ -8582,6 +9861,9 @@ The volume for a file has been externally altered so that the opened file is no 
 .
 Language=Japanese
 ファイルのボリュームが外部から変更されたため、オープンされたファイルが無効になりました。
+.
+Language=Finnish
+Tiedoston taltiota on muutettu ulkoisesti niin, että avattu tiedosto ei ole enää kelvollinen.
 .
 
 MessageId=1007
@@ -8603,6 +9885,9 @@ The requested operation cannot be performed in full-screen mode.
 Language=Japanese
 要求された操作はフルスクリーンモードでは実行できません。
 .
+Language=Finnish
+Pyydettyä toimintoa ei voi suorittaa koko näytön tilassa.
+.
 
 MessageId=1008
 Severity=Success
@@ -8622,6 +9907,9 @@ An attempt was made to reference a token that does not exist.
 .
 Language=Japanese
 存在しないトークンを参照しようとしました。
+.
+Language=Finnish
+Yritettiin viitata tunnussanomaan, jota ei ole olemassa.
 .
 
 MessageId=1009
@@ -8643,6 +9931,9 @@ The configuration registry database is corrupt.
 Language=Japanese
 構成レジストリ データベースが壊れています。
 .
+Language=Finnish
+Rekisterin määritystietokanta on vioittunut.
+.
 
 MessageId=1010
 Severity=Success
@@ -8662,6 +9953,9 @@ The configuration registry key is invalid.
 .
 Language=Japanese
 構成レジストリ キーが無効です。
+.
+Language=Finnish
+Rekisterin määritysavain on virheellinen.
 .
 
 MessageId=1011
@@ -8683,6 +9977,9 @@ The configuration registry key could not be opened.
 Language=Japanese
 構成レジストリ キーを開けませんでした。
 .
+Language=Finnish
+Rekisterin määritysavainta ei voitu avata.
+.
 
 MessageId=1012
 Severity=Success
@@ -8702,6 +9999,9 @@ The configuration registry key could not be read.
 .
 Language=Japanese
 構成レジストリ キーを読み取れませんでした。
+.
+Language=Finnish
+Rekisterin määritysavainta ei voitu lukea.
 .
 
 MessageId=1013
@@ -8723,6 +10023,9 @@ The configuration registry key could not be written.
 Language=Japanese
 構成レジストリ キーを書き込めませんでした。
 .
+Language=Finnish
+Rekisterin määritysavaimeen ei voitu kirjoittaa.
+.
 
 MessageId=1014
 Severity=Success
@@ -8742,6 +10045,9 @@ One of the files in the registry database had to be recovered by use of a log or
 .
 Language=Japanese
 レジストリ データベースのファイルの 1 つは、ログまたは代替コピーを使用して回復する必要がありました。回復に成功しました。
+.
+Language=Finnish
+Yksi rekisteritietokannan tiedostoista oli palautettava lokin tai varakopion avulla. Palautus onnistui.
 .
 
 MessageId=1015
@@ -8763,6 +10069,9 @@ The registry is corrupted. The structure of one of the files containing registry
 Language=Japanese
 レジストリが壊れています。レジストリ データを含むファイルの構造が壊れているか、ファイルのシステム キャッシュ メモリ イメージが壊れているか、代替コピーまたはログが存在しないか壊れているため、ファイルを回復できませんでした。
 .
+Language=Finnish
+Rekisteri on vioittunut. Jonkin rekisteritietoja sisältävän tiedoston rakenne tai tiedoston kuva järjestelmän muistissa on vioittunut, tai tiedostoa ei voitu palauttaa, koska varakopio tai loki puuttui tai oli vioittunut.
+.
 
 MessageId=1016
 Severity=Success
@@ -8782,6 +10091,9 @@ An I/O operation initiated by the registry failed unrecoverably. The registry co
 .
 Language=Japanese
 レジストリによって開始されたI/O操作が回復不能に失敗しました。レジストリが、レジストリのシステムイメージを含むファイルの1つを読み込めなかったか、書き込めなかったか、フラッシュできなかった。
+.
+Language=Finnish
+Rekisterin käynnistämä I/O-toiminto epäonnistui pysyvästi. Rekisteri ei pystynyt lukemaan, kirjoittamaan tai tyhjentämään jotakin järjestelmän rekisterikuvan sisältävää tiedostoa.
 .
 
 MessageId=1017
@@ -8803,6 +10115,9 @@ The system has attempted to load or restore a file into the registry, but the sp
 Language=Japanese
 レジストリにファイルをロードまたは復元しようとしましたが、指定されたファイルはレジストリファイル形式ではありません。
 .
+Language=Finnish
+Järjestelmä on yrittänyt ladata tai palauttaa tiedoston rekisteriin, mutta annettu tiedosto ei ole rekisteritiedoston muodossa.
+.
 
 MessageId=1018
 Severity=Success
@@ -8822,6 +10137,9 @@ Illegal operation attempted on a registry key that has been marked for deletion.
 .
 Language=Japanese
 削除マークが付けられたレジストリ キーに対して不正な操作を試みました。
+.
+Language=Finnish
+Kelpaamatonta toimintoa yritettiin rekisteriavaimelle, joka on merkitty poistettavaksi.
 .
 
 MessageId=1019
@@ -8843,6 +10161,9 @@ System could not allocate the required space in a registry log.
 Language=Japanese
 レジストリ ログに必要な領域を割り当てられませんでした。
 .
+Language=Finnish
+Järjestelmä ei voinut varata tarvittavaa tilaa rekisterin lokiin.
+.
 
 MessageId=1020
 Severity=Success
@@ -8862,6 +10183,9 @@ Cannot create a symbolic link in a registry key that already has subkeys or valu
 .
 Language=Japanese
 すでにサブキーまたは値を持つレジストリ キーにシンボリック リンクを作成できません。
+.
+Language=Finnish
+Symbolista linkkiä ei voi luoda rekisteriavaimeen, jolla on jo aliavaimia tai arvoja.
 .
 
 MessageId=1021
@@ -8883,6 +10207,9 @@ Cannot create a stable subkey under a volatile parent key.
 Language=Japanese
 揮発性の親キーの下に安定したサブキーを作成できません。
 .
+Language=Finnish
+Pysyvää aliavainta ei voi luoda tilapäisen yläavaimen alle.
+.
 
 MessageId=1022
 Severity=Success
@@ -8902,6 +10229,9 @@ A notify change request is being completed and the information is not being retu
 .
 Language=Japanese
 通知変更要求が完了しましたが、呼び出し元のバッファに情報が返されていません。呼び出し元は変更点を見つけるためにファイルを列挙する必要があります。
+.
+Language=Finnish
+Muutosilmoituspyyntö on valmistumassa, eikä tietoja palauteta kutsujan puskuriin. Kutsujan on nyt lueteltava tiedostot muutosten löytämiseksi.
 .
 
 MessageId=1051
@@ -8923,6 +10253,9 @@ A stop control has been sent to a service that other running services are depend
 Language=Japanese
 他の実行中のサービスが依存しているサービスに停止制御が送信されました。
 .
+Language=Finnish
+Pysäytysohjaus on lähetetty palvelulle, josta muut käynnissä olevat palvelut ovat riippuvaisia.
+.
 
 MessageId=1052
 Severity=Success
@@ -8942,6 +10275,9 @@ The requested control is not valid for this service.
 .
 Language=Japanese
 要求されたコントロールは、このサービスに対して有効ではありません。
+.
+Language=Finnish
+Pyydetty ohjaus ei ole kelvollinen tälle palvelulle.
 .
 
 MessageId=1053
@@ -8963,6 +10299,9 @@ The service did not respond to the start or control request in a timely fashion.
 Language=Japanese
 サービスがタイムリーに開始または制御要求に応答しませんでした。
 .
+Language=Finnish
+Palvelu ei vastannut käynnistys- tai ohjauspyyntöön ajoissa.
+.
 
 MessageId=1054
 Severity=Success
@@ -8982,6 +10321,9 @@ A thread could not be created for the service.
 .
 Language=Japanese
 サービスにスレッドを作成できませんでした。
+.
+Language=Finnish
+Palvelulle ei voitu luoda säiettä.
 .
 
 MessageId=1055
@@ -9003,6 +10345,9 @@ The service database is locked.
 Language=Japanese
 サービスデータベースがロックされました。
 .
+Language=Finnish
+Palvelutietokanta on lukittu.
+.
 
 MessageId=1056
 Severity=Success
@@ -9022,6 +10367,9 @@ An instance of the service is already running.
 .
 Language=Japanese
 サービスのインスタンスがすでに実行されています。
+.
+Language=Finnish
+Palvelun esiintymä on jo käynnissä.
 .
 
 MessageId=1057
@@ -9043,6 +10391,9 @@ The account name is invalid or does not exist, or the password is invalid for th
 Language=Japanese
 アカウント名が無効か存在しないか、指定されたアカウント名のパスワードが無効です。
 .
+Language=Finnish
+Tilin nimi on virheellinen tai sitä ei ole, tai salasana on virheellinen annetulle tilin nimelle.
+.
 
 MessageId=1058
 Severity=Success
@@ -9062,6 +10413,9 @@ The service cannot be started, either because it is disabled or because it has n
 .
 Language=Japanese
 サービスが無効になっているか、有効なデバイスが関連付けられていないため、サービスを開始できません。
+.
+Language=Finnish
+Palvelua ei voi käynnistää, koska se on poistettu käytöstä tai siihen ei ole liitetty käytössä olevia laitteita.
 .
 
 MessageId=1059
@@ -9083,6 +10437,9 @@ Circular service dependency was specified.
 Language=Japanese
 円形のサービス依存関係が指定されました。
 .
+Language=Finnish
+Määritettiin kehämäinen palveluriippuvuus.
+.
 
 MessageId=1060
 Severity=Success
@@ -9102,6 +10459,9 @@ The specified service does not exist as an installed service.
 .
 Language=Japanese
 指定されたサービスがインストールされたサービスとして存在しません。
+.
+Language=Finnish
+Määritettyä palvelua ei ole asennettuna palveluna.
 .
 
 MessageId=1061
@@ -9123,6 +10483,9 @@ The service cannot accept control messages at this time.
 Language=Japanese
 サービスは現在、制御メッセージを受け付けることができません。
 .
+Language=Finnish
+Palvelu ei voi vastaanottaa ohjausviestejä tällä hetkellä.
+.
 
 MessageId=1062
 Severity=Success
@@ -9142,6 +10505,9 @@ The service has not been started.
 .
 Language=Japanese
 サービスが開始されていません。
+.
+Language=Finnish
+Palvelua ei ole käynnistetty.
 .
 
 MessageId=1063
@@ -9163,6 +10529,9 @@ The service process could not connect to the service controller.
 Language=Japanese
 サービスプロセスがサービスコントローラに接続できませんでした。
 .
+Language=Finnish
+Palveluprosessi ei saanut yhteyttä palvelunhallintaan.
+.
 
 MessageId=1064
 Severity=Success
@@ -9182,6 +10551,9 @@ An exception occurred in the service when handling the control request.
 .
 Language=Japanese
 制御要求の処理中にサービスで例外が発生しました。
+.
+Language=Finnish
+Palvelussa tapahtui poikkeus ohjauspyyntöä käsiteltäessä.
 .
 
 MessageId=1065
@@ -9203,6 +10575,9 @@ The database specified does not exist.
 Language=Japanese
 指定されたデータベースが存在しません。
 .
+Language=Finnish
+Määritettyä tietokantaa ei ole olemassa.
+.
 
 MessageId=1066
 Severity=Success
@@ -9222,6 +10597,9 @@ The service has returned a service-specific error code.
 .
 Language=Japanese
 サービス固有のエラーコードが返されました。
+.
+Language=Finnish
+Palvelu on palauttanut palvelukohtaisen virhekoodin.
 .
 
 MessageId=1067
@@ -9243,6 +10621,9 @@ The process terminated unexpectedly.
 Language=Japanese
 プロセスが予期せず終了しました。
 .
+Language=Finnish
+Prosessi päättyi odottamatta.
+.
 
 MessageId=1068
 Severity=Success
@@ -9262,6 +10643,9 @@ The dependency service or group failed to start.
 .
 Language=Japanese
 依存サービスまたはグループが開始できませんでした。
+.
+Language=Finnish
+Riippuvuuspalvelu tai -ryhmä ei käynnistynyt.
 .
 
 MessageId=1069
@@ -9283,6 +10667,9 @@ The service did not start due to a logon failure.
 Language=Japanese
 ログオンの失敗によりサービスが開始されませんでした。
 .
+Language=Finnish
+Palvelu ei käynnistynyt kirjautumisvirheen vuoksi.
+.
 
 MessageId=1070
 Severity=Success
@@ -9302,6 +10689,9 @@ After starting, the service hung in a start-pending state.
 .
 Language=Japanese
 開始後、サービスが開始待ち状態でハングしました。
+.
+Language=Finnish
+Käynnistymisen jälkeen palvelu jumittui käynnistystä odottavaan tilaan.
 .
 
 MessageId=1071
@@ -9323,6 +10713,9 @@ The specified service database lock is invalid.
 Language=Japanese
 指定されたサービス データベース ロックが無効です。
 .
+Language=Finnish
+Määritetty palvelutietokannan lukitus on virheellinen.
+.
 
 MessageId=1072
 Severity=Success
@@ -9342,6 +10735,9 @@ The specified service has been marked for deletion.
 .
 Language=Japanese
 指定されたサービスは削除マークが付けられました。
+.
+Language=Finnish
+Määritetty palvelu on merkitty poistettavaksi.
 .
 
 MessageId=1073
@@ -9363,6 +10759,9 @@ The specified service already exists.
 Language=Japanese
 指定されたサービスは既に存在します。
 .
+Language=Finnish
+Määritetty palvelu on jo olemassa.
+.
 
 MessageId=1074
 Severity=Success
@@ -9382,6 +10781,9 @@ The system is currently running with the last-known-good configuration.
 .
 Language=Japanese
 システムは現在、最終既知の構成で動作しています。
+.
+Language=Finnish
+Järjestelmä käyttää tällä hetkellä viimeisintä toimivaa kokoonpanoa.
 .
 
 MessageId=1075
@@ -9403,6 +10805,9 @@ The dependency service does not exist or has been marked for deletion.
 Language=Japanese
 依存サービスが存在しないか、削除マークが付けられています。
 .
+Language=Finnish
+Riippuvuuspalvelua ei ole olemassa tai se on merkitty poistettavaksi.
+.
 
 MessageId=1076
 Severity=Success
@@ -9422,6 +10827,9 @@ The current boot has already been accepted for use as the last-known-good contro
 .
 Language=Japanese
 現在のブートは、Last-Known-Goodコントロールセットとして使用するために既に受け入れられました。
+.
+Language=Finnish
+Nykyinen käynnistys on jo hyväksytty viimeisimmäksi toimivaksi ohjausjoukoksi.
 .
 
 MessageId=1077
@@ -9443,6 +10851,9 @@ No attempts to start the service have been made since the last boot.
 Language=Japanese
 最後のブート以降、サービスの開始を試みていません。
 .
+Language=Finnish
+Palvelua ei ole yritetty käynnistää edellisen käynnistyksen jälkeen.
+.
 
 MessageId=1078
 Severity=Success
@@ -9462,6 +10873,9 @@ The name is already in use as either a service name or a service display name.
 .
 Language=Japanese
 サービス名またはサービス表示名として既に使用されています。
+.
+Language=Finnish
+Nimi on jo käytössä joko palvelun nimenä tai palvelun näyttönimenä.
 .
 
 MessageId=1079
@@ -9483,6 +10897,9 @@ The account specified for this service is different from the account specified f
 Language=Japanese
 このサービスに指定されたアカウントが、同じプロセスで実行されている他のサービスに指定されたアカウントと異なります。
 .
+Language=Finnish
+Tälle palvelulle määritetty tili on eri kuin muille samassa prosessissa käynnissä oleville palveluille määritetty tili.
+.
 
 MessageId=1080
 Severity=Success
@@ -9502,6 +10919,9 @@ Failure actions can only be set for Win32 services, not for drivers.
 .
 Language=Japanese
 失敗アクションはWin32サービスに対してのみ設定でき、ドライバに対しては設定できません。
+.
+Language=Finnish
+Virhetoimintoja voi määrittää vain Win32-palveluille, ei ajureille.
 .
 
 MessageId=1081
@@ -9524,6 +10944,9 @@ Language=Japanese
 このサービスはサービスコントロールマネージャと同じプロセスで実行されます。
 そのため、このサービスのプロセスが予期せず終了した場合、サービスコントロールマネージャはアクションを実行できません。
 .
+Language=Finnish
+Tämä palvelu toimii samassa prosessissa kuin palvelunhallinta. Siksi palvelunhallinta ei voi tehdä mitään, jos tämän palvelun prosessi päättyy odottamatta.
+.
 
 MessageId=1082
 Severity=Success
@@ -9543,6 +10966,9 @@ No recovery program has been configured for this service.
 .
 Language=Japanese
 このサービスに回復プログラムが設定されていません。
+.
+Language=Finnish
+Tälle palvelulle ei ole määritetty palautusohjelmaa.
 .
 
 MessageId=1083
@@ -9564,6 +10990,9 @@ The executable program that this service is configured to run in does not implem
 Language=Japanese
 このサービスが実行されるように構成されている実行可能プログラムは、サービスを実装していません。
 .
+Language=Finnish
+Ohjelma, jossa tämä palvelu on määritetty toimimaan, ei toteuta palvelua.
+.
 
 MessageId=1084
 Severity=Success
@@ -9583,6 +11012,9 @@ This service cannot be started in Safe Mode.
 .
 Language=Japanese
 このサービスはセーフ モードで起動できません。
+.
+Language=Finnish
+Tätä palvelua ei voi käynnistää vikasietotilassa.
 .
 
 MessageId=1100
@@ -9604,6 +11036,9 @@ The physical end of the tape has been reached.
 Language=Japanese
 テープの物理的な終端に達しました。
 .
+Language=Finnish
+Nauhan fyysinen loppu on saavutettu.
+.
 
 MessageId=1101
 Severity=Success
@@ -9623,6 +11058,9 @@ A tape access reached a filemark.
 .
 Language=Japanese
 テープ アクセスがファイルマークに到達しました。
+.
+Language=Finnish
+Nauhan käyttö saavutti tiedostomerkin.
 .
 
 MessageId=1102
@@ -9644,6 +11082,9 @@ The beginning of the tape or a partition was encountered.
 Language=Japanese
 テープの先頭またはパーティションに遭遇しました。
 .
+Language=Finnish
+Havaittiin nauhan tai osion alku.
+.
 
 MessageId=1103
 Severity=Success
@@ -9663,6 +11104,9 @@ A tape access reached the end of a set of files.
 .
 Language=Japanese
 テープ アクセスがファイル セットの最後に到達しました。
+.
+Language=Finnish
+Nauhan käyttö saavutti tiedostojoukon lopun.
 .
 
 MessageId=1104
@@ -9684,6 +11128,9 @@ No more data is on the tape.
 Language=Japanese
 テープにデータがありません。
 .
+Language=Finnish
+Nauhalla ei ole enempää tietoja.
+.
 
 MessageId=1105
 Severity=Success
@@ -9703,6 +11150,9 @@ Tape could not be partitioned.
 .
 Language=Japanese
 テープをパーティション分割できませんでした。
+.
+Language=Finnish
+Nauhaa ei voitu osioida.
 .
 
 MessageId=1106
@@ -9724,6 +11174,9 @@ When accessing a new tape of a multivolume partition, the current block size is 
 Language=Japanese
 マルチボリューム パーティションの新しいテープにアクセスすると、現在のブロック サイズが正しくありません。
 .
+Language=Finnish
+Kun monitaltioisen osion uutta nauhaa käytetään, nykyinen lohkokoko on väärä.
+.
 
 MessageId=1107
 Severity=Success
@@ -9743,6 +11196,9 @@ Tape partition information could not be found when loading a tape.
 .
 Language=Japanese
 テープの読み込み時にテープ パーティション情報が見つかりませんでした。
+.
+Language=Finnish
+Nauhan osiotietoja ei löytynyt nauhaa ladattaessa.
 .
 
 MessageId=1108
@@ -9764,6 +11220,9 @@ Unable to lock the media eject mechanism.
 Language=Japanese
 メディア取り出し機構をロックできません。
 .
+Language=Finnish
+Tietovälineen poistomekanismia ei voi lukita.
+.
 
 MessageId=1109
 Severity=Success
@@ -9783,6 +11242,9 @@ Unable to unload the media.
 .
 Language=Japanese
 メディアをアンロードできません。
+.
+Language=Finnish
+Tietovälinettä ei voi poistaa.
 .
 
 MessageId=1110
@@ -9804,6 +11266,9 @@ The media in the drive may have changed.
 Language=Japanese
 ドライブ内のメディアが変更された可能性があります。
 .
+Language=Finnish
+Aseman tietoväline on ehkä vaihtunut.
+.
 
 MessageId=1111
 Severity=Success
@@ -9823,6 +11288,9 @@ The I/O bus was reset.
 .
 Language=Japanese
 I/O バスがリセットされました。
+.
+Language=Finnish
+I/O-väylä palautettiin alkutilaan.
 .
 
 MessageId=1112
@@ -9844,6 +11312,9 @@ No media in drive.
 Language=Japanese
 ドライブにメディアがありません。
 .
+Language=Finnish
+Asemassa ei ole tietovälinettä.
+.
 
 MessageId=1113
 Severity=Success
@@ -9863,6 +11334,9 @@ No mapping for the Unicode character exists in the target multi-byte code page.
 .
 Language=Japanese
 ターゲットのマルチバイト コード ページにUnicode文字のマッピングがありません。
+.
+Language=Finnish
+Unicode-merkille ei ole vastinetta kohteen monitavuisessa koodisivussa.
 .
 
 MessageId=1114
@@ -9884,6 +11358,9 @@ A dynamic link library (DLL) initialization routine failed.
 Language=Japanese
 動的リンク ライブラリ (DLL) の初期化ルーチンが失敗しました。
 .
+Language=Finnish
+Dynaamisesti linkitettävän kirjaston (DLL) alustusrutiini epäonnistui.
+.
 
 MessageId=1115
 Severity=Success
@@ -9903,6 +11380,9 @@ A system shutdown is in progress.
 .
 Language=Japanese
 システムのシャットダウンが進行中です。
+.
+Language=Finnish
+Järjestelmän sammutus on käynnissä.
 .
 
 MessageId=1116
@@ -9924,6 +11404,9 @@ Unable to abort the system shutdown because no shutdown was in progress.
 Language=Japanese
 シャットダウンが進行中でないため、システムのシャットダウンを中止できません。
 .
+Language=Finnish
+Järjestelmän sammutusta ei voi keskeyttää, koska sammutus ei ollut käynnissä.
+.
 
 MessageId=1117
 Severity=Success
@@ -9943,6 +11426,9 @@ The request could not be performed because of an I/O device error.
 .
 Language=Japanese
 要求はI/Oデバイスエラーのため実行できませんでした。
+.
+Language=Finnish
+Pyyntöä ei voitu suorittaa I/O-laitteen virheen vuoksi.
 .
 
 MessageId=1118
@@ -9964,6 +11450,9 @@ No serial device was successfully initialized. The serial driver will unload.
 Language=Japanese
 シリアル デバイスが正常に初期化されませんでした。シリアル ドライバはアンロードします。
 .
+Language=Finnish
+Yhtään sarjaporttilaitetta ei alustettu onnistuneesti. Sarjaporttiajuri poistetaan muistista.
+.
 
 MessageId=1119
 Severity=Success
@@ -9983,6 +11472,9 @@ Unable to open a device that was sharing an interrupt request (IRQ) with other d
 .
 Language=Japanese
 他のデバイスと割り込み要求 (IRQ)  を共有しているデバイスを開くことができません。そのIRQを使用する少なくとも1つの他のデバイスがすでにオープンされています。
+.
+Language=Finnish
+Laitetta, joka jakoi keskeytyspyynnön (IRQ) muiden laitteiden kanssa, ei voi avata. Vähintään yksi toinen samaa IRQ:ta käyttävä laite oli jo avattu.
 .
 
 MessageId=1120
@@ -10005,6 +11497,9 @@ Language=Japanese
 シリアルI/O操作がシリアルポートへの別の書き込みによって完了しました。
  (IOCTL_SERIAL_XOFF_COUNTERが0になりました。)
 .
+Language=Finnish
+Sarjaportin I/O-toiminto valmistui toisen sarjaporttiin kirjoituksen vuoksi. (IOCTL_SERIAL_XOFF_COUNTER saavutti nollan.)
+.
 
 MessageId=1121
 Severity=Success
@@ -10024,6 +11519,9 @@ A serial I/O operation completed because the timeout period expired. (The IOCTL_
 .
 Language=Japanese
 タイムアウト期間が切れたため、シリアルI/Oオペレーションが完了しました (IOCTL_SERIAL_XOFF_COUNTERが0になりませんでした)。
+.
+Language=Finnish
+Sarjaportin I/O-toiminto valmistui, koska aikakatkaisuaika kului umpeen. (IOCTL_SERIAL_XOFF_COUNTER ei saavuttanut nollaa.)
 .
 
 MessageId=1122
@@ -10045,6 +11543,9 @@ No ID address mark was found on the floppy disk.
 Language=Japanese
 フロッピーディスクにIDアドレスマークが見つかりませんでした。
 .
+Language=Finnish
+Levykkeeltä ei löytynyt tunnisteen osoitemerkkiä.
+.
 
 MessageId=1123
 Severity=Success
@@ -10064,6 +11565,9 @@ Mismatch between the floppy disk sector ID field and the floppy disk controller 
 .
 Language=Japanese
 フロッピーディスクのセクタIDフィールドとフロッピーディスクコントローラのトラックアドレスが一致しません。
+.
+Language=Finnish
+Levykkeen sektorin tunnistekenttä ei vastaa levykeaseman ohjaimen uran osoitetta.
 .
 
 MessageId=1124
@@ -10085,6 +11589,9 @@ The floppy disk controller reported an error that is not recognized by the flopp
 Language=Japanese
 フロッピーディスクコントローラから、フロッピーディスクドライバが認識できないエラーが報告されました。
 .
+Language=Finnish
+Levykeaseman ohjain ilmoitti virheestä, jota levykeaseman ajuri ei tunnista.
+.
 
 MessageId=1125
 Severity=Success
@@ -10104,6 +11611,9 @@ The floppy disk controller returned inconsistent results in its registers.
 .
 Language=Japanese
 フロッピーディスクコントローラがレジスタに矛盾した結果を返しました。
+.
+Language=Finnish
+Levykeaseman ohjain palautti rekistereissään ristiriitaisia tuloksia.
 .
 
 MessageId=1126
@@ -10125,6 +11635,9 @@ While accessing the hard disk, a recalibrate operation failed, even after retrie
 Language=Japanese
 ハードディスクにアクセス中に、再試行しても再キャリブレーションに失敗しました。
 .
+Language=Finnish
+Kiintolevyä käytettäessä uudelleenkalibrointi epäonnistui uusintayrityksistä huolimatta.
+.
 
 MessageId=1127
 Severity=Success
@@ -10144,6 +11657,9 @@ While accessing the hard disk, a disk operation failed even after retries.
 .
 Language=Japanese
 ハードディスクにアクセス中、再試行してもディスク操作に失敗しました。
+.
+Language=Finnish
+Kiintolevyä käytettäessä levytoiminto epäonnistui uusintayrityksistä huolimatta.
 .
 
 MessageId=1128
@@ -10165,6 +11681,9 @@ While accessing the hard disk, a disk controller reset was needed, but even that
 Language=Japanese
 ハードディスクへのアクセス中にディスクコントローラのリセットが必要でしたが、それにも失敗しました。
 .
+Language=Finnish
+Kiintolevyä käytettäessä levyohjain oli palautettava alkutilaan, mutta sekin epäonnistui.
+.
 
 MessageId=1129
 Severity=Success
@@ -10184,6 +11703,9 @@ Physical end of tape encountered.
 .
 Language=Japanese
 テープの物理的な終端に遭遇しました。
+.
+Language=Finnish
+Havaittiin nauhan fyysinen loppu.
 .
 
 MessageId=1130
@@ -10205,6 +11727,9 @@ Not enough server storage is available to process this command.
 Language=Japanese
 このコマンドを処理するのに十分なサーバー メモリ リソースがありません。
 .
+Language=Finnish
+Palvelimen muisti ei riitä tämän komennon käsittelyyn.
+.
 
 MessageId=1131
 Severity=Success
@@ -10224,6 +11749,9 @@ A potential deadlock condition has been detected.
 .
 Language=Japanese
 デッドロックの可能性が検出されました。
+.
+Language=Finnish
+Havaittiin mahdollinen lukkiutumistilanne.
 .
 
 MessageId=1132
@@ -10245,6 +11773,9 @@ The base address or the file offset specified does not have the proper alignment
 Language=Japanese
 指定されたベースアドレスまたはファイルオフセットに適切なアライメントがありません。
 .
+Language=Finnish
+Määritetty perusosoite tai tiedoston siirtymä ei ole oikein tasattu.
+.
 
 MessageId=1140
 Severity=Success
@@ -10264,6 +11795,9 @@ An attempt to change the system power state was vetoed by another application or
 .
 Language=Japanese
 システムの電源状態を変更しようとしましたが、他のアプリケーションまたはドライバによって拒否されました。
+.
+Language=Finnish
+Toinen sovellus tai ajuri esti järjestelmän virtatilan muuttamisen.
 .
 
 MessageId=1141
@@ -10285,6 +11819,9 @@ The system BIOS failed an attempt to change the system power state.
 Language=Japanese
 システム BIOS がシステム電源状態の変更の試みに失敗しました。
 .
+Language=Finnish
+Järjestelmän BIOS ei onnistunut muuttamaan järjestelmän virtatilaa.
+.
 
 MessageId=1142
 Severity=Success
@@ -10304,6 +11841,9 @@ An attempt was made to create more links on a file than the file system supports
 .
 Language=Japanese
 ファイル システムでサポートされているよりも多くのリンクをファイルに作成しようとしました。
+.
+Language=Finnish
+Tiedostolle yritettiin luoda enemmän linkkejä kuin tiedostojärjestelmä tukee.
 .
 
 MessageId=1150
@@ -10325,6 +11865,9 @@ The specified program requires a newer version of LiberNT.
 Language=Japanese
 指定されたプログラムには新しいバージョンの LiberNT が必要です。
 .
+Language=Finnish
+Määritetty ohjelma vaatii LiberNT:n uudemman version.
+.
 
 MessageId=1151
 Severity=Success
@@ -10344,6 +11887,9 @@ The specified program is not a Windows or MS-DOS program.
 .
 Language=Japanese
 指定されたプログラムは LiberNT または MS-DOS プログラムではありません。
+.
+Language=Finnish
+Määritetty ohjelma ei ole Windows- tai MS-DOS-ohjelma.
 .
 
 MessageId=1152
@@ -10365,6 +11911,9 @@ Cannot start more than one instance of the specified program.
 Language=Japanese
 指定されたプログラムの複数のインスタンスを起動できません。
 .
+Language=Finnish
+Määritetystä ohjelmasta ei voi käynnistää useampaa kuin yhtä esiintymää.
+.
 
 MessageId=1153
 Severity=Success
@@ -10384,6 +11933,9 @@ The specified program was written for an earlier version of LiberNT.
 .
 Language=Japanese
 指定されたプログラムは以前のバージョンの LiberNT 用に作成されました。
+.
+Language=Finnish
+Määritetty ohjelma on kirjoitettu LiberNT:n aiemmalle versiolle.
 .
 
 MessageId=1154
@@ -10405,6 +11957,9 @@ One of the library files needed to run this application is damaged.
 Language=Japanese
 このアプリケーションを実行するために必要なライブラリ ファイルの 1 つが壊れています。
 .
+Language=Finnish
+Yksi tämän sovelluksen suorittamiseen tarvittavista kirjastotiedostoista on vioittunut.
+.
 
 MessageId=1155
 Severity=Success
@@ -10424,6 +11979,9 @@ No application is associated with the specified file for this operation.
 .
 Language=Japanese
 この操作で指定されたファイルに関連付けられたアプリケーションはありません。
+.
+Language=Finnish
+Määritettyyn tiedostoon ei ole liitetty sovellusta tätä toimintoa varten.
 .
 
 MessageId=1156
@@ -10445,6 +12003,9 @@ An error occurred in sending the command to the application.
 Language=Japanese
 アプリケーションへのコマンド送信でエラーが発生しました。
 .
+Language=Finnish
+Komennon lähettämisessä sovellukselle tapahtui virhe.
+.
 
 MessageId=1157
 Severity=Success
@@ -10464,6 +12025,9 @@ One of the library files needed to run this application cannot be found.
 .
 Language=Japanese
 このアプリケーションの実行に必要なライブラリ ファイルが見つかりません。
+.
+Language=Finnish
+Yhtä tämän sovelluksen suorittamiseen tarvittavista kirjastotiedostoista ei löydy.
 .
 
 MessageId=1158
@@ -10485,6 +12049,9 @@ The current process has used all of its system allowance of handles for Window M
 Language=Japanese
 現在のプロセスがウィンドウ マネージャ オブジェクトのハンドルのシステム許容量をすべて使用しました。
 .
+Language=Finnish
+Nykyinen prosessi on käyttänyt kaikki järjestelmän sille sallimat ikkunanhallinnan objektien kahvat.
+.
 
 MessageId=1159
 Severity=Success
@@ -10504,6 +12071,9 @@ The message can be used only with synchronous operations.
 .
 Language=Japanese
 メッセージは同期操作でのみ使用できます。
+.
+Language=Finnish
+Viestiä voi käyttää vain synkronisten toimintojen kanssa.
 .
 
 MessageId=1160
@@ -10525,6 +12095,9 @@ The indicated source element has no media.
 Language=Japanese
 指定されたソース要素にメディアがありません。
 .
+Language=Finnish
+Ilmoitetussa lähde-elementissä ei ole tietovälinettä.
+.
 
 MessageId=1161
 Severity=Success
@@ -10544,6 +12117,9 @@ The indicated destination element already contains media.
 .
 Language=Japanese
 指定された宛先エレメントは既にメディアを含んでいます。
+.
+Language=Finnish
+Ilmoitetussa kohde-elementissä on jo tietoväline.
 .
 
 MessageId=1162
@@ -10565,6 +12141,9 @@ The indicated element does not exist.
 Language=Japanese
 指定された要素は存在しません。
 .
+Language=Finnish
+Ilmoitettua elementtiä ei ole olemassa.
+.
 
 MessageId=1163
 Severity=Success
@@ -10584,6 +12163,9 @@ The indicated element is part of a magazine that is not present.
 .
 Language=Japanese
 指定された要素は存在しないマガジンの一部です。
+.
+Language=Finnish
+Ilmoitettu elementti kuuluu lippaaseen, jota ei ole.
 .
 
 MessageId=1164
@@ -10605,6 +12187,9 @@ The indicated device requires reinitialization due to hardware errors.
 Language=Japanese
 指定されたデバイスは、ハードウェア エラーにより再初期化が必要です。
 .
+Language=Finnish
+Ilmoitettu laite on alustettava uudelleen laitteistovirheiden vuoksi.
+.
 
 MessageId=1165
 Severity=Success
@@ -10624,6 +12209,9 @@ The device has indicated that cleaning is required before further operations are
 .
 Language=Japanese
 デバイスは、さらなる操作を試みる前にクリーニングが必要であることを示しました。
+.
+Language=Finnish
+Laite on ilmoittanut, että se on puhdistettava ennen uusia toimintoja.
 .
 
 MessageId=1166
@@ -10645,6 +12233,9 @@ The device has indicated that its door is open.
 Language=Japanese
 デバイスのドアが開いていることが確認されました。
 .
+Language=Finnish
+Laite on ilmoittanut, että sen luukku on auki.
+.
 
 MessageId=1167
 Severity=Success
@@ -10664,6 +12255,9 @@ The device is not connected.
 .
 Language=Japanese
 デバイスが接続されていません。
+.
+Language=Finnish
+Laitetta ei ole liitetty.
 .
 
 MessageId=1168
@@ -10685,6 +12279,9 @@ Element not found.
 Language=Japanese
 エレメントが見つかりません。
 .
+Language=Finnish
+Elementtiä ei löytynyt.
+.
 
 MessageId=1169
 Severity=Success
@@ -10704,6 +12301,9 @@ There was no match for the specified key in the index.
 .
 Language=Japanese
 インデックスに指定されたキーに一致するものがありませんでした。
+.
+Language=Finnish
+Indeksissä ei ollut annettua avainta vastaavaa merkintää.
 .
 
 MessageId=1170
@@ -10725,6 +12325,9 @@ The property set specified does not exist on the object.
 Language=Japanese
 指定されたプロパティ セットがオブジェクトに存在しません。
 .
+Language=Finnish
+Annettua ominaisuusjoukkoa ei ole objektissa.
+.
 
 MessageId=1171
 Severity=Success
@@ -10744,6 +12347,9 @@ The point passed to GetMouseMovePointsEx is not in the buffer.
 .
 Language=Japanese
 GetMouseMovePointsに渡されたポイントがバッファにありません。
+.
+Language=Finnish
+GetMouseMovePointsEx-funktiolle välitetty piste ei ole puskurissa.
 .
 
 MessageId=1172
@@ -10765,6 +12371,9 @@ The tracking (workstation) service is not running.
 Language=Japanese
 トラッキング (ワークステーション) サービスが実行されていません。
 .
+Language=Finnish
+Seurantapalvelu (työasema) ei ole käynnissä.
+.
 
 MessageId=1173
 Severity=Success
@@ -10784,6 +12393,9 @@ The Volume ID could not be found.
 .
 Language=Japanese
 ボリュームIDが見つかりません。
+.
+Language=Finnish
+Taltion tunnusta ei löytynyt.
 .
 
 MessageId=1175
@@ -10805,6 +12417,9 @@ Unable to remove the file to be replaced.
 Language=Japanese
 置換するファイルを削除できません。
 .
+Language=Finnish
+Korvattavaa tiedostoa ei voi poistaa.
+.
 
 MessageId=1176
 Severity=Success
@@ -10824,6 +12439,9 @@ Unable to move the replacement file to the file to be replaced. The file to be r
 .
 Language=Japanese
 置換ファイルを置換対象ファイルに移動できません。置換するファイルは元の名前を保持しています。
+.
+Language=Finnish
+Korvaavaa tiedostoa ei voi siirtää korvattavan tiedoston tilalle. Korvattava tiedosto on säilyttänyt alkuperäisen nimensä.
 .
 
 MessageId=1177
@@ -10845,6 +12463,9 @@ Unable to move the replacement file to the file to be replaced. The file to be r
 Language=Japanese
 置換するファイルを置換するファイルに移動できません。置換対象のファイルはバックアップ名を使用して名前が変更されています。
 .
+Language=Finnish
+Korvaavaa tiedostoa ei voi siirtää korvattavan tiedoston tilalle. Korvattava tiedosto on nimetty uudelleen varmuuskopion nimellä.
+.
 
 MessageId=1178
 Severity=Success
@@ -10864,6 +12485,9 @@ The volume change journal is being deleted.
 .
 Language=Japanese
 ボリューム変更ジャーナルが削除されました。
+.
+Language=Finnish
+Taltion muutoslokia ollaan poistamassa.
 .
 
 MessageId=1179
@@ -10885,6 +12509,9 @@ The volume change journal is not active.
 Language=Japanese
 ボリューム変更ジャーナルがアクティブではありません。
 .
+Language=Finnish
+Taltion muutosloki ei ole aktiivinen.
+.
 
 MessageId=1180
 Severity=Success
@@ -10904,6 +12531,9 @@ A file was found, but it may not be the correct file.
 .
 Language=Japanese
 ファイルが見つかりましたが、正しいファイルではないかもしれません。
+.
+Language=Finnish
+Tiedosto löytyi, mutta se ei ehkä ole oikea tiedosto.
 .
 
 MessageId=1181
@@ -10925,6 +12555,9 @@ The journal entry has been deleted from the journal.
 Language=Japanese
 ジャーナル エントリがジャーナルから削除されました。
 .
+Language=Finnish
+Lokimerkintä on poistettu lokista.
+.
 
 MessageId=1200
 Severity=Success
@@ -10944,6 +12577,9 @@ The specified device name is invalid.
 .
 Language=Japanese
 指定されたデバイス名が無効です。
+.
+Language=Finnish
+Määritetty laitenimi on virheellinen.
 .
 
 MessageId=1201
@@ -10965,6 +12601,9 @@ The device is not currently connected but it is a remembered connection.
 Language=Japanese
 デバイスは現在接続されていませんが、記憶された接続です。
 .
+Language=Finnish
+Laitetta ei ole tällä hetkellä liitetty, mutta se on muistettu yhteys.
+.
 
 MessageId=1202
 Severity=Success
@@ -10984,6 +12623,9 @@ The local device name has a remembered connection to another network resource.
 .
 Language=Japanese
 ローカルデバイス名は別のネットワークリソースへの接続を記憶しています。
+.
+Language=Finnish
+Paikallisella laitenimellä on muistettu yhteys toiseen verkkoresurssiin.
 .
 
 MessageId=1203
@@ -11005,6 +12647,9 @@ The network path was either typed incorrectly, does not exist, or the network pr
 Language=Japanese
 ネットワーク パスの入力が間違っているか、存在しないか、ネットワーク プロバイダが現在利用できません。パスを再入力するか、ネットワーク管理者にお問い合わせください。
 .
+Language=Finnish
+Verkkopolku on kirjoitettu väärin, sitä ei ole olemassa tai verkkopalvelun tarjoaja ei ole tällä hetkellä käytettävissä. Kirjoita polku uudelleen tai ota yhteyttä verkon järjestelmänvalvojaan.
+.
 
 MessageId=1204
 Severity=Success
@@ -11024,6 +12669,9 @@ The specified network provider name is invalid.
 .
 Language=Japanese
 指定されたネットワーク プロバイダ名が無効です。
+.
+Language=Finnish
+Määritetty verkkopalvelun tarjoajan nimi on virheellinen.
 .
 
 MessageId=1205
@@ -11045,6 +12693,9 @@ Unable to open the network connection profile.
 Language=Japanese
 ネットワーク接続プロファイルを開くことができません。
 .
+Language=Finnish
+Verkkoyhteyden profiilia ei voi avata.
+.
 
 MessageId=1206
 Severity=Success
@@ -11064,6 +12715,9 @@ The network connection profile is corrupted.
 .
 Language=Japanese
 ネットワーク接続プロファイルが壊れています。
+.
+Language=Finnish
+Verkkoyhteyden profiili on vioittunut.
 .
 
 MessageId=1207
@@ -11085,6 +12739,9 @@ Cannot enumerate a noncontainer.
 Language=Japanese
 コンテナ以外を列挙できません。
 .
+Language=Finnish
+Muuta kuin säilöä ei voi luetella.
+.
 
 MessageId=1208
 Severity=Success
@@ -11104,6 +12761,9 @@ An extended error has occurred.
 .
 Language=Japanese
 拡張エラーが発生しました。
+.
+Language=Finnish
+On tapahtunut laajennettu virhe.
 .
 
 MessageId=1209
@@ -11125,6 +12785,9 @@ The format of the specified group name is invalid.
 Language=Japanese
 指定されたグループ名の形式が無効です。
 .
+Language=Finnish
+Määritetyn ryhmän nimen muoto on virheellinen.
+.
 
 MessageId=1210
 Severity=Success
@@ -11144,6 +12807,9 @@ The format of the specified computer name is invalid.
 .
 Language=Japanese
 指定されたコンピュータ名の書式が無効です。
+.
+Language=Finnish
+Määritetyn tietokoneen nimen muoto on virheellinen.
 .
 
 MessageId=1211
@@ -11165,6 +12831,9 @@ The format of the specified event name is invalid.
 Language=Japanese
 指定されたイベント名の書式が無効です。
 .
+Language=Finnish
+Määritetyn tapahtuman nimen muoto on virheellinen.
+.
 
 MessageId=1212
 Severity=Success
@@ -11184,6 +12853,9 @@ The format of the specified domain name is invalid.
 .
 Language=Japanese
 指定されたドメイン名の書式が無効です。
+.
+Language=Finnish
+Määritetyn toimialueen nimen muoto on virheellinen.
 .
 
 MessageId=1213
@@ -11205,6 +12877,9 @@ The format of the specified service name is invalid.
 Language=Japanese
 指定されたサービス名の書式が無効です。
 .
+Language=Finnish
+Määritetyn palvelun nimen muoto on virheellinen.
+.
 
 MessageId=1214
 Severity=Success
@@ -11224,6 +12899,9 @@ The format of the specified network name is invalid.
 .
 Language=Japanese
 指定されたネットワーク名の書式が無効です。
+.
+Language=Finnish
+Määritetyn verkkonimen muoto on virheellinen.
 .
 
 MessageId=1215
@@ -11245,6 +12923,9 @@ The format of the specified share name is invalid.
 Language=Japanese
 指定された共有名の書式が無効です。
 .
+Language=Finnish
+Määritetyn jaetun nimen muoto on virheellinen.
+.
 
 MessageId=1216
 Severity=Success
@@ -11264,6 +12945,9 @@ The format of the specified password is invalid.
 .
 Language=Japanese
 指定されたパスワードの書式が無効です。
+.
+Language=Finnish
+Määritetyn salasanan muoto on virheellinen.
 .
 
 MessageId=1217
@@ -11285,6 +12969,9 @@ The format of the specified message name is invalid.
 Language=Japanese
 指定されたメッセージ名の書式が無効です。
 .
+Language=Finnish
+Määritetyn viestin nimen muoto on virheellinen.
+.
 
 MessageId=1218
 Severity=Success
@@ -11304,6 +12991,9 @@ The format of the specified message destination is invalid.
 .
 Language=Japanese
 指定されたメッセージ宛先の書式が無効です。
+.
+Language=Finnish
+Määritetyn viestin kohteen muoto on virheellinen.
 .
 
 MessageId=1219
@@ -11325,6 +13015,9 @@ Multiple connections to a server or shared resource by the same user, using more
 Language=Japanese
 同一ユーザーによる、複数のユーザー名を使用したサーバーまたは共有リソースへの複数接続は許可されていません。サーバーまたは共有リソースへの以前の接続をすべて切断して再試行してください。
 .
+Language=Finnish
+Saman käyttäjän useat yhteydet palvelimeen tai jaettuun resurssiin useammalla kuin yhdellä käyttäjänimellä eivät ole sallittuja. Katkaise kaikki aiemmat yhteydet palvelimeen tai jaettuun resurssiin ja yritä uudelleen.
+.
 
 MessageId=1220
 Severity=Success
@@ -11344,6 +13037,9 @@ An attempt was made to establish a session to a network server, but there are al
 .
 Language=Japanese
 ネットワーク サーバーへのセッションを確立しようとしましたが、そのサーバーへのセッションがすでに多すぎます。
+.
+Language=Finnish
+Verkkopalvelimeen yritettiin muodostaa istunto, mutta palvelimeen on jo muodostettu liian monta istuntoa.
 .
 
 MessageId=1221
@@ -11365,6 +13061,9 @@ The workgroup or domain name is already in use by another computer on the networ
 Language=Japanese
 ワークグループ名またはドメイン名は、ネットワーク上の別のコンピュータによってすでに使用されています。
 .
+Language=Finnish
+Toinen verkon tietokone käyttää jo työryhmän tai toimialueen nimeä.
+.
 
 MessageId=1222
 Severity=Success
@@ -11384,6 +13083,9 @@ The network is not present or not started.
 .
 Language=Japanese
 ネットワークが存在しないか、開始されていません。
+.
+Language=Finnish
+Verkkoa ei ole tai sitä ei ole käynnistetty.
 .
 
 MessageId=1223
@@ -11405,6 +13107,9 @@ The operation was canceled by the user.
 Language=Japanese
 ユーザーによって操作がキャンセルされました。
 .
+Language=Finnish
+Käyttäjä peruutti toiminnon.
+.
 
 MessageId=1224
 Severity=Success
@@ -11424,6 +13129,9 @@ The requested operation cannot be performed on a file with a user-mapped section
 .
 Language=Japanese
 要求された操作は、ユーザ マップされたセクションが開いているファイルでは実行できません。
+.
+Language=Finnish
+Pyydettyä toimintoa ei voi suorittaa tiedostolle, jolla on avoinna käyttäjän liittämä osa.
 .
 
 MessageId=1225
@@ -11445,6 +13153,9 @@ The remote system refused the network connection.
 Language=Japanese
 リモート コンピューターがネットワーク接続を拒否しました。
 .
+Language=Finnish
+Etäjärjestelmä hylkäsi verkkoyhteyden.
+.
 
 MessageId=1226
 Severity=Success
@@ -11464,6 +13175,9 @@ The network connection was gracefully closed.
 .
 Language=Japanese
 ネットワーク接続が強制終了されました。
+.
+Language=Finnish
+Verkkoyhteys suljettiin hallitusti.
 .
 
 MessageId=1227
@@ -11485,6 +13199,9 @@ The network transport endpoint already has an address associated with it.
 Language=Japanese
 ネットワーク トランスポート エンドポイントには、すでにアドレスが関連付けられています。
 .
+Language=Finnish
+Verkkosiirron päätepisteeseen on jo liitetty osoite.
+.
 
 MessageId=1228
 Severity=Success
@@ -11504,6 +13221,9 @@ An address has not yet been associated with the network endpoint.
 .
 Language=Japanese
 ネットワークエンドポイントにアドレスがまだ関連付けられていません。
+.
+Language=Finnish
+Verkon päätepisteeseen ei ole vielä liitetty osoitetta.
 .
 
 MessageId=1229
@@ -11525,6 +13245,9 @@ An operation was attempted on a nonexistent network connection.
 Language=Japanese
 存在しないネットワーク接続に対して操作を試みました。
 .
+Language=Finnish
+Toimintoa yritettiin verkkoyhteydelle, jota ei ole olemassa.
+.
 
 MessageId=1230
 Severity=Success
@@ -11544,6 +13267,9 @@ An invalid operation was attempted on an active network connection.
 .
 Language=Japanese
 有効なネットワーク接続に対して無効な操作を試行しました。
+.
+Language=Finnish
+Aktiiviselle verkkoyhteydelle yritettiin virheellistä toimintoa.
 .
 
 MessageId=1231
@@ -11565,6 +13291,9 @@ The network location cannot be reached. For information about network troublesho
 Language=Japanese
 ネットワークの場所にアクセスできません。ネットワークのトラブルシューティングについては、LiberNTヘルプを参照してください。
 .
+Language=Finnish
+Verkkosijaintia ei tavoiteta. Tietoja verkon vianmäärityksestä on ReactOS-ohjeessa.
+.
 
 MessageId=1232
 Severity=Success
@@ -11584,6 +13313,9 @@ The network location cannot be reached. For information about network troublesho
 .
 Language=Japanese
 ネットワークの場所にアクセスできません。ネットワークのトラブルシューティングについては、LiberNTヘルプを参照してください。
+.
+Language=Finnish
+Verkkosijaintia ei tavoiteta. Tietoja verkon vianmäärityksestä on ReactOS-ohjeessa.
 .
 
 MessageId=1233
@@ -11605,6 +13337,9 @@ The network location cannot be reached. For information about network troublesho
 Language=Japanese
 ネットワークの場所にアクセスできません。ネットワークのトラブルシューティングについては、LiberNTヘルプを参照してください。
 .
+Language=Finnish
+Verkkosijaintia ei tavoiteta. Tietoja verkon vianmäärityksestä on ReactOS-ohjeessa.
+.
 
 MessageId=1234
 Severity=Success
@@ -11624,6 +13359,9 @@ No service is operating at the destination network endpoint on the remote system
 .
 Language=Japanese
 リモート システムの宛先ネットワーク エンドポイントで動作しているサービスはありません。
+.
+Language=Finnish
+Etäjärjestelmän kohdeverkon päätepisteessä ei toimi palvelua.
 .
 
 MessageId=1235
@@ -11645,6 +13383,9 @@ The request was aborted.
 Language=Japanese
 要求は中止されました。
 .
+Language=Finnish
+Pyyntö keskeytettiin.
+.
 
 MessageId=1236
 Severity=Success
@@ -11664,6 +13405,9 @@ The network connection was aborted by the local system.
 .
 Language=Japanese
 ネットワーク接続がローカルシステムによって中止されました。
+.
+Language=Finnish
+Paikallinen järjestelmä keskeytti verkkoyhteyden.
 .
 
 MessageId=1237
@@ -11685,6 +13429,9 @@ The operation could not be completed. A retry should be performed.
 Language=Japanese
 操作を完了できませんでした。再試行が必要です。
 .
+Language=Finnish
+Toimintoa ei voitu suorittaa. Se on yritettävä uudelleen.
+.
 
 MessageId=1238
 Severity=Success
@@ -11704,6 +13451,9 @@ A connection to the server could not be made because the limit on the number of 
 .
 Language=Japanese
 このアカウントの同時接続数の制限に達したため、サーバーに接続できませんでした。
+.
+Language=Finnish
+Yhteyttä palvelimeen ei voitu muodostaa, koska tämän tilin samanaikaisten yhteyksien enimmäismäärä on saavutettu.
 .
 
 MessageId=1239
@@ -11725,6 +13475,9 @@ Attempting to log in during an unauthorized time of day for this account.
 Language=Japanese
 このアカウントで許可されていない時間帯にログインを試みています。
 .
+Language=Finnish
+Kirjautumista yritetään vuorokaudenaikana, jolloin se ei ole tälle tilille sallittua.
+.
 
 MessageId=1240
 Severity=Success
@@ -11744,6 +13497,9 @@ The account is not authorized to log in from this station.
 .
 Language=Japanese
 このアカウントは、このステーションからログインする権限がありません。
+.
+Language=Finnish
+Tilillä ei ole oikeutta kirjautua tältä asemalta.
 .
 
 MessageId=1241
@@ -11765,6 +13521,9 @@ The network address could not be used for the operation requested.
 Language=Japanese
 ネットワークアドレスは要求された操作に使用できませんでした。
 .
+Language=Finnish
+Verkko-osoitetta ei voitu käyttää pyydettyyn toimintoon.
+.
 
 MessageId=1242
 Severity=Success
@@ -11784,6 +13543,9 @@ The service is already registered.
 .
 Language=Japanese
 サービスはすでに登録されています。
+.
+Language=Finnish
+Palvelu on jo rekisteröity.
 .
 
 MessageId=1243
@@ -11805,6 +13567,9 @@ The specified service does not exist.
 Language=Japanese
 指定されたサービスは存在しません。
 .
+Language=Finnish
+Määritettyä palvelua ei ole olemassa.
+.
 
 MessageId=1244
 Severity=Success
@@ -11824,6 +13589,9 @@ The operation being requested was not performed because the user has not been au
 .
 Language=Japanese
 ユーザーが認証されていないため、要求された操作は実行されませんでした。
+.
+Language=Finnish
+Pyydettyä toimintoa ei suoritettu, koska käyttäjää ei ole todennettu.
 .
 
 MessageId=1245
@@ -11845,6 +13613,9 @@ The operation being requested was not performed because the user has not logged 
 Language=Japanese
 ユーザーがネットワークにログオンしていないため、要求された操作は実行されませんでした。指定されたサービスは存在しません。
 .
+Language=Finnish
+Pyydettyä toimintoa ei suoritettu, koska käyttäjä ei ole kirjautunut verkkoon. Määritettyä palvelua ei ole olemassa.
+.
 
 MessageId=1246
 Severity=Success
@@ -11864,6 +13635,9 @@ Continue with work in progress.
 .
 Language=Japanese
 進行中の作業を続行してください。
+.
+Language=Finnish
+Jatka käynnissä olevaa työtä.
 .
 
 MessageId=1247
@@ -11885,6 +13659,9 @@ An attempt was made to perform an initialization operation when initialization h
 Language=Japanese
 初期化がすでに完了しているときに初期化操作を実行しようとしました。
 .
+Language=Finnish
+Alustustoimintoa yritettiin, vaikka alustus on jo suoritettu.
+.
 
 MessageId=1248
 Severity=Success
@@ -11904,6 +13681,9 @@ No more local devices.
 .
 Language=Japanese
 ローカル デバイスがありません。
+.
+Language=Finnish
+Paikallisia laitteita ei ole enempää.
 .
 
 MessageId=1249
@@ -11925,6 +13705,9 @@ The specified site does not exist.
 Language=Japanese
 指定されたサイトは存在しません。
 .
+Language=Finnish
+Määritettyä sivustoa ei ole olemassa.
+.
 
 MessageId=1250
 Severity=Success
@@ -11944,6 +13727,9 @@ A domain controller with the specified name already exists.
 .
 Language=Japanese
 指定された名前のドメイン コントローラーはすでに存在します。
+.
+Language=Finnish
+Määritetyn niminen toimialueen ohjauskone on jo olemassa.
 .
 
 MessageId=1251
@@ -11965,6 +13751,9 @@ This operation is supported only when you are connected to the server.
 Language=Japanese
 この操作はサーバーに接続しているときのみサポートされます。
 .
+Language=Finnish
+Tätä toimintoa tuetaan vain, kun olet yhteydessä palvelimeen.
+.
 
 MessageId=1252
 Severity=Success
@@ -11984,6 +13773,9 @@ The group policy framework should call the extension even if there are no change
 .
 Language=Japanese
 グループ ポリシー フレームワークは、変更がなくても拡張機能を呼び出す必要があります。
+.
+Language=Finnish
+Ryhmäkäytäntökehyksen pitää kutsua laajennusta, vaikka muutoksia ei olisi.
 .
 
 MessageId=1253
@@ -12005,6 +13797,9 @@ The specified user does not have a valid profile.
 Language=Japanese
 指定されたユーザーに有効なプロファイルがありません。
 .
+Language=Finnish
+Määritetyllä käyttäjällä ei ole kelvollista profiilia.
+.
 
 MessageId=1254
 Severity=Success
@@ -12024,6 +13819,9 @@ This operation is not supported on a computer running Windows Server 2003 for Sm
 .
 Language=Japanese
 この操作は、LiberNT Server を実行しているコンピュータではサポートされていません。
+.
+Language=Finnish
+Tätä toimintoa ei tueta tietokoneessa, jossa on Windows Server 2003 for Small Business Server.
 .
 
 MessageId=1255
@@ -12045,6 +13843,9 @@ The server machine is shutting down.
 Language=Japanese
 サーバー マシンがシャットダウンしています。
 .
+Language=Finnish
+Palvelinkone on sammumassa.
+.
 
 MessageId=1256
 Severity=Success
@@ -12064,6 +13865,9 @@ The remote system is not available. For information about network troubleshootin
 .
 Language=Japanese
 リモート システムが使用できません。ネットワークのトラブルシューティングについては、LiberNTヘルプを参照してください。
+.
+Language=Finnish
+Etäjärjestelmä ei ole käytettävissä. Tietoja verkon vianmäärityksestä on ReactOS-ohjeessa.
 .
 
 MessageId=1257
@@ -12085,6 +13889,9 @@ The security identifier provided is not from an account domain.
 Language=Japanese
 指定されたセキュリティ識別子はアカウント ドメインのものではありません。
 .
+Language=Finnish
+Annettu suojaustunnus ei ole tilitoimialueelta.
+.
 
 MessageId=1258
 Severity=Success
@@ -12104,6 +13911,9 @@ The security identifier provided does not have a domain component.
 .
 Language=Japanese
 指定されたセキュリティ識別子にドメイン コンポーネントがありません。
+.
+Language=Finnish
+Annetussa suojaustunnuksessa ei ole toimialueen osaa.
 .
 
 MessageId=1259
@@ -12125,6 +13935,9 @@ AppHelp dialog canceled thus preventing the application from starting.
 Language=Japanese
 AppHelpダイアログがキャンセルされ、アプリケーションが起動できません。
 .
+Language=Finnish
+AppHelp-valintaikkuna peruutettiin, mikä esti sovelluksen käynnistymisen.
+.
 
 MessageId=1260
 Severity=Success
@@ -12144,6 +13957,9 @@ LiberNT cannot open this program because it has been prevented by a software res
 .
 Language=Japanese
 このプログラムはグループ ポリシーでブロックされています。詳細については、システム管理者にお問い合わせください。
+.
+Language=Finnish
+LiberNT ei voi avata tätä ohjelmaa, koska ohjelmistorajoituskäytäntö on estänyt sen. Lisätietoja saat Tapahtumienvalvonnasta tai järjestelmänvalvojalta.
 .
 
 MessageId=1261
@@ -12165,6 +13981,9 @@ A program attempt to use an invalid register value. Normally caused by an uninit
 Language=Japanese
 プログラムが無効なレジスタ値を使用しようとしました。通常、初期化されていないレジスタが原因です。このエラーはItanium固有のものです。
 .
+Language=Finnish
+Ohjelma yritti käyttää virheellistä rekisterin arvoa. Syy on yleensä alustamaton rekisteri. Tämä virhe koskee vain Itaniumia.
+.
 
 MessageId=1262
 Severity=Success
@@ -12184,6 +14003,9 @@ The share is currently offline or does not exist.
 .
 Language=Japanese
 共有が現在オフラインであるか、存在しません。
+.
+Language=Finnish
+Jako ei ole tällä hetkellä käytettävissä tai sitä ei ole olemassa.
 .
 
 MessageId=1263
@@ -12205,6 +14027,9 @@ The kerberos protocol encountered an error while validating the KDC certificate 
 Language=Japanese
 スマートカードログオン中にKDC証明書を検証しているときに、Kerberosプロトコルでエラーが発生しました。システム イベント ログに詳細な情報があります。
 .
+Language=Finnish
+Kerberos-protokolla kohtasi virheen vahvistaessaan KDC-varmennetta älykorttikirjautumisen aikana.
+.
 
 MessageId=1264
 Severity=Success
@@ -12224,6 +14049,9 @@ The kerberos protocol encountered an error while attempting to utilize the smart
 .
 Language=Japanese
 スマートカードサブシステムを使用しようとしたときにKerberosプロトコルでエラーが発生しました。
+.
+Language=Finnish
+Kerberos-protokolla kohtasi virheen yrittäessään käyttää älykorttialijärjestelmää.
 .
 
 MessageId=1265
@@ -12245,6 +14073,9 @@ The system detected a possible attempt to compromise security. Please ensure tha
 Language=Japanese
 システムは認証要求を処理するドメイン コントローラーに接続できません。後で再試行してください。
 .
+Language=Finnish
+Järjestelmä havaitsi mahdollisen yrityksen vaarantaa suojauksen. Varmista, että saat yhteyden sinut todentaneeseen palvelimeen.
+.
 
 MessageId=1266
 Severity=Success
@@ -12264,6 +14095,9 @@ The smartcard certificate used for authentication has been revoked. Please conta
 .
 Language=Japanese
 認証に使用したスマートカード証明書が失効しました。システム管理者に連絡してください。イベントログに追加情報があるかもしれません。
+.
+Language=Finnish
+Todennukseen käytetty älykorttivarmenne on kumottu. Ota yhteyttä järjestelmänvalvojaan. Lisätietoja voi olla tapahtumalokissa.
 .
 
 MessageId=1267
@@ -12285,6 +14119,9 @@ An untrusted certificate authority was detected while processing the smartcard c
 Language=Japanese
 認証に使用されたスマートカード証明書の処理中に、信頼されていない認証局が検出されました。システム管理者に連絡してください。
 .
+Language=Finnish
+Todennukseen käytettyä älykorttivarmennetta käsiteltäessä havaittiin varmenteiden myöntäjä, johon ei luoteta. Ota yhteyttä järjestelmänvalvojaan.
+.
 
 MessageId=1268
 Severity=Success
@@ -12304,6 +14141,9 @@ The revocation status of the smartcard certificate used for authentication could
 .
 Language=Japanese
 認証に使用されているスマートカード証明書の失効ステータスを確認できませんでした。システム管理者にお問い合わせください。
+.
+Language=Finnish
+Todennukseen käytetyn älykorttivarmenteen kumoamistilaa ei voitu selvittää. Ota yhteyttä järjestelmänvalvojaan.
 .
 
 MessageId=1269
@@ -12325,6 +14165,9 @@ The smartcard certificate used for authentication was not trusted. Please contac
 Language=Japanese
 認証に使用されたスマートカード証明書が信頼されていません。システム管理者に連絡してください。
 .
+Language=Finnish
+Todennukseen käytettyyn älykorttivarmenteeseen ei luotettu. Ota yhteyttä järjestelmänvalvojaan.
+.
 
 MessageId=1270
 Severity=Success
@@ -12344,6 +14187,9 @@ The smartcard certificate used for authentication has expired. Please contact yo
 .
 Language=Japanese
 認証に使用したスマートカード証明書の有効期限が切れています。システム管理者に連絡してください。
+.
+Language=Finnish
+Todennukseen käytetty älykorttivarmenne on vanhentunut. Ota yhteyttä järjestelmänvalvojaan.
 .
 
 MessageId=1271
@@ -12365,6 +14211,9 @@ The machine is locked and cannot be shut down without the force option.
 Language=Japanese
 マシンがロックされているため、強制オプションを使用しないとシャットダウンできません。
 .
+Language=Finnish
+Kone on lukittu, eikä sitä voi sammuttaa ilman pakotusvalintaa.
+.
 
 MessageId=1273
 Severity=Success
@@ -12384,6 +14233,9 @@ An application-defined callback gave invalid data when called.
 .
 Language=Japanese
 アプリケーション定義のコールバックが呼び出されたときに無効なデータを与えました。
+.
+Language=Finnish
+Sovelluksen määrittämä takaisinkutsu antoi kutsuttaessa virheellisiä tietoja.
 .
 
 MessageId=1274
@@ -12405,6 +14257,9 @@ The group policy framework should call the extension in the synchronous foregrou
 Language=Japanese
 グループ ポリシー フレームワークは、同期フォアグラウンド ポリシー更新で拡張機能を呼び出す必要があります。
 .
+Language=Finnish
+Ryhmäkäytäntökehyksen pitää kutsua laajennusta synkronisessa edustan käytäntöjen päivityksessä.
+.
 
 MessageId=1275
 Severity=Success
@@ -12424,6 +14279,9 @@ This driver has been blocked from loading.
 .
 Language=Japanese
 このドライバのロードがブロックされました。
+.
+Language=Finnish
+Tämän ajurin lataaminen on estetty.
 .
 
 MessageId=1276
@@ -12445,6 +14303,9 @@ A dynamic link library (DLL) referenced a module that was neither a DLL nor the 
 Language=Japanese
 動的リンク ライブラリ (DLL) が、DLLでもプロセスの実行イメージでもないモジュールを参照しました。
 .
+Language=Finnish
+Dynaamisesti linkitettävä kirjasto (DLL) viittasi moduuliin, joka ei ollut DLL-tiedosto eikä prosessin suoritettava näköistiedosto.
+.
 
 MessageId=1277
 Severity=Success
@@ -12464,6 +14325,9 @@ LiberNT cannot open this program since it has been disabled.
 .
 Language=Japanese
 LiberNTが無効になっているため、このプログラムを開くことができません。
+.
+Language=Finnish
+LiberNT ei voi avata tätä ohjelmaa, koska se on poistettu käytöstä.
 .
 
 MessageId=1278
@@ -12485,6 +14349,9 @@ LiberNT cannot open this program because the license enforcement system has been
 Language=Japanese
 ライセンス実施システムが改ざんされたか破損しているため、LiberNT でこのプログラムを開くことができません。
 .
+Language=Finnish
+LiberNT ei voi avata tätä ohjelmaa, koska lisenssien valvontajärjestelmää on peukaloitu tai se on vioittunut.
+.
 
 MessageId=1279
 Severity=Success
@@ -12504,6 +14371,9 @@ A transaction recovery failed.
 .
 Language=Japanese
 トランザクションのリカバリに失敗しました。
+.
+Language=Finnish
+Tapahtuman palautus epäonnistui.
 .
 
 MessageId=1280
@@ -12525,6 +14395,9 @@ The current thread has already been converted to a fiber.
 Language=Japanese
 現在のスレッドはすでにファイバーに変換されています。
 .
+Language=Finnish
+Nykyinen säie on jo muunnettu kuiduksi.
+.
 
 MessageId=1281
 Severity=Success
@@ -12544,6 +14417,9 @@ The current thread has already been converted from a fiber.
 .
 Language=Japanese
 現在のスレッドはファイバーから変換済みです。
+.
+Language=Finnish
+Nykyinen säie on jo muunnettu kuidusta takaisin.
 .
 
 MessageId=1282
@@ -12565,6 +14441,9 @@ The system detected an overrun of a stack-based buffer in this application. This
 Language=Japanese
 このアプリケーションでスタックベースのバッファのオーバーランが検出されました。このオーバーランにより、悪意のあるユーザーがこのアプリケーションを制御できる可能性があります。
 .
+Language=Finnish
+Järjestelmä havaitsi pinopohjaisen puskurin ylityksen tässä sovelluksessa. Ylitys voi mahdollistaa pahantahtoisen käyttäjän saada tämän sovelluksen hallintaansa.
+.
 
 MessageId=1283
 Severity=Success
@@ -12584,6 +14463,9 @@ Data present in one of the parameters is more than the function can operate on.
 .
 Language=Japanese
 パラメータの1つに存在するデータは、関数が操作できる範囲を超えています。
+.
+Language=Finnish
+Jossakin parametreista on enemmän tietoja kuin funktio pystyy käsittelemään.
 .
 
 MessageId=1284
@@ -12605,6 +14487,9 @@ An attempt to do an operation on a debug object failed because the object is in 
 Language=Japanese
 オブジェクトが削除中であるため、デバッグ オブジェクトに対する操作に失敗しました。
 .
+Language=Finnish
+Virheenkorjausobjektin toiminto epäonnistui, koska objektia ollaan poistamassa.
+.
 
 MessageId=1285
 Severity=Success
@@ -12624,6 +14509,9 @@ An attempt to delay-load a .dll or get a function address in a delay-loaded .dll
 .
 Language=Japanese
 .dllの遅延ロードまたは遅延ロードされた.dll内の関数アドレスの取得に失敗しました。
+.
+Language=Finnish
+DLL-tiedoston viivästetty lataus tai funktion osoitteen haku viivästetysti ladatusta DLL-tiedostosta epäonnistui.
 .
 
 MessageId=1286
@@ -12645,6 +14533,9 @@ Language=Romanian
 Language=Japanese
 %1 は 16 ビット アプリケーションです。16 ビット アプリケーションを実行する権限がありません。システム管理者に権限を確認してください。
 .
+Language=Finnish
+%1 on 16-bittinen sovellus. Sinulla ei ole oikeutta suorittaa 16-bittisiä sovelluksia. Tarkista oikeutesi järjestelmänvalvojalta.
+.
 
 MessageId=1287
 Severity=Success
@@ -12664,6 +14555,9 @@ Insufficient information exists to identify the cause of failure.
 .
 Language=Japanese
 障害の原因を特定するための情報が不足しています。
+.
+Language=Finnish
+Tiedot eivät riitä virheen syyn tunnistamiseen.
 .
 
 MessageId=1288
@@ -12685,6 +14579,9 @@ An invalid budget or period parameter was specified.
 Language=Japanese
 C ランタイム関数に渡されたパラメーターが正しくありません。
 .
+Language=Finnish
+Annettiin virheellinen budjetti- tai jaksoparametri.
+.
 
 MessageId=1289
 Severity=Success
@@ -12704,6 +14601,9 @@ An attempt was made to join a thread to a reserve whose affinity did not interse
 .
 Language=Japanese
 操作がファイルの有効なデータ長を超えて発生しました。
+.
+Language=Finnish
+Säiettä yritettiin liittää varaukseen, jonka affiniteetti ei leikannut varauksen affiniteettia, tai prosessia yritettiin liittää varaukseen, jonka affiniteetti ei leikannut varauksen affiniteettia.
 .
 
 MessageId=1290
@@ -12725,6 +14625,9 @@ An attempt was made to join a thread to a reserve which was already joined to an
 Language=Japanese
 同じプロセス内の1つ以上のサービスのSIDタイプの設定が互換性がないため、サービスの開始に失敗しました。サービスSIDタイプが制限されたサービスは、制限されたSIDタイプを持つ他のサービスと同じプロセスでのみ共存できます。このサービスのサービスSIDタイプが構成されたばかりの場合は、このサービスを開始するためにホスト プロセスを再起動する必要があります。
 .
+Language=Finnish
+Säiettä yritettiin liittää varaukseen, vaikka se oli jo liitetty toiseen varaukseen.
+.
 
 MessageId=1291
 Severity=Success
@@ -12744,6 +14647,9 @@ An attempt was made to disjoin a thread from a reserve, but the thread was not j
 .
 Language=Japanese
 このサービスをホストしているプロセスは、このサービスを開始するために再起動する必要があります。
+.
+Language=Finnish
+Säiettä yritettiin irrottaa varauksesta, mutta säiettä ei ollut liitetty varaukseen.
 .
 
 MessageId=1292
@@ -12765,6 +14671,9 @@ An attempt was made to disjoin a thread from a reserve whose process is associat
 Language=Japanese
 操作が実装で定義された制限を超えようとした。
 .
+Language=Finnish
+Säiettä yritettiin irrottaa varauksesta, jonka prosessi on liitetty varaukseen.
+.
 
 MessageId=1293
 Severity=Success
@@ -12785,6 +14694,9 @@ An attempt was made to associate a process with a reserve that was already assoc
 Language=Japanese
 ターゲット プロセス、またはターゲット スレッドの含むプロセスのどちらかが保護されたプロセスです。
 .
+Language=Finnish
+Prosessia yritettiin liittää varaukseen, vaikka se oli jo liitetty varaukseen.
+.
 
 MessageId=1294
 Severity=Success
@@ -12804,6 +14716,9 @@ An attempt was made to disassociate a process from a reserve, but the process di
 .
 Language=Japanese
 サービス通知クライアントがマシン内のサービスの現在の状態から遅れすぎています。
+.
+Language=Finnish
+Prosessia yritettiin irrottaa varauksesta, mutta prosessiin ei ollut liitetty varausta.
 .
 
 MessageId=1295
@@ -12826,6 +14741,9 @@ Language=Japanese
 ストレージクォータを超えているため、要求されたファイル操作に失敗しました。
 ディスクスペースを確保するには、ファイルを別の場所に移動するか、不要なファイルを削除してください。詳細については、システム管理者にお問い合わせください。
 .
+Language=Finnish
+Prosessia yritettiin liittää varaukseen, mutta prosessissa oli varaukseen liitetty säie.
+.
 
 MessageId=1296
 Severity=Success
@@ -12845,6 +14763,9 @@ An attempt was made to set the affinity of a thread or a process, but the thread
 .
 Language=Japanese
 ストレージ ポリシーでその種類のファイルがブロックされているため、要求されたファイル操作に失敗しました。詳細については、システム管理者にお問い合わせください。
+.
+Language=Finnish
+Säikeen tai prosessin affiniteettia yritettiin asettaa, mutta säie tai prosessi oli liitetty varaukseen.
 .
 
 MessageId=1297
@@ -12866,6 +14787,9 @@ An operation attempted to exceed an implementation-defined limit.
 Language=Japanese
 サービス LiberNT 管理コンソール (MMC) スナップイン (services.msc) およびローカルセキュリティ設定MMCスナップイン (secpol.msc) を使用して、サービス構成とアカウント構成を表示できます。
 .
+Language=Finnish
+Toiminto yritti ylittää toteutuksen määrittämän rajan.
+.
 
 MessageId=1298
 Severity=Success
@@ -12885,6 +14809,9 @@ The requested object is for internal DS operations only.
 .
 Language=Japanese
 この操作に関与しているスレッドが応答していないようです。
+.
+Language=Finnish
+Pyydetty objekti on tarkoitettu vain hakemistopalvelun sisäisiin toimintoihin.
 .
 
 MessageId=1300
@@ -12906,6 +14833,9 @@ Not all privileges referenced are assigned to the caller.
 Language=Japanese
 参照されたすべての特権またはグループが呼び出し元に割り当てられていません。
 .
+Language=Finnish
+Kaikkia viitattuja oikeuksia ei ole määritetty kutsujalle.
+.
 
 MessageId=1301
 Severity=Success
@@ -12925,6 +14855,9 @@ Some mapping between account names and security IDs was not done.
 .
 Language=Japanese
 アカウント名とセキュリティIDのマッピングが行われていません。
+.
+Language=Finnish
+Osaa tilien nimien ja suojaustunnusten vastaavuuksista ei tehty.
 .
 
 MessageId=1302
@@ -12946,6 +14879,9 @@ No system quota limits are specifically set for this account.
 Language=Japanese
 システムのクォータ制限がこのアカウントに設定されていません。
 .
+Language=Finnish
+Tälle tilille ei ole asetettu erityisiä järjestelmän kiintiörajoja.
+.
 
 MessageId=1303
 Severity=Success
@@ -12965,6 +14901,9 @@ No encryption key is available. A well-known encryption key was returned.
 .
 Language=Japanese
 暗号化キーがありません。既知の暗号化キーが返されました。
+.
+Language=Finnish
+Salausavainta ei ole käytettävissä. Palautettiin tunnettu salausavain.
 .
 
 MessageId=1304
@@ -12986,6 +14925,9 @@ The password is too complex to be converted to a LAN Manager password. The LAN M
 Language=Japanese
 パスワードが複雑すぎて LAN マネージャ パスワードに変換できません。返されたLAN マネージャ パスワードはNULL文字列です。
 .
+Language=Finnish
+Salasana on liian monimutkainen muunnettavaksi LAN Manager -salasanaksi. Palautettu LAN Manager -salasana on tyhjä merkkijono.
+.
 
 MessageId=1305
 Severity=Success
@@ -13005,6 +14947,9 @@ The revision level is unknown.
 .
 Language=Japanese
 リビジョン レベルが不明です。
+.
+Language=Finnish
+Versiotaso on tuntematon.
 .
 
 MessageId=1306
@@ -13026,6 +14971,9 @@ Indicates two revision levels are incompatible.
 Language=Japanese
 2つのリビジョン レベルに互換性がないことを示します。
 .
+Language=Finnish
+Ilmaisee, että kaksi versiotasoa ovat yhteensopimattomia.
+.
 
 MessageId=1307
 Severity=Success
@@ -13045,6 +14993,9 @@ This security ID may not be assigned as the owner of this object.
 .
 Language=Japanese
 このセキュリティ ID は、このオブジェクトの所有者として割り当てられていない可能性があります。
+.
+Language=Finnish
+Tätä suojaustunnusta ei voi määrittää tämän objektin omistajaksi.
 .
 
 MessageId=1308
@@ -13066,6 +15017,9 @@ This security ID may not be assigned as the primary group of an object.
 Language=Japanese
 このセキュリティ ID は、オブジェクトのプライマリ グループとして割り当てられていません。
 .
+Language=Finnish
+Tätä suojaustunnusta ei voi määrittää objektin ensisijaiseksi ryhmäksi.
+.
 
 MessageId=1309
 Severity=Success
@@ -13085,6 +15039,9 @@ An attempt has been made to operate on an impersonation token by a thread that i
 .
 Language=Japanese
 現在クライアントになりすましていないスレッドが、なりすましトークンを操作しようとしました。
+.
+Language=Finnish
+Käyttäjänä esiintymisen tunnussanomaa yritti käsitellä säie, joka ei tällä hetkellä esiinny asiakkaana.
 .
 
 MessageId=1310
@@ -13106,6 +15063,9 @@ The group may not be disabled.
 Language=Japanese
 グループが無効になっていない可能性があります。
 .
+Language=Finnish
+Ryhmää ei voi poistaa käytöstä.
+.
 
 MessageId=1311
 Severity=Success
@@ -13125,6 +15085,9 @@ There are currently no logon servers available to service the logon request.
 .
 Language=Japanese
 ドメインが利用可能でないため、このクレデンシャルでサインインできません。デバイスが組織のネットワークに接続されていることを確認して、再試行してください。以前に別の資格情報でこのデバイスにサインインした場合は、その資格情報でサインインできます。
+.
+Language=Finnish
+Kirjautumispalvelimia ei ole tällä hetkellä käytettävissä kirjautumispyynnön käsittelyyn.
 .
 
 MessageId=1312
@@ -13146,6 +15109,9 @@ A specified logon session does not exist. It may already have been terminated.
 Language=Japanese
 指定されたログオンセッションが存在しません。すでに終了されている可能性があります。
 .
+Language=Finnish
+Määritettyä kirjautumisistuntoa ei ole olemassa. Se on ehkä jo lopetettu.
+.
 
 MessageId=1313
 Severity=Success
@@ -13165,6 +15131,9 @@ A specified privilege does not exist.
 .
 Language=Japanese
 指定された権限が存在しません。
+.
+Language=Finnish
+Annettua oikeutta ei ole olemassa.
 .
 
 MessageId=1314
@@ -13186,6 +15155,9 @@ A required privilege is not held by the client.
 Language=Japanese
 必要な権限がクライアントにありません。
 .
+Language=Finnish
+Asiakkaalla ei ole tarvittavaa oikeutta.
+.
 
 MessageId=1315
 Severity=Success
@@ -13205,6 +15177,9 @@ The name provided is not a properly formed account name.
 .
 Language=Japanese
 指定された名前はアカウント名ではありません。
+.
+Language=Finnish
+Annettu nimi ei ole oikein muodostettu tilin nimi.
 .
 
 MessageId=1316
@@ -13226,6 +15201,9 @@ The specified user already exists.
 Language=Japanese
 指定されたアカウントはすでに存在します。
 .
+Language=Finnish
+Annettu käyttäjä on jo olemassa.
+.
 
 MessageId=1317
 Severity=Success
@@ -13245,6 +15223,9 @@ The specified user does not exist.
 .
 Language=Japanese
 指定されたアカウントは存在しません。
+.
+Language=Finnish
+Annettua käyttäjää ei ole olemassa.
 .
 
 MessageId=1318
@@ -13266,6 +15247,9 @@ The specified group already exists.
 Language=Japanese
 指定されたグループは既に存在します。
 .
+Language=Finnish
+Annettu ryhmä on jo olemassa.
+.
 
 MessageId=1319
 Severity=Success
@@ -13285,6 +15269,9 @@ The specified group does not exist.
 .
 Language=Japanese
 指定されたグループは存在しません。
+.
+Language=Finnish
+Annettua ryhmää ei ole olemassa.
 .
 
 MessageId=1320
@@ -13306,6 +15293,9 @@ Either the specified user account is already a member of the specified group, or
 Language=Japanese
 指定されたユーザ アカウントがすでに指定されたグループのメンバであるか、指定されたグループにメンバが含まれているため削除できません。
 .
+Language=Finnish
+Määritetty käyttäjätili on jo määritetyn ryhmän jäsen, tai määritettyä ryhmää ei voi poistaa, koska siinä on jäsen.
+.
 
 MessageId=1321
 Severity=Success
@@ -13325,6 +15315,9 @@ The specified user account is not a member of the specified group account.
 .
 Language=Japanese
 指定されたユーザー アカウントは、指定されたグループ アカウントのメンバーではありません。
+.
+Language=Finnish
+Annettu käyttäjätili ei ole annetun ryhmätilin jäsen.
 .
 
 MessageId=1322
@@ -13346,6 +15339,9 @@ The last remaining administration account cannot be disabled or deleted.
 Language=Japanese
 管理者アカウントが無効になるか、削除されるか、またはログオンできなくなる可能性があるため、この操作は許可されません。
 .
+Language=Finnish
+Viimeistä jäljellä olevaa järjestelmänvalvojan tiliä ei voi poistaa käytöstä tai poistaa.
+.
 
 MessageId=1323
 Severity=Success
@@ -13365,6 +15361,9 @@ Unable to update the password. The value provided as the current password is inc
 .
 Language=Japanese
 パスワードを更新できません。現在のパスワードとして提供された値が正しくありません。
+.
+Language=Finnish
+Salasanaa ei voi päivittää. Nykyiseksi salasanaksi annettu arvo on väärä.
 .
 
 MessageId=1324
@@ -13386,6 +15385,9 @@ Unable to update the password. The value provided for the new password contains 
 Language=Japanese
 パスワードを更新できません。新しいパスワードに指定された値には、パスワードで使用できない値が含まれています。
 .
+Language=Finnish
+Salasanaa ei voi päivittää. Uudeksi salasanaksi annetussa arvossa on merkkejä, jotka eivät ole sallittuja salasanoissa.
+.
 
 MessageId=1325
 Severity=Success
@@ -13405,6 +15407,9 @@ Unable to update the password. The value provided for the new password does not 
 .
 Language=Japanese
 パスワードを更新できません。新しいパスワードに指定された値は、ドメインの長さ、複雑さ、または履歴の要件を満たしていません。
+.
+Language=Finnish
+Salasanaa ei voi päivittää. Uudeksi salasanaksi annettu arvo ei täytä toimialueen pituus-, monimutkaisuus- tai historiavaatimuksia.
 .
 
 MessageId=1326
@@ -13426,6 +15431,9 @@ Logon failure: unknown user name or bad password.
 Language=Japanese
 ログオン失敗: ユーザー名またはパスワードが正しくありません。
 .
+Language=Finnish
+Kirjautuminen epäonnistui: tuntematon käyttäjänimi tai väärä salasana.
+.
 
 MessageId=1327
 Severity=Success
@@ -13445,6 +15453,9 @@ Logon failure: user account restriction. Possible reasons are blank passwords no
 .
 Language=Japanese
 ログオン失敗: アカウント制限により、このユーザーがサインインできません。空白のパスワードが許可されていない、サインイン時間が制限されている、またはポリシーによる制限が適用されているのかもしれません。
+.
+Language=Finnish
+Kirjautuminen epäonnistui: käyttäjätilin rajoitus. Mahdollisia syitä ovat, että tyhjiä salasanoja ei sallita, kirjautumisaikoja on rajoitettu tai käytäntörajoitus on otettu käyttöön.
 .
 
 MessageId=1328
@@ -13466,6 +15477,9 @@ Logon failure: account logon time restriction violation.
 Language=Japanese
 ログオン失敗: アカウントに時間制限があるため、今すぐサインインできません。
 .
+Language=Finnish
+Kirjautuminen epäonnistui: tilin kirjautumisaikarajoitusta rikottiin.
+.
 
 MessageId=1329
 Severity=Success
@@ -13485,6 +15499,9 @@ Logon failure: user not allowed to log on to this computer.
 .
 Language=Japanese
 ログオン失敗: このユーザはこのコンピュータにサインインできません。
+.
+Language=Finnish
+Kirjautuminen epäonnistui: käyttäjä ei saa kirjautua tähän tietokoneeseen.
 .
 
 MessageId=1330
@@ -13506,6 +15523,9 @@ Logon failure: the specified account password has expired.
 Language=Japanese
 ログオン: このアカウントのパスワードの有効期限が切れています。
 .
+Language=Finnish
+Kirjautuminen epäonnistui: määritetyn tilin salasana on vanhentunut.
+.
 
 MessageId=1331
 Severity=Success
@@ -13525,6 +15545,9 @@ Logon failure: account currently disabled.
 .
 Language=Japanese
 ログオン失敗: このアカウントは現在無効になっているため、このユーザはサインインできません。
+.
+Language=Finnish
+Kirjautuminen epäonnistui: tili on tällä hetkellä poistettu käytöstä.
 .
 
 MessageId=1332
@@ -13546,6 +15569,9 @@ No mapping between account names and security IDs was done.
 Language=Japanese
 アカウント名とセキュリティIDの間のマッピングが行われませんでした。
 .
+Language=Finnish
+Tilien nimien ja suojaustunnusten vastaavuuksia ei tehty.
+.
 
 MessageId=1333
 Severity=Success
@@ -13565,6 +15591,9 @@ Too many local user identifiers (LUIDs) were requested at one time.
 .
 Language=Japanese
 一度に要求されたローカル ユーザー識別子 (LUID)  の数が多すぎます。
+.
+Language=Finnish
+Paikallisia käyttäjätunnisteita (LUID) pyydettiin liian monta kerralla.
 .
 
 MessageId=1334
@@ -13586,6 +15615,9 @@ No more local user identifiers (LUIDs) are available.
 Language=Japanese
 利用可能なローカル ユーザー識別子 (LUID)  がなくなりました。
 .
+Language=Finnish
+Paikallisia käyttäjätunnisteita (LUID) ei ole enää käytettävissä.
+.
 
 MessageId=1335
 Severity=Success
@@ -13605,6 +15637,9 @@ The subauthority part of a security ID is invalid for this particular use.
 .
 Language=Japanese
 セキュリティ ID のサブ権限部分は、この特定の用途では無効です。
+.
+Language=Finnish
+Suojaustunnuksen alivaltuutusosa on virheellinen tähän käyttöön.
 .
 
 MessageId=1336
@@ -13626,6 +15661,9 @@ The access control list (ACL) structure is invalid.
 Language=Japanese
 アクセス制御リスト (ACL)  構造が無効です。
 .
+Language=Finnish
+Käyttöoikeusluettelon (ACL) rakenne on virheellinen.
+.
 
 MessageId=1337
 Severity=Success
@@ -13645,6 +15683,9 @@ The security ID structure is invalid.
 .
 Language=Japanese
 セキュリティ ID 構造体が無効です。
+.
+Language=Finnish
+Suojaustunnuksen rakenne on virheellinen.
 .
 
 MessageId=1338
@@ -13666,6 +15707,9 @@ The security descriptor structure is invalid.
 Language=Japanese
 セキュリティ記述子構造が無効です。
 .
+Language=Finnish
+Suojauskuvauksen rakenne on virheellinen.
+.
 
 MessageId=1340
 Severity=Success
@@ -13685,6 +15729,9 @@ The inherited access control list (ACL) or access control entry (ACE) could not 
 .
 Language=Japanese
 継承されたアクセス制御リスト (ACL)  またはアクセス制御エントリ (ACE)  を構築できませんでした。
+.
+Language=Finnish
+Periytyvää käyttöoikeusluetteloa (ACL) tai käyttöoikeusmerkintää (ACE) ei voitu muodostaa.
 .
 
 MessageId=1341
@@ -13706,6 +15753,9 @@ The server is currently disabled.
 Language=Japanese
 サーバーは現在無効です。
 .
+Language=Finnish
+Palvelin on tällä hetkellä poissa käytöstä.
+.
 
 MessageId=1342
 Severity=Success
@@ -13725,6 +15775,9 @@ The server is currently enabled.
 .
 Language=Japanese
 サーバーは現在有効です。
+.
+Language=Finnish
+Palvelin on tällä hetkellä käytössä.
 .
 
 MessageId=1343
@@ -13746,6 +15799,9 @@ The value provided was an invalid value for an identifier authority.
 Language=Japanese
 指定された値は、識別子の権限に対して無効な値です。
 .
+Language=Finnish
+Annettu arvo oli virheellinen tunnisteen valtuutuksen arvo.
+.
 
 MessageId=1344
 Severity=Success
@@ -13765,6 +15821,9 @@ No more memory is available for security information updates.
 .
 Language=Japanese
 セキュリティ情報の更新に使用できるメモリがありません。
+.
+Language=Finnish
+Suojaustietojen päivityksiin ei ole enää muistia käytettävissä.
 .
 
 MessageId=1345
@@ -13786,6 +15845,9 @@ The specified attributes are invalid, or incompatible with the attributes for th
 Language=Japanese
 指定された属性が無効、またはグループ全体の属性と互換性がありません。
 .
+Language=Finnish
+Määritetyt määritteet ovat virheellisiä tai yhteensopimattomia koko ryhmän määritteiden kanssa.
+.
 
 MessageId=1346
 Severity=Success
@@ -13805,6 +15867,9 @@ Either a required impersonation level was not provided, or the provided imperson
 .
 Language=Japanese
 必要な偽装レベルが指定されていないか、指定された偽装レベルが無効です。
+.
+Language=Finnish
+Vaadittua asiakkaana esiintymisen tasoa ei annettu, tai annettu taso on virheellinen.
 .
 
 MessageId=1347
@@ -13826,6 +15891,9 @@ Cannot open an anonymous level security token.
 Language=Japanese
 匿名レベルのセキュリティ トークンを開けません。
 .
+Language=Finnish
+Anonyymin tason suojaustunnussanomaa ei voi avata.
+.
 
 MessageId=1348
 Severity=Success
@@ -13845,6 +15913,9 @@ The validation information class requested was invalid.
 .
 Language=Japanese
 要求された検証情報クラスが無効です。
+.
+Language=Finnish
+Pyydetty vahvistustietojen luokka oli virheellinen.
 .
 
 MessageId=1349
@@ -13866,6 +15937,9 @@ The type of the token is inappropriate for its attempted use.
 Language=Japanese
 トークンの型が使用目的に対して不適切です。
 .
+Language=Finnish
+Tunnussanoman tyyppi ei sovi aiottuun käyttöön.
+.
 
 MessageId=1350
 Severity=Success
@@ -13885,6 +15959,9 @@ Unable to perform a security operation on an object that has no associated secur
 .
 Language=Japanese
 セキュリティに関連付けられていないオブジェクトに対してセキュリティ操作を実行できません。
+.
+Language=Finnish
+Suojaustoimintoa ei voi suorittaa objektille, johon ei liity suojausta.
 .
 
 MessageId=1351
@@ -13906,6 +15983,9 @@ Configuration information could not be read from the domain controller, either b
 Language=Japanese
 マシンが使用できないか、アクセスが拒否されたため、ドメイン コントローラから構成情報を読み取れませんでした。
 .
+Language=Finnish
+Määritystietoja ei voitu lukea toimialueen ohjauskoneesta, koska kone ei ole käytettävissä tai käyttö on estetty.
+.
 
 MessageId=1352
 Severity=Success
@@ -13925,6 +16005,9 @@ The security account manager (SAM) or local security authority (LSA) server was 
 .
 Language=Japanese
 セキュリティ アカウント マネージャ (SAM)  またはローカル セキュリティ権限 (LSA)  サーバーが、セキュリティ操作を実行するのに不適切な状態でした。
+.
+Language=Finnish
+Suojaustilien hallinnan (SAM) tai paikallisen suojausviranomaisen (LSA) palvelin oli väärässä tilassa suojaustoiminnon suorittamiseen.
 .
 
 MessageId=1353
@@ -13946,6 +16029,9 @@ The domain was in the wrong state to perform the security operation.
 Language=Japanese
 ドメインがセキュリティ操作を実行するために間違った状態にありました。
 .
+Language=Finnish
+Toimialue oli väärässä tilassa suojaustoiminnon suorittamiseen.
+.
 
 MessageId=1354
 Severity=Success
@@ -13965,6 +16051,9 @@ This operation is only allowed for the Primary Domain Controller of the domain.
 .
 Language=Japanese
 この操作はドメインのプライマリドメイン コントローラーにのみ許可されています。
+.
+Language=Finnish
+Tämä toiminto on sallittu vain toimialueen ensisijaisessa toimialueen ohjauskoneessa.
 .
 
 MessageId=1355
@@ -13986,6 +16075,9 @@ The specified domain either does not exist or could not be contacted.
 Language=Japanese
 指定されたドメインが存在しないか、連絡できませんでした。
 .
+Language=Finnish
+Määritettyä toimialuetta ei ole olemassa tai siihen ei saatu yhteyttä.
+.
 
 MessageId=1356
 Severity=Success
@@ -14005,6 +16097,9 @@ The specified domain already exists.
 .
 Language=Japanese
 指定されたドメインはすでに存在します。
+.
+Language=Finnish
+Määritetty toimialue on jo olemassa.
 .
 
 MessageId=1357
@@ -14026,6 +16121,9 @@ An attempt was made to exceed the limit on the number of domains per server.
 Language=Japanese
 サーバーあたりのドメイン数の制限を超えようとしました。
 .
+Language=Finnish
+Yritettiin ylittää palvelinkohtaisten toimialueiden enimmäismäärä.
+.
 
 MessageId=1358
 Severity=Success
@@ -14045,6 +16143,9 @@ Unable to complete the requested operation because of either a catastrophic medi
 .
 Language=Japanese
 メディアの致命的な障害またはディスク上のデータ構造の破損のため、要求された操作を完了できません。
+.
+Language=Finnish
+Pyydettyä toimintoa ei voi suorittaa tietovälineen vakavan vian tai levyllä olevan tietorakenteen vioittumisen vuoksi.
 .
 
 MessageId=1359
@@ -14066,6 +16167,9 @@ An internal error occurred.
 Language=Japanese
 内部エラーが発生しました。
 .
+Language=Finnish
+Tapahtui sisäinen virhe.
+.
 
 MessageId=1360
 Severity=Success
@@ -14085,6 +16189,9 @@ Generic access types were contained in an access mask which should already be ma
 .
 Language=Japanese
 汎用アクセス タイプが、汎用タイプ以外のタイプにマップされているはずのアクセス マスクに含まれていました。
+.
+Language=Finnish
+Käyttöoikeusmaskissa oli yleisiä käyttötyyppejä, jotka olisi jo pitänyt muuntaa ei-yleisiksi tyypeiksi.
 .
 
 MessageId=1361
@@ -14106,6 +16213,9 @@ A security descriptor is not in the right format (absolute or self-relative).
 Language=Japanese
 セキュリティ記述子の形式が正しくありません (絶対形式または自己相対形式) 。
 .
+Language=Finnish
+Suojauskuvaus ei ole oikeassa muodossa (absoluuttinen tai itseensä suhteellinen).
+.
 
 MessageId=1362
 Severity=Success
@@ -14125,6 +16235,9 @@ The requested action is restricted for use by logon processes only. The calling 
 .
 Language=Japanese
 要求されたアクションはログオンプロセスによってのみ使用できるように制限されています。呼び出し元のプロセスはログオンプロセスとして登録されていません。
+.
+Language=Finnish
+Pyydetty toiminto on rajoitettu vain kirjautumisprosessien käyttöön. Kutsuva prosessi ei ole rekisteröitynyt kirjautumisprosessiksi.
 .
 
 MessageId=1363
@@ -14146,6 +16259,9 @@ Cannot start a new logon session with an ID that is already in use.
 Language=Japanese
 すでに使用されているIDで新しいログオンセッションを開始できません。
 .
+Language=Finnish
+Uutta kirjautumisistuntoa ei voi aloittaa tunnuksella, joka on jo käytössä.
+.
 
 MessageId=1364
 Severity=Success
@@ -14165,6 +16281,9 @@ A specified authentication package is unknown.
 .
 Language=Japanese
 指定された認証パッケージが不明です。
+.
+Language=Finnish
+Määritetty todennuspaketti on tuntematon.
 .
 
 MessageId=1365
@@ -14186,6 +16305,9 @@ The logon session is not in a state that is consistent with the requested operat
 Language=Japanese
 ログオン セッションの状態が要求された操作と一致しません。
 .
+Language=Finnish
+Kirjautumisistunto ei ole pyydetyn toiminnon kanssa yhdenmukaisessa tilassa.
+.
 
 MessageId=1366
 Severity=Success
@@ -14205,6 +16327,9 @@ The logon session ID is already in use.
 .
 Language=Japanese
 ログオンセッションIDがすでに使用されています。
+.
+Language=Finnish
+Kirjautumisistunnon tunnus on jo käytössä.
 .
 
 MessageId=1367
@@ -14226,6 +16351,9 @@ A logon request contained an invalid logon type value.
 Language=Japanese
 ログオン要求に無効なログオン タイプ値が含まれていました。
 .
+Language=Finnish
+Kirjautumispyynnössä oli virheellinen kirjautumistyypin arvo.
+.
 
 MessageId=1368
 Severity=Success
@@ -14245,6 +16373,9 @@ Unable to impersonate using a named pipe until data has been read from that pipe
 .
 Language=Japanese
 名前付きパイプからデータが読み込まれるまで、名前付きパイプを使用したなりすましができません。
+.
+Language=Finnish
+Nimetyn putken kautta ei voi esiintyä asiakkaana ennen kuin putkesta on luettu tietoja.
 .
 
 MessageId=1369
@@ -14266,6 +16397,9 @@ The transaction state of a registry subtree is incompatible with the requested o
 Language=Japanese
 レジストリ サブツリーのトランザクション状態が要求された操作と互換性がありません。
 .
+Language=Finnish
+Rekisterin alipuun tapahtumatila ei sovi yhteen pyydetyn toiminnon kanssa.
+.
 
 MessageId=1370
 Severity=Success
@@ -14285,6 +16419,9 @@ An internal security database corruption has been encountered.
 .
 Language=Japanese
 内部セキュリティ データベースの破損が発生しました。
+.
+Language=Finnish
+Havaittiin sisäisen suojaustietokannan vioittuminen.
 .
 
 MessageId=1371
@@ -14306,6 +16443,9 @@ Cannot perform this operation on built-in accounts.
 Language=Japanese
 組み込みアカウントでこの操作を実行できません。
 .
+Language=Finnish
+Tätä toimintoa ei voi suorittaa sisäisille tileille.
+.
 
 MessageId=1372
 Severity=Success
@@ -14325,6 +16465,9 @@ Cannot perform this operation on this built-in special group.
 .
 Language=Japanese
 この組み込みの特別グループに対してこの操作は実行できません。
+.
+Language=Finnish
+Tätä toimintoa ei voi suorittaa tälle sisäiselle erikoisryhmälle.
 .
 
 MessageId=1373
@@ -14346,6 +16489,9 @@ Cannot perform this operation on this built-in special user.
 Language=Japanese
 この組み込みの特別ユーザーに対してこの操作は実行できません。
 .
+Language=Finnish
+Tätä toimintoa ei voi suorittaa tälle sisäiselle erikoiskäyttäjälle.
+.
 
 MessageId=1374
 Severity=Success
@@ -14365,6 +16511,9 @@ The user cannot be removed from a group because the group is currently the user'
 .
 Language=Japanese
 グループが現在ユーザのプライマリ グループであるため、ユーザをグループから削除できません。
+.
+Language=Finnish
+Käyttäjää ei voi poistaa ryhmästä, koska ryhmä on tällä hetkellä käyttäjän ensisijainen ryhmä.
 .
 
 MessageId=1375
@@ -14386,6 +16535,9 @@ The token is already in use as a primary token.
 Language=Japanese
 トークンはすでにプライマリ トークンとして使用されています。
 .
+Language=Finnish
+Tunnussanoma on jo käytössä ensisijaisena tunnussanomana.
+.
 
 MessageId=1376
 Severity=Success
@@ -14405,6 +16557,9 @@ The specified local group does not exist.
 .
 Language=Japanese
 指定されたローカル グループが存在しません。
+.
+Language=Finnish
+Annettua paikallista ryhmää ei ole olemassa.
 .
 
 MessageId=1377
@@ -14426,6 +16581,9 @@ The specified account name is not a member of the local group.
 Language=Japanese
 指定されたアカウント名はグループのメンバーではありません。
 .
+Language=Finnish
+Annettu tilin nimi ei ole paikallisen ryhmän jäsen.
+.
 
 MessageId=1378
 Severity=Success
@@ -14445,6 +16603,9 @@ The specified account name is already a member of the local group.
 .
 Language=Japanese
 指定されたアカウント名はすでにグループのメンバーです。
+.
+Language=Finnish
+Annettu tilin nimi on jo paikallisen ryhmän jäsen.
 .
 
 MessageId=1379
@@ -14466,6 +16627,9 @@ The specified local group already exists.
 Language=Japanese
 指定されたローカル グループは既に存在します。
 .
+Language=Finnish
+Annettu paikallinen ryhmä on jo olemassa.
+.
 
 MessageId=1380
 Severity=Success
@@ -14485,6 +16649,9 @@ Logon failure: the user has not been granted the requested logon type at this co
 .
 Language=Japanese
 ログオン失敗: ユーザーはこのコンピューターで要求されたログオン タイプを許可されていません。
+.
+Language=Finnish
+Kirjautuminen epäonnistui: käyttäjälle ei ole myönnetty pyydettyä kirjautumistyyppiä tässä tietokoneessa.
 .
 
 MessageId=1381
@@ -14506,6 +16673,9 @@ The maximum number of secrets that may be stored in a single system has been exc
 Language=Japanese
 1つのシステムに保存できる秘密の最大数を超えました。
 .
+Language=Finnish
+Yhteen järjestelmään tallennettavien salaisuuksien enimmäismäärä on ylitetty.
+.
 
 MessageId=1382
 Severity=Success
@@ -14525,6 +16695,9 @@ The length of a secret exceeds the maximum length allowed.
 .
 Language=Japanese
 秘密の長さが許容される最大長を超えました。
+.
+Language=Finnish
+Salaisuuden pituus ylittää sallitun enimmäispituuden.
 .
 
 MessageId=1383
@@ -14546,6 +16719,9 @@ The local security authority database contains an internal inconsistency.
 Language=Japanese
 ローカルのセキュリティ権限データベースに内部不整合があります。
 .
+Language=Finnish
+Paikallisen suojausviranomaisen tietokannassa on sisäinen ristiriita.
+.
 
 MessageId=1384
 Severity=Success
@@ -14565,6 +16741,9 @@ During a logon attempt, the user's security context accumulated too many securit
 .
 Language=Japanese
 ログオン試行中、ユーザーのセキュリティ コンテキストにセキュリティIDが蓄積されすぎました。
+.
+Language=Finnish
+Kirjautumisyrityksen aikana käyttäjän suojauskontekstiin kertyi liian monta suojaustunnusta.
 .
 
 MessageId=1385
@@ -14586,6 +16765,9 @@ Logon failure: the user has not been granted the requested logon type at this co
 Language=Japanese
 ログオン失敗: ユーザーはこのコンピュータで要求されたログオン タイプを許可されていません。
 .
+Language=Finnish
+Kirjautuminen epäonnistui: käyttäjälle ei ole myönnetty pyydettyä kirjautumistyyppiä tässä tietokoneessa.
+.
 
 MessageId=1386
 Severity=Success
@@ -14605,6 +16787,9 @@ A cross-encrypted password is necessary to change a user password.
 .
 Language=Japanese
 ユーザーパスワードを変更するには、暗号化されたパスワードが必要です。
+.
+Language=Finnish
+Käyttäjän salasanan vaihtamiseen tarvitaan ristiinsalattu salasana.
 .
 
 MessageId=1387
@@ -14626,6 +16811,9 @@ A new member could not be added to or removed from the local group because the m
 Language=Japanese
 メンバが存在しないため、メンバをローカル グループに追加またはローカル グループから削除できませんでした。
 .
+Language=Finnish
+Uutta jäsentä ei voitu lisätä paikalliseen ryhmään tai poistaa siitä, koska jäsentä ei ole olemassa.
+.
 
 MessageId=1388
 Severity=Success
@@ -14645,6 +16833,9 @@ A new member could not be added to a local group because the member has the wron
 .
 Language=Japanese
 メンバのアカウント タイプが正しくないため、新しいメンバをローカル グループに追加できませんでした。
+.
+Language=Finnish
+Uutta jäsentä ei voitu lisätä paikalliseen ryhmään, koska jäsenen tilityyppi on väärä.
 .
 
 MessageId=1389
@@ -14666,6 +16857,9 @@ Too many security IDs have been specified.
 Language=Japanese
 セキュリティIDが多すぎます。
 .
+Language=Finnish
+Suojaustunnuksia on määritetty liian monta.
+.
 
 MessageId=1390
 Severity=Success
@@ -14685,6 +16879,9 @@ A cross-encrypted password is necessary to change this user password.
 .
 Language=Japanese
 このユーザーパスワードを変更するには、暗号化されたパスワードが必要です。
+.
+Language=Finnish
+Tämän käyttäjän salasanan vaihtamiseen tarvitaan ristiinsalattu salasana.
 .
 
 MessageId=1391
@@ -14706,6 +16903,9 @@ Indicates an ACL contains no inheritable components.
 Language=Japanese
 ACLに継承可能なコンポーネントがないことを示します。
 .
+Language=Finnish
+Ilmaisee, että käyttöoikeusluettelossa ei ole periytyviä osia.
+.
 
 MessageId=1392
 Severity=Success
@@ -14725,6 +16925,9 @@ The file or directory is corrupted and unreadable.
 .
 Language=Japanese
 ファイルまたはディレクトリが壊れて読み取り不可能です。
+.
+Language=Finnish
+Tiedosto tai hakemisto on vioittunut eikä ole luettavissa.
 .
 
 MessageId=1393
@@ -14746,6 +16949,9 @@ The disk structure is corrupted and unreadable.
 Language=Japanese
 ディスク構造が壊れて読み取りできません。
 .
+Language=Finnish
+Levyn rakenne on vioittunut eikä ole luettavissa.
+.
 
 MessageId=1394
 Severity=Success
@@ -14765,6 +16971,9 @@ There is no user session key for the specified logon session.
 .
 Language=Japanese
 指定されたログオン セッションのユーザー セッション キーがありません。
+.
+Language=Finnish
+Annetulla kirjautumisistunnolla ei ole käyttäjän istuntoavainta.
 .
 
 MessageId=1395
@@ -14786,6 +16995,9 @@ The service being accessed is licensed for a particular number of connections. N
 Language=Japanese
 アクセスされているサービスは、特定の接続数に対してライセンスされています。サービスが受け入れることができる接続数がすでにあるため、現時点ではこれ以上の接続を行うことはできません。
 .
+Language=Finnish
+Käytettävä palvelu on lisensoitu tietylle määrälle yhteyksiä. Palveluun ei voi tällä hetkellä muodostaa enempää yhteyksiä, koska yhteyksiä on jo niin monta kuin palvelu voi hyväksyä.
+.
 
 MessageId=1396
 Severity=Success
@@ -14805,6 +17017,9 @@ Logon Failure: The target account name is incorrect.
 .
 Language=Japanese
 ログオン失敗: アクセス先のアカウント名が正しくありません。
+.
+Language=Finnish
+Kirjautuminen epäonnistui: kohdetilin nimi on väärä.
 .
 
 MessageId=1397
@@ -14826,6 +17041,9 @@ Mutual Authentication failed. The server's password is out of date at the domain
 Language=Japanese
 相互認証に失敗しました。ドメイン コントローラーでサーバーのパスワードが無効です。
 .
+Language=Finnish
+Molemminpuolinen todennus epäonnistui. Palvelimen salasana on vanhentunut toimialueen ohjauskoneessa.
+.
 
 MessageId=1398
 Severity=Success
@@ -14845,6 +17063,9 @@ There is a time and/or date difference between the client and server.
 .
 Language=Japanese
 クライアントとサーバーの間で時差があります。
+.
+Language=Finnish
+Asiakkaan ja palvelimen ajassa tai päivämäärässä on eroa.
 .
 
 MessageId=1399
@@ -14866,6 +17087,9 @@ This operation cannot be performed on the current domain.
 Language=Japanese
 この操作は現在のドメインでは実行できません。
 .
+Language=Finnish
+Tätä toimintoa ei voi suorittaa nykyisessä toimialueessa.
+.
 
 MessageId=1400
 Severity=Success
@@ -14885,6 +17109,9 @@ Invalid window handle.
 .
 Language=Japanese
 無効なウィンドウハンドルです。
+.
+Language=Finnish
+Virheellinen ikkunan kahva.
 .
 
 MessageId=1401
@@ -14906,6 +17133,9 @@ Invalid menu handle.
 Language=Japanese
 無効なメニューハンドルです。
 .
+Language=Finnish
+Virheellinen valikon kahva.
+.
 
 MessageId=1402
 Severity=Success
@@ -14925,6 +17155,9 @@ Invalid cursor handle.
 .
 Language=Japanese
 無効なカーソルハンドルです。
+.
+Language=Finnish
+Virheellinen osoittimen kahva.
 .
 
 MessageId=1403
@@ -14946,6 +17179,9 @@ Invalid accelerator table handle.
 Language=Japanese
 無効なアクセラレータテーブルハンドルです。
 .
+Language=Finnish
+Virheellinen pikanäppäintaulukon kahva.
+.
 
 MessageId=1404
 Severity=Success
@@ -14965,6 +17201,9 @@ Invalid hook handle.
 .
 Language=Japanese
 無効なフックハンドルです。
+.
+Language=Finnish
+Virheellinen koukun kahva.
 .
 
 MessageId=1405
@@ -14986,6 +17225,9 @@ Invalid handle to a multiple-window position structure.
 Language=Japanese
 複数ウィンドウ位置構造体のハンドルが無効です。
 .
+Language=Finnish
+Virheellinen usean ikkunan sijaintirakenteen kahva.
+.
 
 MessageId=1406
 Severity=Success
@@ -15005,6 +17247,9 @@ Cannot create a top-level child window.
 .
 Language=Japanese
 トップレベルの子ウィンドウを作成できません。
+.
+Language=Finnish
+Ylimmän tason aliikkunaa ei voi luoda.
 .
 
 MessageId=1407
@@ -15026,6 +17271,9 @@ Cannot find window class.
 Language=Japanese
 ウィンドウ クラスが見つかりません。
 .
+Language=Finnish
+Ikkunaluokkaa ei löydy.
+.
 
 MessageId=1408
 Severity=Success
@@ -15045,6 +17293,9 @@ Invalid window; it belongs to other thread.
 .
 Language=Japanese
 無効なウィンドウです。
+.
+Language=Finnish
+Virheellinen ikkuna; se kuuluu toiselle säikeelle.
 .
 
 MessageId=1409
@@ -15066,6 +17317,9 @@ Hot key is already registered.
 Language=Japanese
 ホットキーは既に登録されています。
 .
+Language=Finnish
+Pikanäppäin on jo rekisteröity.
+.
 
 MessageId=1410
 Severity=Success
@@ -15085,6 +17339,9 @@ Class already exists.
 .
 Language=Japanese
 クラスはすでに存在します。
+.
+Language=Finnish
+Luokka on jo olemassa.
 .
 
 MessageId=1411
@@ -15106,6 +17363,9 @@ Class does not exist.
 Language=Japanese
 クラスが存在しません。
 .
+Language=Finnish
+Luokkaa ei ole olemassa.
+.
 
 MessageId=1412
 Severity=Success
@@ -15125,6 +17385,9 @@ Class still has open windows.
 .
 Language=Japanese
 クラスはまだウィンドウを開いています。
+.
+Language=Finnish
+Luokalla on yhä avoimia ikkunoita.
 .
 
 MessageId=1413
@@ -15146,6 +17409,9 @@ Invalid index.
 Language=Japanese
 無効なインデックスです。
 .
+Language=Finnish
+Virheellinen indeksi.
+.
 
 MessageId=1414
 Severity=Success
@@ -15165,6 +17431,9 @@ Invalid icon handle.
 .
 Language=Japanese
 無効なアイコンハンドルです。
+.
+Language=Finnish
+Virheellinen kuvakkeen kahva.
 .
 
 MessageId=1415
@@ -15186,6 +17455,9 @@ Using private DIALOG window words.
 Language=Japanese
 プライベート DIALOG ウィンドウの単語を使用しています。
 .
+Language=Finnish
+Käytetään yksityisiä DIALOG-ikkunan sanoja.
+.
 
 MessageId=1416
 Severity=Success
@@ -15205,6 +17477,9 @@ The list box identifier was not found.
 .
 Language=Japanese
 リスト ボックスの識別子が見つかりませんでした。
+.
+Language=Finnish
+Luetteloruudun tunnistetta ei löytynyt.
 .
 
 MessageId=1417
@@ -15226,6 +17501,9 @@ No wildcards were found.
 Language=Japanese
 ワイルド カードが見つかりませんでした。
 .
+Language=Finnish
+Yleismerkkejä ei löytynyt.
+.
 
 MessageId=1418
 Severity=Success
@@ -15245,6 +17523,9 @@ Thread does not have a clipboard open.
 .
 Language=Japanese
 スレッドがクリップボードを開いていません。
+.
+Language=Finnish
+Säikeellä ei ole leikepöytää auki.
 .
 
 MessageId=1419
@@ -15266,6 +17547,9 @@ Hot key is not registered.
 Language=Japanese
 ホットキーが登録されていません。
 .
+Language=Finnish
+Pikanäppäintä ei ole rekisteröity.
+.
 
 MessageId=1420
 Severity=Success
@@ -15285,6 +17569,9 @@ The window is not a valid dialog window.
 .
 Language=Japanese
 ウィンドウは有効なダイアログウィンドウではありません。
+.
+Language=Finnish
+Ikkuna ei ole kelvollinen valintaikkuna.
 .
 
 MessageId=1421
@@ -15306,6 +17593,9 @@ Control ID not found.
 Language=Japanese
 コントロールIDが見つかりません。
 .
+Language=Finnish
+Ohjausobjektin tunnusta ei löytynyt.
+.
 
 MessageId=1422
 Severity=Success
@@ -15325,6 +17615,9 @@ Invalid message for a combo box because it does not have an edit control.
 .
 Language=Japanese
 コンボボックスに編集コントロールがないので無効なメッセージです。
+.
+Language=Finnish
+Virheellinen viesti yhdistelmäruudulle, koska siinä ei ole muokkausohjausobjektia.
 .
 
 MessageId=1423
@@ -15346,6 +17639,9 @@ The window is not a combo box.
 Language=Japanese
 ウィンドウはコンボボックスではありません。
 .
+Language=Finnish
+Ikkuna ei ole yhdistelmäruutu.
+.
 
 MessageId=1424
 Severity=Success
@@ -15365,6 +17661,9 @@ Height must be less than 256.
 .
 Language=Japanese
 高さが256未満である必要があります。
+.
+Language=Finnish
+Korkeuden on oltava alle 256.
 .
 
 MessageId=1425
@@ -15386,6 +17685,9 @@ Invalid device context (DC) handle.
 Language=Japanese
 無効なデバイスコンテキスト (DC) ハンドル
 .
+Language=Finnish
+Virheellinen laitekontekstin (DC) kahva.
+.
 
 MessageId=1426
 Severity=Success
@@ -15405,6 +17707,9 @@ Invalid hook procedure type.
 .
 Language=Japanese
 無効なフック プロシージャ タイプです。
+.
+Language=Finnish
+Virheellinen koukkuproseduurin tyyppi.
 .
 
 MessageId=1427
@@ -15426,6 +17731,9 @@ Invalid hook procedure.
 Language=Japanese
 無効なフック プロシージャです。
 .
+Language=Finnish
+Virheellinen koukkuproseduuri.
+.
 
 MessageId=1428
 Severity=Success
@@ -15445,6 +17753,9 @@ Cannot set nonlocal hook without a module handle.
 .
 Language=Japanese
 モジュールハンドルを持たない非ローカルフックを設定できません。
+.
+Language=Finnish
+Ei-paikallista koukkua ei voi asettaa ilman moduulin kahvaa.
 .
 
 MessageId=1429
@@ -15466,6 +17777,9 @@ This hook procedure can only be set globally.
 Language=Japanese
 このフック プロシージャはグローバルにしか設定できません。
 .
+Language=Finnish
+Tämän koukkuproseduurin voi asettaa vain yleisesti.
+.
 
 MessageId=1430
 Severity=Success
@@ -15485,6 +17799,9 @@ The journal hook procedure is already installed.
 .
 Language=Japanese
 ジャーナル フック プロシージャは既にインストールされています。
+.
+Language=Finnish
+Lokikoukkuproseduuri on jo asennettu.
 .
 
 MessageId=1431
@@ -15506,6 +17823,9 @@ The hook procedure is not installed.
 Language=Japanese
 フック プロシージャがインストールされていません。
 .
+Language=Finnish
+Koukkuproseduuria ei ole asennettu.
+.
 
 MessageId=1432
 Severity=Success
@@ -15525,6 +17845,9 @@ Invalid message for single-selection list box.
 .
 Language=Japanese
 単一選択リスト ボックスのメッセージが無効です。
+.
+Language=Finnish
+Virheellinen viesti yhden valinnan luetteloruudulle.
 .
 
 MessageId=1433
@@ -15546,6 +17869,9 @@ LB_SETCOUNT sent to non-lazy list box.
 Language=Japanese
 非レイジーリストボックスに LB_SETCOUNT を送信しました。
 .
+Language=Finnish
+LB_SETCOUNT lähetettiin luetteloruudulle, joka ei ole laiska.
+.
 
 MessageId=1434
 Severity=Success
@@ -15565,6 +17891,9 @@ This list box does not support tab stops.
 .
 Language=Japanese
 このリストボックスはタブストップをサポートしていません。
+.
+Language=Finnish
+Tämä luetteloruutu ei tue sarkainkohtia.
 .
 
 MessageId=1435
@@ -15586,6 +17915,9 @@ Cannot destroy object created by another thread.
 Language=Japanese
 他のスレッドによって作成されたオブジェクトを破棄できません。
 .
+Language=Finnish
+Toisen säikeen luomaa objektia ei voi tuhota.
+.
 
 MessageId=1436
 Severity=Success
@@ -15605,6 +17937,9 @@ Child windows cannot have menus.
 .
 Language=Japanese
 子ウィンドウはメニューを持つことができません。
+.
+Language=Finnish
+Aliikkunoilla ei voi olla valikkoja.
 .
 
 MessageId=1437
@@ -15626,6 +17961,9 @@ The window does not have a system menu.
 Language=Japanese
 ウィンドウにシステム メニューがありません。
 .
+Language=Finnish
+Ikkunalla ei ole järjestelmävalikkoa.
+.
 
 MessageId=1438
 Severity=Success
@@ -15645,6 +17983,9 @@ Invalid message box style.
 .
 Language=Japanese
 メッセージ ボックスのスタイルが無効です。
+.
+Language=Finnish
+Virheellinen sanomaruudun tyyli.
 .
 
 MessageId=1439
@@ -15666,6 +18007,9 @@ Invalid system-wide (SPI_*) parameter.
 Language=Japanese
 無効なシステム全体 (SPI_*) パラメータ
 .
+Language=Finnish
+Virheellinen järjestelmänlaajuinen (SPI_*) parametri.
+.
 
 MessageId=1440
 Severity=Success
@@ -15685,6 +18029,9 @@ Screen already locked.
 .
 Language=Japanese
 画面が既にロックされています。
+.
+Language=Finnish
+Näyttö on jo lukittu.
 .
 
 MessageId=1441
@@ -15706,6 +18053,9 @@ All handles to windows in a multiple-window position structure must have the sam
 Language=Japanese
 複数ウィンドウの位置構造内のウィンドウへのすべてのハンドルは、同じ親を持つ必要があります。
 .
+Language=Finnish
+Usean ikkunan sijaintirakenteen kaikilla ikkunakahvoilla on oltava sama yläikkuna.
+.
 
 MessageId=1442
 Severity=Success
@@ -15725,6 +18075,9 @@ The window is not a child window.
 .
 Language=Japanese
 ウィンドウは子ウィンドウではありません。
+.
+Language=Finnish
+Ikkuna ei ole aliikkuna.
 .
 
 MessageId=1443
@@ -15746,6 +18099,9 @@ Invalid GW_* command.
 Language=Japanese
 無効なGW_*コマンドです。
 .
+Language=Finnish
+Virheellinen GW_*-komento.
+.
 
 MessageId=1444
 Severity=Success
@@ -15765,6 +18121,9 @@ Invalid thread identifier.
 .
 Language=Japanese
 無効なスレッド識別子です。
+.
+Language=Finnish
+Virheellinen säikeen tunniste.
 .
 
 MessageId=1445
@@ -15786,6 +18145,9 @@ Cannot process a message from a window that is not a multiple document interface
 Language=Japanese
 MDI (複数文書インターフェイス)  ウィンドウではないウィンドウからのメッセージを処理できません。
 .
+Language=Finnish
+Viestiä ei voi käsitellä ikkunasta, joka ei ole MDI-ikkuna (monen tiedoston käyttöliittymä).
+.
 
 MessageId=1446
 Severity=Success
@@ -15805,6 +18167,9 @@ Popup menu already active.
 .
 Language=Japanese
 ポップアップメニューはすでにアクティブです。
+.
+Language=Finnish
+Ponnahdusvalikko on jo aktiivinen.
 .
 
 MessageId=1447
@@ -15826,6 +18191,9 @@ The window does not have scroll bars.
 Language=Japanese
 ウィンドウにスクロール バーがありません。
 .
+Language=Finnish
+Ikkunassa ei ole vierityspalkkeja.
+.
 
 MessageId=1448
 Severity=Success
@@ -15845,6 +18213,9 @@ Scroll bar range cannot be greater than MAXLONG.
 .
 Language=Japanese
 スクロールバーの範囲をMAXLONGより大きくできません。
+.
+Language=Finnish
+Vierityspalkin alue ei voi olla suurempi kuin MAXLONG.
 .
 
 MessageId=1449
@@ -15866,6 +18237,9 @@ Cannot show or remove the window in the way specified.
 Language=Japanese
 指定された方法でウィンドウを表示または削除できません。
 .
+Language=Finnish
+Ikkunaa ei voi näyttää tai poistaa määritetyllä tavalla.
+.
 
 MessageId=1450
 Severity=Success
@@ -15885,6 +18259,9 @@ Insufficient system resources exist to complete the requested service.
 .
 Language=Japanese
 要求されたサービスを完了するためのシステム リソースが不足しています。
+.
+Language=Finnish
+Järjestelmäresurssit eivät riitä pyydetyn palvelun suorittamiseen.
 .
 
 MessageId=1451
@@ -15906,6 +18283,9 @@ Insufficient system resources exist to complete the requested service.
 Language=Japanese
 要求されたサービスを完了するにはシステム リソースが不足しています。
 .
+Language=Finnish
+Järjestelmäresurssit eivät riitä pyydetyn palvelun suorittamiseen.
+.
 
 MessageId=1452
 Severity=Success
@@ -15925,6 +18305,9 @@ Insufficient system resources exist to complete the requested service.
 .
 Language=Japanese
 要求されたサービスを完了するにはシステム リソースが不足しています。
+.
+Language=Finnish
+Järjestelmäresurssit eivät riitä pyydetyn palvelun suorittamiseen.
 .
 
 MessageId=1453
@@ -15946,6 +18329,9 @@ Insufficient quota to complete the requested service.
 Language=Japanese
 要求されたサービスを完了するためのクォータが不足しています。
 .
+Language=Finnish
+Kiintiö ei riitä pyydetyn palvelun suorittamiseen.
+.
 
 MessageId=1454
 Severity=Success
@@ -15965,6 +18351,9 @@ Insufficient quota to complete the requested service.
 .
 Language=Japanese
 要求されたサービスを完了するためのクォータが不足しています。
+.
+Language=Finnish
+Kiintiö ei riitä pyydetyn palvelun suorittamiseen.
 .
 
 MessageId=1455
@@ -15986,6 +18375,9 @@ The paging file is too small for this operation to complete.
 Language=Japanese
 ページング ファイルが小さすぎるため、この操作を完了できません。
 .
+Language=Finnish
+Sivutustiedosto on liian pieni tämän toiminnon suorittamiseen.
+.
 
 MessageId=1456
 Severity=Success
@@ -16005,6 +18397,9 @@ A menu item was not found.
 .
 Language=Japanese
 メニュー項目が見つかりませんでした。
+.
+Language=Finnish
+Valikon kohdetta ei löytynyt.
 .
 
 MessageId=1457
@@ -16026,6 +18421,9 @@ Invalid keyboard layout handle.
 Language=Japanese
 無効なキーボードレイアウトハンドルです。
 .
+Language=Finnish
+Virheellinen näppäimistöasettelun kahva.
+.
 
 MessageId=1458
 Severity=Success
@@ -16045,6 +18443,9 @@ Hook type not allowed.
 .
 Language=Japanese
 フックタイプが許可されていません。
+.
+Language=Finnish
+Koukkutyyppi ei ole sallittu.
 .
 
 MessageId=1459
@@ -16066,6 +18467,9 @@ This operation requires an interactive window station.
 Language=Japanese
 この操作には対話型ウィンドウ ステーションが必要です。
 .
+Language=Finnish
+Tämä toiminto vaatii vuorovaikutteisen ikkuna-aseman.
+.
 
 MessageId=1460
 Severity=Success
@@ -16085,6 +18489,9 @@ This operation returned because the timeout period expired.
 .
 Language=Japanese
 タイムアウト時間が過ぎたため、この操作は返されました。
+.
+Language=Finnish
+Tämä toiminto palasi, koska aikakatkaisuaika kului umpeen.
 .
 
 MessageId=1461
@@ -16106,6 +18513,9 @@ Invalid monitor handle.
 Language=Japanese
 無効なモニタハンドルです。
 .
+Language=Finnish
+Virheellinen näytön kahva.
+.
 
 MessageId=1500
 Severity=Success
@@ -16125,6 +18535,9 @@ The event log file is corrupted.
 .
 Language=Japanese
 イベント ログ ファイルが壊れています。
+.
+Language=Finnish
+Tapahtumalokitiedosto on vioittunut.
 .
 
 MessageId=1501
@@ -16146,6 +18559,9 @@ No event log file could be opened, so the event logging service did not start.
 Language=Japanese
 イベント ログ ファイルを開くことができませんでした。
 .
+Language=Finnish
+Yhtään tapahtumalokitiedostoa ei voitu avata, joten tapahtumalokipalvelu ei käynnistynyt.
+.
 
 MessageId=1502
 Severity=Success
@@ -16165,6 +18581,9 @@ The event log file is full.
 .
 Language=Japanese
 イベント ログ ファイルがいっぱいです。
+.
+Language=Finnish
+Tapahtumalokitiedosto on täynnä.
 .
 
 MessageId=1503
@@ -16186,6 +18605,9 @@ The event log file has changed between read operations.
 Language=Japanese
 イベント ログ ファイルが読み取り操作の間に変更されました。
 .
+Language=Finnish
+Tapahtumalokitiedosto on muuttunut lukutoimintojen välillä.
+.
 
 MessageId=1601
 Severity=Success
@@ -16205,6 +18627,9 @@ The ReactOS Installer service could not be accessed. This can occur if you are r
 .
 Language=Japanese
 ReactOS Installer サービスにアクセスできませんでした。ReactOS Installerが正しくインストールされていない場合に発生する可能性があります。サポート担当者にお問い合わせください。
+.
+Language=Finnish
+ReactOS-asennusohjelmapalvelua ei voitu käyttää. Näin voi käydä, jos LiberNT on käynnissä vikasietotilassa tai ReactOS-asennusohjelmaa ei ole asennettu oikein. Pyydä apua tukihenkilöltä.
 .
 
 MessageId=1602
@@ -16226,6 +18651,9 @@ User cancelled installation.
 Language=Japanese
 ユーザーがインストールをキャンセルしました。
 .
+Language=Finnish
+Käyttäjä peruutti asennuksen.
+.
 
 MessageId=1603
 Severity=Success
@@ -16245,6 +18673,9 @@ Fatal error during installation.
 .
 Language=Japanese
 インストール中に致命的なエラーが発生しました。
+.
+Language=Finnish
+Vakava virhe asennuksen aikana.
 .
 
 MessageId=1604
@@ -16266,6 +18697,9 @@ Installation suspended, incomplete.
 Language=Japanese
 インストールが中断されました。
 .
+Language=Finnish
+Asennus keskeytetty, kesken.
+.
 
 MessageId=1605
 Severity=Success
@@ -16285,6 +18719,9 @@ This action is only valid for products that are currently installed.
 .
 Language=Japanese
 この操作は、現在インストールされている製品に対してのみ有効です。
+.
+Language=Finnish
+Tämä toiminto on kelvollinen vain tällä hetkellä asennetuille tuotteille.
 .
 
 MessageId=1606
@@ -16306,6 +18743,9 @@ Feature ID not registered.
 Language=Japanese
 フィーチャーIDが登録されていません。
 .
+Language=Finnish
+Ominaisuuden tunnusta ei ole rekisteröity.
+.
 
 MessageId=1607
 Severity=Success
@@ -16325,6 +18765,9 @@ Component ID not registered.
 .
 Language=Japanese
 コンポーネントIDが登録されていません。
+.
+Language=Finnish
+Osan tunnusta ei ole rekisteröity.
 .
 
 MessageId=1608
@@ -16346,6 +18789,9 @@ Unknown property.
 Language=Japanese
 不明なプロパティ
 .
+Language=Finnish
+Tuntematon ominaisuus.
+.
 
 MessageId=1609
 Severity=Success
@@ -16365,6 +18811,9 @@ Handle is in an invalid state.
 .
 Language=Japanese
 ハンドルの状態が無効です。
+.
+Language=Finnish
+Kahva on virheellisessä tilassa.
 .
 
 MessageId=1610
@@ -16386,6 +18835,9 @@ The configuration data for this product is corrupt. Contact your support personn
 Language=Japanese
 この製品の設定データが壊れています。サポート担当者に連絡してください。
 .
+Language=Finnish
+Tämän tuotteen määritystiedot ovat vioittuneet. Ota yhteyttä tukihenkilöön.
+.
 
 MessageId=1611
 Severity=Success
@@ -16405,6 +18857,9 @@ Component qualifier not present.
 .
 Language=Japanese
 コンポーネント修飾子が存在しません。
+.
+Language=Finnish
+Osan tarkenninta ei ole.
 .
 
 MessageId=1612
@@ -16426,6 +18881,9 @@ The installation source for this product is not available. Verify that the sourc
 Language=Japanese
 この製品のインストール ソースがありません。ソースが存在し、アクセスできることを確認してください。
 .
+Language=Finnish
+Tämän tuotteen asennuslähde ei ole käytettävissä. Varmista, että lähde on olemassa ja että voit käyttää sitä.
+.
 
 MessageId=1613
 Severity=Success
@@ -16445,6 +18903,9 @@ This installation package cannot be installed by the ReactOS Installer service. 
 .
 Language=Japanese
 このインストール パッケージは ReactOS Installer サービスではインストールできません。新しいバージョンのReactOS Installerサービスが含まれているLiberNTサービスパックをインストールする必要があります。
+.
+Language=Finnish
+ReactOS-asennusohjelmapalvelu ei voi asentaa tätä asennuspakettia. Asenna LiberNT:n Service Pack, joka sisältää ReactOS-asennusohjelmapalvelun uudemman version.
 .
 
 MessageId=1614
@@ -16466,6 +18927,9 @@ Product is uninstalled.
 Language=Japanese
 製品がアンインストールされました。
 .
+Language=Finnish
+Tuotteen asennus on poistettu.
+.
 
 MessageId=1615
 Severity=Success
@@ -16485,6 +18949,9 @@ SQL query syntax invalid or unsupported.
 .
 Language=Japanese
 SQL クエリの構文が無効、またはサポートされていません。
+.
+Language=Finnish
+SQL-kyselyn syntaksi on virheellinen tai sitä ei tueta.
 .
 
 MessageId=1616
@@ -16506,6 +18973,9 @@ Record field does not exist.
 Language=Japanese
 レコード フィールドが存在しません。
 .
+Language=Finnish
+Tietueen kenttää ei ole olemassa.
+.
 
 MessageId=1617
 Severity=Success
@@ -16525,6 +18995,9 @@ The device has been removed.
 .
 Language=Japanese
 デバイスが削除されました。
+.
+Language=Finnish
+Laite on poistettu.
 .
 
 MessageId=1618
@@ -16546,6 +19019,9 @@ Another installation is already in progress. Complete that installation before p
 Language=Japanese
 別のインストールがすでに進行中です。このインストールを続行する前に、そのインストールを完了してください。
 .
+Language=Finnish
+Toinen asennus on jo käynnissä. Suorita se loppuun ennen tämän asennuksen jatkamista.
+.
 
 MessageId=1619
 Severity=Success
@@ -16565,6 +19041,9 @@ This installation package could not be opened. Verify that the package exists an
 .
 Language=Japanese
 このインストール パッケージを開けませんでした。パッケージが存在し、アクセスできることを確認するか、アプリケーション ベンダーに問い合わせて、このパッケージが有効な ReactOS Installer パッケージであることを確認してください。
+.
+Language=Finnish
+Tätä asennuspakettia ei voitu avata. Varmista, että paketti on olemassa ja että voit käyttää sitä, tai varmista sovelluksen toimittajalta, että tämä on kelvollinen Windows Installer -paketti.
 .
 
 MessageId=1620
@@ -16586,6 +19065,9 @@ This installation package could not be opened. Contact the application vendor to
 Language=Japanese
 このインストール パッケージを開けませんでした。アプリケーション ベンダーに連絡して、これが有効な ReactOS Installer パッケージであることを確認してください。
 .
+Language=Finnish
+Tätä asennuspakettia ei voitu avata. Varmista sovelluksen toimittajalta, että tämä on kelvollinen Windows Installer -paketti.
+.
 
 MessageId=1621
 Severity=Success
@@ -16605,6 +19087,9 @@ There was an error starting the ReactOS Installer service user interface. Contac
 .
 Language=Japanese
 ReactOS Installerサービスのユーザーインターフェイスの起動にエラーが発生しました。サポート担当者にお問い合わせください。
+.
+Language=Finnish
+ReactOS-asennusohjelmapalvelun käyttöliittymää käynnistettäessä tapahtui virhe. Ota yhteyttä tukihenkilöön.
 .
 
 MessageId=1622
@@ -16626,6 +19111,9 @@ Error opening installation log file. Verify that the specified log file location
 Language=Japanese
 インストール ログ ファイルを開くときにエラーが発生しました。指定されたログファイルの場所が存在し、書き込めることを確認してください。
 .
+Language=Finnish
+Virhe avattaessa asennuksen lokitiedostoa. Varmista, että määritetty lokitiedoston sijainti on olemassa ja että voit kirjoittaa siihen.
+.
 
 MessageId=1623
 Severity=Success
@@ -16645,6 +19133,9 @@ The language of this installation package is not supported by your system.
 .
 Language=Japanese
 このインストール パッケージの言語は、システムでサポートされていません。
+.
+Language=Finnish
+Järjestelmä ei tue tämän asennuspaketin kieltä.
 .
 
 MessageId=1624
@@ -16666,6 +19157,9 @@ Error applying transforms. Verify that the specified transform paths are valid.
 Language=Japanese
 トランスフォームの適用でエラーが発生しました。指定された変換パスが有効であることを確認してください。
 .
+Language=Finnish
+Virhe muunnosten käyttöönotossa. Varmista, että määritetyt muunnospolut ovat kelvollisia.
+.
 
 MessageId=1625
 Severity=Success
@@ -16685,6 +19179,9 @@ This installation is forbidden by system policy. Contact your system administrat
 .
 Language=Japanese
 このインストールはシステム ポリシーで禁止されています。システム管理者にお問い合わせください。
+.
+Language=Finnish
+Järjestelmäkäytäntö kieltää tämän asennuksen. Ota yhteyttä järjestelmänvalvojaan.
 .
 
 MessageId=1626
@@ -16706,6 +19203,9 @@ Function could not be executed.
 Language=Japanese
 関数を実行できませんでした。
 .
+Language=Finnish
+Funktiota ei voitu suorittaa.
+.
 
 MessageId=1627
 Severity=Success
@@ -16725,6 +19225,9 @@ Function failed during execution.
 .
 Language=Japanese
 関数の実行に失敗しました。
+.
+Language=Finnish
+Funktio epäonnistui suorituksen aikana.
 .
 
 MessageId=1628
@@ -16746,6 +19249,9 @@ Invalid or unknown table specified.
 Language=Japanese
 指定されたテーブルが無効または不明です。
 .
+Language=Finnish
+Määritettiin virheellinen tai tuntematon taulukko.
+.
 
 MessageId=1629
 Severity=Success
@@ -16765,6 +19271,9 @@ Data supplied is of wrong type.
 .
 Language=Japanese
 指定されたデータの型が間違っています。
+.
+Language=Finnish
+Annetut tiedot ovat väärää tyyppiä.
 .
 
 MessageId=1630
@@ -16786,6 +19295,9 @@ Data of this type is not supported.
 Language=Japanese
 この型のデータはサポートされていません。
 .
+Language=Finnish
+Tämän tyyppisiä tietoja ei tueta.
+.
 
 MessageId=1631
 Severity=Success
@@ -16805,6 +19317,9 @@ The ReactOS Installer service failed to start. Contact your support personnel.
 .
 Language=Japanese
 ReactOS Installer サービスの起動に失敗しました。サポート担当者にお問い合わせください。
+.
+Language=Finnish
+ReactOS-asennusohjelmapalvelu ei käynnistynyt. Ota yhteyttä tukihenkilöön.
 .
 
 MessageId=1632
@@ -16826,6 +19341,9 @@ The Temp folder is on a drive that is full or inaccessible. Free up space on the
 Language=Japanese
 Temp フォルダがドライブにあるか、アクセスできません。ドライブの空き容量を確保するか、Tempフォルダの書き込み権限があることを確認してください。
 .
+Language=Finnish
+Temp-kansio on asemassa, joka on täynnä tai jota ei voi käyttää. Vapauta asemasta tilaa tai varmista, että sinulla on Temp-kansion kirjoitusoikeus.
+.
 
 MessageId=1633
 Severity=Success
@@ -16845,6 +19363,9 @@ This installation package is not supported by this processor type. Contact your 
 .
 Language=Japanese
 このインストールパッケージは、このプロセッサタイプではサポートされていません。製品ベンダーにお問い合わせください。
+.
+Language=Finnish
+Tämä suoritintyyppi ei tue tätä asennuspakettia. Ota yhteyttä tuotteen toimittajaan.
 .
 
 MessageId=1634
@@ -16866,6 +19387,9 @@ Component not used on this computer.
 Language=Japanese
 このコンピュータではコンポーネントが使用されていません。
 .
+Language=Finnish
+Osaa ei käytetä tässä tietokoneessa.
+.
 
 MessageId=1635
 Severity=Success
@@ -16885,6 +19409,9 @@ This patch package could not be opened. Verify that the patch package exists and
 .
 Language=Japanese
 この更新パッケージを開けませんでした。更新パッケージが存在し、アクセスできることを確認するか、アプリケーション ベンダーに連絡して、この更新パッケージが有効な ReactOS Installer 更新パッケージであることを確認してください。
+.
+Language=Finnish
+Tätä korjauspakettia ei voitu avata. Varmista, että korjauspaketti on olemassa ja että voit käyttää sitä, tai varmista sovelluksen toimittajalta, että tämä on kelvollinen Windows Installer -korjauspaketti.
 .
 
 MessageId=1636
@@ -16906,6 +19433,9 @@ This patch package could not be opened. Contact the application vendor to verify
 Language=Japanese
 この更新パッケージを開けませんでした。アプリケーション ベンダーに連絡して、これが有効な ReactOS Installer 更新パッケージであることを確認してください。
 .
+Language=Finnish
+Tätä korjauspakettia ei voitu avata. Varmista sovelluksen toimittajalta, että tämä on kelvollinen Windows Installer -korjauspaketti.
+.
 
 MessageId=1637
 Severity=Success
@@ -16925,6 +19455,9 @@ This patch package cannot be processed by the ReactOS Installer service. You mus
 .
 Language=Japanese
 この更新パッケージは ReactOS Installer サービスで処理できません。新しいバージョンの ReactOS Installer サービスが含まれている LiberNT サービス パックをインストールする必要があります。
+.
+Language=Finnish
+ReactOS-asennusohjelmapalvelu ei voi käsitellä tätä korjauspakettia. Asenna LiberNT:n Service Pack, joka sisältää ReactOS-asennusohjelmapalvelun uudemman version.
 .
 
 MessageId=1638
@@ -16946,6 +19479,9 @@ Another version of this product is already installed. Installation of this versi
 Language=Japanese
 この製品の別のバージョンがすでにインストールされています。このバージョンのインストールを続行できません。この製品の既存のバージョンを設定または削除するには、コントロールパネルの[プログラムの追加と削除]を使用します。
 .
+Language=Finnish
+Tämän tuotteen toinen versio on jo asennettu. Tämän version asennusta ei voi jatkaa. Voit määrittää tai poistaa tuotteen nykyisen version Ohjauspaneelin Lisää tai poista sovellus -kohdassa.
+.
 
 MessageId=1639
 Severity=Success
@@ -16965,6 +19501,9 @@ Invalid command line argument. Consult the Windows Installer SDK for detailed co
 .
 Language=Japanese
 コマンド ライン引数が無効です。コマンド ライン ヘルプの詳細については、ReactOS Installer SDK を参照してください。
+.
+Language=Finnish
+Virheellinen komentorivin argumentti. Yksityiskohtainen komentorivin ohje on Windows Installer SDK:ssa.
 .
 
 MessageId=1640
@@ -16986,6 +19525,9 @@ Only administrators have permission to add, remove, or configure server software
 Language=Japanese
 管理者だけがターミナルサービスのリモートセッション中にサーバーソフトウェアを追加、削除、または構成する権限を持っています。サーバーにソフトウェアをインストールまたは設定する場合は、ネットワーク管理者に連絡してください。
 .
+Language=Finnish
+Vain järjestelmänvalvojilla on oikeus lisätä, poistaa tai määrittää palvelinohjelmistoja Terminal Services -etäistunnon aikana. Jos haluat asentaa tai määrittää ohjelmistoja palvelimelle, ota yhteyttä verkon järjestelmänvalvojaan.
+.
 
 MessageId=1641
 Severity=Success
@@ -17005,6 +19547,9 @@ The requested operation completed successfully. The system will be restarted so 
 .
 Language=Japanese
 要求された操作は正常に完了しました。変更を有効にするためにシステムが再起動されます。
+.
+Language=Finnish
+Pyydetty toiminto onnistui. Järjestelmä käynnistetään uudelleen, jotta muutokset tulevat voimaan.
 .
 
 MessageId=1642
@@ -17026,6 +19571,9 @@ The upgrade patch cannot be installed by the ReactOS Installer service because t
 Language=Japanese
 アップグレード対象のプログラムが存在しないか、アップグレードによって異なるバージョンのプログラムが更新される可能性があるため、ReactOS Installerサービスによってアップグレードをインストールできません。アップグレードするプログラムがコンピュータに存在すること、および正しいアップグレードがあることを確認してください。
 .
+Language=Finnish
+ReactOS-asennusohjelmapalvelu ei voi asentaa päivityskorjausta, koska päivitettävä ohjelma ehkä puuttuu tai korjaus päivittää ohjelman eri version. Varmista, että päivitettävä ohjelma on tietokoneessa ja että sinulla on oikea päivityskorjaus.
+.
 
 MessageId=1643
 Severity=Success
@@ -17045,6 +19593,9 @@ The patch package is not permitted by software restriction policy.
 .
 Language=Japanese
 アップデート パッケージは、ソフトウェア制限ポリシーで許可されていません。
+.
+Language=Finnish
+Ohjelmistorajoituskäytäntö ei salli korjauspakettia.
 .
 
 MessageId=1644
@@ -17066,6 +19617,9 @@ One or more customizations are not permitted by software restriction policy.
 Language=Japanese
 1つまたは複数のカスタマイズがソフトウェア制限ポリシーで許可されていません。
 .
+Language=Finnish
+Ohjelmistorajoituskäytäntö ei salli yhtä tai useampaa mukautusta.
+.
 
 MessageId=1645
 Severity=Success
@@ -17085,6 +19639,9 @@ The ReactOS Installer does not permit installation from a Remote Desktop Connect
 .
 Language=Japanese
 LiberNT インストーラは、リモート デスクトップ接続からのインストールを許可しません。
+.
+Language=Finnish
+ReactOS-asennusohjelma ei salli asennusta etätyöpöytäyhteyden kautta.
 .
 
 MessageId=1654
@@ -17106,6 +19663,9 @@ The app that you are trying to run is not supported on this version of Windows.
 Language=Japanese
 The app that you are trying to run is not supported on this version of Windows.
 .
+Language=Finnish
+Sovellusta, jota yrität suorittaa, ei tueta tässä Windowsin versiossa.
+.
 
 MessageId=1700
 Severity=Success
@@ -17125,6 +19685,9 @@ The string binding is invalid.
 .
 Language=Japanese
 文字列バインディングが無効です。
+.
+Language=Finnish
+Merkkijonosidos on virheellinen.
 .
 
 MessageId=1701
@@ -17146,6 +19709,9 @@ The binding handle is not the correct type.
 Language=Japanese
 バインディング ハンドルの型が正しくありません。
 .
+Language=Finnish
+Sidoskahva ei ole oikeaa tyyppiä.
+.
 
 MessageId=1702
 Severity=Success
@@ -17165,6 +19731,9 @@ The binding handle is invalid.
 .
 Language=Japanese
 バインディング ハンドルが無効です。
+.
+Language=Finnish
+Sidoskahva on virheellinen.
 .
 
 MessageId=1703
@@ -17186,6 +19755,9 @@ The RPC protocol sequence is not supported.
 Language=Japanese
 RPCプロトコル シーケンスがサポートされていません。
 .
+Language=Finnish
+RPC-protokollajaksoa ei tueta.
+.
 
 MessageId=1704
 Severity=Success
@@ -17205,6 +19777,9 @@ The RPC protocol sequence is invalid.
 .
 Language=Japanese
 RPCプロトコルシーケンスが無効です。
+.
+Language=Finnish
+RPC-protokollajakso on virheellinen.
 .
 
 MessageId=1705
@@ -17226,6 +19801,9 @@ The string universal unique identifier (UUID) is invalid.
 Language=Japanese
 汎用一意識別子 (UUID)  文字列が無効です。
 .
+Language=Finnish
+Merkkijonon yleinen yksilöllinen tunniste (UUID) on virheellinen.
+.
 
 MessageId=1706
 Severity=Success
@@ -17245,6 +19823,9 @@ The endpoint format is invalid.
 .
 Language=Japanese
 エンドポイントの形式が無効です。
+.
+Language=Finnish
+Päätepisteen muoto on virheellinen.
 .
 
 MessageId=1707
@@ -17266,6 +19847,9 @@ The network address is invalid.
 Language=Japanese
 ネットワークアドレスが無効です。
 .
+Language=Finnish
+Verkko-osoite on virheellinen.
+.
 
 MessageId=1708
 Severity=Success
@@ -17285,6 +19869,9 @@ No endpoint was found.
 .
 Language=Japanese
 エンドポイントが見つかりません。
+.
+Language=Finnish
+Päätepistettä ei löytynyt.
 .
 
 MessageId=1709
@@ -17306,6 +19893,9 @@ The timeout value is invalid.
 Language=Japanese
 タイムアウト値が無効です。
 .
+Language=Finnish
+Aikakatkaisun arvo on virheellinen.
+.
 
 MessageId=1710
 Severity=Success
@@ -17325,6 +19915,9 @@ The object universal unique identifier (UUID) was not found.
 .
 Language=Japanese
 オブジェクトの汎用一意識別子 (UUID) が見つかりませんでした。
+.
+Language=Finnish
+Objektin yleistä yksilöllistä tunnistetta (UUID) ei löytynyt.
 .
 
 MessageId=1711
@@ -17346,6 +19939,9 @@ The object universal unique identifier (UUID) has already been registered.
 Language=Japanese
 オブジェクト汎用一意識別子 (UUID) は既に登録されています。
 .
+Language=Finnish
+Objektin yleinen yksilöllinen tunniste (UUID) on jo rekisteröity.
+.
 
 MessageId=1712
 Severity=Success
@@ -17365,6 +19961,9 @@ The type universal unique identifier (UUID) has already been registered.
 .
 Language=Japanese
 型の汎用一意識別子 (UUID) はすでに登録されています。
+.
+Language=Finnish
+Tyypin yleinen yksilöllinen tunniste (UUID) on jo rekisteröity.
 .
 
 MessageId=1713
@@ -17386,6 +19985,9 @@ The RPC server is already listening.
 Language=Japanese
 RPCサーバーはすでにリッスン中です。
 .
+Language=Finnish
+RPC-palvelin kuuntelee jo.
+.
 
 MessageId=1714
 Severity=Success
@@ -17405,6 +20007,9 @@ No protocol sequences have been registered.
 .
 Language=Japanese
 プロトコルシーケンスが登録されていません。
+.
+Language=Finnish
+Protokollajaksoja ei ole rekisteröity.
 .
 
 MessageId=1715
@@ -17426,6 +20031,9 @@ The RPC server is not listening.
 Language=Japanese
 RPCサーバーはリッスンしていません。
 .
+Language=Finnish
+RPC-palvelin ei kuuntele.
+.
 
 MessageId=1716
 Severity=Success
@@ -17445,6 +20053,9 @@ The manager type is unknown.
 .
 Language=Japanese
 マネージャタイプが不明です。
+.
+Language=Finnish
+Hallintatyyppi on tuntematon.
 .
 
 MessageId=1717
@@ -17466,6 +20077,9 @@ The interface is unknown.
 Language=Japanese
 インターフェースが不明です。
 .
+Language=Finnish
+Liittymä on tuntematon.
+.
 
 MessageId=1718
 Severity=Success
@@ -17485,6 +20099,9 @@ There are no bindings.
 .
 Language=Japanese
 バインディングがありません。
+.
+Language=Finnish
+Sidoksia ei ole.
 .
 
 MessageId=1719
@@ -17506,6 +20123,9 @@ There are no protocol sequences.
 Language=Japanese
 プロトコルシーケンスがありません。
 .
+Language=Finnish
+Protokollajaksoja ei ole.
+.
 
 MessageId=1720
 Severity=Success
@@ -17525,6 +20145,9 @@ The endpoint cannot be created.
 .
 Language=Japanese
 エンドポイントを作成できません。
+.
+Language=Finnish
+Päätepistettä ei voi luoda.
 .
 
 MessageId=1721
@@ -17546,6 +20169,9 @@ Not enough resources are available to complete this operation.
 Language=Japanese
 この操作を完了するのに十分なリソースがありません。
 .
+Language=Finnish
+Resurssit eivät riitä tämän toiminnon suorittamiseen.
+.
 
 MessageId=1722
 Severity=Success
@@ -17565,6 +20191,9 @@ The RPC server is unavailable.
 .
 Language=Japanese
 RPC サーバーが使用できません。
+.
+Language=Finnish
+RPC-palvelin ei ole käytettävissä.
 .
 
 MessageId=1723
@@ -17586,6 +20215,9 @@ The RPC server is too busy to complete this operation.
 Language=Japanese
 RPC サーバーがビジー状態でこの操作を完了できません。
 .
+Language=Finnish
+RPC-palvelin on liian kiireinen tämän toiminnon suorittamiseen.
+.
 
 MessageId=1724
 Severity=Success
@@ -17605,6 +20237,9 @@ The network options are invalid.
 .
 Language=Japanese
 ネットワーク オプションが無効です。
+.
+Language=Finnish
+Verkkoasetukset ovat virheellisiä.
 .
 
 MessageId=1725
@@ -17626,6 +20261,9 @@ There are no remote procedure calls active on this thread.
 Language=Japanese
 このスレッドでアクティブなリモート プロシージャ コールはありません。
 .
+Language=Finnish
+Tässä säikeessä ei ole aktiivisia etäproseduurikutsuja.
+.
 
 MessageId=1726
 Severity=Success
@@ -17645,6 +20283,9 @@ The remote procedure call failed.
 .
 Language=Japanese
 リモート プロシージャ呼び出しに失敗しました。
+.
+Language=Finnish
+Etäproseduurikutsu epäonnistui.
 .
 
 MessageId=1727
@@ -17666,6 +20307,9 @@ The remote procedure call failed and did not execute.
 Language=Japanese
 リモート プロシージャ呼び出しに失敗しました。
 .
+Language=Finnish
+Etäproseduurikutsu epäonnistui eikä suorittunut.
+.
 
 MessageId=1728
 Severity=Success
@@ -17685,6 +20329,9 @@ A remote procedure call (RPC) protocol error occurred.
 .
 Language=Japanese
 リモート プロシージャ コール (RPC)  プロトコル エラーが発生しました。
+.
+Language=Finnish
+Tapahtui etäproseduurikutsun (RPC) protokollavirhe.
 .
 
 MessageId=1730
@@ -17706,6 +20353,9 @@ The transfer syntax is not supported by the RPC server.
 Language=Japanese
 転送構文は RPC サーバーによってサポートされていません。
 .
+Language=Finnish
+RPC-palvelin ei tue siirtosyntaksia.
+.
 
 MessageId=1732
 Severity=Success
@@ -17725,6 +20375,9 @@ The universal unique identifier (UUID) type is not supported.
 .
 Language=Japanese
 ユニバーサル一意識別子 (UUID) タイプはサポートされていません。
+.
+Language=Finnish
+Yleisen yksilöllisen tunnisteen (UUID) tyyppiä ei tueta.
 .
 
 MessageId=1733
@@ -17746,6 +20399,9 @@ The tag is invalid.
 Language=Japanese
 タグが無効です。
 .
+Language=Finnish
+Tunniste on virheellinen.
+.
 
 MessageId=1734
 Severity=Success
@@ -17765,6 +20421,9 @@ The array bounds are invalid.
 .
 Language=Japanese
 配列の境界が無効です。
+.
+Language=Finnish
+Taulukon rajat ovat virheelliset.
 .
 
 MessageId=1735
@@ -17786,6 +20445,9 @@ The binding does not contain an entry name.
 Language=Japanese
 バインディングにエントリ名がありません。
 .
+Language=Finnish
+Sidoksessa ei ole merkinnän nimeä.
+.
 
 MessageId=1736
 Severity=Success
@@ -17805,6 +20467,9 @@ The name syntax is invalid.
 .
 Language=Japanese
 名前の構文が無効です。
+.
+Language=Finnish
+Nimen syntaksi on virheellinen.
 .
 
 MessageId=1737
@@ -17826,6 +20491,9 @@ The name syntax is not supported.
 Language=Japanese
 名前の構文はサポートされていません。
 .
+Language=Finnish
+Nimen syntaksia ei tueta.
+.
 
 MessageId=1739
 Severity=Success
@@ -17845,6 +20513,9 @@ No network address is available to use to construct a universal unique identifie
 .
 Language=Japanese
 汎用一意識別子 (UUID) を構築するために使用できるネットワーク アドレスがありません。
+.
+Language=Finnish
+Yleisen yksilöllisen tunnisteen (UUID) muodostamiseen ei ole käytettävissä verkko-osoitetta.
 .
 
 MessageId=1740
@@ -17866,6 +20537,9 @@ The endpoint is a duplicate.
 Language=Japanese
 エンドポイントが重複しています。
 .
+Language=Finnish
+Päätepiste on kaksoiskappale.
+.
 
 MessageId=1741
 Severity=Success
@@ -17885,6 +20559,9 @@ The authentication type is unknown.
 .
 Language=Japanese
 認証タイプが不明です。
+.
+Language=Finnish
+Todennustyyppi on tuntematon.
 .
 
 MessageId=1742
@@ -17906,6 +20583,9 @@ The maximum number of calls is too small.
 Language=Japanese
 最大コール数が少なすぎます。
 .
+Language=Finnish
+Kutsujen enimmäismäärä on liian pieni.
+.
 
 MessageId=1743
 Severity=Success
@@ -17925,6 +20605,9 @@ The string is too long.
 .
 Language=Japanese
 文字列が長すぎます。
+.
+Language=Finnish
+Merkkijono on liian pitkä.
 .
 
 MessageId=1744
@@ -17946,6 +20629,9 @@ The RPC protocol sequence was not found.
 Language=Japanese
 RPC プロトコル シーケンスが見つかりません。
 .
+Language=Finnish
+RPC-protokollajaksoa ei löytynyt.
+.
 
 MessageId=1745
 Severity=Success
@@ -17965,6 +20651,9 @@ The procedure number is out of range.
 .
 Language=Japanese
 プロシージャ番号が範囲外です。
+.
+Language=Finnish
+Proseduurin numero on alueen ulkopuolella.
 .
 
 MessageId=1746
@@ -17986,6 +20675,9 @@ The binding does not contain any authentication information.
 Language=Japanese
 バインディングに認証情報が含まれていません。
 .
+Language=Finnish
+Sidoksessa ei ole todennustietoja.
+.
 
 MessageId=1747
 Severity=Success
@@ -18005,6 +20697,9 @@ The authentication service is unknown.
 .
 Language=Japanese
 認証サービスが不明です。
+.
+Language=Finnish
+Todennuspalvelu on tuntematon.
 .
 
 MessageId=1748
@@ -18026,6 +20721,9 @@ The authentication level is unknown.
 Language=Japanese
 認証レベルが不明です。
 .
+Language=Finnish
+Todennustaso on tuntematon.
+.
 
 MessageId=1749
 Severity=Success
@@ -18045,6 +20743,9 @@ The security context is invalid.
 .
 Language=Japanese
 セキュリティコンテキストが無効です。
+.
+Language=Finnish
+Suojauskonteksti on virheellinen.
 .
 
 MessageId=1750
@@ -18066,6 +20767,9 @@ The authorization service is unknown.
 Language=Japanese
 認証サービスが不明です。
 .
+Language=Finnish
+Valtuutuspalvelu on tuntematon.
+.
 
 MessageId=1751
 Severity=Success
@@ -18085,6 +20789,9 @@ The entry is invalid.
 .
 Language=Japanese
 エントリが無効です。
+.
+Language=Finnish
+Merkintä on virheellinen.
 .
 
 MessageId=1752
@@ -18106,6 +20813,9 @@ The server endpoint cannot perform the operation.
 Language=Japanese
 サーバーエンドポイントは操作を実行できません。
 .
+Language=Finnish
+Palvelimen päätepiste ei voi suorittaa toimintoa.
+.
 
 MessageId=1753
 Severity=Success
@@ -18125,6 +20835,9 @@ There are no more endpoints available from the endpoint mapper.
 .
 Language=Japanese
 エンドポイントマッパーから利用可能なエンドポイントはありません。
+.
+Language=Finnish
+Päätepisteiden yhdistäjällä ei ole enää käytettävissä päätepisteitä.
 .
 
 MessageId=1754
@@ -18146,6 +20859,9 @@ No interfaces have been exported.
 Language=Japanese
 インターフェイスがエクスポートされていません。
 .
+Language=Finnish
+Yhtään liittymää ei ole viety.
+.
 
 MessageId=1755
 Severity=Success
@@ -18165,6 +20881,9 @@ The entry name is incomplete.
 .
 Language=Japanese
 エントリ名が不完全です。
+.
+Language=Finnish
+Merkinnän nimi on puutteellinen.
 .
 
 MessageId=1756
@@ -18186,6 +20905,9 @@ The version option is invalid.
 Language=Japanese
 バージョン オプションが無効です。
 .
+Language=Finnish
+Versiovalinta on virheellinen.
+.
 
 MessageId=1757
 Severity=Success
@@ -18205,6 +20927,9 @@ There are no more members.
 .
 Language=Japanese
 メンバがありません。
+.
+Language=Finnish
+Jäseniä ei ole enempää.
 .
 
 MessageId=1758
@@ -18226,6 +20951,9 @@ There is nothing to unexport.
 Language=Japanese
 エクスポートするものがありません。
 .
+Language=Finnish
+Ei ole mitään, minkä viennin voisi perua.
+.
 
 MessageId=1759
 Severity=Success
@@ -18245,6 +20973,9 @@ The interface was not found.
 .
 Language=Japanese
 インターフェイスが見つかりませんでした。
+.
+Language=Finnish
+Liittymää ei löytynyt.
 .
 
 MessageId=1760
@@ -18266,6 +20997,9 @@ The entry already exists.
 Language=Japanese
 エントリはすでに存在します。
 .
+Language=Finnish
+Merkintä on jo olemassa.
+.
 
 MessageId=1761
 Severity=Success
@@ -18285,6 +21019,9 @@ The entry is not found.
 .
 Language=Japanese
 エントリが見つかりません。
+.
+Language=Finnish
+Merkintää ei löydy.
 .
 
 MessageId=1762
@@ -18306,6 +21043,9 @@ The name service is unavailable.
 Language=Japanese
 ネーム サービスは使用できません。
 .
+Language=Finnish
+Nimipalvelu ei ole käytettävissä.
+.
 
 MessageId=1763
 Severity=Success
@@ -18325,6 +21065,9 @@ The network address family is invalid.
 .
 Language=Japanese
 ネットワーク アドレス ファミリが無効です。
+.
+Language=Finnish
+Verkko-osoiteperhe on virheellinen.
 .
 
 MessageId=1764
@@ -18346,6 +21089,9 @@ The requested operation is not supported.
 Language=Japanese
 要求された操作はサポートされていません。
 .
+Language=Finnish
+Pyydettyä toimintoa ei tueta.
+.
 
 MessageId=1765
 Severity=Success
@@ -18365,6 +21111,9 @@ No security context is available to allow impersonation.
 .
 Language=Japanese
 なりすましを許可するセキュリティ コンテキストがありません。
+.
+Language=Finnish
+Asiakkaana esiintymisen sallivaa suojauskontekstia ei ole käytettävissä.
 .
 
 MessageId=1766
@@ -18386,6 +21135,9 @@ An internal error occurred in a remote procedure call (RPC).
 Language=Japanese
 リモートプロシージャコール (RPC) で内部エラーが発生しました。
 .
+Language=Finnish
+Etäproseduurikutsussa (RPC) tapahtui sisäinen virhe.
+.
 
 MessageId=1767
 Severity=Success
@@ -18405,6 +21157,9 @@ The RPC server attempted an integer division by zero.
 .
 Language=Japanese
 RPC サーバーがゼロによる整数除算を試みました。
+.
+Language=Finnish
+RPC-palvelin yritti jakaa kokonaisluvun nollalla.
 .
 
 MessageId=1768
@@ -18426,6 +21181,9 @@ An addressing error occurred in the RPC server.
 Language=Japanese
 RPC サーバーでアドレス指定エラーが発生しました。
 .
+Language=Finnish
+RPC-palvelimessa tapahtui osoitusvirhe.
+.
 
 MessageId=1769
 Severity=Success
@@ -18445,6 +21203,9 @@ A floating-point operation at the RPC server caused a division by zero.
 .
 Language=Japanese
 RPC サーバーで浮動小数点演算によりゼロによる除算が発生しました。
+.
+Language=Finnish
+Liukulukutoiminto RPC-palvelimessa aiheutti jaon nollalla.
 .
 
 MessageId=1770
@@ -18466,6 +21227,9 @@ A floating-point underflow occurred at the RPC server.
 Language=Japanese
 RPCサーバーで浮動小数点アンダーフローが発生しました。
 .
+Language=Finnish
+RPC-palvelimessa tapahtui liukuluvun alivuoto.
+.
 
 MessageId=1771
 Severity=Success
@@ -18485,6 +21249,9 @@ A floating-point overflow occurred at the RPC server.
 .
 Language=Japanese
 RPCサーバーで浮動小数点のオーバーフローが発生しました。
+.
+Language=Finnish
+RPC-palvelimessa tapahtui liukuluvun ylivuoto.
 .
 
 MessageId=1772
@@ -18506,6 +21273,9 @@ The list of RPC servers available for the binding of auto handles has been exhau
 Language=Japanese
 オートハンドルのバインディングに使用できるRPCサーバーのリストを使い果たしました。
 .
+Language=Finnish
+Automaattisten kahvojen sidokseen käytettävissä olevien RPC-palvelinten luettelo on käytetty loppuun.
+.
 
 MessageId=1773
 Severity=Success
@@ -18525,6 +21295,9 @@ Unable to open the character translation table file.
 .
 Language=Japanese
 文字変換テーブル ファイルを開くことができません。
+.
+Language=Finnish
+Merkkien muunnostaulukkotiedostoa ei voi avata.
 .
 
 MessageId=1774
@@ -18546,6 +21319,9 @@ The file containing the character translation table has fewer than 512 bytes.
 Language=Japanese
 文字変換テーブルを含むファイルのバイト数が 512 バイト未満です。
 .
+Language=Finnish
+Merkkien muunnostaulukon sisältävässä tiedostossa on alle 512 tavua.
+.
 
 MessageId=1775
 Severity=Success
@@ -18565,6 +21341,9 @@ A null context handle was passed from the client to the host during a remote pro
 .
 Language=Japanese
 リモート プロシージャ呼び出し中にクライアントからホストに NULL コンテキスト ハンドルが渡されました。
+.
+Language=Finnish
+Etäproseduurikutsun aikana asiakas välitti isännälle tyhjän kontekstikahvan.
 .
 
 MessageId=1777
@@ -18586,6 +21365,9 @@ The context handle changed during a remote procedure call.
 Language=Japanese
 リモート プロシージャ呼び出し中にコンテキスト ハンドルが変更されました。
 .
+Language=Finnish
+Kontekstikahva muuttui etäproseduurikutsun aikana.
+.
 
 MessageId=1778
 Severity=Success
@@ -18605,6 +21387,9 @@ The binding handles passed to a remote procedure call do not match.
 .
 Language=Japanese
 リモート プロシージャ呼び出しに渡されたバインディング ハンドルが一致しません。
+.
+Language=Finnish
+Etäproseduurikutsulle välitetyt sidoskahvat eivät vastaa toisiaan.
 .
 
 MessageId=1779
@@ -18626,6 +21411,9 @@ The stub is unable to get the remote procedure call handle.
 Language=Japanese
 スタブがリモート プロシージャ コール ハンドルを取得できません。
 .
+Language=Finnish
+Tynkä ei saa etäproseduurikutsun kahvaa.
+.
 
 MessageId=1780
 Severity=Success
@@ -18645,6 +21433,9 @@ A null reference pointer was passed to the stub.
 .
 Language=Japanese
 NULL 参照ポインタがスタブに渡されました。
+.
+Language=Finnish
+Tyngälle välitettiin tyhjä viiteosoitin.
 .
 
 MessageId=1781
@@ -18666,6 +21457,9 @@ The enumeration value is out of range.
 Language=Japanese
 列挙値が範囲外です。
 .
+Language=Finnish
+Luetteloinnin arvo on alueen ulkopuolella.
+.
 
 MessageId=1782
 Severity=Success
@@ -18685,6 +21479,9 @@ The byte count is too small.
 .
 Language=Japanese
 バイト数が少なすぎます。
+.
+Language=Finnish
+Tavumäärä on liian pieni.
 .
 
 MessageId=1783
@@ -18706,6 +21503,9 @@ The stub received bad data.
 Language=Japanese
 スタブが不正なデータを受信しました。
 .
+Language=Finnish
+Tynkä vastaanotti virheellisiä tietoja.
+.
 
 MessageId=1784
 Severity=Success
@@ -18725,6 +21525,9 @@ The supplied user buffer is not valid for the requested operation.
 .
 Language=Japanese
 指定されたユーザー バッファは要求された操作に対して有効ではありません。
+.
+Language=Finnish
+Annettu käyttäjäpuskuri ei ole kelvollinen pyydetylle toiminnolle.
 .
 
 MessageId=1785
@@ -18746,6 +21549,9 @@ The disk media is not recognized. It may not be formatted.
 Language=Japanese
 ディスク メディアが認識されません。フォーマットされていない可能性があります。
 .
+Language=Finnish
+Levyn tietovälinettä ei tunnisteta. Sitä ei ehkä ole alustettu.
+.
 
 MessageId=1786
 Severity=Success
@@ -18765,6 +21571,9 @@ The workstation does not have a trust secret.
 .
 Language=Japanese
 ワークステーションにトラストシークレットがありません。
+.
+Language=Finnish
+Työasemalla ei ole luottamussalaisuutta.
 .
 
 MessageId=1787
@@ -18786,6 +21595,9 @@ The security database on the server does not have a computer account for this wo
 Language=Japanese
 サーバーのセキュリティ データベースに、このワークステーションの信頼関係のコンピュータ アカウントがありません。
 .
+Language=Finnish
+Palvelimen suojaustietokannassa ei ole tietokonetiliä tämän työaseman luottamussuhteelle.
+.
 
 MessageId=1788
 Severity=Success
@@ -18805,6 +21617,9 @@ The trust relationship between the primary domain and the trusted domain failed.
 .
 Language=Japanese
 プライマリ ドメインと信頼されたドメイン間の信頼関係に失敗しました。
+.
+Language=Finnish
+Ensisijaisen toimialueen ja luotetun toimialueen välinen luottamussuhde epäonnistui.
 .
 
 MessageId=1789
@@ -18826,6 +21641,9 @@ The trust relationship between this workstation and the primary domain failed.
 Language=Japanese
 このワークステーションとプライマリドメインの信頼関係に失敗しました。
 .
+Language=Finnish
+Tämän työaseman ja ensisijaisen toimialueen välinen luottamussuhde epäonnistui.
+.
 
 MessageId=1790
 Severity=Success
@@ -18845,6 +21663,9 @@ The network logon failed.
 .
 Language=Japanese
 ネットワーク ログオンに失敗しました。
+.
+Language=Finnish
+Verkkokirjautuminen epäonnistui.
 .
 
 MessageId=1791
@@ -18866,6 +21687,9 @@ A remote procedure call is already in progress for this thread.
 Language=Japanese
 このスレッドでは、リモート プロシージャ呼び出しがすでに進行中です。
 .
+Language=Finnish
+Tällä säikeellä on jo etäproseduurikutsu käynnissä.
+.
 
 MessageId=1792
 Severity=Success
@@ -18885,6 +21709,9 @@ An attempt was made to logon, but the network logon service was not started.
 .
 Language=Japanese
 ログオンしようとしましたが、ネットワーク ログオン サービスが開始されていません。
+.
+Language=Finnish
+Kirjautumista yritettiin, mutta verkkokirjautumispalvelua ei ollut käynnistetty.
 .
 
 MessageId=1793
@@ -18906,6 +21733,9 @@ The user's account has expired.
 Language=Japanese
 ユーザーアカウントの有効期限が切れました。
 .
+Language=Finnish
+Käyttäjän tili on vanhentunut.
+.
 
 MessageId=1794
 Severity=Success
@@ -18925,6 +21755,9 @@ The redirector is in use and cannot be unloaded.
 .
 Language=Japanese
 リダイレクタが使用中で、アンロードできません。
+.
+Language=Finnish
+Uudelleenohjain on käytössä, eikä sitä voi poistaa muistista.
 .
 
 MessageId=1795
@@ -18946,6 +21779,9 @@ The specified printer driver is already installed.
 Language=Japanese
 指定されたプリンタ ドライバはすでにインストールされています。
 .
+Language=Finnish
+Määritetty tulostinajuri on jo asennettu.
+.
 
 MessageId=1796
 Severity=Success
@@ -18965,6 +21801,9 @@ The specified port is unknown.
 .
 Language=Japanese
 指定されたポートが不明です。
+.
+Language=Finnish
+Määritetty portti on tuntematon.
 .
 
 MessageId=1797
@@ -18986,6 +21825,9 @@ The printer driver is unknown.
 Language=Japanese
 プリンタドライバが不明です。
 .
+Language=Finnish
+Tulostinajuri on tuntematon.
+.
 
 MessageId=1798
 Severity=Success
@@ -19005,6 +21847,9 @@ The print processor is unknown.
 .
 Language=Japanese
 プリント プロセッサが不明です。
+.
+Language=Finnish
+Tulostusprosessori on tuntematon.
 .
 
 MessageId=1799
@@ -19026,6 +21871,9 @@ The specified separator file is invalid.
 Language=Japanese
 指定されたセパレータファイルが無効です。
 .
+Language=Finnish
+Määritetty erotinsivutiedosto on virheellinen.
+.
 
 MessageId=1800
 Severity=Success
@@ -19045,6 +21893,9 @@ The specified priority is invalid.
 .
 Language=Japanese
 指定された優先順位が無効です。
+.
+Language=Finnish
+Määritetty prioriteetti on virheellinen.
 .
 
 MessageId=1801
@@ -19066,6 +21917,9 @@ The printer name is invalid.
 Language=Japanese
 プリンタ名が無効です。
 .
+Language=Finnish
+Tulostimen nimi on virheellinen.
+.
 
 MessageId=1802
 Severity=Success
@@ -19085,6 +21939,9 @@ The printer already exists.
 .
 Language=Japanese
 プリンタは既に存在します。
+.
+Language=Finnish
+Tulostin on jo olemassa.
 .
 
 MessageId=1803
@@ -19106,6 +21963,9 @@ The printer command is invalid.
 Language=Japanese
 プリンタコマンドが無効です。
 .
+Language=Finnish
+Tulostinkomento on virheellinen.
+.
 
 MessageId=1804
 Severity=Success
@@ -19125,6 +21985,9 @@ The specified datatype is invalid.
 .
 Language=Japanese
 指定されたデータ型が無効です。
+.
+Language=Finnish
+Määritetty tietotyyppi on virheellinen.
 .
 
 MessageId=1805
@@ -19146,6 +22009,9 @@ The environment specified is invalid.
 Language=Japanese
 指定された環境が無効です。
 .
+Language=Finnish
+Määritetty ympäristö on virheellinen.
+.
 
 MessageId=1806
 Severity=Success
@@ -19165,6 +22031,9 @@ There are no more bindings.
 .
 Language=Japanese
 バインディングがありません。
+.
+Language=Finnish
+Sidoksia ei ole enempää.
 .
 
 MessageId=1807
@@ -19186,6 +22055,9 @@ The account used is an interdomain trust account. Use your global user account o
 Language=Japanese
 使用されたアカウントはドメイン間信頼アカウントです。このサーバーにアクセスするには、グローバルユーザーアカウントまたはローカルユーザーアカウントを使用してください。
 .
+Language=Finnish
+Käytetty tili on toimialueiden välinen luottamustili. Käytä tämän palvelimen käyttämiseen yleistä tai paikallista käyttäjätiliäsi.
+.
 
 MessageId=1808
 Severity=Success
@@ -19205,6 +22077,9 @@ The account used is a computer account. Use your global user account or local us
 .
 Language=Japanese
 使用されたアカウントはコンピュータアカウントです。このサーバにアクセスするには、グローバルユーザアカウントまたはローカルユーザアカウントを使用してください。
+.
+Language=Finnish
+Käytetty tili on tietokonetili. Käytä tämän palvelimen käyttämiseen yleistä tai paikallista käyttäjätiliäsi.
 .
 
 MessageId=1809
@@ -19226,6 +22101,9 @@ The account used is a server trust account. Use your global user account or loca
 Language=Japanese
 使用されたアカウントはサーバーの信頼アカウントです。このサーバーにアクセスするには、グローバルユーザーアカウントまたはローカルユーザーアカウントを使用してください。
 .
+Language=Finnish
+Käytetty tili on palvelimen luottamustili. Käytä tämän palvelimen käyttämiseen yleistä tai paikallista käyttäjätiliäsi.
+.
 
 MessageId=1810
 Severity=Success
@@ -19245,6 +22123,9 @@ The name or security ID (SID) of the domain specified is inconsistent with the t
 .
 Language=Japanese
 指定されたドメインの名前またはセキュリティ ID (SID)  が、そのドメインの信頼情報と一致しません。
+.
+Language=Finnish
+Määritetyn toimialueen nimi tai suojaustunnus (SID) on ristiriidassa toimialueen luottamustietojen kanssa.
 .
 
 MessageId=1811
@@ -19266,6 +22147,9 @@ The server is in use and cannot be unloaded.
 Language=Japanese
 サーバーが使用中で、アンロードできません。
 .
+Language=Finnish
+Palvelin on käytössä, eikä sitä voi poistaa muistista.
+.
 
 MessageId=1812
 Severity=Success
@@ -19285,6 +22169,9 @@ The specified image file did not contain a resource section.
 .
 Language=Japanese
 指定されたイメージ ファイルにリソース セクションが含まれていません。
+.
+Language=Finnish
+Määritetyssä näköistiedostossa ei ollut resurssiosaa.
 .
 
 MessageId=1813
@@ -19306,6 +22193,9 @@ The specified resource type cannot be found in the image file.
 Language=Japanese
 指定されたリソース タイプがイメージ ファイルに見つかりません。
 .
+Language=Finnish
+Määritettyä resurssityyppiä ei löydy näköistiedostosta.
+.
 
 MessageId=1814
 Severity=Success
@@ -19325,6 +22215,9 @@ The specified resource name cannot be found in the image file.
 .
 Language=Japanese
 指定されたリソース名がイメージファイルで見つかりません。
+.
+Language=Finnish
+Määritettyä resurssin nimeä ei löydy näköistiedostosta.
 .
 
 MessageId=1815
@@ -19346,6 +22239,9 @@ The specified resource language ID cannot be found in the image file.
 Language=Japanese
 指定されたリソース言語IDがイメージファイルに見つかりません。
 .
+Language=Finnish
+Määritettyä resurssin kielitunnusta ei löydy näköistiedostosta.
+.
 
 MessageId=1816
 Severity=Success
@@ -19365,6 +22261,9 @@ Not enough quota is available to process this command.
 .
 Language=Japanese
 このコマンドを処理するのに十分なクォータがありません。
+.
+Language=Finnish
+Kiintiö ei riitä tämän komennon käsittelyyn.
 .
 
 MessageId=1817
@@ -19386,6 +22285,9 @@ No interfaces have been registered.
 Language=Japanese
 インターフェイスが登録されていません。
 .
+Language=Finnish
+Liittymiä ei ole rekisteröity.
+.
 
 MessageId=1818
 Severity=Success
@@ -19405,6 +22307,9 @@ The remote procedure call was cancelled.
 .
 Language=Japanese
 リモート プロシージャ コールがキャンセルされました。
+.
+Language=Finnish
+Etäproseduurikutsu peruutettiin.
 .
 
 MessageId=1819
@@ -19426,6 +22331,9 @@ The binding handle does not contain all required information.
 Language=Japanese
 バインディング ハンドルに必要な情報がすべて含まれていません。
 .
+Language=Finnish
+Sidoskahvassa ei ole kaikkia tarvittavia tietoja.
+.
 
 MessageId=1820
 Severity=Success
@@ -19445,6 +22353,9 @@ A communications failure occurred during a remote procedure call.
 .
 Language=Japanese
 リモート プロシージャ呼び出し中に通信エラーが発生しました。
+.
+Language=Finnish
+Etäproseduurikutsun aikana tapahtui tietoliikennevirhe.
 .
 
 MessageId=1821
@@ -19466,6 +22377,9 @@ The requested authentication level is not supported.
 Language=Japanese
 要求された認証レベルはサポートされていません。
 .
+Language=Finnish
+Pyydettyä todennustasoa ei tueta.
+.
 
 MessageId=1822
 Severity=Success
@@ -19485,6 +22399,9 @@ No principal name registered.
 .
 Language=Japanese
 プリンシパル名が登録されていません。
+.
+Language=Finnish
+Päänimeä ei ole rekisteröity.
 .
 
 MessageId=1823
@@ -19506,6 +22423,9 @@ The error specified is not a valid Windows RPC error code.
 Language=Japanese
 指定されたエラーは有効な LiberNT RPC エラーコードではありません。
 .
+Language=Finnish
+Määritetty virhe ei ole kelvollinen Windowsin RPC-virhekoodi.
+.
 
 MessageId=1824
 Severity=Success
@@ -19525,6 +22445,9 @@ A UUID that is valid only on this computer has been allocated.
 .
 Language=Japanese
 このコンピュータでのみ有効なUUIDが割り当てられました。
+.
+Language=Finnish
+On varattu UUID, joka on kelvollinen vain tässä tietokoneessa.
 .
 
 MessageId=1825
@@ -19546,6 +22469,9 @@ A security package specific error occurred.
 Language=Japanese
 セキュリティパッケージ固有のエラーが発生しました。
 .
+Language=Finnish
+Tapahtui suojauspaketin oma virhe.
+.
 
 MessageId=1826
 Severity=Success
@@ -19565,6 +22491,9 @@ Thread is not canceled.
 .
 Language=Japanese
 スレッドがキャンセルされていません。
+.
+Language=Finnish
+Säiettä ei ole peruutettu.
 .
 
 MessageId=1827
@@ -19586,6 +22515,9 @@ Invalid operation on the encoding/decoding handle.
 Language=Japanese
 エンコード/デコード ハンドルに対する操作が無効です。
 .
+Language=Finnish
+Virheellinen toiminto koodaus- tai purkukahvalle.
+.
 
 MessageId=1828
 Severity=Success
@@ -19605,6 +22537,9 @@ Incompatible version of the serializing package.
 .
 Language=Japanese
 シリアル化パッケージの互換性のないバージョンです。
+.
+Language=Finnish
+Sarjoituspaketin versio ei ole yhteensopiva.
 .
 
 MessageId=1829
@@ -19626,6 +22561,9 @@ Incompatible version of the RPC stub.
 Language=Japanese
 RPC スタブの互換性のないバージョンです。
 .
+Language=Finnish
+RPC-tyngän versio ei ole yhteensopiva.
+.
 
 MessageId=1830
 Severity=Success
@@ -19645,6 +22583,9 @@ The RPC pipe object is invalid or corrupted.
 .
 Language=Japanese
 RPCパイプ オブジェクトが無効または壊れています。
+.
+Language=Finnish
+RPC-putkiobjekti on virheellinen tai vioittunut.
 .
 
 MessageId=1831
@@ -19666,6 +22607,9 @@ An invalid operation was attempted on an RPC pipe object.
 Language=Japanese
 RPCパイプオブジェクトに対して無効な操作が試みられました。
 .
+Language=Finnish
+RPC-putkiobjektille yritettiin virheellistä toimintoa.
+.
 
 MessageId=1832
 Severity=Success
@@ -19685,6 +22629,9 @@ Unsupported RPC pipe version.
 .
 Language=Japanese
 サポートされていないRPCパイプのバージョンです。
+.
+Language=Finnish
+RPC-putken versiota ei tueta.
 .
 
 MessageId=1898
@@ -19706,6 +22653,9 @@ The group member was not found.
 Language=Japanese
 グループ メンバが見つかりません。
 .
+Language=Finnish
+Ryhmän jäsentä ei löytynyt.
+.
 
 MessageId=1899
 Severity=Success
@@ -19725,6 +22675,9 @@ The endpoint mapper database entry could not be created.
 .
 Language=Japanese
 エンドポイントマッパーのデータベースエントリを作成できませんでした。
+.
+Language=Finnish
+Päätepisteiden yhdistäjän tietokantamerkintää ei voitu luoda.
 .
 
 MessageId=1900
@@ -19746,6 +22699,9 @@ The object universal unique identifier (UUID) is the nil UUID.
 Language=Japanese
 オブジェクトの一意識別子 (UUID)  が nil UUID です。
 .
+Language=Finnish
+Objektin yleinen yksilöllinen tunniste (UUID) on tyhjä UUID.
+.
 
 MessageId=1901
 Severity=Success
@@ -19765,6 +22721,9 @@ The specified time is invalid.
 .
 Language=Japanese
 指定された時間は無効です。
+.
+Language=Finnish
+Määritetty aika on virheellinen.
 .
 
 MessageId=1902
@@ -19786,6 +22745,9 @@ The specified form name is invalid.
 Language=Japanese
 指定されたフォーム名が無効です。
 .
+Language=Finnish
+Määritetty lomakkeen nimi on virheellinen.
+.
 
 MessageId=1903
 Severity=Success
@@ -19805,6 +22767,9 @@ The specified form size is invalid.
 .
 Language=Japanese
 指定されたフォームのサイズが無効です。
+.
+Language=Finnish
+Määritetty lomakkeen koko on virheellinen.
 .
 
 MessageId=1904
@@ -19826,6 +22791,9 @@ The specified printer handle is already being waited on
 Language=Japanese
 指定されたプリンタ ハンドルは既に待ち受け中です。
 .
+Language=Finnish
+Määritettyä tulostimen kahvaa odotetaan jo
+.
 
 MessageId=1905
 Severity=Success
@@ -19845,6 +22813,9 @@ The specified printer has been deleted.
 .
 Language=Japanese
 指定されたプリンタは削除されました。
+.
+Language=Finnish
+Määritetty tulostin on poistettu.
 .
 
 MessageId=1906
@@ -19866,6 +22837,9 @@ The state of the printer is invalid.
 Language=Japanese
 プリンタの状態が無効です。
 .
+Language=Finnish
+Tulostimen tila on virheellinen.
+.
 
 MessageId=1907
 Severity=Success
@@ -19885,6 +22859,9 @@ The user's password must be changed before logging on the first time.
 .
 Language=Japanese
 サインインする前にユーザのパスワードを変更する必要があります。
+.
+Language=Finnish
+Käyttäjän salasana on vaihdettava ennen ensimmäistä kirjautumista.
 .
 
 MessageId=1908
@@ -19906,6 +22883,9 @@ Could not find the domain controller for this domain.
 Language=Japanese
 このドメインのドメイン コントローラーが見つかりませんでした。
 .
+Language=Finnish
+Tämän toimialueen toimialueen ohjauskonetta ei löytynyt.
+.
 
 MessageId=1909
 Severity=Success
@@ -19925,6 +22905,9 @@ The referenced account is currently locked out and may not be used to log on.
 .
 Language=Japanese
 参照されているアカウントは現在ロックアウトされているため、ログオンできません。
+.
+Language=Finnish
+Viitattu tili on tällä hetkellä lukittu, eikä sillä voi kirjautua.
 .
 
 MessageId=1910
@@ -19946,6 +22929,9 @@ The object exporter specified was not found.
 Language=Japanese
 指定されたオブジェクト エクスポーターが見つかりませんでした。
 .
+Language=Finnish
+Määritettyä objektin viejää ei löytynyt.
+.
 
 MessageId=1911
 Severity=Success
@@ -19965,6 +22951,9 @@ The object specified was not found.
 .
 Language=Japanese
 指定されたオブジェクトが見つかりません。
+.
+Language=Finnish
+Määritettyä objektia ei löytynyt.
 .
 
 MessageId=1912
@@ -19986,6 +22975,9 @@ The object resolver set specified was not found.
 Language=Japanese
 指定されたオブジェクト リゾルバ セットが見つかりません。
 .
+Language=Finnish
+Määritettyä objektin selvittäjäjoukkoa ei löytynyt.
+.
 
 MessageId=1913
 Severity=Success
@@ -20005,6 +22997,9 @@ Some data remains to be sent in the request buffer.
 .
 Language=Japanese
 要求バッファに送信するデータが残っています。
+.
+Language=Finnish
+Pyyntöpuskurissa on vielä lähettämättömiä tietoja.
 .
 
 MessageId=1914
@@ -20026,6 +23021,9 @@ Invalid asynchronous remote procedure call handle.
 Language=Japanese
 無効な非同期リモート プロシージャ コール ハンドルです。
 .
+Language=Finnish
+Virheellinen asynkronisen etäproseduurikutsun kahva.
+.
 
 MessageId=1915
 Severity=Success
@@ -20045,6 +23043,9 @@ Invalid asynchronous RPC call handle for this operation.
 .
 Language=Japanese
 この操作の無効な非同期RPCコールハンドルです。
+.
+Language=Finnish
+Virheellinen asynkronisen RPC-kutsun kahva tälle toiminnolle.
 .
 
 MessageId=1916
@@ -20066,6 +23067,9 @@ The RPC pipe object has already been closed.
 Language=Japanese
 RPC パイプ オブジェクトは既に閉じられています。
 .
+Language=Finnish
+RPC-putkiobjekti on jo suljettu.
+.
 
 MessageId=1917
 Severity=Success
@@ -20085,6 +23089,9 @@ The RPC call completed before all pipes were processed.
 .
 Language=Japanese
 すべてのパイプが処理される前にRPCコールが完了しました。
+.
+Language=Finnish
+RPC-kutsu valmistui ennen kuin kaikki putket oli käsitelty.
 .
 
 MessageId=1918
@@ -20106,6 +23113,9 @@ No more data is available from the RPC pipe.
 Language=Japanese
 RPCパイプから利用可能なデータはありません。
 .
+Language=Finnish
+RPC-putkesta ei ole saatavilla enempää tietoja.
+.
 
 MessageId=1919
 Severity=Success
@@ -20125,6 +23135,9 @@ No site name is available for this machine.
 .
 Language=Japanese
 このマシンで使用可能なサイト名がありません。
+.
+Language=Finnish
+Tälle koneelle ei ole käytettävissä sivuston nimeä.
 .
 
 MessageId=1920
@@ -20146,6 +23159,9 @@ The file cannot be accessed by the system.
 Language=Japanese
 ファイルはシステムからアクセスできません。
 .
+Language=Finnish
+Järjestelmä ei voi käyttää tiedostoa.
+.
 
 MessageId=1921
 Severity=Success
@@ -20165,6 +23181,9 @@ The name of the file cannot be resolved by the system.
 .
 Language=Japanese
 ファイル名はシステムで解決できません。
+.
+Language=Finnish
+Järjestelmä ei voi selvittää tiedoston nimeä.
 .
 
 MessageId=1922
@@ -20186,6 +23205,9 @@ The entry is not of the expected type.
 Language=Japanese
 エントリが予期されたタイプではありません。
 .
+Language=Finnish
+Merkintä ei ole odotettua tyyppiä.
+.
 
 MessageId=1923
 Severity=Success
@@ -20205,6 +23227,9 @@ Not all object UUIDs could be exported to the specified entry.
 .
 Language=Japanese
 すべてのオブジェクト UUID を指定されたエントリにエクスポートできませんでした。
+.
+Language=Finnish
+Kaikkia objektien UUID-tunnuksia ei voitu viedä määritettyyn merkintään.
 .
 
 MessageId=1924
@@ -20226,6 +23251,9 @@ Interface could not be exported to the specified entry.
 Language=Japanese
 指定されたエントリにインターフェイスをエクスポートできませんでした。
 .
+Language=Finnish
+Liittymää ei voitu viedä määritettyyn merkintään.
+.
 
 MessageId=1925
 Severity=Success
@@ -20245,6 +23273,9 @@ The specified profile entry could not be added.
 .
 Language=Japanese
 指定されたプロファイル エントリを追加できませんでした。
+.
+Language=Finnish
+Määritettyä profiilimerkintää ei voitu lisätä.
 .
 
 MessageId=1926
@@ -20266,6 +23297,9 @@ The specified profile element could not be added.
 Language=Japanese
 指定されたプロファイル要素を追加できませんでした。
 .
+Language=Finnish
+Määritettyä profiilielementtiä ei voitu lisätä.
+.
 
 MessageId=1927
 Severity=Success
@@ -20285,6 +23319,9 @@ The specified profile element could not be removed.
 .
 Language=Japanese
 指定されたプロファイル要素を削除できませんでした。
+.
+Language=Finnish
+Määritettyä profiilielementtiä ei voitu poistaa.
 .
 
 MessageId=1928
@@ -20306,6 +23343,9 @@ The group element could not be added.
 Language=Japanese
 グループ要素を追加できませんでした。
 .
+Language=Finnish
+Ryhmäelementtiä ei voitu lisätä.
+.
 
 MessageId=1929
 Severity=Success
@@ -20325,6 +23365,9 @@ The group element could not be removed.
 .
 Language=Japanese
 グループ要素を削除できませんでした。
+.
+Language=Finnish
+Ryhmäelementtiä ei voitu poistaa.
 .
 
 MessageId=1930
@@ -20346,6 +23389,9 @@ The printer driver is not compatible with a policy enabled on your computer that
 Language=Japanese
 プリンタ ドライバは、NT 4.0 ドライバをブロックするコンピュータで有効になっているポリシーと互換性がありません。
 .
+Language=Finnish
+Tulostinajuri ei ole yhteensopiva tietokoneessa käytössä olevan käytännön kanssa, joka estää NT 4.0 -ajurit.
+.
 
 MessageId=1931
 Severity=Success
@@ -20365,6 +23411,9 @@ The context has expired and can no longer be used.
 .
 Language=Japanese
 コンテキストの有効期限が切れたため、使用できなくなりました。
+.
+Language=Finnish
+Konteksti on vanhentunut, eikä sitä voi enää käyttää.
 .
 
 MessageId=1932
@@ -20386,6 +23435,9 @@ The current user's delegated trust creation quota has been exceeded.
 Language=Japanese
 現在のユーザーの委任トラスト作成クォータを超えています。
 .
+Language=Finnish
+Nykyisen käyttäjän delegoitujen luottamusten luontikiintiö on ylitetty.
+.
 
 MessageId=1933
 Severity=Success
@@ -20405,6 +23457,9 @@ The total delegated trust creation quota has been exceeded.
 .
 Language=Japanese
 委任されたトラストの作成クォータの合計を超えました。
+.
+Language=Finnish
+Delegoitujen luottamusten luonnin kokonaiskiintiö on ylitetty.
 .
 
 MessageId=1934
@@ -20426,6 +23481,9 @@ The current user's delegated trust deletion quota has been exceeded.
 Language=Japanese
 現在のユーザの委任されたトラストの削除クオータを超えています。
 .
+Language=Finnish
+Nykyisen käyttäjän delegoitujen luottamusten poistokiintiö on ylitetty.
+.
 
 MessageId=2000
 Severity=Success
@@ -20445,6 +23503,9 @@ The pixel format is invalid.
 .
 Language=Japanese
 ピクセル形式が無効です。
+.
+Language=Finnish
+Kuvapistemuoto on virheellinen.
 .
 
 MessageId=2001
@@ -20466,6 +23527,9 @@ The specified driver is invalid.
 Language=Japanese
 指定されたドライバが無効です。
 .
+Language=Finnish
+Määritetty ajuri on virheellinen.
+.
 
 MessageId=2002
 Severity=Success
@@ -20485,6 +23549,9 @@ The window style or class attribute is invalid for this operation.
 .
 Language=Japanese
 ウィンドウのスタイルまたはクラス属性が無効です。
+.
+Language=Finnish
+Ikkunan tyyli tai luokan määrite on virheellinen tälle toiminnolle.
 .
 
 MessageId=2003
@@ -20506,6 +23573,9 @@ The requested metafile operation is not supported.
 Language=Japanese
 要求されたメタファイル操作はサポートされていません。
 .
+Language=Finnish
+Pyydettyä metatiedostotoimintoa ei tueta.
+.
 
 MessageId=2004
 Severity=Success
@@ -20525,6 +23595,9 @@ The requested transformation operation is not supported.
 .
 Language=Japanese
 要求された変換操作はサポートされていません。
+.
+Language=Finnish
+Pyydettyä muunnostoimintoa ei tueta.
 .
 
 MessageId=2005
@@ -20546,6 +23619,9 @@ The requested clipping operation is not supported.
 Language=Japanese
 要求されたクリッピング操作はサポートされていません。
 .
+Language=Finnish
+Pyydettyä rajaustoimintoa ei tueta.
+.
 
 MessageId=2010
 Severity=Success
@@ -20565,6 +23641,9 @@ The specified color management module is invalid.
 .
 Language=Japanese
 指定されたカラー マネージメント モジュールが無効です。
+.
+Language=Finnish
+Määritetty värinhallintamoduuli on virheellinen.
 .
 
 MessageId=2011
@@ -20586,6 +23665,9 @@ The specified color profile is invalid.
 Language=Japanese
 指定されたカラープロファイルが無効です。
 .
+Language=Finnish
+Määritetty väriprofiili on virheellinen.
+.
 
 MessageId=2012
 Severity=Success
@@ -20605,6 +23687,9 @@ The specified tag was not found.
 .
 Language=Japanese
 指定されたタグが見つかりません。
+.
+Language=Finnish
+Määritettyä tunnistetta ei löytynyt.
 .
 
 MessageId=2013
@@ -20626,6 +23711,9 @@ A required tag is not present.
 Language=Japanese
 必須タグが存在しません。
 .
+Language=Finnish
+Pakollinen tunniste puuttuu.
+.
 
 MessageId=2014
 Severity=Success
@@ -20645,6 +23733,9 @@ The specified tag is already present.
 .
 Language=Japanese
 指定されたタグは既に存在します。
+.
+Language=Finnish
+Määritetty tunniste on jo olemassa.
 .
 
 MessageId=2015
@@ -20666,6 +23757,9 @@ The specified color profile is not associated with any device.
 Language=Japanese
 指定されたカラープロファイルが指定されたデバイスに関連付けられていません。
 .
+Language=Finnish
+Määritettyä väriprofiilia ei ole liitetty mihinkään laitteeseen.
+.
 
 MessageId=2016
 Severity=Success
@@ -20685,6 +23779,9 @@ The specified color profile was not found.
 .
 Language=Japanese
 指定されたカラープロファイルが見つかりません。
+.
+Language=Finnish
+Määritettyä väriprofiilia ei löytynyt.
 .
 
 MessageId=2017
@@ -20706,6 +23803,9 @@ The specified color space is invalid.
 Language=Japanese
 指定された色空間が無効です。
 .
+Language=Finnish
+Määritetty väriavaruus on virheellinen.
+.
 
 MessageId=2018
 Severity=Success
@@ -20725,6 +23825,9 @@ Image Color Management is not enabled.
 .
 Language=Japanese
 イメージ カラー マネージメントが有効になっていません。
+.
+Language=Finnish
+Kuvan värinhallinta ei ole käytössä.
 .
 
 MessageId=2019
@@ -20746,6 +23849,9 @@ There was an error while deleting the color transform.
 Language=Japanese
 色変換の削除中にエラーが発生しました。
 .
+Language=Finnish
+Värimuunnoksen poistamisessa tapahtui virhe.
+.
 
 MessageId=2020
 Severity=Success
@@ -20765,6 +23871,9 @@ The specified color transform is invalid.
 .
 Language=Japanese
 指定された色変換が無効です。
+.
+Language=Finnish
+Määritetty värimuunnos on virheellinen.
 .
 
 MessageId=2021
@@ -20786,6 +23895,9 @@ The specified transform does not match the bitmap's color space.
 Language=Japanese
 指定されたトランスフォームはビットマップの色空間と一致しません。
 .
+Language=Finnish
+Määritetty muunnos ei vastaa bittikartan väriavaruutta.
+.
 
 MessageId=2022
 Severity=Success
@@ -20805,6 +23917,9 @@ The specified named color index is not present in the profile.
 .
 Language=Japanese
 指定されたカラーインデックスがプロファイルに存在しません。
+.
+Language=Finnish
+Määritettyä nimetyn värin indeksiä ei ole profiilissa.
 .
 
 MessageId=2108
@@ -20826,6 +23941,9 @@ The network connection was made successfully, but the user had to be prompted fo
 Language=Japanese
 ネットワーク接続に成功しましたが、最初に指定されたパスワード以外のパスワードを入力する必要がありました。
 .
+Language=Finnish
+Verkkoyhteys muodostettiin, mutta käyttäjältä jouduttiin kysymään eri salasana kuin alun perin annettu.
+.
 
 MessageId=2109
 Severity=Success
@@ -20845,6 +23963,9 @@ The network connection was made successfully using default credentials.
 .
 Language=Japanese
 既定の認証情報を使用してネットワーク接続に成功しました。
+.
+Language=Finnish
+Verkkoyhteys muodostettiin oletustunnistetiedoilla.
 .
 
 MessageId=2202
@@ -20866,6 +23987,9 @@ The specified username is invalid.
 Language=Japanese
 指定されたユーザー名が無効です。
 .
+Language=Finnish
+Määritetty käyttäjänimi on virheellinen.
+.
 
 MessageId=2250
 Severity=Success
@@ -20885,6 +24009,9 @@ This network connection does not exist.
 .
 Language=Japanese
 このネットワーク接続は存在しません。
+.
+Language=Finnish
+Tätä verkkoyhteyttä ei ole olemassa.
 .
 
 MessageId=2401
@@ -20906,6 +24033,9 @@ This network connection has files open or requests pending.
 Language=Japanese
 このネットワーク接続には、開いているファイルまたは保留中の要求があります。
 .
+Language=Finnish
+Tässä verkkoyhteydessä on avoimia tiedostoja tai odottavia pyyntöjä.
+.
 
 MessageId=2402
 Severity=Success
@@ -20925,6 +24055,9 @@ Active connections still exist.
 .
 Language=Japanese
 アクティブな接続がまだ存在します。
+.
+Language=Finnish
+Aktiivisia yhteyksiä on yhä olemassa.
 .
 
 MessageId=2404
@@ -20946,6 +24079,9 @@ The device is in use by an active process and cannot be disconnected.
 Language=Japanese
 デバイスはアクティブなプロセスによって使用中であり、切断できません。
 .
+Language=Finnish
+Aktiivinen prosessi käyttää laitetta, eikä sen yhteyttä voi katkaista.
+.
 
 MessageId=3000
 Severity=Success
@@ -20965,6 +24101,9 @@ The specified print monitor is unknown.
 .
 Language=Japanese
 指定されたプリントモニタが不明です。
+.
+Language=Finnish
+Määritetty tulostusvalvonta on tuntematon.
 .
 
 MessageId=3001
@@ -20986,6 +24125,9 @@ The specified printer driver is currently in use.
 Language=Japanese
 指定されたプリンタドライバは現在使用中です。
 .
+Language=Finnish
+Määritetty tulostinajuri on tällä hetkellä käytössä.
+.
 
 MessageId=3002
 Severity=Success
@@ -21005,6 +24147,9 @@ The spool file was not found.
 .
 Language=Japanese
 スプールファイルが見つかりません。
+.
+Language=Finnish
+Taustatulostustiedostoa ei löytynyt.
 .
 
 MessageId=3003
@@ -21026,6 +24171,9 @@ A StartDocPrinter call was not issued.
 Language=Japanese
 StartDocPrinterコールが発行されませんでした。
 .
+Language=Finnish
+StartDocPrinter-kutsua ei annettu.
+.
 
 MessageId=3004
 Severity=Success
@@ -21045,6 +24193,9 @@ An AddJob call was not issued.
 .
 Language=Japanese
 AddJob呼び出しが発行されませんでした。
+.
+Language=Finnish
+AddJob-kutsua ei annettu.
 .
 
 MessageId=3005
@@ -21066,6 +24217,9 @@ The specified print processor has already been installed.
 Language=Japanese
 指定されたプリント プロセッサはすでにインストールされています。
 .
+Language=Finnish
+Määritetty tulostusprosessori on jo asennettu.
+.
 
 MessageId=3006
 Severity=Success
@@ -21085,6 +24239,9 @@ The specified print monitor has already been installed.
 .
 Language=Japanese
 指定されたプリントモニターはすでにインストールされています。
+.
+Language=Finnish
+Määritetty tulostusvalvonta on jo asennettu.
 .
 
 MessageId=3007
@@ -21106,6 +24263,9 @@ The specified print monitor does not have the required functions.
 Language=Japanese
 指定されたプリントモニターに必要な機能がありません。
 .
+Language=Finnish
+Määritetyllä tulostusvalvonnalla ei ole tarvittavia toimintoja.
+.
 
 MessageId=3008
 Severity=Success
@@ -21125,6 +24285,9 @@ The specified print monitor is currently in use.
 .
 Language=Japanese
 指定された印刷モニターは現在使用中です。
+.
+Language=Finnish
+Määritetty tulostusvalvonta on tällä hetkellä käytössä.
 .
 
 MessageId=3009
@@ -21146,6 +24309,9 @@ The requested operation is not allowed when there are jobs queued to the printer
 Language=Japanese
 プリンタにキューイングされているジョブがある場合、要求された操作は許可されません。
 .
+Language=Finnish
+Pyydetty toiminto ei ole sallittu, kun tulostimen jonossa on töitä.
+.
 
 MessageId=3010
 Severity=Success
@@ -21165,6 +24331,9 @@ The requested operation is successful. Changes will not be effective until the s
 .
 Language=Japanese
 要求された操作は成功しました。要求された操作は成功しました。
+.
+Language=Finnish
+Pyydetty toiminto onnistui. Muutokset tulevat voimaan vasta, kun järjestelmä käynnistetään uudelleen.
 .
 
 MessageId=3011
@@ -21186,6 +24355,9 @@ The requested operation is successful. Changes will not be effective until the s
 Language=Japanese
 要求された操作は成功しました。サービスが再起動されるまで変更は有効になりません。
 .
+Language=Finnish
+Pyydetty toiminto onnistui. Muutokset tulevat voimaan vasta, kun palvelu käynnistetään uudelleen.
+.
 
 MessageId=3012
 Severity=Success
@@ -21205,6 +24377,9 @@ No printers were found.
 .
 Language=Japanese
 プリンタが見つかりませんでした。
+.
+Language=Finnish
+Tulostimia ei löytynyt.
 .
 
 MessageId=3013
@@ -21226,6 +24401,9 @@ The printer driver is known to be unreliable.
 Language=Japanese
 プリンタドライバが信頼できないことが判明しました。
 .
+Language=Finnish
+Tulostinajurin tiedetään olevan epäluotettava.
+.
 
 MessageId=3014
 Severity=Success
@@ -21245,6 +24423,9 @@ The printer driver is known to harm the system.
 .
 Language=Japanese
 プリンタドライバがシステムに悪影響を与えることが判明しました。
+.
+Language=Finnish
+Tulostinajurin tiedetään vahingoittavan järjestelmää.
 .
 
 MessageId=3100
@@ -21266,6 +24447,9 @@ The XML contains an entity reference to an undefined entity.
 Language=Japanese
 ネットワークソフトウェアエラーが発生したため、操作に失敗しました。
 .
+Language=Finnish
+XML sisältää entiteettiviittauksen määrittämättömään entiteettiin.
+.
 
 MessageId=3101
 Severity=Success
@@ -21285,6 +24469,9 @@ The XML contains a malformed entity reference.
 .
 Language=Japanese
 オプション %1 で制御されるリソースが不足しました。
+.
+Language=Finnish
+XML sisältää väärin muodostetun entiteettiviittauksen.
 .
 
 MessageId=3102
@@ -21307,6 +24494,9 @@ Language=Japanese
 サービスがネットワーク制御ブロック (NCB)  のセグメントで長期ロックを取得できませんでした。
 エラーコードはデータです。
 .
+Language=Finnish
+XML sisältää merkin, joka ei ole sallittu XML:ssä.
+.
 
 MessageId=3200
 Severity=Success
@@ -21326,6 +24516,9 @@ The manifest contained a duplicate definition for external proxy stub %1 at (%1:
 .
 Language=Japanese
 マニフェストは、(%1:%2,%3)における外部プロキシ スタブ %1 に重複する定義が含まれています。
+.
+Language=Finnish
+Luettelossa oli ulkoisen välitystyngän %1 kaksoismääritys kohdassa (%1:%2,%3)
 .
 
 MessageId=3201
@@ -21347,6 +24540,9 @@ The manifest already contains a reference to %4 - a second reference was found a
 Language=Japanese
 マニフェストはすでに %4 への参照を含んでいます。2 番目の参照は (%1:%2,%3) で見つかりました。
 .
+Language=Finnish
+Luettelossa on jo viittaus kohteeseen %4 - toinen viittaus löytyi kohdasta (%1:%2,%3)
+.
 
 MessageId=3202
 Severity=Success
@@ -21366,6 +24562,9 @@ The assembly reference at (%1:%2,%3) is invalid.
 .
 Language=Japanese
 (%1:%2,%3) におけるアセンブリ参照は無効です。
+.
+Language=Finnish
+Kokoonpanoviittaus kohdassa (%1:%2,%3) on virheellinen.
 .
 
 MessageId=3203
@@ -21387,6 +24586,9 @@ The assembly definition at (%1:%2,%3) is invalid.
 Language=Japanese
 (%1:%2,%3) におけるアセンブリ定義は無効です。
 .
+Language=Finnish
+Kokoonpanon määritys kohdassa (%1:%2,%3) on virheellinen.
+.
 
 MessageId=3204
 Severity=Success
@@ -21406,6 +24608,9 @@ The manifest already contained the window class %4, found a second declaration a
 .
 Language=Japanese
 マニフェストはすでにウィンドウ クラス %4 を含んでいます。2 番目の宣言は (%1:%2,%3) で見つかりました。
+.
+Language=Finnish
+Luettelossa oli jo ikkunaluokka %4, toinen määritys löytyi kohdasta (%1:%2,%3)
 .
 
 MessageId=3205
@@ -21427,6 +24632,9 @@ The manifest already declared the progId %4, found a second declaration at (%1:%
 Language=Japanese
 マニフェストはすでに progId %4 を宣言しています。2 番目の定義は (%1:%2,%3) で見つかりました。
 .
+Language=Finnish
+Luettelossa oli jo määritetty progId %4, toinen määritys löytyi kohdasta (%1:%2,%3)
+.
 
 MessageId=3206
 Severity=Success
@@ -21446,6 +24654,9 @@ Only one noInherit tag may be present in a manifest, found a second tag at (%1:%
 .
 Language=Japanese
 マニフェスト内部に noInherit タグが一つだけなければなりません。2 番目のタグが (%1:%2,%3) で見つかりました。
+.
+Language=Finnish
+Luettelossa voi olla vain yksi noInherit-tunniste, toinen tunniste löytyi kohdasta (%1:%2,%3)
 .
 
 MessageId=3207
@@ -21467,6 +24678,9 @@ Only one noInheritable tag may be present in a manifest, found a second tag at (
 Language=Japanese
 マニフェストには、noInheritable タグが 1 つだけ存在する可能性があります。2 番目のタグが (%1:%2,%3) で見つかりました。
 .
+Language=Finnish
+Luettelossa voi olla vain yksi noInheritable-tunniste, toinen tunniste löytyi kohdasta (%1:%2,%3)
+.
 
 MessageId=3208
 Severity=Success
@@ -21486,6 +24700,9 @@ The manifest contained a duplicate declaration of COM class %4 at (%1:%2,%3)
 .
 Language=Japanese
 マニフェスト内部の (%1:%2,%3) において COM クラス %4 の重複宣言が含まれていました。
+.
+Language=Finnish
+Luettelossa oli COM-luokan %4 kaksoismääritys kohdassa (%1:%2,%3)
 .
 
 MessageId=3209
@@ -21507,6 +24724,9 @@ The manifest already declared the file %4, a second definition was found at (%1:
 Language=Japanese
 マニフェストでファイル %4 が既に宣言されていますが、(%1:%2,%3) に 2 番目の定義が見つかりました。
 .
+Language=Finnish
+Luettelossa oli jo määritetty tiedosto %4, toinen määritys löytyi kohdasta (%1:%2,%3)
+.
 
 MessageId=3210
 Severity=Success
@@ -21526,6 +24746,9 @@ CLR surrogate %1 was already defined, second definition at (%1:%2,%3) is invalid
 .
 Language=Japanese
 CLR サロゲート %1 は既に定義されています。(%1:%2,%3) での 2 番目の定義は無効です。
+.
+Language=Finnish
+CLR-sijaisprosessi %1 oli jo määritetty, toinen määritys kohdassa (%1:%2,%3) on virheellinen.
 .
 
 MessageId=3211
@@ -21547,6 +24770,9 @@ Type library %1 was already defined, second definition at (%1:%2,%3) is invalid.
 Language=Japanese
 型ライブラリ %1 は既に定義されています。(%1:%2,%3) での 2 番目の定義は無効です。
 .
+Language=Finnish
+Tyyppikirjasto %1 oli jo määritetty, toinen määritys kohdassa (%1:%2,%3) on virheellinen.
+.
 
 MessageId=3212
 Severity=Success
@@ -21566,6 +24792,9 @@ Proxy stub definition %1 was already defined, second definition at (%1:%2,%3) is
 .
 Language=Japanese
 プロキシ・スタブ定義 %1 は既に定義されているので、(%1:%2,%3) での 2 番目の定義は無効です。
+.
+Language=Finnish
+Välitystyngän määritys %1 oli jo määritetty, toinen määritys kohdassa (%1:%2,%3) on virheellinen.
 .
 
 MessageId=3213
@@ -21587,6 +24816,9 @@ Category friendly name %4 was already used, second definition was found at (%1:%
 Language=Japanese
 カテゴリ・フレンドリー名 %4 は既に使用されています。(%1:%2,%3) に 2 番目の定義が見つかりましたが、無効です。
 .
+Language=Finnish
+Luokan helppolukuinen nimi %4 oli jo käytössä, toinen määritys kohdassa (%1:%2,%3) on virheellinen.
+.
 
 MessageId=3214
 Severity=Success
@@ -21606,6 +24838,9 @@ Only one top-level assemblyIdentity tag may be present in a manifest. A second t
 .
 Language=Japanese
 マニフェストには、トップレベルの assemblyIdentity タグを 1 つだけ含めることができます。ID %4 を持つ 2 番目のタグが (%1:%2,%3) に見つかりました。
+.
+Language=Finnish
+Luettelossa voi olla vain yksi ylimmän tason assemblyIdentity-tunniste. Toinen tunniste, jonka tunnus on %4, löytyi kohdasta (%1:%2,%3)
 .
 
 MessageId=3215
@@ -21627,6 +24862,9 @@ The root element for a manifest found at (%1:%2,%3) was not expected or was of t
 Language=Japanese
 (%1:%2,%3) で見つかったマニフェストのルート要素が予期されていないか、間違ったバージョンでした。
 .
+Language=Finnish
+Kohdasta (%1:%2,%3) löytynyt luettelon pääelementti oli odottamaton tai väärää versiota.
+.
 
 MessageId=3216
 Severity=Success
@@ -21646,6 +24884,9 @@ The element found at (%1:%2,%3) was not expected according to the manifest schem
 .
 Language=Japanese
 (%1:%2,%3) で見つかった要素は、マニフェスト スキーマに従って予期されていませんでした。
+.
+Language=Finnish
+Kohdasta (%1:%2,%3) löytynyt elementti oli luettelon rakenteen mukaan odottamaton.
 .
 
 MessageId=3217
@@ -21667,6 +24908,9 @@ The element found at (%1:%2,%3) was missing the required attribute '%4'. See the
 Language=Japanese
 (%1:%2,%3) で見つかった要素には必須属性 '%4' がありませんでした。詳細は、マニフェスト スキーマを参照してください。
 .
+Language=Finnish
+Kohdasta (%1:%2,%3) löytyneestä elementistä puuttui pakollinen määrite '%4'. Lisätietoja on luettelon rakenteen kuvauksessa
+.
 
 MessageId=3218
 Severity=Success
@@ -21686,6 +24930,9 @@ The attribute value %4 at (%1:%2,%3) was invalid according to the schema.
 .
 Language=Japanese
 (%1:%2,%3) の属性値 %4 はスキーマに従って無効でした。
+.
+Language=Finnish
+Määritteen arvo %4 kohdassa (%1:%2,%3) oli rakenteen mukaan virheellinen.
 .
 
 MessageId=3219
@@ -21707,6 +24954,9 @@ PCDATA or CDATA found at (%1:%2,%3) in the source document was not expected in t
 Language=Japanese
 ソース ドキュメント内の (%1:%2,%3) で見つかった PCDATA または CDATA は、親要素 %4 では予期されませんでした。
 .
+Language=Finnish
+Lähdetiedoston kohdasta (%1:%2,%3) löytynyt PCDATA tai CDATA oli odottamaton yläelementissä %4.
+.
 
 MessageId=3220
 Severity=Success
@@ -21726,6 +24976,9 @@ The string table entry with culture %4, name %5, and value '%6' at (%1:%2,%3) du
 .
 Language=Japanese
 (%1:%2,%3) のカルチャ %4、名前 %5、値 '%6' を持つ文字列テーブル・エントリが前のエントリと重複しています。
+.
+Language=Finnish
+Merkkijonotaulukon merkintä, jonka kulttuuri on %4, nimi %5 ja arvo '%6', kohdassa (%1:%2,%3) toisti aiemman merkinnän.
 .
 
 MessageId=4000
@@ -21747,6 +25000,9 @@ WINS encountered an error while processing the command.
 Language=Japanese
 コマンドの処理中に WINS でエラーが発生しました。
 .
+Language=Finnish
+WINS kohtasi virheen komentoa käsitellessään.
+.
 
 MessageId=4001
 Severity=Success
@@ -21766,6 +25022,9 @@ The local WINS cannot be deleted.
 .
 Language=Japanese
 ローカル WINS を削除できません。
+.
+Language=Finnish
+Paikallista WINS-palvelinta ei voi poistaa.
 .
 
 MessageId=4002
@@ -21787,6 +25046,9 @@ The importation from the file failed.
 Language=Japanese
 ファイルからのインポートに失敗しました。
 .
+Language=Finnish
+Tuonti tiedostosta epäonnistui.
+.
 
 MessageId=4003
 Severity=Success
@@ -21806,6 +25068,9 @@ The backup failed. Was a full backup done before?
 .
 Language=Japanese
 バックアップに失敗しました。前に完全バックアップが行われましたか。
+.
+Language=Finnish
+Varmuuskopiointi epäonnistui. Tehtiinkö täysi varmuuskopio aiemmin?
 .
 
 MessageId=4004
@@ -21827,6 +25092,9 @@ The backup failed. Check the directory to which you are backing the database.
 Language=Japanese
 バックアップに失敗しました。データベースのバックアップ先ディレクトリを確認してください。
 .
+Language=Finnish
+Varmuuskopiointi epäonnistui. Tarkista hakemisto, johon tietokantaa varmuuskopioidaan.
+.
 
 MessageId=4005
 Severity=Success
@@ -21846,6 +25114,9 @@ The name does not exist in the WINS database.
 .
 Language=Japanese
 名前が WINS データベースに存在しません。
+.
+Language=Finnish
+Nimeä ei ole WINS-tietokannassa.
 .
 
 MessageId=4006
@@ -21867,6 +25138,9 @@ Replication with a nonconfigured partner is not allowed.
 Language=Japanese
 構成されていないパートナーとのレプリケーションは許可されていません。
 .
+Language=Finnish
+Replikointi määrittämättömän kumppanin kanssa ei ole sallittua.
+.
 
 MessageId=4100
 Severity=Success
@@ -21886,6 +25160,9 @@ The DHCP client has obtained an IP address that is already in use on the network
 .
 Language=Japanese
 DHCPクライアントが、ネットワーク上ですでに使用されているIPアドレスを取得しました。DHCPクライアントが新しいアドレスを取得できるようになるまで、ローカル インタフェースは無効になります。
+.
+Language=Finnish
+DHCP-asiakas on saanut IP-osoitteen, joka on jo käytössä verkossa. Paikallinen liitäntä poistetaan käytöstä, kunnes DHCP-asiakas saa uuden osoitteen.
 .
 
 MessageId=4200
@@ -21907,6 +25184,9 @@ The GUID passed was not recognized as valid by a WMI data provider.
 Language=Japanese
 渡された GUID が WMI データプロバイダによって有効であると認識されませんでした。
 .
+Language=Finnish
+WMI-tietojen tarjoaja ei tunnistanut välitettyä GUID-tunnusta kelvolliseksi.
+.
 
 MessageId=4201
 Severity=Success
@@ -21926,6 +25206,9 @@ The instance name passed was not recognized as valid by a WMI data provider.
 .
 Language=Japanese
 渡されたインスタンス名は、WMI データ プロバイダによって有効であると認識されませんでした。
+.
+Language=Finnish
+WMI-tietojen tarjoaja ei tunnistanut välitettyä esiintymän nimeä kelvolliseksi.
 .
 
 MessageId=4202
@@ -21947,6 +25230,9 @@ The data item ID passed was not recognized as valid by a WMI data provider.
 Language=Japanese
 渡されたデータ項目 ID は、WMI データ プロバイダーによって有効であると認識されませんでした。
 .
+Language=Finnish
+WMI-tietojen tarjoaja ei tunnistanut välitettyä tietokohteen tunnusta kelvolliseksi.
+.
 
 MessageId=4203
 Severity=Success
@@ -21966,6 +25252,9 @@ The WMI request could not be completed and should be retried.
 .
 Language=Japanese
 WMI 要求を完了できませんでした。
+.
+Language=Finnish
+WMI-pyyntöä ei voitu suorittaa, ja sitä on yritettävä uudelleen.
 .
 
 MessageId=4204
@@ -21987,6 +25276,9 @@ The WMI data provider could not be located.
 Language=Japanese
 WMI データ プロバイダーが見つかりません。
 .
+Language=Finnish
+WMI-tietojen tarjoajaa ei löytynyt.
+.
 
 MessageId=4205
 Severity=Success
@@ -22006,6 +25298,9 @@ The WMI data provider references an instance set that has not been registered.
 .
 Language=Japanese
 WMI データ プロバイダーは、登録されていないインスタンス セットを参照しています。
+.
+Language=Finnish
+WMI-tietojen tarjoaja viittaa esiintymäjoukkoon, jota ei ole rekisteröity.
 .
 
 MessageId=4206
@@ -22027,6 +25322,9 @@ The WMI data block or event notification has already been enabled.
 Language=Japanese
 WMI データ ブロックまたはイベント通知はすでに有効になっています。
 .
+Language=Finnish
+WMI-tietolohko tai tapahtumailmoitus on jo otettu käyttöön.
+.
 
 MessageId=4207
 Severity=Success
@@ -22046,6 +25344,9 @@ The WMI data block is no longer available.
 .
 Language=Japanese
 WMI データ ブロックは使用できなくなりました。
+.
+Language=Finnish
+WMI-tietolohko ei ole enää käytettävissä.
 .
 
 MessageId=4208
@@ -22067,6 +25368,9 @@ The WMI data service is not available.
 Language=Japanese
 WMI データ サービスは使用できません。
 .
+Language=Finnish
+WMI-tietopalvelu ei ole käytettävissä.
+.
 
 MessageId=4209
 Severity=Success
@@ -22086,6 +25390,9 @@ The WMI data provider failed to carry out the request.
 .
 Language=Japanese
 WMI データ プロバイダーが要求を実行できませんでした。
+.
+Language=Finnish
+WMI-tietojen tarjoaja ei pystynyt suorittamaan pyyntöä.
 .
 
 MessageId=4210
@@ -22107,6 +25414,9 @@ The WMI MOF information is not valid.
 Language=Japanese
 WMI MOF 情報が無効です。
 .
+Language=Finnish
+WMI:n MOF-tiedot eivät ole kelvollisia.
+.
 
 MessageId=4211
 Severity=Success
@@ -22126,6 +25436,9 @@ The WMI registration information is not valid.
 .
 Language=Japanese
 WMI 登録情報が無効です。
+.
+Language=Finnish
+WMI:n rekisteröintitiedot eivät ole kelvollisia.
 .
 
 MessageId=4212
@@ -22147,6 +25460,9 @@ The WMI data block or event notification has already been disabled.
 Language=Japanese
 WMI データ ブロックまたはイベント通知はすでに無効になっています。
 .
+Language=Finnish
+WMI-tietolohko tai tapahtumailmoitus on jo poistettu käytöstä.
+.
 
 MessageId=4213
 Severity=Success
@@ -22166,6 +25482,9 @@ The WMI data item or data block is read-only.
 .
 Language=Japanese
 WMI データ項目またはデータ ブロックは読み取り専用です。
+.
+Language=Finnish
+WMI-tietokohde tai -tietolohko on vain luku -muotoinen.
 .
 
 MessageId=4214
@@ -22187,6 +25506,9 @@ The WMI data item or data block could not be changed.
 Language=Japanese
 WMI データ項目またはデータ ブロックを変更できませんでした。
 .
+Language=Finnish
+WMI-tietokohdetta tai -tietolohkoa ei voitu muuttaa.
+.
 
 MessageId=4300
 Severity=Success
@@ -22206,6 +25528,9 @@ The media identifier does not represent a valid medium.
 .
 Language=Japanese
 メディア識別子が有効なメディアを表していません。
+.
+Language=Finnish
+Tietovälineen tunniste ei edusta kelvollista tietovälinettä.
 .
 
 MessageId=4301
@@ -22227,6 +25552,9 @@ The library identifier does not represent a valid library.
 Language=Japanese
 ライブラリ識別子が有効なライブラリを表していません。
 .
+Language=Finnish
+Kirjaston tunniste ei edusta kelvollista kirjastoa.
+.
 
 MessageId=4302
 Severity=Success
@@ -22246,6 +25574,9 @@ The media pool identifier does not represent a valid media pool.
 .
 Language=Japanese
 メディアプール識別子が有効なメディアプールを表していません。
+.
+Language=Finnish
+Tietovälinevarannon tunniste ei edusta kelvollista tietovälinevarantoa.
 .
 
 MessageId=4303
@@ -22267,6 +25598,9 @@ The drive and medium are not compatible or exist in different libraries.
 Language=Japanese
 ドライブとメディアに互換性がないか、異なるライブラリに存在します。
 .
+Language=Finnish
+Asema ja tietoväline eivät ole yhteensopivia tai ne ovat eri kirjastoissa.
+.
 
 MessageId=4304
 Severity=Success
@@ -22286,6 +25620,9 @@ The medium currently exists in an offline library and must be online to perform 
 .
 Language=Japanese
 メディアは現在オフラインのライブラリに存在するため、この操作を実行するにはオンラインにする必要があります。
+.
+Language=Finnish
+Tietoväline on tällä hetkellä yhteydettömässä kirjastossa, ja sen on oltava käytettävissä tämän toiminnon suorittamiseen.
 .
 
 MessageId=4305
@@ -22307,6 +25644,9 @@ The operation cannot be performed on an offline library.
 Language=Japanese
 この操作はオフラインのライブラリでは実行できません。
 .
+Language=Finnish
+Toimintoa ei voi suorittaa yhteydettömälle kirjastolle.
+.
 
 MessageId=4306
 Severity=Success
@@ -22326,6 +25666,9 @@ The library, drive, or media pool is empty.
 .
 Language=Japanese
 ライブラリ、ドライブ、またはメディアプールが空です。
+.
+Language=Finnish
+Kirjasto, asema tai tietovälinevaranto on tyhjä.
 .
 
 MessageId=4307
@@ -22347,6 +25690,9 @@ The library, drive, or media pool must be empty to perform this operation.
 Language=Japanese
 この操作を実行するには、ライブラリ、ドライブ、またはメディア プールが空である必要があります。
 .
+Language=Finnish
+Kirjaston, aseman tai tietovälinevarannon on oltava tyhjä tämän toiminnon suorittamiseen.
+.
 
 MessageId=4308
 Severity=Success
@@ -22366,6 +25712,9 @@ No media is currently available in this media pool or library.
 .
 Language=Japanese
 このメディアプールまたはライブラリで現在使用可能なメディアはありません。
+.
+Language=Finnish
+Tässä tietovälinevarannossa tai kirjastossa ei ole tällä hetkellä tietovälinettä käytettävissä.
 .
 
 MessageId=4309
@@ -22387,6 +25736,9 @@ A resource required for this operation is disabled.
 Language=Japanese
 この操作に必要なリソースが無効です。
 .
+Language=Finnish
+Tähän toimintoon tarvittava resurssi on poistettu käytöstä.
+.
 
 MessageId=4310
 Severity=Success
@@ -22406,6 +25758,9 @@ The media identifier does not represent a valid cleaner.
 .
 Language=Japanese
 メディア識別子が有効なクリーナーを表していません。
+.
+Language=Finnish
+Tietovälineen tunniste ei edusta kelvollista puhdistusvälinettä.
 .
 
 MessageId=4311
@@ -22427,6 +25782,9 @@ The drive cannot be cleaned or does not support cleaning.
 Language=Japanese
 ドライブをクリーニングできないか、クリーニングをサポートしていません。
 .
+Language=Finnish
+Asemaa ei voi puhdistaa, tai se ei tue puhdistusta.
+.
 
 MessageId=4312
 Severity=Success
@@ -22446,6 +25804,9 @@ The object identifier does not represent a valid object.
 .
 Language=Japanese
 オブジェクト識別子が有効なオブジェクトを表していません。
+.
+Language=Finnish
+Objektin tunniste ei edusta kelvollista objektia.
 .
 
 MessageId=4313
@@ -22467,6 +25828,9 @@ Unable to read from or write to the database.
 Language=Japanese
 データベースからの読み取りまたはデータベースへの書き込みができません。
 .
+Language=Finnish
+Tietokannasta ei voi lukea tai siihen ei voi kirjoittaa.
+.
 
 MessageId=4314
 Severity=Success
@@ -22486,6 +25850,9 @@ The database is full.
 .
 Language=Japanese
 データベースがいっぱいです。
+.
+Language=Finnish
+Tietokanta on täynnä.
 .
 
 MessageId=4315
@@ -22507,6 +25874,9 @@ The medium is not compatible with the device or media pool.
 Language=Japanese
 メディアがデバイスまたはメディア プールと互換性がありません。
 .
+Language=Finnish
+Tietoväline ei ole yhteensopiva laitteen tai tietovälinevarannon kanssa.
+.
 
 MessageId=4316
 Severity=Success
@@ -22526,6 +25896,9 @@ The resource required for this operation does not exist.
 .
 Language=Japanese
 この操作に必要なリソースが存在しません。
+.
+Language=Finnish
+Tähän toimintoon tarvittavaa resurssia ei ole olemassa.
 .
 
 MessageId=4317
@@ -22547,6 +25920,9 @@ The operation identifier is not valid.
 Language=Japanese
 操作識別子が無効です。
 .
+Language=Finnish
+Toiminnon tunniste ei ole kelvollinen.
+.
 
 MessageId=4318
 Severity=Success
@@ -22566,6 +25942,9 @@ The media is not mounted or ready for use.
 .
 Language=Japanese
 メディアがマウントされていないか、使用可能な状態になっていません。
+.
+Language=Finnish
+Tietovälinettä ei ole liitetty tai se ei ole valmis käyttöön.
 .
 
 MessageId=4319
@@ -22587,6 +25966,9 @@ The device is not ready for use.
 Language=Japanese
 デバイスは使用できません。
 .
+Language=Finnish
+Laite ei ole valmis käyttöön.
+.
 
 MessageId=4320
 Severity=Success
@@ -22606,6 +25988,9 @@ The operator or administrator has refused the request.
 .
 Language=Japanese
 オペレータまたは管理者が要求を拒否しました。
+.
+Language=Finnish
+Käyttäjä tai järjestelmänvalvoja on hylännyt pyynnön.
 .
 
 MessageId=4321
@@ -22627,6 +26012,9 @@ The drive identifier does not represent a valid drive.
 Language=Japanese
 ドライブ識別子が有効なドライブを表していません。
 .
+Language=Finnish
+Aseman tunniste ei edusta kelvollista asemaa.
+.
 
 MessageId=4322
 Severity=Success
@@ -22646,6 +26034,9 @@ Library is full. No slot is available for use.
 .
 Language=Japanese
 ライブラリがいっぱいです。使用可能なスロットがありません。
+.
+Language=Finnish
+Kirjasto on täynnä. Vapaita paikkoja ei ole käytettävissä.
 .
 
 MessageId=4323
@@ -22667,6 +26058,9 @@ The transport cannot access the medium.
 Language=Japanese
 トランスポートがメディアにアクセスできません。
 .
+Language=Finnish
+Siirtomekanismi ei pääse käsiksi tietovälineeseen.
+.
 
 MessageId=4324
 Severity=Success
@@ -22686,6 +26080,9 @@ Unable to load the medium into the drive.
 .
 Language=Japanese
 ドライブに媒体をロードできません。
+.
+Language=Finnish
+Tietovälinettä ei voi ladata asemaan.
 .
 
 MessageId=4325
@@ -22707,6 +26104,9 @@ Unable to retrieve status about the drive.
 Language=Japanese
 ドライブのステータスを取得できません。
 .
+Language=Finnish
+Aseman tilatietoja ei voi noutaa.
+.
 
 MessageId=4326
 Severity=Success
@@ -22726,6 +26126,9 @@ Unable to retrieve status about the slot.
 .
 Language=Japanese
 ドライブのステータスを取得できません: スロットのステータスを取得できません。
+.
+Language=Finnish
+Paikan tilatietoja ei voi noutaa.
 .
 
 MessageId=4327
@@ -22747,6 +26150,9 @@ Unable to retrieve status about the transport.
 Language=Japanese
 スロットのステータスを取得できません: トランスポートのステータスを取得できません。
 .
+Language=Finnish
+Siirtomekanismin tilatietoja ei voi noutaa.
+.
 
 MessageId=4328
 Severity=Success
@@ -22766,6 +26172,9 @@ Cannot use the transport because it is already in use.
 .
 Language=Japanese
 トランスポートは既に使用されているため使用できません。
+.
+Language=Finnish
+Siirtomekanismia ei voi käyttää, koska se on jo käytössä.
 .
 
 MessageId=4329
@@ -22787,6 +26196,9 @@ Unable to open or close the inject/eject port.
 Language=Japanese
 インジェクト/イジェクトポートを開閉できません。
 .
+Language=Finnish
+Syöttö- ja poistoporttia ei voi avata tai sulkea.
+.
 
 MessageId=4330
 Severity=Success
@@ -22806,6 +26218,9 @@ Unable to eject the media because it is in a drive.
 .
 Language=Japanese
 ドライブ内にあるためメディアをイジェクトできない。
+.
+Language=Finnish
+Tietovälinettä ei voi poistaa, koska se on asemassa.
 .
 
 MessageId=4331
@@ -22827,6 +26242,9 @@ A cleaner slot is already reserved.
 Language=Japanese
 クリーナー スロットが既に予約されています。
 .
+Language=Finnish
+Puhdistusvälineen paikka on jo varattu.
+.
 
 MessageId=4332
 Severity=Success
@@ -22846,6 +26264,9 @@ A cleaner slot is not reserved.
 .
 Language=Japanese
 クリーナー スロットが予約されていません。
+.
+Language=Finnish
+Puhdistusvälineen paikkaa ei ole varattu.
 .
 
 MessageId=4333
@@ -22867,6 +26288,9 @@ The cleaner cartridge has performed the maximum number of drive cleanings.
 Language=Japanese
 クリーナー カートリッジが最大数のドライブ クリーニングを実行しました。
 .
+Language=Finnish
+Puhdistuskasetti on suorittanut asemien puhdistusten enimmäismäärän.
+.
 
 MessageId=4334
 Severity=Success
@@ -22886,6 +26310,9 @@ Unexpected on-medium identifier.
 .
 Language=Japanese
 予期しないオンメディア識別子。
+.
+Language=Finnish
+Odottamaton tietovälineen tunniste.
 .
 
 MessageId=4335
@@ -22907,6 +26334,9 @@ The last remaining item in this group or resource cannot be deleted.
 Language=Japanese
 このグループまたはリソースの最後に残っているアイテムは削除できません。
 .
+Language=Finnish
+Tämän ryhmän tai resurssin viimeistä jäljellä olevaa kohdetta ei voi poistaa.
+.
 
 MessageId=4336
 Severity=Success
@@ -22926,6 +26356,9 @@ The message provided exceeds the maximum size allowed for this parameter.
 .
 Language=Japanese
 指定されたメッセージは、このパラメータで許可される最大サイズを超えます。
+.
+Language=Finnish
+Annettu viesti ylittää tälle parametrille sallitun enimmäiskoon.
 .
 
 MessageId=4337
@@ -22947,6 +26380,9 @@ The volume contains system or paging files.
 Language=Japanese
 ボリュームにシステム ファイルまたはページング ファイルが含まれています。
 .
+Language=Finnish
+Taltiolla on järjestelmä- tai sivutustiedostoja.
+.
 
 MessageId=4338
 Severity=Success
@@ -22966,6 +26402,9 @@ The media type cannot be removed from this library since at least one drive in t
 .
 Language=Japanese
 ライブラリ内の少なくとも1つのドライブがこのメディア タイプをサポートできると報告しているため、このメディア タイプをこのライブラリから削除できません。
+.
+Language=Finnish
+Tietovälinetyyppiä ei voi poistaa tästä kirjastosta, koska ainakin yksi kirjaston asema ilmoittaa tukevansa tätä tietovälinetyyppiä.
 .
 
 MessageId=4339
@@ -22987,6 +26426,9 @@ This offline media cannot be mounted on this system since no enabled drives are 
 Language=Japanese
 このオフライン メディアは、使用可能なドライブが存在しないため、このシステムにマウントできません。
 .
+Language=Finnish
+Tätä yhteydetöntä tietovälinettä ei voi liittää tähän järjestelmään, koska käytössä ei ole asemia, joita voisi käyttää.
+.
 
 MessageId=4340
 Severity=Success
@@ -23006,6 +26448,9 @@ A cleaner cartridge is present in the tape library.
 .
 Language=Japanese
 テープ ライブラリにクリーナー カートリッジがあります。
+.
+Language=Finnish
+Nauhakirjastossa on puhdistuskasetti.
 .
 
 MessageId=4350
@@ -23027,6 +26472,9 @@ The remote storage service was not able to recall the file.
 Language=Japanese
 このファイルは現在このコンピュータでは使用できません。
 .
+Language=Finnish
+Etätallennuspalvelu ei pystynyt palauttamaan tiedostoa.
+.
 
 MessageId=4351
 Severity=Success
@@ -23046,6 +26494,9 @@ The remote storage service is not operational at this time.
 .
 Language=Japanese
 リモート ストレージ サービスは現在動作していません。
+.
+Language=Finnish
+Etätallennuspalvelu ei ole tällä hetkellä toiminnassa.
 .
 
 MessageId=4352
@@ -23067,6 +26518,9 @@ The remote storage service encountered a media error.
 Language=Japanese
 リモート ストレージ サービスでメディア エラーが発生しました。
 .
+Language=Finnish
+Etätallennuspalvelu kohtasi tietovälinevirheen.
+.
 
 MessageId=4390
 Severity=Success
@@ -23086,6 +26540,9 @@ The file or directory is not a reparse point.
 .
 Language=Japanese
 ファイルまたはディレクトリはリパース ポイントではありません。
+.
+Language=Finnish
+Tiedosto tai hakemisto ei ole uudelleenjäsennyskohta.
 .
 
 MessageId=4391
@@ -23107,6 +26564,9 @@ The reparse point attribute cannot be set because it conflicts with an existing 
 Language=Japanese
 リパース ポイント属性は既存の属性と競合するため設定できません。
 .
+Language=Finnish
+Uudelleenjäsennyskohdan määritettä ei voi asettaa, koska se on ristiriidassa aiemman määritteen kanssa.
+.
 
 MessageId=4392
 Severity=Success
@@ -23126,6 +26586,9 @@ The data present in the reparse point buffer is invalid.
 .
 Language=Japanese
 リパース ポイント バッファに存在するデータが無効です。
+.
+Language=Finnish
+Uudelleenjäsennyskohdan puskurin tiedot ovat virheellisiä.
 .
 
 MessageId=4393
@@ -23147,6 +26610,9 @@ The tag present in the reparse point buffer is invalid.
 Language=Japanese
 リパース ポイントバッファに存在するタグは無効です。
 .
+Language=Finnish
+Uudelleenjäsennyskohdan puskurin tunniste on virheellinen.
+.
 
 MessageId=4394
 Severity=Success
@@ -23166,6 +26632,9 @@ There is a mismatch between the tag specified in the request and the tag present
 .
 Language=Japanese
 要求で指定されたタグとリパース ポイントに存在するタグの間に不一致があります。
+.
+Language=Finnish
+Pyynnössä määritetty tunniste ei vastaa uudelleenjäsennyskohdan tunnistetta.
 .
 
 MessageId=4500
@@ -23187,6 +26656,9 @@ Single Instance Storage is not available on this volume.
 Language=Japanese
 シングル インスタンス ストレージはこのボリュームでは使用できません。
 .
+Language=Finnish
+Yhden esiintymän tallennus (SIS) ei ole käytettävissä tällä taltiolla.
+.
 
 MessageId=5001
 Severity=Success
@@ -23206,6 +26678,9 @@ The cluster resource cannot be moved to another group because other resources ar
 .
 Language=Japanese
 他のリソースがそのリソースに依存しているため、クラスタ リソースを他のグループに移動することはできません。
+.
+Language=Finnish
+Klusterin resurssia ei voi siirtää toiseen ryhmään, koska muut resurssit ovat riippuvaisia siitä.
 .
 
 MessageId=5002
@@ -23227,6 +26702,9 @@ The cluster resource dependency cannot be found.
 Language=Japanese
 クラスタ リソースの依存関係が見つかりません。
 .
+Language=Finnish
+Klusterin resurssin riippuvuutta ei löydy.
+.
 
 MessageId=5003
 Severity=Success
@@ -23246,6 +26724,9 @@ The cluster resource cannot be made dependent on the specified resource because 
 .
 Language=Japanese
 クラスタ リソースはすでに依存関係にあるため、指定されたリソースに依存させることはできません。
+.
+Language=Finnish
+Klusterin resurssia ei voi tehdä riippuvaiseksi määritetystä resurssista, koska se on jo riippuvainen.
 .
 
 MessageId=5004
@@ -23267,6 +26748,9 @@ The cluster resource is not online.
 Language=Japanese
 クラスタ リソースがオンラインではありません。
 .
+Language=Finnish
+Klusterin resurssi ei ole käytössä.
+.
 
 MessageId=5005
 Severity=Success
@@ -23286,6 +26770,9 @@ A cluster node is not available for this operation.
 .
 Language=Japanese
 クラスタ ノードがこの操作で使用できません。
+.
+Language=Finnish
+Klusterin solmu ei ole käytettävissä tähän toimintoon.
 .
 
 MessageId=5006
@@ -23307,6 +26794,9 @@ The cluster resource is not available.
 Language=Japanese
 クラスタ リソースが使用できません。
 .
+Language=Finnish
+Klusterin resurssi ei ole käytettävissä.
+.
 
 MessageId=5007
 Severity=Success
@@ -23326,6 +26816,9 @@ The cluster resource could not be found.
 .
 Language=Japanese
 クラスタ リソースが見つかりませんでした。
+.
+Language=Finnish
+Klusterin resurssia ei löytynyt.
 .
 
 MessageId=5008
@@ -23347,6 +26840,9 @@ The cluster is being shut down.
 Language=Japanese
 クラスタがシャットダウンされました。
 .
+Language=Finnish
+Klusteria sammutetaan.
+.
 
 MessageId=5009
 Severity=Success
@@ -23366,6 +26862,9 @@ A cluster node cannot be evicted from the cluster unless the node is down.
 .
 Language=Japanese
 ノードがダウンしているか最後のノードでない限り、クラスタ ノードをクラスタから退去させることはできません。
+.
+Language=Finnish
+Klusterin solmua ei voi poistaa klusterista, ellei solmu ole pysähtynyt.
 .
 
 MessageId=5010
@@ -23387,6 +26886,9 @@ The object already exists.
 Language=Japanese
 オブジェクトはすでに存在します。
 .
+Language=Finnish
+Objekti on jo olemassa.
+.
 
 MessageId=5011
 Severity=Success
@@ -23406,6 +26908,9 @@ The object is already in the list.
 .
 Language=Japanese
 オブジェクトはすでにリストにあります。
+.
+Language=Finnish
+Objekti on jo luettelossa.
 .
 
 MessageId=5012
@@ -23427,6 +26932,9 @@ The cluster group is not available for any new requests.
 Language=Japanese
 クラスタ グループは新しい要求に対して使用できません。
 .
+Language=Finnish
+Klusterin ryhmä ei ole käytettävissä uusille pyynnöille.
+.
 
 MessageId=5013
 Severity=Success
@@ -23446,6 +26954,9 @@ The cluster group could not be found.
 .
 Language=Japanese
 クラスタ グループが見つかりません。
+.
+Language=Finnish
+Klusterin ryhmää ei löytynyt.
 .
 
 MessageId=5014
@@ -23467,6 +26978,9 @@ The operation could not be completed because the cluster group is not online.
 Language=Japanese
 クラスタ グループがオンラインではないため、操作を完了できませんでした。
 .
+Language=Finnish
+Toimintoa ei voitu suorittaa, koska klusterin ryhmä ei ole käytössä.
+.
 
 MessageId=5015
 Severity=Success
@@ -23486,6 +27000,9 @@ The cluster node is not the owner of the resource.
 .
 Language=Japanese
 指定されたクラスタ ノードはリソースの所有者ではありません。
+.
+Language=Finnish
+Klusterin solmu ei ole resurssin omistaja.
 .
 
 MessageId=5016
@@ -23507,6 +27024,9 @@ The cluster node is not the owner of the group.
 Language=Japanese
 指定されたクラスタ ノードはグループの所有者ではありません。
 .
+Language=Finnish
+Klusterin solmu ei ole ryhmän omistaja.
+.
 
 MessageId=5017
 Severity=Success
@@ -23526,6 +27046,9 @@ The cluster resource could not be created in the specified resource monitor.
 .
 Language=Japanese
 指定されたリソース モニタにクラスタ リソースを作成できませんでした。
+.
+Language=Finnish
+Klusterin resurssia ei voitu luoda määritetyssä resurssivalvonnassa.
 .
 
 MessageId=5018
@@ -23547,6 +27070,9 @@ The cluster resource could not be brought online by the resource monitor.
 Language=Japanese
 クラスタ リソースをリソース モニタでオンラインにできませんでした。
 .
+Language=Finnish
+Resurssivalvonta ei voinut ottaa klusterin resurssia käyttöön.
+.
 
 MessageId=5019
 Severity=Success
@@ -23566,6 +27092,9 @@ The operation could not be completed because the cluster resource is online.
 .
 Language=Japanese
 クラスタ リソースがオンラインであるため、操作を完了できませんでした。
+.
+Language=Finnish
+Toimintoa ei voitu suorittaa, koska klusterin resurssi on käytössä.
 .
 
 MessageId=5020
@@ -23587,6 +27116,9 @@ The cluster resource could not be deleted or brought offline because it is the q
 Language=Japanese
 クラスタ リソースがクォーラム リソースであるため、削除またはオフラインにできませんでした。
 .
+Language=Finnish
+Klusterin resurssia ei voitu poistaa tai poistaa käytöstä, koska se on kvorumiresurssi.
+.
 
 MessageId=5021
 Severity=Success
@@ -23606,6 +27138,9 @@ The cluster could not make the specified resource a quorum resource because it i
 .
 Language=Japanese
 クラスタが指定されたリソースをクォーラム リソースにできませんでした。
+.
+Language=Finnish
+Klusteri ei voinut tehdä määritetystä resurssista kvorumiresurssia, koska se ei voi olla kvorumiresurssi.
 .
 
 MessageId=5022
@@ -23627,6 +27162,9 @@ The cluster software is shutting down.
 Language=Japanese
 クラスタ ソフトウェアをシャットダウンしています。
 .
+Language=Finnish
+Klusteriohjelmisto on sammumassa.
+.
 
 MessageId=5023
 Severity=Success
@@ -23646,6 +27184,9 @@ The group or resource is not in the correct state to perform the requested opera
 .
 Language=Japanese
 グループまたはリソースが要求された操作を実行するのに適切な状態ではありません。
+.
+Language=Finnish
+Ryhmä tai resurssi ei ole oikeassa tilassa pyydetyn toiminnon suorittamiseen.
 .
 
 MessageId=5024
@@ -23667,6 +27208,9 @@ The properties were stored but not all changes will take effect until the next t
 Language=Japanese
 プロパティは保存されましたが、リソースが次回オンラインになるまですべての変更が反映されません。
 .
+Language=Finnish
+Ominaisuudet tallennettiin, mutta kaikki muutokset tulevat voimaan vasta, kun resurssi otetaan seuraavan kerran käyttöön.
+.
 
 MessageId=5025
 Severity=Success
@@ -23686,6 +27230,9 @@ The cluster could not make the specified resource a quorum resource because it d
 .
 Language=Japanese
 指定されたリソースが共有ストレージ クラスに属していないため、クラスタをクォーラム リソースにできませんでした。
+.
+Language=Finnish
+Klusteri ei voinut tehdä määritetystä resurssista kvorumiresurssia, koska se ei kuulu jaetun tallennustilan luokkaan.
 .
 
 MessageId=5026
@@ -23707,6 +27254,9 @@ The cluster resource could not be deleted since it is a core resource.
 Language=Japanese
 クラスタ リソースはコア リソースであるため削除できませんでした。
 .
+Language=Finnish
+Klusterin resurssia ei voitu poistaa, koska se on ydinresurssi.
+.
 
 MessageId=5027
 Severity=Success
@@ -23726,6 +27276,9 @@ The quorum resource failed to come online.
 .
 Language=Japanese
 クォーラム リソースのオンライン化に失敗しました。
+.
+Language=Finnish
+Kvorumiresurssin käyttöönotto epäonnistui.
 .
 
 MessageId=5028
@@ -23747,6 +27300,9 @@ The quorum log could not be created or mounted successfully.
 Language=Japanese
 クォーラム ログを正常に作成またはマウントできませんでした。
 .
+Language=Finnish
+Kvorumilokia ei voitu luoda tai liittää.
+.
 
 MessageId=5029
 Severity=Success
@@ -23766,6 +27322,9 @@ The cluster log is corrupt.
 .
 Language=Japanese
 クラスタ ログが壊れています。
+.
+Language=Finnish
+Klusterin loki on vioittunut.
 .
 
 MessageId=5030
@@ -23787,6 +27346,9 @@ The record could not be written to the cluster log since it exceeds the maximum 
 Language=Japanese
 レコードが最大サイズを超えるため、クラスタ ログに書き込めませんでした。
 .
+Language=Finnish
+Tietuetta ei voitu kirjoittaa klusterin lokiin, koska se ylittää enimmäiskoon.
+.
 
 MessageId=5031
 Severity=Success
@@ -23806,6 +27368,9 @@ The cluster log exceeds its maximum size.
 .
 Language=Japanese
 クラスタ ログが最大サイズを超えました。
+.
+Language=Finnish
+Klusterin loki ylittää enimmäiskokonsa.
 .
 
 MessageId=5032
@@ -23827,6 +27392,9 @@ No checkpoint record was found in the cluster log.
 Language=Japanese
 クラスタ ログにチェックポイント レコードが見つかりませんでした。
 .
+Language=Finnish
+Klusterin lokista ei löytynyt tarkistuspistetietuetta.
+.
 
 MessageId=5033
 Severity=Success
@@ -23846,6 +27414,9 @@ The minimum required disk space needed for logging is not available.
 .
 Language=Japanese
 ロギングに必要な最小限のディスク領域がありません。
+.
+Language=Finnish
+Lokiin tarvittavaa levytilan vähimmäismäärää ei ole käytettävissä.
 .
 
 MessageId=5034
@@ -23867,6 +27438,9 @@ The cluster node failed to take control of the quorum resource because the resou
 Language=Japanese
 クラスタ ノードがクォーラム リソースの制御に失敗しました。
 .
+Language=Finnish
+Klusterin solmu ei saanut kvorumiresurssia hallintaansa, koska resurssi on toisen aktiivisen solmun omistuksessa.
+.
 
 MessageId=5035
 Severity=Success
@@ -23886,6 +27460,9 @@ A cluster network is not available for this operation.
 .
 Language=Japanese
 クラスタ ネットワークがこの操作で使用できません。
+.
+Language=Finnish
+Klusterin verkko ei ole käytettävissä tähän toimintoon.
 .
 
 MessageId=5036
@@ -23907,6 +27484,9 @@ A cluster node is not available for this operation.
 Language=Japanese
 この操作ではクラスタ ノードを使用できません。
 .
+Language=Finnish
+Klusterin solmu ei ole käytettävissä tähän toimintoon.
+.
 
 MessageId=5037
 Severity=Success
@@ -23926,6 +27506,9 @@ All cluster nodes must be running to perform this operation.
 .
 Language=Japanese
 この操作を実行するには、すべてのクラスタ ノードが実行中である必要があります。
+.
+Language=Finnish
+Kaikkien klusterin solmujen on oltava käynnissä tämän toiminnon suorittamiseen.
 .
 
 MessageId=5038
@@ -23947,6 +27530,9 @@ A cluster resource failed.
 Language=Japanese
 クラスタ リソースが失敗しました。
 .
+Language=Finnish
+Klusterin resurssi epäonnistui.
+.
 
 MessageId=5039
 Severity=Success
@@ -23966,6 +27552,9 @@ The cluster node is not valid.
 .
 Language=Japanese
 クラスタ ノードが無効です。
+.
+Language=Finnish
+Klusterin solmu ei ole kelvollinen.
 .
 
 MessageId=5040
@@ -23987,6 +27576,9 @@ The cluster node already exists.
 Language=Japanese
 クラスタノードはすでに存在します。
 .
+Language=Finnish
+Klusterin solmu on jo olemassa.
+.
 
 MessageId=5041
 Severity=Success
@@ -24006,6 +27598,9 @@ A node is in the process of joining the cluster.
 .
 Language=Japanese
 ノードがクラスタに参加中です。
+.
+Language=Finnish
+Solmu on liittymässä klusteriin.
 .
 
 MessageId=5042
@@ -24027,6 +27622,9 @@ The cluster node was not found.
 Language=Japanese
 クラスタ ノードが見つかりませんでした。
 .
+Language=Finnish
+Klusterin solmua ei löytynyt.
+.
 
 MessageId=5043
 Severity=Success
@@ -24046,6 +27644,9 @@ The cluster local node information was not found.
 .
 Language=Japanese
 クラスタのローカル ノード情報が見つかりませんでした。
+.
+Language=Finnish
+Klusterin paikallisen solmun tietoja ei löytynyt.
 .
 
 MessageId=5044
@@ -24067,6 +27668,9 @@ The cluster network already exists.
 Language=Japanese
 クラスタ ネットワークは既に存在します。
 .
+Language=Finnish
+Klusterin verkko on jo olemassa.
+.
 
 MessageId=5045
 Severity=Success
@@ -24086,6 +27690,9 @@ The cluster network was not found.
 .
 Language=Japanese
 クラスタ ネットワークが見つかりませんでした。
+.
+Language=Finnish
+Klusterin verkkoa ei löytynyt.
 .
 
 MessageId=5046
@@ -24107,6 +27714,9 @@ The cluster network interface already exists.
 Language=Japanese
 クラスタ ネットワーク インタフェースは既に存在します。
 .
+Language=Finnish
+Klusterin verkkoliitäntä on jo olemassa.
+.
 
 MessageId=5047
 Severity=Success
@@ -24126,6 +27736,9 @@ The cluster network interface was not found.
 .
 Language=Japanese
 クラスタ ネットワーク インタフェースが見つかりませんでした。
+.
+Language=Finnish
+Klusterin verkkoliitäntää ei löytynyt.
 .
 
 MessageId=5048
@@ -24147,6 +27760,9 @@ The cluster request is not valid for this object.
 Language=Japanese
 クラスタ要求はこのオブジェクトに対して有効ではありません。
 .
+Language=Finnish
+Klusterin pyyntö ei ole kelvollinen tälle objektille.
+.
 
 MessageId=5049
 Severity=Success
@@ -24166,6 +27782,9 @@ The cluster network provider is not valid.
 .
 Language=Japanese
 クラスタ ネットワーク プロバイダが無効です。
+.
+Language=Finnish
+Klusterin verkkopalvelun tarjoaja ei ole kelvollinen.
 .
 
 MessageId=5050
@@ -24187,6 +27806,9 @@ The cluster node is down.
 Language=Japanese
 クラスタ ノードがダウンしています。
 .
+Language=Finnish
+Klusterin solmu on pysähtynyt.
+.
 
 MessageId=5051
 Severity=Success
@@ -24206,6 +27828,9 @@ The cluster node is not reachable.
 .
 Language=Japanese
 クラスタ ノードにアクセスできません。
+.
+Language=Finnish
+Klusterin solmua ei tavoiteta.
 .
 
 MessageId=5052
@@ -24227,6 +27852,9 @@ The cluster node is not a member of the cluster.
 Language=Japanese
 クラスタノードはクラスタのメンバではありません。
 .
+Language=Finnish
+Klusterin solmu ei ole klusterin jäsen.
+.
 
 MessageId=5053
 Severity=Success
@@ -24246,6 +27874,9 @@ A cluster join operation is not in progress.
 .
 Language=Japanese
 クラスタ参加操作が進行中ではありません。
+.
+Language=Finnish
+Klusteriin liittyminen ei ole käynnissä.
 .
 
 MessageId=5054
@@ -24267,6 +27898,9 @@ The cluster network is not valid.
 Language=Japanese
 クラスタ ネットワークが無効です。
 .
+Language=Finnish
+Klusterin verkko ei ole kelvollinen.
+.
 
 MessageId=5056
 Severity=Success
@@ -24286,6 +27920,9 @@ The cluster node is up.
 .
 Language=Japanese
 クラスタ ノードがアップしました。
+.
+Language=Finnish
+Klusterin solmu on käynnissä.
 .
 
 MessageId=5057
@@ -24307,6 +27944,9 @@ The cluster IP address is already in use.
 Language=Japanese
 クラスタIPアドレスはすでに使用されています。
 .
+Language=Finnish
+Klusterin IP-osoite on jo käytössä.
+.
 
 MessageId=5058
 Severity=Success
@@ -24326,6 +27966,9 @@ The cluster node is not paused.
 .
 Language=Japanese
 クラスタノードは一時停止していません。
+.
+Language=Finnish
+Klusterin solmua ei ole keskeytetty.
 .
 
 MessageId=5059
@@ -24347,6 +27990,9 @@ No cluster security context is available.
 Language=Japanese
 クラスタ セキュリティ コンテキストがありません。
 .
+Language=Finnish
+Klusterin suojauskontekstia ei ole käytettävissä.
+.
 
 MessageId=5060
 Severity=Success
@@ -24366,6 +28012,9 @@ The cluster network is not configured for internal cluster communication.
 .
 Language=Japanese
 クラスタ ネットワークがクラスタ内部通信用に構成されていません。
+.
+Language=Finnish
+Klusterin verkkoa ei ole määritetty klusterin sisäiseen tietoliikenteeseen.
 .
 
 MessageId=5061
@@ -24387,6 +28036,9 @@ The cluster node is already up.
 Language=Japanese
 クラスタ ノードがすでに起動しています。
 .
+Language=Finnish
+Klusterin solmu on jo käynnissä.
+.
 
 MessageId=5062
 Severity=Success
@@ -24406,6 +28058,9 @@ The cluster node is already down.
 .
 Language=Japanese
 クラスタ ノードはすでにダウンしています。
+.
+Language=Finnish
+Klusterin solmu on jo pysähtynyt.
 .
 
 MessageId=5063
@@ -24427,6 +28082,9 @@ The cluster network is already online.
 Language=Japanese
 クラスタ ネットワークはすでにオンラインです。
 .
+Language=Finnish
+Klusterin verkko on jo käytössä.
+.
 
 MessageId=5064
 Severity=Success
@@ -24446,6 +28104,9 @@ The cluster network is already offline.
 .
 Language=Japanese
 クラスタ ネットワークはすでにオフラインです。
+.
+Language=Finnish
+Klusterin verkko on jo poissa käytöstä.
 .
 
 MessageId=5065
@@ -24467,6 +28128,9 @@ The cluster node is already a member of the cluster.
 Language=Japanese
 クラスタノードはすでにクラスタのメンバです。
 .
+Language=Finnish
+Klusterin solmu on jo klusterin jäsen.
+.
 
 MessageId=5066
 Severity=Success
@@ -24486,6 +28150,9 @@ The cluster network is the only one configured for internal cluster communicatio
 .
 Language=Japanese
 クラスタ ネットワークは、2つ以上のアクティブなクラスタ ノード間のクラスタ内部通信用に構成されたものだけです。内部通信機能はネットワークから削除できません。
+.
+Language=Finnish
+Klusterin verkko on ainoa, joka on määritetty kahden tai useamman aktiivisen klusterin solmun väliseen sisäiseen tietoliikenteeseen. Sisäisen tietoliikenteen ominaisuutta ei voi poistaa verkosta.
 .
 
 MessageId=5067
@@ -24507,6 +28174,9 @@ One or more cluster resources depend on the network to provide service to client
 Language=Japanese
 1つ以上のクラスタ リソースがクライアントにサービスを提供するためにネットワークに依存しています。クライアント アクセス ケイパビリティをネットワークから削除できません。
 .
+Language=Finnish
+Yksi tai useampi klusterin resurssi on riippuvainen verkosta palvellakseen asiakkaita. Asiakasyhteyksien ominaisuutta ei voi poistaa verkosta.
+.
 
 MessageId=5068
 Severity=Success
@@ -24526,6 +28196,9 @@ This operation cannot be performed on the cluster resource as it the quorum reso
 .
 Language=Japanese
 この操作はクォーラム リソースを含むクラスタ グループでは現在実行できません。
+.
+Language=Finnish
+Tätä toimintoa ei voi suorittaa klusterin resurssille, koska se on kvorumiresurssi. Kvorumiresurssia ei voi poistaa käytöstä eikä sen mahdollisten omistajien luetteloa voi muuttaa.
 .
 
 MessageId=5069
@@ -24547,6 +28220,9 @@ The cluster quorum resource is not allowed to have any dependencies.
 Language=Japanese
 クラスタ クォーラム リソースは依存関係を持つことを許可されていません。
 .
+Language=Finnish
+Klusterin kvorumiresurssilla ei saa olla riippuvuuksia.
+.
 
 MessageId=5070
 Severity=Success
@@ -24566,6 +28242,9 @@ The cluster node is paused.
 .
 Language=Japanese
 クラスタ ノードが一時停止しています。
+.
+Language=Finnish
+Klusterin solmu on keskeytetty.
 .
 
 MessageId=5071
@@ -24588,6 +28267,9 @@ Language=Japanese
 クラスタ リソースをオンラインにできません。
 所有ノードはこのリソースを実行できません。
 .
+Language=Finnish
+Klusterin resurssia ei voi ottaa käyttöön. Omistajasolmu ei voi suorittaa tätä resurssia.
+.
 
 MessageId=5072
 Severity=Success
@@ -24607,6 +28289,9 @@ The cluster node is not ready to perform the requested operation.
 .
 Language=Japanese
 クラスタ ノードが要求された操作を実行する準備ができていません。
+.
+Language=Finnish
+Klusterin solmu ei ole valmis suorittamaan pyydettyä toimintoa.
 .
 
 MessageId=5073
@@ -24628,6 +28313,9 @@ The cluster node is shutting down.
 Language=Japanese
 クラスタ ノードをシャットダウンしています。
 .
+Language=Finnish
+Klusterin solmu on sammumassa.
+.
 
 MessageId=5074
 Severity=Success
@@ -24647,6 +28335,9 @@ The cluster join operation was aborted.
 .
 Language=Japanese
 クラスタ参加操作が中断されました。
+.
+Language=Finnish
+Klusteriin liittyminen keskeytettiin.
 .
 
 MessageId=5075
@@ -24668,6 +28359,9 @@ The cluster join operation failed due to incompatible software versions between 
 Language=Japanese
 参加ノードとクラスタ内の他のノードのオペレーティング システムのバージョンに互換性がないため、ノードのクラスタ参加に失敗しました。
 .
+Language=Finnish
+Klusteriin liittyminen epäonnistui, koska liittyvän solmun ja sen sponsorin ohjelmistoversiot eivät ole yhteensopivia.
+.
 
 MessageId=5076
 Severity=Success
@@ -24687,6 +28381,9 @@ This resource cannot be created because the cluster has reached the limit on the
 .
 Language=Japanese
 クラスタが監視できるリソース数の上限に達したため、このリソースを作成できません。
+.
+Language=Finnish
+Tätä resurssia ei voi luoda, koska klusteri on saavuttanut valvottavien resurssien enimmäismäärän.
 .
 
 MessageId=5077
@@ -24708,6 +28405,9 @@ The system configuration changed during the cluster join or form operation. The 
 Language=Japanese
 クラスタ参加またはフォーム操作中にシステム構成が変更されました。参加またはフォーム操作は中止されました。
 .
+Language=Finnish
+Järjestelmän kokoonpano muuttui klusteriin liittymisen tai klusterin muodostamisen aikana. Liittyminen tai muodostaminen keskeytettiin.
+.
 
 MessageId=5078
 Severity=Success
@@ -24727,6 +28427,9 @@ The specified resource type was not found.
 .
 Language=Japanese
 指定されたリソース タイプが見つかりませんでした。
+.
+Language=Finnish
+Määritettyä resurssityyppiä ei löytynyt.
 .
 
 MessageId=5079
@@ -24748,6 +28451,9 @@ The specified node does not support a resource of this type. This may be due to 
 Language=Japanese
 指定されたノードはこのタイプのリソースをサポートしていません。これは、バージョンの不一致、またはこのノードにリソースDLLがないことが原因です。
 .
+Language=Finnish
+Määritetty solmu ei tue tämän tyyppistä resurssia. Syy voi olla versioiden epäyhtenäisyys tai resurssin DLL-tiedoston puuttuminen tästä solmusta.
+.
 
 MessageId=5080
 Severity=Success
@@ -24767,6 +28473,9 @@ The specified resource name is supported by this resource DLL. This may be due t
 .
 Language=Japanese
 指定されたリソース名は、このリソースDLLではサポートされていません。これは、リソースDLLに提供された名前が間違っている (または変更された) ことが原因である可能性があります。
+.
+Language=Finnish
+Tämä resurssin DLL-tiedosto tukee määritettyä resurssin nimeä. Syy voi olla resurssin DLL-tiedostolle annettu virheellinen (tai muuttunut) nimi.
 .
 
 MessageId=5081
@@ -24788,6 +28497,9 @@ No authentication package could be registered with the RPC server.
 Language=Japanese
 認証パッケージを RPC サーバーに登録できませんでした。
 .
+Language=Finnish
+Yhtään todennuspakettia ei voitu rekisteröidä RPC-palvelimelle.
+.
 
 MessageId=5082
 Severity=Success
@@ -24807,6 +28519,9 @@ You cannot bring the group online because the owner of the group is not in the p
 .
 Language=Japanese
 グループの所有者がグループの優先リストにないため、グループをオンラインにできません。グループの所有者ノードを変更するには、グループを移動してください。
+.
+Language=Finnish
+Ryhmää ei voi ottaa käyttöön, koska ryhmän omistaja ei ole ryhmän suositeltujen luettelossa. Vaihda ryhmän omistajasolmu siirtämällä ryhmä.
 .
 
 MessageId=5083
@@ -24828,6 +28543,9 @@ The join operation failed because the cluster database sequence number has chang
 Language=Japanese
 クラスタ データベースのシーケンス番号が変更されたか、ロッカー ノードと互換性がないため、参加操作に失敗しました。これは、参加中にクラスタ データベースが変更された場合に、参加操作中に発生する可能性があります。
 .
+Language=Finnish
+Liittyminen epäonnistui, koska klusterin tietokannan järjestysnumero on muuttunut tai ei ole yhteensopiva lukitsijasolmun kanssa. Näin voi käydä liittymisen aikana, jos klusterin tietokanta muuttui liittymisen aikana.
+.
 
 MessageId=5084
 Severity=Success
@@ -24847,6 +28565,9 @@ The resource monitor will not allow the fail operation to be performed while the
 .
 Language=Japanese
 リソースが現在の状態の間、リソース モニタはフェイル操作の実行を許可しません。リソースがペンディング状態の場合に発生する可能性があります。
+.
+Language=Finnish
+Resurssivalvonta ei salli epäonnistumistoiminnon suorittamista, kun resurssi on nykyisessä tilassaan. Näin voi käydä, jos resurssi on odotustilassa.
 .
 
 MessageId=5085
@@ -24868,6 +28589,9 @@ A non locker code got a request to reserve the lock for making global updates.
 Language=Japanese
 非ロッカー コードがグローバル更新のためのロック予約要求を受け取りました。
 .
+Language=Finnish
+Muu kuin lukitsijakoodi sai pyynnön varata lukitus yleisiä päivityksiä varten.
+.
 
 MessageId=5086
 Severity=Success
@@ -24887,6 +28611,9 @@ The quorum disk could not be located by the cluster service.
 .
 Language=Japanese
 クラスタサービスによってクォーラムディスクを検出できませんでした。
+.
+Language=Finnish
+Klusteripalvelu ei löytänyt kvorumilevyä.
 .
 
 MessageId=5087
@@ -24908,6 +28635,9 @@ The backup up cluster database is possibly corrupt.
 Language=Japanese
 バックアップされたクラスタ データベースが破損している可能性があります。
 .
+Language=Finnish
+Klusterin tietokannan varmuuskopio on ehkä vioittunut.
+.
 
 MessageId=5088
 Severity=Success
@@ -24927,6 +28657,9 @@ A DFS root already exists in this cluster node.
 .
 Language=Japanese
 DFSルートがこのクラスタノードにすでに存在します。
+.
+Language=Finnish
+Tässä klusterin solmussa on jo DFS-pääkohde.
 .
 
 MessageId=5089
@@ -24948,6 +28681,9 @@ An attempt to modify a resource property failed because it conflicts with anothe
 Language=Japanese
 リソース プロパティを変更しようとしましたが、既存のプロパティと競合したため変更できませんでした。
 .
+Language=Finnish
+Resurssin ominaisuuden muuttaminen epäonnistui, koska se on ristiriidassa toisen ominaisuuden kanssa.
+.
 
 MessageId=5890
 Severity=Success
@@ -24967,6 +28703,9 @@ An operation was attempted that is incompatible with the current membership stat
 .
 Language=Japanese
 ノードの現在のメンバシップ状態と互換性のない操作を試みました。
+.
+Language=Finnish
+Yritettiin toimintoa, joka ei sovi yhteen solmun nykyisen jäsenyystilan kanssa.
 .
 
 MessageId=5891
@@ -24988,6 +28727,9 @@ The quorum resource does not contain the quorum log.
 Language=Japanese
 クォーラムリソースにクォーラム ログが含まれていません。
 .
+Language=Finnish
+Kvorumiresurssissa ei ole kvorumilokia.
+.
 
 MessageId=5892
 Severity=Success
@@ -25007,6 +28749,9 @@ The membership engine requested shutdown of the cluster service on this node.
 .
 Language=Japanese
 メンバーシップ エンジンがこのノードのクラスタ サービスのシャットダウンを要求しました。
+.
+Language=Finnish
+Jäsenyysmoduuli pyysi klusteripalvelun sammuttamista tässä solmussa.
 .
 
 MessageId=5893
@@ -25028,6 +28773,9 @@ The join operation failed because the cluster instance ID of the joining node do
 Language=Japanese
 参加ノードのクラスタ インスタンスIDがスポンサー ノードのクラスタ インスタンスIDと一致しないため、参加操作は失敗しました。
 .
+Language=Finnish
+Liittyminen epäonnistui, koska liittyvän solmun klusterin esiintymätunnus ei vastaa sponsorisolmun klusterin esiintymätunnusta.
+.
 
 MessageId=5894
 Severity=Success
@@ -25047,6 +28795,9 @@ A matching network for the specified IP address could not be found. Please also 
 .
 Language=Japanese
 指定されたIPアドレスに一致するクラスタ ネットワークが見つかりませんでした。
+.
+Language=Finnish
+Määritettyä IP-osoitetta vastaavaa verkkoa ei löytynyt. Anna myös aliverkon peite ja klusterin verkko.
 .
 
 MessageId=5895
@@ -25068,6 +28819,9 @@ The actual data type of the property did not match the expected data type of the
 Language=Japanese
 プロパティの実際のデータ型がプロパティの予想されるデータ型と一致しませんでした。
 .
+Language=Finnish
+Ominaisuuden todellinen tietotyyppi ei vastannut ominaisuuden odotettua tietotyyppiä.
+.
 
 MessageId=5896
 Severity=Success
@@ -25087,6 +28841,9 @@ The cluster node was evicted from the cluster successfully, but the node was not
 .
 Language=Japanese
 クラスタ ノードは正常にクラスタから削除されましたが、ノードはクリーンアップされませんでした。どのクリーンアップ手順が失敗し、どのように回復するかを確認するには、イベントビューアを使用してFailover Clusteringアプリケーションのイベントログを参照してください。
+.
+Language=Finnish
+Klusterin solmu poistettiin klusterista, mutta solmua ei siivottu. Laajennetut tilatiedot, jotka kertovat, miksi solmua ei siivottu, ovat saatavilla.
 .
 
 MessageId=5897
@@ -25108,6 +28865,9 @@ Two or more parameter values specified for a resource's properties are in confli
 Language=Japanese
 リソースのプロパティに指定された2つ以上のパラメータ値が競合しています。
 .
+Language=Finnish
+Kaksi tai useampi resurssin ominaisuuksille määritetty parametrin arvo on ristiriidassa keskenään.
+.
 
 MessageId=5898
 Severity=Success
@@ -25127,6 +28887,9 @@ This computer cannot be made a member of a cluster.
 .
 Language=Japanese
 このコンピュータをクラスタのメンバにできません。
+.
+Language=Finnish
+Tätä tietokonetta ei voi tehdä klusterin jäseneksi.
 .
 
 MessageId=5899
@@ -25148,6 +28911,9 @@ This computer cannot be made a member of a cluster because it does not have the 
 Language=Japanese
 このコンピュータには正しいバージョンのLiberNTがインストールされていないため、クラスタのメンバにできません。
 .
+Language=Finnish
+Tätä tietokonetta ei voi tehdä klusterin jäseneksi, koska siihen ei ole asennettu oikeaa Windowsin versiota.
+.
 
 MessageId=5900
 Severity=Success
@@ -25167,6 +28933,9 @@ A cluster cannot be created with the specified cluster name because that cluster
 .
 Language=Japanese
 指定したクラスタ名がすでに使用されているため、指定したクラスタ名でクラスタを作成できません。別のクラスタ名を指定してください。
+.
+Language=Finnish
+Klusteria ei voi luoda määritetyllä klusterin nimellä, koska nimi on jo käytössä. Anna klusterille eri nimi.
 .
 
 MessageId=5901
@@ -25188,6 +28957,9 @@ The cluster configuration action has already been committed.
 Language=Japanese
 クラスタ構成アクションはすでにコミットされています。
 .
+Language=Finnish
+Klusterin määritystoiminto on jo vahvistettu.
+.
 
 MessageId=5902
 Severity=Success
@@ -25207,6 +28979,9 @@ The cluster configuration action could not be rolled back.
 .
 Language=Japanese
 クラスタ構成アクションをロールバックできませんでした。
+.
+Language=Finnish
+Klusterin määritystoimintoa ei voitu perua.
 .
 
 MessageId=5903
@@ -25228,6 +29003,9 @@ The drive letter assigned to a system disk on one node conflicted with the drive
 Language=Japanese
 あるノードのシステム ディスクに割り当てられたドライブ文字と、別のノードのディスクに割り当てられたドライブ文字が競合しました。
 .
+Language=Finnish
+Yhden solmun järjestelmälevylle määritetty aseman tunnus oli ristiriidassa toisen solmun levylle määritetyn aseman tunnuksen kanssa.
+.
 
 MessageId=5904
 Severity=Success
@@ -25247,6 +29025,9 @@ One or more nodes in the cluster are running a version of Windows that does not 
 .
 Language=Japanese
 クラスタ内の1つまたは複数のノードで、この操作をサポートしないバージョンのLiberNTが実行されています。
+.
+Language=Finnish
+Yksi tai useampi klusterin solmu käyttää Windowsin versiota, joka ei tue tätä toimintoa.
 .
 
 MessageId=5905
@@ -25268,6 +29049,9 @@ The name of the corresponding computer account doesn't match the Network Name fo
 Language=Japanese
 対応するコンピュータのアカウント名がこのリソースのネットワーク名に一致しません。
 .
+Language=Finnish
+Vastaavan tietokonetilin nimi ei vastaa tämän resurssin verkkonimeä.
+.
 
 MessageId=5906
 Severity=Success
@@ -25287,6 +29071,9 @@ No network adapters are available.
 .
 Language=Japanese
 使用可能なネットワーク アダプタがありません。
+.
+Language=Finnish
+Verkkosovittimia ei ole käytettävissä.
 .
 
 MessageId=5907
@@ -25308,6 +29095,9 @@ The cluster node has been poisoned.
 Language=Japanese
 クラスタ ノードがポイズンされました。
 .
+Language=Finnish
+Klusterin solmu on myrkytetty.
+.
 
 MessageId=6000
 Severity=Success
@@ -25327,6 +29117,9 @@ The specified file could not be encrypted.
 .
 Language=Japanese
 指定されたファイルを暗号化できませんでした。
+.
+Language=Finnish
+Määritettyä tiedostoa ei voitu salata.
 .
 
 MessageId=6001
@@ -25348,6 +29141,9 @@ The specified file could not be decrypted.
 Language=Japanese
 指定されたファイルは復号化できませんでした。
 .
+Language=Finnish
+Määritetyn tiedoston salausta ei voitu purkaa.
+.
 
 MessageId=6002
 Severity=Success
@@ -25367,6 +29163,9 @@ The specified file is encrypted and the user does not have the ability to decryp
 .
 Language=Japanese
 指定されたファイルは暗号化されており、ユーザーには復号化する権限がありません。
+.
+Language=Finnish
+Annettu tiedosto on salattu, eikä käyttäjä voi purkaa sen salausta.
 .
 
 MessageId=6003
@@ -25388,6 +29187,9 @@ There is no valid encryption recovery policy configured for this system.
 Language=Japanese
 このシステムに有効な暗号化回復ポリシーが構成されていません。
 .
+Language=Finnish
+Tälle järjestelmälle ei ole määritetty kelvollista salauksen palautuskäytäntöä.
+.
 
 MessageId=6004
 Severity=Success
@@ -25407,6 +29209,9 @@ The required encryption driver is not loaded for this system.
 .
 Language=Japanese
 必要な暗号化ドライバがこのシステムにロードされていません。
+.
+Language=Finnish
+Tarvittavaa salausajuria ei ole ladattu tähän järjestelmään.
 .
 
 MessageId=6005
@@ -25428,6 +29233,9 @@ The file was encrypted with a different encryption driver than is currently load
 Language=Japanese
 ファイルは現在ロードされている暗号化ドライバとは異なる暗号化ドライバで暗号化されました。
 .
+Language=Finnish
+Tiedosto salattiin eri salausajurilla kuin nyt ladattu.
+.
 
 MessageId=6006
 Severity=Success
@@ -25447,6 +29255,9 @@ There are no EFS keys defined for the user.
 .
 Language=Japanese
 ユーザーに定義されたEFSキーがありません。
+.
+Language=Finnish
+Käyttäjälle ei ole määritetty EFS-avaimia.
 .
 
 MessageId=6007
@@ -25468,6 +29279,9 @@ The specified file is not encrypted.
 Language=Japanese
 指定されたファイルは暗号化されていません。
 .
+Language=Finnish
+Annettua tiedostoa ei ole salattu.
+.
 
 MessageId=6008
 Severity=Success
@@ -25487,6 +29301,9 @@ The specified file is not in the defined EFS export format.
 .
 Language=Japanese
 指定されたファイルは定義されたEFSエクスポート形式ではありません。
+.
+Language=Finnish
+Annettu tiedosto ei ole määritetyssä EFS-vientimuodossa.
 .
 
 MessageId=6009
@@ -25508,6 +29325,9 @@ The specified file is read-only.
 Language=Japanese
 指定されたファイルは読み取り専用です。
 .
+Language=Finnish
+Määritetty tiedosto on vain luku -tiedosto.
+.
 
 MessageId=6010
 Severity=Success
@@ -25527,6 +29347,9 @@ The directory has been disabled for encryption.
 .
 Language=Japanese
 ディレクトリは暗号化が無効になっています。
+.
+Language=Finnish
+Hakemiston salaaminen on poistettu käytöstä.
 .
 
 MessageId=6011
@@ -25548,6 +29371,9 @@ The server is not trusted for remote encryption operation.
 Language=Japanese
 サーバーはリモート暗号化操作に対して信頼されていません。
 .
+Language=Finnish
+Palvelimeen ei luoteta etäsalaustoiminnoissa.
+.
 
 MessageId=6012
 Severity=Success
@@ -25567,6 +29393,9 @@ Recovery policy configured for this system contains invalid recovery certificate
 .
 Language=Japanese
 このシステムに設定されている回復ポリシーに無効な回復証明書が含まれています。
+.
+Language=Finnish
+Tälle järjestelmälle määritetyssä palautuskäytännössä on virheellinen palautusvarmenne.
 .
 
 MessageId=6013
@@ -25588,6 +29417,9 @@ The encryption algorithm used on the source file needs a bigger key buffer than 
 Language=Japanese
 ソース ファイルで使用される暗号化アルゴリズムには、宛先ファイルで使用されるものより大きなキー バッファが必要です。
 .
+Language=Finnish
+Lähdetiedoston salausalgoritmi tarvitsee suuremman avainpuskurin kuin kohdetiedostossa on.
+.
 
 MessageId=6014
 Severity=Success
@@ -25607,6 +29439,9 @@ The disk partition does not support file encryption.
 .
 Language=Japanese
 ディスク パーティションはファイル暗号化をサポートしていません。
+.
+Language=Finnish
+Levyosio ei tue tiedostojen salausta.
 .
 
 MessageId=6015
@@ -25628,6 +29463,9 @@ This machine is disabled for file encryption.
 Language=Japanese
 このマシンではファイル暗号化は無効です。
 .
+Language=Finnish
+Tiedostojen salaus on poistettu käytöstä tässä koneessa.
+.
 
 MessageId=6016
 Severity=Success
@@ -25647,6 +29485,9 @@ A newer system is required to decrypt this encrypted file.
 .
 Language=Japanese
 この暗号化されたファイルを復号化するには、新しいシステムが必要です。
+.
+Language=Finnish
+Tämän salatun tiedoston salauksen purkamiseen tarvitaan uudempi järjestelmä.
 .
 
 MessageId=6118
@@ -25668,6 +29509,9 @@ The list of servers for this workgroup is not currently available.
 Language=Japanese
 このワークグループのサーバーのリストは現在利用できません。
 .
+Language=Finnish
+Tämän työryhmän palvelinluettelo ei ole tällä hetkellä käytettävissä.
+.
 
 MessageId=6200
 Severity=Success
@@ -25687,6 +29531,9 @@ The Task Scheduler service must be configured to run in the System account to fu
 .
 Language=Japanese
 タスクスケジューラサービスを正しく機能させるには、システムアカウントで実行するように構成する必要があります。個々のタスクは他のアカウントで実行するように構成できます。
+.
+Language=Finnish
+Tehtävien ajoituspalvelu on määritettävä toimimaan System-tilillä, jotta se toimisi oikein. Yksittäiset tehtävät voidaan määrittää toimimaan muilla tileillä.
 .
 
 MessageId=7001
@@ -25708,6 +29555,9 @@ The specified session name is invalid.
 Language=Japanese
 指定されたセッション名が無効です。
 .
+Language=Finnish
+Määritetty istunnon nimi on virheellinen.
+.
 
 MessageId=7002
 Severity=Success
@@ -25727,6 +29577,9 @@ The specified protocol driver is invalid.
 .
 Language=Japanese
 指定されたプロトコルドライバーが無効です。
+.
+Language=Finnish
+Määritetty protokolla-ajuri on virheellinen.
 .
 
 MessageId=7003
@@ -25748,6 +29601,9 @@ The specified protocol driver was not found in the system path.
 Language=Japanese
 指定されたプロトコルドライバーがシステムパスに見つかりません。
 .
+Language=Finnish
+Määritettyä protokolla-ajuria ei löytynyt järjestelmän polusta.
+.
 
 MessageId=7004
 Severity=Success
@@ -25767,6 +29623,9 @@ The specified terminal connection driver was not found in the system path.
 .
 Language=Japanese
 指定されたターミナル接続ドライバがシステムパスで見つかりません。
+.
+Language=Finnish
+Määritettyä päätteen yhteysajuria ei löytynyt järjestelmän polusta.
 .
 
 MessageId=7005
@@ -25788,6 +29647,9 @@ A registry key for event logging could not be created for this session.
 Language=Japanese
 イベントログ用のレジストリキーがこのセッションに作成できませんでした。
 .
+Language=Finnish
+Tälle istunnolle ei voitu luoda tapahtumalokin rekisteriavainta.
+.
 
 MessageId=7006
 Severity=Success
@@ -25807,6 +29669,9 @@ A service with the same name already exists on the system.
 .
 Language=Japanese
 同じ名前のサービスがすでにシステムに存在します。
+.
+Language=Finnish
+Järjestelmässä on jo samanniminen palvelu.
 .
 
 MessageId=7007
@@ -25828,6 +29693,9 @@ A close operation is pending on the session.
 Language=Japanese
 セッションでクローズ操作が保留されています。
 .
+Language=Finnish
+Istunnon sulkeminen odottaa.
+.
 
 MessageId=7008
 Severity=Success
@@ -25847,6 +29715,9 @@ There are no free output buffers available.
 .
 Language=Japanese
 空き出力バッファがありません。
+.
+Language=Finnish
+Vapaita tulostuspuskureita ei ole käytettävissä.
 .
 
 MessageId=7009
@@ -25868,6 +29739,9 @@ The MODEM.INF file was not found.
 Language=Japanese
 MODEM.INFファイルが見つかりませんでした。
 .
+Language=Finnish
+MODEM.INF-tiedostoa ei löytynyt.
+.
 
 MessageId=7010
 Severity=Success
@@ -25887,6 +29761,9 @@ The modem name was not found in MODEM.INF.
 .
 Language=Japanese
 モデム名が MODEM.INF に見つかりませんでした。
+.
+Language=Finnish
+Modeemin nimeä ei löytynyt MODEM.INF-tiedostosta.
 .
 
 MessageId=7011
@@ -25908,6 +29785,9 @@ The modem did not accept the command sent to it. Verify that the configured mode
 Language=Japanese
 モデムが送信されたコマンドを受け付けませんでした。設定されているモデム名が接続されているモデムと一致しているか確認してください。
 .
+Language=Finnish
+Modeemi ei hyväksynyt sille lähetettyä komentoa. Varmista, että määritetty modeemin nimi vastaa liitettyä modeemia.
+.
 
 MessageId=7012
 Severity=Success
@@ -25927,6 +29807,9 @@ The modem did not respond to the command sent to it. Verify that the modem is pr
 .
 Language=Japanese
 モデムが送信されたコマンドに応答しませんでした。モデムが正しくケーブル接続され、電源が入っていることを確認してください。
+.
+Language=Finnish
+Modeemi ei vastannut sille lähetettyyn komentoon. Varmista, että modeemi on kaapeloitu oikein ja että siihen on kytketty virta.
 .
 
 MessageId=7013
@@ -25948,6 +29831,9 @@ Carrier detect has failed or carrier has been dropped due to disconnect.
 Language=Japanese
 キャリア検出に失敗したか、キャリアが切断されました。
 .
+Language=Finnish
+Kantoaallon tunnistus epäonnistui, tai kantoaalto katkesi yhteyden katkeamisen vuoksi.
+.
 
 MessageId=7014
 Severity=Success
@@ -25967,6 +29853,9 @@ Dial tone not detected within the required time. Verify that the phone cable is 
 .
 Language=Japanese
 必要な時間内にダイヤルトーンが検出されませんでした。電話ケーブルが正しく接続され、機能していることを確認してください。
+.
+Language=Finnish
+Valintaääntä ei havaittu vaaditussa ajassa. Varmista, että puhelinkaapeli on liitetty oikein ja toimii.
 .
 
 MessageId=7015
@@ -25988,6 +29877,9 @@ Busy signal detected at remote site on callback.
 Language=Japanese
 コールバック時にリモート サイトでビジー信号が検出されました。
 .
+Language=Finnish
+Takaisinsoitossa havaittiin varattu-ääni etäpäässä.
+.
 
 MessageId=7016
 Severity=Success
@@ -26007,6 +29899,9 @@ Voice detected at remote site on callback.
 .
 Language=Japanese
 コールバック時にリモート サイトで音声を検出しました。
+.
+Language=Finnish
+Takaisinsoitossa havaittiin puhetta etäpäässä.
 .
 
 MessageId=7017
@@ -26028,6 +29923,9 @@ Transport driver error
 Language=Japanese
 トランスポート ドライバ エラーです。
 .
+Language=Finnish
+Siirtoajurin virhe
+.
 
 MessageId=7022
 Severity=Success
@@ -26047,6 +29945,9 @@ The specified session cannot be found.
 .
 Language=Japanese
 指定されたセッションが見つかりません。
+.
+Language=Finnish
+Määritettyä istuntoa ei löydy.
 .
 
 MessageId=7023
@@ -26068,6 +29969,9 @@ The specified session name is already in use.
 Language=Japanese
 指定されたセッション名はすでに使用されています。
 .
+Language=Finnish
+Määritetty istunnon nimi on jo käytössä.
+.
 
 MessageId=7024
 Severity=Success
@@ -26087,6 +29991,9 @@ The requested operation cannot be completed because the terminal connection is c
 .
 Language=Japanese
 Remote Desktop Servicesがビジー状態のため、実行しようとしているタスクを完了できません。数分後に再試行してください。他のユーザーはログオンできるはずです。
+.
+Language=Finnish
+Pyydettyä toimintoa ei voi suorittaa, koska päätteen yhteys käsittelee parhaillaan yhdistämis-, katkaisu-, palautus- tai poistotoimintoa.
 .
 
 MessageId=7025
@@ -26108,6 +30015,9 @@ An attempt has been made to connect to a session whose video mode is not support
 Language=Japanese
 ビデオモードが現在のクライアントでサポートされていないセッションに接続しようとしました。
 .
+Language=Finnish
+Yritettiin muodostaa yhteys istuntoon, jonka näyttötilaa nykyinen asiakas ei tue.
+.
 
 MessageId=7035
 Severity=Success
@@ -26127,6 +30037,9 @@ The application attempted to enable DOS graphics mode. DOS graphics mode is not 
 .
 Language=Japanese
 アプリケーションが DOS グラフィック モードを有効にしようとしました。DOS グラフィック モードはサポートされていません。
+.
+Language=Finnish
+Sovellus yritti ottaa käyttöön DOS-grafiikkatilan. DOS-grafiikkatilaa ei tueta.
 .
 
 MessageId=7037
@@ -26148,6 +30061,9 @@ Your interactive logon privilege has been disabled. Please contact your administ
 Language=Japanese
 対話ログオン権限が無効になりました。管理者に連絡してください。
 .
+Language=Finnish
+Vuorovaikutteisen kirjautumisen oikeutesi on poistettu käytöstä. Ota yhteyttä järjestelmänvalvojaan.
+.
 
 MessageId=7038
 Severity=Success
@@ -26167,6 +30083,9 @@ The requested operation can be performed only on the system console. This is mos
 .
 Language=Japanese
 要求された操作はシステム コンソールでのみ実行できます。これは多くの場合、コンソールへの直接アクセスを必要とするドライバまたはシステムDLLが原因です。
+.
+Language=Finnish
+Pyydetyn toiminnon voi suorittaa vain järjestelmän konsolissa. Syy on useimmiten ajuri tai järjestelmän DLL-tiedosto, joka vaatii suoran konsolin käytön.
 .
 
 MessageId=7040
@@ -26188,6 +30107,9 @@ The client failed to respond to the server connect message.
 Language=Japanese
 クライアントはサーバーの接続メッセージに応答できませんでした。
 .
+Language=Finnish
+Asiakas ei vastannut palvelimen yhteysviestiin.
+.
 
 MessageId=7041
 Severity=Success
@@ -26207,6 +30129,9 @@ Disconnecting the console session is not supported.
 .
 Language=Japanese
 コンソールセッションの切断はサポートされていません。
+.
+Language=Finnish
+Konsoli-istunnon yhteyden katkaisemista ei tueta.
 .
 
 MessageId=7042
@@ -26228,6 +30153,9 @@ Reconnecting a disconnected session to the console is not supported.
 Language=Japanese
 切断されたセッションをコンソールに再接続することはサポートされていません。
 .
+Language=Finnish
+Katkaistun istunnon yhdistämistä uudelleen konsoliin ei tueta.
+.
 
 MessageId=7044
 Severity=Success
@@ -26247,6 +30175,9 @@ The request to control another session remotely was denied.
 .
 Language=Japanese
 別のセッションをリモートで制御する要求が拒否されました。
+.
+Language=Finnish
+Pyyntö ohjata toista istuntoa etänä hylättiin.
 .
 
 MessageId=7045
@@ -26268,6 +30199,9 @@ The requested session access is denied.
 Language=Japanese
 要求されたセッションへのアクセスが拒否されました。
 .
+Language=Finnish
+Pyydetyn istunnon käyttö estetty.
+.
 
 MessageId=7049
 Severity=Success
@@ -26287,6 +30221,9 @@ The specified terminal connection driver is invalid.
 .
 Language=Japanese
 指定されたターミナル接続ドライバが無効です。
+.
+Language=Finnish
+Määritetty päätteen yhteysajuri on virheellinen.
 .
 
 MessageId=7050
@@ -26309,6 +30246,9 @@ Language=Japanese
 要求されたセッションをリモート制御できません。
 セッションが切断されているか、現在ログオンしているユーザーがいない可能性があります。
 .
+Language=Finnish
+Pyydettyä istuntoa ei voi ohjata etänä. Syy voi olla, että istunnon yhteys on katkaistu tai että siihen ei ole tällä hetkellä kirjautunut käyttäjää.
+.
 
 MessageId=7051
 Severity=Success
@@ -26329,6 +30269,9 @@ The requested session is not configured to allow remote control.
 Language=Japanese
 要求されたセッションはリモート コントロールを許可するように構成されていません。
 .
+Language=Finnish
+Pyydettyä istuntoa ei ole määritetty sallimaan etäohjausta.
+.
 
 MessageId=7052
 Severity=Success
@@ -26348,6 +30291,9 @@ Your request to connect to this Terminal Server has been rejected. Your Terminal
 .
 Language=Japanese
 このターミナル サーバーへの接続要求は拒否されました。ターミナル サーバーのクライアントライセンス番号は、現在別のユーザーによって使用されています。システム管理者に連絡して、固有のライセンス番号を取得してください。
+.
+Language=Finnish
+Pyyntösi muodostaa yhteys tähän päätepalvelimeen on hylätty. Toinen käyttäjä käyttää tällä hetkellä Terminal Server -asiakaslisenssisi numeroa. Pyydä järjestelmänvalvojalta yksilöllinen lisenssinumero.
 .
 
 MessageId=7053
@@ -26370,6 +30316,9 @@ Language=Japanese
 このターミナル サーバーへの接続要求は拒否されました。ターミナル サーバー クライアントのライセンス番号が、ターミナル サーバー クライアントのこのコピーに入力されていません。
 システム管理者に連絡してください。
 .
+Language=Finnish
+Pyyntösi muodostaa yhteys tähän päätepalvelimeen on hylätty. Terminal Server -asiakasohjelman tähän kopioon ei ole annettu asiakaslisenssin numeroa. Ota yhteyttä järjestelmänvalvojaan.
+.
 
 MessageId=7054
 Severity=Success
@@ -26389,6 +30338,9 @@ The system has reached its licensed logon limit. Please try again later.
 .
 Language=Japanese
 このコンピューターへの接続数には制限があり、現在すべての接続が使用中です。後で接続するか、システム管理者に連絡してください。
+.
+Language=Finnish
+Järjestelmä on saavuttanut lisensoitujen kirjautumisten rajan. Yritä myöhemmin uudelleen.
 .
 
 MessageId=7055
@@ -26410,6 +30362,9 @@ The client you are using is not licensed to use this system. Your logon request 
 Language=Japanese
 使用しているクライアントは、このシステムを使用するライセンスがありません。ログオン要求は拒否されました。
 .
+Language=Finnish
+Käyttämälläsi asiakkaalla ei ole lisenssiä tämän järjestelmän käyttöön. Kirjautumispyyntösi hylätään.
+.
 
 MessageId=7056
 Severity=Success
@@ -26429,6 +30384,9 @@ The system license has expired. Your logon request is denied.
 .
 Language=Japanese
 システムのライセンスの有効期限が切れています。ログオン要求は拒否されました。
+.
+Language=Finnish
+Järjestelmän lisenssi on vanhentunut. Kirjautumispyyntösi hylätään.
 .
 
 MessageId=7057
@@ -26450,6 +30408,9 @@ Remote control could not be terminated because the specified session is not curr
 Language=Japanese
 指定されたセッションは現在リモート制御されていないため、リモート制御を終了できませんでした。
 .
+Language=Finnish
+Etäohjausta ei voitu lopettaa, koska määritettyä istuntoa ei tällä hetkellä ohjata etänä.
+.
 
 MessageId=7058
 Severity=Success
@@ -26469,6 +30430,9 @@ The remote control of the console was terminated because the display mode was ch
 .
 Language=Japanese
 コンソールの表示モードが変更されたため、リモート コントロールを終了しました。リモート コントロールセッションでの表示モードの変更はサポートされていません。
+.
+Language=Finnish
+Konsolin etäohjaus lopetettiin, koska näyttötila muuttui. Näyttötilan muuttamista etäohjausistunnossa ei tueta.
 .
 
 MessageId=7059
@@ -26490,6 +30454,9 @@ Activation has already been reset the maximum number of times for this installat
 Language=Japanese
 アクティベーションが、このインストールの最大回数までリセットされています。アクティベーション タイマーはクリアされません。
 .
+Language=Finnish
+Aktivointi on jo nollattu tämän asennuksen enimmäismäärän kertoja. Aktivointiajastinta ei tyhjennetä.
+.
 
 MessageId=7060
 Severity=Success
@@ -26509,6 +30476,9 @@ Remote logins are currently disabled.
 .
 Language=Japanese
 リモートログインは現在無効になっています。
+.
+Language=Finnish
+Etäkirjautumiset ovat tällä hetkellä poissa käytöstä.
 .
 
 MessageId=7061
@@ -26530,6 +30500,9 @@ You do not have the proper encryption level to access this Session.
 Language=Japanese
 このセッションにアクセスするための適切な暗号化レベルがありません。
 .
+Language=Finnish
+Sinulla ei ole tämän istunnon käyttöön tarvittavaa salaustasoa.
+.
 
 MessageId=7062
 Severity=Success
@@ -26549,6 +30522,9 @@ The user %s\\%s is currently logged on to this computer. Only the current user o
 .
 Language=Japanese
 現在、ユーザ %s\\\\%s がこのコンピュータにログオンしています。現在のユーザまたは管理者のみがこのコンピュータにログオンできます。
+.
+Language=Finnish
+Käyttäjä %s\\%s on tällä hetkellä kirjautuneena tähän tietokoneeseen. Vain nykyinen käyttäjä tai järjestelmänvalvoja voi kirjautua tähän tietokoneeseen.
 .
 
 MessageId=7063
@@ -26570,6 +30546,9 @@ The user %s\\%s is already logged on to the console of this computer. You do not
 Language=Japanese
 ユーザ %s\\\\%s は、このコンピュータのコンソールに既にログオンしています。現時点ではログインする権限がありません。この問題を解決するには、%sに連絡してログオフさせてください。
 .
+Language=Finnish
+Käyttäjä %s\\%s on jo kirjautuneena tämän tietokoneen konsoliin. Sinulla ei ole oikeutta kirjautua tällä hetkellä. Ratkaise ongelma pyytämällä käyttäjää %s\\%s kirjautumaan ulos.
+.
 
 MessageId=7064
 Severity=Success
@@ -26589,6 +30568,9 @@ Unable to log you on because of an account restriction.
 .
 Language=Japanese
 アカウント制限のためログオンできません。
+.
+Language=Finnish
+Kirjautumisesi ei onnistu tilin rajoituksen vuoksi.
 .
 
 MessageId=7065
@@ -26610,6 +30592,9 @@ The RDP protocol component %2 detected an error in the protocol stream and has d
 Language=Japanese
 RDP プロトコル コンポーネント %2 がプロトコル ストリームでエラーを検出したので、クライアントを切断しました。
 .
+Language=Finnish
+RDP-protokollan osa %2 havaitsi protokollavirrassa virheen ja katkaisi asiakkaan yhteyden.
+.
 
 MessageId=7066
 Severity=Success
@@ -26629,6 +30614,9 @@ The Client Drive Mapping Service Has Connected on Terminal Connection.
 .
 Language=Japanese
 クライアント ドライブ マッピング サービスがターミナル接続に接続されました。
+.
+Language=Finnish
+Asiakkaan asemien yhdistämispalvelu on muodostanut yhteyden päätteen yhteydessä.
 .
 
 MessageId=7067
@@ -26650,6 +30638,9 @@ The Client Drive Mapping Service Has Disconnected on Terminal Connection.
 Language=Japanese
 クライアント ドライブ マッピング サービスがターミナル接続で切断されました。
 .
+Language=Finnish
+Asiakkaan asemien yhdistämispalvelu on katkaissut yhteyden päätteen yhteydessä.
+.
 
 MessageId=8001
 Severity=Success
@@ -26669,6 +30660,9 @@ The file replication service API was called incorrectly.
 .
 Language=Japanese
 ファイル レプリケーション サービス API の呼び出しに誤りがありました。
+.
+Language=Finnish
+Tiedostojen replikointipalvelun ohjelmointirajapintaa kutsuttiin väärin.
 .
 
 MessageId=8002
@@ -26690,6 +30684,9 @@ The file replication service cannot be started.
 Language=Japanese
 ファイル レプリケーション サービスを開始できません。
 .
+Language=Finnish
+Tiedostojen replikointipalvelua ei voi käynnistää.
+.
 
 MessageId=8003
 Severity=Success
@@ -26709,6 +30706,9 @@ The file replication service cannot be stopped.
 .
 Language=Japanese
 ファイル レプリケーション サービスを停止できません。
+.
+Language=Finnish
+Tiedostojen replikointipalvelua ei voi pysäyttää.
 .
 
 MessageId=8004
@@ -26730,6 +30730,9 @@ The file replication service API terminated the request. The event log may have 
 Language=Japanese
 ファイル レプリケーション サービス API が要求を終了しました。イベントログに詳細情報が記載されている場合があります。
 .
+Language=Finnish
+Tiedostojen replikointipalvelun ohjelmointirajapinta lopetti pyynnön. Lisätietoja voi olla tapahtumalokissa.
+.
 
 MessageId=8005
 Severity=Success
@@ -26749,6 +30752,9 @@ The file replication service terminated the request. The event log may have more
 .
 Language=Japanese
 ファイル レプリケーション サービスが要求を終了しました。イベント ログに詳細情報が記載されている場合があります。
+.
+Language=Finnish
+Tiedostojen replikointipalvelu lopetti pyynnön. Lisätietoja voi olla tapahtumalokissa.
 .
 
 MessageId=8006
@@ -26770,6 +30776,9 @@ The file replication service cannot be contacted. The event log may have more in
 Language=Japanese
 ファイル レプリケーション サービスにアクセスできません。イベントログに詳細が記録されている可能性があります。
 .
+Language=Finnish
+Tiedostojen replikointipalveluun ei saada yhteyttä. Lisätietoja voi olla tapahtumalokissa.
+.
 
 MessageId=8007
 Severity=Success
@@ -26789,6 +30798,9 @@ The file replication service cannot satisfy the request because the user has ins
 .
 Language=Japanese
 ユーザーに十分な権限がないため、ファイル レプリケーション サービスは要求を満たすことができません。イベント ログに詳細情報が記載されている場合があります。
+.
+Language=Finnish
+Tiedostojen replikointipalvelu ei voi täyttää pyyntöä, koska käyttäjän oikeudet eivät riitä. Lisätietoja voi olla tapahtumalokissa.
 .
 
 MessageId=8008
@@ -26810,6 +30822,9 @@ The file replication service cannot satisfy the request because authenticated RP
 Language=Japanese
 認証されたRPCが使用できないため、ファイル レプリケーション サービスは要求を満たすことができません。イベント ログに詳細情報が記載されている場合があります。
 .
+Language=Finnish
+Tiedostojen replikointipalvelu ei voi täyttää pyyntöä, koska todennettu RPC ei ole käytettävissä. Lisätietoja voi olla tapahtumalokissa.
+.
 
 MessageId=8009
 Severity=Success
@@ -26829,6 +30844,9 @@ The file replication service cannot satisfy the request because the user has ins
 .
 Language=Japanese
 ユーザーにドメイン コントローラー上で十分な権限がないため、ファイル レプリケーション サービスは要求を満たすことができません。イベントログに詳細情報が記載されている場合があります。
+.
+Language=Finnish
+Tiedostojen replikointipalvelu ei voi täyttää pyyntöä, koska käyttäjän oikeudet toimialueen ohjauskoneessa eivät riitä. Lisätietoja voi olla tapahtumalokissa.
 .
 
 MessageId=8010
@@ -26850,6 +30868,9 @@ The file replication service cannot satisfy the request because authenticated RP
 Language=Japanese
 認証されたRPCがドメイン コントローラーで使用できないため、ファイルレプリケーションサービスは要求を満たすことができません。イベント ログに詳細情報が記載されている場合があります。
 .
+Language=Finnish
+Tiedostojen replikointipalvelu ei voi täyttää pyyntöä, koska todennettu RPC ei ole käytettävissä toimialueen ohjauskoneessa. Lisätietoja voi olla tapahtumalokissa.
+.
 
 MessageId=8011
 Severity=Success
@@ -26869,6 +30890,9 @@ The file replication service cannot communicate with the file replication servic
 .
 Language=Japanese
 ファイルレプリケーションサービスは、ドメインコントローラのファイルレプリケーションサービスと通信できません。イベントログに詳細情報が記載されている可能性があります。
+.
+Language=Finnish
+Tiedostojen replikointipalvelu ei saa yhteyttä toimialueen ohjauskoneen tiedostojen replikointipalveluun. Lisätietoja voi olla tapahtumalokissa.
 .
 
 MessageId=8012
@@ -26890,6 +30914,9 @@ The file replication service on the domain controller cannot communicate with th
 Language=Japanese
 ドメインコントローラのファイルレプリケーションサービスは、このコンピュータのファイルレプリケーションサービスと通信できません。イベントログに詳細が記載されている場合があります。
 .
+Language=Finnish
+Toimialueen ohjauskoneen tiedostojen replikointipalvelu ei saa yhteyttä tämän tietokoneen tiedostojen replikointipalveluun. Lisätietoja voi olla tapahtumalokissa.
+.
 
 MessageId=8013
 Severity=Success
@@ -26909,6 +30936,9 @@ The file replication service cannot populate the system volume because of an int
 .
 Language=Japanese
 内部エラーが発生したため、ファイルレプリケーションサービスがシステムボリュームを作成できません。イベントログに詳細情報が記載されている場合があります。
+.
+Language=Finnish
+Tiedostojen replikointipalvelu ei voi täyttää järjestelmätaltiota sisäisen virheen vuoksi. Lisätietoja voi olla tapahtumalokissa.
 .
 
 MessageId=8014
@@ -26930,6 +30960,9 @@ The file replication service cannot populate the system volume because of an int
 Language=Japanese
 ファイル レプリケーション サービスがシステム ボリュームに入力できません。
 .
+Language=Finnish
+Tiedostojen replikointipalvelu ei voi täyttää järjestelmätaltiota sisäisen aikakatkaisun vuoksi. Lisätietoja voi olla tapahtumalokissa.
+.
 
 MessageId=8015
 Severity=Success
@@ -26949,6 +30982,9 @@ The file replication service cannot process the request. The system volume is bu
 .
 Language=Japanese
 ファイル レプリケーション サービスは要求を処理できません。システム ボリュームは前の要求でビジー状態です。
+.
+Language=Finnish
+Tiedostojen replikointipalvelu ei voi käsitellä pyyntöä. Järjestelmätaltio käsittelee edellistä pyyntöä.
 .
 
 MessageId=8016
@@ -26970,6 +31006,9 @@ The file replication service cannot stop replicating the system volume because o
 Language=Japanese
 内部エラーが発生したため、ファイル レプリケーション サービスはシステム ボリュームのレプリケーションを停止できません。イベント ログに詳細情報が記載されている場合があります。
 .
+Language=Finnish
+Tiedostojen replikointipalvelu ei voi lopettaa järjestelmätaltion replikointia sisäisen virheen vuoksi. Lisätietoja voi olla tapahtumalokissa.
+.
 
 MessageId=8017
 Severity=Success
@@ -26989,6 +31028,9 @@ The file replication service detected an invalid parameter.
 .
 Language=Japanese
 ファイル レプリケーション サービスが無効なパラメータを検出しました。
+.
+Language=Finnish
+Tiedostojen replikointipalvelu havaitsi virheellisen parametrin.
 .
 
 MessageId=8200
@@ -27010,6 +31052,9 @@ An error occurred while installing the directory service. For more information, 
 Language=Japanese
 ディレクトリサービスのインストール中にエラーが発生しました。詳細については、イベントログを参照してください。
 .
+Language=Finnish
+Hakemistopalvelun asennuksessa tapahtui virhe. Lisätietoja on tapahtumalokissa.
+.
 
 MessageId=8201
 Severity=Success
@@ -27029,6 +31074,9 @@ The directory service evaluated group memberships locally.
 .
 Language=Japanese
 ディレクトリ サービスがローカルでグループ メンバーシップを評価しました。
+.
+Language=Finnish
+Hakemistopalvelu arvioi ryhmäjäsenyydet paikallisesti.
 .
 
 MessageId=8202
@@ -27050,6 +31098,9 @@ The specified directory service attribute or value does not exist.
 Language=Japanese
 指定されたディレクトリ サービス属性または値が存在しません。
 .
+Language=Finnish
+Määritettyä hakemistopalvelun määritettä tai arvoa ei ole olemassa.
+.
 
 MessageId=8203
 Severity=Success
@@ -27069,6 +31120,9 @@ The attribute syntax specified to the directory service is invalid.
 .
 Language=Japanese
 ディレクトリ サービスに指定された属性構文が無効です。
+.
+Language=Finnish
+Hakemistopalvelulle määritetty määritteen syntaksi on virheellinen.
 .
 
 MessageId=8204
@@ -27090,6 +31144,9 @@ The attribute type specified to the directory service is not defined.
 Language=Japanese
 ディレクトリ サービスに指定された属性タイプが定義されていません。
 .
+Language=Finnish
+Hakemistopalvelulle määritettyä määritetyyppiä ei ole määritelty.
+.
 
 MessageId=8205
 Severity=Success
@@ -27109,6 +31166,9 @@ The specified directory service attribute or value already exists.
 .
 Language=Japanese
 指定されたディレクトリ サービスの属性または値は既に存在します。
+.
+Language=Finnish
+Määritetty hakemistopalvelun määrite tai arvo on jo olemassa.
 .
 
 MessageId=8206
@@ -27130,6 +31190,9 @@ The directory service is busy.
 Language=Japanese
 ディレクトリ サービスがビジーです。
 .
+Language=Finnish
+Hakemistopalvelu on varattu.
+.
 
 MessageId=8207
 Severity=Success
@@ -27149,6 +31212,9 @@ The directory service is unavailable.
 .
 Language=Japanese
 ディレクトリサービスは利用できません。
+.
+Language=Finnish
+Hakemistopalvelu ei ole käytettävissä.
 .
 
 MessageId=8208
@@ -27170,6 +31236,9 @@ The directory service was unable to allocate a relative identifier.
 Language=Japanese
 ディレクトリ サービスが相対識別子を割り当てられませんでした。
 .
+Language=Finnish
+Hakemistopalvelu ei pystynyt varaamaan suhteellista tunnistetta.
+.
 
 MessageId=8209
 Severity=Success
@@ -27189,6 +31258,9 @@ The directory service has exhausted the pool of relative identifiers.
 .
 Language=Japanese
 ディレクトリ サービスは相対識別子のプールを使い果たしました。
+.
+Language=Finnish
+Hakemistopalvelu on käyttänyt suhteellisten tunnisteiden varannon loppuun.
 .
 
 MessageId=8210
@@ -27210,6 +31282,9 @@ The requested operation could not be performed because the directory service is 
 Language=Japanese
 ディレクトリ サービスがそのタイプの操作のマスターではないため、要求された操作を実行できませんでした。
 .
+Language=Finnish
+Pyydettyä toimintoa ei voitu suorittaa, koska hakemistopalvelu ei ole tämäntyyppisen toiminnon päätoimija.
+.
 
 MessageId=8211
 Severity=Success
@@ -27229,6 +31304,9 @@ The directory service was unable to initialize the subsystem that allocates rela
 .
 Language=Japanese
 ディレクトリ サービスは相対識別子を割り当てるサブシステムを初期化できませんでした。
+.
+Language=Finnish
+Hakemistopalvelu ei pystynyt alustamaan suhteellisia tunnisteita varaavaa alijärjestelmää.
 .
 
 MessageId=8212
@@ -27250,6 +31328,9 @@ The requested operation did not satisfy one or more constraints associated with 
 Language=Japanese
 要求された操作は、オブジェクトのクラスに関連付けられた1つ以上の制約を満たしていません。
 .
+Language=Finnish
+Pyydetty toiminto ei täyttänyt yhtä tai useampaa objektin luokkaan liittyvää rajoitetta.
+.
 
 MessageId=8213
 Severity=Success
@@ -27269,6 +31350,9 @@ The directory service can perform the requested operation only on a leaf object.
 .
 Language=Japanese
 ディレクトリ サービスは要求された操作をリーフ オブジェクトに対してのみ実行できます。
+.
+Language=Finnish
+Hakemistopalvelu voi suorittaa pyydetyn toiminnon vain lehtiobjektille.
 .
 
 MessageId=8214
@@ -27290,6 +31374,9 @@ The directory service cannot perform the requested operation on the RDN attribut
 Language=Japanese
 ディレクトリ サービスはオブジェクトのRDN属性に対して要求された操作を実行できません。
 .
+Language=Finnish
+Hakemistopalvelu ei voi suorittaa pyydettyä toimintoa objektin RDN-määritteelle.
+.
 
 MessageId=8215
 Severity=Success
@@ -27309,6 +31396,9 @@ The directory service detected an attempt to modify the object class of an objec
 .
 Language=Japanese
 ディレクトリ サービスがオブジェクトのオブジェクト クラスを変更しようとする試みを検出しました。
+.
+Language=Finnish
+Hakemistopalvelu havaitsi yrityksen muuttaa objektin objektiluokkaa.
 .
 
 MessageId=8216
@@ -27330,6 +31420,9 @@ The requested cross-domain move operation could not be performed.
 Language=Japanese
 要求されたクロスドメイン移動操作を実行できませんでした。
 .
+Language=Finnish
+Pyydettyä toimialueiden välistä siirtoa ei voitu suorittaa.
+.
 
 MessageId=8217
 Severity=Success
@@ -27349,6 +31442,9 @@ Unable to contact the global catalog server.
 .
 Language=Japanese
 グローバルカタログサーバーに接続できません。
+.
+Language=Finnish
+Yleiseen luettelopalvelimeen ei saada yhteyttä.
 .
 
 MessageId=8218
@@ -27370,6 +31466,9 @@ The policy object is shared and can only be modified at the root.
 Language=Japanese
 ポリシー オブジェクトは共有され、ルートでのみ変更できます。
 .
+Language=Finnish
+Käytäntöobjekti on jaettu, ja sitä voi muuttaa vain pääkohdassa.
+.
 
 MessageId=8219
 Severity=Success
@@ -27389,6 +31488,9 @@ The policy object does not exist.
 .
 Language=Japanese
 ポリシー オブジェクトが存在しません。
+.
+Language=Finnish
+Käytäntöobjektia ei ole olemassa.
 .
 
 MessageId=8220
@@ -27410,6 +31512,9 @@ The requested policy information is only in the directory service.
 Language=Japanese
 要求されたポリシー情報はディレクトリ サービスにしかありません。
 .
+Language=Finnish
+Pyydetyt käytäntötiedot ovat vain hakemistopalvelussa.
+.
 
 MessageId=8221
 Severity=Success
@@ -27429,6 +31534,9 @@ A domain controller promotion is currently active.
 .
 Language=Japanese
 ドメインコントローラのプロモーションが現在アクティブです。
+.
+Language=Finnish
+Toimialueen ohjauskoneen ylennys on tällä hetkellä käynnissä.
 .
 
 MessageId=8222
@@ -27450,6 +31558,9 @@ A domain controller promotion is not currently active
 Language=Japanese
 ドメイン コントローラーのプロモーションは現在アクティブではありません。
 .
+Language=Finnish
+Toimialueen ohjauskoneen ylennys ei ole tällä hetkellä käynnissä
+.
 
 MessageId=8224
 Severity=Success
@@ -27469,6 +31580,9 @@ An operations error occurred.
 .
 Language=Japanese
 操作エラーが発生しました。
+.
+Language=Finnish
+Tapahtui toimintovirhe.
 .
 
 MessageId=8225
@@ -27490,6 +31604,9 @@ A protocol error occurred.
 Language=Japanese
 プロトコルエラーが発生しました。
 .
+Language=Finnish
+Tapahtui protokollavirhe.
+.
 
 MessageId=8226
 Severity=Success
@@ -27509,6 +31626,9 @@ The time limit for this request was exceeded.
 .
 Language=Japanese
 この要求の制限時間を超えました。
+.
+Language=Finnish
+Tämän pyynnön aikaraja ylittyi.
 .
 
 MessageId=8227
@@ -27530,6 +31650,9 @@ The size limit for this request was exceeded.
 Language=Japanese
 このリクエストのサイズ制限を超えました。
 .
+Language=Finnish
+Tämän pyynnön kokoraja ylittyi.
+.
 
 MessageId=8228
 Severity=Success
@@ -27549,6 +31672,9 @@ The administrative limit for this request was exceeded.
 .
 Language=Japanese
 この要求の管理者リミットを超えました。
+.
+Language=Finnish
+Tämän pyynnön hallinnollinen raja ylittyi.
 .
 
 MessageId=8229
@@ -27571,6 +31697,9 @@ Language=Japanese
 比較応答が偽です 
  。
 .
+Language=Finnish
+Vertailun vastaus oli epätosi.
+.
 
 MessageId=8230
 Severity=Success
@@ -27590,6 +31719,9 @@ The compare response was true.
 .
 Language=Japanese
 比較応答はtrueでした。
+.
+Language=Finnish
+Vertailun vastaus oli tosi.
 .
 
 MessageId=8231
@@ -27611,6 +31743,9 @@ The requested authentication method is not supported by the server.
 Language=Japanese
 要求された認証方法はサーバーによってサポートされていません。
 .
+Language=Finnish
+Palvelin ei tue pyydettyä todennusmenetelmää.
+.
 
 MessageId=8232
 Severity=Success
@@ -27630,6 +31765,9 @@ A more secure authentication method is required for this server.
 .
 Language=Japanese
 このサーバーにはより安全な認証方法が必要です。
+.
+Language=Finnish
+Tämä palvelin vaatii turvallisemman todennusmenetelmän.
 .
 
 MessageId=8233
@@ -27651,6 +31789,9 @@ Inappropriate authentication.
 Language=Japanese
 不適切な認証です。
 .
+Language=Finnish
+Sopimaton todennus.
+.
 
 MessageId=8234
 Severity=Success
@@ -27670,6 +31811,9 @@ The authentication mechanism is unknown.
 .
 Language=Japanese
 認証メカニズムが不明です。
+.
+Language=Finnish
+Todennusmekanismi on tuntematon.
 .
 
 MessageId=8235
@@ -27691,6 +31835,9 @@ A referral was returned from the server.
 Language=Japanese
 認証メカニズムが不明です: サーバーから照会が返されました。
 .
+Language=Finnish
+Palvelin palautti viittauksen.
+.
 
 MessageId=8236
 Severity=Success
@@ -27710,6 +31857,9 @@ The server does not support the requested critical extension.
 .
 Language=Japanese
 サーバーは要求された重要な拡張をサポートしていません。
+.
+Language=Finnish
+Palvelin ei tue pyydettyä kriittistä laajennusta.
 .
 
 MessageId=8237
@@ -27731,6 +31881,9 @@ This request requires a secure connection.
 Language=Japanese
 この要求には安全な接続が必要です。
 .
+Language=Finnish
+Tämä pyyntö vaatii suojatun yhteyden.
+.
 
 MessageId=8238
 Severity=Success
@@ -27750,6 +31903,9 @@ Inappropriate matching.
 .
 Language=Japanese
 不適切なマッチングです。
+.
+Language=Finnish
+Sopimaton vastaavuus.
 .
 
 MessageId=8239
@@ -27771,6 +31927,9 @@ A constraint violation occurred.
 Language=Japanese
 制約違反が発生しました: 制約違反が発生しました。
 .
+Language=Finnish
+Tapahtui rajoitteen rikkomus.
+.
 
 MessageId=8240
 Severity=Success
@@ -27790,6 +31949,9 @@ There is no such object on the server.
 .
 Language=Japanese
 サーバー上にそのようなオブジェクトはありません。
+.
+Language=Finnish
+Palvelimella ei ole tällaista objektia.
 .
 
 MessageId=8241
@@ -27811,6 +31973,9 @@ There is an alias problem.
 Language=Japanese
 エイリアスに問題があります。
 .
+Language=Finnish
+Aliaksessa on ongelma.
+.
 
 MessageId=8242
 Severity=Success
@@ -27830,6 +31995,9 @@ An invalid dn syntax has been specified.
 .
 Language=Japanese
 無効な dn 構文が指定されました。
+.
+Language=Finnish
+Annettiin virheellinen DN-syntaksi.
 .
 
 MessageId=8243
@@ -27851,6 +32019,9 @@ The object is a leaf object.
 Language=Japanese
 オブジェクトがリーフ オブジェクトです。
 .
+Language=Finnish
+Objekti on lehtiobjekti.
+.
 
 MessageId=8244
 Severity=Success
@@ -27870,6 +32041,9 @@ There is an alias dereferencing problem.
 .
 Language=Japanese
 エイリアスの再参照に問題があります。
+.
+Language=Finnish
+Aliaksen viittauksen selvittämisessä on ongelma.
 .
 
 MessageId=8245
@@ -27891,6 +32065,9 @@ The server is unwilling to process the request.
 Language=Japanese
 サーバーはリクエストを処理する気がありません。
 .
+Language=Finnish
+Palvelin ei suostu käsittelemään pyyntöä.
+.
 
 MessageId=8246
 Severity=Success
@@ -27910,6 +32087,9 @@ A loop has been detected.
 .
 Language=Japanese
 ループが検出されました。
+.
+Language=Finnish
+Havaittiin silmukka.
 .
 
 MessageId=8247
@@ -27931,6 +32111,9 @@ There is a naming violation.
 Language=Japanese
 ネーミング違反があります。
 .
+Language=Finnish
+Tapahtui nimeämisrikkomus.
+.
 
 MessageId=8248
 Severity=Success
@@ -27950,6 +32133,9 @@ The result set is too large.
 .
 Language=Japanese
 結果セットが大きすぎます。
+.
+Language=Finnish
+Tulosjoukko on liian suuri.
 .
 
 MessageId=8249
@@ -27971,6 +32157,9 @@ The operation affects multiple DSAs
 Language=Japanese
 操作が複数のDSAに影響します。
 .
+Language=Finnish
+Toiminto vaikuttaa useaan DSA:han
+.
 
 MessageId=8250
 Severity=Success
@@ -27990,6 +32179,9 @@ The server is not operational.
 .
 Language=Japanese
 サーバーが稼動していません。
+.
+Language=Finnish
+Palvelin ei ole toiminnassa.
 .
 
 MessageId=8251
@@ -28011,6 +32203,9 @@ A local error has occurred.
 Language=Japanese
 ローカルエラーが発生しました。
 .
+Language=Finnish
+On tapahtunut paikallinen virhe.
+.
 
 MessageId=8252
 Severity=Success
@@ -28030,6 +32225,9 @@ An encoding error has occurred.
 .
 Language=Japanese
 エンコード エラーが発生しました。
+.
+Language=Finnish
+On tapahtunut koodausvirhe.
 .
 
 MessageId=8253
@@ -28051,6 +32249,9 @@ A decoding error has occurred.
 Language=Japanese
 デコードエラーが発生しました。
 .
+Language=Finnish
+On tapahtunut koodin purkuvirhe.
+.
 
 MessageId=8254
 Severity=Success
@@ -28070,6 +32271,9 @@ The search filter cannot be recognized.
 .
 Language=Japanese
 検索フィルタを認識できません。
+.
+Language=Finnish
+Hakusuodatinta ei tunnisteta.
 .
 
 MessageId=8255
@@ -28091,6 +32295,9 @@ One or more parameters are illegal.
 Language=Japanese
 1つ以上のパラメータが不正です。
 .
+Language=Finnish
+Yksi tai useampi parametri on kelpaamaton.
+.
 
 MessageId=8256
 Severity=Success
@@ -28110,6 +32317,9 @@ The specified method is not supported.
 .
 Language=Japanese
 指定されたメソッドはサポートされていません。
+.
+Language=Finnish
+Määritettyä menetelmää ei tueta.
 .
 
 MessageId=8257
@@ -28131,6 +32341,9 @@ No results were returned.
 Language=Japanese
 結果が返されませんでした。
 .
+Language=Finnish
+Tuloksia ei palautettu.
+.
 
 MessageId=8258
 Severity=Success
@@ -28150,6 +32363,9 @@ The specified control is not supported by the server.
 .
 Language=Japanese
 指定されたコントロールはサーバーによってサポートされていません。
+.
+Language=Finnish
+Palvelin ei tue määritettyä ohjausta.
 .
 
 MessageId=8259
@@ -28171,6 +32387,9 @@ A referral loop was detected by the client.
 Language=Japanese
 クライアントによって参照ループが検出されました。
 .
+Language=Finnish
+Asiakas havaitsi viittaussilmukan.
+.
 
 MessageId=8260
 Severity=Success
@@ -28190,6 +32409,9 @@ The preset referral limit was exceeded.
 .
 Language=Japanese
 プリセットの参照制限を超えました。
+.
+Language=Finnish
+Esiasetettu viittausraja ylittyi.
 .
 
 MessageId=8261
@@ -28211,6 +32433,9 @@ The search requires a SORT control.
 Language=Japanese
 検索にはSORTコントロールが必要です。
 .
+Language=Finnish
+Haku vaatii SORT-ohjauksen.
+.
 
 MessageId=8262
 Severity=Success
@@ -28230,6 +32455,9 @@ The search results exceed the offset range specified.
 .
 Language=Japanese
 検索結果が指定されたオフセット範囲を超えています。
+.
+Language=Finnish
+Hakutulokset ylittävät määritetyn siirtymäalueen.
 .
 
 MessageId=8301
@@ -28251,6 +32479,9 @@ The root object must be the head of a naming context. The root object cannot hav
 Language=Japanese
 ルート オブジェクトはネーミング コンテキストの先頭でなければなりません。ルート オブジェクトはインスタンス化された親を持つことはできません。
 .
+Language=Finnish
+Pääobjektin on oltava nimeämiskontekstin alku. Pääobjektilla ei voi olla luotua yläobjektia.
+.
 
 MessageId=8302
 Severity=Success
@@ -28270,6 +32501,9 @@ The add replica operation cannot be performed. The naming context must be writea
 .
 Language=Japanese
 レプリカの追加操作は実行できません。レプリカを作成するには、ネーム コンテキストが書き込み可能である必要があります。
+.
+Language=Finnish
+Replikan lisäystä ei voi suorittaa. Nimeämiskontekstin on oltava kirjoitettavissa replikan luomiseksi.
 .
 
 MessageId=8303
@@ -28291,6 +32525,9 @@ A reference to an attribute that is not defined in the schema occurred.
 Language=Japanese
 スキーマで定義されていない属性への参照が発生しました。
 .
+Language=Finnish
+Viitattiin määritteeseen, jota ei ole määritelty rakenteessa.
+.
 
 MessageId=8304
 Severity=Success
@@ -28310,6 +32547,9 @@ The maximum size of an object has been exceeded.
 .
 Language=Japanese
 オブジェクトの最大サイズを超えました。
+.
+Language=Finnish
+Objektin enimmäiskoko on ylitetty.
 .
 
 MessageId=8305
@@ -28331,6 +32571,9 @@ An attempt was made to add an object to the directory with a name that is alread
 Language=Japanese
 既に使用されている名前のオブジェクトをディレクトリに追加しようとしました。
 .
+Language=Finnish
+Hakemistoon yritettiin lisätä objekti nimellä, joka on jo käytössä.
+.
 
 MessageId=8306
 Severity=Success
@@ -28350,6 +32593,9 @@ An attempt was made to add an object of a class that does not have an RDN define
 .
 Language=Japanese
 スキーマにRDNが定義されていないクラスのオブジェクトを追加しようとしました。
+.
+Language=Finnish
+Yritettiin lisätä objekti luokasta, jolle ei ole määritelty RDN:ää rakenteessa.
 .
 
 MessageId=8307
@@ -28371,6 +32617,9 @@ An attempt was made to add an object using an RDN that is not the RDN defined in
 Language=Japanese
 スキーマで定義されている RDN ではない RDN を使用してオブジェクトを追加しようとしました。
 .
+Language=Finnish
+Yritettiin lisätä objekti RDN:llä, joka ei ole rakenteessa määritelty RDN.
+.
 
 MessageId=8308
 Severity=Success
@@ -28390,6 +32639,9 @@ None of the requested attributes were found on the objects.
 .
 Language=Japanese
 要求された属性がオブジェクトに見つかりませんでした。
+.
+Language=Finnish
+Mitään pyydetyistä määritteistä ei löytynyt objekteista.
 .
 
 MessageId=8309
@@ -28411,6 +32663,9 @@ The user buffer is too small.
 Language=Japanese
 ユーザー バッファが小さすぎます。
 .
+Language=Finnish
+Käyttäjäpuskuri on liian pieni.
+.
 
 MessageId=8310
 Severity=Success
@@ -28430,6 +32685,9 @@ The attribute specified in the operation is not present on the object.
 .
 Language=Japanese
 操作で指定された属性がオブジェクトに存在しません。
+.
+Language=Finnish
+Toiminnossa määritettyä määritettä ei ole objektissa.
 .
 
 MessageId=8311
@@ -28451,6 +32709,9 @@ Illegal modify operation. Some aspect of the modification is not permitted.
 Language=Japanese
 不正な変更操作です。改造の様相は許されません。
 .
+Language=Finnish
+Kelpaamaton muutostoiminto. Jokin muutoksen osa ei ole sallittu.
+.
 
 MessageId=8312
 Severity=Success
@@ -28470,6 +32731,9 @@ The specified object is too large.
 .
 Language=Japanese
 指定されたオブジェクトが大きすぎます。
+.
+Language=Finnish
+Määritetty objekti on liian suuri.
 .
 
 MessageId=8313
@@ -28491,6 +32755,9 @@ The specified instance type is not valid.
 Language=Japanese
 指定されたインスタンス タイプが無効です。
 .
+Language=Finnish
+Määritetty esiintymätyyppi ei ole kelvollinen.
+.
 
 MessageId=8314
 Severity=Success
@@ -28510,6 +32777,9 @@ The operation must be performed at a master DSA.
 .
 Language=Japanese
 操作はマスターDSAで実行する必要があります。
+.
+Language=Finnish
+Toiminto on suoritettava pää-DSA:ssa.
 .
 
 MessageId=8315
@@ -28531,6 +32801,9 @@ The object class attribute must be specified.
 Language=Japanese
 オブジェクト クラス属性を指定する必要があります。
 .
+Language=Finnish
+Objektiluokan määrite on määritettävä.
+.
 
 MessageId=8316
 Severity=Success
@@ -28550,6 +32823,9 @@ A required attribute is missing.
 .
 Language=Japanese
 必須属性がありません。
+.
+Language=Finnish
+Pakollinen määrite puuttuu.
 .
 
 MessageId=8317
@@ -28571,6 +32847,9 @@ An attempt was made to modify an object to include an attribute that is not lega
 Language=Japanese
 オブジェクトを変更して、そのクラスで有効でない属性を含めようとしました。
 .
+Language=Finnish
+Objektia yritettiin muuttaa sisältämään määrite, joka ei ole sallittu sen luokalle
+.
 
 MessageId=8318
 Severity=Success
@@ -28590,6 +32869,9 @@ The specified attribute is already present on the object.
 .
 Language=Japanese
 指定された属性はオブジェクトに既に存在します。
+.
+Language=Finnish
+Määritetty määrite on jo objektissa.
 .
 
 MessageId=8320
@@ -28611,6 +32893,9 @@ The specified attribute is not present, or has no values.
 Language=Japanese
 指定された属性が存在しないか、値がありません。
 .
+Language=Finnish
+Määritettyä määritettä ei ole, tai sillä ei ole arvoja.
+.
 
 MessageId=8321
 Severity=Success
@@ -28630,6 +32915,9 @@ Multiple values were specified for an attribute that can have only one value.
 .
 Language=Japanese
 値が 1 つしかない属性に複数の値が指定されました。
+.
+Language=Finnish
+Määritteelle, jolla voi olla vain yksi arvo, annettiin useita arvoja.
 .
 
 MessageId=8322
@@ -28651,6 +32939,9 @@ A value for the attribute was not in the acceptable range of values.
 Language=Japanese
 属性の値が許容される値の範囲にありませんでした。
 .
+Language=Finnish
+Määritteen arvo ei ollut hyväksyttävien arvojen alueella.
+.
 
 MessageId=8323
 Severity=Success
@@ -28670,6 +32961,9 @@ The specified value already exists.
 .
 Language=Japanese
 指定された値は既に存在します。
+.
+Language=Finnish
+Määritetty arvo on jo olemassa.
 .
 
 MessageId=8324
@@ -28691,6 +32985,9 @@ The attribute cannot be removed because it is not present on the object.
 Language=Japanese
 属性がオブジェクトに存在しないため削除できません。
 .
+Language=Finnish
+Määritettä ei voi poistaa, koska sitä ei ole objektissa.
+.
 
 MessageId=8325
 Severity=Success
@@ -28710,6 +33007,9 @@ The attribute value cannot be removed because it is not present on the object.
 .
 Language=Japanese
 属性値がオブジェクトに存在しないため、削除できません。
+.
+Language=Finnish
+Määritteen arvoa ei voi poistaa, koska sitä ei ole objektissa.
 .
 
 MessageId=8326
@@ -28731,6 +33031,9 @@ The specified root object cannot be a subref.
 Language=Japanese
 指定されたルート オブジェクトをサブ参照にすることはできません。
 .
+Language=Finnish
+Määritetty pääobjekti ei voi olla aliviittaus.
+.
 
 MessageId=8327
 Severity=Success
@@ -28750,6 +33053,9 @@ Chaining is not permitted.
 .
 Language=Japanese
 チェーンは許可されていません。
+.
+Language=Finnish
+Ketjutus ei ole sallittua.
 .
 
 MessageId=8328
@@ -28771,6 +33077,9 @@ Chained evaluation is not permitted.
 Language=Japanese
 連鎖評価は許可されていません。
 .
+Language=Finnish
+Ketjutettu arviointi ei ole sallittua.
+.
 
 MessageId=8329
 Severity=Success
@@ -28790,6 +33099,9 @@ The operation could not be performed because the object's parent is either unins
 .
 Language=Japanese
 オブジェクトの親がインスタンス化されていないか削除されているため、操作を実行できませんでした。
+.
+Language=Finnish
+Toimintoa ei voitu suorittaa, koska objektin yläobjekti on luomatta tai poistettu.
 .
 
 MessageId=8330
@@ -28811,6 +33123,9 @@ Having a parent that is an alias is not permitted. Aliases are leaf objects.
 Language=Japanese
 エイリアスを親に持つことは許可されていません。エイリアスはリーフ オブジェクトです。
 .
+Language=Finnish
+Yläobjekti ei saa olla alias. Aliakset ovat lehtiobjekteja.
+.
 
 MessageId=8331
 Severity=Success
@@ -28830,6 +33145,9 @@ The object and parent must be of the same type, either both masters or both repl
 .
 Language=Japanese
 オブジェクトと親は、両方のマスタまたは両方のレプリカで同じ型でなければなりません。
+.
+Language=Finnish
+Objektin ja yläobjektin on oltava samaa tyyppiä: joko molemmat pääkopioita tai molemmat replikoita.
 .
 
 MessageId=8332
@@ -28851,6 +33169,9 @@ The operation cannot be performed because child objects exist. This operation ca
 Language=Japanese
 子オブジェクトが存在するため、操作を実行できません。この操作はリーフ オブジェクトに対してのみ実行できます。
 .
+Language=Finnish
+Toimintoa ei voi suorittaa, koska aliobjekteja on olemassa. Toiminnon voi suorittaa vain lehtiobjektille.
+.
 
 MessageId=8333
 Severity=Success
@@ -28870,6 +33191,9 @@ Directory object not found.
 .
 Language=Japanese
 ディレクトリ オブジェクトが見つかりません。
+.
+Language=Finnish
+Hakemisto-objektia ei löytynyt.
 .
 
 MessageId=8334
@@ -28891,6 +33215,9 @@ The aliased object is missing.
 Language=Japanese
 エイリアスされたオブジェクトがありません。
 .
+Language=Finnish
+Aliaksen kohdeobjekti puuttuu.
+.
 
 MessageId=8335
 Severity=Success
@@ -28910,6 +33237,9 @@ The object name has bad syntax.
 .
 Language=Japanese
 オブジェクト名の構文が正しくありません。
+.
+Language=Finnish
+Objektin nimen syntaksi on virheellinen.
 .
 
 MessageId=8336
@@ -28931,6 +33261,9 @@ It is not permitted for an alias to refer to another alias.
 Language=Japanese
 エイリアスが別のエイリアスを参照することは許可されていません。
 .
+Language=Finnish
+Alias ei saa viitata toiseen aliakseen.
+.
 
 MessageId=8337
 Severity=Success
@@ -28950,6 +33283,9 @@ The alias cannot be dereferenced.
 .
 Language=Japanese
 エイリアスを参照解除できません。
+.
+Language=Finnish
+Aliaksen viittausta ei voi selvittää.
 .
 
 MessageId=8338
@@ -28971,6 +33307,9 @@ The operation is out of scope.
 Language=Japanese
 操作が範囲外です。
 .
+Language=Finnish
+Toiminto on alueen ulkopuolella.
+.
 
 MessageId=8339
 Severity=Success
@@ -28990,6 +33329,9 @@ The operation cannot continue because the object is in the process of being remo
 .
 Language=Japanese
 オブジェクトが削除中なので操作を続行できません。
+.
+Language=Finnish
+Toimintoa ei voi jatkaa, koska objektia ollaan poistamassa.
 .
 
 MessageId=8340
@@ -29011,6 +33353,9 @@ The DSA object cannot be deleted.
 Language=Japanese
 DSA オブジェクトを削除できません。
 .
+Language=Finnish
+DSA-objektia ei voi poistaa.
+.
 
 MessageId=8341
 Severity=Success
@@ -29030,6 +33375,9 @@ A directory service error has occurred.
 .
 Language=Japanese
 ディレクトリサービスエラーが発生しました。
+.
+Language=Finnish
+On tapahtunut hakemistopalvelun virhe.
 .
 
 MessageId=8342
@@ -29051,6 +33399,9 @@ The operation can only be performed on an internal master DSA object.
 Language=Japanese
 この操作は内部マスターDSAオブジェクトに対してのみ実行できます。
 .
+Language=Finnish
+Toiminnon voi suorittaa vain sisäiselle pää-DSA-objektille.
+.
 
 MessageId=8343
 Severity=Success
@@ -29070,6 +33421,9 @@ The object must be of class DSA.
 .
 Language=Japanese
 オブジェクトはDSAクラスでなければなりません。
+.
+Language=Finnish
+Objektin on oltava DSA-luokkaa.
 .
 
 MessageId=8344
@@ -29091,6 +33445,9 @@ Insufficient access rights to perform the operation.
 Language=Japanese
 操作を実行するためのアクセス権が不足しています。
 .
+Language=Finnish
+Käyttöoikeudet eivät riitä toiminnon suorittamiseen.
+.
 
 MessageId=8345
 Severity=Success
@@ -29110,6 +33467,9 @@ The object cannot be added because the parent is not on the list of possible sup
 .
 Language=Japanese
 親が可能な上位のリストにないため、オブジェクトを追加できません。
+.
+Language=Finnish
+Objektia ei voi lisätä, koska yläobjekti ei ole mahdollisten yläobjektien luettelossa.
 .
 
 MessageId=8346
@@ -29131,6 +33491,9 @@ Access to the attribute is not permitted because the attribute is owned by the S
 Language=Japanese
 属性がセキュリティ アカウント マネージャ (SAM) によって所有されているため、属性へのアクセスが許可されていません。
 .
+Language=Finnish
+Määritteen käyttö ei ole sallittua, koska määritteen omistaa suojaustilien hallinta (SAM).
+.
 
 MessageId=8347
 Severity=Success
@@ -29150,6 +33513,9 @@ The name has too many parts.
 .
 Language=Japanese
 名前の部分が多すぎます。
+.
+Language=Finnish
+Nimessä on liian monta osaa.
 .
 
 MessageId=8348
@@ -29171,6 +33537,9 @@ The name is too long.
 Language=Japanese
 名前が長すぎます。
 .
+Language=Finnish
+Nimi on liian pitkä.
+.
 
 MessageId=8349
 Severity=Success
@@ -29190,6 +33559,9 @@ The name value is too long.
 .
 Language=Japanese
 名前の値が長すぎます。
+.
+Language=Finnish
+Nimen arvo on liian pitkä.
 .
 
 MessageId=8350
@@ -29211,6 +33583,9 @@ The directory service encountered an error parsing a name.
 Language=Japanese
 ディレクトリ サービスで名前の解析エラーが発生しました。
 .
+Language=Finnish
+Hakemistopalvelu kohtasi virheen nimeä jäsentäessään.
+.
 
 MessageId=8351
 Severity=Success
@@ -29230,6 +33605,9 @@ The directory service cannot get the attribute type for a name.
 .
 Language=Japanese
 ディレクトリ サービスは名前の属性タイプを取得できません。
+.
+Language=Finnish
+Hakemistopalvelu ei saa nimen määritetyyppiä.
 .
 
 MessageId=8352
@@ -29251,6 +33629,9 @@ The name does not identify an object; the name identifies a phantom.
 Language=Japanese
 名前がオブジェクトを識別していません。
 .
+Language=Finnish
+Nimi ei yksilöi objektia; nimi yksilöi haamuobjektin.
+.
 
 MessageId=8353
 Severity=Success
@@ -29270,6 +33651,9 @@ The security descriptor is too short.
 .
 Language=Japanese
 セキュリティ記述子が短すぎます。
+.
+Language=Finnish
+Suojauskuvaus on liian lyhyt.
 .
 
 MessageId=8354
@@ -29291,6 +33675,9 @@ The security descriptor is invalid.
 Language=Japanese
 セキュリティ記述子が無効です。
 .
+Language=Finnish
+Suojauskuvaus on virheellinen.
+.
 
 MessageId=8355
 Severity=Success
@@ -29310,6 +33697,9 @@ Failed to create name for deleted object.
 .
 Language=Japanese
 削除されたオブジェクトの名前の作成に失敗しました。
+.
+Language=Finnish
+Poistetun objektin nimen luominen epäonnistui.
 .
 
 MessageId=8356
@@ -29331,6 +33721,9 @@ The parent of a new subref must exist.
 Language=Japanese
 新しいサブ参照の親が存在する必要があります。
 .
+Language=Finnish
+Uuden aliviittauksen yläobjektin on oltava olemassa.
+.
 
 MessageId=8357
 Severity=Success
@@ -29350,6 +33743,9 @@ The object must be a naming context.
 .
 Language=Japanese
 オブジェクトはネーミング コンテキストでなければなりません。
+.
+Language=Finnish
+Objektin on oltava nimeämiskonteksti.
 .
 
 MessageId=8358
@@ -29371,6 +33767,9 @@ It is not permitted to add an attribute which is owned by the system.
 Language=Japanese
 システムが所有する属性を追加することは許可されていません。
 .
+Language=Finnish
+Järjestelmän omistaman määritteen lisääminen ei ole sallittua.
+.
 
 MessageId=8359
 Severity=Success
@@ -29390,6 +33789,9 @@ The class of the object must be structural; you cannot instantiate an abstract c
 .
 Language=Japanese
 オブジェクトのクラスは構造的でなければなりません。
+.
+Language=Finnish
+Objektin luokan on oltava rakenteellinen; abstraktista luokasta ei voi luoda esiintymää.
 .
 
 MessageId=8360
@@ -29411,6 +33813,9 @@ The schema object could not be found.
 Language=Japanese
 スキーマ オブジェクトが見つかりません。
 .
+Language=Finnish
+Rakenneobjektia ei löytynyt.
+.
 
 MessageId=8361
 Severity=Success
@@ -29430,6 +33835,9 @@ A local object with this GUID (dead or alive) already exists.
 .
 Language=Japanese
 スキーマ オブジェクトが見つかりません: このGUID (デッドまたはアライブ) を持つローカル オブジェクトがすでに存在します。
+.
+Language=Finnish
+Paikallinen objekti, jolla on tämä GUID (poistettu tai olemassa oleva), on jo olemassa.
 .
 
 MessageId=8362
@@ -29451,6 +33859,9 @@ The operation cannot be performed on a back link.
 Language=Japanese
 バック リンクに対して操作を実行できません。
 .
+Language=Finnish
+Toimintoa ei voi suorittaa paluulinkille.
+.
 
 MessageId=8363
 Severity=Success
@@ -29470,6 +33881,9 @@ The cross reference for the specified naming context could not be found.
 .
 Language=Japanese
 指定されたネーミング コンテキストの相互参照が見つかりません。
+.
+Language=Finnish
+Määritetyn nimeämiskontekstin ristiviittausta ei löytynyt.
 .
 
 MessageId=8364
@@ -29491,6 +33905,9 @@ The operation could not be performed because the directory service is shutting d
 Language=Japanese
 ディレクトリ サービスがシャットダウンしているため、操作を実行できませんでした。
 .
+Language=Finnish
+Toimintoa ei voitu suorittaa, koska hakemistopalvelu on sammumassa.
+.
 
 MessageId=8365
 Severity=Success
@@ -29510,6 +33927,9 @@ The directory service request is invalid.
 .
 Language=Japanese
 ディレクトリ サービス要求が無効です。
+.
+Language=Finnish
+Hakemistopalvelun pyyntö on virheellinen.
 .
 
 MessageId=8366
@@ -29531,6 +33951,9 @@ The role owner attribute could not be read.
 Language=Japanese
 ロール所有者属性を読み取れませんでした。
 .
+Language=Finnish
+Roolin omistajan määritettä ei voitu lukea.
+.
 
 MessageId=8367
 Severity=Success
@@ -29550,6 +33973,9 @@ The requested FSMO operation failed. The current FSMO holder could not be reache
 .
 Language=Japanese
 要求されたFSMO操作は失敗しました。現在のFSMO保持者に連絡できませんでした。
+.
+Language=Finnish
+Pyydetty FSMO-toiminto epäonnistui. Nykyistä FSMO-roolin haltijaa ei tavoitettu.
 .
 
 MessageId=8368
@@ -29571,6 +33997,9 @@ Modification of a DN across a naming context is not permitted.
 Language=Japanese
 ネーミング コンテキスト全体でDNの変更は許可されていません。
 .
+Language=Finnish
+DN:n muuttaminen nimeämiskontekstin rajan yli ei ole sallittua.
+.
 
 MessageId=8369
 Severity=Success
@@ -29590,6 +34019,9 @@ The attribute cannot be modified because it is owned by the system.
 .
 Language=Japanese
 属性はシステムによって所有されているため変更できません。
+.
+Language=Finnish
+Määritettä ei voi muuttaa, koska sen omistaa järjestelmä.
 .
 
 MessageId=8370
@@ -29611,6 +34043,9 @@ Only the replicator can perform this function.
 Language=Japanese
 レプリケータのみがこの機能を実行できます。
 .
+Language=Finnish
+Vain replikoija voi suorittaa tämän toiminnon.
+.
 
 MessageId=8371
 Severity=Success
@@ -29630,6 +34065,9 @@ The specified class is not defined.
 .
 Language=Japanese
 指定されたクラスは定義されていません。
+.
+Language=Finnish
+Määritettyä luokkaa ei ole määritelty.
 .
 
 MessageId=8372
@@ -29651,6 +34089,9 @@ The specified class is not a subclass.
 Language=Japanese
 指定されたクラスはサブクラスではありません。
 .
+Language=Finnish
+Määritetty luokka ei ole aliluokka.
+.
 
 MessageId=8373
 Severity=Success
@@ -29670,6 +34111,9 @@ The name reference is invalid.
 .
 Language=Japanese
 名前の参照が無効です。
+.
+Language=Finnish
+Nimiviittaus on virheellinen.
 .
 
 MessageId=8374
@@ -29691,6 +34135,9 @@ A cross reference already exists.
 Language=Japanese
 相互参照は既に存在します。
 .
+Language=Finnish
+Ristiviittaus on jo olemassa.
+.
 
 MessageId=8375
 Severity=Success
@@ -29710,6 +34157,9 @@ It is not permitted to delete a master cross reference.
 .
 Language=Japanese
 マスター相互参照の削除は許可されていません。
+.
+Language=Finnish
+Pääristiviittauksen poistaminen ei ole sallittua.
 .
 
 MessageId=8376
@@ -29731,6 +34181,9 @@ Subtree notifications are only supported on NC heads.
 Language=Japanese
 サブツリー通知はNCヘッドでのみサポートされます。
 .
+Language=Finnish
+Alipuun ilmoituksia tuetaan vain nimeämiskontekstien alussa.
+.
 
 MessageId=8377
 Severity=Success
@@ -29750,6 +34203,9 @@ Notification filter is too complex.
 .
 Language=Japanese
 通知フィルタが複雑すぎます。
+.
+Language=Finnish
+Ilmoitussuodatin on liian monimutkainen.
 .
 
 MessageId=8378
@@ -29771,6 +34227,9 @@ Schema update failed: duplicate RDN.
 Language=Japanese
 スキーマの更新に失敗しました: RDNが重複しています。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: kaksinkertainen RDN.
+.
 
 MessageId=8379
 Severity=Success
@@ -29790,6 +34249,9 @@ Schema update failed: duplicate OID
 .
 Language=Japanese
 スキーマの更新に失敗しました: OID が重複しています。
+.
+Language=Finnish
+Rakenteen päivitys epäonnistui: kaksinkertainen OID
 .
 
 MessageId=8380
@@ -29811,6 +34273,9 @@ Schema update failed: duplicate MAPI identifier.
 Language=Japanese
 スキーマの更新に失敗しました: MAPI 識別子が重複しています。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: kaksinkertainen MAPI-tunniste.
+.
 
 MessageId=8381
 Severity=Success
@@ -29830,6 +34295,9 @@ Schema update failed: duplicate schema-id GUID.
 .
 Language=Japanese
 スキーマの更新に失敗しました: スキーマ ID GUID が重複しています。
+.
+Language=Finnish
+Rakenteen päivitys epäonnistui: kaksinkertainen schema-id GUID.
 .
 
 MessageId=8382
@@ -29851,6 +34319,9 @@ Schema update failed: duplicate LDAP display name.
 Language=Japanese
 スキーマの更新に失敗しました: LDAP 表示名が重複しています。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: kaksinkertainen LDAP-näyttönimi.
+.
 
 MessageId=8383
 Severity=Success
@@ -29870,6 +34341,9 @@ Schema update failed: range-lower less than range upper
 .
 Language=Japanese
 スキーマの更新に失敗しました: range-lower が range upper よりも小さいです。
+.
+Language=Finnish
+Rakenteen päivitys epäonnistui: range-lower on pienempi kuin range-upper
 .
 
 MessageId=8384
@@ -29891,6 +34365,9 @@ Schema update failed: syntax mismatch
 Language=Japanese
 スキーマの更新に失敗しました: 構文の不一致です。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: syntaksi ei vastaa
+.
 
 MessageId=8385
 Severity=Success
@@ -29910,6 +34387,9 @@ Schema deletion failed: attribute is used in must-contain
 .
 Language=Japanese
 スキーマの削除に失敗しました: 属性が must-contain で使用されています。
+.
+Language=Finnish
+Rakenteen poisto epäonnistui: määritettä käytetään must-contain-luettelossa
 .
 
 MessageId=8386
@@ -29931,6 +34411,9 @@ Schema deletion failed: attribute is used in may-contain
 Language=Japanese
 スキーマの削除に失敗しました: 属性が may-contain で使用されています。
 .
+Language=Finnish
+Rakenteen poisto epäonnistui: määritettä käytetään may-contain-luettelossa
+.
 
 MessageId=8387
 Severity=Success
@@ -29950,6 +34433,9 @@ Schema update failed: attribute in may-contain does not exist
 .
 Language=Japanese
 スキーマの更新に失敗しました: may-contain 内に属性が存在しません。
+.
+Language=Finnish
+Rakenteen päivitys epäonnistui: may-contain-luettelon määritettä ei ole olemassa
 .
 
 MessageId=8388
@@ -29971,6 +34457,9 @@ Schema update failed: attribute in must-contain does not exist
 Language=Japanese
 スキーマ更新に失敗しました: must-contain 内の属性が存在しません。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: must-contain-luettelon määritettä ei ole olemassa
+.
 
 MessageId=8389
 Severity=Success
@@ -29990,6 +34479,9 @@ Schema update failed: class in aux-class list does not exist or is not an auxili
 .
 Language=Japanese
 スキーマの更新に失敗しました: aux-class リスト内のクラスが存在しないか、補助クラスではありません。
+.
+Language=Finnish
+Rakenteen päivitys epäonnistui: aux-class-luettelon luokkaa ei ole olemassa tai se ei ole apuluokka
 .
 
 MessageId=8390
@@ -30011,6 +34503,9 @@ Schema update failed: class in poss-superiors does not exist
 Language=Japanese
 スキーマの更新に失敗しました: poss-superiors 内のクラスが存在しません。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: poss-superiors-luettelon luokkaa ei ole olemassa
+.
 
 MessageId=8391
 Severity=Success
@@ -30030,6 +34525,9 @@ Schema update failed: class in subclassof list does not exist or does not satisf
 .
 Language=Japanese
 スキーマの更新に失敗しました: subclassof リスト内のクラスが存在しないか、階層ルールを満たしていません。
+.
+Language=Finnish
+Rakenteen päivitys epäonnistui: subclassof-luettelon luokkaa ei ole olemassa tai se ei täytä hierarkiasääntöjä
 .
 
 MessageId=8392
@@ -30051,6 +34549,9 @@ Schema update failed: Rdn-Att-Id has wrong syntax
 Language=Japanese
 スキーマの更新に失敗しました: Rdn-Att-Idの構文が間違っています。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: Rdn-Att-Id-määritteen syntaksi on väärä
+.
 
 MessageId=8393
 Severity=Success
@@ -30070,6 +34571,9 @@ Schema deletion failed: class is used as auxiliary class
 .
 Language=Japanese
 スキーマの削除に失敗しました: クラスが補助クラスとして使用されています。
+.
+Language=Finnish
+Rakenteen poisto epäonnistui: luokkaa käytetään apuluokkana
 .
 
 MessageId=8394
@@ -30091,6 +34595,9 @@ Schema deletion failed: class is used as sub class
 Language=Japanese
 スキーマの削除に失敗しました: クラスがサブクラスとして使用されています。
 .
+Language=Finnish
+Rakenteen poisto epäonnistui: luokkaa käytetään aliluokkana
+.
 
 MessageId=8395
 Severity=Success
@@ -30110,6 +34617,9 @@ Schema deletion failed: class is used as poss superior
 .
 Language=Japanese
 スキーマの削除に失敗しました。
+.
+Language=Finnish
+Rakenteen poisto epäonnistui: luokkaa käytetään mahdollisena yläluokkana
 .
 
 MessageId=8396
@@ -30131,6 +34641,9 @@ Schema update failed in recalculating validation cache.
 Language=Japanese
 検証キャッシュの再計算でスキーマの更新に失敗しました。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui vahvistusvälimuistia laskettaessa uudelleen.
+.
 
 MessageId=8397
 Severity=Success
@@ -30150,6 +34663,9 @@ The tree deletion is not finished.
 .
 Language=Japanese
 ツリーの削除が完了していません。ツリーの削除を続行するには、再度要求する必要があります。
+.
+Language=Finnish
+Puun poisto ei ole valmis.
 .
 
 MessageId=8398
@@ -30171,6 +34687,9 @@ The requested delete operation could not be performed.
 Language=Japanese
 要求された削除操作を実行できませんでした。
 .
+Language=Finnish
+Pyydettyä poistoa ei voitu suorittaa.
+.
 
 MessageId=8399
 Severity=Success
@@ -30190,6 +34709,9 @@ Cannot read the governs class identifier for the schema record.
 .
 Language=Japanese
 スキーマ レコードのガバメント クラス識別子を読み取ることができません。
+.
+Language=Finnish
+Rakennetietueen hallinnoivan luokan tunnistetta ei voi lukea.
 .
 
 MessageId=8400
@@ -30211,6 +34733,9 @@ The attribute schema has bad syntax.
 Language=Japanese
 属性スキーマの構文が正しくありません。
 .
+Language=Finnish
+Määriterakenteen syntaksi on virheellinen.
+.
 
 MessageId=8401
 Severity=Success
@@ -30230,6 +34755,9 @@ The attribute could not be cached.
 .
 Language=Japanese
 属性をキャッシュできませんでした。
+.
+Language=Finnish
+Määritettä ei voitu tallentaa välimuistiin.
 .
 
 MessageId=8402
@@ -30251,6 +34779,9 @@ The class could not be cached.
 Language=Japanese
 クラスをキャッシュできませんでした。
 .
+Language=Finnish
+Luokkaa ei voitu tallentaa välimuistiin.
+.
 
 MessageId=8403
 Severity=Success
@@ -30270,6 +34801,9 @@ The attribute could not be removed from the cache.
 .
 Language=Japanese
 属性をキャッシュから削除できませんでした。
+.
+Language=Finnish
+Määritettä ei voitu poistaa välimuistista.
 .
 
 MessageId=8404
@@ -30291,6 +34825,9 @@ The class could not be removed from the cache.
 Language=Japanese
 クラスをキャッシュから削除できませんでした。
 .
+Language=Finnish
+Luokkaa ei voitu poistaa välimuistista.
+.
 
 MessageId=8405
 Severity=Success
@@ -30310,6 +34847,9 @@ The distinguished name attribute could not be read.
 .
 Language=Japanese
 識別名属性を読み取れませんでした。
+.
+Language=Finnish
+Erottuvan nimen määritettä ei voitu lukea.
 .
 
 MessageId=8406
@@ -30331,6 +34871,9 @@ No superior reference has been configured for the directory service. The directo
 Language=Japanese
 ディレクトリ サービスに上位参照が構成されていません。したがって、ディレクトリサービスはこのフォレスト外のオブジェクトへの参照を発行できません。
 .
+Language=Finnish
+Hakemistopalvelulle ei ole määritetty yläviittausta. Siksi hakemistopalvelu ei voi antaa viittauksia tämän metsän ulkopuolisiin objekteihin.
+.
 
 MessageId=8407
 Severity=Success
@@ -30350,6 +34893,9 @@ The instance type attribute could not be retrieved.
 .
 Language=Japanese
 インスタンス タイプ属性を取得できませんでした。
+.
+Language=Finnish
+Esiintymätyypin määritettä ei voitu noutaa.
 .
 
 MessageId=8408
@@ -30371,6 +34917,9 @@ An internal error has occurred.
 Language=Japanese
 内部エラーが発生しました。
 .
+Language=Finnish
+On tapahtunut sisäinen virhe.
+.
 
 MessageId=8409
 Severity=Success
@@ -30390,6 +34939,9 @@ A database error has occurred.
 .
 Language=Japanese
 データベースエラーが発生しました。
+.
+Language=Finnish
+On tapahtunut tietokantavirhe.
 .
 
 MessageId=8410
@@ -30411,6 +34963,9 @@ The attribute GOVERNSID is missing.
 Language=Japanese
 属性GOVERNSIDが見つかりません。
 .
+Language=Finnish
+GOVERNSID-määrite puuttuu.
+.
 
 MessageId=8411
 Severity=Success
@@ -30430,6 +34985,9 @@ An expected attribute is missing.
 .
 Language=Japanese
 指定された属性が見つかりません。
+.
+Language=Finnish
+Odotettu määrite puuttuu.
 .
 
 MessageId=8412
@@ -30451,6 +35009,9 @@ The specified naming context is missing a cross reference.
 Language=Japanese
 指定された名前コンテキストに相互参照がありません。
 .
+Language=Finnish
+Määritetyltä nimeämiskontekstilta puuttuu ristiviittaus.
+.
 
 MessageId=8413
 Severity=Success
@@ -30470,6 +35031,9 @@ A security checking error has occurred.
 .
 Language=Japanese
 セキュリティ チェック エラーが発生しました。
+.
+Language=Finnish
+On tapahtunut suojaustarkistuksen virhe.
 .
 
 MessageId=8414
@@ -30491,6 +35055,9 @@ The schema is not loaded.
 Language=Japanese
 スキーマがロードされていません。
 .
+Language=Finnish
+Rakennetta ei ole ladattu.
+.
 
 MessageId=8415
 Severity=Success
@@ -30510,6 +35077,9 @@ Schema allocation failed. Please check if the machine is running low on memory.
 .
 Language=Japanese
 スキーマの割り当てに失敗しました。マシンのメモリが不足していないか確認してください。
+.
+Language=Finnish
+Rakenteen varaus epäonnistui. Tarkista, onko koneen muisti vähissä.
 .
 
 MessageId=8416
@@ -30531,6 +35101,9 @@ Failed to obtain the required syntax for the attribute schema.
 Language=Japanese
 スキーマの割り当てに失敗しました: 属性スキーマに必要な構文の取得に失敗しました。
 .
+Language=Finnish
+Määriterakenteelle tarvittavan syntaksin hakeminen epäonnistui.
+.
 
 MessageId=8417
 Severity=Success
@@ -30550,6 +35123,9 @@ The global catalog verification failed. The global catalog is not available or d
 .
 Language=Japanese
 グローバル カタログの検証に失敗しました。グローバル カタログが使用できないか、操作をサポートしていません。ディレクトリの一部は現在使用できません。
+.
+Language=Finnish
+Yleisen luettelon tarkistus epäonnistui. Yleinen luettelo ei ole käytettävissä tai se ei tue toimintoa. Osa hakemistosta ei ole tällä hetkellä käytettävissä.
 .
 
 MessageId=8418
@@ -30571,6 +35147,9 @@ The replication operation failed because of a schema mismatch between the server
 Language=Japanese
 関係するサーバ間でスキーマが一致しなかったため、レプリケーション操作に失敗しました。
 .
+Language=Finnish
+Replikointi epäonnistui, koska osallisten palvelinten rakenteet eivät vastaa toisiaan.
+.
 
 MessageId=8419
 Severity=Success
@@ -30590,6 +35169,9 @@ The DSA object could not be found.
 .
 Language=Japanese
 DSA オブジェクトが見つかりませんでした。
+.
+Language=Finnish
+DSA-objektia ei löytynyt.
 .
 
 MessageId=8420
@@ -30611,6 +35193,9 @@ The naming context could not be found.
 Language=Japanese
 ネーミング コンテキストが見つかりません。
 .
+Language=Finnish
+Nimeämiskontekstia ei löytynyt.
+.
 
 MessageId=8421
 Severity=Success
@@ -30630,6 +35215,9 @@ The naming context could not be found in the cache.
 .
 Language=Japanese
 ネーミング コンテキストがキャッシュに見つかりませんでした。
+.
+Language=Finnish
+Nimeämiskontekstia ei löytynyt välimuistista.
 .
 
 MessageId=8422
@@ -30651,6 +35239,9 @@ The child object could not be retrieved.
 Language=Japanese
 子オブジェクトを取得できませんでした。
 .
+Language=Finnish
+Aliobjektia ei voitu noutaa.
+.
 
 MessageId=8423
 Severity=Success
@@ -30670,6 +35261,9 @@ The modification was not permitted for security reasons.
 .
 Language=Japanese
 セキュリティ上の理由で変更が許可されませんでした。
+.
+Language=Finnish
+Muutos ei ollut sallittu suojaussyistä.
 .
 
 MessageId=8424
@@ -30691,6 +35285,9 @@ The operation cannot replace the hidden record.
 Language=Japanese
 操作は非表示レコードを置換できません。
 .
+Language=Finnish
+Toiminto ei voi korvata piilotettua tietuetta.
+.
 
 MessageId=8425
 Severity=Success
@@ -30710,6 +35307,9 @@ The hierarchy file is invalid.
 .
 Language=Japanese
 階層ファイルが無効です。
+.
+Language=Finnish
+Hierarkiatiedosto on virheellinen.
 .
 
 MessageId=8426
@@ -30731,6 +35331,9 @@ The attempt to build the hierarchy table failed.
 Language=Japanese
 階層テーブルの構築に失敗しました。
 .
+Language=Finnish
+Hierarkiataulukon muodostaminen epäonnistui.
+.
 
 MessageId=8427
 Severity=Success
@@ -30750,6 +35353,9 @@ The directory configuration parameter is missing from the registry.
 .
 Language=Japanese
 ディレクトリ構成パラメータがレジストリにありません。
+.
+Language=Finnish
+Hakemiston määritysparametri puuttuu rekisteristä.
 .
 
 MessageId=8428
@@ -30771,6 +35377,9 @@ The attempt to count the address book indices failed.
 Language=Japanese
 アドレス帳インデックスのカウントに失敗しました。
 .
+Language=Finnish
+Osoitekirjan indeksien laskeminen epäonnistui.
+.
 
 MessageId=8429
 Severity=Success
@@ -30790,6 +35399,9 @@ The allocation of the hierarchy table failed.
 .
 Language=Japanese
 階層テーブルの割り当てに失敗しました。
+.
+Language=Finnish
+Hierarkiataulukon varaus epäonnistui.
 .
 
 MessageId=8430
@@ -30811,6 +35423,9 @@ The directory service encountered an internal failure.
 Language=Japanese
 ディレクトリ サービスで内部障害が発生しました。
 .
+Language=Finnish
+Hakemistopalvelu kohtasi sisäisen virheen.
+.
 
 MessageId=8431
 Severity=Success
@@ -30830,6 +35445,9 @@ The directory service encountered an unknown failure.
 .
 Language=Japanese
 ディレクトリ サービスで不明な障害が発生しました。
+.
+Language=Finnish
+Hakemistopalvelu kohtasi tuntemattoman virheen.
 .
 
 MessageId=8432
@@ -30851,6 +35469,9 @@ A root object requires a class of 'top'.
 Language=Japanese
 ルート オブジェクトがtopのクラスを必要とします。
 .
+Language=Finnish
+Pääobjekti vaatii luokan 'top'.
+.
 
 MessageId=8433
 Severity=Success
@@ -30870,6 +35491,9 @@ This directory server is shutting down, and cannot take ownership of new floatin
 .
 Language=Japanese
 このディレクトリサーバーはシャットダウン中で、新しいフローティングシングルマスター操作ロールの所有権を取得できません。
+.
+Language=Finnish
+Tämä hakemistopalvelin on sammumassa, eikä se voi ottaa omistukseensa uusia liikkuvia yhden päätoimijan roolien (FSMO) toimintoja.
 .
 
 MessageId=8434
@@ -30891,6 +35515,9 @@ The directory service is missing mandatory configuration information, and is una
 Language=Japanese
 ディレクトリサービスに必須の構成情報がなく、フローティング シングルマスター操作ロールの所有権を決定できません。
 .
+Language=Finnish
+Hakemistopalvelulta puuttuu pakollisia määritystietoja, eikä se pysty selvittämään liikkuvien yhden päätoimijan roolien omistusta.
+.
 
 MessageId=8435
 Severity=Success
@@ -30910,6 +35537,9 @@ The directory service was unable to transfer ownership of one or more floating s
 .
 Language=Japanese
 ディレクトリサービスは、1つ以上のフローティングシングルマスターオペレーションロールの所有権を他のサーバーに転送できませんでした。
+.
+Language=Finnish
+Hakemistopalvelu ei pystynyt siirtämään yhden tai useamman liikkuvan yhden päätoimijan roolin omistusta muille palvelimille.
 .
 
 MessageId=8436
@@ -30931,6 +35561,9 @@ The replication operation failed.
 Language=Japanese
 レプリケーション操作に失敗しました。
 .
+Language=Finnish
+Replikointi epäonnistui.
+.
 
 MessageId=8437
 Severity=Success
@@ -30950,6 +35583,9 @@ An invalid parameter was specified for this replication operation.
 .
 Language=Japanese
 このレプリケーション操作に無効なパラメータが指定されました。
+.
+Language=Finnish
+Tälle replikoinnille annettiin virheellinen parametri.
 .
 
 MessageId=8438
@@ -30971,6 +35607,9 @@ The directory service is too busy to complete the replication operation at this 
 Language=Japanese
 ディレクトリ サービスがビジー状態で、レプリケーション操作を完了できません。
 .
+Language=Finnish
+Hakemistopalvelu on liian kiireinen suorittaakseen replikoinnin tällä hetkellä.
+.
 
 MessageId=8439
 Severity=Success
@@ -30990,6 +35629,9 @@ The distinguished name specified for this replication operation is invalid.
 .
 Language=Japanese
 このレプリケーション操作に指定された識別名は無効です。
+.
+Language=Finnish
+Tälle replikoinnille määritetty erottuva nimi on virheellinen.
 .
 
 MessageId=8440
@@ -31011,6 +35653,9 @@ The naming context specified for this replication operation is invalid.
 Language=Japanese
 このレプリケーション操作に指定された名前コンテキストが無効です。
 .
+Language=Finnish
+Tälle replikoinnille määritetty nimeämiskonteksti on virheellinen.
+.
 
 MessageId=8441
 Severity=Success
@@ -31030,6 +35675,9 @@ The distinguished name specified for this replication operation already exists.
 .
 Language=Japanese
 このレプリケーション操作に指定された識別名はすでに存在します。
+.
+Language=Finnish
+Tälle replikoinnille määritetty erottuva nimi on jo olemassa.
 .
 
 MessageId=8442
@@ -31051,6 +35699,9 @@ The replication system encountered an internal error.
 Language=Japanese
 レプリケーション システムで内部エラーが発生しました。
 .
+Language=Finnish
+Replikointijärjestelmä kohtasi sisäisen virheen.
+.
 
 MessageId=8443
 Severity=Success
@@ -31070,6 +35721,9 @@ The replication operation encountered a database inconsistency.
 .
 Language=Japanese
 レプリケーション操作でデータベースの不整合が発生しました。
+.
+Language=Finnish
+Replikointi kohtasi tietokannan ristiriidan.
 .
 
 MessageId=8444
@@ -31091,6 +35745,9 @@ The server specified for this replication operation could not be contacted.
 Language=Japanese
 このレプリケーション操作で指定されたサーバーにアクセスできませんでした。
 .
+Language=Finnish
+Tälle replikoinnille määritettyyn palvelimeen ei saatu yhteyttä.
+.
 
 MessageId=8445
 Severity=Success
@@ -31110,6 +35767,9 @@ The replication operation encountered an object with an invalid instance type.
 .
 Language=Japanese
 レプリケーション操作で無効なインスタンス型を持つオブジェクトに遭遇しました。
+.
+Language=Finnish
+Replikointi kohtasi objektin, jonka esiintymätyyppi on virheellinen.
 .
 
 MessageId=8446
@@ -31131,6 +35791,9 @@ The replication operation failed to allocate memory.
 Language=Japanese
 レプリケーション操作はメモリの割り当てに失敗しました。
 .
+Language=Finnish
+Replikointi ei pystynyt varaamaan muistia.
+.
 
 MessageId=8447
 Severity=Success
@@ -31150,6 +35813,9 @@ The replication operation encountered an error with the mail system.
 .
 Language=Japanese
 レプリケーション操作でメール システムでエラーが発生しました。
+.
+Language=Finnish
+Replikointi kohtasi sähköpostijärjestelmän virheen.
 .
 
 MessageId=8448
@@ -31171,6 +35837,9 @@ The replication reference information for the target server already exists.
 Language=Japanese
 ターゲット サーバのレプリケーション参照情報はすでに存在します。
 .
+Language=Finnish
+Kohdepalvelimen replikoinnin viittaustiedot ovat jo olemassa.
+.
 
 MessageId=8449
 Severity=Success
@@ -31190,6 +35859,9 @@ The replication reference information for the target server does not exist.
 .
 Language=Japanese
 対象サーバーのレプリケーション参照情報が存在しません。
+.
+Language=Finnish
+Kohdepalvelimen replikoinnin viittaustietoja ei ole olemassa.
 .
 
 MessageId=8450
@@ -31211,6 +35883,9 @@ The naming context cannot be removed because it is replicated to another server.
 Language=Japanese
 ネーミング コンテキストは別のサーバにレプリケートされているため削除できません。
 .
+Language=Finnish
+Nimeämiskontekstia ei voi poistaa, koska se replikoidaan toiselle palvelimelle.
+.
 
 MessageId=8451
 Severity=Success
@@ -31230,6 +35905,9 @@ The replication operation encountered a database error.
 .
 Language=Japanese
 レプリケーション操作でデータベース エラーが発生しました。
+.
+Language=Finnish
+Replikointi kohtasi tietokantavirheen.
 .
 
 MessageId=8452
@@ -31251,6 +35929,9 @@ The naming context is in the process of being removed or is not replicated from 
 Language=Japanese
 ネーミング コンテキストが削除処理中です。
 .
+Language=Finnish
+Nimeämiskontekstia ollaan poistamassa, tai sitä ei replikoida määritetyltä palvelimelta.
+.
 
 MessageId=8453
 Severity=Success
@@ -31270,6 +35951,9 @@ Replication access was denied.
 .
 Language=Japanese
 レプリケーション アクセスが拒否されました。
+.
+Language=Finnish
+Replikoinnin käyttö estettiin.
 .
 
 MessageId=8454
@@ -31291,6 +35975,9 @@ The requested operation is not supported by this version of the directory servic
 Language=Japanese
 要求された操作は、このバージョンのディレクトリ サービスではサポートされていません。
 .
+Language=Finnish
+Tämä hakemistopalvelun versio ei tue pyydettyä toimintoa.
+.
 
 MessageId=8455
 Severity=Success
@@ -31310,6 +35997,9 @@ The replication remote procedure call was cancelled.
 .
 Language=Japanese
 レプリケーション リモート プロシージャ呼び出しがキャンセルされました。
+.
+Language=Finnish
+Replikoinnin etäproseduurikutsu peruutettiin.
 .
 
 MessageId=8456
@@ -31331,6 +36021,9 @@ The source server is currently rejecting replication requests.
 Language=Japanese
 ソース サーバーは現在レプリケーション要求を拒否しています。
 .
+Language=Finnish
+Lähdepalvelin hylkää tällä hetkellä replikointipyynnöt.
+.
 
 MessageId=8457
 Severity=Success
@@ -31350,6 +36043,9 @@ The destination server is currently rejecting replication requests.
 .
 Language=Japanese
 コピー先サーバーは現在レプリケーション要求を拒否しています。
+.
+Language=Finnish
+Kohdepalvelin hylkää tällä hetkellä replikointipyynnöt.
 .
 
 MessageId=8458
@@ -31371,6 +36067,9 @@ The replication operation failed due to a collision of object names.
 Language=Japanese
 オブジェクト名の衝突によりレプリケーション操作に失敗しました。
 .
+Language=Finnish
+Replikointi epäonnistui objektien nimien yhteentörmäyksen vuoksi.
+.
 
 MessageId=8459
 Severity=Success
@@ -31390,6 +36089,9 @@ The replication source has been reinstalled.
 .
 Language=Japanese
 レプリケーション ソースが再インストールされました。
+.
+Language=Finnish
+Replikoinnin lähde on asennettu uudelleen.
 .
 
 MessageId=8460
@@ -31411,6 +36113,9 @@ The replication operation failed because a required parent object is missing.
 Language=Japanese
 必要な親オブジェクトが見つからないため、レプリケーション操作に失敗しました。
 .
+Language=Finnish
+Replikointi epäonnistui, koska tarvittava yläobjekti puuttuu.
+.
 
 MessageId=8461
 Severity=Success
@@ -31430,6 +36135,9 @@ The replication operation was preempted.
 .
 Language=Japanese
 レプリケーション操作が先取りされました。
+.
+Language=Finnish
+Replikointi ohitettiin.
 .
 
 MessageId=8462
@@ -31451,6 +36159,9 @@ The replication synchronization attempt was abandoned because of a lack of updat
 Language=Japanese
 更新がないため、レプリケーションの同期化を中止しました。
 .
+Language=Finnish
+Replikoinnin synkronointiyritys hylättiin, koska päivityksiä ei ollut.
+.
 
 MessageId=8463
 Severity=Success
@@ -31470,6 +36181,9 @@ The replication operation was terminated because the system is shutting down.
 .
 Language=Japanese
 システムがシャットダウンしているため、レプリケーション操作を終了しました。
+.
+Language=Finnish
+Replikointi lopetettiin, koska järjestelmä on sammumassa.
 .
 
 MessageId=8464
@@ -31491,6 +36205,9 @@ Synchronization attempt failed because the destination DC is currently waiting t
 Language=Japanese
 宛先DCがソースからの新しい部分属性の同期を待機中のため、同期に失敗しました。この状態は、最近のスキーマ変更によって部分属性セットが変更された場合は正常です。宛先の部分属性セットはソースの部分属性セットのサブセットではありません。
 .
+Language=Finnish
+Synkronointiyritys epäonnistui, koska kohteen toimialueen ohjauskone odottaa uusien osittaisten määritteiden synkronointia lähteestä. Tämä on normaalia, jos äskettäinen rakenteen muutos muutti osittaisten määritteiden joukkoa. Kohteen osittaisten määritteiden joukko ei ole lähteen osittaisten määritteiden joukon osajoukko.
+.
 
 MessageId=8465
 Severity=Success
@@ -31510,6 +36227,9 @@ The replication synchronization attempt failed because a master replica attempte
 .
 Language=Japanese
 マスター レプリカが部分レプリカから同期しようとしたため、レプリケーションの同期に失敗しました。
+.
+Language=Finnish
+Replikoinnin synkronointiyritys epäonnistui, koska pääreplika yritti synkronoida osittaisesta replikasta.
 .
 
 MessageId=8466
@@ -31531,6 +36251,9 @@ The server specified for this replication operation was contacted, but that serv
 Language=Japanese
 このレプリケーション操作に指定されたサーバーに連絡しましたが、そのサーバーが操作を完了するために必要な追加のサーバーに連絡できませんでした。
 .
+Language=Finnish
+Tälle replikoinnille määritettyyn palvelimeen saatiin yhteys, mutta palvelin ei saanut yhteyttä toiseen palvelimeen, jota toiminnon suorittaminen edellytti.
+.
 
 MessageId=8467
 Severity=Success
@@ -31550,6 +36273,9 @@ The version of the Active Directory schema of the source forest is not compatibl
 .
 Language=Japanese
 ソース フォレストのディレクトリ サービス スキーマのバージョンは、このコンピュータのディレクトリ サービスのバージョンと互換性がありません。
+.
+Language=Finnish
+Lähdemetsän Active Directory -rakenteen versio ei ole yhteensopiva tämän tietokoneen Active Directory -version kanssa.
 .
 
 MessageId=8468
@@ -31571,6 +36297,9 @@ Schema update failed: An attribute with the same link identifier already exists.
 Language=Japanese
 スキーマの更新に失敗しました。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: Määrite, jolla on sama linkkitunniste, on jo olemassa.
+.
 
 MessageId=8469
 Severity=Success
@@ -31590,6 +36319,9 @@ Name translation: Generic processing error.
 .
 Language=Japanese
 名前変換: 汎用処理エラーです。
+.
+Language=Finnish
+Nimen muunnos: Yleinen käsittelyvirhe.
 .
 
 MessageId=8470
@@ -31611,6 +36343,9 @@ Name translation: Could not find the name or insufficient right to see name.
 Language=Japanese
 名前変換: 名前が見つかりません。
 .
+Language=Finnish
+Nimen muunnos: Nimeä ei löytynyt tai oikeudet eivät riitä nimen näkemiseen.
+.
 
 MessageId=8471
 Severity=Success
@@ -31630,6 +36365,9 @@ Name translation: Input name mapped to more than one output name.
 .
 Language=Japanese
 名前変換: 入力名が複数の出力名にマップされました。
+.
+Language=Finnish
+Nimen muunnos: Syötenimi vastasi useampaa kuin yhtä tulosnimeä.
 .
 
 MessageId=8472
@@ -31651,6 +36389,9 @@ Name translation: Input name found, but not the associated output format.
 Language=Japanese
 名前変換: 入力名は見つかりましたが、関連する出力形式は見つかりませんでした。
 .
+Language=Finnish
+Nimen muunnos: Syötenimi löytyi, mutta ei siihen liittyvää tulosmuotoa.
+.
 
 MessageId=8473
 Severity=Success
@@ -31670,6 +36411,9 @@ Name translation: Unable to resolve completely, only the domain was found.
 .
 Language=Japanese
 名前変換: 完全に解決できません。ドメインのみが見つかりました。
+.
+Language=Finnish
+Nimen muunnos: Nimeä ei voi selvittää kokonaan, vain toimialue löytyi.
 .
 
 MessageId=8474
@@ -31691,6 +36435,9 @@ Name translation: Unable to perform purely syntactical mapping at the client wit
 Language=Japanese
 名前変換：クライアント側で純粋な構文マッピングを行うことができません。
 .
+Language=Finnish
+Nimen muunnos: Puhtaasti syntaktista muunnosta ei voi tehdä asiakkaassa ilman verkkoyhteyttä.
+.
 
 MessageId=8475
 Severity=Success
@@ -31710,6 +36457,9 @@ Modification of a constructed attribute is not allowed.
 .
 Language=Japanese
 構築された属性の変更は許可されていません。
+.
+Language=Finnish
+Muodostetun määritteen muuttaminen ei ole sallittua.
 .
 
 MessageId=8476
@@ -31731,6 +36481,9 @@ The OM-Object-Class specified is incorrect for an attribute with the specified s
 Language=Japanese
 指定された構文の属性に対して、指定された OM-Object-Class が不正です。
 .
+Language=Finnish
+Määritetty OM-Object-Class on väärä määritteelle, jolla on määritetty syntaksi.
+.
 
 MessageId=8477
 Severity=Success
@@ -31750,6 +36503,9 @@ The replication request has been posted; waiting for reply.
 .
 Language=Japanese
 レプリケーション要求が投稿されました。
+.
+Language=Finnish
+Replikointipyyntö on lähetetty; odotetaan vastausta.
 .
 
 MessageId=8478
@@ -31771,6 +36527,9 @@ The requested operation requires a directory service, and none was available.
 Language=Japanese
 要求された操作にはディレクトリ サービスが必要です。
 .
+Language=Finnish
+Pyydetty toiminto vaatii hakemistopalvelun, eikä yhtään ollut käytettävissä.
+.
 
 MessageId=8479
 Severity=Success
@@ -31790,6 +36549,9 @@ The LDAP display name of the class or attribute contains non-ASCII characters.
 .
 Language=Japanese
 クラスまたは属性のLDAP表示名にASCII以外の文字が含まれています。
+.
+Language=Finnish
+Luokan tai määritteen LDAP-näyttönimessä on muita kuin ASCII-merkkejä.
 .
 
 MessageId=8480
@@ -31811,6 +36573,9 @@ The requested search operation is only supported for base searches.
 Language=Japanese
 要求された検索操作はベース検索でのみサポートされています。
 .
+Language=Finnish
+Pyydettyä hakua tuetaan vain perushauissa.
+.
 
 MessageId=8481
 Severity=Success
@@ -31830,6 +36595,9 @@ The search failed to retrieve attributes from the database.
 .
 Language=Japanese
 データベースからの属性の取得に失敗しました。
+.
+Language=Finnish
+Haku ei pystynyt noutamaan määritteitä tietokannasta.
 .
 
 MessageId=8482
@@ -31851,6 +36619,9 @@ The schema update operation tried to add a backward link attribute that has no c
 Language=Japanese
 スキーマ更新操作は、対応する前方リンクがない後方リンク属性を追加しようとしました。
 .
+Language=Finnish
+Rakenteen päivitys yritti lisätä paluulinkkimääritteen, jolla ei ole vastaavaa eteenpäin osoittavaa linkkiä.
+.
 
 MessageId=8483
 Severity=Success
@@ -31870,6 +36641,9 @@ Source and destination of a cross domain move do not agree on the object's epoch
 .
 Language=Japanese
 オブジェクトのエポック番号でドメイン間移動の送信元と送信先が一致しません。移動元または移動先のどちらかがオブジェクトの最新バージョンを持っていません。
+.
+Language=Finnish
+Toimialueiden välisen siirron lähde ja kohde eivät ole yhtä mieltä objektin aikakauden numerosta. Lähteellä tai kohteella ei ole objektin uusinta versiota.
 .
 
 MessageId=8484
@@ -31891,6 +36665,9 @@ Source and destination of a cross domain move do not agree on the object's curre
 Language=Japanese
 クロスドメイン移動の移動元と移動先でオブジェクトの現在の名前が一致しません。移動元または移動先のどちらかがオブジェクトの最新バージョンを持っていません。
 .
+Language=Finnish
+Toimialueiden välisen siirron lähde ja kohde eivät ole yhtä mieltä objektin nykyisestä nimestä. Lähteellä tai kohteella ei ole objektin uusinta versiota.
+.
 
 MessageId=8485
 Severity=Success
@@ -31910,6 +36687,9 @@ Source and destination of a cross domain move operation are identical. Caller sh
 .
 Language=Japanese
 クロスドメイン移動操作の移動元と移動先が同じです。呼び出し元では、クロスドメイン移動操作の代わりにローカル移動操作を使用してください。
+.
+Language=Finnish
+Toimialueiden välisen siirron lähde ja kohde ovat samat. Kutsujan pitäisi käyttää paikallista siirtoa toimialueiden välisen siirron sijaan.
 .
 
 MessageId=8486
@@ -31931,6 +36711,9 @@ Source and destination for a cross domain move are not in agreement on the namin
 Language=Japanese
 クロスドメイン移動の移動元と移動先がフォレスト内の名前コンテキストで一致していません。移動元または移動先のいずれかがパーティション コンテナの最新バージョンを持っていません。
 .
+Language=Finnish
+Toimialueiden välisen siirron lähde ja kohde eivät ole yhtä mieltä metsän nimeämiskonteksteista. Lähteellä tai kohteella ei ole Partitions-säilön uusinta versiota.
+.
 
 MessageId=8487
 Severity=Success
@@ -31950,6 +36733,9 @@ Destination of a cross domain move is not authoritative for the destination nami
 .
 Language=Japanese
 クロスドメイン移動の移動先が、移動先のネーム コンテキストに対して権限を持っていません。
+.
+Language=Finnish
+Toimialueiden välisen siirron kohde ei ole määräävä kohteen nimeämiskontekstille.
 .
 
 MessageId=8488
@@ -31971,6 +36757,9 @@ Source and destination of a cross domain move do not agree on the identity of th
 Language=Japanese
 クロスドメイン移動の移動元と移動先が、移動先のネーミング コンテキストで一致していません。
 .
+Language=Finnish
+Toimialueiden välisen siirron lähde ja kohde eivät ole yhtä mieltä lähdeobjektin identiteetistä. Lähteellä tai kohteella ei ole lähdeobjektin uusinta versiota.
+.
 
 MessageId=8489
 Severity=Success
@@ -31990,6 +36779,9 @@ Object being moved across domains is already known to be deleted by the destinat
 .
 Language=Japanese
 ドメインをまたいで移動されるオブジェクトは、移動先のサーバーですでに削除されていることがわかっています。移動元サーバに移動元オブジェクトの最新バージョンがありません。
+.
+Language=Finnish
+Kohdepalvelin tietää jo, että toimialueiden välillä siirrettävä objekti on poistettu. Lähdepalvelimella ei ole lähdeobjektin uusinta versiota.
 .
 
 MessageId=8490
@@ -32011,6 +36803,9 @@ Another operation, which requires exclusive access to the PDC PSMO, is already i
 Language=Japanese
 PDC FSMOへの排他アクセスを必要とする別の操作がすでに進行中です。
 .
+Language=Finnish
+Toinen toiminto, joka vaatii PDC PSMO:n yksinoikeudellisen käytön, on jo käynnissä.
+.
 
 MessageId=8491
 Severity=Success
@@ -32030,6 +36825,9 @@ A cross domain move operation failed such that the two versions of the moved obj
 .
 Language=Japanese
 移動元ドメインと移動先ドメインにそれぞれ1つずつ、移動されたオブジェクトの2つのバージョンが存在するようなクロスドメインの移動操作に失敗しました。システムを一貫性のある状態に復元するには、移動先のオブジェクトを削除する必要があります。
+.
+Language=Finnish
+Toimialueiden välinen siirto epäonnistui niin, että siirretystä objektista on kaksi versiota, yksi lähde- ja yksi kohdetoimialueessa. Kohdeobjekti on poistettava, jotta järjestelmä palautuu yhdenmukaiseen tilaan.
 .
 
 MessageId=8492
@@ -32051,6 +36849,9 @@ This object may not be moved across domain boundaries either because cross domai
 Language=Japanese
 このクラスのドメイン間の移動が禁止されているか、オブジェクトに特別な特性 (信頼アカウントや制限付きRIDなど) があるため、このオブジェクトをドメイン境界を越えて移動できません。
 .
+Language=Finnish
+Tätä objektia ei voi siirtää toimialueen rajan yli, koska toimialueiden väliset siirrot eivät ole sallittuja tälle luokalle tai objektilla on erityisominaisuuksia, kuten luottamustili tai rajoitettu RID, jotka estävät sen siirron.
+.
 
 MessageId=8493
 Severity=Success
@@ -32070,6 +36871,9 @@ Can't move objects with memberships across domain boundaries as once moved, this
 .
 Language=Japanese
 一度移動するとアカウント グループのメンバシップ条件に違反するため、ドメイン境界を越えてメンバシップを持つオブジェクトを移動できません。オブジェクトをアカウント グループのメンバシップから削除して再試行してください。
+.
+Language=Finnish
+Jäsenyyksiä sisältäviä objekteja ei voi siirtää toimialueen rajan yli, koska siirron jälkeen tämä rikkoisi tiliryhmän jäsenyysehtoja. Poista objekti kaikista tiliryhmien jäsenyyksistä ja yritä uudelleen.
 .
 
 MessageId=8494
@@ -32091,6 +36895,9 @@ A naming context head must be the immediate child of another naming context head
 Language=Japanese
 名前付けコンテキスト ヘッドは、内部ノードではなく別の名前付けコンテキスト ヘッドの直接の子でなければなりません。
 .
+Language=Finnish
+Nimeämiskontekstin alun on oltava toisen nimeämiskontekstin alun välitön alikohde, ei sisäsolmun.
+.
 
 MessageId=8495
 Severity=Success
@@ -32110,6 +36917,9 @@ The directory cannot validate the proposed naming context name because it does n
 .
 Language=Japanese
 ディレクトリが提案されたネーミング コンテキストの上のネーミング コンテキストのレプリカを保持していないため、提案されたネーミング コンテキスト名を検証できません。グローバルカタログサーバーとして構成されているサーバーによってドメインネーミングマスターの役割が保持され、そのサーバーがレプリケーションパートナーと最新であることを確認してください。 (LiberNT 2000ドメイン ネーミング マスターにのみ適用されます) 。
+.
+Language=Finnish
+Hakemisto ei voi vahvistaa ehdotettua nimeämiskontekstin nimeä, koska sillä ei ole replikaa ehdotetun nimeämiskontekstin yläpuolella olevasta nimeämiskontekstista. Varmista, että toimialueen nimeämisen pääroolia hoitaa palvelin, joka on määritetty yleiseksi luettelopalvelimeksi, ja että palvelin on ajan tasalla replikointikumppaneidensa kanssa. (Koskee vain Windows 2000 -toimialueen nimeämisen päätoimijoita)
 .
 
 MessageId=8496
@@ -32131,6 +36941,9 @@ Destination domain must be in native mode.
 Language=Japanese
 宛先ドメインがネイティブモードである必要があります。
 .
+Language=Finnish
+Kohdetoimialueen on oltava alkuperäistilassa.
+.
 
 MessageId=8497
 Severity=Success
@@ -32150,6 +36963,9 @@ The operation cannot be performed because the server does not have an infrastruc
 .
 Language=Japanese
 サーバーが対象のドメインにインフラストラクチャ コンテナを持っていないため、操作を実行できません。
+.
+Language=Finnish
+Toimintoa ei voi suorittaa, koska palvelimella ei ole infrastruktuurisäilöä kyseisessä toimialueessa.
 .
 
 MessageId=8498
@@ -32171,6 +36987,9 @@ Cross-domain move of non-empty account groups is not allowed.
 Language=Japanese
 空でないアカウントグループのクロスドメイン移動は許可されていません。
 .
+Language=Finnish
+Ei-tyhjien tiliryhmien siirto toimialueiden välillä ei ole sallittua.
+.
 
 MessageId=8499
 Severity=Success
@@ -32190,6 +37009,9 @@ Cross-domain move of non-empty resource groups is not allowed.
 .
 Language=Japanese
 空でないリソースグループのクロスドメイン移動は許可されていません。
+.
+Language=Finnish
+Ei-tyhjien resurssiryhmien siirto toimialueiden välillä ei ole sallittua.
 .
 
 MessageId=8500
@@ -32211,6 +37033,9 @@ The search flags for the attribute are invalid. The ANR bit is valid only on att
 Language=Japanese
 属性の検索フラグが無効です。ANRビットはUnicodeまたはTeletex文字列の属性でのみ有効です。
 .
+Language=Finnish
+Määritteen hakuliput ovat virheellisiä. ANR-bitti on kelvollinen vain Unicode- tai Teletex-merkkijonojen määritteissä.
+.
 
 MessageId=8501
 Severity=Success
@@ -32230,6 +37055,9 @@ Tree deletions starting at an object which has an NC head as a descendant are no
 .
 Language=Japanese
 NCヘッドを子孫に持つオブジェクトからツリーを削除することはできません。
+.
+Language=Finnish
+Puun poistot objektista, jonka jälkeläisenä on nimeämiskontekstin alku, eivät ole sallittuja.
 .
 
 MessageId=8502
@@ -32251,6 +37079,9 @@ The directory service failed to lock a tree in preparation for a tree deletion b
 Language=Japanese
 ツリーが使用中であるため、ディレクトリ サービスがツリーの削除に備えてツリーをロックできませんでした。
 .
+Language=Finnish
+Hakemistopalvelu ei pystynyt lukitsemaan puuta poistoa varten, koska puu oli käytössä.
+.
 
 MessageId=8503
 Severity=Success
@@ -32270,6 +37101,9 @@ The directory service failed to identify the list of objects to delete while att
 .
 Language=Japanese
 ツリーの削除を試みているときに、ディレクトリ サービスが削除するオブジェクトのリストを識別できませんでした。
+.
+Language=Finnish
+Hakemistopalvelu ei pystynyt tunnistamaan poistettavien objektien luetteloa puun poistoa yrittäessään.
 .
 
 MessageId=8504
@@ -32297,6 +37131,10 @@ Language=Japanese
 エラー ステータス: 0x%2
 このシステムをシャットダウンし、ディレクトリ サービス リストア モードに再起動してください。詳細についてはイベント ログを確認してください。
 .
+Language=Finnish
+Suojaustilien hallinnan alustus epäonnistui seuraavan virheen vuoksi: %1.
+Virhetila: 0x%2. Sammuta järjestelmä valitsemalla OK ja käynnistä se uudelleen hakemistopalveluiden palautustilaan. Tarkista yksityiskohtaiset tiedot tapahtumalokista.
+.
 
 MessageId=8505
 Severity=Success
@@ -32316,6 +37154,9 @@ Only an administrator can modify the membership list of an administrative group.
 .
 Language=Japanese
 管理グループのメンバーシップ リストを変更できるのは管理者のみです。
+.
+Language=Finnish
+Vain järjestelmänvalvoja voi muuttaa hallintaryhmän jäsenluetteloa.
 .
 
 MessageId=8506
@@ -32337,6 +37178,9 @@ Cannot change the primary group ID of a domain controller account.
 Language=Japanese
 ドメイン コントローラ アカウントのプライマリグループIDを変更できません。
 .
+Language=Finnish
+Toimialueen ohjauskoneen tilin ensisijaisen ryhmän tunnusta ei voi muuttaa.
+.
 
 MessageId=8507
 Severity=Success
@@ -32356,6 +37200,9 @@ An attempt is made to modify the base schema.
 .
 Language=Japanese
 ベース スキーマを変更しようとしました。
+.
+Language=Finnish
+Perusrakennetta yritetään muuttaa.
 .
 
 MessageId=8508
@@ -32377,6 +37224,9 @@ Adding a new mandatory attribute to an existing class, deleting a mandatory attr
 Language=Japanese
 既存のクラスに新しい必須属性を追加すること、既存のクラスから必須属性を削除すること、または特別なクラスTopにバックリンク属性ではないオプション属性を追加すること (直接、または補助クラスを追加または削除するなど継承によって) は許可されていません。
 .
+Language=Finnish
+Uuden pakollisen määritteen lisääminen olemassa olevaan luokkaan, pakollisen määritteen poistaminen olemassa olevasta luokasta tai muun kuin paluulinkkimääritteen lisääminen valinnaiseksi erikoisluokkaan Top (suoraan tai periytymisen kautta, esimerkiksi lisäämällä tai poistamalla apuluokan) ei ole sallittua.
+.
 
 MessageId=8509
 Severity=Success
@@ -32396,6 +37246,9 @@ Schema update is not allowed on this DC because the DC is not the schema FSMO Ro
 .
 Language=Japanese
 DC がスキーマ FSMO ロール所有者ではないため、この DC でのスキーマ更新は許可されません。
+.
+Language=Finnish
+Rakenteen päivitys ei ole sallittua tässä toimialueen ohjauskoneessa, koska se ei ole rakenteen FSMO-roolin omistaja.
 .
 
 MessageId=8510
@@ -32417,6 +37270,9 @@ An object of this class cannot be created under the schema container. You can on
 Language=Japanese
 このクラスのオブジェクトはスキーマ コンテナの下に作成できません。スキーマ コンテナの下に作成できるのは、属性スキーマ オブジェクトとクラス スキーマ オブジェクトのみです。
 .
+Language=Finnish
+Tämän luokan objektia ei voi luoda rakennesäilön alle. Rakennesäilön alle voi luoda vain attribute-schema- ja class-schema-objekteja.
+.
 
 MessageId=8511
 Severity=Success
@@ -32436,6 +37292,9 @@ The replica/child install failed to get the objectVersion attribute on the schem
 .
 Language=Japanese
 レプリカ/チャイルド インストールで、ソース DC のスキーマ コンテナの objectVersion 属性の取得に失敗しました。スキーマ コンテナに属性がないか、提供された資格情報に読み取り権限がありません。
+.
+Language=Finnish
+Replikan tai aliobjektin asennus ei saanut lähteen toimialueen ohjauskoneen rakennesäilön objectVersion-määritettä. Määrite puuttuu rakennesäilöstä, tai annetuilla tunnistetiedoilla ei ole oikeutta lukea sitä.
 .
 
 MessageId=8512
@@ -32457,6 +37316,9 @@ The replica/child install failed to read the objectVersion attribute in the SCHE
 Language=Japanese
 レプリカ/チャイルドのインストールで、system32 ディレクトリのファイル schema.ini の SCHEMA セクションにある objectVersion 属性の読み取りに失敗しました。
 .
+Language=Finnish
+Replikan tai aliobjektin asennus ei pystynyt lukemaan objectVersion-määritettä system32-hakemiston schema.ini-tiedoston SCHEMA-osasta.
+.
 
 MessageId=8513
 Severity=Success
@@ -32476,6 +37338,9 @@ The specified group type is invalid.
 .
 Language=Japanese
 指定されたグループ タイプが無効です。
+.
+Language=Finnish
+Määritetty ryhmätyyppi on virheellinen.
 .
 
 MessageId=8514
@@ -32497,6 +37362,9 @@ Cannot nest global groups in a mixed domain if the group is security-enabled.
 Language=Japanese
 グループがセキュリティ有効の場合、混合ドメインにグローバル グループをネストできません。
 .
+Language=Finnish
+Yleisiä ryhmiä ei voi sisäkkäistää sekatilaisessa toimialueessa, jos ryhmässä on suojaus käytössä.
+.
 
 MessageId=8515
 Severity=Success
@@ -32516,6 +37384,9 @@ Cannot nest local groups in a mixed domain if the group is security-enabled.
 .
 Language=Japanese
 グループがセキュリティ対応の場合、混合ドメインにローカルグループをネストできません。
+.
+Language=Finnish
+Paikallisia ryhmiä ei voi sisäkkäistää sekatilaisessa toimialueessa, jos ryhmässä on suojaus käytössä.
 .
 
 MessageId=8516
@@ -32537,6 +37408,9 @@ A global group cannot have a local group as a member.
 Language=Japanese
 グローバルグループにローカルグループをメンバとして含めることはできません。
 .
+Language=Finnish
+Yleisen ryhmän jäsenenä ei voi olla paikallista ryhmää.
+.
 
 MessageId=8517
 Severity=Success
@@ -32556,6 +37430,9 @@ A global group cannot have a universal group as a member.
 .
 Language=Japanese
 グローバル グループにユニバーサル グループをメンバに持つことはできません。
+.
+Language=Finnish
+Yleisen ryhmän jäsenenä ei voi olla universaalia ryhmää.
 .
 
 MessageId=8518
@@ -32577,6 +37454,9 @@ A universal group cannot have a local group as a member.
 Language=Japanese
 ユニバーサル グループにローカル グループをメンバに持つことはできません。
 .
+Language=Finnish
+Universaalin ryhmän jäsenenä ei voi olla paikallista ryhmää.
+.
 
 MessageId=8519
 Severity=Success
@@ -32596,6 +37476,9 @@ A global group cannot have a cross-domain member.
 .
 Language=Japanese
 グローバルグループにクロスドメインのメンバを持つことはできません。
+.
+Language=Finnish
+Yleisellä ryhmällä ei voi olla toisen toimialueen jäsentä.
 .
 
 MessageId=8520
@@ -32617,6 +37500,9 @@ A local group cannot have another cross-domain local group as a member.
 Language=Japanese
 ローカルグループにクロスドメインのローカルグループをメンバとして持つことはできません。
 .
+Language=Finnish
+Paikallisen ryhmän jäsenenä ei voi olla toisen toimialueen paikallista ryhmää.
+.
 
 MessageId=8521
 Severity=Success
@@ -32636,6 +37522,9 @@ A group with primary members cannot change to a security-disabled group.
 .
 Language=Japanese
 プライマリ メンバを持つグループをセキュリティ無効グループに変更できません。
+.
+Language=Finnish
+Ryhmää, jolla on ensisijaisia jäseniä, ei voi muuttaa ryhmäksi, jonka suojaus on poistettu käytöstä.
 .
 
 MessageId=8522
@@ -32657,6 +37546,9 @@ The schema cache load failed to convert the string default SD on a class-schema 
 Language=Japanese
 グループがセキュリティ無効グループに変更されました。
 .
+Language=Finnish
+Rakennevälimuistin lataus ei pystynyt muuntamaan class-schema-objektin merkkijonomuotoista oletussuojauskuvausta.
+.
 
 MessageId=8523
 Severity=Success
@@ -32676,6 +37568,9 @@ Only DSAs configured to be Global Catalog servers should be allowed to hold the 
 .
 Language=Japanese
 グローバルカタログサーバーとして構成されたDSAのみがドメインネーミングマスターFSMOロールを保持できます。 (LiberNT 2000サーバーにのみ適用されます) 。
+.
+Language=Finnish
+Vain yleisiksi luettelopalvelimiksi määritetyt DSA:t saisivat hoitaa toimialueen nimeämisen pää-FSMO-roolia. (Koskee vain Windows 2000 -palvelimia)
 .
 
 MessageId=8524
@@ -32697,6 +37592,9 @@ The DSA operation is unable to proceed because of a DNS lookup failure.
 Language=Japanese
 DNS検索に失敗したため、DSA操作を続行できません。
 .
+Language=Finnish
+DSA-toiminto ei voi jatkua DNS-haun epäonnistumisen vuoksi.
+.
 
 MessageId=8525
 Severity=Success
@@ -32716,6 +37614,9 @@ While processing a change to the DNS Host Name for an object, the Service Princi
 .
 Language=Japanese
 オブジェクトのDNSホスト名の変更処理中に、サービス プリンシパル名の値を同期できませんでした。
+.
+Language=Finnish
+Kun objektin DNS-isäntänimen muutosta käsiteltiin, palvelun päänimen arvoja ei voitu pitää synkronoituina.
 .
 
 MessageId=8526
@@ -32737,6 +37638,9 @@ The Security Descriptor attribute could not be read.
 Language=Japanese
 セキュリティ記述子属性を読み取れませんでした。
 .
+Language=Finnish
+Suojauskuvauksen määritettä ei voitu lukea.
+.
 
 MessageId=8527
 Severity=Success
@@ -32756,6 +37660,9 @@ The object requested was not found, but an object with that key was found.
 .
 Language=Japanese
 要求されたオブジェクトは見つかりませんでしたが、そのキーを持つオブジェクトが見つかりました。
+.
+Language=Finnish
+Pyydettyä objektia ei löytynyt, mutta objekti, jolla on sama avain, löytyi.
 .
 
 MessageId=8528
@@ -32777,6 +37684,9 @@ The syntax of the linked attributed being added is incorrect. Forward links can 
 Language=Japanese
 追加されるリンク属性の構文が正しくありません。フォワード リンクの構文は2.5.5.1、2.5.5.7、および2.5.5.14のみ、バックリンクの構文は2.5.5.1のみです。
 .
+Language=Finnish
+Lisättävän linkitetyn määritteen syntaksi on virheellinen. Eteenpäin osoittavien linkkien syntaksi voi olla vain 2.5.5.1, 2.5.5.7 tai 2.5.5.14, ja paluulinkkien vain 2.5.5.1.
+.
 
 MessageId=8529
 Severity=Success
@@ -32796,6 +37706,9 @@ Security Account Manager needs to get the boot password.
 .
 Language=Japanese
 セキュリティ アカウント マネージャでブート パスワードを取得する必要があります。
+.
+Language=Finnish
+Suojaustilien hallinnan on saatava käynnistyssalasana.
 .
 
 MessageId=8530
@@ -32817,6 +37730,9 @@ Security Account Manager needs to get the boot key from floppy disk.
 Language=Japanese
 セキュリティ アカウント マネージャは、フロッピー ディスクからブート キーを取得する必要があります。
 .
+Language=Finnish
+Suojaustilien hallinnan on saatava käynnistysavain levykkeeltä.
+.
 
 MessageId=8531
 Severity=Success
@@ -32836,6 +37752,9 @@ Directory Service cannot start.
 .
 Language=Japanese
 ディレクトリサービスを開始できません。
+.
+Language=Finnish
+Hakemistopalvelu ei voi käynnistyä.
 .
 
 MessageId=8532
@@ -32857,6 +37776,9 @@ Directory Services could not start.
 Language=Japanese
 ディレクトリサービスを開始できませんでした。
 .
+Language=Finnish
+Hakemistopalvelut eivät voineet käynnistyä.
+.
 
 MessageId=8533
 Severity=Success
@@ -32876,6 +37798,9 @@ The connection between client and server requires packet privacy or better.
 .
 Language=Japanese
 クライアントとサーバー間の接続には、パケット プライバシー以上が必要です。
+.
+Language=Finnish
+Asiakkaan ja palvelimen välinen yhteys vaatii pakettien yksityisyyden tai sitä paremman suojauksen.
 .
 
 MessageId=8534
@@ -32897,6 +37822,9 @@ The source domain may not be in the same forest as destination.
 Language=Japanese
 送信元ドメインが宛先と同じフォレストにない可能性があります。
 .
+Language=Finnish
+Lähdetoimialue ei saa olla samassa metsässä kuin kohde.
+.
 
 MessageId=8535
 Severity=Success
@@ -32916,6 +37844,9 @@ The destination domain must be in the forest.
 .
 Language=Japanese
 宛先ドメインがフォレスト内にある必要があります。
+.
+Language=Finnish
+Kohdetoimialueen on oltava metsässä.
 .
 
 MessageId=8536
@@ -32937,6 +37868,9 @@ The operation requires that destination domain auditing be enabled.
 Language=Japanese
 この操作では、宛先ドメインの監査が有効になっている必要があります。
 .
+Language=Finnish
+Toiminto edellyttää, että kohdetoimialueen valvonta on käytössä.
+.
 
 MessageId=8537
 Severity=Success
@@ -32956,6 +37890,9 @@ The operation couldn't locate a DC for the source domain.
 .
 Language=Japanese
 この操作はソースドメインのDCを見つけられませんでした。
+.
+Language=Finnish
+Toiminto ei löytänyt lähdetoimialueen toimialueen ohjauskonetta.
 .
 
 MessageId=8538
@@ -32977,6 +37914,9 @@ The source object must be a group or user.
 Language=Japanese
 ソース オブジェクトはグループまたはユーザーでなければなりません。
 .
+Language=Finnish
+Lähdeobjektin on oltava ryhmä tai käyttäjä.
+.
 
 MessageId=8539
 Severity=Success
@@ -32997,6 +37937,9 @@ The source object's SID already exists in destination forest.
 Language=Japanese
 送信元オブジェクトのSIDが宛先フォレストに既に存在します。
 .
+Language=Finnish
+Lähdeobjektin SID on jo olemassa kohdemetsässä.
+.
 
 MessageId=8540
 Severity=Success
@@ -33016,6 +37959,9 @@ The source and destination object must be of the same type.
 .
 Language=Japanese
 送信元オブジェクトと宛先オブジェクトは同じタイプでなければなりません。
+.
+Language=Finnish
+Lähde- ja kohdeobjektin on oltava samaa tyyppiä.
 .
 
 MessageId=8541
@@ -33043,6 +37989,10 @@ Language=Japanese
 エラー ステータス: 0x%2
 OKをクリックしてシステムをシャットダウンし、セーフモードで再起動します。詳細情報については、イベント ログを確認してください。
 .
+Language=Finnish
+Suojaustilien hallinnan alustus epäonnistui seuraavan virheen vuoksi: %1.
+Virhetila: 0x%2. Sammuta järjestelmä valitsemalla OK ja käynnistä se uudelleen vikasietotilaan. Tarkista yksityiskohtaiset tiedot tapahtumalokista.
+.
 
 MessageId=8542
 Severity=Success
@@ -33062,6 +38012,9 @@ Schema information could not be included in the replication request.
 .
 Language=Japanese
 スキーマ情報をレプリケーション要求に含めることができませんでした。
+.
+Language=Finnish
+Rakennetietoja ei voitu sisällyttää replikointipyyntöön.
 .
 
 MessageId=8543
@@ -33083,6 +38036,9 @@ The replication operation could not be completed due to a schema incompatibility
 Language=Japanese
 スキーマの互換性がないため、レプリケーション操作を完了できませんでした。
 .
+Language=Finnish
+Replikointia ei voitu suorittaa rakenteen yhteensopimattomuuden vuoksi.
+.
 
 MessageId=8544
 Severity=Success
@@ -33102,6 +38058,9 @@ The replication operation could not be completed due to a previous schema incomp
 .
 Language=Japanese
 以前のスキーマの互換性がないため、レプリケーション操作を完了できませんでした。
+.
+Language=Finnish
+Replikointia ei voitu suorittaa aiemman rakenteen yhteensopimattomuuden vuoksi.
 .
 
 MessageId=8545
@@ -33123,6 +38082,9 @@ The replication update could not be applied because either the source or the des
 Language=Japanese
 送信元または送信先のいずれかが最近のクロスドメイン移動操作に関する情報をまだ受信していないため、レプリケーション更新を適用できませんでした。
 .
+Language=Finnish
+Replikoinnin päivitystä ei voitu ottaa käyttöön, koska lähde tai kohde ei ole vielä saanut tietoja äskettäisestä toimialueiden välisestä siirrosta.
+.
 
 MessageId=8546
 Severity=Success
@@ -33142,6 +38104,9 @@ The requested domain could not be deleted because there exist domain controllers
 .
 Language=Japanese
 まだこのドメインをホストしているドメイン コントローラーが存在するため、要求されたドメインを削除できませんでした。
+.
+Language=Finnish
+Pyydettyä toimialuetta ei voitu poistaa, koska on vielä toimialueen ohjauskoneita, jotka isännöivät sitä.
 .
 
 MessageId=8547
@@ -33163,6 +38128,9 @@ The requested operation can be performed only on a global catalog server.
 Language=Japanese
 要求された操作はグローバル カタログ サーバーでのみ実行できます。
 .
+Language=Finnish
+Pyydetyn toiminnon voi suorittaa vain yleisellä luettelopalvelimella.
+.
 
 MessageId=8548
 Severity=Success
@@ -33182,6 +38150,9 @@ A local group can only be a member of other local groups in the same domain.
 .
 Language=Japanese
 ローカルグループは同じドメイン内の他のローカルグループのメンバにしかなれません。
+.
+Language=Finnish
+Paikallinen ryhmä voi olla vain saman toimialueen muiden paikallisten ryhmien jäsen.
 .
 
 MessageId=8549
@@ -33203,6 +38174,9 @@ Foreign security principals cannot be members of universal groups.
 Language=Japanese
 外部セキュリティプリンシパルをユニバーサルグループのメンバにすることはできません。
 .
+Language=Finnish
+Vieraat suojauskohteet eivät voi olla universaalien ryhmien jäseniä.
+.
 
 MessageId=8550
 Severity=Success
@@ -33222,6 +38196,9 @@ The attribute is not allowed to be replicated to the GC because of security reas
 .
 Language=Japanese
 属性は、セキュリティ上の理由から GC 2011 に複製することはできません。
+.
+Language=Finnish
+Määritettä ei saa replikoida yleiseen luetteloon suojaussyistä.
 .
 
 MessageId=8551
@@ -33243,6 +38220,9 @@ The checkpoint with the PDC could not be taken because there are too many modifi
 Language=Japanese
 現在処理中の変更が多すぎるため、PDCとのチェックポイントを取ることができませんでした。
 .
+Language=Finnish
+PDC:n kanssa ei voitu tehdä tarkistuspistettä, koska käsiteltävänä on tällä hetkellä liian monta muutosta.
+.
 
 MessageId=8552
 Severity=Success
@@ -33262,6 +38242,9 @@ The operation requires that source domain auditing be enabled.
 .
 Language=Japanese
 この操作では、ソース ドメインの監査が有効になっている必要があります。
+.
+Language=Finnish
+Toiminto edellyttää, että lähdetoimialueen valvonta on käytössä.
 .
 
 MessageId=8553
@@ -33283,6 +38266,9 @@ Security principal objects can only be created inside domain naming contexts.
 Language=Japanese
 セキュリティプリンシパルオブジェクトはドメイン命名コンテキスト内でのみ作成できます。
 .
+Language=Finnish
+Suojauskohdeobjekteja voi luoda vain toimialueen nimeämiskonteksteihin.
+.
 
 MessageId=8554
 Severity=Success
@@ -33302,6 +38288,9 @@ A Service Principal Name (SPN) could not be constructed because the provided hos
 .
 Language=Japanese
 指定されたホスト名が必要な形式でないため、サービスプリンシパル名 (SPN) を構築できませんでした。
+.
+Language=Finnish
+Palvelun päänimeä (SPN) ei voitu muodostaa, koska annettu isäntänimi ei ole tarvittavassa muodossa.
 .
 
 MessageId=8555
@@ -33323,6 +38312,9 @@ A Filter was passed that uses constructed attributes.
 Language=Japanese
 構築された属性を使用するフィルタが渡されました。
 .
+Language=Finnish
+Välitettiin suodatin, joka käyttää muodostettuja määritteitä.
+.
 
 MessageId=8556
 Severity=Success
@@ -33342,6 +38334,9 @@ The unicodePwd attribute value must be enclosed in double quotes.
 .
 Language=Japanese
 unicodePwd 属性値は二重引用符で囲む必要があります。
+.
+Language=Finnish
+unicodePwd-määritteen arvo on kirjoitettava lainausmerkkeihin.
 .
 
 MessageId=8557
@@ -33363,6 +38358,9 @@ Your computer could not be joined to the domain. You have exceeded the maximum n
 Language=Japanese
 コンピュータをドメインに参加できませんでした。このドメインで作成できるコンピュータアカウントの最大数を超えています。システム管理者に連絡して、この上限をリセットするか、上限を増やしてください。
 .
+Language=Finnish
+Tietokonetta ei voitu liittää toimialueeseen. Olet ylittänyt tähän toimialueeseen luotavissa olevien tietokonetilien enimmäismäärän. Pyydä järjestelmänvalvojaa nollaamaan tai kasvattamaan tätä rajaa.
+.
 
 MessageId=8558
 Severity=Success
@@ -33382,6 +38380,9 @@ For security reasons, the operation must be run on the destination DC.
 .
 Language=Japanese
 セキュリティ上の理由から、この操作は宛先DCで実行する必要があります。
+.
+Language=Finnish
+Suojaussyistä toiminto on suoritettava kohteen toimialueen ohjauskoneessa.
 .
 
 MessageId=8559
@@ -33403,6 +38404,9 @@ For security reasons, the source DC must be NT4SP4 or greater.
 Language=Japanese
 セキュリティ上の理由から、ソースDCはNT4SP4以上でなければなりません。
 .
+Language=Finnish
+Suojaussyistä lähteen toimialueen ohjauskoneen on oltava NT4SP4 tai uudempi.
+.
 
 MessageId=8560
 Severity=Success
@@ -33422,6 +38426,9 @@ Critical Directory Service System objects cannot be deleted during tree delete o
 .
 Language=Japanese
 ツリーの削除操作中に、重要なディレクトリ サービス システム オブジェクトを削除できません。ツリーの削除が部分的に実行された可能性があります。
+.
+Language=Finnish
+Kriittisiä hakemistopalvelun järjestelmäobjekteja ei voi poistaa puun poiston aikana. Puun poisto on ehkä suoritettu osittain.
 .
 
 MessageId=8561
@@ -33449,6 +38456,10 @@ Language=Japanese
 エラー ステータス: 0x%2
 [OK] をクリックしてシステムをシャットダウンしてください。回復コンソールを使用してシステムをさらに診断できます。
 .
+Language=Finnish
+Hakemistopalvelut eivät voineet käynnistyä seuraavan virheen vuoksi: %1.
+Virhetila: 0x%2. Sammuta järjestelmä valitsemalla OK. Voit tutkia järjestelmää tarkemmin palautuskonsolilla.
+.
 
 MessageId=8562
 Severity=Success
@@ -33475,6 +38486,10 @@ Language=Japanese
 エラー ステータス: 0x%2
 [OK] をクリックしてシステムをシャットダウンしてください。回復コンソールを使用してシステムをさらに診断できます。
 .
+Language=Finnish
+Suojaustilien hallinnan alustus epäonnistui seuraavan virheen vuoksi: %1.
+Virhetila: 0x%2. Sammuta järjestelmä valitsemalla OK. Voit tutkia järjestelmää tarkemmin palautuskonsolilla.
+.
 
 MessageId=8563
 Severity=Success
@@ -33494,6 +38509,9 @@ The version of the operating system installed is incompatible with the current f
 .
 Language=Japanese
 オペレーティング システムのバージョンは現在の AD DS フォレスト機能ルと互換性がありません。
+.
+Language=Finnish
+Asennettu käyttöjärjestelmän versio ei ole yhteensopiva metsän nykyisen toimintatason kanssa. Käyttöjärjestelmä on päivitettävä uuteen versioon ennen kuin tästä palvelimesta voi tulla tämän metsän toimialueen ohjauskone.
 .
 
 MessageId=8564
@@ -33515,6 +38533,9 @@ The version of the operating system installed is incompatible with the current d
 Language=Japanese
 インストールされているオペレーティングシステムのバージョンは、現在のドメイン機能レベルと互換性がありません。このサーバーがこのドメインのドメイン コントローラーになる前に、新しいバージョンのオペレーティングシステムにアップグレードする必要があります。
 .
+Language=Finnish
+Asennettu käyttöjärjestelmän versio ei ole yhteensopiva toimialueen nykyisen toimintatason kanssa. Käyttöjärjestelmä on päivitettävä uuteen versioon ennen kuin tästä palvelimesta voi tulla tämän toimialueen ohjauskone.
+.
 
 MessageId=8565
 Severity=Success
@@ -33534,6 +38555,9 @@ This version of the operating system installed on this server no longer supports
 .
 Language=Japanese
 このサーバーにインストールされているオペレーティングシステムのバージョンは、現在のAD DSフォレスト機能レベルまたはAD LDS構成セット機能レベルをサポートしなくなりました。このサーバーがこのフォレストまたは構成セットでAD DSドメイン コントローラーまたはAD LDSインスタンスになるには、AD DSフォレスト機能レベルまたはAD LDS構成セット機能レベルを上げる必要があります。
+.
+Language=Finnish
+Tälle palvelimelle asennettu käyttöjärjestelmän versio ei enää tue metsän nykyistä toimintatasoa. Metsän toimintatasoa on nostettava ennen kuin tästä palvelimesta voi tulla tämän metsän toimialueen ohjauskone.
 .
 
 MessageId=8566
@@ -33555,6 +38579,9 @@ This version of the operating system installed on this server no longer supports
 Language=Japanese
 このサーバーにインストールされているオペレーティング システムのバージョンは、現在のドメイン機能レベルをサポートしていません。このサーバーがこのドメインのドメイン コントローラーになる前に、ドメイン機能レベルを上げる必要があります。
 .
+Language=Finnish
+Tälle palvelimelle asennettu käyttöjärjestelmän versio ei enää tue toimialueen nykyistä toimintatasoa. Toimialueen toimintatasoa on nostettava ennen kuin tästä palvelimesta voi tulla tämän toimialueen ohjauskone.
+.
 
 MessageId=8567
 Severity=Success
@@ -33574,6 +38601,9 @@ The version of the operating system installed on this server is incompatible wit
 .
 Language=Japanese
 このサーバーにインストールされているオペレーティング システムのバージョンは、ドメインまたはフォレストの機能レベルと互換性がありません。
+.
+Language=Finnish
+Tälle palvelimelle asennettu käyttöjärjestelmän versio ei ole yhteensopiva toimialueen tai metsän toimintatason kanssa.
 .
 
 MessageId=8568
@@ -33595,6 +38625,9 @@ The functional level of the domain (or forest) cannot be raised to the requested
 Language=Japanese
 ドメイン (またはフォレスト) の機能レベルは、ドメイン (またはフォレスト) 内に互換性のない下位の機能レベルにある1つまたは複数のドメイン コントローラーが存在するため、要求された値まで上げることができません。
 .
+Language=Finnish
+Toimialueen (tai metsän) toimintatasoa ei voi nostaa pyydettyyn arvoon, koska toimialueessa (tai metsässä) on yksi tai useampi toimialueen ohjauskone, jonka toimintataso on alempi ja yhteensopimaton.
+.
 
 MessageId=8569
 Severity=Success
@@ -33614,6 +38647,9 @@ The forest functional level cannot be raised to the requested level since one or
 .
 Language=Japanese
 1つ以上のドメインが混合ドメインモードのままであるため、フォレスト機能レベルを要求された値まで上げることができません。フォレスト機能レベルを上げるには、フォレスト内のすべてのドメインがネイティブ モードである必要があります。
+.
+Language=Finnish
+Metsän toimintatasoa ei voi nostaa pyydettyyn tasoon, koska yksi tai useampi toimialue on yhä sekatilassa. Kaikkien metsän toimialueiden on oltava alkuperäistilassa ennen kuin metsän toimintatasoa voi nostaa.
 .
 
 MessageId=8570
@@ -33635,6 +38671,9 @@ The sort order requested is not supported.
 Language=Japanese
 要求されたソート順序はサポートされていません。
 .
+Language=Finnish
+Pyydettyä lajittelujärjestystä ei tueta.
+.
 
 MessageId=8571
 Severity=Success
@@ -33654,6 +38693,9 @@ The requested name already exists as a unique identifier.
 .
 Language=Japanese
 要求された名前は一意識別子として既に存在します。
+.
+Language=Finnish
+Pyydetty nimi on jo olemassa yksilöllisenä tunnisteena.
 .
 
 MessageId=8572
@@ -33675,6 +38717,9 @@ The machine account was created pre-NT4. The account needs to be recreated.
 Language=Japanese
 マシン アカウントがNT4以前に作成されました。アカウントを再作成する必要があります。
 .
+Language=Finnish
+Tietokonetili on luotu ennen NT4:ää. Tili on luotava uudelleen.
+.
 
 MessageId=8573
 Severity=Success
@@ -33694,6 +38739,9 @@ The database is out of version store.
 .
 Language=Japanese
 データベースがバージョンストアから外れています。
+.
+Language=Finnish
+Tietokannan versiosäilö on lopussa.
 .
 
 MessageId=8574
@@ -33715,6 +38763,9 @@ Unable to continue operation because multiple conflicting controls were used.
 Language=Japanese
 複数の競合するコントロールが使用されたため、操作を続行できません。
 .
+Language=Finnish
+Toimintoa ei voi jatkaa, koska käytettiin useita ristiriitaisia ohjauksia.
+.
 
 MessageId=8575
 Severity=Success
@@ -33734,6 +38785,9 @@ Unable to find a valid security descriptor reference domain for this partition.
 .
 Language=Japanese
 このパーティションの有効なセキュリティ記述子参照ドメインが見つかりません。
+.
+Language=Finnish
+Tälle osiolle ei löydy kelvollista suojauskuvauksen viitetoimialuetta.
 .
 
 MessageId=8576
@@ -33755,6 +38809,9 @@ Schema update failed: The link identifier is reserved.
 Language=Japanese
 スキーマの更新に失敗しました: リンク識別子は予約されています。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: Linkkitunniste on varattu.
+.
 
 MessageId=8577
 Severity=Success
@@ -33774,6 +38831,9 @@ Schema update failed: There are no link identifiers available.
 .
 Language=Japanese
 スキーマの更新に失敗しました。
+.
+Language=Finnish
+Rakenteen päivitys epäonnistui: Linkkitunnisteita ei ole käytettävissä.
 .
 
 MessageId=8578
@@ -33795,6 +38855,9 @@ An account group cannot have a universal group as a member.
 Language=Japanese
 アカウント グループにユニバーサル グループをメンバとして含めることはできません。
 .
+Language=Finnish
+Tiliryhmän jäsenenä ei voi olla universaalia ryhmää.
+.
 
 MessageId=8579
 Severity=Success
@@ -33814,6 +38877,9 @@ Rename or move operations on naming context heads or read-only objects are not a
 .
 Language=Japanese
 名前付けコンテキスト ヘッドまたは読み取り専用オブジェクトに対する名前の変更または移動操作は許可されていません。
+.
+Language=Finnish
+Nimeämiskontekstien alkujen tai vain luku -objektien uudelleennimeäminen tai siirtäminen ei ole sallittua.
 .
 
 MessageId=8580
@@ -33835,6 +38901,9 @@ Move operations on objects in the schema naming context are not allowed.
 Language=Japanese
 スキーマ名前コンテキスト内のオブジェクトに対する移動操作は許可されていません。
 .
+Language=Finnish
+Rakenteen nimeämiskontekstin objektien siirtäminen ei ole sallittua.
+.
 
 MessageId=8581
 Severity=Success
@@ -33854,6 +38923,9 @@ A system flag has been set on the object and does not allow the object to be mov
 .
 Language=Japanese
 システム フラグがオブジェクトに設定されているため、オブジェクトの移動または名前の変更ができません。
+.
+Language=Finnish
+Objektiin on asetettu järjestelmälippu, joka ei salli objektin siirtämistä tai uudelleennimeämistä.
 .
 
 MessageId=8582
@@ -33875,6 +38947,9 @@ This object is not allowed to change its grandparent container. Moves are not fo
 Language=Japanese
 このオブジェクトは祖父母コンテナを変更できません。このオブジェクトでは移動は禁止されていませんが、兄弟コンテナに制限されています。
 .
+Language=Finnish
+Tämä objekti ei saa vaihtaa isovanhempisäilöään. Siirrot eivät ole kiellettyjä tälle objektille, mutta ne on rajoitettu sisarsäilöihin.
+.
 
 MessageId=8583
 Severity=Success
@@ -33894,6 +38969,9 @@ Unable to resolve completely, a referral to another forest is generated.
 .
 Language=Japanese
 完全に解決できないため、別のフォレストへの参照が生成されます。
+.
+Language=Finnish
+Nimeä ei voi selvittää kokonaan, joten luodaan viittaus toiseen metsään.
 .
 
 MessageId=8584
@@ -33915,6 +38993,9 @@ The requested action is not supported on standard server.
 Language=Japanese
 要求されたアクションは標準サーバーでサポートされていません。
 .
+Language=Finnish
+Pyydettyä toimintoa ei tueta vakiopalvelimella.
+.
 
 MessageId=8585
 Severity=Success
@@ -33934,6 +39015,9 @@ Could not access a partition of the Active Directory located on a remote server.
 .
 Language=Japanese
 リモートサーバーにあるディレクトリサービスのパーティションにアクセスできませんでした。問題のパーティションに対して少なくとも1つのサーバーが実行されていることを確認してください。
+.
+Language=Finnish
+Etäpalvelimella olevaa Active Directoryn osiota ei voitu käyttää. Varmista, että osiolla on vähintään yksi palvelin käynnissä.
 .
 
 MessageId=8586
@@ -33955,6 +39039,9 @@ The directory cannot validate the proposed naming context (or partition) name be
 Language=Japanese
 ディレクトリがレプリカを保持していないため、提案されたネーミング コンテキスト (またはパーティション) 名を検証できません。親ネーミング コンテキストがDNSに正しく登録されており、このネーミング コンテキストの少なくとも1つのレプリカがドメイン ネーミング マスターによって到達可能であることを確認してください。
 .
+Language=Finnish
+Hakemisto ei voi vahvistaa ehdotettua nimeämiskontekstin (tai osion) nimeä, koska sillä ei ole replikaa eikä se saa yhteyttä replikaan ehdotetun nimeämiskontekstin yläpuolella olevasta nimeämiskontekstista. Varmista, että ylempi nimeämiskonteksti on rekisteröity oikein DNS:ään ja että toimialueen nimeämisen päätoimija tavoittaa vähintään yhden tämän nimeämiskontekstin replikan.
+.
 
 MessageId=8587
 Severity=Success
@@ -33974,6 +39061,9 @@ The thread limit for this request was exceeded.
 .
 Language=Japanese
 この要求のスレッド制限を超えました。
+.
+Language=Finnish
+Tämän pyynnön säieraja ylittyi.
 .
 
 MessageId=8588
@@ -33995,6 +39085,9 @@ The Global catalog server is not in the closet site.
 Language=Japanese
 グローバル カタログ サーバーが最も近いサイトにありません。
 .
+Language=Finnish
+Yleinen luettelopalvelin ei ole lähimmässä sivustossa.
+.
 
 MessageId=8589
 Severity=Success
@@ -34014,6 +39107,9 @@ The DS cannot derive a service principal name (SPN) with which to mutually authe
 .
 Language=Japanese
 ローカル DS データベース内の対応するサーバー オブジェクトに serverReference 属性がないため、DS はターゲット サーバーを相互に認証するためのサービス プリンシパル名 (SPN)  を導き出すことができません。
+.
+Language=Finnish
+Hakemistopalvelu ei voi johtaa palvelun päänimeä (SPN), jolla kohdepalvelin todennettaisiin molemminpuolisesti, koska paikallisen hakemistopalvelun tietokannan vastaavalla palvelinobjektilla ei ole serverReference-määritettä.
 .
 
 MessageId=8590
@@ -34035,6 +39131,9 @@ The Directory Service failed to enter single user mode.
 Language=Japanese
 ディレクトリ サービスがシングル ユーザー モードに移行できませんでした。
 .
+Language=Finnish
+Hakemistopalvelu ei pystynyt siirtymään yhden käyttäjän tilaan.
+.
 
 MessageId=8591
 Severity=Success
@@ -34054,6 +39153,9 @@ The Directory Service cannot parse the script because of a syntax error.
 .
 Language=Japanese
 構文エラーにより、ディレクトリ サービスはスクリプトを解析できません。
+.
+Language=Finnish
+Hakemistopalvelu ei voi jäsentää komentosarjaa syntaksivirheen vuoksi.
 .
 
 MessageId=8592
@@ -34075,6 +39177,9 @@ The Directory Service cannot process the script because of an error.
 Language=Japanese
 ディレクトリ サービスはエラーによりスクリプトを処理できません。
 .
+Language=Finnish
+Hakemistopalvelu ei voi käsitellä komentosarjaa virheen vuoksi.
+.
 
 MessageId=8593
 Severity=Success
@@ -34094,6 +39199,9 @@ The directory service cannot perform the requested operation because the servers
 .
 Language=Japanese
 関係するサーバーのレプリケーション エポックが異なるため、ディレクトリ サービスは要求された操作を実行できません (これは通常、進行中のドメイン名の変更に関連しています) 。
+.
+Language=Finnish
+Hakemistopalvelu ei voi suorittaa pyydettyä toimintoa, koska osallisilla palvelimilla on eri replikoinnin aikakaudet (mikä liittyy yleensä käynnissä olevaan toimialueen uudelleennimeämiseen).
 .
 
 MessageId=8594
@@ -34115,6 +39223,9 @@ The directory service binding must be renegotiated due to a change in the server
 Language=Japanese
 サーバー拡張情報の変更により、ディレクトリサービスのバインディングを再交渉する必要があります。
 .
+Language=Finnish
+Hakemistopalvelun sidos on neuvoteltava uudelleen, koska palvelimen laajennustiedot ovat muuttuneet.
+.
 
 MessageId=8595
 Severity=Success
@@ -34134,6 +39245,9 @@ Operation not allowed on a disabled cross ref.
 .
 Language=Japanese
 無効化されたCross Refに対する操作は許可されていません。
+.
+Language=Finnish
+Toiminto ei ole sallittu poistetulle ristiviittaukselle.
 .
 
 MessageId=8596
@@ -34155,6 +39269,9 @@ Schema update failed: No values for msDS-IntId are available.
 Language=Japanese
 スキーマの更新に失敗しました。
 .
+Language=Finnish
+Rakenteen päivitys epäonnistui: msDS-IntId-arvoja ei ole käytettävissä.
+.
 
 MessageId=8597
 Severity=Success
@@ -34174,6 +39291,9 @@ Schema update failed: Duplicate msDS-IntId. Retry the operation.
 .
 Language=Japanese
 スキーマの更新に失敗しました: msDS-INtId が重複しています。操作を再試行してください。
+.
+Language=Finnish
+Rakenteen päivitys epäonnistui: kaksinkertainen msDS-IntId. Yritä toimintoa uudelleen.
 .
 
 MessageId=8598
@@ -34195,6 +39315,9 @@ Schema deletion failed: attribute is used in rDNAttID.
 Language=Japanese
 スキーマの削除に失敗しました: 属性がrDNAで使用されています。
 .
+Language=Finnish
+Rakenteen poisto epäonnistui: määritettä käytetään rDNAttID-määritteessä.
+.
 
 MessageId=8599
 Severity=Success
@@ -34214,6 +39337,9 @@ The directory service failed to authorize the request.
 .
 Language=Japanese
 ディレクトリ サービスは要求の認証に失敗しました。
+.
+Language=Finnish
+Hakemistopalvelu ei pystynyt valtuuttamaan pyyntöä.
 .
 
 MessageId=8600
@@ -34235,6 +39361,9 @@ The Directory Service cannot process the script because it is invalid.
 Language=Japanese
 スクリプトが無効なため、ディレクトリ サービスで処理できません。
 .
+Language=Finnish
+Hakemistopalvelu ei voi käsitellä komentosarjaa, koska se on virheellinen.
+.
 
 MessageId=8601
 Severity=Success
@@ -34254,6 +39383,9 @@ The remote create cross reference operation failed on the Domain Naming Master F
 .
 Language=Japanese
 ドメインネーミングマスターFSMOでリモートの相互参照の作成操作に失敗しました。操作のエラーは拡張データにあります。
+.
+Language=Finnish
+Etäristiviittauksen luonti epäonnistui toimialueen nimeämisen pää-FSMO:ssa. Toiminnon virhe on laajennetuissa tiedoissa.
 .
 
 MessageId=8602
@@ -34275,6 +39407,9 @@ A cross reference is in use locally with the same name.
 Language=Japanese
 ローカルで同じ名前の相互参照が使用されています。
 .
+Language=Finnish
+Samanniminen ristiviittaus on käytössä paikallisesti.
+.
 
 MessageId=8603
 Severity=Success
@@ -34294,6 +39429,9 @@ The DS cannot derive a service principal name (SPN) with which to mutually authe
 .
 Language=Japanese
 サーバーのドメインがフォレストから削除されたため、DSがターゲットサーバーを相互認証するためのサービスプリンシパル名 (SPN) を導出できません。
+.
+Language=Finnish
+Hakemistopalvelu ei voi johtaa palvelun päänimeä (SPN), jolla kohdepalvelin todennettaisiin molemminpuolisesti, koska palvelimen toimialue on poistettu metsästä.
 .
 
 MessageId=8604
@@ -34315,6 +39453,9 @@ Writeable NCs prevent this DC from demoting.
 Language=Japanese
 書き込み可能なNCにより、このDCは降格できません。
 .
+Language=Finnish
+Kirjoitettavat nimeämiskontekstit estävät tämän toimialueen ohjauskoneen alentamisen.
+.
 
 MessageId=8605
 Severity=Success
@@ -34334,6 +39475,9 @@ The requested object has a non-unique identifier and cannot be retrieved.
 .
 Language=Japanese
 要求されたオブジェクトに一意でない識別子があり、取得できません。
+.
+Language=Finnish
+Pyydetyllä objektilla on muu kuin yksilöllinen tunniste, eikä sitä voi noutaa.
 .
 
 MessageId=8606
@@ -34355,6 +39499,9 @@ Insufficient attributes were given to create an object. This object may not exis
 Language=Japanese
 オブジェクトを作成するための属性が不足しています。このオブジェクトは削除され、すでにガベージ コレクトされている可能性があるため、存在しない可能性があります。
 .
+Language=Finnish
+Objektin luomiseen annettiin liian vähän määritteitä. Objektia ei ehkä ole olemassa, koska se on ehkä poistettu ja jo siivottu pois.
+.
 
 MessageId=8607
 Severity=Success
@@ -34374,6 +39521,9 @@ The group cannot be converted due to attribute restrictions on the requested gro
 .
 Language=Japanese
 要求されたグループ タイプの属性制限のため、グループを変換できません。
+.
+Language=Finnish
+Ryhmää ei voi muuntaa pyydetyn ryhmätyypin määriterajoitusten vuoksi.
 .
 
 MessageId=8608
@@ -34395,6 +39545,9 @@ Cross-domain move of non-empty basic application groups is not allowed.
 Language=Japanese
 空でない基本アプリケーション グループのクロスドメイン移動は許可されていません。
 .
+Language=Finnish
+Ei-tyhjien perussovellusryhmien siirto toimialueiden välillä ei ole sallittua.
+.
 
 MessageId=8609
 Severity=Success
@@ -34414,6 +39567,9 @@ Cross-domain move on non-empty query based application groups is not allowed.
 .
 Language=Japanese
 空でないクエリベースのアプリケーショングループのクロスドメイン移動は許可されていません。
+.
+Language=Finnish
+Ei-tyhjien kyselypohjaisten sovellusryhmien siirto toimialueiden välillä ei ole sallittua.
 .
 
 MessageId=8610
@@ -34435,6 +39591,9 @@ The role owner could not be verified because replication of its partition has no
 Language=Japanese
 ディレクトリ パーティションが少なくとも1つのレプリケーション パートナーと正常にレプリケートされていないため、FSMOロールの所有権を検証できませんでした。
 .
+Language=Finnish
+Roolin omistajaa ei voitu vahvistaa, koska sen osiota ei ole replikoitu äskettäin.
+.
 
 MessageId=8611
 Severity=Success
@@ -34454,6 +39613,9 @@ The target container for a redirection of a well-known object container cannot a
 .
 Language=Japanese
 既知のオブジェクト コンテナのリダイレクトのターゲット コンテナは、すでに特殊コンテナであることはできません。
+.
+Language=Finnish
+Tunnetun objektisäilön uudelleenohjauksen kohdesäilö ei voi jo olla erikoissäilö.
 .
 
 MessageId=8612
@@ -34475,6 +39637,9 @@ The Directory Service cannot perform the requested operation because a domain re
 Language=Japanese
 ドメイン名の変更操作が進行中のため、ディレクトリ サービスは要求された操作を実行できません。
 .
+Language=Finnish
+Hakemistopalvelu ei voi suorittaa pyydettyä toimintoa, koska toimialueen uudelleennimeäminen on käynnissä.
+.
 
 MessageId=8613
 Severity=Success
@@ -34494,6 +39659,9 @@ The Active Directory detected an Active Directory child partition below the requ
 .
 Language=Japanese
 ディレクトリ サービスは要求されたパーティション名の下に子パーティションを検出しました。パーティション階層はトップダウン方式で作成する必要があります。
+.
+Language=Finnish
+Active Directory havaitsi pyydetyn uuden osion nimen alapuolella Active Directoryn aliosion. Active Directoryn osiohierarkia on luotava ylhäältä alaspäin.
 .
 
 MessageId=8614
@@ -34515,6 +39683,9 @@ The Active Directory cannot replicate with this server because the time since th
 Language=Japanese
 このサーバーとの最後のレプリケーションからの時間が墓碑銘の有効期間を超えているため、ディレクトリ サービスはこのサーバーとレプリケーションできません。
 .
+Language=Finnish
+Active Directory ei voi replikoida tämän palvelimen kanssa, koska edellisestä replikoinnista tämän palvelimen kanssa on kulunut kauemmin kuin hautakiviobjektien elinaika.
+.
 
 MessageId=8615
 Severity=Success
@@ -34534,6 +39705,9 @@ The requested operation is not allowed on an object under the system container.
 .
 Language=Japanese
 要求された操作は、システム コンテナ配下のオブジェクトでは許可されていません。
+.
+Language=Finnish
+Pyydetty toiminto ei ole sallittu järjestelmäsäilön alla olevalle objektille.
 .
 
 MessageId=8616
@@ -34555,6 +39729,9 @@ The LDAP servers network send queue has filled up because the client is not proc
 Language=Japanese
 クライアントが要求の結果を十分に速く処理できないため、LDAPサーバーのネットワーク送信キューがいっぱいになりました。クライアントが追いつくまで、これ以上のリクエストは処理されません。クライアントが追いつかない場合、クライアントは切断されます。
 .
+Language=Finnish
+LDAP-palvelimen verkon lähetysjono on täyttynyt, koska asiakas ei käsittele pyyntöjensä tuloksia riittävän nopeasti. Uusia pyyntöjä ei käsitellä, ennen kuin asiakas saa tilanteen kiinni. Jos asiakas ei saa tilannetta kiinni, sen yhteys katkaistaan.
+.
 
 MessageId=8617
 Severity=Success
@@ -34574,6 +39751,9 @@ The scheduled replication did not take place because the system was too busy to 
 .
 Language=Japanese
 システムがビジー状態でスケジュール ウィンドウ内に要求を実行できなかったため、スケジュールされたレプリケーションが実行されませんでした。レプリケーション キューが過負荷です。パートナーの数を減らすか、スケジュールされたレプリケーションの頻度を減らしてください。
+.
+Language=Finnish
+Ajoitettu replikointi ei toteutunut, koska järjestelmä oli liian kiireinen suorittaakseen pyynnön ajoitusikkunan aikana. Replikointijono on ylikuormittunut. Harkitse kumppaneiden määrän vähentämistä tai ajoitetun replikoinnin tiheyden pienentämistä.
 .
 
 MessageId=9001
@@ -34595,6 +39775,9 @@ DNS server unable to interpret format.
 Language=Japanese
 DNSサーバーがフォーマットを解釈できません。
 .
+Language=Finnish
+DNS-palvelin ei pysty tulkitsemaan muotoa.
+.
 
 MessageId=9002
 Severity=Success
@@ -34614,6 +39797,9 @@ DNS server failure.
 .
 Language=Japanese
 DNSサーバーの失敗です。
+.
+Language=Finnish
+DNS-palvelimen virhe.
 .
 
 MessageId=9003
@@ -34635,6 +39821,9 @@ DNS name does not exist.
 Language=Japanese
 DNS名が存在しません。
 .
+Language=Finnish
+DNS-nimeä ei ole olemassa.
+.
 
 MessageId=9004
 Severity=Success
@@ -34654,6 +39843,9 @@ DNS request not supported by name server.
 .
 Language=Japanese
 DNS リクエストがネームサーバーによってサポートされていません。
+.
+Language=Finnish
+Nimipalvelin ei tue DNS-pyyntöä.
 .
 
 MessageId=9005
@@ -34675,6 +39867,9 @@ DNS operation refused.
 Language=Japanese
 DNS 操作が拒否されました。
 .
+Language=Finnish
+DNS-toiminto hylättiin.
+.
 
 MessageId=9006
 Severity=Success
@@ -34694,6 +39889,9 @@ DNS name that ought not exist, does exist.
 .
 Language=Japanese
 存在しないはずのDNS名が存在する。
+.
+Language=Finnish
+DNS-nimi, jota ei pitäisi olla olemassa, on olemassa.
 .
 
 MessageId=9007
@@ -34715,6 +39913,9 @@ DNS RR set that ought not exist, does exist.
 Language=Japanese
 存在しないはずのDNS RRセットが存在します。
 .
+Language=Finnish
+DNS-tietuejoukko, jota ei pitäisi olla olemassa, on olemassa.
+.
 
 MessageId=9008
 Severity=Success
@@ -34734,6 +39935,9 @@ DNS RR set that ought to exist, does not exist.
 .
 Language=Japanese
 存在しないはずのDNS RRセットが存在しない。
+.
+Language=Finnish
+DNS-tietuejoukkoa, jonka pitäisi olla olemassa, ei ole olemassa.
 .
 
 MessageId=9009
@@ -34755,6 +39959,9 @@ DNS server not authoritative for zone.
 Language=Japanese
 DNSサーバーがゾーンの権威ではありません。
 .
+Language=Finnish
+DNS-palvelin ei ole määräävä vyöhykkeelle.
+.
 
 MessageId=9010
 Severity=Success
@@ -34774,6 +39981,9 @@ DNS name in update or prereq is not in zone.
 .
 Language=Japanese
 更新または prereq の DNS 名がゾーンにありません。
+.
+Language=Finnish
+Päivityksen tai edellytyksen DNS-nimi ei ole vyöhykkeessä.
 .
 
 MessageId=9016
@@ -34795,6 +40005,9 @@ DNS signature failed to verify.
 Language=Japanese
 DNS署名の検証に失敗しました。
 .
+Language=Finnish
+DNS-allekirjoituksen vahvistus epäonnistui.
+.
 
 MessageId=9017
 Severity=Success
@@ -34814,6 +40027,9 @@ DNS bad key.
 .
 Language=Japanese
 DNSキーが不正です。
+.
+Language=Finnish
+Virheellinen DNS-avain.
 .
 
 MessageId=9018
@@ -34835,6 +40051,9 @@ DNS signature validity expired.
 Language=Japanese
 DNS署名の有効期限が切れました。
 .
+Language=Finnish
+DNS-allekirjoituksen voimassaolo on päättynyt.
+.
 
 MessageId=9501
 Severity=Success
@@ -34854,6 +40073,9 @@ No records found for given DNS query.
 .
 Language=Japanese
 指定されたDNSクエリのレコードが見つかりません。
+.
+Language=Finnish
+Annetulle DNS-kyselylle ei löytynyt tietueita.
 .
 
 MessageId=9502
@@ -34875,6 +40097,9 @@ Bad DNS packet.
 Language=Japanese
 不正なDNSパケットです。
 .
+Language=Finnish
+Virheellinen DNS-paketti.
+.
 
 MessageId=9503
 Severity=Success
@@ -34894,6 +40119,9 @@ No DNS packet.
 .
 Language=Japanese
 DNS パケットがありません。
+.
+Language=Finnish
+Ei DNS-pakettia.
 .
 
 MessageId=9504
@@ -34915,6 +40143,9 @@ DNS error, check rcode.
 Language=Japanese
 DNSエラー、rcodeをチェックしてください。
 .
+Language=Finnish
+DNS-virhe, tarkista rcode.
+.
 
 MessageId=9505
 Severity=Success
@@ -34934,6 +40165,9 @@ Unsecured DNS packet.
 .
 Language=Japanese
 安全でないDNSパケットです。
+.
+Language=Finnish
+Suojaamaton DNS-paketti.
 .
 
 MessageId=9551
@@ -34955,6 +40189,9 @@ Invalid DNS type.
 Language=Japanese
 無効なDNSタイプです。
 .
+Language=Finnish
+Virheellinen DNS-tyyppi.
+.
 
 MessageId=9552
 Severity=Success
@@ -34974,6 +40211,9 @@ Invalid IP address.
 .
 Language=Japanese
 無効なIPアドレスです。
+.
+Language=Finnish
+Virheellinen IP-osoite.
 .
 
 MessageId=9553
@@ -34995,6 +40235,9 @@ Invalid property.
 Language=Japanese
 無効なプロパティです。
 .
+Language=Finnish
+Virheellinen ominaisuus.
+.
 
 MessageId=9554
 Severity=Success
@@ -35014,6 +40257,9 @@ Try DNS operation again later.
 .
 Language=Japanese
 DNS操作を後で再試行してください。
+.
+Language=Finnish
+Yritä DNS-toimintoa myöhemmin uudelleen.
 .
 
 MessageId=9555
@@ -35035,6 +40281,9 @@ Record for given name and type is not unique.
 Language=Japanese
 指定された名前と型のレコードは一意ではありません。
 .
+Language=Finnish
+Annetun nimen ja tyypin tietue ei ole yksilöllinen.
+.
 
 MessageId=9556
 Severity=Success
@@ -35054,6 +40303,9 @@ DNS name does not comply with RFC specifications.
 .
 Language=Japanese
 DNS 名が RFC 仕様に準拠していません。
+.
+Language=Finnish
+DNS-nimi ei noudata RFC-määrityksiä.
 .
 
 MessageId=9557
@@ -35075,6 +40327,9 @@ DNS name is a fully-qualified DNS name.
 Language=Japanese
 DNS名は完全修飾DNS名です。
 .
+Language=Finnish
+DNS-nimi on täydellinen DNS-nimi.
+.
 
 MessageId=9558
 Severity=Success
@@ -35094,6 +40349,9 @@ DNS name is dotted (multi-label).
 .
 Language=Japanese
 DNS名がドット (マルチラベル) です。
+.
+Language=Finnish
+DNS-nimessä on pisteitä (monitasoinen).
 .
 
 MessageId=9559
@@ -35116,6 +40374,9 @@ Language=Japanese
 DNS名がシングルパート名 
  です。
 .
+Language=Finnish
+DNS-nimi on yksiosainen nimi.
+.
 
 MessageId=9560
 Severity=Success
@@ -35135,6 +40396,9 @@ DSN name contains an invalid character.
 .
 Language=Japanese
 DNS名に無効な文字が含まれています。
+.
+Language=Finnish
+DNS-nimessä on virheellinen merkki.
 .
 
 MessageId=9561
@@ -35156,6 +40420,9 @@ DNS name is entirely numeric.
 Language=Japanese
 DNS名がすべて数字です。
 .
+Language=Finnish
+DNS-nimi on kokonaan numeerinen.
+.
 
 MessageId=9562
 Severity=Success
@@ -35175,6 +40442,9 @@ The operation requested is not permitted on a DNS root server.
 .
 Language=Japanese
 要求された操作はDNSルート サーバーで許可されていません。
+.
+Language=Finnish
+Pyydetty toiminto ei ole sallittu DNS-juuripalvelimella.
 .
 
 MessageId=9563
@@ -35196,6 +40466,9 @@ The record could not be created because this part of the DNS namespace has been 
 Language=Japanese
 DNSネームスペースのこの部分が別のサーバーに委譲されているため、レコードを作成できませんでした。
 .
+Language=Finnish
+Tietuetta ei voitu luoda, koska tämä DNS-nimitilan osa on delegoitu toiselle palvelimelle.
+.
 
 MessageId=9564
 Severity=Success
@@ -35215,6 +40488,9 @@ The DNS server could not find a set of root hints.
 .
 Language=Japanese
 DNSサーバーがルートヒントのセットを見つけられませんでした。
+.
+Language=Finnish
+DNS-palvelin ei löytänyt juurivihjeitä.
 .
 
 MessageId=9565
@@ -35236,6 +40512,9 @@ The DNS server found root hints but they were not consistent across all adapters
 Language=Japanese
 DNSサーバーがルートヒントを見つけましたが、すべてのアダプターで一貫していませんでした。
 .
+Language=Finnish
+DNS-palvelin löysi juurivihjeet, mutta ne eivät olleet yhdenmukaisia kaikissa sovittimissa.
+.
 
 MessageId=9601
 Severity=Success
@@ -35255,6 +40534,9 @@ DNS zone does not exist.
 .
 Language=Japanese
 DNSゾーンが存在しません。
+.
+Language=Finnish
+DNS-vyöhykettä ei ole olemassa.
 .
 
 MessageId=9602
@@ -35276,6 +40558,9 @@ DNS zone information not available.
 Language=Japanese
 DNSゾーン情報が利用できません。
 .
+Language=Finnish
+DNS-vyöhykkeen tiedot eivät ole käytettävissä.
+.
 
 MessageId=9603
 Severity=Success
@@ -35295,6 +40580,9 @@ Invalid operation for DNS zone.
 .
 Language=Japanese
 DNSゾーンの操作が無効です。
+.
+Language=Finnish
+Virheellinen toiminto DNS-vyöhykkeelle.
 .
 
 MessageId=9604
@@ -35316,6 +40604,9 @@ Invalid DNS zone configuration.
 Language=Japanese
 無効なDNSゾーン構成です。
 .
+Language=Finnish
+Virheellinen DNS-vyöhykkeen määritys.
+.
 
 MessageId=9605
 Severity=Success
@@ -35335,6 +40626,9 @@ DNS zone has no start of authority (SOA) record.
 .
 Language=Japanese
 DNSゾーンにSOAレコードがありません。
+.
+Language=Finnish
+DNS-vyöhykkeellä ei ole SOA-tietuetta (start of authority).
 .
 
 MessageId=9606
@@ -35356,6 +40650,9 @@ DNS zone has no name server (NS) record.
 Language=Japanese
 DNSゾーンにネームサーバー (NS) レコードがありません。
 .
+Language=Finnish
+DNS-vyöhykkeellä ei ole nimipalvelintietuetta (NS).
+.
 
 MessageId=9607
 Severity=Success
@@ -35375,6 +40672,9 @@ DNS zone is locked.
 .
 Language=Japanese
 DNSゾーンがロックされています。
+.
+Language=Finnish
+DNS-vyöhyke on lukittu.
 .
 
 MessageId=9608
@@ -35396,6 +40696,9 @@ DNS zone creation failed.
 Language=Japanese
 DNSゾーンの作成に失敗しました。
 .
+Language=Finnish
+DNS-vyöhykkeen luonti epäonnistui.
+.
 
 MessageId=9609
 Severity=Success
@@ -35415,6 +40718,9 @@ DNS zone already exists.
 .
 Language=Japanese
 DNSゾーンはすでに存在します。
+.
+Language=Finnish
+DNS-vyöhyke on jo olemassa.
 .
 
 MessageId=9610
@@ -35436,6 +40742,9 @@ DNS automatic zone already exists.
 Language=Japanese
 DNS自動ゾーンはすでに存在します。
 .
+Language=Finnish
+Automaattinen DNS-vyöhyke on jo olemassa.
+.
 
 MessageId=9611
 Severity=Success
@@ -35455,6 +40764,9 @@ Invalid DNS zone type.
 .
 Language=Japanese
 無効なDNSゾーンタイプです。
+.
+Language=Finnish
+Virheellinen DNS-vyöhykkeen tyyppi.
 .
 
 MessageId=9612
@@ -35476,6 +40788,9 @@ Secondary DNS zone requires master IP address.
 Language=Japanese
 セカンダリDNSゾーンにはマスターIPアドレスが必要です。
 .
+Language=Finnish
+Toissijainen DNS-vyöhyke vaatii pääpalvelimen IP-osoitteen.
+.
 
 MessageId=9613
 Severity=Success
@@ -35495,6 +40810,9 @@ DNS zone not secondary.
 .
 Language=Japanese
 DNSゾーンはセカンダリではありません。
+.
+Language=Finnish
+DNS-vyöhyke ei ole toissijainen.
 .
 
 MessageId=9614
@@ -35516,6 +40834,9 @@ Need secondary IP address.
 Language=Japanese
 セカンダリIPアドレスが必要です。
 .
+Language=Finnish
+Tarvitaan toissijainen IP-osoite.
+.
 
 MessageId=9615
 Severity=Success
@@ -35535,6 +40856,9 @@ WINS initialization failed.
 .
 Language=Japanese
 WINSの初期化に失敗しました。
+.
+Language=Finnish
+WINS-alustus epäonnistui.
 .
 
 MessageId=9616
@@ -35556,6 +40880,9 @@ Need WINS servers.
 Language=Japanese
 WINSサーバーが必要です。
 .
+Language=Finnish
+Tarvitaan WINS-palvelimet.
+.
 
 MessageId=9617
 Severity=Success
@@ -35575,6 +40902,9 @@ NBTSTAT initialization call failed.
 .
 Language=Japanese
 NBTSTAT初期化コールに失敗しました。
+.
+Language=Finnish
+NBTSTAT-alustuskutsu epäonnistui.
 .
 
 MessageId=9618
@@ -35596,6 +40926,9 @@ Invalid delete of start of authority (SOA)
 Language=Japanese
 権限の開始 (SOA) の無効な削除です。
 .
+Language=Finnish
+Virheellinen SOA-tietueen (start of authority) poisto
+.
 
 MessageId=9619
 Severity=Success
@@ -35615,6 +40948,9 @@ A conditional forwarding zone already exists for that name.
 .
 Language=Japanese
 その名前に対して条件付き転送ゾーンがすでに存在します。
+.
+Language=Finnish
+Tälle nimelle on jo ehdollinen edelleenlähetysvyöhyke.
 .
 
 MessageId=9620
@@ -35636,6 +40972,9 @@ This zone must be configured with one or more master DNS server IP addresses.
 Language=Japanese
 このゾーンは1つ以上のマスターDNSサーバーIPアドレスで構成されている必要があります。
 .
+Language=Finnish
+Tälle vyöhykkeelle on määritettävä yksi tai useampi DNS-pääpalvelimen IP-osoite.
+.
 
 MessageId=9621
 Severity=Success
@@ -35655,6 +40994,9 @@ The operation cannot be performed because this zone is shutdown.
 .
 Language=Japanese
 このゾーンはシャットダウンされているため、操作は実行できません。
+.
+Language=Finnish
+Toimintoa ei voi suorittaa, koska tämä vyöhyke on suljettu.
 .
 
 MessageId=9651
@@ -35676,6 +41018,9 @@ Primary DNS zone requires datafile.
 Language=Japanese
 プライマリDNSゾーンにはデータファイルが必要です。
 .
+Language=Finnish
+Ensisijainen DNS-vyöhyke vaatii datatiedoston.
+.
 
 MessageId=9652
 Severity=Success
@@ -35695,6 +41040,9 @@ Invalid datafile name for DNS zone.
 .
 Language=Japanese
 DNSゾーンのデータファイル名が無効です。
+.
+Language=Finnish
+Virheellinen DNS-vyöhykkeen datatiedoston nimi.
 .
 
 MessageId=9653
@@ -35716,6 +41064,9 @@ Failed to open datafile for DNS zone.
 Language=Japanese
 DNSゾーンのデータファイルを開けませんでした。
 .
+Language=Finnish
+DNS-vyöhykkeen datatiedoston avaaminen epäonnistui.
+.
 
 MessageId=9654
 Severity=Success
@@ -35735,6 +41086,9 @@ Failed to write datafile for DNS zone.
 .
 Language=Japanese
 DNSゾーンのデータファイルの書き込みに失敗しました。
+.
+Language=Finnish
+DNS-vyöhykkeen datatiedoston kirjoittaminen epäonnistui.
 .
 
 MessageId=9655
@@ -35756,6 +41110,9 @@ Failure while reading datafile for DNS zone.
 Language=Japanese
 DNSゾーンのデータファイルの読み込みに失敗しました
 .
+Language=Finnish
+Virhe luettaessa DNS-vyöhykkeen datatiedostoa.
+.
 
 MessageId=9701
 Severity=Success
@@ -35775,6 +41132,9 @@ DNS record does not exist.
 .
 Language=Japanese
 DNSレコードが存在しません。
+.
+Language=Finnish
+DNS-tietuetta ei ole olemassa.
 .
 
 MessageId=9702
@@ -35796,6 +41156,9 @@ DNS record format error.
 Language=Japanese
 DNSレコードのフォーマットエラーです。
 .
+Language=Finnish
+DNS-tietueen muotovirhe.
+.
 
 MessageId=9703
 Severity=Success
@@ -35815,6 +41178,9 @@ Node creation failure in DNS.
 .
 Language=Japanese
 DNSのノード作成に失敗しました。
+.
+Language=Finnish
+Solmun luonti epäonnistui DNS:ssä.
 .
 
 MessageId=9704
@@ -35836,6 +41202,9 @@ Unknown DNS record type.
 Language=Japanese
 不明な DNS レコード タイプです。
 .
+Language=Finnish
+Tuntematon DNS-tietueen tyyppi.
+.
 
 MessageId=9705
 Severity=Success
@@ -35855,6 +41224,9 @@ DNS record timed out.
 .
 Language=Japanese
 DNSレコードがタイムアウトしました。
+.
+Language=Finnish
+DNS-tietue aikakatkaistiin.
 .
 
 MessageId=9706
@@ -35876,6 +41248,9 @@ Name not in DNS zone.
 Language=Japanese
 DNSゾーンに名前がありません。
 .
+Language=Finnish
+Nimi ei ole DNS-vyöhykkeessä.
+.
 
 MessageId=9707
 Severity=Success
@@ -35895,6 +41270,9 @@ CNAME loop detected.
 .
 Language=Japanese
 CNAMEループが検出されました。
+.
+Language=Finnish
+Havaittiin CNAME-silmukka.
 .
 
 MessageId=9708
@@ -35916,6 +41294,9 @@ Node is a CNAME DNS record.
 Language=Japanese
 ノードはCNAME DNSレコードです。
 .
+Language=Finnish
+Solmu on CNAME-DNS-tietue.
+.
 
 MessageId=9709
 Severity=Success
@@ -35935,6 +41316,9 @@ A CNAME record already exists for given name.
 .
 Language=Japanese
 指定された名前のCNAMEレコードは既に存在します。
+.
+Language=Finnish
+Annetulla nimellä on jo CNAME-tietue.
 .
 
 MessageId=9710
@@ -35956,6 +41340,9 @@ Record only at DNS zone root.
 Language=Japanese
 レコードはDNSゾーンルートにのみ存在します。
 .
+Language=Finnish
+Tietue vain DNS-vyöhykkeen juuressa.
+.
 
 MessageId=9711
 Severity=Success
@@ -35975,6 +41362,9 @@ DNS record already exists.
 .
 Language=Japanese
 DNSレコードはすでに存在します。
+.
+Language=Finnish
+DNS-tietue on jo olemassa.
 .
 
 MessageId=9712
@@ -35996,6 +41386,9 @@ Secondary DNS zone data error.
 Language=Japanese
 セカンダリDNSゾーンのデータ エラーです。
 .
+Language=Finnish
+Toissijaisen DNS-vyöhykkeen tietovirhe.
+.
 
 MessageId=9713
 Severity=Success
@@ -36015,6 +41408,9 @@ Could not create DNS cache data.
 .
 Language=Japanese
 DNSキャッシュデータを作成できませんでした。
+.
+Language=Finnish
+DNS-välimuistitietoja ei voitu luoda.
 .
 
 MessageId=9714
@@ -36036,6 +41432,9 @@ DNS name does not exist.
 Language=Japanese
 DNS名が存在しません。
 .
+Language=Finnish
+DNS-nimeä ei ole olemassa.
+.
 
 MessageId=9715
 Severity=Success
@@ -36055,6 +41454,9 @@ Could not create pointer (PTR) record.
 .
 Language=Japanese
 ポインタ (PTR) レコードを作成できませんでした。
+.
+Language=Finnish
+Osoitintietuetta (PTR) ei voitu luoda.
 .
 
 MessageId=9716
@@ -36076,6 +41478,9 @@ DNS domain was undeleted.
 Language=Japanese
 DNSドメインが削除されました。
 .
+Language=Finnish
+DNS-toimialueen poisto peruttiin.
+.
 
 MessageId=9717
 Severity=Success
@@ -36095,6 +41500,9 @@ The directory service is unavailable.
 .
 Language=Japanese
 ディレクトリ サービスは使用できません。
+.
+Language=Finnish
+Hakemistopalvelu ei ole käytettävissä.
 .
 
 MessageId=9718
@@ -36116,6 +41524,9 @@ DNS zone already exists in the directory service.
 Language=Japanese
 DNSゾーンはすでにディレクトリサービスに存在します。
 .
+Language=Finnish
+DNS-vyöhyke on jo olemassa hakemistopalvelussa.
+.
 
 MessageId=9719
 Severity=Success
@@ -36135,6 +41546,9 @@ DNS server not creating or reading the boot file for the directory service integ
 .
 Language=Japanese
 DNSサーバーがディレクトリサービス統合DNSゾーンのブートファイルを作成または読み込んでいません。
+.
+Language=Finnish
+DNS-palvelin ei luo eikä lue käynnistystiedostoa hakemistopalveluun integroidulle DNS-vyöhykkeelle.
 .
 
 MessageId=9751
@@ -36156,6 +41570,9 @@ DNS AXFR (zone transfer) complete.
 Language=Japanese
 DNS AXFR (ゾーン転送) が完了しました。
 .
+Language=Finnish
+DNS AXFR (vyöhykkeen siirto) valmis.
+.
 
 MessageId=9752
 Severity=Success
@@ -36175,6 +41592,9 @@ DNS zone transfer failed.
 .
 Language=Japanese
 DNS AXFR (ゾーン転送)  が完了しました: DNSゾーン転送に失敗しました。
+.
+Language=Finnish
+DNS-vyöhykkeen siirto epäonnistui.
 .
 
 MessageId=9753
@@ -36196,6 +41616,9 @@ Added local WINS server.
 Language=Japanese
 ローカルWINSサーバーを追加しました。
 .
+Language=Finnish
+Paikallinen WINS-palvelin lisättiin.
+.
 
 MessageId=9801
 Severity=Success
@@ -36215,6 +41638,9 @@ Secure update call needs to continue update request.
 .
 Language=Japanese
 Secure Updateコールは更新要求を続行する必要があります。
+.
+Language=Finnish
+Suojatun päivityksen kutsun on jatkettava päivityspyyntöä.
 .
 
 MessageId=9851
@@ -36236,6 +41662,9 @@ TCP/IP network protocol not installed.
 Language=Japanese
 TCP/IPネットワークプロトコルがインストールされていません。
 .
+Language=Finnish
+TCP/IP-verkkoprotokollaa ei ole asennettu.
+.
 
 MessageId=9852
 Severity=Success
@@ -36255,6 +41684,9 @@ No DNS servers configured for local system.
 .
 Language=Japanese
 ローカル システムに構成された DNS サーバーがありません。
+.
+Language=Finnish
+Paikalliselle järjestelmälle ei ole määritetty DNS-palvelimia.
 .
 
 MessageId=9901
@@ -36276,6 +41708,9 @@ The specified directory partition does not exist.
 Language=Japanese
 指定されたディレクトリ パーティションが存在しません。
 .
+Language=Finnish
+Määritettyä hakemisto-osiota ei ole olemassa.
+.
 
 MessageId=9902
 Severity=Success
@@ -36295,6 +41730,9 @@ The specified directory partition already exists.
 .
 Language=Japanese
 指定されたディレクトリ パーティションはすでに存在します。
+.
+Language=Finnish
+Määritetty hakemisto-osio on jo olemassa.
 .
 
 MessageId=9903
@@ -36316,6 +41754,9 @@ The DNS server is not enlisted in the specified directory partition.
 Language=Japanese
 この DNS サーバーは指定されたディレクトリ パーティションに登録されていません。
 .
+Language=Finnish
+DNS-palvelin ei ole liitetty määritettyyn hakemisto-osioon.
+.
 
 MessageId=9904
 Severity=Success
@@ -36335,6 +41776,9 @@ The DNS server is already enlisted in the specified directory partition.
 .
 Language=Japanese
 このDNSサーバーは、指定されたディレクトリ パーティションにすでに登録されています。
+.
+Language=Finnish
+DNS-palvelin on jo liitetty määritettyyn hakemisto-osioon.
 .
 
 MessageId=9905
@@ -36356,6 +41800,9 @@ The directory partition is not available at this time. Please wait a few minutes
 Language=Japanese
 ディレクトリ パーティションは現在使用できません。数分待ってから再試行してください。
 .
+Language=Finnish
+Hakemisto-osio ei ole tällä hetkellä käytettävissä. Odota muutama minuutti ja yritä uudelleen.
+.
 
 MessageId=9906
 Severity=Success
@@ -36375,6 +41822,9 @@ The application directory partition operation failed. The domain controller hold
 .
 Language=Japanese
 ドメインネーミングマスターFSMOロールに到達できなかったため、操作は失敗しました。ドメイン ネーミング マスター FSMO ロールを保持するドメイン コントローラーがダウンしているか、要求を処理できないか、LiberNT Server 2003 以降が実行されていません。
+.
+Language=Finnish
+Sovelluksen hakemisto-osion toiminto epäonnistui. Toimialueen nimeämisen pääroolia hoitava toimialueen ohjauskone ei toimi, ei pysty palvelemaan pyyntöä tai siinä ei ole Windows Server 2003:a.
 .
 
 MessageId=10004
@@ -36396,6 +41846,9 @@ A blocking operation was interrupted by a call to WSACancelBlockingCall.
 Language=Japanese
 WSACancelBlockingCall の呼び出しによってブロック操作が中断されました。
 .
+Language=Finnish
+WSACancelBlockingCall-kutsu keskeytti estävän toiminnon.
+.
 
 MessageId=10009
 Severity=Success
@@ -36415,6 +41868,9 @@ The file handle supplied is not valid.
 .
 Language=Japanese
 指定されたファイルハンドルが無効です。
+.
+Language=Finnish
+Annettu tiedostokahva ei ole kelvollinen.
 .
 
 MessageId=10013
@@ -36436,6 +41892,9 @@ An attempt was made to access a socket in a way forbidden by its access permissi
 Language=Japanese
 アクセス許可で禁止されている方法でソケットにアクセスしようとしました。
 .
+Language=Finnish
+Vastakkeeseen yritettiin käyttää tavalla, jonka sen käyttöoikeudet kieltävät.
+.
 
 MessageId=10014
 Severity=Success
@@ -36455,6 +41914,9 @@ The system detected an invalid pointer address in attempting to use a pointer ar
 .
 Language=Japanese
 呼び出しでポインタ引数を使用しようとして、システムが無効なポインタアドレスを検出しました。
+.
+Language=Finnish
+Järjestelmä havaitsi virheellisen osoitinosoitteen yrittäessään käyttää kutsun osoitinargumenttia.
 .
 
 MessageId=10022
@@ -36476,6 +41938,9 @@ An invalid argument was supplied.
 Language=Japanese
 無効な引数が指定されました。
 .
+Language=Finnish
+Annettiin virheellinen argumentti.
+.
 
 MessageId=10024
 Severity=Success
@@ -36495,6 +41960,9 @@ Too many open sockets.
 .
 Language=Japanese
 オープンしているソケットが多すぎます。
+.
+Language=Finnish
+Liian monta avointa vastaketta.
 .
 
 MessageId=10035
@@ -36516,6 +41984,9 @@ A non-blocking socket operation could not be completed immediately.
 Language=Japanese
 ノンブロッキングソケット操作を直ちに完了できませんでした。
 .
+Language=Finnish
+Ei-estävän vastakkeen toimintoa ei voitu suorittaa heti.
+.
 
 MessageId=10036
 Severity=Success
@@ -36535,6 +42006,9 @@ A blocking operation is currently executing.
 .
 Language=Japanese
 ブロック操作は現在実行中です。
+.
+Language=Finnish
+Estävä toiminto on parhaillaan käynnissä.
 .
 
 MessageId=10037
@@ -36556,6 +42030,9 @@ An operation was attempted on a non-blocking socket that already had an operatio
 Language=Japanese
 既に実行中の操作があるノンブロッキングソケットで操作を試みました。
 .
+Language=Finnish
+Toimintoa yritettiin ei-estävällä vastakkeella, jolla oli jo toiminto käynnissä.
+.
 
 MessageId=10038
 Severity=Success
@@ -36575,6 +42052,9 @@ An operation was attempted on something that is not a socket.
 .
 Language=Japanese
 ソケットではない何かに対して操作を試みました。
+.
+Language=Finnish
+Toimintoa yritettiin kohteelle, joka ei ole vastake.
 .
 
 MessageId=10039
@@ -36596,6 +42076,9 @@ A required address was omitted from an operation on a socket.
 Language=Japanese
 ソケットに対する操作で必要なアドレスが省略されました。
 .
+Language=Finnish
+Vastakkeen toiminnosta puuttui tarvittava osoite.
+.
 
 MessageId=10040
 Severity=Success
@@ -36615,6 +42098,9 @@ A message sent on a datagram socket was larger than the internal message buffer 
 .
 Language=Japanese
 データグラムソケットで送信されたメッセージが内部メッセージ バッファまたは他のネットワーク制限よりも大きかったか、データグラムを受信するために使用されたバッファがデータグラム自体よりも小さかったです。
+.
+Language=Finnish
+Datagrammivastakkeella lähetetty viesti oli suurempi kuin sisäinen viestipuskuri tai jokin muu verkon raja, tai datagrammin vastaanottoon käytetty puskuri oli pienempi kuin itse datagrammi.
 .
 
 MessageId=10041
@@ -36636,6 +42122,9 @@ A protocol was specified in the socket function call that does not support the s
 Language=Japanese
 要求されたソケットタイプのセマンティクスをサポートしていないプロトコルがソケット関数呼び出しに指定されました。
 .
+Language=Finnish
+Vastakefunktion kutsussa annettiin protokolla, joka ei tue pyydetyn vastaketyypin semantiikkaa.
+.
 
 MessageId=10042
 Severity=Success
@@ -36655,6 +42144,9 @@ An unknown, invalid, or unsupported option or level was specified in a getsockop
 .
 Language=Japanese
 getsockoptまたはsetsockopt呼び出しで未知の、無効な、またはサポートされていないオプションまたはレベルが指定されました。
+.
+Language=Finnish
+getsockopt- tai setsockopt-kutsussa annettiin tuntematon, virheellinen tai tukematon valinta tai taso.
 .
 
 MessageId=10043
@@ -36676,6 +42168,9 @@ The requested protocol has not been configured into the system, or no implementa
 Language=Japanese
 要求されたプロトコルがシステムに設定されていないか、そのプロトコルの実装が存在しません。
 .
+Language=Finnish
+Pyydettyä protokollaa ei ole määritetty järjestelmään, tai sille ei ole toteutusta.
+.
 
 MessageId=10044
 Severity=Success
@@ -36695,6 +42190,9 @@ The support for the specified socket type does not exist in this address family.
 .
 Language=Japanese
 指定されたソケットタイプのサポートがこのアドレスファミリに存在しない。
+.
+Language=Finnish
+Määritetylle vastaketyypille ei ole tukea tässä osoiteperheessä.
 .
 
 MessageId=10045
@@ -36716,6 +42214,9 @@ The attempted operation is not supported for the type of object referenced.
 Language=Japanese
 試行された操作は参照されたオブジェクトのタイプではサポートされていません。
 .
+Language=Finnish
+Yritettyä toimintoa ei tueta viitatulle objektityypille.
+.
 
 MessageId=10046
 Severity=Success
@@ -36735,6 +42236,9 @@ The protocol family has not been configured into the system or no implementation
 .
 Language=Japanese
 プロトコルファミリがシステムに設定されていないか、その実装が存在しません。
+.
+Language=Finnish
+Protokollaperhettä ei ole määritetty järjestelmään, tai sille ei ole toteutusta.
 .
 
 MessageId=10047
@@ -36756,6 +42260,9 @@ An address incompatible with the requested protocol was used.
 Language=Japanese
 要求されたプロトコルと互換性のないアドレスが使用されました。
 .
+Language=Finnish
+Käytettiin osoitetta, joka ei ole yhteensopiva pyydetyn protokollan kanssa.
+.
 
 MessageId=10048
 Severity=Success
@@ -36775,6 +42282,9 @@ Only one usage of each socket address (protocol/network address/port) is normall
 .
 Language=Japanese
 各ソケットアドレス (プロトコル/ネットワークアドレス/ポート) の使用は通常1回のみ許可されます。
+.
+Language=Finnish
+Kutakin vastakeosoitetta (protokolla/verkko-osoite/portti) saa yleensä käyttää vain kerran.
 .
 
 MessageId=10049
@@ -36796,6 +42306,9 @@ The requested address is not valid in its context.
 Language=Japanese
 要求されたアドレスはそのコンテキストでは無効です。
 .
+Language=Finnish
+Pyydetty osoite ei ole kelvollinen tässä yhteydessä.
+.
 
 MessageId=10050
 Severity=Success
@@ -36815,6 +42328,9 @@ A socket operation encountered a dead network.
 .
 Language=Japanese
 要求されたアドレスが無効です: ソケット操作がデッドネットワークに遭遇しました。
+.
+Language=Finnish
+Vastaketoiminto kohtasi toimimattoman verkon.
 .
 
 MessageId=10051
@@ -36836,6 +42352,9 @@ A socket operation was attempted to an unreachable network.
 Language=Japanese
 到達不能なネットワークに対してソケット操作を試みました。
 .
+Language=Finnish
+Vastaketoimintoa yritettiin verkkoon, jota ei tavoiteta.
+.
 
 MessageId=10052
 Severity=Success
@@ -36855,6 +42374,9 @@ The connection has been broken due to keep-alive activity detecting a failure wh
 .
 Language=Japanese
 操作の進行中にキープアライブアクティビティが障害を検出したため、接続が切断されました。
+.
+Language=Finnish
+Yhteys katkesi, koska yhteydenpitotoiminto havaitsi virheen toiminnon ollessa käynnissä.
 .
 
 MessageId=10053
@@ -36876,6 +42398,9 @@ An established connection was aborted by the software in your host machine.
 Language=Japanese
 確立された接続がホスト マシンのソフトウェアによって中断されました。
 .
+Language=Finnish
+Isäntäkoneesi ohjelmisto keskeytti muodostetun yhteyden.
+.
 
 MessageId=10054
 Severity=Success
@@ -36895,6 +42420,9 @@ An existing connection was forcibly closed by the remote host.
 .
 Language=Japanese
 既存の接続が強制的に閉じられました: 既存の接続がリモートホストによって強制的に閉じられました。
+.
+Language=Finnish
+Etäisäntä sulki olemassa olevan yhteyden väkisin.
 .
 
 MessageId=10055
@@ -36916,6 +42444,9 @@ An operation on a socket could not be performed because the system lacked suffic
 Language=Japanese
 既存の接続がリモートホストによって強制的に閉じられました: システムに十分なバッファ領域がないか、キューが満杯であるため、ソケットに対する操作を実行できませんでした。
 .
+Language=Finnish
+Vastakkeen toimintoa ei voitu suorittaa, koska järjestelmän puskuritila ei riittänyt tai jono oli täynnä.
+.
 
 MessageId=10056
 Severity=Success
@@ -36935,6 +42466,9 @@ A connect request was made on an already connected socket.
 .
 Language=Japanese
 既に接続されているソケットに対して接続要求を行いました。
+.
+Language=Finnish
+Yhteyspyyntö tehtiin vastakkeelle, joka on jo yhdistetty.
 .
 
 MessageId=10057
@@ -36956,6 +42490,9 @@ A request to send or receive data was disallowed because the socket is not conne
 Language=Japanese
 ソケットが接続されておらず、 (sendto 呼び出しでデータグラムソケットに送信する場合)  アドレスが指定されなかったため、データの送受信要求を拒否しました。
 .
+Language=Finnish
+Tietojen lähetys- tai vastaanottopyyntö estettiin, koska vastaketta ei ole yhdistetty ja (lähetettäessä datagrammivastakkeella sendto-kutsulla) osoitetta ei annettu.
+.
 
 MessageId=10058
 Severity=Success
@@ -36975,6 +42512,9 @@ A request to send or receive data was disallowed because the socket had already 
 .
 Language=Japanese
 以前のシャットダウン呼び出しでその方向のソケットが既にシャットダウンされていたため、データの送受信要求が許可されませんでした。
+.
+Language=Finnish
+Tietojen lähetys- tai vastaanottopyyntö estettiin, koska vastake oli jo suljettu siihen suuntaan aiemmalla shutdown-kutsulla.
 .
 
 MessageId=10059
@@ -36996,6 +42536,9 @@ Too many references to some kernel object.
 Language=Japanese
 カーネルオブジェクトへの参照が多すぎます。
 .
+Language=Finnish
+Liian monta viittausta johonkin ytimen objektiin.
+.
 
 MessageId=10060
 Severity=Success
@@ -37015,6 +42558,9 @@ A connection attempt failed because the connected party did not properly respond
 .
 Language=Japanese
 接続された相手が一定時間経っても適切に応答しないか、接続に失敗したため、または接続ホストが応答しなかったため、接続に失敗しました。
+.
+Language=Finnish
+Yhteysyritys epäonnistui, koska yhdistetty osapuoli ei vastannut oikein tietyn ajan kuluessa, tai muodostettu yhteys katkesi, koska yhdistetty isäntä ei vastannut.
 .
 
 MessageId=10061
@@ -37036,6 +42582,9 @@ No connection could be made because the target machine actively refused it.
 Language=Japanese
 ターゲットマシンがアクティブに拒否したため、接続できませんでした。
 .
+Language=Finnish
+Yhteyttä ei voitu muodostaa, koska kohdekone hylkäsi sen.
+.
 
 MessageId=10062
 Severity=Success
@@ -37055,6 +42604,9 @@ Cannot translate name.
 .
 Language=Japanese
 名前を変換できません。
+.
+Language=Finnish
+Nimeä ei voi muuntaa.
 .
 
 MessageId=10063
@@ -37076,6 +42628,9 @@ Name component or name was too long.
 Language=Japanese
 名前のコンポーネントまたは名前が長すぎます。
 .
+Language=Finnish
+Nimen osa tai nimi oli liian pitkä.
+.
 
 MessageId=10064
 Severity=Success
@@ -37095,6 +42650,9 @@ A socket operation failed because the destination host was down.
 .
 Language=Japanese
 宛先ホストがダウンしていたため、ソケット操作に失敗しました。
+.
+Language=Finnish
+Vastaketoiminto epäonnistui, koska kohdeisäntä ei ollut toiminnassa.
 .
 
 MessageId=10065
@@ -37116,6 +42674,9 @@ A socket operation was attempted to an unreachable host.
 Language=Japanese
 ソケット操作に失敗しました: 到達不能なホストに対してソケット操作を試行しました。
 .
+Language=Finnish
+Vastaketoimintoa yritettiin isäntään, jota ei tavoiteta.
+.
 
 MessageId=10066
 Severity=Success
@@ -37135,6 +42696,9 @@ Cannot remove a directory that is not empty.
 .
 Language=Japanese
 空ではないディレクトリを削除できません。
+.
+Language=Finnish
+Hakemistoa, joka ei ole tyhjä, ei voi poistaa.
 .
 
 MessageId=10067
@@ -37156,6 +42720,9 @@ A Windows Sockets implementation may have a limit on the number of applications 
 Language=Japanese
 LiberNT ソケットの実装では、同時に使用できるアプリケーションの数に制限がある場合があります。
 .
+Language=Finnish
+Windows Sockets -toteutuksella voi olla raja sitä samanaikaisesti käyttävien sovellusten määrälle.
+.
 
 MessageId=10068
 Severity=Success
@@ -37175,6 +42742,9 @@ Ran out of quota.
 .
 Language=Japanese
 クォータを使い果たしました。
+.
+Language=Finnish
+Kiintiö loppui.
 .
 
 MessageId=10069
@@ -37196,6 +42766,9 @@ Ran out of disk quota.
 Language=Japanese
 ディスククォータを使い果たしました。
 .
+Language=Finnish
+Levykiintiö loppui.
+.
 
 MessageId=10070
 Severity=Success
@@ -37215,6 +42788,9 @@ File handle reference is no longer available.
 .
 Language=Japanese
 ファイル ハンドル参照が使用できなくなりました。
+.
+Language=Finnish
+Tiedostokahvan viittaus ei ole enää käytettävissä.
 .
 
 MessageId=10071
@@ -37236,6 +42812,9 @@ Item is not available locally.
 Language=Japanese
 アイテムはローカルでは使用できません。
 .
+Language=Finnish
+Kohde ei ole käytettävissä paikallisesti.
+.
 
 MessageId=10091
 Severity=Success
@@ -37255,6 +42834,9 @@ WSAStartup cannot function at this time because the underlying system it uses to
 .
 Language=Japanese
 WSAStartup がネットワーク サービスを提供するために使用する基礎となるシステムが現在使用できないため、WSAStartup は現在機能できません。
+.
+Language=Finnish
+WSAStartup ei voi toimia tällä hetkellä, koska sen verkkopalveluihin käyttämä alempi järjestelmä ei ole käytettävissä.
 .
 
 MessageId=10092
@@ -37276,6 +42858,9 @@ The Windows Sockets version requested is not supported.
 Language=Japanese
 要求された LiberNT ソケットのバージョンはサポートされていません。
 .
+Language=Finnish
+Pyydettyä Windows Sockets -versiota ei tueta.
+.
 
 MessageId=10093
 Severity=Success
@@ -37295,6 +42880,9 @@ Either the application has not called WSAStartup, or WSAStartup failed.
 .
 Language=Japanese
 アプリケーションがWSAStartupを呼び出していないか、WSAStartupが失敗しました。
+.
+Language=Finnish
+Sovellus ei ole kutsunut WSAStartup-funktiota, tai WSAStartup epäonnistui.
 .
 
 MessageId=10101
@@ -37316,6 +42904,9 @@ Returned by WSARecv or WSARecvFrom to indicate the remote party has initiated a 
 Language=Japanese
 WSARecvまたはWSARecvFromがリモート パーティがグレースフル シャットダウン シーケンスを開始したことを示すために返します。
 .
+Language=Finnish
+WSARecv- tai WSARecvFrom-funktion palauttama tila, joka ilmaisee etäosapuolen aloittaneen hallitun sulkemisen.
+.
 
 MessageId=10102
 Severity=Success
@@ -37335,6 +42926,9 @@ No more results can be returned by WSALookupServiceNext.
 .
 Language=Japanese
 WSALookupServiceNext によって返される結果はありません。
+.
+Language=Finnish
+WSALookupServiceNext ei voi palauttaa enempää tuloksia.
 .
 
 MessageId=10103
@@ -37356,6 +42950,9 @@ A call to WSALookupServiceEnd was made while this call was still processing. The
 Language=Japanese
 この呼び出しの処理中に WSALookupServiceEnd への呼び出しが行われました。この呼び出しはキャンセルされました。
 .
+Language=Finnish
+WSALookupServiceEnd-funktiota kutsuttiin tämän kutsun ollessa vielä käsiteltävänä. Kutsu on peruutettu.
+.
 
 MessageId=10104
 Severity=Success
@@ -37375,6 +42972,9 @@ The procedure call table is invalid.
 .
 Language=Japanese
 プロシージャ呼び出しテーブルが無効です。
+.
+Language=Finnish
+Proseduurikutsutaulukko on virheellinen.
 .
 
 MessageId=10105
@@ -37396,6 +42996,9 @@ The requested service provider is invalid.
 Language=Japanese
 要求されたサービス プロバイダが無効です。
 .
+Language=Finnish
+Pyydetty palveluntarjoaja on virheellinen.
+.
 
 MessageId=10106
 Severity=Success
@@ -37415,6 +43018,9 @@ The requested service provider could not be loaded or initialized.
 .
 Language=Japanese
 要求されたサービス プロバイダをロードまたは初期化できませんでした。
+.
+Language=Finnish
+Pyydettyä palveluntarjoajaa ei voitu ladata tai alustaa.
 .
 
 MessageId=10107
@@ -37436,6 +43042,9 @@ A system call that should never fail has failed.
 Language=Japanese
 システムコールに失敗しました。
 .
+Language=Finnish
+Järjestelmäkutsu, jonka ei pitäisi koskaan epäonnistua, on epäonnistunut.
+.
 
 MessageId=10108
 Severity=Success
@@ -37455,6 +43064,9 @@ No such service is known. The service cannot be found in the specified name spac
 .
 Language=Japanese
 そのようなサービスはありません。指定された名前空間にサービスが見つかりません。
+.
+Language=Finnish
+Tällaista palvelua ei tunneta. Palvelua ei löydy määritetystä nimitilasta.
 .
 
 MessageId=10109
@@ -37476,6 +43088,9 @@ The specified class was not found.
 Language=Japanese
 指定されたクラスが見つかりません。
 .
+Language=Finnish
+Määritettyä luokkaa ei löytynyt.
+.
 
 MessageId=10110
 Severity=Success
@@ -37495,6 +43110,9 @@ No more results can be returned by WSALookupServiceNext.
 .
 Language=Japanese
 WSALookupServiceNext によって返される結果はありません。
+.
+Language=Finnish
+WSALookupServiceNext ei voi palauttaa enempää tuloksia.
 .
 
 MessageId=10111
@@ -37516,6 +43134,9 @@ A call to WSALookupServiceEnd was made while this call was still processing. The
 Language=Japanese
 この呼び出しの処理中に WSALookupServiceEnd への呼び出しが行われました。この呼び出しはキャンセルされました。
 .
+Language=Finnish
+WSALookupServiceEnd-funktiota kutsuttiin tämän kutsun ollessa vielä käsiteltävänä. Kutsu on peruutettu.
+.
 
 MessageId=10112
 Severity=Success
@@ -37535,6 +43156,9 @@ A database query failed because it was actively refused.
 .
 Language=Japanese
 アクティブに拒否されたため、データベース照会に失敗しました。
+.
+Language=Finnish
+Tietokantakysely epäonnistui, koska se hylättiin.
 .
 
 MessageId=11001
@@ -37556,6 +43180,9 @@ No such host is known.
 Language=Japanese
 そのようなホストは存在しません。
 .
+Language=Finnish
+Tällaista isäntää ei tunneta.
+.
 
 MessageId=11002
 Severity=Success
@@ -37575,6 +43202,9 @@ This is usually a temporary error during hostname resolution and means that the 
 .
 Language=Japanese
 これは通常、ホスト名解決中の一時的なエラーで、ローカルサーバーが権威サーバーからの応答を受信しなかったことを意味します。
+.
+Language=Finnish
+Tämä on yleensä tilapäinen virhe isäntänimen selvityksessä ja tarkoittaa, että paikallinen palvelin ei saanut vastausta määräävältä palvelimelta.
 .
 
 MessageId=11003
@@ -37596,6 +43226,9 @@ A non-recoverable error occurred during a database lookup.
 Language=Japanese
 データベースの検索中に回復不能なエラーが発生しました。
 .
+Language=Finnish
+Tietokantahaussa tapahtui virhe, josta ei voi toipua.
+.
 
 MessageId=11004
 Severity=Success
@@ -37615,6 +43248,9 @@ The requested name is valid, but no data of the requested type was found.
 .
 Language=Japanese
 要求された名前は有効ですが、要求された型のデータが見つかりませんでした。
+.
+Language=Finnish
+Pyydetty nimi on kelvollinen, mutta pyydetyn tyyppisiä tietoja ei löytynyt.
 .
 
 MessageId=11005
@@ -37636,6 +43272,9 @@ At least one reserve has arrived.
 Language=Japanese
 少なくとも1つのリザーブが到着しました。
 .
+Language=Finnish
+Vähintään yksi varaus on saapunut.
+.
 
 MessageId=11006
 Severity=Success
@@ -37655,6 +43294,9 @@ At least one path has arrived.
 .
 Language=Japanese
 少なくとも1つのパスが到着しました。
+.
+Language=Finnish
+Vähintään yksi polku on saapunut.
 .
 
 MessageId=11007
@@ -37676,6 +43318,9 @@ There are no senders.
 Language=Japanese
 送信者がありません。
 .
+Language=Finnish
+Lähettäjiä ei ole.
+.
 
 MessageId=11008
 Severity=Success
@@ -37695,6 +43340,9 @@ There are no receivers.
 .
 Language=Japanese
 受信者がありません。
+.
+Language=Finnish
+Vastaanottajia ei ole.
 .
 
 MessageId=11009
@@ -37716,6 +43364,9 @@ Reserve has been confirmed.
 Language=Japanese
 リザーブが確認されました。
 .
+Language=Finnish
+Varaus on vahvistettu.
+.
 
 MessageId=11010
 Severity=Success
@@ -37735,6 +43386,9 @@ Error due to lack of resources.
 .
 Language=Japanese
 リソース不足によるエラーです。
+.
+Language=Finnish
+Virhe resurssien puutteen vuoksi.
 .
 
 MessageId=11011
@@ -37756,6 +43410,9 @@ Rejected for administrative reasons - bad credentials.
 Language=Japanese
 管理上の理由で拒否されました - 不正な資格情報です。
 .
+Language=Finnish
+Hylätty hallinnollisista syistä - virheelliset tunnistetiedot.
+.
 
 MessageId=11012
 Severity=Success
@@ -37775,6 +43432,9 @@ Unknown or conflicting style.
 .
 Language=Japanese
 不明なスタイルまたは競合するスタイルです。
+.
+Language=Finnish
+Tuntematon tai ristiriitainen tyyli.
 .
 
 MessageId=11013
@@ -37796,6 +43456,9 @@ Problem with some part of the filterspec or providerspecific buffer in general.
 Language=Japanese
 フィルタスペックまたはプロバイダ固有のバッファの一部に問題があります。
 .
+Language=Finnish
+Ongelma suodatinmäärityksen tai palveluntarjoajakohtaisen puskurin jossakin osassa.
+.
 
 MessageId=11014
 Severity=Success
@@ -37815,6 +43478,9 @@ Problem with some part of the flowspec.
 .
 Language=Japanese
 flowpecの一部に問題があります。
+.
+Language=Finnish
+Ongelma virtausmäärityksen jossakin osassa.
 .
 
 MessageId=11015
@@ -37836,6 +43502,9 @@ General QOS error.
 Language=Japanese
 一般的なQOSエラーです。
 .
+Language=Finnish
+Yleinen QOS-virhe.
+.
 
 MessageId=11016
 Severity=Success
@@ -37855,6 +43524,9 @@ An invalid or unrecognized service type was found in the flowspec.
 .
 Language=Japanese
 フロー仕様で無効または認識できないサービスタイプが見つかりました。
+.
+Language=Finnish
+Virtausmäärityksestä löytyi virheellinen tai tuntematon palvelutyyppi.
 .
 
 MessageId=11017
@@ -37876,6 +43548,9 @@ An invalid or inconsistent flowspec was found in the QOS structure.
 Language=Japanese
 QOS構造に無効な、または一貫性のないフロー仕様が見つかりました。
 .
+Language=Finnish
+QOS-rakenteesta löytyi virheellinen tai ristiriitainen virtausmääritys.
+.
 
 MessageId=11018
 Severity=Success
@@ -37895,6 +43570,9 @@ Invalid QOS provider-specific buffer.
 .
 Language=Japanese
 無効なQOSプロバイダ固有バッファです。
+.
+Language=Finnish
+Virheellinen QOS-palveluntarjoajakohtainen puskuri.
 .
 
 MessageId=11019
@@ -37916,6 +43594,9 @@ An invalid QOS filter style was used.
 Language=Japanese
 無効なQOSフィルタ スタイルが使用されました。
 .
+Language=Finnish
+Käytettiin virheellistä QOS-suodatintyyliä.
+.
 
 MessageId=11020
 Severity=Success
@@ -37935,6 +43616,9 @@ An invalid QOS filter type was used.
 .
 Language=Japanese
 無効なQOSフィルタ タイプが使用されました。
+.
+Language=Finnish
+Käytettiin virheellistä QOS-suodatintyyppiä.
 .
 
 MessageId=11021
@@ -37956,6 +43640,9 @@ An incorrect number of QOS FILTERSPECs were specified in the FLOWDESCRIPTOR.
 Language=Japanese
 FLOWDESCRIPTORに不正な数のQOS FILTERSPECが指定されました。
 .
+Language=Finnish
+FLOWDESCRIPTOR-rakenteessa määritettiin väärä määrä QOS FILTERSPEC -määrityksiä.
+.
 
 MessageId=11022
 Severity=Success
@@ -37975,6 +43662,9 @@ An object with an invalid ObjectLength field was specified in the QOS provider-s
 .
 Language=Japanese
 無効なObjectLengthフィールドを持つオブジェクトがQOSプロバイダ固有バッファに指定されました。
+.
+Language=Finnish
+QOS-palveluntarjoajakohtaisessa puskurissa määritettiin objekti, jonka ObjectLength-kenttä on virheellinen.
 .
 
 MessageId=11023
@@ -37996,6 +43686,9 @@ An incorrect number of flow descriptors was specified in the QOS structure.
 Language=Japanese
 QOS構造体に不正な数のフロー記述子が指定されました。
 .
+Language=Finnish
+QOS-rakenteessa määritettiin väärä määrä virtauskuvaajia.
+.
 
 MessageId=11024
 Severity=Success
@@ -38015,6 +43708,9 @@ An unrecognized object was found in the QOS provider-specific buffer.
 .
 Language=Japanese
 QOSプロバイダ固有バッファで認識できないオブジェクトが見つかりました。
+.
+Language=Finnish
+QOS-palveluntarjoajakohtaisesta puskurista löytyi tuntematon objekti.
 .
 
 MessageId=11025
@@ -38036,6 +43732,9 @@ An invalid policy object was found in the QOS provider-specific buffer.
 Language=Japanese
 QOSプロバイダ固有のバッファで無効なポリシーオブジェクトが見つかりました。
 .
+Language=Finnish
+QOS-palveluntarjoajakohtaisesta puskurista löytyi virheellinen käytäntöobjekti.
+.
 
 MessageId=11026
 Severity=Success
@@ -38055,6 +43754,9 @@ An invalid QOS flow descriptor was found in the flow descriptor list.
 .
 Language=Japanese
 フロー記述子リストで無効なQOSフロー記述子が見つかりました。
+.
+Language=Finnish
+Virtauskuvaajaluettelosta löytyi virheellinen QOS-virtauskuvaaja.
 .
 
 MessageId=11027
@@ -38076,6 +43778,9 @@ An invalid or inconsistent flowspec was found in the QOS provider-specific buffe
 Language=Japanese
 QOSプロバイダ固有のバッファに無効な、または一貫性のないフロー仕様が見つかりました。
 .
+Language=Finnish
+QOS-palveluntarjoajakohtaisesta puskurista löytyi virheellinen tai ristiriitainen virtausmääritys.
+.
 
 MessageId=11028
 Severity=Success
@@ -38095,6 +43800,9 @@ An invalid FILTERSPEC was found in the QOS provider-specific buffer.
 .
 Language=Japanese
 QOSプロバイダ固有のバッファで無効なFILTERSPECが見つかりました。
+.
+Language=Finnish
+QOS-palveluntarjoajakohtaisesta puskurista löytyi virheellinen FILTERSPEC.
 .
 
 MessageId=11029
@@ -38116,6 +43824,9 @@ An invalid shape discard mode object was found in the QOS provider-specific buff
 Language=Japanese
 無効な形状破棄モードオブジェクトがQOSプロバイダ固有のバッファで見つかりました。
 .
+Language=Finnish
+QOS-palveluntarjoajakohtaisesta puskurista löytyi virheellinen muotoilun hylkäystilan objekti.
+.
 
 MessageId=11030
 Severity=Success
@@ -38135,6 +43846,9 @@ An invalid shaping rate object was found in the QOS provider-specific buffer.
 .
 Language=Japanese
 無効なシェーピングレートオブジェクトがQOSプロバイダ固有のバッファで見つかりました。
+.
+Language=Finnish
+QOS-palveluntarjoajakohtaisesta puskurista löytyi virheellinen muotoilunopeuden objekti.
 .
 
 MessageId=11031
@@ -38156,6 +43870,9 @@ A reserved policy element was found in the QOS provider-specific buffer.
 Language=Japanese
 QOSプロバイダ固有のバッファで予約されたポリシー要素が見つかりました。
 .
+Language=Finnish
+QOS-palveluntarjoajakohtaisesta puskurista löytyi varattu käytäntöelementti.
+.
 
 MessageId=13000
 Severity=Success
@@ -38175,6 +43892,9 @@ The specified quick mode policy already exists.
 .
 Language=Japanese
 指定されたクイック モード ポリシーは既に存在します。
+.
+Language=Finnish
+Määritetty pikatilan käytäntö on jo olemassa.
 .
 
 MessageId=13001
@@ -38196,6 +43916,9 @@ The specified quick mode policy was not found.
 Language=Japanese
 指定されたクイック モード ポリシーが見つかりません。
 .
+Language=Finnish
+Määritettyä pikatilan käytäntöä ei löytynyt.
+.
 
 MessageId=13002
 Severity=Success
@@ -38215,6 +43938,9 @@ The specified quick mode policy is being used.
 .
 Language=Japanese
 指定されたクイック モード ポリシーが使用されています。
+.
+Language=Finnish
+Määritetty pikatilan käytäntö on käytössä.
 .
 
 MessageId=13003
@@ -38236,6 +43962,9 @@ The specified main mode policy already exists.
 Language=Japanese
 指定されたメイン モード ポリシーは既に存在します。
 .
+Language=Finnish
+Määritetty päätilan käytäntö on jo olemassa.
+.
 
 MessageId=13004
 Severity=Success
@@ -38255,6 +43984,9 @@ The specified main mode policy was not found.
 .
 Language=Japanese
 指定されたメイン モード ポリシーが見つかりません。
+.
+Language=Finnish
+Määritettyä päätilan käytäntöä ei löytynyt.
 .
 
 MessageId=13005
@@ -38276,6 +44008,9 @@ The specified main mode policy is being used.
 Language=Japanese
 指定されたメインモード ポリシーが使用されています。
 .
+Language=Finnish
+Määritetty päätilan käytäntö on käytössä.
+.
 
 MessageId=13006
 Severity=Success
@@ -38295,6 +44030,9 @@ The specified main mode filter already exists.
 .
 Language=Japanese
 指定されたメインモード フィルタは既に存在します。
+.
+Language=Finnish
+Määritetty päätilan suodatin on jo olemassa.
 .
 
 MessageId=13007
@@ -38316,6 +44054,9 @@ The specified main mode filter was not found.
 Language=Japanese
 指定されたメイン モード フィルタが見つかりません。
 .
+Language=Finnish
+Määritettyä päätilan suodatinta ei löytynyt.
+.
 
 MessageId=13008
 Severity=Success
@@ -38335,6 +44076,9 @@ The specified transport mode filter already exists.
 .
 Language=Japanese
 指定されたトランスポートモード フィルタは既に存在します。
+.
+Language=Finnish
+Määritetty siirtotilan suodatin on jo olemassa.
 .
 
 MessageId=13009
@@ -38356,6 +44100,9 @@ The specified transport mode filter does not exist.
 Language=Japanese
 指定されたトランスポートモード フィルタは存在しません。
 .
+Language=Finnish
+Määritettyä siirtotilan suodatinta ei ole olemassa.
+.
 
 MessageId=13010
 Severity=Success
@@ -38375,6 +44122,9 @@ The specified main mode authentication list exists.
 .
 Language=Japanese
 指定されたメインモード認証リストが存在します。
+.
+Language=Finnish
+Määritetty päätilan todennusluettelo on olemassa.
 .
 
 MessageId=13011
@@ -38396,6 +44146,9 @@ The specified main mode authentication list was not found.
 Language=Japanese
 指定されたメインモード認証リストが見つかりません。
 .
+Language=Finnish
+Määritettyä päätilan todennusluetteloa ei löytynyt.
+.
 
 MessageId=13012
 Severity=Success
@@ -38415,6 +44168,9 @@ The specified quick mode policy is being used.
 .
 Language=Japanese
 指定されたメインモード認証リストが使用されています。
+.
+Language=Finnish
+Määritetty pikatilan käytäntö on käytössä.
 .
 
 MessageId=13013
@@ -38436,6 +44192,9 @@ The specified main mode policy was not found.
 Language=Japanese
 指定されたデフォルトのメインモード ポリシーが見つかりません。
 .
+Language=Finnish
+Määritettyä päätilan käytäntöä ei löytynyt.
+.
 
 MessageId=13014
 Severity=Success
@@ -38455,6 +44214,9 @@ The specified quick mode policy was not found.
 .
 Language=Japanese
 指定されたデフォルトのメインモード認証リストが見つかりません。
+.
+Language=Finnish
+Määritettyä pikatilan käytäntöä ei löytynyt.
 .
 
 MessageId=13015
@@ -38476,6 +44238,9 @@ The manifest file contains one or more syntax errors.
 Language=Japanese
 指定されたデフォルトのクイック モード ポリシーが見つかりません。
 .
+Language=Finnish
+Luettelotiedostossa on yksi tai useampi syntaksivirhe.
+.
 
 MessageId=13016
 Severity=Success
@@ -38495,6 +44260,9 @@ The application attempted to activate a disabled activation context.
 .
 Language=Japanese
 指定されたトンネル モード フィルタが存在します。
+.
+Language=Finnish
+Sovellus yritti aktivoida käytöstä poistetun aktivointikontekstin.
 .
 
 MessageId=13017
@@ -38516,6 +44284,9 @@ The requested lookup key was not found in any active activation context.
 Language=Japanese
 指定されたトンネルモード フィルタが見つかりません。
 .
+Language=Finnish
+Pyydettyä hakuavainta ei löytynyt mistään aktiivisesta aktivointikontekstista.
+.
 
 MessageId=13018
 Severity=Success
@@ -38535,6 +44306,9 @@ The Main Mode filter is pending deletion.
 .
 Language=Japanese
 メインモード フィルタは削除待ちです。
+.
+Language=Finnish
+Päätilan suodatin odottaa poistoa.
 .
 
 MessageId=13019
@@ -38556,6 +44330,9 @@ The transport filter is pending deletion.
 Language=Japanese
 トランスポートフィルタは削除待ちです。
 .
+Language=Finnish
+Siirtosuodatin odottaa poistoa.
+.
 
 MessageId=13020
 Severity=Success
@@ -38575,6 +44352,9 @@ The tunnel filter is pending deletion.
 .
 Language=Japanese
 トンネルフィルタが削除待ちです。
+.
+Language=Finnish
+Tunnelisuodatin odottaa poistoa.
 .
 
 MessageId=13021
@@ -38596,6 +44376,9 @@ The Main Mode policy is pending deletion.
 Language=Japanese
 メインモード ポリシーが削除待ちです。
 .
+Language=Finnish
+Päätilan käytäntö odottaa poistoa.
+.
 
 MessageId=13022
 Severity=Success
@@ -38615,6 +44398,9 @@ The Main Mode authentication bundle is pending deletion.
 .
 Language=Japanese
 メインモード認証バンドルが削除待ちです。
+.
+Language=Finnish
+Päätilan todennuspaketti odottaa poistoa.
 .
 
 MessageId=13023
@@ -38636,6 +44422,9 @@ The Quick Mode policy is pending deletion.
 Language=Japanese
 クイック モード ポリシーが削除待ちです。
 .
+Language=Finnish
+Pikatilan käytäntö odottaa poistoa.
+.
 
 MessageId=13024
 Severity=Success
@@ -38655,6 +44444,9 @@ The Main Mode policy was successfully added, but some of the requested offers ar
 .
 Language=Japanese
 メイン モード ポリシーが正常に追加されましたが、要求されたオファーの一部がサポートされていません。
+.
+Language=Finnish
+Päätilan käytäntö lisättiin, mutta osaa pyydetyistä tarjouksista ei tueta.
 .
 
 MessageId=13025
@@ -38676,6 +44468,9 @@ The Quick Mode policy was successfully added, but some of the requested offers a
 Language=Japanese
 クイック モード ポリシーが正常に追加されましたが、要求されたオファーの一部がサポートされていません。
 .
+Language=Finnish
+Pikatilan käytäntö lisättiin, mutta osaa pyydetyistä tarjouksista ei tueta.
+.
 
 MessageId=13801
 Severity=Success
@@ -38695,6 +44490,9 @@ IKE authentication credentials are unacceptable.
 .
 Language=Japanese
 IKE認証資格情報が受け入れられません。
+.
+Language=Finnish
+IKE-todennuksen tunnistetiedot eivät kelpaa.
 .
 
 MessageId=13802
@@ -38716,6 +44514,9 @@ IKE security attributes are unacceptable.
 Language=Japanese
 IKEセキュリティ属性が受け入れられません。
 .
+Language=Finnish
+IKE-suojausmääritteet eivät kelpaa.
+.
 
 MessageId=13803
 Severity=Success
@@ -38735,6 +44536,9 @@ IKE Negotiation in progress.
 .
 Language=Japanese
 IKE ネゴシエーションが進行中です。
+.
+Language=Finnish
+IKE-neuvottelu käynnissä.
 .
 
 MessageId=13804
@@ -38756,6 +44560,9 @@ General processing error.
 Language=Japanese
 一般処理エラーです。
 .
+Language=Finnish
+Yleinen käsittelyvirhe.
+.
 
 MessageId=13805
 Severity=Success
@@ -38775,6 +44582,9 @@ Negotiation timed out.
 .
 Language=Japanese
 ネゴシエーションがタイムアウトしました
+.
+Language=Finnish
+Neuvottelu aikakatkaistiin.
 .
 
 MessageId=13806
@@ -38796,6 +44606,9 @@ IKE failed to find valid machine certificate.
 Language=Japanese
 IKEが有効なマシン証明書を見つけられませんでした。
 .
+Language=Finnish
+IKE ei löytänyt kelvollista tietokonevarmennetta.
+.
 
 MessageId=13807
 Severity=Success
@@ -38815,6 +44628,9 @@ IKE SA deleted by peer before establishment completed.
 .
 Language=Japanese
 確立完了前にピアによってIKE SAが削除されました。
+.
+Language=Finnish
+Vastapuoli poisti IKE SA:n ennen kuin muodostus valmistui.
 .
 
 MessageId=13808
@@ -38836,6 +44652,9 @@ IKE SA deleted before establishment completed.
 Language=Japanese
 確立完了前にIKE SAが削除されました。
 .
+Language=Finnish
+IKE SA poistettiin ennen kuin muodostus valmistui.
+.
 
 MessageId=13809
 Severity=Success
@@ -38855,6 +44674,9 @@ Negotiation request sat in Queue too long.
 .
 Language=Japanese
 ネゴシエーション要求がキューに長すぎます。
+.
+Language=Finnish
+Neuvottelupyyntö oli jonossa liian kauan.
 .
 
 MessageId=13810
@@ -38876,6 +44698,9 @@ Negotiation request sat in Queue too long.
 Language=Japanese
 ネゴシエーションリクエストがキューに長すぎます。
 .
+Language=Finnish
+Neuvottelupyyntö oli jonossa liian kauan.
+.
 
 MessageId=13811
 Severity=Success
@@ -38895,6 +44720,9 @@ Negotiation request sat in Queue too long.
 .
 Language=Japanese
 キューに入れられた交渉要求が長すぎます。
+.
+Language=Finnish
+Neuvottelupyyntö oli jonossa liian kauan.
 .
 
 MessageId=13812
@@ -38916,6 +44744,9 @@ Negotiation request sat in Queue too long.
 Language=Japanese
 キューに入れられた交渉要求が長すぎます。
 .
+Language=Finnish
+Neuvottelupyyntö oli jonossa liian kauan.
+.
 
 MessageId=13813
 Severity=Success
@@ -38935,6 +44766,9 @@ No response from peer.
 .
 Language=Japanese
 相手からの応答がありません。
+.
+Language=Finnish
+Vastapuoli ei vastannut.
 .
 
 MessageId=13814
@@ -38956,6 +44790,9 @@ Negotiation took too long.
 Language=Japanese
 ネゴシエーションに時間がかかりすぎました。
 .
+Language=Finnish
+Neuvottelu kesti liian kauan.
+.
 
 MessageId=13815
 Severity=Success
@@ -38975,6 +44812,9 @@ Negotiation took too long.
 .
 Language=Japanese
 ネゴシエーションに時間がかかりすぎました。
+.
+Language=Finnish
+Neuvottelu kesti liian kauan.
 .
 
 MessageId=13816
@@ -38996,6 +44836,9 @@ Unknown error occurred.
 Language=Japanese
 不明なエラーが発生しました。
 .
+Language=Finnish
+Tapahtui tuntematon virhe.
+.
 
 MessageId=13817
 Severity=Success
@@ -39015,6 +44858,9 @@ Certificate Revocation Check failed.
 .
 Language=Japanese
 証明書の失効チェックに失敗しました。
+.
+Language=Finnish
+Varmenteen kumoamistarkistus epäonnistui.
 .
 
 MessageId=13818
@@ -39036,6 +44882,9 @@ Invalid certificate key usage.
 Language=Japanese
 無効な証明書キーの使用です。
 .
+Language=Finnish
+Virheellinen varmenteen avaimen käyttötapa.
+.
 
 MessageId=13819
 Severity=Success
@@ -39055,6 +44904,9 @@ Invalid certificate type.
 .
 Language=Japanese
 証明書のタイプが無効です。
+.
+Language=Finnish
+Virheellinen varmennetyyppi.
 .
 
 MessageId=13820
@@ -39076,6 +44928,9 @@ No private key associated with machine certificate.
 Language=Japanese
 使用されているマシン証明書に秘密鍵がないため、IKEネゴシエーションに失敗しました。IPsec証明書には秘密鍵が必要です。プライベートキーを持つ証明書への置き換えについては、ネットワークセキュリティ管理者にお問い合わせください。
 .
+Language=Finnish
+Tietokonevarmenteeseen ei liity yksityistä avainta.
+.
 
 MessageId=13822
 Severity=Success
@@ -39095,6 +44950,9 @@ Failure in Diffie-Hellman computation.
 .
 Language=Japanese
 Diffie-Hellmanの計算に失敗しました。
+.
+Language=Finnish
+Virhe Diffie-Hellman-laskennassa.
 .
 
 MessageId=13824
@@ -39116,6 +44974,9 @@ Invalid header.
 Language=Japanese
 無効なヘッダーです。
 .
+Language=Finnish
+Virheellinen otsake.
+.
 
 MessageId=13825
 Severity=Success
@@ -39135,6 +44996,9 @@ No policy configured.
 .
 Language=Japanese
 ポリシーが設定されていません。
+.
+Language=Finnish
+Käytäntöä ei ole määritetty.
 .
 
 MessageId=13826
@@ -39156,6 +45020,9 @@ Failed to verify signature.
 Language=Japanese
 署名の検証に失敗しました。
 .
+Language=Finnish
+Allekirjoituksen vahvistus epäonnistui.
+.
 
 MessageId=13827
 Severity=Success
@@ -39175,6 +45042,9 @@ Failed to authenticate using Kerberos.
 .
 Language=Japanese
 Kerberosを使用した認証に失敗しました。
+.
+Language=Finnish
+Kerberos-todennus epäonnistui.
 .
 
 MessageId=13828
@@ -39196,6 +45066,9 @@ Peer's certificate did not have a public key.
 Language=Japanese
 Peerの証明書に公開鍵がありませんでした。
 .
+Language=Finnish
+Vastapuolen varmenteessa ei ollut julkista avainta.
+.
 
 MessageId=13829
 Severity=Success
@@ -39215,6 +45088,9 @@ Error processing error payload.
 .
 Language=Japanese
 エラーペイロードの処理エラーです。
+.
+Language=Finnish
+Virhe käsiteltäessä virhetietoja.
 .
 
 MessageId=13830
@@ -39236,6 +45112,9 @@ Error processing SA payload.
 Language=Japanese
 SAペイロードの処理エラーです。
 .
+Language=Finnish
+Virhe käsiteltäessä SA-tietoja.
+.
 
 MessageId=13831
 Severity=Success
@@ -39255,6 +45134,9 @@ Error processing Proposal payload.
 .
 Language=Japanese
 Proposalペイロードの処理エラーです。
+.
+Language=Finnish
+Virhe käsiteltäessä ehdotustietoja.
 .
 
 MessageId=13832
@@ -39276,6 +45158,9 @@ Error processing Transform payload.
 Language=Japanese
 Transformペイロードの処理エラーです。
 .
+Language=Finnish
+Virhe käsiteltäessä muunnostietoja.
+.
 
 MessageId=13833
 Severity=Success
@@ -39295,6 +45180,9 @@ Error processing KE payload.
 .
 Language=Japanese
 KE ペイロードの処理エラーです。
+.
+Language=Finnish
+Virhe käsiteltäessä KE-tietoja.
 .
 
 MessageId=13834
@@ -39316,6 +45204,9 @@ Error processing ID payload.
 Language=Japanese
 IDペイロードの処理エラーです。
 .
+Language=Finnish
+Virhe käsiteltäessä tunnistetietoja.
+.
 
 MessageId=13835
 Severity=Success
@@ -39335,6 +45226,9 @@ Error processing Cert payload.
 .
 Language=Japanese
 Cert ペイロードの処理エラーです。
+.
+Language=Finnish
+Virhe käsiteltäessä varmennetietoja.
 .
 
 MessageId=13836
@@ -39356,6 +45250,9 @@ Error processing Certificate Request payload.
 Language=Japanese
 証明書要求ペイロードの処理エラーです。
 .
+Language=Finnish
+Virhe käsiteltäessä varmennepyynnön tietoja.
+.
 
 MessageId=13837
 Severity=Success
@@ -39375,6 +45272,9 @@ Error processing Hash payload.
 .
 Language=Japanese
 ハッシュペイロードの処理エラーです。
+.
+Language=Finnish
+Virhe käsiteltäessä tiivistetietoja.
 .
 
 MessageId=13838
@@ -39396,6 +45296,9 @@ Error processing Signature payload.
 Language=Japanese
 署名ペイロードの処理エラーです。
 .
+Language=Finnish
+Virhe käsiteltäessä allekirjoitustietoja.
+.
 
 MessageId=13839
 Severity=Success
@@ -39415,6 +45318,9 @@ Error processing Nonce payload.
 .
 Language=Japanese
 Nonceペイロードの処理エラーです。
+.
+Language=Finnish
+Virhe käsiteltäessä Nonce-tietoja.
 .
 
 MessageId=13840
@@ -39436,6 +45342,9 @@ Error processing Notify payload.
 Language=Japanese
 通知ペイロードの処理エラーです。
 .
+Language=Finnish
+Virhe käsiteltäessä ilmoitustietoja.
+.
 
 MessageId=13841
 Severity=Success
@@ -39455,6 +45364,9 @@ Error processing Delete Payload.
 .
 Language=Japanese
 削除ペイロードの処理エラーです。
+.
+Language=Finnish
+Virhe käsiteltäessä poistotietoja.
 .
 
 MessageId=13842
@@ -39476,6 +45388,9 @@ Error processing VendorId payload.
 Language=Japanese
 VendorId ペイロードの処理エラーです。
 .
+Language=Finnish
+Virhe käsiteltäessä VendorId-tietoja.
+.
 
 MessageId=13843
 Severity=Success
@@ -39495,6 +45410,9 @@ Invalid payload received.
 .
 Language=Japanese
 無効なペイロードを受信しました。
+.
+Language=Finnish
+Vastaanotettiin virheelliset tiedot.
 .
 
 MessageId=13844
@@ -39516,6 +45434,9 @@ Soft SA loaded.
 Language=Japanese
 ソフトSAをロードしました。
 .
+Language=Finnish
+Pehmeä SA ladattiin.
+.
 
 MessageId=13845
 Severity=Success
@@ -39535,6 +45456,9 @@ Soft SA torn down.
 .
 Language=Japanese
 ソフト SA を破棄しました。
+.
+Language=Finnish
+Pehmeä SA purettiin.
 .
 
 MessageId=13846
@@ -39556,6 +45480,9 @@ Invalid cookie received.
 Language=Japanese
 無効なクッキーを受信しました。
 .
+Language=Finnish
+Vastaanotettiin virheellinen eväste.
+.
 
 MessageId=13847
 Severity=Success
@@ -39575,6 +45502,9 @@ Peer failed to send valid machine certificate.
 .
 Language=Japanese
 ピアが有効なマシン証明書を送信できませんでした。
+.
+Language=Finnish
+Vastapuoli ei lähettänyt kelvollista tietokonevarmennetta.
 .
 
 MessageId=13848
@@ -39596,6 +45526,9 @@ Certification Revocation check of peer's certificate failed.
 Language=Japanese
 ピア証明書の証明書失効チェックに失敗しました。
 .
+Language=Finnish
+Vastapuolen varmenteen kumoamistarkistus epäonnistui.
+.
 
 MessageId=13849
 Severity=Success
@@ -39615,6 +45548,9 @@ New policy invalidated SAs formed with old policy.
 .
 Language=Japanese
 新しいポリシーは古いポリシーで形成されたSAを無効にしました。
+.
+Language=Finnish
+Uusi käytäntö mitätöi vanhalla käytännöllä muodostetut SA:t.
 .
 
 MessageId=13850
@@ -39636,6 +45572,9 @@ There is no available Main Mode IKE policy.
 Language=Japanese
 利用可能なメインモードIKEポリシーがありません。
 .
+Language=Finnish
+Päätilan IKE-käytäntöä ei ole käytettävissä.
+.
 
 MessageId=13851
 Severity=Success
@@ -39655,6 +45594,9 @@ Failed to enabled TCB privilege.
 .
 Language=Japanese
 TCB特権の有効化に失敗しました。
+.
+Language=Finnish
+TCB-oikeuden ottaminen käyttöön epäonnistui.
 .
 
 MessageId=13852
@@ -39676,6 +45618,9 @@ Failed to load SECURITY.DLL.
 Language=Japanese
 SECURITY.DLLのロードに失敗しました。
 .
+Language=Finnish
+SECURITY.DLL-tiedoston lataaminen epäonnistui.
+.
 
 MessageId=13853
 Severity=Success
@@ -39695,6 +45640,9 @@ Failed to obtain security function table dispatch address from SSPI.
 .
 Language=Japanese
 SSPI からセキュリティ関数テーブルのディスパッチアドレスを取得できませんでした。
+.
+Language=Finnish
+Suojausfunktiotaulukon välitysosoitteen hakeminen SSPI:ltä epäonnistui.
 .
 
 MessageId=13854
@@ -39716,6 +45664,9 @@ Failed to query Kerberos package to obtain max token size.
 Language=Japanese
 トークンの最大サイズを取得するための Kerberos パッケージへのクエリに失敗しました。
 .
+Language=Finnish
+Kerberos-paketilta ei saatu tunnussanoman enimmäiskokoa.
+.
 
 MessageId=13855
 Severity=Success
@@ -39735,6 +45686,9 @@ Failed to obtain Kerberos server credentials for ISAKMP/ERROR_IPSEC_IKE service.
 .
 Language=Japanese
 ISAKMP/ERROR_IPSEC_IKEサービスのKerberosサーバー認証情報の取得に失敗しました。Kerberos認証は機能しません。最も考えられる原因は、ドメインメンバーシップがないことです。コンピュータがワークグループのメンバーであれば、これは正常です。
+.
+Language=Finnish
+ISAKMP/ERROR_IPSEC_IKE-palvelun Kerberos-palvelintunnistetietojen hakeminen epäonnistui. Kerberos-todennus ei toimi. Todennäköisin syy on, että tietokone ei ole toimialueen jäsen. Tämä on normaalia, jos tietokone on työryhmän jäsen.
 .
 
 MessageId=13856
@@ -39756,6 +45710,9 @@ Failed to determine SSPI principal name for ISAKMP/ERROR_IPSEC_IKE service (Quer
 Language=Japanese
 ISAKMP/ERROR_IPSEC_IKEサービス (QueryCredentialsAttributes) のSSPIプリンシパル名の決定に失敗しました。
 .
+Language=Finnish
+ISAKMP/ERROR_IPSEC_IKE-palvelun SSPI-päänimen selvittäminen epäonnistui (QueryCredentialsAttributes).
+.
 
 MessageId=13857
 Severity=Success
@@ -39775,6 +45732,9 @@ Failed to obtain new SPI for the inbound SA from IPSec driver. The most common c
 .
 Language=Japanese
 IPsec ドライバから受信 SA の新しい SPI を取得できませんでした。この最も一般的な原因は、ドライバが正しいフィルタを持っていないことです。フィルタを確認するためにポリシーをチェックしてください。
+.
+Language=Finnish
+Saapuvan SA:n uuden SPI:n hakeminen IPSec-ajurilta epäonnistui. Yleisin syy on, että ajurilla ei ole oikeaa suodatinta. Tarkista suodattimet käytännöstäsi.
 .
 
 MessageId=13858
@@ -39796,6 +45756,9 @@ Given filter is invalid.
 Language=Japanese
 指定されたフィルタは無効です。
 .
+Language=Finnish
+Annettu suodatin on virheellinen.
+.
 
 MessageId=13859
 Severity=Success
@@ -39815,6 +45778,9 @@ Memory allocation failed.
 .
 Language=Japanese
 メモリの割り当てに失敗しました。
+.
+Language=Finnish
+Muistin varaus epäonnistui.
 .
 
 MessageId=13860
@@ -39836,6 +45802,9 @@ Failed to add Security Association to IPSec Driver. The most common cause for th
 Language=Japanese
 IPsec Driver へのセキュリティアソシエーションの追加に失敗しました。この問題の最も一般的な原因は、IKEネゴシエーションの完了に時間がかかりすぎた場合です。問題が解決しない場合は、障害が発生しているマシンの負荷を下げてください。
 .
+Language=Finnish
+Suojauskytköksen lisääminen IPSec-ajuriin epäonnistui. Yleisin syy on, että IKE-neuvottelu kesti liian kauan. Jos ongelma jatkuu, vähennä virheellisen koneen kuormitusta.
+.
 
 MessageId=13861
 Severity=Success
@@ -39855,6 +45824,9 @@ Invalid policy.
 .
 Language=Japanese
 無効なポリシーです。
+.
+Language=Finnish
+Virheellinen käytäntö.
 .
 
 MessageId=13862
@@ -39876,6 +45848,9 @@ Invalid DOI.
 Language=Japanese
 無効なDOIです。
 .
+Language=Finnish
+Virheellinen DOI.
+.
 
 MessageId=13863
 Severity=Success
@@ -39895,6 +45870,9 @@ Invalid situation.
 .
 Language=Japanese
 無効な状況です。
+.
+Language=Finnish
+Virheellinen tilanne.
 .
 
 MessageId=13864
@@ -39916,6 +45894,9 @@ Diffie-Hellman failure.
 Language=Japanese
 Diffie-Hellmanの失敗です。
 .
+Language=Finnish
+Diffie-Hellman-virhe.
+.
 
 MessageId=13865
 Severity=Success
@@ -39935,6 +45916,9 @@ Invalid Diffie-Hellman group.
 .
 Language=Japanese
 無効なDiffie-Hellmanグループです。
+.
+Language=Finnish
+Virheellinen Diffie-Hellman-ryhmä.
 .
 
 MessageId=13866
@@ -39956,6 +45940,9 @@ Error encrypting payload.
 Language=Japanese
 ペイロードの暗号化エラーです。
 .
+Language=Finnish
+Virhe salattaessa tietoja.
+.
 
 MessageId=13867
 Severity=Success
@@ -39975,6 +45962,9 @@ Error decrypting payload.
 .
 Language=Japanese
 ペイロードの復号化エラーです。
+.
+Language=Finnish
+Virhe purettaessa tietojen salausta.
 .
 
 MessageId=13868
@@ -39996,6 +45986,9 @@ Policy match error.
 Language=Japanese
 ポリシー一致エラーです。
 .
+Language=Finnish
+Käytännön vastaavuusvirhe.
+.
 
 MessageId=13869
 Severity=Success
@@ -40015,6 +46008,9 @@ Unsupported ID.
 .
 Language=Japanese
 サポートされていないID。
+.
+Language=Finnish
+Tunnusta ei tueta.
 .
 
 MessageId=13870
@@ -40036,6 +46032,9 @@ Hash verification failed.
 Language=Japanese
 ハッシュ検証に失敗しました。
 .
+Language=Finnish
+Tiivisteen vahvistus epäonnistui.
+.
 
 MessageId=13871
 Severity=Success
@@ -40055,6 +46054,9 @@ Invalid hash algorithm.
 .
 Language=Japanese
 無効なハッシュアルゴリズムです。
+.
+Language=Finnish
+Virheellinen tiivistealgoritmi.
 .
 
 MessageId=13872
@@ -40076,6 +46078,9 @@ Invalid hash size.
 Language=Japanese
 無効なハッシュサイズです。
 .
+Language=Finnish
+Virheellinen tiivisteen koko.
+.
 
 MessageId=13873
 Severity=Success
@@ -40095,6 +46100,9 @@ Invalid encryption algorithm.
 .
 Language=Japanese
 無効な暗号化アルゴリズムです。
+.
+Language=Finnish
+Virheellinen salausalgoritmi.
 .
 
 MessageId=13874
@@ -40116,6 +46124,9 @@ Invalid authentication algorithm.
 Language=Japanese
 無効な認証アルゴリズムです。
 .
+Language=Finnish
+Virheellinen todennusalgoritmi.
+.
 
 MessageId=13875
 Severity=Success
@@ -40135,6 +46146,9 @@ Invalid certificate signature.
 .
 Language=Japanese
 無効な証明書署名です。
+.
+Language=Finnish
+Virheellinen varmenteen allekirjoitus.
 .
 
 MessageId=13876
@@ -40156,6 +46170,9 @@ Load failed.
 Language=Japanese
 ロードに失敗しました。
 .
+Language=Finnish
+Lataus epäonnistui.
+.
 
 MessageId=13877
 Severity=Success
@@ -40175,6 +46192,9 @@ Deleted via RPC call.
 .
 Language=Japanese
 RPCコールで削除されました。
+.
+Language=Finnish
+Poistettu RPC-kutsulla.
 .
 
 MessageId=13878
@@ -40196,6 +46216,9 @@ Temporary state created to perform reinit. This is not a real failure.
 Language=Japanese
 再初期化を実行するために一時的な状態が作成されました。これは本当の失敗ではありません。
 .
+Language=Finnish
+Uudelleenalustusta varten luotiin tilapäinen tila. Tämä ei ole todellinen virhe.
+.
 
 MessageId=13879
 Severity=Success
@@ -40215,6 +46238,9 @@ The lifetime value received in the Responder Lifetime Notify is below the Window
 .
 Language=Japanese
 レスポンダライフタイム通知で受信したライフタイム値が、LiberNT 2000で設定されている最小値を下回っています。対向マシンのポリシーを修正してください。
+.
+Language=Finnish
+Responder Lifetime Notify -ilmoituksessa vastaanotettu elinaika on pienempi kuin Windows 2000:ssa määritetty vähimmäisarvo. Korjaa vastapuolen koneen käytäntö.
 .
 
 MessageId=13881
@@ -40236,6 +46262,9 @@ Key length in certificate is too small for configured security requirements.
 Language=Japanese
 証明書の鍵の長さが、構成されたセキュリティ要件に対して小さすぎます。
 .
+Language=Finnish
+Varmenteen avaimen pituus on liian pieni määritettyihin suojausvaatimuksiin.
+.
 
 MessageId=13882
 Severity=Success
@@ -40255,6 +46284,9 @@ Max number of established MM SAs to peer exceeded.
 .
 Language=Japanese
 ピアに対して確立されたMM SAの最大数を超えました。
+.
+Language=Finnish
+Vastapuoleen muodostettujen päätilan SA:iden enimmäismäärä ylittyi.
 .
 
 MessageId=13883
@@ -40276,6 +46308,9 @@ IKE received a policy that disables negotiation.
 Language=Japanese
 IKEはネゴシエーションを無効にするポリシーを受信しました。
 .
+Language=Finnish
+IKE vastaanotti käytännön, joka poistaa neuvottelun käytöstä.
+.
 
 MessageId=13884
 Severity=Success
@@ -40295,6 +46330,9 @@ ERROR_IPSEC_IKE_NEG_STATUS_END
 .
 Language=Japanese
 メインモードのクイックモードの上限に達しました。新しいメインモードが開始されます。
+.
+Language=Finnish
+ERROR_IPSEC_IKE_NEG_STATUS_END
 .
 
 MessageId=14000
@@ -40316,6 +46354,9 @@ The requested section was not present in the activation context.
 Language=Japanese
 アクティブ化コンテキストに要求されたセクションがありません。
 .
+Language=Finnish
+Pyydettyä osaa ei ollut aktivointikontekstissa.
+.
 
 MessageId=14001
 Severity=Success
@@ -40335,6 +46376,9 @@ This application has failed to start because the application configuration is in
 .
 Language=Japanese
 サイドバイサイド構成が正しくないため、アプリケーションの起動に失敗しました。詳細については、アプリケーションのイベントログを参照するか、コマンドラインのsxstrace.exeツールを使用してください。
+.
+Language=Finnish
+Sovellus ei käynnistynyt, koska sovelluksen kokoonpano on virheellinen. Sovelluksen asentaminen uudelleen saattaa korjata ongelman.
 .
 
 MessageId=14002
@@ -40356,6 +46400,9 @@ The application binding data format is invalid.
 Language=Japanese
 アプリケーション バインディング データ形式が無効です。
 .
+Language=Finnish
+Sovelluksen sidostietojen muoto on virheellinen.
+.
 
 MessageId=14003
 Severity=Success
@@ -40375,6 +46422,9 @@ The referenced assembly is not installed on your system.
 .
 Language=Japanese
 参照されたアセンブリがシステムにインストールされていません。
+.
+Language=Finnish
+Viitattua kokoonpanoa ei ole asennettu järjestelmään.
 .
 
 MessageId=14004
@@ -40396,6 +46446,9 @@ The manifest file does not begin with the required tag and format information.
 Language=Japanese
 マニフェスト ファイルが必要なタグおよびフォーマット情報で始まっていません。
 .
+Language=Finnish
+Luettelotiedosto ei ala vaaditulla tunnisteella ja muototiedoilla.
+.
 
 MessageId=14005
 Severity=Success
@@ -40415,6 +46468,9 @@ The manifest file contains one or more syntax errors.
 .
 Language=Japanese
 マニフェスト ファイルに 1 つ以上の構文エラーがあります。
+.
+Language=Finnish
+Luettelotiedostossa on yksi tai useampi syntaksivirhe.
 .
 
 MessageId=14006
@@ -40436,6 +46492,9 @@ The application attempted to activate a disabled activation context.
 Language=Japanese
 アプリケーションが無効なアクティブ化コンテキストをアクティブ化しようとしました。
 .
+Language=Finnish
+Sovellus yritti aktivoida käytöstä poistetun aktivointikontekstin.
+.
 
 MessageId=14007
 Severity=Success
@@ -40455,6 +46514,9 @@ The requested lookup key was not found in any active activation context.
 .
 Language=Japanese
 要求された検索キーがアクティブなアクティブ化コンテキストに見つかりませんでした。
+.
+Language=Finnish
+Pyydettyä hakuavainta ei löytynyt mistään aktiivisesta aktivointikontekstista.
 .
 
 MessageId=14008
@@ -40476,6 +46538,9 @@ A component version required by the application conflicts with another component
 Language=Japanese
 アプリケーションで必要なコンポーネントのバージョンが、すでにアクティブな別のコンポーネントのバージョンと競合しています。
 .
+Language=Finnish
+Sovelluksen vaatima osan versio on ristiriidassa toisen jo aktiivisen osan version kanssa.
+.
 
 MessageId=14009
 Severity=Success
@@ -40495,6 +46560,9 @@ The type requested activation context section does not match the query API used.
 .
 Language=Japanese
 要求されたアクティベーション コンテキスト セクションのタイプが、使用されたクエリ API と一致しません。
+.
+Language=Finnish
+Pyydetyn aktivointikontekstin osan tyyppi ei vastaa käytettyä kyselyrajapintaa.
 .
 
 MessageId=14010
@@ -40516,6 +46584,9 @@ Lack of system resources has required isolated activation to be disabled for the
 Language=Japanese
 システム リソースの不足により、現在の実行スレッドで隔離されたアクティブ化を無効にする必要があります。
 .
+Language=Finnish
+Järjestelmäresurssien puute on vaatinut eristetyn aktivoinnin poistamista käytöstä nykyiseltä suoritussäikeeltä.
+.
 
 MessageId=14011
 Severity=Success
@@ -40535,6 +46606,9 @@ An attempt to set the process default activation context failed because the proc
 .
 Language=Japanese
 プロセスの既定のアクティブ化コンテキストがすでに設定されていたため、プロセスの既定のアクティブ化コンテキストを設定しようとしましたが失敗しました。
+.
+Language=Finnish
+Prosessin oletusaktivointikontekstin asettaminen epäonnistui, koska se oli jo asetettu.
 .
 
 MessageId=14012
@@ -40556,6 +46630,9 @@ The encoding group identifier specified is not recognized.
 Language=Japanese
 指定されたエンコード グループ識別子が認識されません。
 .
+Language=Finnish
+Määritettyä koodausryhmän tunnistetta ei tunnisteta.
+.
 
 MessageId=14013
 Severity=Success
@@ -40575,6 +46652,9 @@ The encoding requested is not recognized.
 .
 Language=Japanese
 要求されたエンコーディングが認識されません。
+.
+Language=Finnish
+Pyydettyä koodausta ei tunnisteta.
 .
 
 MessageId=14014
@@ -40596,6 +46676,9 @@ The manifest contains a reference to an invalid URI.
 Language=Japanese
 マニフェストに無効な URI への参照が含まれています。
 .
+Language=Finnish
+Luettelossa on viittaus virheelliseen URI-osoitteeseen.
+.
 
 MessageId=14015
 Severity=Success
@@ -40615,6 +46698,9 @@ The application manifest contains a reference to a dependent assembly which is n
 .
 Language=Japanese
 アプリケーション マニフェストに、インストールされていない依存アセンブリへの参照が含まれています。
+.
+Language=Finnish
+Sovelluksen luettelossa on viittaus riippuvaan kokoonpanoon, jota ei ole asennettu.
 .
 
 MessageId=14016
@@ -40636,6 +46722,9 @@ The manifest for an assembly used by the application has a reference to a depend
 Language=Japanese
 アプリケーションが使用するアセンブリのマニフェストに、インストールされていない依存アセンブリへの参照があります。
 .
+Language=Finnish
+Sovelluksen käyttämän kokoonpanon luettelossa on viittaus riippuvaan kokoonpanoon, jota ei ole asennettu.
+.
 
 MessageId=14017
 Severity=Success
@@ -40655,6 +46744,9 @@ The manifest contains an attribute for the assembly identity which is not valid.
 .
 Language=Japanese
 マニフェストに有効でないアセンブリ ID の属性が含まれています。
+.
+Language=Finnish
+Luettelossa on kokoonpanon identiteetin määrite, joka ei ole kelvollinen.
 .
 
 MessageId=14018
@@ -40676,6 +46768,9 @@ The manifest is missing the required default namespace specification on the asse
 Language=Japanese
 マニフェストに、アセンブリ要素に必要なデフォルト名前空間指定がありません。
 .
+Language=Finnish
+Luettelon assembly-elementistä puuttuu pakollinen oletusnimitilan määritys.
+.
 
 MessageId=14019
 Severity=Success
@@ -40695,6 +46790,9 @@ The manifest has a default namespace specified on the assembly element but its v
 .
 Language=Japanese
 マニフェストにはアセンブリ要素で指定された既定のネームスペースがありますが、その値は \"urn:schemas-microsoft-com:asm.v1\" ではありません。
+.
+Language=Finnish
+Luettelon assembly-elementissä on määritetty oletusnimitila, mutta sen arvo ei ole \"urn:schemas-microsoft-com:asm.v1\".
 .
 
 MessageId=14020
@@ -40716,6 +46814,9 @@ The private manifest probe has crossed the reparse-point-associated path.
 Language=Japanese
 プローブされたプライベート マニフェストがサポートされていないリパース ポイントを持つパスを横切りました。
 .
+Language=Finnish
+Yksityisen luettelon haku on ylittänyt uudelleenjäsennyskohtaan liittyvän polun.
+.
 
 MessageId=14021
 Severity=Success
@@ -40735,6 +46836,9 @@ Two or more components referenced directly or indirectly by the application mani
 .
 Language=Japanese
 アプリケーション マニフェストによって直接または間接的に参照される 2 つ以上のコンポーネントに、同じ名前のファイルがあります。
+.
+Language=Finnish
+Kaksi tai useampi sovelluksen luettelon suoraan tai epäsuorasti viittaamaa osaa sisältää samannimisiä tiedostoja.
 .
 
 MessageId=14022
@@ -40756,6 +46860,9 @@ Two or more components referenced directly or indirectly by the application mani
 Language=Japanese
 アプリケーション マニフェストによって直接または間接的に参照される2つ以上のコンポーネントに、同じ名前のウィンドウ クラスがあります。
 .
+Language=Finnish
+Kaksi tai useampi sovelluksen luettelon suoraan tai epäsuorasti viittaamaa osaa sisältää samannimisiä ikkunaluokkia.
+.
 
 MessageId=14023
 Severity=Success
@@ -40775,6 +46882,9 @@ Two or more components referenced directly or indirectly by the application mani
 .
 Language=Japanese
 アプリケーション マニフェストによって直接または間接的に参照される2つ以上のコンポーネントに、同じCOMサーバーCLSIDがあります。
+.
+Language=Finnish
+Kaksi tai useampi sovelluksen luettelon suoraan tai epäsuorasti viittaamaa osaa sisältää samat COM-palvelimen CLSID-tunnukset.
 .
 
 MessageId=14024
@@ -40796,6 +46906,9 @@ Two or more components referenced directly or indirectly by the application mani
 Language=Japanese
 アプリケーション マニフェストによって直接または間接的に参照される2つ以上のコンポーネントが、同じCOMインターフェイスIIDのプロキシを持っています。
 .
+Language=Finnish
+Kaksi tai useampi sovelluksen luettelon suoraan tai epäsuorasti viittaamaa osaa sisältää välitysobjekteja samoille COM-liittymien IID-tunnuksille.
+.
 
 MessageId=14025
 Severity=Success
@@ -40815,6 +46928,9 @@ Two or more components referenced directly or indirectly by the application mani
 .
 Language=Japanese
 アプリケーション マニフェストによって直接または間接的に参照される2つ以上のコンポーネントが同じCOMタイプライブラリTLBIDsを持っています。
+.
+Language=Finnish
+Kaksi tai useampi sovelluksen luettelon suoraan tai epäsuorasti viittaamaa osaa sisältää samat COM-tyyppikirjastojen TLBID-tunnukset.
 .
 
 MessageId=14026
@@ -40836,6 +46952,9 @@ Two or more components referenced directly or indirectly by the application mani
 Language=Japanese
 アプリケーション マニフェストによって直接または間接的に参照される2つ以上のコンポーネントが同じ COM ProgIDs を持っています。
 .
+Language=Finnish
+Kaksi tai useampi sovelluksen luettelon suoraan tai epäsuorasti viittaamaa osaa sisältää samat COM ProgID -tunnukset.
+.
 
 MessageId=14027
 Severity=Success
@@ -40855,6 +46974,9 @@ Two or more components referenced directly or indirectly by the application mani
 .
 Language=Japanese
 アプリケーション マニフェストによって直接または間接的に参照される2つ以上のコンポーネントは、許可されていない同じコンポーネントの異なるバージョンです。
+.
+Language=Finnish
+Kaksi tai useampi sovelluksen luettelon suoraan tai epäsuorasti viittaamaa osaa on saman osan eri versioita, mikä ei ole sallittua.
 .
 
 MessageId=14028
@@ -40876,6 +46998,9 @@ A component's file does not match the verification information present in the co
 Language=Japanese
 コンポーネントのファイルがコンポーネント マニフェストに存在する検証情報と一致しません。
 .
+Language=Finnish
+Osan tiedosto ei vastaa osan luettelossa olevia tarkistustietoja.
+.
 
 MessageId=14029
 Severity=Success
@@ -40895,6 +47020,9 @@ The policy manifest contains one or more syntax errors.
 .
 Language=Japanese
 ポリシー マニフェストに1つ以上の構文エラーがあります。
+.
+Language=Finnish
+Käytäntöluettelossa on yksi tai useampi syntaksivirhe.
 .
 
 MessageId=14030
@@ -40916,6 +47044,9 @@ Manifest Parse Error : A string literal was expected, but no opening quote chara
 Language=Japanese
 マニフェスト解析エラー: 文字列リテラルが期待されましたが、開始引用符が見つかりませんでした。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Odotettiin merkkijonoliteraalia, mutta alkulainausmerkkiä ei löytynyt.
+.
 
 MessageId=14031
 Severity=Success
@@ -40935,6 +47066,9 @@ Manifest Parse Error : Incorrect syntax was used in a comment.
 .
 Language=Japanese
 マニフェスト解析エラー : コメントに不正な構文が使用されました。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Kommentissa käytettiin väärää syntaksia.
 .
 
 MessageId=14032
@@ -40956,6 +47090,9 @@ Manifest Parse Error : A name was started with an invalid character.
 Language=Japanese
 マニフェスト解析エラー: 名前が無効な文字で始まっています。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Nimi alkoi virheellisellä merkillä.
+.
 
 MessageId=14033
 Severity=Success
@@ -40975,6 +47112,9 @@ Manifest Parse Error : A name contained an invalid character.
 .
 Language=Japanese
 マニフェスト解析エラー: 名前に無効な文字が含まれています。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Nimessä oli virheellinen merkki.
 .
 
 MessageId=14034
@@ -40996,6 +47136,9 @@ Manifest Parse Error : A string literal contained an invalid character.
 Language=Japanese
 マニフェスト解析エラー: 文字列リテラルに無効な文字が含まれていました。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Merkkijonoliteraalissa oli virheellinen merkki.
+.
 
 MessageId=14035
 Severity=Success
@@ -41015,6 +47158,9 @@ Manifest Parse Error : Invalid syntax for an XML declaration.
 .
 Language=Japanese
 マニフェスト解析エラー : xml 宣言の構文が無効です。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : XML-esittelyn syntaksi on virheellinen.
 .
 
 MessageId=14036
@@ -41036,6 +47182,9 @@ Manifest Parse Error : An invalid character was found in text content.
 Language=Japanese
 マニフェスト解析エラー: テキスト内容に無効な文字が見つかりました。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Tekstisisällöstä löytyi virheellinen merkki.
+.
 
 MessageId=14037
 Severity=Success
@@ -41055,6 +47204,9 @@ Manifest Parse Error : Required white space was missing.
 .
 Language=Japanese
 マニフェスト解析エラー: 必要な空白文字が見つかりませんでした。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Pakollinen tyhjä tila puuttui.
 .
 
 MessageId=14038
@@ -41076,6 +47228,9 @@ Manifest Parse Error : The character '>' was expected.
 Language=Japanese
 マニフェスト解析エラーです: 文字が期待されました。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Odotettiin merkkiä '>'.
+.
 
 MessageId=14039
 Severity=Success
@@ -41095,6 +47250,9 @@ Manifest Parse Error : A semi colon character was expected.
 .
 Language=Japanese
 マニフェスト解析エラーです: セミコロン文字が予期されました。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Odotettiin puolipistettä.
 .
 
 MessageId=14040
@@ -41116,6 +47274,9 @@ Manifest Parse Error : Unbalanced parentheses.
 Language=Japanese
 マニフェスト解析エラー: カッコのバランスが取れていません。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Sulkeet eivät ole tasapainossa.
+.
 
 MessageId=14041
 Severity=Success
@@ -41135,6 +47296,9 @@ Manifest Parse Error : Internal error.
 .
 Language=Japanese
 マニフェスト解析エラー : 内部エラーです。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Sisäinen virhe.
 .
 
 MessageId=14042
@@ -41156,6 +47320,9 @@ Manifest Parse Error : White space is not allowed at this location.
 Language=Japanese
 マニフェスト解析エラー: この場所では空白文字は使用できません。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Tyhjä tila ei ole sallittu tässä kohdassa.
+.
 
 MessageId=14043
 Severity=Success
@@ -41175,6 +47342,9 @@ Manifest Parse Error : End of file reached in invalid state for current encoding
 .
 Language=Japanese
 マニフェスト解析エラー : 現在のエンコーディングでは無効な状態でファイルの最後に到達しました。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Tiedoston loppu saavutettiin nykyiselle koodaukselle virheellisessä tilassa.
 .
 
 MessageId=14044
@@ -41196,6 +47366,9 @@ Manifest Parse Error : Missing parenthesis.
 Language=Japanese
 マニフェスト解析エラー : カッコがありません。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Sulje puuttuu.
+.
 
 MessageId=14045
 Severity=Success
@@ -41215,6 +47388,9 @@ Manifest Parse Error : A single or double closing quote character (\' or \") is 
 .
 Language=Japanese
 マニフェスト 解析エラー : カッコがありません。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Yksinkertainen tai kaksinkertainen loppulainausmerkki (\' tai \") puuttuu.
 .
 
 MessageId=14046
@@ -41236,6 +47412,9 @@ Manifest Parse Error : Multiple colons are not allowed in a name.
 Language=Japanese
 マニフェスト解析エラー : 名前に複数のコロンは使用できません。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Nimessä ei saa olla useita kaksoispisteitä.
+.
 
 MessageId=14047
 Severity=Success
@@ -41255,6 +47434,9 @@ Manifest Parse Error : Invalid character for decimal digit.
 .
 Language=Japanese
 マニフェスト解析エラー : 小数桁に無効な文字があります。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Virheellinen merkki desimaalinumerona.
 .
 
 MessageId=14048
@@ -41276,6 +47458,9 @@ Manifest Parse Error : Invalid character for hexadecimal digit.
 Language=Japanese
 マニフェスト解析エラー : 16進数に無効な文字があります。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Virheellinen merkki heksadesimaalinumerona.
+.
 
 MessageId=14049
 Severity=Success
@@ -41295,6 +47480,9 @@ Manifest Parse Error : Invalid Unicode character value for this platform.
 .
 Language=Japanese
 マニフェスト解析エラー : このプラットフォームのユニコード文字値が無効です。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Virheellinen Unicode-merkin arvo tälle ympäristölle.
 .
 
 MessageId=14050
@@ -41316,6 +47504,9 @@ Manifest Parse Error : Expecting white space or '?'.
 Language=Japanese
 マニフェスト解析エラー: 空白または？を予期しています。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Odotettiin tyhjää tilaa tai merkkiä '?'.
+.
 
 MessageId=14051
 Severity=Success
@@ -41335,6 +47526,9 @@ Manifest Parse Error : End tag was not expected at this location.
 .
 Language=Japanese
 マニフェスト解析エラー: 終了タグはこの場所では期待されませんでした。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Lopputunnistetta ei odotettu tässä kohdassa.
 .
 
 MessageId=14052
@@ -41356,6 +47550,9 @@ Manifest Parse Error : The following tags were not closed: %1.
 Language=Japanese
 マニフェスト 解析エラー: 次のタグが閉じられていません: %1
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Seuraavia tunnisteita ei suljettu: %1.
+.
 
 MessageId=14053
 Severity=Success
@@ -41375,6 +47572,9 @@ Manifest Parse Error : Duplicate attribute.
 .
 Language=Japanese
 マニフェスト解析エラー: 属性が重複しています。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Kaksinkertainen määrite.
 .
 
 MessageId=14054
@@ -41396,6 +47596,9 @@ Manifest Parse Error : Only one top level element is allowed in an XML document.
 Language=Japanese
 マニフェスト解析エラー: XML ドキュメントで許可されるトップレベル要素は 1 つだけです。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : XML-tiedostossa sallitaan vain yksi ylimmän tason elementti.
+.
 
 MessageId=14055
 Severity=Success
@@ -41415,6 +47618,9 @@ Manifest Parse Error : Invalid at the top level of the document.
 .
 Language=Japanese
 マニフェスト解析エラー : ドキュメントのトップ レベルが無効です。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Virheellinen tiedoston ylimmällä tasolla.
 .
 
 MessageId=14056
@@ -41436,6 +47642,9 @@ Manifest Parse Error : Invalid XML declaration.
 Language=Japanese
 マニフェスト解析エラー : 無効な xml 宣言です。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Virheellinen XML-esittely.
+.
 
 MessageId=14057
 Severity=Success
@@ -41455,6 +47664,9 @@ Manifest Parse Error : XML document must have a top level element.
 .
 Language=Japanese
 マニフェスト解析エラー: XML ドキュメントにはトップレベル要素が必要です。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : XML-tiedostossa on oltava ylimmän tason elementti.
 .
 
 MessageId=14058
@@ -41476,6 +47688,9 @@ Manifest Parse Error : Unexpected end of file.
 Language=Japanese
 マニフェスト解析エラー : 予期しないファイルの終了です。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Odottamaton tiedoston loppu.
+.
 
 MessageId=14059
 Severity=Success
@@ -41495,6 +47710,9 @@ Manifest Parse Error : Parameter entities cannot be used inside markup declarati
 .
 Language=Japanese
 マニフェスト解析エラー: パラメータ エンティティは内部サブセットのマークアップ宣言内では使用できません。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Parametrientiteettejä ei voi käyttää sisäisen alijoukon merkintäesittelyissä.
 .
 
 MessageId=14060
@@ -41516,6 +47734,9 @@ Manifest Parse Error : Element was not closed.
 Language=Japanese
 マニフェスト解析エラー: 要素が閉じられていません。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Elementtiä ei suljettu.
+.
 
 MessageId=14061
 Severity=Success
@@ -41535,6 +47756,9 @@ Manifest Parse Error : End element was missing the character '>'.
 .
 Language=Japanese
 マニフェスト解析エラー: End要素に文字がありません。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Loppuelementistä puuttui merkki '>'.
 .
 
 MessageId=14062
@@ -41556,6 +47780,9 @@ Manifest Parse Error : A string literal was not closed.
 Language=Japanese
 マニフェスト解析エラー: 文字列リテラルが閉じられていません。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Merkkijonoliteraalia ei suljettu.
+.
 
 MessageId=14063
 Severity=Success
@@ -41575,6 +47802,9 @@ Manifest Parse Error : A comment was not closed.
 .
 Language=Japanese
 マニフェスト解析エラー: コメントが閉じられていません。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Kommenttia ei suljettu.
 .
 
 MessageId=14064
@@ -41596,6 +47826,9 @@ Manifest Parse Error : A declaration was not closed.
 Language=Japanese
 マニフェスト 解析エラー: 宣言が閉じられていません。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Esittelyä ei suljettu.
+.
 
 MessageId=14065
 Severity=Success
@@ -41615,6 +47848,9 @@ Manifest Parse Error : A CDATA section was not closed.
 .
 Language=Japanese
 マニフェスト解析エラー: CDATA セクションが閉じられていません。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : CDATA-osaa ei suljettu.
 .
 
 MessageId=14066
@@ -41636,6 +47872,9 @@ Manifest Parse Error : The namespace prefix is not allowed to start with the res
 Language=Japanese
 マニフェスト解析エラー: 名前空間接頭辞を予約文字列で開始することはできません。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Nimitilan etuliite ei saa alkaa varatulla merkkijonolla \"xml\".
+.
 
 MessageId=14067
 Severity=Success
@@ -41655,6 +47894,9 @@ Manifest Parse Error : System does not support the specified encoding.
 .
 Language=Japanese
 マニフェスト解析エラー : システムが指定されたエンコードをサポートしていません。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Järjestelmä ei tue määritettyä koodausta.
 .
 
 MessageId=14068
@@ -41676,6 +47918,9 @@ Manifest Parse Error : Switch from current encoding to specified encoding not su
 Language=Japanese
 マニフェスト解析エラー : 現在のエンコーディングから指定されたエンコーディングへの切り替えがサポートされていません。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Vaihtoa nykyisestä koodauksesta määritettyyn koodaukseen ei tueta.
+.
 
 MessageId=14069
 Severity=Success
@@ -41695,6 +47940,9 @@ Manifest Parse Error : The name 'xml' is reserved and must be lower case.
 .
 Language=Japanese
 マニフェスト解析エラーです: 名前'xml'は予約されているため、小文字にする必要があります。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Nimi 'xml' on varattu, ja sen on oltava pienillä kirjaimilla.
 .
 
 MessageId=14070
@@ -41716,6 +47964,9 @@ Manifest Parse Error : The standalone attribute must have the value 'yes' or 'no
 Language=Japanese
 マニフェスト解析エラー : スタンドアロン属性は、値 'yes'または 'no'が必要です。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : standalone-määritteen arvon on oltava 'yes' tai 'no'.
+.
 
 MessageId=14071
 Severity=Success
@@ -41735,6 +47986,9 @@ Manifest Parse Error : The standalone attribute cannot be used in external entit
 .
 Language=Japanese
 マニフェスト解析エラー : スタンドアロン属性は外部エンティティでは使用できません。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : standalone-määritettä ei voi käyttää ulkoisissa entiteeteissä.
 .
 
 MessageId=14072
@@ -41756,6 +48010,9 @@ Manifest Parse Error : Invalid version number.
 Language=Japanese
 マニフェスト解析エラー : 無効なバージョン番号です。
 .
+Language=Finnish
+Luettelon jäsennysvirhe : Virheellinen versionumero.
+.
 
 MessageId=14073
 Severity=Success
@@ -41775,6 +48032,9 @@ Manifest Parse Error : Missing equals sign between attribute and attribute value
 .
 Language=Japanese
 マニフェスト解析エラー: 属性と属性値の間に等号がありません。
+.
+Language=Finnish
+Luettelon jäsennysvirhe : Määritteen ja määritteen arvon välistä puuttuu yhtäsuuruusmerkki.
 .
 
 MessageId=14074
@@ -41796,6 +48056,9 @@ Assembly Protection Error: Unable to recover the specified assembly.
 Language=Japanese
 アセンブリ保護エラー : 指定されたアセンブリを回復できません。
 .
+Language=Finnish
+Kokoonpanon suojausvirhe: Määritettyä kokoonpanoa ei voi palauttaa.
+.
 
 MessageId=14075
 Severity=Success
@@ -41815,6 +48078,9 @@ Assembly Protection Error: The public key for an assembly was too short to be al
 .
 Language=Japanese
 アセンブリ保護エラー : アセンブリの公開キーが短すぎて許可されませんでした。
+.
+Language=Finnish
+Kokoonpanon suojausvirhe: Kokoonpanon julkinen avain oli liian lyhyt sallittavaksi.
 .
 
 MessageId=14076
@@ -41836,6 +48102,9 @@ Assembly Protection Error: The catalog for an assembly is not valid, or does not
 Language=Japanese
 アセンブリ保護エラー: アセンブリのカタログが有効でないか、アセンブリのマニフェストと一致しません。
 .
+Language=Finnish
+Kokoonpanon suojausvirhe: Kokoonpanon luettelo ei ole kelvollinen tai ei vastaa kokoonpanon luettelotiedostoa.
+.
 
 MessageId=14077
 Severity=Success
@@ -41855,6 +48124,9 @@ An HRESULT could not be translated to a corresponding Win32 error code.
 .
 Language=Japanese
 HRESULT を対応する Win32 エラー コードに変換できませんでした。
+.
+Language=Finnish
+HRESULT-arvoa ei voitu muuntaa vastaavaksi Win32-virhekoodiksi.
 .
 
 MessageId=14078
@@ -41876,6 +48148,9 @@ Assembly Protection Error: The catalog for an assembly is missing.
 Language=Japanese
 アセンブリ保護エラー: アセンブリのカタログがありません。
 .
+Language=Finnish
+Kokoonpanon suojausvirhe: Kokoonpanon luettelo puuttuu.
+.
 
 MessageId=14079
 Severity=Success
@@ -41895,6 +48170,9 @@ The supplied assembly identity is missing one or more attributes which must be p
 .
 Language=Japanese
 指定されたアセンブリ ID に、このコンテキストに存在する必要がある属性が 1 つ以上ありません。
+.
+Language=Finnish
+Annetusta kokoonpanon identiteetistä puuttuu yksi tai useampi määrite, jonka on oltava tässä yhteydessä.
 .
 
 MessageId=14080
@@ -41916,6 +48194,9 @@ The supplied assembly identity has one or more attribute names that contain char
 Language=Japanese
 指定されたアセンブリ ID には、XML 名で許可されていない文字を含む属性名が 1 つ以上あります。
 .
+Language=Finnish
+Annetun kokoonpanon identiteetin yhden tai useamman määritteen nimessä on merkkejä, jotka eivät ole sallittuja XML-nimissä.
+.
 
 MessageId=14081
 Severity=Success
@@ -41935,6 +48216,9 @@ The referenced assembly could not be found.
 .
 Language=Japanese
 参照されたアセンブリが見つかりません。
+.
+Language=Finnish
+Viitattua kokoonpanoa ei löytynyt.
 .
 
 MessageId=14082
@@ -41956,6 +48240,9 @@ The activation context activation stack for the running thread of execution is c
 Language=Japanese
 実行スレッドのアクティブ化コンテキストのアクティブ化スタックが壊れています。
 .
+Language=Finnish
+Käynnissä olevan suoritussäikeen aktivointikontekstin aktivointipino on vioittunut.
+.
 
 MessageId=14083
 Severity=Success
@@ -41975,6 +48262,9 @@ The application isolation metadata for this process or thread has become corrupt
 .
 Language=Japanese
 このプロセスまたはスレッドのアプリケーション分離メタデータが破損しています。
+.
+Language=Finnish
+Tämän prosessin tai säikeen sovelluseristyksen metatiedot ovat vioittuneet.
 .
 
 MessageId=14084
@@ -41996,6 +48286,9 @@ The activation context being deactivated is not the most recently activated one.
 Language=Japanese
 アクティブ化解除されるアクティブ化コンテキストは、最近アクティブ化されたものではありません。
 .
+Language=Finnish
+Deaktivoitava aktivointikonteksti ei ole viimeksi aktivoitu.
+.
 
 MessageId=14085
 Severity=Success
@@ -42015,6 +48308,9 @@ The activation context being deactivated is not active for the current thread of
 .
 Language=Japanese
 アクティブ化解除されたアクティブ化コンテキストは、現在の実行スレッドに対してアクティブではありません。
+.
+Language=Finnish
+Deaktivoitava aktivointikonteksti ei ole aktiivinen nykyisessä suoritussäikeessä.
 .
 
 MessageId=14086
@@ -42036,6 +48332,9 @@ The activation context being deactivated has already been deactivated.
 Language=Japanese
 アクティブ化解除されるアクティブ化コンテキストは既にアクティブ化解除されています。
 .
+Language=Finnish
+Deaktivoitava aktivointikonteksti on jo deaktivoitu.
+.
 
 MessageId=14087
 Severity=Success
@@ -42055,6 +48354,9 @@ A component used by the isolation facility has requested to terminate the proces
 .
 Language=Japanese
 分離機能で使用されているコンポーネントがプロセスの終了を要求しました。
+.
+Language=Finnish
+Eristysominaisuuden käyttämä osa on pyytänyt prosessin lopettamista.
 .
 
 MessageId=14088
@@ -42076,6 +48378,9 @@ A kernel mode component is releasing a reference on an activation context.
 Language=Japanese
 カーネルモードのコンポーネントがアクティブ化コンテキストの参照を解放しています。
 .
+Language=Finnish
+Ydintilan osa vapauttaa viittauksen aktivointikontekstiin.
+.
 
 MessageId=14089
 Severity=Success
@@ -42095,6 +48400,9 @@ The activation context of system default assembly could not be generated.
 .
 Language=Japanese
 システム デフォルト アセンブリのアクティブ化コンテキストを生成できませんでした。
+.
+Language=Finnish
+Järjestelmän oletuskokoonpanon aktivointikontekstia ei voitu muodostaa.
 .
 
 MessageId=14090
@@ -42116,6 +48424,9 @@ The value of an attribute in an identity is not within the legal range.
 Language=Japanese
 ID の属性の値が正当な範囲内にありません。
 .
+Language=Finnish
+Identiteetin määritteen arvo ei ole sallitulla alueella.
+.
 
 MessageId=14091
 Severity=Success
@@ -42135,6 +48446,9 @@ The name of an attribute in an identity is not within the legal range.
 .
 Language=Japanese
 ID の属性名が有効な範囲内にありません。
+.
+Language=Finnish
+Identiteetin määritteen nimi ei ole sallitulla alueella.
 .
 
 MessageId=14092
@@ -42156,6 +48470,9 @@ An identity contains two definitions for the same attribute.
 Language=Japanese
 ID に同じ属性の定義が 2 つ含まれています。
 .
+Language=Finnish
+Identiteetissä on kaksi määritystä samalle määritteelle.
+.
 
 MessageId=14093
 Severity=Success
@@ -42175,6 +48492,9 @@ The identity string is malformed. This may be due to a trailing comma, more than
 .
 Language=Japanese
 ID 文字列が不正です。これは、末尾のカンマ、2つ以上の名前のない属性、属性名の欠落、または属性値の欠落が原因です。
+.
+Language=Finnish
+Identiteetin merkkijono on väärin muodostettu. Syy voi olla loppupilkku, yli kaksi nimetöntä määritettä, puuttuva määritteen nimi tai puuttuva määritteen arvo.
 .
 
 MessageId=15000
@@ -42196,6 +48516,9 @@ The specified channel path is invalid. See extended error info for more details.
 Language=Japanese
 指定されたチャンネル・パスが無効です。詳細は拡張エラー情報を参照してください。
 .
+Language=Finnish
+Määritetty kanavapolku on virheellinen. Lisätietoja on laajennetuissa virhetiedoissa.
+.
 
 MessageId=15001
 Severity=Success
@@ -42215,6 +48538,9 @@ The specified query is invalid. See extended error info for more details.
 .
 Language=Japanese
 指定されたクエリが無効です。詳細は拡張エラー情報を参照してください。
+.
+Language=Finnish
+Määritetty kysely on virheellinen. Lisätietoja on laajennetuissa virhetiedoissa.
 .
 
 MessageId=15002
@@ -42236,6 +48562,9 @@ The publisher did indicate they have a manifest/resource but a manifest/resource
 Language=Japanese
 パブリッシャはマニフェスト／リソースがあることを示したが、マニフェスト／リソースは見つかりませんでした。
 .
+Language=Finnish
+Julkaisija ilmoitti, että sillä on luettelo tai resurssi, mutta luetteloa tai resurssia ei löytynyt.
+.
 
 MessageId=15003
 Severity=Success
@@ -42255,6 +48584,9 @@ The publisher does not have a manifest and is performing an operation which requ
 .
 Language=Japanese
 パブリッシャはマニフェストを持っておらず、マニフェストを持っていることを要求する操作を行っています。
+.
+Language=Finnish
+Julkaisijalla ei ole luetteloa, ja se suorittaa toimintoa, joka edellyttää luetteloa.
 .
 
 MessageId=15004
@@ -42276,6 +48608,9 @@ There is no registered template for specified event id.
 Language=Japanese
 指定されたイベントIDに対応するテンプレートが登録されていません。
 .
+Language=Finnish
+Määritetylle tapahtumatunnukselle ei ole rekisteröityä mallia.
+.
 
 MessageId=15005
 Severity=Success
@@ -42295,6 +48630,9 @@ The specified event was declared in the manifest to go a different channel than 
 .
 Language=Japanese
 パブリッシャによって発生されたイベント データは、パブリッシャのマニフェスト内のイベント テンプレート定義と互換性がありません。
+.
+Language=Finnish
+Määritetty tapahtuma esiteltiin luettelossa menemään eri kanavalle kuin se, johon tämän julkaisijan kahva on sidottu.
 .
 
 MessageId=15006
@@ -42316,6 +48654,9 @@ The type of a specified substitution value does not match the type expected from
 Language=Japanese
 指定された置換値の型が、テンプレート定義から期待される型と一致しません。
 .
+Language=Finnish
+Määritetyn korvausarvon tyyppi ei vastaa mallin määrityksen odottamaa tyyppiä.
+.
 
 MessageId=15007
 Severity=Success
@@ -42335,6 +48676,9 @@ The number of specified substitution values does not match the number expected f
 .
 Language=Japanese
 指定された置換値の数が、テンプレート定義から予想される数と一致しません。
+.
+Language=Finnish
+Määritettyjen korvausarvojen määrä ei vastaa mallin määrityksen odottamaa määrää.
 .
 
 MessageId=15008
@@ -42356,6 +48700,9 @@ The specified channel could not be found. Check channel configuration.
 Language=Japanese
 指定されたチャネルが見つからない。チャンネル構成を確認してください。
 .
+Language=Finnish
+Määritettyä kanavaa ei löytynyt. Tarkista kanavan määritykset.
+.
 
 MessageId=15009
 Severity=Success
@@ -42375,6 +48722,9 @@ The specified xml text was not well-formed. See Extended Error for more details.
 .
 Language=Japanese
 指定されたxmlテキストは整形式ではありませんでした。詳細は拡張エラーを参照してください。
+.
+Language=Finnish
+Määritetty XML-teksti ei ollut oikein muodostettu. Lisätietoja on laajennetuissa virhetiedoissa.
 .
 
 MessageId=15010
@@ -42396,6 +48746,9 @@ The specified channel path selects more than one instance of a channel. The oper
 Language=Japanese
 指定されたチャネルパスが、複数のチャネルのインスタンスを選択する。この操作では、1 つのチャネルのみが選択される必要があります。1つのインスタンスのみを選択するために、チャネルパスを version / publicKeyToken にスコープする必要があるかもしれません。
 .
+Language=Finnish
+Määritetty kanavapolku valitsee useamman kuin yhden kanavan esiintymän. Toiminto edellyttää, että vain yksi kanava valitaan. Kanavapolku on ehkä rajattava versioon tai publicKeyToken-arvoon, jotta vain yksi esiintymä valitaan.
+.
 
 MessageId=0x4001
 Severity=Warning
@@ -42415,6 +48768,9 @@ Not implemented
 .
 Language=Japanese
 Not implemented
+.
+Language=Finnish
+Ei toteutettu
 .
 
 MessageId=0x4004
@@ -42436,6 +48792,9 @@ Operation aborted
 Language=Japanese
 Operation aborted
 .
+Language=Finnish
+Toiminto keskeytettiin
+.
 
 MessageId=0x4005
 Severity=Warning
@@ -42455,6 +48814,9 @@ Unspecified error
 .
 Language=Japanese
 Unspecified error
+.
+Language=Finnish
+Määrittämätön virhe
 .
 
 MessageId=0xFFFF
@@ -42476,6 +48838,9 @@ Catastrophic failure
 Language=Japanese
 Catastrophic failure
 .
+Language=Finnish
+Vakava virhe
+.
 
 MessageId=0x000E
 Severity=Warning
@@ -42495,6 +48860,9 @@ Out of memory
 .
 Language=Japanese
 この操作を完了するのに十分なメモリ リソースがありません。
+.
+Language=Finnish
+Muisti loppui
 .
 
 MessageId=0x0057
@@ -42516,6 +48884,9 @@ One or more arguments are invalid
 Language=Japanese
 パラメータが不正です。
 .
+Language=Finnish
+Yksi tai useampi argumentti on virheellinen
+.
 
 MessageId=0x0006
 Severity=Warning
@@ -42536,6 +48907,9 @@ Invalid handle
 Language=Japanese
 ハンドルが無効です。
 .
+Language=Finnish
+Virheellinen kahva
+.
 
 MessageId=0x0005
 Severity=Warning
@@ -42555,6 +48929,9 @@ General access denied error
 .
 Language=Japanese
 一般的なアクセス拒否エラーです。
+.
+Language=Finnish
+Yleinen käyttö estetty -virhe
 .
 
 
@@ -42577,6 +48954,9 @@ Invalid OLEVERB structure
 Language=Japanese
 無効な OLEVERB 構造体です。
 .
+Language=Finnish
+Virheellinen OLEVERB-rakenne
+.
 
 MessageId=0x0001
 Severity=Warning
@@ -42598,6 +48978,9 @@ Language=Japanese
 無効なアドバイス フラグです。
 
 .
+Language=Finnish
+Virheelliset ilmoitusliput
+.
 
 MessageId=0x0002
 Severity=Warning
@@ -42618,6 +49001,9 @@ Can't enumerate any more, because the associated data is missing
 Language=Japanese
 関連データがないため、これ以上列挙できません。
 .
+Language=Finnish
+Luettelointia ei voi jatkaa, koska siihen liittyvät tiedot puuttuvat
+.
 
 MessageId=0x0003
 Severity=Warning
@@ -42637,6 +49023,9 @@ This implementation doesn't take advises
 .
 Language=Japanese
 この実装はアドバイスを受けません。
+.
+Language=Finnish
+Tämä toteutus ei vastaanota ilmoituksia
 .
 
 MessageId=0x0004
@@ -42659,6 +49048,9 @@ Language=Japanese
 この接続IDには接続がありません。
 
 .
+Language=Finnish
+Tälle yhteyden tunnukselle ei ole yhteyttä
+.
 
 MessageId=0x0005
 Severity=Warning
@@ -42678,6 +49070,9 @@ Need to run the object to perform this operation
 .
 Language=Japanese
 この操作を実行するには、オブジェクトを実行する必要があります。
+.
+Language=Finnish
+Objektin on oltava käynnissä tämän toiminnon suorittamiseksi
 .
 
 MessageId=0x0006
@@ -42699,6 +49094,9 @@ There is no cache to operate on
 Language=Japanese
 操作するキャッシュがありません。
 .
+Language=Finnish
+Käsiteltävää välimuistia ei ole
+.
 
 MessageId=0x0007
 Severity=Warning
@@ -42718,6 +49116,9 @@ Uninitialized object
 .
 Language=Japanese
 初期化されていないオブジェクトです。
+.
+Language=Finnish
+Alustamaton objekti
 .
 
 MessageId=0x0008
@@ -42740,6 +49141,9 @@ Language=Japanese
 リンクされたオブジェクトのソース クラスが変更されました。
 
 .
+Language=Finnish
+Linkitetyn objektin lähdeluokka on muuttunut
+.
 
 MessageId=0x0009
 Severity=Warning
@@ -42759,6 +49163,9 @@ Not able to get the moniker of the object
 .
 Language=Japanese
 オブジェクトのモニカを取得できません。
+.
+Language=Finnish
+Objektin monikeria ei saada
 .
 
 MessageId=0x000A
@@ -42780,6 +49187,9 @@ Not able to bind to the source
 Language=Japanese
 ソースにバインドできません。
 .
+Language=Finnish
+Lähteeseen ei voi sitoutua
+.
 
 MessageId=0x000B
 Severity=Warning
@@ -42799,6 +49209,9 @@ Object is static; operation not allowed
 .
 Language=Japanese
 オブジェクトは静的です。操作できません。
+.
+Language=Finnish
+Objekti on staattinen; toiminto ei ole sallittu
 .
 
 MessageId=0x000C
@@ -42820,6 +49233,9 @@ User canceled out of save dialog
 Language=Japanese
 ユーザーが保存ダイアログからキャンセルしました。
 .
+Language=Finnish
+Käyttäjä peruutti tallennusvalintaikkunan
+.
 
 MessageId=0x000D
 Severity=Warning
@@ -42839,6 +49255,9 @@ Invalid rectangle
 .
 Language=Japanese
 無効な長方形です。
+.
+Language=Finnish
+Virheellinen suorakulmio
 .
 
 MessageId=0x000E
@@ -42860,6 +49279,9 @@ compobj.dll is too old for the ole2.dll initialized
 Language=Japanese
 compobj.dll は ole2.dll が初期化されるには古すぎます。
 .
+Language=Finnish
+compobj.dll on liian vanha alustetulle ole2.dll-tiedostolle
+.
 
 MessageId=0x000F
 Severity=Warning
@@ -42879,6 +49301,9 @@ Invalid window handle
 .
 Language=Japanese
 無効なウィンドウハンドルです。
+.
+Language=Finnish
+Virheellinen ikkunan kahva
 .
 
 MessageId=0x0010
@@ -42900,6 +49325,9 @@ Object is not in any of the inplace active states
 Language=Japanese
 オブジェクトがいずれのインプレース アクティブ状態でもありません。
 .
+Language=Finnish
+Objekti ei ole missään paikan päällä aktiivisessa tilassa
+.
 
 MessageId=0x0011
 Severity=Warning
@@ -42919,6 +49347,9 @@ Not able to convert object
 .
 Language=Japanese
 オブジェクトを変換できません。
+.
+Language=Finnish
+Objektia ei voi muuntaa
 .
 
 MessageId=0x0012
@@ -42940,6 +49371,9 @@ Not able to perform the operation because object is not given storage yet
 Language=Japanese
 オブジェクトにまだストレージが与えられていないため、操作を実行できません。
 .
+Language=Finnish
+Toimintoa ei voi suorittaa, koska objektille ei ole vielä annettu tallennustilaa
+.
 
 MessageId=0x0064
 Severity=Warning
@@ -42959,6 +49393,9 @@ Invalid FORMATETC structure
 .
 Language=Japanese
 無効な FORMATETC 構造体です。
+.
+Language=Finnish
+Virheellinen FORMATETC-rakenne
 .
 
 MessageId=0x0065
@@ -42980,6 +49417,9 @@ Invalid DVTARGETDEVICE structure
 Language=Japanese
 無効な DVTARGETDEVICE 構造体です。
 .
+Language=Finnish
+Virheellinen DVTARGETDEVICE-rakenne
+.
 
 MessageId=0x0066
 Severity=Warning
@@ -42999,6 +49439,9 @@ Invalid STDGMEDIUM structure
 .
 Language=Japanese
 無効な STDGMEDIUM 構造体です。
+.
+Language=Finnish
+Virheellinen STDGMEDIUM-rakenne
 .
 
 MessageId=0x0067
@@ -43020,6 +49463,9 @@ Invalid STATDATA structure
 Language=Japanese
 無効な STATDATA 構造体です。
 .
+Language=Finnish
+Virheellinen STATDATA-rakenne
+.
 
 MessageId=0x0068
 Severity=Warning
@@ -43039,6 +49485,9 @@ Invalid lindex
 .
 Language=Japanese
 無効な lindex です。
+.
+Language=Finnish
+Virheellinen lindex
 .
 
 MessageId=0x0069
@@ -43060,6 +49509,9 @@ Invalid tymed
 Language=Japanese
 無効な tymed です。
 .
+Language=Finnish
+Virheellinen tymed
+.
 
 MessageId=0x006A
 Severity=Warning
@@ -43079,6 +49531,9 @@ Invalid clipboard format
 .
 Language=Japanese
 無効なクリップボード形式です。
+.
+Language=Finnish
+Virheellinen leikepöydän muoto
 .
 
 MessageId=0x006B
@@ -43100,6 +49555,9 @@ Invalid aspect(s)
 Language=Japanese
 無効なアスペクトです。
 .
+Language=Finnish
+Virheellinen näkökulma tai näkökulmat
+.
 
 MessageId=0x006C
 Severity=Warning
@@ -43119,6 +49577,9 @@ tdSize parameter of the DVTARGETDEVICE structure is invalid
 .
 Language=Japanese
 DVTARGETDEVICE 構造体の tdSize パラメータが無効です。
+.
+Language=Finnish
+DVTARGETDEVICE-rakenteen tdSize-parametri on virheellinen
 .
 
 MessageId=0x006D
@@ -43140,6 +49601,9 @@ Object doesn't support IViewObject interface
 Language=Japanese
 オブジェクトがIViewObjectインターフェイスをサポートしていません。
 .
+Language=Finnish
+Objekti ei tue IViewObject-liittymää
+.
 
 MessageId=0x0100
 Severity=Warning
@@ -43159,6 +49623,9 @@ Trying to revoke a drop target that has not been registered
 .
 Language=Japanese
 登録されていないドロップ目標を取り消そうとしています。
+.
+Language=Finnish
+Yritetään kumota pudotuskohde, jota ei ole rekisteröity
 .
 
 MessageId=0x0101
@@ -43180,6 +49647,9 @@ This window has already been registered as a drop target
 Language=Japanese
 このウィンドウはすでにドロップターゲットとして登録されています。
 .
+Language=Finnish
+Tämä ikkuna on jo rekisteröity pudotuskohteeksi
+.
 
 MessageId=0x0102
 Severity=Warning
@@ -43199,6 +49669,9 @@ Invalid window handle
 .
 Language=Japanese
 無効なウィンドウ ハンドルです。
+.
+Language=Finnish
+Virheellinen ikkunan kahva
 .
 
 MessageId=0x0110
@@ -43220,6 +49693,9 @@ Class does not support aggregation (or class object is remote)
 Language=Japanese
 クラスが集約をサポートしていません (またはクラス・オブジェクトがリモートです)。
 .
+Language=Finnish
+Luokka ei tue koostamista (tai luokkaobjekti on etäobjekti)
+.
 
 MessageId=0x0111
 Severity=Warning
@@ -43239,6 +49715,9 @@ ClassFactory cannot supply requested class
 .
 Language=Japanese
 ClassFactory が要求されたクラスを提供できません。
+.
+Language=Finnish
+Luokkatehdas ei voi toimittaa pyydettyä luokkaa
 .
 
 MessageId=0x0112
@@ -43260,6 +49739,9 @@ Class is not licensed for use
 Language=Japanese
 クラスの使用が許可されていません。
 .
+Language=Finnish
+Luokkaa ei ole lisensoitu käyttöön
+.
 
 MessageId=0x0001
 Severity=Warning
@@ -43279,6 +49761,9 @@ Unknown trust provider.
 .
 Language=Japanese
 Unknown trust provider.
+.
+Language=Finnish
+Tuntematon luottamuksen tarjoaja.
 .
 
 MessageId=0x0002
@@ -43300,6 +49785,9 @@ The trust verification action specified is not supported by the specified trust 
 Language=Japanese
 The trust verification action specified is not supported by the specified trust provider.
 .
+Language=Finnish
+Määritetty luottamuksen tarjoaja ei tue määritettyä luottamuksen tarkistustoimintoa.
+.
 
 MessageId=0x0003
 Severity=Warning
@@ -43319,6 +49807,9 @@ The form specified for the subject is not one supported or known by the specifie
 .
 Language=Japanese
 The form specified for the subject is not one supported or known by the specified trust provider.
+.
+Language=Finnish
+Määritetty luottamuksen tarjoaja ei tue tai tunne kohteelle määritettyä muotoa.
 .
 
 MessageId=0x0004
@@ -43340,6 +49831,9 @@ The subject is not trusted for the specified action.
 Language=Japanese
 The subject is not trusted for the specified action.
 .
+Language=Finnish
+Kohteeseen ei luoteta määritetyssä toiminnossa.
+.
 
 MessageId=0x0005
 Severity=Warning
@@ -43359,6 +49853,9 @@ Error due to problem in ASN.1 encoding process.
 .
 Language=Japanese
 Error due to problem in ASN.1 encoding process.
+.
+Language=Finnish
+Virhe ASN.1-koodauksessa.
 .
 
 MessageId=0x0006
@@ -43380,6 +49877,9 @@ Error due to problem in ASN.1 decoding process.
 Language=Japanese
 Error due to problem in ASN.1 decoding process.
 .
+Language=Finnish
+Virhe ASN.1-koodin purkamisessa.
+.
 
 MessageId=0x0007
 Severity=Warning
@@ -43399,6 +49899,9 @@ Reading / writing Extensions where Attributes are appropriate, and vice versa.
 .
 Language=Japanese
 Reading / writing Extensions where Attributes are appropriate, and vice versa.
+.
+Language=Finnish
+Laajennuksia luetaan tai kirjoitetaan, vaikka määritteet olisivat oikeat, tai päinvastoin.
 .
 
 MessageId=0x0008
@@ -43420,6 +49923,9 @@ Unspecified cryptographic failure.
 Language=Japanese
 Unspecified cryptographic failure.
 .
+Language=Finnish
+Määrittämätön kryptografinen virhe.
+.
 
 MessageId=0x0009
 Severity=Warning
@@ -43439,6 +49945,9 @@ The size of the data could not be determined.
 .
 Language=Japanese
 The size of the data could not be determined.
+.
+Language=Finnish
+Tietojen kokoa ei voitu selvittää.
 .
 
 MessageId=0x000A
@@ -43460,6 +49969,9 @@ The size of the indefinite-sized data could not be determined.
 Language=Japanese
 The size of the indefinite-sized data could not be determined.
 .
+Language=Finnish
+Määrittämättömän kokoisten tietojen kokoa ei voitu selvittää.
+.
 
 MessageId=0x000B
 Severity=Warning
@@ -43479,6 +49991,9 @@ This object does not read and write self-sizing data.
 .
 Language=Japanese
 This object does not read and write self-sizing data.
+.
+Language=Finnish
+Tämä objekti ei lue eikä kirjoita itse kokonsa määrittäviä tietoja.
 .
 
 MessageId=0x0100
@@ -43500,6 +50015,9 @@ No signature was present in the subject.
 Language=Japanese
 No signature was present in the subject.
 .
+Language=Finnish
+Kohteessa ei ollut allekirjoitusta.
+.
 
 MessageId=0x0101
 Severity=Warning
@@ -43519,6 +50037,9 @@ A required certificate is not within its validity period when verifying against 
 .
 Language=Japanese
 A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
+.
+Language=Finnish
+Vaadittu varmenne ei ole voimassa, kun sitä verrataan järjestelmän nykyiseen kelloon tai allekirjoitetun tiedoston aikaleimaan.
 .
 
 MessageId=0x0102
@@ -43540,6 +50061,9 @@ The validity periods of the certification chain do not nest correctly.
 Language=Japanese
 The validity periods of the certification chain do not nest correctly.
 .
+Language=Finnish
+Varmenneketjun voimassaoloajat eivät ole oikein sisäkkäin.
+.
 
 MessageId=0x0103
 Severity=Warning
@@ -43559,6 +50083,9 @@ A certificate that can only be used as an end-entity is being used as a CA or vi
 .
 Language=Japanese
 A certificate that can only be used as an end-entity is being used as a CA or vice versa.
+.
+Language=Finnish
+Varmennetta, jota voi käyttää vain loppuyksikkönä, käytetään varmenteiden myöntäjänä, tai päinvastoin.
 .
 
 MessageId=0x0104
@@ -43580,6 +50107,9 @@ A path length constraint in the certification chain has been violated.
 Language=Japanese
 A path length constraint in the certification chain has been violated.
 .
+Language=Finnish
+Varmenneketjun polun pituusrajoitusta on rikottu.
+.
 
 MessageId=0x0105
 Severity=Warning
@@ -43599,6 +50129,9 @@ A certificate contains an unknown extension that is marked 'critical'.
 .
 Language=Japanese
 A certificate contains an unknown extension that is marked 'critical'.
+.
+Language=Finnish
+Varmenteessa on tuntematon laajennus, joka on merkitty kriittiseksi.
 .
 
 MessageId=0x0106
@@ -43620,6 +50153,9 @@ A certificate being used for a purpose other than the ones specified by its CA.
 Language=Japanese
 A certificate being used for a purpose other than the ones specified by its CA.
 .
+Language=Finnish
+Varmennetta käytetään muuhun kuin sen myöntäjän määrittämään tarkoitukseen.
+.
 
 MessageId=0x0107
 Severity=Warning
@@ -43639,6 +50175,9 @@ A parent of a given certificate in fact did not issue that child certificate.
 .
 Language=Japanese
 A parent of a given certificate in fact did not issue that child certificate.
+.
+Language=Finnish
+Annetun varmenteen yläkohde ei todellisuudessa myöntänyt kyseistä alivarmennetta.
 .
 
 MessageId=0x0108
@@ -43660,6 +50199,9 @@ A certificate is missing or has an empty value for an important field, such as a
 Language=Japanese
 A certificate is missing or has an empty value for an important field, such as a subject or issuer name.
 .
+Language=Finnish
+Varmenteesta puuttuu tärkeä kenttä, kuten kohteen tai myöntäjän nimi, tai sen arvo on tyhjä.
+.
 
 MessageId=0x0109
 Severity=Warning
@@ -43679,6 +50221,9 @@ A certificate chain processed, but terminated in a root certificate which is not
 .
 Language=Japanese
 A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.
+.
+Language=Finnish
+Varmenneketju käsiteltiin, mutta se päättyi pääkäyttäjän varmenteeseen, johon luottamuksen tarjoaja ei luota.
 .
 
 MessageId=0x010A
@@ -43700,6 +50245,9 @@ A certificate chain could not be built to a trusted root authority.
 Language=Japanese
 A certificate chain could not be built to a trusted root authority.
 .
+Language=Finnish
+Varmenneketjua ei voitu muodostaa luotettuun päämyöntäjään asti.
+.
 
 MessageId=0x010B
 Severity=Warning
@@ -43719,6 +50267,9 @@ Generic trust failure.
 .
 Language=Japanese
 Generic trust failure.
+.
+Language=Finnish
+Yleinen luottamusvirhe.
 .
 
 MessageId=0x010C
@@ -43740,6 +50291,9 @@ A certificate was explicitly revoked by its issuer.
 Language=Japanese
 A certificate was explicitly revoked by its issuer.
 .
+Language=Finnish
+Varmenteen myöntäjä on nimenomaisesti kumonnut varmenteen.
+.
 
 MessageId=0x010D
 Severity=Warning
@@ -43759,6 +50313,9 @@ The certification path terminates with the test root which is not trusted with t
 .
 Language=Japanese
 The certification path terminates with the test root which is not trusted with the current policy settings.
+.
+Language=Finnish
+Varmennepolku päättyy testipäävarmenteeseen, johon nykyisillä käytäntöasetuksilla ei luoteta.
 .
 
 MessageId=0x010E
@@ -43780,6 +50337,9 @@ The revocation process could not continue - the certificate(s) could not be chec
 Language=Japanese
 The revocation process could not continue - the certificate(s) could not be checked.
 .
+Language=Finnish
+Kumoamisprosessia ei voitu jatkaa - varmenteita ei voitu tarkistaa.
+.
 
 MessageId=0x010F
 Severity=Warning
@@ -43799,6 +50359,9 @@ The certificate's CN name does not match the passed value.
 .
 Language=Japanese
 The certificate's CN name does not match the passed value.
+.
+Language=Finnish
+Varmenteen CN-nimi ei vastaa välitettyä arvoa.
 .
 
 MessageId=0x0110
@@ -43820,6 +50383,9 @@ The certificate is not valid for the requested usage.
 Language=Japanese
 The certificate is not valid for the requested usage.
 .
+Language=Finnish
+Varmenne ei ole kelvollinen pyydettyyn käyttöön.
+.
 
 MessageId=0x0111
 Severity=Warning
@@ -43839,6 +50405,9 @@ The certificate was explicitly marked as untrusted by the user.
 .
 Language=Japanese
 The certificate was explicitly marked as untrusted by the user.
+.
+Language=Finnish
+Käyttäjä merkitsi varmenteen nimenomaisesti epäluotettavaksi.
 .
 
 MessageId=0x0112
@@ -43860,6 +50429,9 @@ A certification chain processed correctly, but one of the CA certificates is not
 Language=Japanese
 A certification chain processed correctly, but one of the CA certificates is not trusted by the policy provider.
 .
+Language=Finnish
+Varmenneketju käsiteltiin oikein, mutta käytännön tarjoaja ei luota yhteen myöntäjän varmenteista.
+.
 
 MessageId=0x0113
 Severity=Warning
@@ -43880,6 +50452,9 @@ The certificate has invalid policy.
 Language=Japanese
 The certificate has invalid policy.
 .
+Language=Finnish
+Varmenteen käytäntö on virheellinen.
+.
 
 MessageId=0x0114
 Severity=Warning
@@ -43899,4 +50474,7 @@ The certificate has an invalid name. The name is not included in the permitted l
 .
 Language=Japanese
 The certificate has an invalid name. The name is not included in the permitted list or is explicitly excluded.
+.
+Language=Finnish
+Varmenteen nimi on virheellinen. Nimi ei ole sallittujen luettelossa, tai se on nimenomaisesti suljettu pois.
 .
