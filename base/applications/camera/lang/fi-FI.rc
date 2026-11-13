@@ -1,0 +1,10 @@
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    100 "Kamera"
+    101 "Etsitään kameraa..."
+    102 "Kameraa ei löytynyt. Liitä kamera."
+    103 "Kamera lakkasi lähettämästä videokuvaa."
+    104 "&Muoto"
+END

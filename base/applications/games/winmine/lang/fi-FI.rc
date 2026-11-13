@@ -23,7 +23,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "&Poistu\tAlt+X", IDM_EXIT
     END
-    POPUP "&Info"
+    POPUP "&Ohje"
     BEGIN
         MENUITEM "&Nopeimmat ajat", IDM_TIMES
         MENUITEM "&Tietoja", IDM_ABOUT

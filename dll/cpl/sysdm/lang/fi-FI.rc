@@ -414,24 +414,24 @@ END
 /*
  * Couple of other strings for PageFile support that may be useful later:
 
-"ReactOS created a temporary paging file on your computer because of a problem that occurred with your paging file configuration when you started your computer. The total paging file size for all disk drives may be somewhat larger than the size you specified."
+"ReactOS loi tietokoneeseen tilapäisen sivutustiedoston, koska sivutustiedoston määrityksissä ilmeni ongelma tietokonetta käynnistettäessä. Kaikkien levyasemien sivutustiedostojen kokonaiskoko voi olla hieman määrittämääsi kokoa suurempi."
 
-"You are not logged onto ReactOS as a member of the user group that has the right to view the workstation's Virtual Memory settings."
+"Et ole kirjautunut ReactOSiin sellaisen käyttäjäryhmän jäsenenä, jolla on oikeus tarkastella työaseman näennäismuistiasetuksia."
 
-"There is not enough space on this drive for the paging file size specified. Please enter a smaller number or free some disk space."
+"Tässä asemassa ei ole tarpeeksi tilaa määritetyn kokoiselle sivutustiedostolle. Anna pienempi luku tai vapauta levytilaa."
 
-"Drive %c: is too small for the maximum paging file size specified. Please enter a smaller number."
+"Asema %c: on liian pieni määritetylle sivutustiedoston enimmäiskoolle. Anna pienempi luku."
 
-"Could not read the current virtual memory settings."
+"Nykyisiä näennäismuistiasetuksia ei voitu lukea."
 
-"Drive %c: does not have enough free space for the maximum paging file size specified. If you continue with this setting, the paging file will only grow to the size of the available free space."
+"Asemassa %c: ei ole tarpeeksi vapaata tilaa määritetylle sivutustiedoston enimmäiskoolle. Jos jatkat tällä asetuksella, sivutustiedosto kasvaa vain vapaan tilan kokoiseksi."
 
-"Another file exists with the filename \"%s\". Do you wish to overwrite the existing file with a page file?"
+"Tiedostonimellä \"%s\" on jo toinen tiedosto. Haluatko korvata aiemman tiedoston sivutustiedostolla?"
 
-"There is not enough space on this drive to create the page file size specified. At least %d MB of free disk space must be left after the page file is created. Specify a smaller page file size or free some disk space."
+"Tässä asemassa ei ole tarpeeksi tilaa määritetyn kokoisen sivutustiedoston luomiseen. Levylle on jäätävä vähintään %d Mt vapaata tilaa sivutustiedoston luomisen jälkeen. Määritä pienempi sivutustiedoston koko tai vapauta levytilaa."
 
-"If the pagefile on volume %c: has an initial size of less than %d MB, then the system may not be able to create a debugging information file if a STOP error occurs. Continue anyway?"
+"Jos taltion %c: sivutustiedoston alkukoko on alle %d Mt, järjestelmä ei ehkä pysty luomaan virheenkorjaustietotiedostoa STOP-virheen sattuessa. Jatketaanko silti?"
 
-"Unable to determine the current paging file size. The value reported as the current paging file size may be incorrect."
+"Nykyistä sivutustiedoston kokoa ei voitu selvittää. Nykyiseksi sivutustiedoston kooksi ilmoitettu arvo voi olla virheellinen."
 
  */

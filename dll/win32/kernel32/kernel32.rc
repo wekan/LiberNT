@@ -27,6 +27,9 @@
 #ifdef LANGUAGE_ES_ES
     #include "winnls/lang/es-ES.rc"
 #endif
+#ifdef LANGUAGE_FI_FI
+    #include "winnls/lang/fi-FI.rc"
+#endif
 #ifdef LANGUAGE_FR_FR
     #include "winnls/lang/fr-FR.rc"
 #endif

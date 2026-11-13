@@ -2,12 +2,12 @@ LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
 
 STRINGTABLE
 BEGIN
-    IDS_PRINTERS_FOLDER    "Printers"
-    IDS_PRINTERS_INFOTIP   "Shows installed printers and fax printers and helps you add new ones."
+    IDS_PRINTERS_FOLDER    "Tulostimet"
+    IDS_PRINTERS_INFOTIP   "Näyttää asennetut tulostimet ja faksitulostimet ja auttaa lisäämään uusia."
     IDS_COLUMN_NAME        "Nimi"
-    IDS_COLUMN_DOCUMENTS   "Documents"
-    IDS_COLUMN_STATUS      "Status"
+    IDS_COLUMN_DOCUMENTS   "Tiedostot"
+    IDS_COLUMN_STATUS      "Tila"
     IDS_COLUMN_COMMENTS    "Kommentit"
-    IDS_COLUMN_LOCATION    "Location"
-    IDS_COLUMN_MODEL       "Model"
+    IDS_COLUMN_LOCATION    "Sijainti"
+    IDS_COLUMN_MODEL       "Malli"
 END
