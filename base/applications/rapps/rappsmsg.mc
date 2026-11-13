@@ -9,7 +9,8 @@ FacilityNames=(System=0x0:FACILITY_SYSTEM)
 
 LanguageNames=(English=0x409:MSG00409
                Polish=0x415:MSG00415
-               Romanian=0x418:MSG00418)
+               Romanian=0x418:MSG00418
+               Finnish=0x40B:MSG0040B)
 
 MessageId=1
 Severity=Success
@@ -24,6 +25,9 @@ Wywołano instalację programu "%1".
 Language=Romanian
 Este apelată instalarea programului "%1".
 .
+Language=Finnish
+Ohjelman "%1" asennus on käynnistetty.
+.
 
 MessageId=2
 Severity=Success
@@ -37,5 +41,8 @@ Wywołano usunięcie programu "%1".
 .
 Language=Romanian
 Este apelată îndepărtarea programului "%1".
+.
+Language=Finnish
+Ohjelman "%1" poisto on käynnistetty.
 .
 

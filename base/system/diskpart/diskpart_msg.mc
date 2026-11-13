@@ -20,6 +20,7 @@ LanguageNames=(English=0x409:MSG00409
                Turkish=0x41F:MSG0041F
                Chinese=0x804:MSG00804
                Taiwanese=0x404:MSG00404
+               Finnish=0x40B:MSG0040B
               )
 
 
@@ -267,6 +268,29 @@ Language=Taiwanese
 
     ACTIVE
 .
+Language=Finnish
+    Merkitsee aktiiviseksi valittuna olevan osion levyillä, joilla on
+    pääkäynnistystietueen (MBR) osiointi.
+
+Syntaksi:  ACTIVE
+
+    Kirjoittaa levylle arvon, jonka BIOS (perustason syöttö- ja
+    tulostusjärjestelmä) lukee käynnistyksen aikana. Arvo kertoo, että osio
+    on kelvollinen järjestelmäosio.
+
+    Toiminto onnistuu vain, jos osio on valittuna.
+
+    Varoitus:
+
+        DiskPart tarkistaa vain, että osiolle voi tallentaa käyttöjärjestelmän
+        käynnistystiedostot. DiskPart ei tarkista osion sisältöä. Jos merkitset
+        aktiiviseksi vahingossa osion, jolla ei ole käyttöjärjestelmän
+        käynnistystiedostoja, tietokone ei ehkä käynnisty.
+
+Esimerkki:
+
+    ACTIVE
+.
 
 
 MessageId=10001
@@ -301,6 +325,9 @@ Language=Chinese
 <Add ADD command help text here>
 .
 Language=Taiwanese
+<Add ADD command help text here>
+.
+Language=Finnish
 <Add ADD command help text here>
 .
 
@@ -664,6 +691,40 @@ Example:
 
     ASSIGN LETTER=D
 .
+Language=Finnish
+    Määrittää valittuna olevalle taltiolle aseman tunnuksen tai liitetyn
+    kansion polun.
+
+Syntaksi:  ASSIGN [LETTER=<D> | MOUNT=<PATH>] [NOERR]
+
+    LETTER=<D>  Taltiolle määritettävä aseman tunnus.
+
+    MOUNT=<PATH>
+                Taltiolle määritettävä liitetyn kansion polku.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Jos aseman tunnusta tai liitettyä kansiota ei anneta, taltiolle
+    määritetään seuraava vapaa aseman tunnus. Jos aseman tunnus tai liitetty
+    kansio on jo käytössä, tulee virhe.
+
+    ASSIGN-komennolla voit vaihtaa siirrettävän aseman tunnuksen.
+
+    Aseman tunnusta ei voi määrittää käynnistystaltioille eikä taltioille,
+    joilla on sivutustiedosto. Aseman tunnusta ei myöskään voi määrittää
+    laitevalmistajan (OEM) osiolle, ellei käynnistetty Windows PE:hen, eikä
+    millekään GUID-osiotaulukon (GPT) osiolle, joka ei ole perustietoosio,
+    ESP-osio tai palautusosio.
+
+    Toiminto onnistuu vain, jos taltio on valittuna.
+
+Esimerkki:
+
+    ASSIGN LETTER=D
+.
 
 
 MessageId=10003
@@ -700,6 +761,9 @@ Language=Chinese
 Language=Taiwanese
 <Add ATTACH command help text here>
 .
+Language=Finnish
+<Add ATTACH command help text here>
+.
 
 
 MessageId=10004
@@ -734,6 +798,9 @@ Language=Chinese
 <Add ATTRIBUTES command help text here>
 .
 Language=Taiwanese
+<Add ATTRIBUTES command help text here>
+.
+Language=Finnish
 <Add ATTRIBUTES command help text here>
 .
 
@@ -1106,6 +1173,42 @@ Example:
     AUTOMOUNT ENABLE
     AUTOMOUNT DISABLE
 .
+Language=Finnish
+    Ottaa automaattisen liittämisen käyttöön tai poistaa sen käytöstä.
+
+Syntaksi:  AUTOMOUNT [ENABLE] [DISABLE] [SCRUB] [NOERR]
+
+    ENABLE      Sallii LiberNT:n määrittää aseman tunnukset automaattisesti
+                järjestelmään lisätyille taltioille.
+
+    DISABLE     Estää LiberNT:tä määrittämästä aseman tunnuksia automaattisesti
+                järjestelmään lisätyille taltioille.
+
+    SCRUB       Poistaa liitettyjen kansioiden polut, aseman tunnukset,
+                liitettyjen kansioiden hakemistot ja rekisteriasetukset
+                taltioilta, jotka eivät enää ole järjestelmässä. Näin
+                järjestelmässä aiemmin olleille taltioille ei määritetä
+                automaattisesti niiden entisiä aseman tunnuksia ja liitettyjen
+                kansioiden polkuja, kun ne lisätään järjestelmään uudelleen.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Kun automaattinen liittäminen on käytössä, LiberNT ottaa taltion käyttöön
+    ja määrittää sille aseman tunnuksen ja taltion GUID-polun automaattisesti,
+    kun taltio lisätään järjestelmään. Tallennusverkoissa (SAN) automaattisen
+    liittämisen poistaminen käytöstä estää LiberNT:tä ottamasta taltioita
+    käyttöön automaattisesti ja määrittämästä aseman tunnuksia tai taltion
+    GUID-polkuja uusille taltioille, jotka näkyvät järjestelmälle.
+
+Esimerkki:
+
+    AUTOMOUNT
+    AUTOMOUNT ENABLE
+    AUTOMOUNT DISABLE
+.
 
 
 MessageId=10006
@@ -1140,6 +1243,9 @@ Language=Chinese
 <Add BREAK command help text here>
 .
 Language=Taiwanese
+<Add BREAK command help text here>
+.
+Language=Finnish
 <Add BREAK command help text here>
 .
 
@@ -1359,6 +1465,26 @@ Language=Taiwanese
 
     CLEAN
 .
+Language=Finnish
+    Poistaa valittuna olevalta levyltä kaiken osioinnin ja taltioiden
+    alustuksen.
+
+Syntaksi:  CLEAN [ALL]
+
+    ALL         Määrittää, että levyn jokainen tavu\sektori nollataan, mikä
+                poistaa kaikki levyn tiedot kokonaan.
+
+    Pääkäynnistystietueen (MBR) levyillä korvataan vain MBR-osiointitiedot ja
+    piilotettujen sektoreiden tiedot. GUID-osiotaulukon (GPT) levyillä
+    korvataan GPT-osiointitiedot, suojaava MBR mukaan lukien. Jos
+    ALL-parametria ei käytetä, levyn ensimmäinen ja viimeinen megatavu
+    nollataan. Tämä poistaa kaiken levylle aiemmin tehdyn alustuksen. Levyn
+    tila puhdistuksen jälkeen on 'UNINITIALIZED' (alustamaton).
+
+Esimerkki:
+
+    CLEAN
+.
 
 
 MessageId=10008
@@ -1393,6 +1519,9 @@ Language=Chinese
 <Add COMPACT command help text here>
 .
 Language=Taiwanese
+<Add COMPACT command help text here>
+.
+Language=Finnish
 <Add COMPACT command help text here>
 .
 
@@ -1624,6 +1753,28 @@ Syntax:  CONVERT GPT [NOERR]
 Example:
     CONVERT GPT
 .
+Language=Finnish
+    Muuntaa pääkäynnistystietueen (MBR) osiotaulukkoa käyttävän levyn
+    GUID-osiotaulukkoa (GPT) käyttäväksi levyksi.
+
+Syntaksi:  CONVERT GPT [NOERR]
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Toiminto onnistuu vain, jos MBR-levy on valittuna.
+
+    Levyn koon on oltava vähintään 128 Mt.
+
+    Tärkeää:
+        Vain tyhjät levyt voi muuntaa GPT-levyiksi. Varmuuskopioi kaikki tiedot
+        ja poista kaikki osiot tai taltiot ennen levyn muuntamista.
+
+Esimerkki:
+    CONVERT GPT
+.
 
 
 MessageId=10011
@@ -1831,6 +1982,26 @@ Syntax:  CONVERT MBR [NOERR]
         partitions or volumes before you convert the disk.
 
 Example:
+    CONVERT MBR
+.
+Language=Finnish
+    Muuntaa GUID-osiotaulukkoa (GPT) käyttävän levyn pääkäynnistystietueen
+    (MBR) osiotaulukkoa käyttäväksi levyksi.
+
+Syntaksi:  CONVERT MBR [NOERR]
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Toiminto onnistuu vain, jos GPT-levy on valittuna.
+
+    Tärkeää:
+        Vain tyhjät levyt voi muuntaa MBR-levyiksi. Varmuuskopioi kaikki tiedot
+        ja poista kaikki osiot tai taltiot ennen levyn muuntamista.
+
+Esimerkki:
     CONVERT MBR
 .
 
@@ -2118,6 +2289,32 @@ Syntax:  CREATE PARTITION EFI [SIZE=<N>] [OFFSET=<N>] [NOERR]
     A basic GPT disk must be selected for this operation to succeed.
 
 Example:
+
+    CREATE PARTITION EFI SIZE=1000
+.
+Language=Finnish
+    Luo EFI (Extensible Firmware Interface) -järjestelmäosion
+    GUID-osiotaulukon (GPT) levylle.
+
+Syntaksi:  CREATE PARTITION EFI [SIZE=<N>] [OFFSET=<N>] [NOERR]
+
+    SIZE=<N>    Osion koko megatavuina (Mt). Jos kokoa ei anneta, osio jatkuu,
+                kunnes nykyisellä alueella ei ole enää vapaata tilaa.
+
+    OFFSET=<N>  Siirtymä kilotavuina (Kt), johon osio luodaan. Jos siirtymää ei
+                anneta, osio sijoitetaan levyn ensimmäiseen alueeseen, joka on
+                tarpeeksi suuri.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Kun osio on luotu, uusi osio on valittuna.
+
+    Toiminto onnistuu vain, jos GPT-peruslevy on valittuna.
+
+Esimerkki:
 
     CREATE PARTITION EFI SIZE=1000
 .
@@ -2504,6 +2701,40 @@ Language=Taiwanese
 
     CREATE PARTITION EXTENDED SIZE=1000
 .
+Language=Finnish
+    Luo laajennetun osion valittuna olevalle levylle.
+    Koskee vain pääkäynnistystietueen (MBR) levyjä.
+
+Syntaksi:  CREATE PARTITION EXTENDED [SIZE=<N>] [OFFSET=<N>] [ALIGN=<N>] [NOERR]
+
+    SIZE=<N>    Osion koko megatavuina (Mt). Jos kokoa ei anneta, osio jatkuu,
+                kunnes laajennetussa osiossa ei ole enää vapaata tilaa.
+
+    OFFSET=<N>  Siirtymä kilotavuina (Kt), johon osio luodaan. Jos siirtymää ei
+                anneta, osio alkaa levyn ensimmäisen sellaisen vapaan tilan
+                alusta, joka on tarpeeksi suuri uudelle osiolle.
+
+    ALIGN=<N>   Käytetään yleensä laitteisto-RAIDin loogisten yksikkönumeroiden
+                (LUN) ryhmien kanssa suorituskyvyn parantamiseksi. Osion
+                siirtymä on luvun <N> monikerta. Jos OFFSET-parametri on
+                annettu, se pyöristetään lähimpään luvun <N> monikertaan.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Kun osio on luotu, uusi osio tulee automaattisesti valituksi. Levylle voi
+    luoda vain yhden laajennetun osion. Komento epäonnistuu, jos yrität luoda
+    laajennetun osion toisen laajennetun osion sisään. Laajennettu osio on
+    luotava ennen kuin voit luoda loogisia osioita.
+
+    Toiminto onnistuu vain, jos MBR-peruslevy on valittuna.
+
+Esimerkki:
+
+    CREATE PARTITION EXTENDED SIZE=1000
+.
 
 
 MessageId=10014
@@ -2868,6 +3099,39 @@ Language=Taiwanese
     您必須先選擇基本 MBR 磁碟，才能完成這個操作。
 
 範例:
+
+    CREATE PARTITION LOGICAL SIZE=1000
+.
+Language=Finnish
+    Luo loogisen osion laajennettuun osioon.
+    Koskee vain pääkäynnistystietueen (MBR) levyjä.
+
+Syntaksi:  CREATE PARTITION LOGICAL [SIZE=<N>] [OFFSET=<N>] [ALIGN=<N>] [NOERR]
+
+    SIZE=<N>    Osion koko megatavuina (Mt). Osio on tavuina vähintään luvun N
+                kokoinen. Jos annat loogiselle osiolle koon, sen on oltava
+                laajennettua osiota pienempi. Jos kokoa ei anneta, osio jatkuu,
+                kunnes laajennetussa osiossa ei ole enää vapaata tilaa.
+
+    OFFSET=<N>  Siirtymä kilotavuina (Kt), johon osio luodaan. Jos siirtymää ei
+                anneta, osio sijoitetaan levyn ensimmäiseen alueeseen, joka on
+                tarpeeksi suuri.
+
+    ALIGN=<N>   Käytetään yleensä laitteisto-RAIDin loogisten yksikkönumeroiden
+                (LUN) ryhmien kanssa suorituskyvyn parantamiseksi. Osion
+                siirtymä on luvun <N> monikerta. Jos OFFSET-parametri on
+                annettu, se pyöristetään lähimpään luvun <N> monikertaan.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Kun osio on luotu, uusi looginen osio tulee automaattisesti valituksi.
+
+    Toiminto onnistuu vain, jos MBR-peruslevy on valittuna.
+
+Esimerkki:
 
     CREATE PARTITION LOGICAL SIZE=1000
 .
@@ -3269,6 +3533,43 @@ Syntax:  CREATE PARTITION MSR [SIZE=<N>] [OFFSET=<N>] [NOERR]
     on them and you cannot delete them.
 
 Example:
+
+    CREATE PARTITION MSR SIZE=1000
+.
+Language=Finnish
+    Luo Microsoftin varatun osion (MSR) GUID-osiotaulukon (GPT) levylle.
+
+Syntaksi:  CREATE PARTITION MSR [SIZE=<N>] [OFFSET=<N>] [NOERR]
+
+    SIZE=<N>    Osion koko megatavuina (Mt). Osio on tavuina vähintään luvun N
+                kokoinen. Jos kokoa ei anneta, osio jatkuu, kunnes nykyisellä
+                alueella ei ole enää vapaata tilaa.
+
+    OFFSET=<N>  Siirtymä kilotavuina (Kt), johon osio luodaan. Jos siirtymää ei
+                anneta, osio sijoitetaan levyn ensimmäiseen alueeseen, joka on
+                tarpeeksi suuri.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Toiminto onnistuu vain, jos GPT-peruslevy on valittuna.
+
+    Varoitus:
+
+        Ole tämän komennon kanssa hyvin varovainen. GPT-levyt vaativat tietyn
+        osioasettelun, joten Microsoftin varattujen osioiden luominen voi tehdä
+        levystä lukukelvottoman. GPT-levyillä, joilta LiberNT käynnistetään,
+        EFI-järjestelmäosio on levyn ensimmäinen osio ja sen jälkeen tulee
+        Microsoftin varattu osio. Pelkkään tietojen tallennukseen käytetyillä
+        GPT-levyillä ei ole EFI-järjestelmäosiota, joten niillä Microsoftin
+        varattu osio on ensimmäinen osio.
+
+    LiberNT ei ota Microsoftin varattuja osioita käyttöön. Niille ei voi
+    tallentaa tietoja, eikä niitä voi poistaa.
+
+Esimerkki:
 
     CREATE PARTITION MSR SIZE=1000
 .
@@ -4354,6 +4655,109 @@ Language=Taiwanese
     CREATE PARTITION PRIMARY SIZE=10000 ID=12
     CREATE PARTITION PRIMARY SIZE=10000 ID=DE
 .
+Language=Finnish
+    Luo ensisijaisen osion valittuna olevalle peruslevylle.
+
+Syntaksi:  CREATE PARTITION PRIMARY [SIZE=<N>] [OFFSET=<N>] [ID={<BYTE> | <GUID>}]
+            [ALIGN=<N>] [NOERR]
+
+    SIZE=<N>    Osion koko megatavuina (Mt). Jos kokoa ei anneta, osio jatkuu,
+                kunnes nykyisellä alueella ei ole enää varaamatonta tilaa.
+
+    OFFSET=<N>  Siirtymä kilotavuina (Kt), johon osio luodaan. Jos siirtymää ei
+                anneta, osio sijoitetaan levyn ensimmäiseen alueeseen, joka on
+                tarpeeksi suuri.
+
+    ID={<BYTE> | <GUID>}
+
+                Määrittää osion tyypin.
+
+                Tarkoitettu vain laitevalmistajien (OEM) käyttöön.
+
+                Pääkäynnistystietueen (MBR) levyille voit antaa osiolle
+                osiotyypin tavun heksadesimaalimuodossa. Jos tätä parametria ei
+                anneta MBR-levylle, komento luo osion, jonka tyyppi on 0x06
+                (ei asennettua tiedostojärjestelmää).
+
+                    LDM-tieto-osio:
+                        0x42
+
+                    Palautusosio:
+                        0x27
+
+                    Tunnistetut OEM-tunnukset:
+                        0x12
+                        0x84
+                        0xDE
+                        0xFE
+                        0xA0
+
+                GUID-osiotaulukon (GPT) levyille voit antaa luotavalle osiolle
+                osiotyypin GUID-tunnuksen. Tunnistettuja GUID-tunnuksia ovat:
+
+                    EFI-järjestelmäosio:
+                        c12a7328-f81f-11d2-ba4b-00a0c93ec93b
+
+                    Microsoftin varattu osio:
+                        e3c9e316-0b5c-4db8-817d-f92df00215ae
+
+                    Perustieto-osio:
+                        ebd0a0a2-b9e5-4433-87c0-68b6b72699c7
+
+                    Dynaamisen levyn LDM-metatieto-osio:
+                        5808c8aa-7e8f-42e0-85d2-e1e90434cfb3
+
+                    Dynaamisen levyn LDM-tieto-osio:
+                        af9b60a0-1431-4f62-bc68-3311714a69ad
+
+                    Palautusosio:
+                        de94bba4-06d1-4d40-a16a-bfd50179d6ac
+
+                Jos tätä parametria ei anneta GPT-levylle, komento luo
+                perustieto-osion.
+
+                Tällä parametrilla voi antaa minkä tahansa osiotyypin tavun tai
+                GUID-tunnuksen. DiskPart ei tarkista osiotyypin kelvollisuutta
+                muuten kuin varmistamalla, että se on heksadesimaalimuotoinen
+                tavu tai GUID-tunnus.
+
+                Varoitus:
+
+                    Osioiden luominen tällä parametrilla voi aiheuttaa
+                    tietokoneen toimintahäiriön tai estää sen käynnistymisen.
+                    Älä luo osioita GPT-levyille tällä parametrilla, ellet ole
+                    laitevalmistaja tai GPT-levyihin perehtynyt IT-ammattilainen.
+                    Käytä sen sijaan aina CREATE PARTITION EFI -komentoa
+                    EFI-järjestelmäosioiden luomiseen, CREATE PARTITION MSR
+                    -komentoa Microsoftin varattujen osioiden luomiseen ja
+                    CREATE PARTITION PRIMARY -komentoa ilman tätä parametria
+                    ensisijaisten osioiden luomiseen GPT-levyille.
+
+    ALIGN=<N>   Käytetään yleensä laitteisto-RAIDin loogisten yksikkönumeroiden
+                (LUN) ryhmien kanssa suorituskyvyn parantamiseksi. Osion
+                siirtymä on luvun <N> monikerta. Jos OFFSET-parametri on
+                annettu, se pyöristetään lähimpään luvun <N> monikertaan.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Kun luot osion, uusi osio tulee automaattisesti valituksi. Osio ei saa
+    aseman tunnusta. Määritä osiolle aseman tunnus assign-komennolla.
+
+    Toiminto onnistuu vain, jos peruslevy on valittuna.
+
+    Jos osiotyyppiä ei anneta, levy on alustamaton ja levyn koko on yli 2 Tt,
+    levy alustetaan GPT-levyksi.
+
+Esimerkki:
+
+    CREATE PARTITION PRIMARY SIZE=1000
+    CREATE PARTITION PRIMARY SIZE=128 ID=c12a7328-f81f-11d2-ba4b-00a0c93ec93b
+    CREATE PARTITION PRIMARY SIZE=10000 ID=12
+    CREATE PARTITION PRIMARY SIZE=10000 ID=DE
+.
 
 
 MessageId=10017
@@ -4388,6 +4792,9 @@ Language=Chinese
 <Add DELETE DISK command help text here>
 .
 Language=Taiwanese
+<Add DELETE DISK command help text here>
+.
+Language=Finnish
 <Add DELETE DISK command help text here>
 .
 
@@ -4658,6 +5065,32 @@ Language=Taiwanese
 
     DELETE PARTITION
 .
+Language=Finnish
+Poistaa valittuna olevan osion.
+
+Syntaksi:  DELETE PARTITION [NOERR] [OVERRIDE]
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    OVERRIDE    Sallii DiskPartin poistaa minkä tahansa osion tyypistä
+                riippumatta. Yleensä DiskPart sallii poistaa vain tunnettuja
+                tieto-osioita.
+
+    Järjestelmäosiota, käynnistysosiota tai osiota, jolla on käytössä oleva
+    sivutustiedosto tai muistivedostiedosto, ei voi poistaa.
+
+    Toiminto onnistuu vain, jos osio on valittuna.
+
+    Dynaamisilta levyiltä ei voi poistaa osioita, eikä niille voi luoda
+    osioita.
+
+Esimerkki:
+
+    DELETE PARTITION
+.
 
 
 MessageId=10019
@@ -4692,6 +5125,9 @@ Language=Chinese
 <Add DELETE VOLUME command help text here>
 .
 Language=Taiwanese
+<Add DELETE VOLUME command help text here>
+.
+Language=Finnish
 <Add DELETE VOLUME command help text here>
 .
 
@@ -4820,6 +5256,17 @@ Language=Taiwanese
 
     DETAIL DISK
 .
+Language=Finnish
+    Näyttää valitun levyn ominaisuudet ja levyllä olevien taltioiden luettelon.
+
+Syntaksi:  DETAIL DISK
+
+    Toiminto onnistuu vain, jos levy on valittuna.
+
+Esimerkki:
+
+    DETAIL DISK
+.
 
 MessageId=10021
 SymbolicName=MSG_COMMAND_DETAIL_PARTITION
@@ -4934,6 +5381,17 @@ Language=Taiwanese
     您必須先選擇一個磁碟分割，才能完成這個操作。
 
 範例:
+
+    DETAIL PARTITION
+.
+Language=Finnish
+    Näyttää valitun osion ominaisuudet.
+
+Syntaksi:  DETAIL PARTITION
+
+    Toiminto onnistuu vain, jos osio on valittuna.
+
+Esimerkki:
 
     DETAIL PARTITION
 .
@@ -5062,6 +5520,18 @@ Language=Taiwanese
 
     DETAIL VOLUME
 .
+Language=Finnish
+    Näyttää valitun taltion ominaisuudet ja niiden levyjen luettelon, joilla
+    taltio on.
+
+Syntaksi:  DETAIL VOLUME
+
+    Toiminto onnistuu vain, jos taltio on valittuna.
+
+Esimerkki:
+
+    DETAIL VOLUME
+.
 
 
 MessageId=10023
@@ -5096,6 +5566,9 @@ Language=Chinese
 <Add DETACH command help text here>
 .
 Language=Taiwanese
+<Add DETACH command help text here>
+.
+Language=Finnish
 <Add DETACH command help text here>
 .
 
@@ -5194,6 +5667,15 @@ Language=Taiwanese
 
     EXIT
 .
+Language=Finnish
+    Lopettaa DiskPartin komentotulkin.
+
+Syntaksi:  EXIT
+
+Esimerkki:
+
+    EXIT
+.
 
 
 MessageId=10025
@@ -5230,6 +5712,9 @@ Language=Chinese
 Language=Taiwanese
 <Add EXPAND command help text here>
 .
+Language=Finnish
+<Add EXPAND command help text here>
+.
 
 
 MessageId=10026
@@ -5264,6 +5749,9 @@ Language=Chinese
 <Add EXTEND command help text here>
 .
 Language=Taiwanese
+<Add EXTEND command help text here>
+.
+Language=Finnish
 <Add EXTEND command help text here>
 .
 
@@ -5392,6 +5880,18 @@ Language=Taiwanese
     您必須先選擇一個磁碟區，才能完成這個操作。
 
 範例:
+
+    FILESYSTEMS
+.
+Language=Finnish
+    Näyttää tiedot valitun taltion nykyisestä tiedostojärjestelmästä ja
+    tiedostojärjestelmistä, joilla taltion voi alustaa.
+
+Syntaksi:  FILESYSTEMS
+
+    Toiminto onnistuu vain, jos taltio on valittuna.
+
+Esimerkki:
 
     FILESYSTEMS
 .
@@ -6048,6 +6548,69 @@ Language=Taiwanese
     您必須先選擇一個磁碟區，才能完成這個操作。
 
 範例:
+
+    FORMAT FS=NTFS LABEL="New Volume" QUICK COMPRESS
+    FORMAT RECOMMENDED OVERRIDE
+.
+Language=Finnish
+    Alustaa määritetyn taltion LiberNT:n käyttöön.
+
+Syntaksi:  FORMAT [[FS=<FS>] [REVISION=<X.XX>] | RECOMMENDED] [LABEL=<"label">]
+                [UNIT=<N>] [QUICK] [COMPRESS] [OVERRIDE] [DUPLICATE] [NOWAIT]
+                [NOERR]
+
+    FS=<FS>     Määrittää tiedostojärjestelmän tyypin. Jos tiedostojärjestelmää
+                ei anneta, käytetään FILESYSTEMS-komennon näyttämää
+                oletustiedostojärjestelmää.
+
+    REVISION=<X.XX>
+
+                Määrittää tiedostojärjestelmän version (jos tarpeen).
+
+    RECOMMENDED Jos tämä on annettu, käytetään suositeltua tiedostojärjestelmää
+                ja versiota oletusarvon sijaan, jos suositus on olemassa.
+                Suositeltu tiedostojärjestelmä (jos sellainen on) näkyy
+                FILESYSTEMS-komennolla.
+
+    LABEL=<"label">
+
+                Määrittää taltion nimen.
+
+    UNIT=<N>    Ohittaa varausyksikön oletuskoon. Oletusasetuksia suositellaan
+                vahvasti tavalliseen käyttöön. Tiedostojärjestelmän varausyksikön
+                oletuskoko näkyy FILESYSTEMS-komennolla.
+
+                NTFS-pakkausta ei tueta, kun varausyksikkö on yli 4096.
+
+    QUICK       Suorittaa pika-alustuksen.
+
+    COMPRESS    Vain NTFS: uudelle taltiolle luodut tiedostot pakataan
+                oletuksena.
+
+    OVERRIDE    Pakottaa tiedostojärjestelmän ensin irrotettavaksi tarvittaessa.
+                Kaikki taltioon avatut kahvat lakkaavat olemasta kelvollisia.
+
+    DUPLICATE   Vain UDF: tämä valinta koskee UDF-alustusta, versiota 2.5 tai
+                uudempaa.
+                Valinta käskee alustustoimintoa kopioimaan tiedostojärjestelmän
+                metatiedot levyn toiseen sektorijoukkoon. Sovellukset, kuten
+                korjaus- tai palautussovellukset, käyttävät kopioituja
+                metatietoja. Jos ensisijaisten metatietojen sektorit ovat
+                vioittuneet, tiedostojärjestelmän metatiedot luetaan kopioiduista
+                sektoreista.
+
+    NOWAIT      Saa komennon palaamaan heti, vaikka alustus on yhä kesken. Jos
+                NOWAIT-valintaa ei anneta, DiskPart näyttää alustuksen
+                edistymisen prosentteina.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Toiminto onnistuu vain, jos taltio on valittuna.
+
+Esimerkkejä:
 
     FORMAT FS=NTFS LABEL="New Volume" QUICK COMPRESS
     FORMAT RECOMMENDED OVERRIDE
@@ -6827,6 +7390,80 @@ Example:
     GPT ATTRIBUTES=0x8000000000000000
     GPT ATTRIBUTES=0xF000000000000001
 .
+Language=Finnish
+    Määrittää GUID-osiotaulukon (GPT) peruslevyillä valittuna olevalle osiolle
+    GPT-määritteet.
+
+Syntaksi:  GPT ATTRIBUTES=<N>
+
+    ATTRIBUTES=<N>
+
+                Heksadesimaaliarvo, joka ilmaisee valittuna olevaan osioon
+                asetettavat määritteet. GPT-määritekenttä on 64-bittinen kenttä,
+                jossa on kaksi alikenttää. Ylempi kenttä tulkitaan vain tietyn
+                osiotyypin GUID-tunnuksen yhteydessä, alempi kenttä on yhteinen
+                kaikille osiotyypeille.
+
+                Seuraavan määritteen voi asettaa mille tahansa osiolle:
+
+                0x0000000000000001 merkitsee osion pakolliseksi. Se kertoo
+                kaikille levynhallinnan apuohjelmille, että osiota ei saa
+                poistaa. EFI-järjestelmäosio sisältää vain käyttöjärjestelmän
+                käynnistämiseen tarvittavat binaarit. Näin laitevalmistajien
+                (OEM) tai käyttöjärjestelmäkohtaiset binaarit on helppo
+                sijoittaa muille osioille.
+
+                Perustieto-osioille on määritetty seuraavat määritteet:
+
+                0x8000000000000000
+                GPT_BASIC_DATA_ATTRIBUTE_NO_DRIVE_LETTER
+                Estää aseman tunnuksen automaattisen määrittämisen osiolle.
+                Oletuksena jokaiselle osiolle määritetään uusi aseman tunnus ja
+                taltion GUID-polku. Sekä aseman tunnuksella että taltion
+                GUID-polulla voi avata taltion Win32-ohjelmointirajapinnoilla.
+                Tämän määritteen asettaminen varmistaa, että kun levy siirretään
+                uuteen tietokoneeseen, uutta aseman tunnusta ei luoda
+                automaattisesti. Sen sijaan käyttäjä voi määrittää aseman
+                tunnukset itse.
+
+                0x4000000000000000
+                GPT_BASIC_DATA_ATTRIBUTE_HIDDEN
+                Määrittää osion taltion piilotetuksi.
+                Tämän määritteen asettaminen tarkoittaa, että taltiolle ei
+                määritetä aseman tunnusta eikä taltion GUID-polkua. Sekä aseman
+                tunnuksella että taltion GUID-polulla voi avata taltion
+                Win32-ohjelmointirajapinnoilla. Win32-rajapinnat, kuten
+                FindFirstVolume ja FindNextVolume, eivät ilmoita piilotetun
+                osion taltiota.
+
+                0x2000000000000000
+                GPT_BASIC_DATA_ATTRIBUTE_SHADOW_COPY
+                Määrittää osion taltion varjokopiopalvelun (Volume Snapshot
+                Service) varjokopiotaltioksi. Tiedostojärjestelmän suodattimet
+                käyttävät tätä valintaa, jotta suodatin ei liity taltioon.
+
+                0x1000000000000000
+                GPT_BASIC_DATA_ATTRIBUTE_READ_ONLY
+                Estää taltiolle kirjoittamisen.
+
+                Muita määritteitä voidaan lisätä milloin tahansa.
+
+    GPT-osion määritteet antavat lisätietoja osion käytöstä.
+
+    Toiminto onnistuu vain, jos GPT-perusosio on valittuna.
+
+    Varoitus:
+
+        GPT-määritteiden muuttaminen voi estää aseman tunnusten määrittämisen
+        perustietotaltioille tai tiedostojärjestelmän liittämisen. Älä muuta
+        GPT-määritteitä, ellet ole laitevalmistaja (OEM) tai GPT-levyihin
+        perehtynyt IT-ammattilainen.
+
+Esimerkki:
+
+    GPT ATTRIBUTES=0x8000000000000000
+    GPT ATTRIBUTES=0xF000000000000001
+.
 
 
 MessageId=10030
@@ -6987,6 +7624,21 @@ Language=Taiwanese
     HELP
     HELP CREATE PARTITION PRIMARY
 .
+Language=Finnish
+    Näyttää käytettävissä olevien komentojen luettelon tai tietyn komennon
+    yksityiskohtaisen ohjeen.
+
+Syntaksi:  HELP [<COMMAND>]
+
+    <COMMAND>   Komento, jonka yksityiskohtainen ohje näytetään.
+
+    Jos komentoa ei anneta, HELP näyttää kaikki komennot.
+
+Esimerkki:
+
+    HELP
+    HELP CREATE PARTITION PRIMARY
+.
 
 
 MessageId=10031
@@ -7021,6 +7673,9 @@ Language=Chinese
 <Add IMPORT command help text here>
 .
 Language=Taiwanese
+<Add IMPORT command help text here>
+.
+Language=Finnish
 <Add IMPORT command help text here>
 .
 
@@ -7261,6 +7916,29 @@ Language=Taiwanese
         否則請勿將系統或開機磁碟分割標示為非使用中。
 
 範例:
+
+    INACTIVE
+.
+Language=Finnish
+    Merkitsee ei-aktiiviseksi valittuna olevan osion levyillä, joilla on
+    pääkäynnistystietueen (MBR) osiointi.
+
+Syntaksi:  INACTIVE
+
+    Kun käynnistät tietokoneen uudelleen, se voi käynnistyä BIOSissa määritetystä
+    seuraavasta vaihtoehdosta, kuten CD-ROM-asemasta tai PXE (Pre-Boot eXecution
+    Environment) -pohjaisesta käynnistysympäristöstä (kuten Remote Installation
+    Services (RIS)).
+
+    Toiminto onnistuu vain, jos osio on valittuna.
+
+    Varoitus:
+
+        Tietokone ei ehkä käynnisty ilman aktiivista osiota. Älä merkitse
+        järjestelmä- tai käynnistysosiota ei-aktiiviseksi, ellet ole kokenut
+        käyttäjä, joka tuntee LiberNT:n tallennustilan hallinnan perusteellisesti.
+
+Esimerkki:
 
     INACTIVE
 .
@@ -7520,6 +8198,29 @@ Language=Taiwanese
 
     LIST DISK
 .
+Language=Finnish
+    Näyttää levyjen luettelon.
+
+Syntaksi:  LIST DISK
+
+    Näyttää levyjen luettelon ja niiden tiedot, kuten koon, käytettävissä
+    olevan vapaan tilan, onko levy perus- vai dynaaminen levy ja käyttääkö levy
+    pääkäynnistystietueen (MBR) vai GUID-osiotaulukon (GPT) osiotyyliä.
+    Tähdellä (*) merkitty levy on valittuna.
+
+    Huomaa, että FREE-sarake ei näytä levyn vapaan tilan kokonaismäärää vaan
+    levylle jääneen käytettävissä olevan vapaan tilan määrän. Jos sinulla on
+    esimerkiksi 10 Gt:n levy, jolla on 4 ensisijaista osiota yhteensä 5 Gt,
+    käytettävissä olevaa vapaata tilaa ei ole jäljellä (osioita ei voi luoda
+    enempää). Toinen esimerkki: sinulla on 10 Gt:n levy, jolla on 3
+    ensisijaista osiota ja laajennettu osio yhteensä 8 Gt. Laajennettu osio on
+    3 Gt, ja siinä on yksi 2 Gt:n looginen asema. Levy näyttää vapaana vain
+    1 Gt - laajennetun osion 1 Gt:n vapaan tilan.
+
+Esimerkki:
+
+    LIST DISK
+.
 
 MessageId=10034
 SymbolicName=MSG_COMMAND_LIST_PARTITION
@@ -7678,6 +8379,21 @@ Language=Taiwanese
 
     LIST PARTITION
 .
+Language=Finnish
+    Näyttää valitun levyn osiotaulukon osioiden luettelon.
+
+Syntaksi:  LIST PARTITION
+
+    Dynaamisilla levyillä osiot eivät välttämättä vastaa levyn dynaamisia
+    taltioita. Dynaamisille levyille ei voi luoda osioita, eikä niiltä voi
+    poistaa osioita.
+
+    Toiminto onnistuu vain, jos levy on valittuna.
+
+Esimerkki:
+
+    LIST PARTITION
+.
 
 
 MessageId=10035
@@ -7783,6 +8499,16 @@ Language=Taiwanese
 
     LIST VOLUME
 .
+Language=Finnish
+    Näyttää paikalliseen tietokoneeseen asennettujen perus- ja dynaamisten
+    taltioiden luettelon.
+
+Syntaksi:  LIST VOLUME
+
+Esimerkki:
+
+    LIST VOLUME
+.
 
 
 MessageId=10036
@@ -7817,6 +8543,9 @@ Language=Chinese
 <Add LIST VDISK command help text here>
 .
 Language=Taiwanese
+<Add LIST VDISK command help text here>
+.
+Language=Finnish
 <Add LIST VDISK command help text here>
 .
 
@@ -7855,6 +8584,9 @@ Language=Chinese
 Language=Taiwanese
 <Add MERGE command help text here>
 .
+Language=Finnish
+<Add MERGE command help text here>
+.
 
 
 MessageId=10038
@@ -7889,6 +8621,9 @@ Language=Chinese
 <Add OFFLINE command help text here>
 .
 Language=Taiwanese
+<Add OFFLINE command help text here>
+.
+Language=Finnish
 <Add OFFLINE command help text here>
 .
 
@@ -7927,6 +8662,9 @@ Language=Chinese
 Language=Taiwanese
 <Add ONLINE command help text here>
 .
+Language=Finnish
+<Add ONLINE command help text here>
+.
 
 
 MessageId=10040
@@ -7961,6 +8699,9 @@ Language=Chinese
 <Add RECOVER command help text here>
 .
 Language=Taiwanese
+<Add RECOVER command help text here>
+.
+Language=Finnish
 <Add RECOVER command help text here>
 .
 
@@ -8150,6 +8891,25 @@ Language=Taiwanese
     在這個範例指令碼中，REM 是用來提供關於該指令碼之功能的註解。
 
     REM 這些命令可建立 3 部磁碟機。
+    CREATE PARTITION PRIMARY SIZE=2048
+    ASSIGN d:
+    CREATE PARTITION EXTEND
+    CREATE PARTITION LOGICAL SIZE=2048
+    ASSIGN e:
+    CREATE PARTITION LOGICAL
+    ASSIGN f:
+.
+Language=Finnish
+    Tarjoaa tavan lisätä kommentteja komentosarjaan.
+
+Syntaksi:  REM
+
+Esimerkki:
+
+    Tässä esimerkkikomentosarjassa REM-komennolla lisätään kommentti siitä,
+    mitä komentosarja tekee.
+
+    REM These commands set up 3 drives.
     CREATE PARTITION PRIMARY SIZE=2048
     ASSIGN d:
     CREATE PARTITION EXTEND
@@ -8673,6 +9433,56 @@ Example:
     REMOVE MOUNT=G:\\MountH
     REMOVE ALL DISMOUNT
 .
+Language=Finnish
+    Poistaa valittuna olevalta taltiolta aseman tunnuksen tai liitetyn
+    kansion polun.
+
+Syntaksi:  REMOVE [LETTER=<D> | MOUNT=<PATH> | ALL] [DISMOUNT] [NOERR]
+
+    LETTER=<D>  Poistettava aseman tunnus.
+
+    MOUNT=<PATH>
+                Poistettava liitetyn kansion polku.
+
+    ALL         Poistaa kaikki nykyiset aseman tunnukset ja liitettyjen
+                kansioiden polut.
+
+    DISMOUNT    Tätä parametria voi käyttää, jos 1) taltiolta on poistettu
+                kaikki aseman tunnukset ja liitettyjen kansioiden polut tai
+                2) ALL-parametri on annettu. Parametri määrittää, että
+                tiedostojärjestelmä irrotetaan ja taltio poistetaan käytöstä.
+                Jos muut prosessit käyttävät taltiota, DiskPart sulkee kaikki
+                avoimet kahvat ennen tiedostojärjestelmän irrottamista ja
+                taltion poistamista käytöstä. Voit ottaa taltion takaisin
+                käyttöön määrittämällä sille aseman tunnuksen, luomalla taltioon
+                liitetyn kansion polun tai ONLINE-komennolla. DISMOUNT
+                epäonnistuu, jos taltiolla on vielä aseman tunnuksia tai
+                liitettyjen kansioiden polkuja. Komentosarjoissa suositellaan
+                komentoa REMOVE ALL DISMOUNT.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Jos aseman tunnusta tai liitetyn kansion polkua ei anneta, DiskPart
+    poistaa ensimmäisen löytämänsä aseman tunnuksen tai liitetyn kansion
+    polun. Jos ALL-parametria käytetään, kaikki nykyiset aseman tunnukset ja
+    liitettyjen kansioiden polut poistetaan. Jos DISMOUNT-parametria
+    käytetään, DiskPart sulkee kaikki taltion avoimet kahvat, irrottaa
+    taltion ja poistaa sen käytöstä.
+
+    REMOVE-komennolla voi vaihtaa siirrettävän aseman tunnuksen.
+    Käynnistys- tai sivutustaltioiden aseman tunnuksia ei voi poistaa.
+
+    Toiminto onnistuu vain, jos taltio on valittuna.
+
+Esimerkki:
+
+    REMOVE LETTER=K
+    REMOVE MOUNT=G:\\MountH
+    REMOVE ALL DISMOUNT
+.
 
 
 MessageId=10043
@@ -8707,6 +9517,9 @@ Language=Chinese
 <Add REPAIR command help text here>
 .
 Language=Taiwanese
+<Add REPAIR command help text here>
+.
+Language=Finnish
 <Add REPAIR command help text here>
 .
 
@@ -8806,6 +9619,15 @@ Language=Taiwanese
 
     RESCAN
 .
+Language=Finnish
+    Etsii uusia levyjä, jotka on ehkä lisätty tietokoneeseen.
+
+Syntaksi:  RESCAN
+
+Esimerkki:
+
+    RESCAN
+.
 
 
 MessageId=10045
@@ -8842,6 +9664,9 @@ Language=Chinese
 Language=Taiwanese
 <Add RETAIN command help text here>
 .
+Language=Finnish
+<Add RETAIN command help text here>
+.
 
 
 MessageId=10046
@@ -8876,6 +9701,9 @@ Language=Chinese
 <Add SAN command help text here>
 .
 Language=Taiwanese
+<Add SAN command help text here>
+.
+Language=Finnish
 <Add SAN command help text here>
 .
 
@@ -9299,6 +10127,44 @@ Language=Taiwanese
     SELECT DISK=NEXT
     SELECT DISK=PCIROOT(0)#PCI(0100)#ATA(C00T00L01)
 .
+Language=Finnish
+    Valitsee määritetyn levyn.
+
+Syntaksi:  SELECT DISK=<N>
+         SELECT DISK=SYSTEM
+         SELECT DISK=NEXT
+         SELECT DISK=<Path>
+
+    DISK=<N>
+                Valittavan levyn DiskPart-indeksinumero.
+
+    DISK=<Path>
+                Valittavan levyn sijaintipolku.
+
+    DISK=SYSTEM
+                BIOS-tietokoneissa valitaan BIOS-levy 0. EFI-tietokoneissa
+                valitaan levy, jolla on nykyiseen käynnistykseen käytetty
+                ESP-osio. EFI-tietokoneissa komento epäonnistuu, jos ESP-osiota
+                ei ole, niitä on enemmän kuin yksi tai tietokone on
+                käynnistetty Windows PE:hen.
+
+    DISK=NEXT
+                Kun levy on valittu, tällä komennolla käydään läpi kaikki
+                levyluettelon levyt. Luettelon seuraava levy valitaan. Jos
+                seuraava levy on luettelon alku, komento epäonnistuu eikä mikään
+                levy ole valittuna.
+
+    Jos valintoja ei anneta, select-komento näyttää valittuna olevan levyn.
+    Tietokoneen kaikkien levyjen DiskPart-indeksinumerot näet LIST DISK
+    -komennolla.
+
+Esimerkki:
+
+    SELECT DISK=1
+    SELECT DISK=SYSTEM
+    SELECT DISK=NEXT
+    SELECT DISK=PCIROOT(0)#PCI(0100)#ATA(C00T00L01)
+.
 
 
 MessageId=10048
@@ -9510,6 +10376,26 @@ Language=Taiwanese
     來選擇磁碟。
 
 範例:
+
+    SELECT PARTITION=1
+.
+Language=Finnish
+    Valitsee määritetyn osion.
+
+Syntaksi:  SELECT PARTITION=<N>
+
+    PARTITION=<N>
+
+                Valittavan osion numero.
+
+    Jos osiota ei anneta, select-komento näyttää valittuna olevan osion. Osion
+    voi määrittää sen numerolla. Nykyisen levyn kaikkien osioiden numerot näet
+    list partition -komennolla.
+
+    Levy on valittava DiskPartin select disk -komennolla ennen kuin voit
+    valita osion.
+
+Esimerkki:
 
     SELECT PARTITION=1
 .
@@ -9741,6 +10627,26 @@ Language=Taiwanese
     SELECT VOLUME=C
     SELECT VOLUME=C:\\MountH
 .
+Language=Finnish
+    Valitsee määritetyn taltion.
+
+Syntaksi:  SELECT VOLUME={<N> | <D>}
+
+    VOLUME=<N>  Valittavan taltion numero.
+
+    VOLUME=<D>  Valittavan taltion aseman tunnus tai liitetyn kansion polku.
+
+    Jos taltiota ei anneta, select-komento näyttää valittuna olevan taltion.
+    Taltion voi määrittää numerolla, aseman tunnuksella tai liitetyn kansion
+    polulla. Peruslevyllä taltion valitseminen valitsee myös vastaavan osion.
+    Tietokoneen kaikkien taltioiden numerot näet list volume -komennolla.
+
+Esimerkki:
+
+    SELECT VOLUME=1
+    SELECT VOLUME=C
+    SELECT VOLUME=C:\\MountH
+.
 
 
 MessageId=10050
@@ -9775,6 +10681,9 @@ Language=Chinese
 <Add SELECT VDISK command help text here>
 .
 Language=Taiwanese
+<Add SELECT VDISK command help text here>
+.
+Language=Finnish
 <Add SELECT VDISK command help text here>
 .
 
@@ -10617,6 +11526,87 @@ Language=Taiwanese
     SET ID=07 OVERRIDE
     SET ID=ebd0a0a2-b9e5-4433-87c0-68b6b72699c7
 .
+Language=Finnish
+    Muuttaa valittuna olevan osion osiotyyppikentän.
+
+Syntaksi:  SET ID={<BYTE> | <GUID>} [OVERRIDE] [NOERR]
+
+    ID={<BYTE> | <GUID>}
+
+                Määrittää uuden osiotyypin.
+                Pääkäynnistystietueen (MBR) levyille voit antaa osiolle
+                osiotyypin tavun heksadesimaalimuodossa. Tällä parametrilla voi
+                antaa minkä tahansa osiotyypin tavun paitsi tyypin 0x42
+                (LDM-osio). Huomaa, että alun '0x' jätetään pois, kun osiotyyppi
+                annetaan heksadesimaalimuodossa.
+
+                GUID-osiotaulukon (GPT) levyille voit antaa osiolle osiotyypin
+                GUID-tunnuksen. Tunnistettuja GUID-tunnuksia ovat:
+
+                    EFI-järjestelmäosio:
+                        c12a7328-f81f-11d2-ba4b-00a0c93ec93b
+
+                    Perustieto-osio:
+                        ebd0a0a2-b9e5-4433-87c0-68b6b72699c7
+
+                Tällä parametrilla voi antaa minkä tahansa osiotyypin
+                GUID-tunnuksen paitsi seuraavat:
+
+                    Microsoftin varattu osio:
+                        e3c9e316-0b5c-4db8-817d-f92df00215a
+
+                    Dynaamisen levyn LDM-metatieto-osio:
+                        5808c8aa-7e8f-42e0-85d2-e1e90434cfb3
+
+                    Dynaamisen levyn LDM-tieto-osio:
+                        af9b60a0-1431-4f62-bc68-3311714a69ad
+
+                    Klusterin metatieto-osio:
+                        db97dba9-0840-4bae-97f0-ffb9a327c7e1
+
+
+                Mainittuja rajoituksia lukuun ottamatta DiskPart ei tarkista
+                osiotyypin kelvollisuutta muuten kuin varmistamalla, että se on
+                heksadesimaalimuotoinen tavu tai GUID-tunnus.
+
+    OVERRIDE    Sallii DiskPartin pakottaa taltion tiedostojärjestelmän
+                irrotettavaksi ennen osiotyypin muuttamista. Osiotyyppiä
+                muutettaessa DiskPart yrittää lukita ja irrottaa taltion
+                tiedostojärjestelmän. Jos tätä parametria ei anneta ja
+                tiedostojärjestelmän lukitseminen epäonnistuu (koska jollakin
+                toisella sovelluksella on taltioon avoin kahva), koko toiminto
+                epäonnistuu. Kun parametri annetaan, irrottaminen pakotetaan,
+                vaikka tiedostojärjestelmän lukitseminen epäonnistuisi. Kun
+                tiedostojärjestelmä irrotetaan, kaikki taltioon avatut kahvat
+                lakkaavat olemasta kelvollisia.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Tarkoitettu vain laitevalmistajien (OEM) käyttöön.
+
+    Toiminto onnistuu vain, jos osio on valittuna.
+
+    Varoitus:
+
+        Osiotyyppikenttien muuttaminen tällä parametrilla voi aiheuttaa
+        tietokoneen toimintahäiriön tai estää sen käynnistymisen. Älä muuta
+        GPT-levyjen osiotyyppikenttiä tällä parametrilla, ellet ole
+        laitevalmistaja tai GPT-levyihin perehtynyt IT-ammattilainen. Käytä
+        sen sijaan aina CREATE PARTITION EFI -komentoa EFI-järjestelmäosioiden
+        luomiseen, CREATE PARTITION MSR -komentoa Microsoftin varattujen
+        osioiden luomiseen ja CREATE PARTITION PRIMARY -komentoa ilman
+        ID-parametria ensisijaisten osioiden luomiseen GPT-levyille.
+
+    Tämä komento ei toimi dynaamisilla levyillä eikä Microsoftin varatuilla
+    osioilla.
+
+Esimerkki:
+    SET ID=07 OVERRIDE
+    SET ID=ebd0a0a2-b9e5-4433-87c0-68b6b72699c7
+.
 
 
 MessageId=10052
@@ -10651,6 +11641,9 @@ Language=Chinese
 <Add SHRINK command help text here>
 .
 Language=Taiwanese
+<Add SHRINK command help text here>
+.
+Language=Finnish
 <Add SHRINK command help text here>
 .
 
@@ -10928,6 +11921,33 @@ Language=Taiwanese
     動態磁碟。
 
 範例:
+
+    UNIQUEID DISK
+    UNIQUEID DISK ID=5f1b2c36
+    UNIQUEID DISK ID=baf784e7-6bbd-4cfb-aaac-e86c96e166ee
+.
+Language=Finnish
+    Näyttää tai asettaa valittuna olevan levyn GUID-osiotaulukon (GPT)
+    tunnuksen tai pääkäynnistystietueen (MBR) allekirjoituksen.
+
+Syntaksi:  UNIQUEID DISK [ID={<DWORD> | <GUID>}]  [NOERR]
+
+    ID={<DWORD> | <GUID>}
+
+                MBR-levyille voit antaa allekirjoitukseksi neljän tavun (DWORD)
+                arvon heksadesimaalimuodossa.
+
+                GPT-levyille anna tunnukseksi GUID-tunnus.
+
+    NOERR       Vain komentosarjoille. Kun tapahtuu virhe, DiskPart jatkaa
+                komentojen käsittelyä ikään kuin virhettä ei olisi tapahtunut.
+                Ilman NOERR-parametria virhe saa DiskPartin lopettamaan
+                virhekoodilla.
+
+    Toiminto onnistuu vain, jos levy on valittuna. Komento toimii perus- ja
+    dynaamisilla levyillä.
+
+Esimerkki:
 
     UNIQUEID DISK
     UNIQUEID DISK ID=5f1b2c36
