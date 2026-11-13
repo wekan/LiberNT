@@ -1,6 +1,7 @@
 LanguageNames=(English=0x409:MSG00409
                Polish=0x415:MSG00415
-               Romanian=0x418:MSG00418)
+               Romanian=0x418:MSG00418
+               Finnish=0x40B:MSG0040B)
 
 MessageId=0
 SymbolicName=NONE
@@ -12,6 +13,9 @@ Urządzenie PCI
 .
 Language=Romanian
 Dispozitiv PCI
+.
+Language=Finnish
+PCI-laite
 .
 
 MessageId=1
@@ -25,6 +29,9 @@ Urządzenie VGA
 Language=Romanian
 Dispozitiv VGA
 .
+Language=Finnish
+VGA-laite
+.
 
 MessageId=256
 SymbolicName=NONE
@@ -36,6 +43,9 @@ Kontroler SCSI
 .
 Language=Romanian
 Dispozitiv de control SCSI
+.
+Language=Finnish
+SCSI-ohjain
 .
 
 MessageId=257
@@ -49,6 +59,9 @@ Kontroler IDE
 Language=Romanian
 Dispozitiv de control IDE
 .
+Language=Finnish
+IDE-ohjain
+.
 
 MessageId=258
 SymbolicName=NONE
@@ -60,6 +73,9 @@ Kontroler dyskietek
 .
 Language=Romanian
 Dispozitiv de control pentru dischete
+.
+Language=Finnish
+Levykeaseman ohjain
 .
 
 MessageId=259
@@ -73,6 +89,9 @@ Kontroler IPI
 Language=Romanian
 Dispozitiv de control IPI
 .
+Language=Finnish
+IPI-ohjain
+.
 
 MessageId=260
 SymbolicName=NONE
@@ -84,6 +103,9 @@ Kontroler RAID
 .
 Language=Romanian
 Dispozitiv de control RAID
+.
+Language=Finnish
+RAID-ohjain
 .
 
 MessageId=261
@@ -97,6 +119,9 @@ Kontroler ATA
 Language=Romanian
 Dispozitiv de control ATA
 .
+Language=Finnish
+ATA-ohjain
+.
 
 MessageId=262
 SymbolicName=NONE
@@ -108,6 +133,9 @@ Kontroler Serial ATA
 .
 Language=Romanian
 Dispozitiv de control Serial ATA
+.
+Language=Finnish
+Serial ATA -ohjain
 .
 
 MessageId=263
@@ -121,6 +149,9 @@ Kontroler SAS
 Language=Romanian
 Dispozitiv de control SAS
 .
+Language=Finnish
+SAS-ohjain
+.
 
 MessageId=384
 SymbolicName=NONE
@@ -132,6 +163,9 @@ Kontroler pamięci masowej
 .
 Language=Romanian
 Dispozitiv de control de stocare în masă
+.
+Language=Finnish
+Massamuistiohjain
 .
 
 MessageId=512
@@ -145,6 +179,9 @@ Kontroler Ethernet
 Language=Romanian
 Dispozitiv de control de Ethernet
 .
+Language=Finnish
+Ethernet-ohjain
+.
 
 MessageId=513
 SymbolicName=NONE
@@ -156,6 +193,9 @@ Kontroler sieci typu Token Ring
 .
 Language=Romanian
 Dispozitiv de control de rețea Token Ring
+.
+Language=Finnish
+Token Ring -verkko-ohjain
 .
 
 MessageId=514
@@ -169,6 +209,9 @@ Kontroler sieci typu FDDI
 Language=Romanian
 Dispozitiv de control de rețea FDDI
 .
+Language=Finnish
+FDDI-verkko-ohjain
+.
 
 MessageId=515
 SymbolicName=NONE
@@ -180,6 +223,9 @@ Kontroler sieci typu ATM
 .
 Language=Romanian
 Dispozitiv de control de rețea ATM
+.
+Language=Finnish
+ATM-verkko-ohjain
 .
 
 MessageId=516
@@ -193,6 +239,9 @@ Kontroler ISDN
 Language=Romanian
 Dispozitiv de control ISDN
 .
+Language=Finnish
+ISDN-ohjain
+.
 
 MessageId=517
 SymbolicName=NONE
@@ -204,6 +253,9 @@ Kontroler WorldFip
 .
 Language=Romanian
 Dispozitiv de control WorldFip
+.
+Language=Finnish
+WorldFip-ohjain
 .
 
 MessageId=640
@@ -217,6 +269,9 @@ Kontroler sieci
 Language=Romanian
 Dispozitiv de control de rețea
 .
+Language=Finnish
+Verkko-ohjain
+.
 
 MessageId=768
 SymbolicName=NONE
@@ -228,6 +283,9 @@ Kontroler wideo (zgodny z VGA)
 .
 Language=Romanian
 Dispozitiv de control video (compatibil cu VGA)
+.
+Language=Finnish
+Näytönohjain (VGA-yhteensopiva)
 .
 
 MessageId=769
@@ -241,6 +299,9 @@ Kontroler wideo (zgodny z VGA)
 Language=Romanian
 Dispozitiv de control video (compatibil cu VGA)
 .
+Language=Finnish
+Näytönohjain (VGA-yhteensopiva)
+.
 
 MessageId=770
 SymbolicName=NONE
@@ -252,6 +313,9 @@ Kontroler wideo 3W
 .
 Language=Romanian
 Dispozitiv de control video 3D
+.
+Language=Finnish
+3D-näytönohjain
 .
 
 MessageId=896
@@ -265,6 +329,9 @@ Kontroler wideo
 Language=Romanian
 Dispozitiv de control video
 .
+Language=Finnish
+Näytönohjain
+.
 
 MessageId=1024
 SymbolicName=NONE
@@ -276,6 +343,9 @@ Kontroler multimediów wideo
 .
 Language=Romanian
 Dispozitiv de control video multimedia
+.
+Language=Finnish
+Multimedian videoohjain
 .
 
 MessageId=1025
@@ -289,6 +359,9 @@ Kontroler multimediów audio
 Language=Romanian
 Dispozitiv de control audio multimedia
 .
+Language=Finnish
+Multimedian ääniohjain
+.
 
 MessageId=1026
 SymbolicName=NONE
@@ -300,6 +373,9 @@ Komputerowe urządzenie telefoniczne
 .
 Language=Romanian
 Dispozitiv de telefonie computerizată
+.
+Language=Finnish
+Tietokonepuhelinlaite
 .
 
 MessageId=1152
@@ -313,6 +389,9 @@ Kontroler multimediów
 Language=Romanian
 Dispozitiv de control multimedia
 .
+Language=Finnish
+Multimediaohjain
+.
 
 MessageId=1280
 SymbolicName=NONE
@@ -324,6 +403,9 @@ Pamięć PCI
 .
 Language=Romanian
 Memorie PCI
+.
+Language=Finnish
+PCI-muisti
 .
 
 MessageId=1281
@@ -337,6 +419,9 @@ Pamięć PCI FLASH
 Language=Romanian
 Memorie PCI Flash
 .
+Language=Finnish
+PCI-flash-muisti
+.
 
 MessageId=1408
 SymbolicName=NONE
@@ -348,6 +433,9 @@ Kontroler pamięci PCI
 .
 Language=Romanian
 Dispozitiv de control de memorie PCI
+.
+Language=Finnish
+PCI-muistiohjain
 .
 
 MessageId=1536
@@ -361,6 +449,9 @@ Mostek PCI HOST
 Language=Romanian
 Punte PCI HOST
 .
+Language=Finnish
+PCI-isäntäsilta
+.
 
 MessageId=1537
 SymbolicName=NONE
@@ -372,6 +463,9 @@ Mostek PCI do ISA
 .
 Language=Romanian
 Punte PCI la ISA
+.
+Language=Finnish
+PCI–ISA-silta
 .
 
 MessageId=1538
@@ -385,6 +479,9 @@ Mostek PCI do EISA
 Language=Romanian
 Punte PCI la EISA
 .
+Language=Finnish
+PCI–EISA-silta
+.
 
 MessageId=1539
 SymbolicName=NONE
@@ -396,6 +493,9 @@ Mostek PCI do Micro Channel
 .
 Language=Romanian
 Punte PCI la Micro Channel
+.
+Language=Finnish
+PCI–Micro Channel -silta
 .
 
 MessageId=1540
@@ -409,6 +509,9 @@ Mostek PCI do PCI
 Language=Romanian
 Punte PCI la PCI
 .
+Language=Finnish
+PCI–PCI-silta
+.
 
 MessageId=1541
 SymbolicName=NONE
@@ -420,6 +523,9 @@ Mostek PCI do PCMCIA
 .
 Language=Romanian
 Punte PCI la PCMCIA
+.
+Language=Finnish
+PCI–PCMCIA-silta
 .
 
 MessageId=1542
@@ -433,6 +539,9 @@ Mostek PCI do NUBUS
 Language=Romanian
 Punte PCI la NUBUS
 .
+Language=Finnish
+PCI–NUBUS-silta
+.
 
 MessageId=1543
 SymbolicName=NONE
@@ -444,6 +553,9 @@ Mostek PCI do CARDBUS
 .
 Language=Romanian
 Punte PCI la CARDBUS
+.
+Language=Finnish
+PCI–CARDBUS-silta
 .
 
 MessageId=1544
@@ -457,6 +569,9 @@ Mostek PCI-RACEway
 Language=Romanian
 Punte PCI la RACEway
 .
+Language=Finnish
+PCI–RACEway-silta
+.
 
 MessageId=1545
 SymbolicName=NONE
@@ -468,6 +583,9 @@ Półprzeźroczysty mostek PCI do PCI
 .
 Language=Romanian
 Punte semi-transparentă PCI la PCI
+.
+Language=Finnish
+Puoliläpinäkyvä PCI–PCI-silta
 .
 
 MessageId=1546
@@ -481,6 +599,9 @@ Mostek Infiniband do hosta PCI
 Language=Romanian
 Punte Infiniband PCI la gazdă
 .
+Language=Finnish
+Infiniband–PCI-isäntäsilta
+.
 
 MessageId=1664
 SymbolicName=NONE
@@ -492,6 +613,9 @@ Inne urządzenie typu mostek PCI
 .
 Language=Romanian
 Alt dispozitiv de punte PCI
+.
+Language=Finnish
+Muu PCI-siltalaite
 .
 
 MessageId=1792
@@ -505,6 +629,9 @@ Port szeregowy PCI
 Language=Romanian
 Port serial PCI
 .
+Language=Finnish
+PCI-sarjaportti
+.
 
 MessageId=1793
 SymbolicName=NONE
@@ -516,6 +643,9 @@ Port równoległy PCI
 .
 Language=Romanian
 Port paralel PCI
+.
+Language=Finnish
+PCI-rinnakkaisportti
 .
 
 MessageId=1794
@@ -529,6 +659,9 @@ Wieloportowy kontroler szeregowy PCI
 Language=Romanian
 Dispozitiv de control serial multiport PCI
 .
+Language=Finnish
+PCI-moniporttisarjaohjain
+.
 
 MessageId=1795
 SymbolicName=NONE
@@ -540,6 +673,9 @@ Modem PCI
 .
 Language=Romanian
 Modem PCI
+.
+Language=Finnish
+PCI-modeemi
 .
 
 MessageId=1796
@@ -553,6 +689,9 @@ Kontroler PCI GBIB
 Language=Romanian
 Dispozitiv de control PCI GBIB
 .
+Language=Finnish
+PCI GBIB -ohjain
+.
 
 MessageId=1797
 SymbolicName=NONE
@@ -564,6 +703,9 @@ Karta inteligentna PCI
 .
 Language=Romanian
 Card inteligent PCI
+.
+Language=Finnish
+PCI-älykortti
 .
 
 MessageId=1920
@@ -577,6 +719,9 @@ Kontroler PCI Simple Communications
 Language=Romanian
 Dispozitiv de control PCI pentru comunicații simple
 .
+Language=Finnish
+PCI:n yksinkertainen tietoliikenneohjain
+.
 
 MessageId=2048
 SymbolicName=NONE
@@ -588,6 +733,9 @@ Kontroler przerwań systemowych
 .
 Language=Romanian
 Dispozitiv de control de întrerupere a sistemului
+.
+Language=Finnish
+Järjestelmän keskeytysohjain
 .
 
 MessageId=2049
@@ -601,6 +749,9 @@ Kontroler systemowy DMA
 Language=Romanian
 Dispozitiv de control DMA de sistem
 .
+Language=Finnish
+Järjestelmän DMA-ohjain
+.
 
 MessageId=2050
 SymbolicName=NONE
@@ -612,6 +763,9 @@ Czasomierz systemowy
 .
 Language=Romanian
 Cronometru de sistem
+.
+Language=Finnish
+Järjestelmän ajastin
 .
 
 MessageId=2051
@@ -625,6 +779,9 @@ Zegar czasu rzeczywistego
 Language=Romanian
 Ceas în timp real
 .
+Language=Finnish
+Reaaliaikakello
+.
 
 MessageId=2052
 SymbolicName=NONE
@@ -636,6 +793,9 @@ Rodzajowy kontroler PCI Hot-Plug
 .
 Language=Romanian
 Dispozitiv de control generic PCI Hot-Plug
+.
+Language=Finnish
+Yleinen PCI-hot-plug-ohjain
 .
 
 MessageId=2053
@@ -649,6 +809,9 @@ Kontroler hosta SD
 Language=Romanian
 Dispozitiv de control de gazdă SD
 .
+Language=Finnish
+SD-isäntäohjain
+.
 
 MessageId=2173
 SymbolicName=NONE
@@ -660,6 +823,9 @@ Podstawowe urządzenie systemowe
 .
 Language=Romanian
 Dispozitiv de sistem de bază
+.
+Language=Finnish
+Järjestelmän peruslaite
 .
 
 MessageId=2304
@@ -673,6 +839,9 @@ Kontroler klawiatury PCI
 Language=Romanian
 Dispozitiv de control de tastatură PCI
 .
+Language=Finnish
+PCI-näppäimistöohjain
+.
 
 MessageId=2305
 SymbolicName=NONE
@@ -684,6 +853,9 @@ Dyskretyzator PCI
 .
 Language=Romanian
 Digitizor PCI
+.
+Language=Finnish
+PCI-digitointilaite
 .
 
 MessageId=2306
@@ -697,6 +869,9 @@ Kontroler myszy PCI
 Language=Romanian
 Dispozitiv de control de mouse PCI
 .
+Language=Finnish
+PCI-hiiriohjain
+.
 
 MessageId=2307
 SymbolicName=NONE
@@ -708,6 +883,9 @@ Kontroler skanera PCI
 .
 Language=Romanian
 Dispozitiv de control dispozitivelor de scanare PCI
+.
+Language=Finnish
+PCI-skanneriohjain
 .
 
 MessageId=2308
@@ -721,6 +899,9 @@ Kontroler portu gier PCI
 Language=Romanian
 Dispozitiv de control PCI pentru port de joc
 .
+Language=Finnish
+PCI-peliporttiohjain
+.
 
 MessageId=2432
 SymbolicName=NONE
@@ -732,6 +913,9 @@ Urządzenie wejściowe PCI
 .
 Language=Romanian
 Dispozitiv de intrare PCI
+.
+Language=Finnish
+PCI-syöttölaite
 .
 
 MessageId=2560
@@ -745,6 +929,9 @@ Stacja dokująca
 Language=Romanian
 Sistem de andocare
 .
+Language=Finnish
+Telakointiasema
+.
 
 MessageId=2688
 SymbolicName=NONE
@@ -756,6 +943,9 @@ Stacja dokująca (nieznanego typu)
 .
 Language=Romanian
 Sistem de andocare (de tip necunoscut)
+.
+Language=Finnish
+Telakointiasema (tuntematon tyyppi)
 .
 
 MessageId=2816
@@ -769,6 +959,9 @@ Procesor 386
 Language=Romanian
 Procesor 386
 .
+Language=Finnish
+386-suoritin
+.
 
 MessageId=2817
 SymbolicName=NONE
@@ -780,6 +973,9 @@ Procesor 486
 .
 Language=Romanian
 Procesor 486
+.
+Language=Finnish
+486-suoritin
 .
 
 MessageId=2818
@@ -793,6 +989,9 @@ Procesor Pentium
 Language=Romanian
 Procesor Pentium
 .
+Language=Finnish
+Pentium-suoritin
+.
 
 MessageId=2832
 SymbolicName=NONE
@@ -804,6 +1003,9 @@ Procesor ALPHA
 .
 Language=Romanian
 Procesor ALPHA
+.
+Language=Finnish
+ALPHA-suoritin
 .
 
 MessageId=2848
@@ -817,6 +1019,9 @@ Procesor PowerPC
 Language=Romanian
 Procesor PowerPC
 .
+Language=Finnish
+PowerPC-suoritin
+.
 
 MessageId=2880
 SymbolicName=NONE
@@ -828,6 +1033,9 @@ Koprocesor
 .
 Language=Romanian
 Coprocesor
+.
+Language=Finnish
+Apusuoritin
 .
 
 MessageId=3072
@@ -841,6 +1049,9 @@ Kontroler IEEE 1394
 Language=Romanian
 Dispozitiv de control IEEE 1394
 .
+Language=Finnish
+IEEE 1394 -ohjain
+.
 
 MessageId=3073
 SymbolicName=NONE
@@ -852,6 +1063,9 @@ Kontroler magistrali ACCESS
 .
 Language=Romanian
 Dispozitiv de control de magistrală ACCESS
+.
+Language=Finnish
+ACCESS Bus -ohjain
 .
 
 MessageId=3074
@@ -865,6 +1079,9 @@ Kontroler SSA
 Language=Romanian
 Dispozitiv de control SSA
 .
+Language=Finnish
+SSA-ohjain
+.
 
 MessageId=3075
 SymbolicName=NONE
@@ -876,6 +1093,9 @@ Kontroler uniwersalnej magistrali szeregowej (USB)
 .
 Language=Romanian
 Dispozitiv de control universal de magistrală serială (USB)
+.
+Language=Finnish
+USB-ohjain (Universal Serial Bus)
 .
 
 MessageId=3076
@@ -889,6 +1109,9 @@ Kontroler Fibre Channel
 Language=Romanian
 Dispozitiv de control Fibre Channel
 .
+Language=Finnish
+Fibre Channel -ohjain
+.
 
 MessageId=3077
 SymbolicName=NONE
@@ -900,6 +1123,9 @@ Kontroler magistrali zarządzania systemem
 .
 Language=Romanian
 Dispozitiv de control de magistrală de management al sistemului
+.
+Language=Finnish
+SM Bus -ohjain
 .
 
 MessageId=3078
@@ -913,6 +1139,9 @@ Kontroler Infiniband
 Language=Romanian
 Dispozitiv de control Infiniband
 .
+Language=Finnish
+Infiniband-ohjain
+.
 
 MessageId=3079
 SymbolicName=NONE
@@ -924,6 +1153,9 @@ Interfejs IPMI
 .
 Language=Romanian
 Interfață IPMI
+.
+Language=Finnish
+IPMI-liitäntä
 .
 
 MessageId=3080
@@ -937,6 +1169,9 @@ Interfejs SERCOS
 Language=Romanian
 Interfață SERCOS
 .
+Language=Finnish
+SERCOS-liitäntä
+.
 
 MessageId=3081
 SymbolicName=NONE
@@ -948,6 +1183,9 @@ Kontroler CANbus
 .
 Language=Romanian
 Dispozitiv de control CANbus
+.
+Language=Finnish
+CANbus-ohjain
 .
 
 MessageId=3328
@@ -961,6 +1199,9 @@ Kontroler zgodny z iRDA
 Language=Romanian
 Dispozitiv de control compatibil iRDA
 .
+Language=Finnish
+iRDA-yhteensopiva ohjain
+.
 
 MessageId=3329
 SymbolicName=NONE
@@ -972,6 +1213,9 @@ Kontroler Consumer IR
 .
 Language=Romanian
 Dispozitiv de control de infraroșu (IR) pentru consum
+.
+Language=Finnish
+Kuluttaja-IR-ohjain
 .
 
 MessageId=3344
@@ -985,6 +1229,9 @@ Kontroler częstotliwości radiowej
 Language=Romanian
 Dispozitiv de control de radiofrecvență
 .
+Language=Finnish
+RF-ohjain
+.
 
 MessageId=3345
 SymbolicName=NONE
@@ -996,6 +1243,9 @@ Kontroler Bluetooth
 .
 Language=Romanian
 Dispozitiv de control Bluetooth
+.
+Language=Finnish
+Bluetooth-ohjain
 .
 
 MessageId=3346
@@ -1009,6 +1259,9 @@ Kontroler szerokopasmowy
 Language=Romanian
 Dispozitiv de control de bandă largă
 .
+Language=Finnish
+Laajakaistaohjain
+.
 
 MessageId=3360
 SymbolicName=NONE
@@ -1020,6 +1273,9 @@ Kontroler Ethernet 802.11a
 .
 Language=Romanian
 Dispozitiv de control de Ethernet 802.11a
+.
+Language=Finnish
+Ethernet 802.11a -ohjain
 .
 
 MessageId=3361
@@ -1033,6 +1289,9 @@ Kontroler Ethernet 802.11b
 Language=Romanian
 Dispozitiv de control de Ethernet 802.11b
 .
+Language=Finnish
+Ethernet 802.11b -ohjain
+.
 
 MessageId=3456
 SymbolicName=NONE
@@ -1044,6 +1303,9 @@ Kontroler bezprzewodowy PCI
 .
 Language=Romanian
 Dispozitiv de control wireless PCI
+.
+Language=Finnish
+PCI-langaton ohjain
 .
 
 MessageId=3584
@@ -1057,6 +1319,9 @@ Kontroler We/Wy Intelligent (I2O)
 Language=Romanian
 Dispozitiv de control inteligent I/O (I2O).
 .
+Language=Finnish
+Älykäs I/O (I2O) -ohjain
+.
 
 MessageId=3841
 SymbolicName=NONE
@@ -1068,6 +1333,9 @@ Kontroler telewizji dla komunikacji satelitarnej
 .
 Language=Romanian
 Dispozitiv de control de televiziune pentru comunicații prin satelit
+.
+Language=Finnish
+Satelliittiviestinnän televisio-ohjain
 .
 
 MessageId=3842
@@ -1081,6 +1349,9 @@ Kontroler audio dla komunikacji satelitarnej
 Language=Romanian
 Dispozitiv de control audio pentru comunicații prin satelit
 .
+Language=Finnish
+Satelliittiviestinnän ääniohjain
+.
 
 MessageId=3843
 SymbolicName=NONE
@@ -1092,6 +1363,9 @@ Kontroler głosu dla komunikacji satelitarnej
 .
 Language=Romanian
 Dispozitiv de control de voce pentru comunicații prin satelit
+.
+Language=Finnish
+Satelliittiviestinnän puheohjain
 .
 
 MessageId=3844
@@ -1105,6 +1379,9 @@ Kontroler danych dla komunikacji satelitarnej
 Language=Romanian
 Dispozitiv de control de date pentru comunicații prin satelit
 .
+Language=Finnish
+Satelliittiviestinnän dataohjain
+.
 
 MessageId=4096
 SymbolicName=NONE
@@ -1116,6 +1393,9 @@ Kontroler szyfrowania/odszyfrowywania danych sieciowych i komputerowych
 .
 Language=Romanian
 Dispozitiv de control de criptare/decriptare de rețea și de calcul
+.
+Language=Finnish
+Verkon ja tietojenkäsittelyn salaus- ja salauksenpurkuohjain
 .
 
 MessageId=4112
@@ -1129,6 +1409,9 @@ Kontroler szyfrowania/odszyfrowywania rozrywki
 Language=Romanian
 Dispozitiv de control de criptare/decriptare de divertisment
 .
+Language=Finnish
+Viihteen salaus- ja salauksenpurkuohjain
+.
 
 MessageId=4224
 SymbolicName=NONE
@@ -1140,6 +1423,9 @@ Kontroler szyfrowania/odszyfrowywania PCI
 .
 Language=Romanian
 Dispozitiv de control PCI de criptare/decriptare
+.
+Language=Finnish
+PCI-salaus- ja salauksenpurkuohjain
 .
 
 MessageId=4352
@@ -1153,6 +1439,9 @@ Moduł DPIO
 Language=Romanian
 Modul DPIO
 .
+Language=Finnish
+DPIO-moduuli
+.
 
 MessageId=4353
 SymbolicName=NONE
@@ -1164,6 +1453,9 @@ Liczniki wydajności
 .
 Language=Romanian
 Contoare de performanță
+.
+Language=Finnish
+Suorituskykylaskurit
 .
 
 MessageId=4368
@@ -1177,6 +1469,9 @@ Kontroler PCI synchronizacji komunikacji oraz testowania/pomiaru czasu i często
 Language=Romanian
 Dispozitiv de control pentru sincronizarea comunicațiilor PCI și pentru testarea/măsurarea timpului și a frecvenței
 .
+Language=Finnish
+PCI-tietoliikenteen synkronointi- sekä aika- ja taajuusmittausohjain
+.
 
 MessageId=4384
 SymbolicName=NONE
@@ -1189,6 +1484,9 @@ Karta zarządzania
 Language=Romanian
 Card de administrare
 .
+Language=Finnish
+Hallintakortti
+.
 
 MessageId=4480
 SymbolicName=NONE
@@ -1200,4 +1498,7 @@ Kontroler PCI gromadzenia danych i przetwarzania sygnałów
 .
 Language=Romanian
 Dispozitiv de control PCI pentru achiziție de date și procesare a semnalului
+.
+Language=Finnish
+PCI-tiedonkeruu- ja signaalinkäsittelyohjain
 .

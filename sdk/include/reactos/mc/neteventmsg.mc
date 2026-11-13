@@ -24,7 +24,8 @@ LanguageNames=(English=0x409:MSG00409
                Russian=0x419:MSG00419
                French=0x040c:MSG0040c
                Polish=0x415:MSG00415
-               Romanian=0x418:MSG00418)
+               Romanian=0x418:MSG00418
+               Finnish=0x40B:MSG0040B)
 
 ;
 ; message definitions
@@ -55,6 +56,9 @@ Plik dziennika %1 jest zapełniony.
 Language=Romanian
 Fișierul de jurnalizare %1 e plin.
 .
+Language=Finnish
+Lokitiedosto %1 on täynnä.
+.
 
 MessageId=6001
 Severity=Warning
@@ -74,6 +78,9 @@ Nie można otworzyć pliku dziennika %1.
 .
 Language=Romanian
 Fișierul de jurnalizare %1 nu poate fi deschis.
+.
+Language=Finnish
+Lokitiedostoa %1 ei voi avata.
 .
 
 MessageId=6002
@@ -95,6 +102,9 @@ Plik dziennika "%1" jest uszkodzony i zostanie wyczyszczony.
 Language=Romanian
 Fișierul de jurnalizare %1 este corupt și va fi golit.
 .
+Language=Finnish
+Lokitiedosto %1 on vioittunut, ja se tyhjennetään.
+.
 
 MessageId=6003
 Severity=Warning
@@ -114,6 +124,9 @@ Nie można otworzyć pliku dziennika aplikacji. Jako domyślny plik dziennika zo
 .
 Language=Romanian
 Fișierul de jurnalizare al aplicației nu a putut fi deschis.  %1 va fi folosit ca fișier de jurnalizare implicit.
+.
+Language=Finnish
+Sovellusten lokitiedostoa ei voitu avata.  Oletuslokitiedostona käytetään tiedostoa %1.
 .
 
 MessageId=6004
@@ -135,6 +148,9 @@ Pakiet sterownika otrzymany z podsystemu wejścia/wyjścia jest niepoprawny. Prz
 Language=Romanian
 Un pachet al driverului primit de la subsistemul de In/Ex a fost nevalid. Datele sunt pachetul însuși.
 .
+Language=Finnish
+I/O-alijärjestelmältä vastaanotettu ajuripaketti oli virheellinen.  Tiedot ovat paketti.
+.
 
 MessageId=6005
 Severity=Warning
@@ -155,6 +171,9 @@ Uruchomiono usługę Dziennik zdarzeń.
 Language=Romanian
 Serviciul fișierului de jurnalizare al evenimentelor a fost pornit.
 .
+Language=Finnish
+Tapahtumalokipalvelu käynnistettiin.
+.
 
 MessageId=6006
 Severity=Warning
@@ -174,6 +193,9 @@ Zatrzymano usługę Dziennik zdarzeń.
 .
 Language=Romanian
 Serviciul fișierului de jurnalizare al evenimentelor a fost oprit.
+.
+Language=Finnish
+Tapahtumalokipalvelu pysäytettiin.
 .
 
 MessageId=6007
@@ -204,6 +226,9 @@ Usługa Dziennik zdarzeń "%0"
 Language=Romanian
 Serviciul fișierului de jurnalizare %0
 .
+Language=Finnish
+Tapahtumalokipalvelu %0
+.
 
 MessageId=6008
 Severity=Warning
@@ -224,6 +249,9 @@ Poprzednie zamknięcie systemu o godzinie %1 na %2 było nieoczekiwane.
 Language=Romanian
 Închiderea anterioară a sistemului la %1 pe %2 a fost neașteptată.
 .
+Language=Finnish
+Edellinen järjestelmän sammutus %1 %2 oli odottamaton.
+.
 
 MessageId=6009
 Severity=Warning
@@ -242,6 +270,9 @@ Language=Polish
 LiberNT %1 %2 %3 %4.
 .
 Language=Romanian
+LiberNT %1 %2 %3 %4.
+.
+Language=Finnish
 LiberNT %1 %2 %3 %4.
 .
 
@@ -264,6 +295,9 @@ Usługa %1 nie mogła skonfigurować źródła zdarzenia.
 Language=Romanian
 Serviciul %1 nu a putut configura o sursă de evenimente.
 .
+Language=Finnish
+Palvelu %1 ei voinut määrittää tapahtumalähdettä.
+.
 
 MessageId=6011
 Severity=Error
@@ -284,6 +318,9 @@ Nazwa NetBIOS i nazwa hosta DNS tego komputera została zmieniona z %1 na %2.
 Language=Romanian
 Numele NetBIOS și numele gazdei DNS de la acest calculator au fost schimbate din %1 în %2.
 .
+Language=Finnish
+Tämän tietokoneen NetBIOS-nimi ja DNS-isäntänimi on muutettu nimestä %1 nimeksi %2.
+.
 
 MessageId=6012
 Severity=Error
@@ -303,6 +340,9 @@ Domena DNS przydzielona do tego komputera uległa zmianie z %1 na %2.
 .
 Language=Romanian
 Domeniul DNS atribuit acestui calculator a fost schimbat din %1 în %2.
+.
+Language=Finnish
+Tälle tietokoneelle määritetty DNS-toimialue on muutettu toimialueesta %1 toimialueeksi %2.
 .
 
 
@@ -329,6 +369,9 @@ Próbowano załadować sterownik jednoprocesorowy na komputerze wieloprocesorowy
 Language=Romanian
 Un driver specific unui uniprocesor a fost încărcat într-un sistem de tip multiprocesor. Driverul nu a putut fi încărcat.
 .
+Language=Finnish
+Yhden suorittimen järjestelmille tarkoitettu ajuri ladattiin moniprosessorijärjestelmään.  Ajuria ei voitu ladata.
+.
 
 
 ;
@@ -354,6 +397,9 @@ Nie można uruchomić usługi %1 z powodu następującego błędu: %n%2
 Language=Romanian
 Serviciul %1 nu a putut porni din cauza următoarei erori: %n%2
 .
+Language=Finnish
+Palvelu %1 ei käynnistynyt seuraavan virheen vuoksi: %n%2
+.
 
 MessageId=7001
 Severity=Error
@@ -373,6 +419,9 @@ Usługa %1 zależy od usługi %2, której nie można uruchomić z powodu następ
 .
 Language=Romanian
 Serviciul %1 depinde de serviciul %2 care nu a putut porni din cauza următoarei erori: %n%3
+.
+Language=Finnish
+Palvelu %1 on riippuvainen palvelusta %2, joka ei käynnistynyt seuraavan virheen vuoksi: %n%3
 .
 
 MessageId=7002
@@ -394,6 +443,9 @@ Usługa %1 zależy od grupy %2, a nie uruchomiono żadnego członka tej grupy.
 Language=Romanian
 Serviciul %1 depinde de grupul %2 și niciun membru al acestui grup nu a pornit.
 .
+Language=Finnish
+Palvelu %1 on riippuvainen ryhmästä %2, eikä yksikään tämän ryhmän jäsen käynnistynyt.
+.
 
 MessageId=7003
 Severity=Error
@@ -413,6 +465,9 @@ Usługa %1 zależy od następującej nieistniejącej usługi: %2
 .
 Language=Romanian
 Serviciul %1 depinde de următorul serviciu neexistent: %2
+.
+Language=Finnish
+Palvelu %1 on riippuvainen seuraavasta palvelusta, jota ei ole: %2
 .
 
 MessageId=7005
@@ -434,6 +489,9 @@ Wywołanie %1 nie powiodło się i wystąpił następujący błąd: %n%2
 Language=Romanian
 Apelul %1 a eșuat cu următoarea eroare: %n%2
 .
+Language=Finnish
+Kutsu %1 epäonnistui seuraavalla virheellä: %n%2
+.
 
 MessageId=7006
 Severity=Error
@@ -453,6 +511,9 @@ Wywołanie %1 dla %2 nie powiodło się i wystąpił następujący błąd: %n%3
 .
 Language=Romanian
 Apelul %1 a eșuat pentru %2 cu următoarea eroare: %n%3
+.
+Language=Finnish
+Kutsu %1 epäonnistui kohteelle %2 seuraavalla virheellä: %n%3
 .
 
 MessageId=7007
@@ -474,6 +535,9 @@ System powrócił do ostatniej znanej dobrej konfiguracji. Trwa ponowne uruchami
 Language=Romanian
 Sistemul a revenit la cea mai bună configurație anterioară. Se repornește sistemul....
 .
+Language=Finnish
+Järjestelmä palasi viimeisimpään toimivaan kokoonpanoon.  Järjestelmä käynnistyy uudelleen....
+.
 
 MessageId=7008
 Severity=Error
@@ -493,6 +557,9 @@ W nazwie konta brak znaku ukośnika odwrotnego.
 .
 Language=Romanian
 Lipsește solidusul întors din numele contului.
+.
+Language=Finnish
+Tilin nimessä ei ole kenoviivaa.
 .
 
 MessageId=7009
@@ -514,6 +581,9 @@ Upłynął limit czasu (%1 milisekund) podczas oczekiwania na połączenie się 
 Language=Romanian
 Pauza (de %1 (de) milisecundă(e)) așteaptă serviciul %2 pentru conectare.
 .
+Language=Finnish
+Aikakatkaisu (%1 millisekuntia) odotettaessa palvelun %2 yhteyttä.
+.
 
 MessageId=7010
 Severity=Error
@@ -533,6 +603,9 @@ Upłynął limit czasu (%1 milisekund) podczas oczekiwania na operację ReadFile
 .
 Language=Romanian
 Pauza (de %1 (de) milisecundă(e)) așteaptă fișierul de citire ReadFile.
+.
+Language=Finnish
+Aikakatkaisu (%1 millisekuntia) odotettaessa ReadFile-kutsua.
 .
 
 MessageId=7011
@@ -554,6 +627,9 @@ Upłynął limit czasu (%1 milisekund) podczas oczekiwania na odpowiedź transak
 Language=Romanian
 Pauza (de %1 (de) milisecundă(e)) așteaptă un răspuns de tranzacție de la serviciul %2.
 .
+Language=Finnish
+Aikakatkaisu (%1 millisekuntia) odotettaessa palvelun %2 vastausta tapahtumaan.
+.
 
 MessageId=7012
 Severity=Error
@@ -573,6 +649,9 @@ Wiadomość zwrócona w transakcji ma niepoprawny rozmiar.
 .
 Language=Romanian
 Mesajul returnat în tranzacție are o dimensiune incorectă.
+.
+Language=Finnish
+Tapahtumassa palautetun viestin koko on virheellinen.
 .
 
 MessageId=7013
@@ -594,6 +673,9 @@ Próba logowania za pomocą aktualnego hasła nie powiodła się; wystąpił nas
 Language=Romanian
 Încercarea de autentificare cu parola curentă a eșuat cu următoarea eroare: %n%1
 .
+Language=Finnish
+Kirjautumisyritys nykyisellä salasanalla epäonnistui seuraavalla virheellä: %n%1
+.
 
 MessageId=7014
 Severity=Error
@@ -613,6 +695,9 @@ Druga próba logowania za pomocą starego hasła także się nie powiodła; wyst
 .
 Language=Romanian
 A doua încercare de autentificare cu parola veche a eșuat de asemenea, cu următoarea eroare: %n%1
+.
+Language=Finnish
+Toinen kirjautumisyritys vanhalla salasanalla epäonnistui myös seuraavalla virheellä: %n%1
 .
 
 MessageId=7015
@@ -634,6 +719,9 @@ Sterowniki startu rozruchowego oraz systemowego (%1) nie mogą zależeć od usł
 Language=Romanian
 Driverul de pornire a inițializării sau al sistemului (%1) nu trebuie să depindă de un serviciu.
 .
+Language=Finnish
+Käynnistyksen tai järjestelmän käynnistyksen yhteydessä käynnistyvä ajuri (%1) ei saa olla riippuvainen palvelusta.
+.
 
 MessageId=7016
 Severity=Error
@@ -653,6 +741,9 @@ Usługa %1 zaraportowała nieprawidłowy stan bieżący %2.
 .
 Language=Romanian
 Serviciul %1 a raportat o stare curentă nevalidă %2.
+.
+Language=Finnish
+Palvelu %1 on ilmoittanut virheellisen nykyisen tilan %2.
 .
 
 MessageId=7017
@@ -674,6 +765,9 @@ Wykryte zależności cykliczne wymagają uruchomienia %1.
 Language=Romanian
 A fost detectată o cerere de dependențe circulare, începând cu %1.
 .
+Language=Finnish
+Havaittiin kehämäisiä riippuvuuksia käynnistettäessä palvelua %1 pyynnöstä.
+.
 
 MessageId=7018
 Severity=Error
@@ -693,6 +787,9 @@ Wykryto automatycznie uruchamiane usługi zależności cyklicznych.
 .
 Language=Romanian
 Au fost detectate servicii de pornire automată de dependențe circulare.
+.
+Language=Finnish
+Havaittiin kehämäisiä riippuvuuksia käynnistettäessä palveluita automaattisesti.
 .
 
 MessageId=7019
@@ -714,6 +811,9 @@ Zależność cykliczna: usługa %1 zależy od usługi z grupy uruchamianej póź
 Language=Romanian
 Dependență circulară: Serviciul %1 depinde de un serviciu dintr-un grup ce pornește mai târziu.
 .
+Language=Finnish
+Kehämäinen riippuvuus: palvelu %1 on riippuvainen palvelusta ryhmässä, joka käynnistyy myöhemmin.
+.
 
 MessageId=7020
 Severity=Error
@@ -733,6 +833,9 @@ Zależność cykliczna: usługa %1 zależy od grupy uruchamianej później.
 .
 Language=Romanian
 Dependență circulară: Serviciul %1 depinde de un grup ce pornește mai târziu.
+.
+Language=Finnish
+Kehämäinen riippuvuus: palvelu %1 on riippuvainen ryhmästä, joka käynnistyy myöhemmin.
 .
 
 MessageId=7021
@@ -754,6 +857,9 @@ System powróci do ostatniej znanej dobrej konfiguracji, ponieważ uruchomienie 
 Language=Romanian
 Sunteți pe cale să anulați revenirea la ultima configurație bună cunoscută din cauză că serviciul %1 nu a putut porni.
 .
+Language=Finnish
+Palataan viimeisimpään toimivaan kokoonpanoon, koska palvelu %1 ei käynnistynyt.
+.
 
 MessageId=7022
 Severity=Error
@@ -773,6 +879,9 @@ Usługa %1 zawiesiła się podczas uruchamiania.
 .
 Language=Romanian
 Serviciul %1 a fost blocat la pornire.
+.
+Language=Finnish
+Palvelu %1 jumittui käynnistyessään.
 .
 
 MessageId=7023
@@ -794,6 +903,9 @@ Usługa %1 zakończyła działanie; wystąpił następujący błąd: %n%2
 Language=Romanian
 Serviciul %1 a fost închis cu următoarea eroare: %n%2
 .
+Language=Finnish
+Palvelu %1 päättyi seuraavalla virheellä: %n%2
+.
 
 MessageId=7024
 Severity=Error
@@ -813,6 +925,9 @@ Usługa %1 zakończyła działanie; wystąpił specyficzny dla niej błąd %2.
 .
 Language=Romanian
 Serviciul %1 s-a terminat cu o eroare specifică unui serviciu %2.
+.
+Language=Finnish
+Palvelu %1 päättyi palvelukohtaisella virheellä %2.
 .
 
 MessageId=7025
@@ -834,6 +949,9 @@ Przynajmniej jedna usługa lub jeden sterownik nie dały się uruchomić podczas
 Language=Romanian
 Cel puțin un serviciu sau un driver a eșuat, în timpul pornirii sistemului. Folosiți Vizualizatorul de evenimente pentru a examina jurnalul pentru detalii.
 .
+Language=Finnish
+Vähintään yksi palvelu tai ajuri epäonnistui järjestelmän käynnistyksen aikana.  Tarkastele tapahtumalokin tietoja Tapahtumienvalvonnassa.
+.
 
 MessageId=7026
 Severity=Error
@@ -853,6 +971,9 @@ Nie można załadować następujących sterowników startu rozruchowego lub syst
 .
 Language=Romanian
 Următorul(oarele) driver(e) de pornire pentru inițializare sau de pornire a sistemului nu a(u) putut fi încărcat(e): %1
+.
+Language=Finnish
+Seuraavia käynnistyksen tai järjestelmän käynnistyksen yhteydessä käynnistyviä ajureita ei voitu ladata: %1
 .
 
 MessageId=7027
@@ -874,6 +995,9 @@ Nie można uruchomić systemu LiberNT zgodnie z aktualną konfiguracją. Zamiast
 Language=Romanian
 LiberNT nu a putut fi pornit după configurație. În locul ei, a fost folosită o configurație funcțională anterioară.
 .
+Language=Finnish
+LiberNT:tä ei voitu käynnistää määritetyllä tavalla.  Sen sijaan käytettiin aiempaa toimivaa kokoonpanoa.
+.
 
 MessageId=7028
 Severity=Error
@@ -893,6 +1017,9 @@ Klucz Rejestru %1 nie przyznał dostępu do programów konta SYSTEM, w związku 
 .
 Language=Romanian
 Cheia de registru %1 a blocat accesul la programele contului de sistem (SYSTEM), astfel încât Administratorul de control al serviciului a preluat proprietatea la cheia de registru.
+.
+Language=Finnish
+Rekisteriavain %1 esti SYSTEM-tilin ohjelmien käytön, joten palvelunhallinta otti rekisteriavaimen omistukseensa.
 .
 
 MessageId=7029
@@ -914,6 +1041,9 @@ Menedżer sterowania usługami %0
 Language=Romanian
 Administratorul de control al serviciului %0
 .
+Language=Finnish
+Palvelunhallinta %0
+.
 
 MessageId=7030
 Severity=Error
@@ -933,6 +1063,9 @@ Usługa %1 jest oznaczona jako usługa interakcyjna. System jest jednak skonfigu
 .
 Language=Romanian
 Serviciul %1 este marcat ca un serviciu inactiv. Totuși, sistemul este configurat să nu permită serviciile interactive. Acest serviciu nu poate funcționa corespunzător.
+.
+Language=Finnish
+Palvelu %1 on merkitty vuorovaikutteiseksi palveluksi.  Järjestelmä on kuitenkin määritetty estämään vuorovaikutteiset palvelut.  Tämä palvelu ei ehkä toimi oikein.
 .
 
 MessageId=7031
@@ -954,6 +1087,9 @@ Usługa %1 niespodziewanie zakończyła pracę. Wystąpiło to razy: %2. W przec
 Language=Romanian
 Serviciul %1 a fost închis în mod neașteptat. Acest lucru a fost făcut (de) %2 dată(ori). Următoarea măsură corectivă va fi luată în %3 milisecondă(e): %5.
 .
+Language=Finnish
+Palvelu %1 päättyi odottamatta.  Näin on tapahtunut %2 kertaa.  Seuraava korjaustoimi suoritetaan %3 millisekunnin kuluttua: %5.
+.
 
 MessageId=7032
 Severity=Error
@@ -973,6 +1109,9 @@ Menedżer sterowania usługami próbował podjąć akcję korekcyjną (%2) po ni
 .
 Language=Romanian
 Administratorul de control al serviciului a încercat să ia o acțiune corectivă (%2) după o închidere neașteptată a serviciului %3, dar această acțiune a eșuat cu următoarea eroare: %n%4
+.
+Language=Finnish
+Palvelunhallinta yritti suorittaa korjaustoimen (%2) palvelun %3 odottamattoman päättymisen jälkeen, mutta toimi epäonnistui seuraavalla virheellä: %n%4
 .
 
 MessageId=7033
@@ -1003,6 +1142,11 @@ Administratorul de control al serviciului nu s-a putut inițializa cu succes. Se
 serverului de configurație (scesrv.dll) a eșuat să se inițializeze cu eroarea %1.
 Se repornește sistemul...
 .
+Language=Finnish
+Palvelunhallinnan alustus epäonnistui. Suojausmäärityspalvelimen
+(scesrv.dll) alustus epäonnistui virheellä %1.  Järjestelmä
+käynnistyy uudelleen...
+.
 
 MessageId=7034
 Severity=Error
@@ -1022,6 +1166,9 @@ Usługa %1 niespodziewanie zakończyła pracę. Wystąpiło to razy: %2.
 .
 Language=Romanian
 Serviciul %1 a fost închis în mod neașteptat. Acest lucru a fost făcut %2 dată(ori).
+.
+Language=Finnish
+Palvelu %1 päättyi odottamatta.  Näin on tapahtunut %2 kertaa.
 .
 
 MessageId=7035
@@ -1043,6 +1190,9 @@ Do usługi %1 został pomyślnie wysłany kod sterowania %2.
 Language=Romanian
 Serviciul %1 a trimis cu succes un control %2.
 .
+Language=Finnish
+Palvelulle %1 lähetettiin onnistuneesti ohjaus %2.
+.
 
 MessageId=7036
 Severity=Informational
@@ -1062,6 +1212,9 @@ Usługa %1 weszła w stan %2.
 .
 Language=Romanian
 Serviciul %1 a intrat în stadiul %2.
+.
+Language=Finnish
+Palvelu %1 siirtyi tilaan %2.
 .
 
 MessageId=7037
@@ -1111,6 +1264,14 @@ Dacă nu corectați această configurație, nu veți putea reporni serviciul %1
 sau veți întâmpina alte erori. Pentru a vă asigura că serviciul este configurat
 corect, folosiți Administratorul de servicii în Consola de administrare (MMC).
 .
+Language=Finnish
+Palvelunhallinta kohtasi virheen perutessaan palvelun %1 määritysmuutosta.
+Palvelun %2 tila on tällä hetkellä arvaamaton.
+
+Jos et korjaa tätä määritystä, et ehkä voi käynnistää palvelua %1 uudelleen
+tai saatat kohdata muita virheitä.  Varmista, että palvelu on määritetty
+oikein, käyttämällä Microsoft Management Consolen (MMC) Palvelut-laajennusta.
+.
 
 MessageId=7038
 Severity=Error
@@ -1145,6 +1306,12 @@ Serviciul %1 nu a putut fi logat la %2 cu parola configurată din prezent,
 din cauza următoarei erori: %n%3%n%nPentru a vă asigura că serviciul este
 configurat în mod corespunzător, folosiți Administratorul de servicii în Consola de
 administrare (MMC).
+.
+Language=Finnish
+Palvelu %1 ei voinut kirjautua käyttäjänä %2 nykyisellä määritetyllä
+salasanalla seuraavan virheen vuoksi: %n%3%n%nVarmista, että palvelu on
+määritetty oikein, käyttämällä Microsoft Management Consolen (MMC)
+Palvelut-laajennusta.
 .
 
 MessageId=7039
@@ -1186,6 +1353,13 @@ procesul %2 și în schimb, s-a conectat procesul %3. %n%n
 
 Rețineți că, dacă acest serviciu este configurat să pornească sub un depanator, acest comportament este de așteptat.
 .
+Language=Finnish
+Palvelua %1 käynnistettäessä muodosti yhteyden muu palveluprosessi kuin se,
+jonka palvelunhallinta käynnisti.  Palvelunhallinta käynnisti prosessin %2,
+mutta yhteyden muodosti prosessi %3.%n%n
+
+Jos tämä palvelu on määritetty käynnistymään virheenkorjaimessa, tämä on odotettua.
+.
 
 MessageId=7040
 Severity=Informational
@@ -1205,6 +1379,9 @@ Typ startowy usługi %1 został zmieniony z %2 do %3.
 .
 Language=Romanian
 Modul de pornire al serviciului %1 a fost schimbat din %2 în %3.
+.
+Language=Finnish
+Palvelun %1 käynnistystyypiksi muutettiin %3 (aiemmin %2).
 .
 
 MessageId=7041
@@ -1291,6 +1468,21 @@ dreptul utilizatorului apare ca fiind șters, un obiect al Politicii grupului as
 nod poate fi ștergerea dreptului. Verificați cu domeniul dumneavoastră de administrator pentru
 a afla dacă se întâmplă acest lucru.
 .
+Language=Finnish
+Palvelu %1 ei voinut kirjautua käyttäjänä %2 nykyisellä määritetyllä salasanalla seuraavan virheen vuoksi:%n
+Kirjautuminen epäonnistui: käyttäjälle ei ole myönnetty pyydettyä kirjautumistyyppiä tässä tietokoneessa.%n%n
+Palvelu: %1%n
+Toimialue ja tili: %2%n%n
+Tällä palvelutilillä ei ole tarvittavaa käyttöoikeutta "Kirjaudu palveluna".%n%n
+Käyttäjän toimet%n%n
+Myönnä palvelutilille oikeus "Kirjaudu palveluna" tässä tietokoneessa. Voit
+tehdä sen Paikallisilla suojausasetuksilla (Secpol.msc). Jos tämä tietokone
+on klusterin solmu, tarkista, että tämä käyttöoikeus on myönnetty
+klusteripalvelun tilille klusterin kaikissa solmuissa.%n%n
+Jos olet jo myöntänyt tämän käyttöoikeuden palvelutilille ja oikeus näyttää
+poistuneen, tähän solmuun liittyvä ryhmäkäytäntöobjekti saattaa poistaa
+oikeuden. Kysy toimialueen järjestelmänvalvojalta, onko näin.
+.
 
 MessageId=7042
 Severity=Informational
@@ -1321,6 +1513,11 @@ Serviciul %1 a trimis cu succes un control %2.%n%n
 Motivul specificat a fost: %3 [%4]%n%n
 Comentariu: %5
 .
+Language=Finnish
+Palvelulle %1 lähetettiin onnistuneesti ohjaus %2.%n%n
+Ilmoitettu syy: %3 [%4]%n%n
+Kommentti: %5
+.
 
 MessageId=7043
 Severity=Error
@@ -1340,6 +1537,9 @@ Usługa %1 nie została poprawnie wyłączona po otrzymaniu kodu sterownika prze
 .
 Language=Romanian
 Serviciul %1 s-a oprit corect după primirea controlului de preoprire.
+.
+Language=Finnish
+Palvelu %1 ei sammunut oikein vastaanotettuaan sammutusta edeltävän ohjauksen.
 .
 
 ;
@@ -1365,6 +1565,9 @@ Language=Polish
 Language=Romanian
 %2 nu s-a putut înregistra cu emulatorul NDIS.
 .
+Language=Finnish
+%2 ei voinut rekisteröityä NDIS-kääreeseen.
+.
 
 MessageId=9006
 Severity=Error
@@ -1384,4 +1587,7 @@ Language=Polish
 .
 Language=Romanian
 %2 nu a putut găsi adaptorul %3.
+.
+Language=Finnish
+%2 ei löytänyt sovitinta %3.
 .
