@@ -39,6 +39,7 @@ LanguageNames=(English=0x409:MSG00409
                Turkish=0x41F:MSG0041F
                Chinese=0x804:MSG00804
                Taiwanese=0x404:MSG00404
+               Finnish=0x40B:MSG0040B
               )
 
 
@@ -74,6 +75,9 @@ The workstation driver is not installed.
 Language=Taiwanese
 The workstation driver is not installed.
 .
+Language=Finnish
+Työaseman ajuria ei ole asennettu.
+.
 
 MessageId=2103
 Severity=Success
@@ -102,6 +106,9 @@ The server could not be located.
 .
 Language=Taiwanese
 The server could not be located.
+.
+Language=Finnish
+Palvelinta ei löytynyt.
 .
 
 MessageId=2104
@@ -132,6 +139,9 @@ An internal error occurred. The network cannot access a shared memory segment.
 Language=Taiwanese
 An internal error occurred. The network cannot access a shared memory segment.
 .
+Language=Finnish
+Tapahtui sisäinen virhe. Verkko ei voi käyttää jaettua muistisegmenttiä.
+.
 
 MessageId=2105
 Severity=Success
@@ -160,6 +170,9 @@ A network resource shortage occurred.
 .
 Language=Taiwanese
 A network resource shortage occurred.
+.
+Language=Finnish
+Verkkoresursseista on pulaa.
 .
 
 MessageId=2106
@@ -190,6 +203,9 @@ This operation is not supported on workstations.
 Language=Taiwanese
 This operation is not supported on workstations.
 .
+Language=Finnish
+Tätä toimintoa ei tueta työasemissa.
+.
 
 MessageId=2107
 Severity=Success
@@ -218,6 +234,9 @@ The device is not connected.
 .
 Language=Taiwanese
 The device is not connected.
+.
+Language=Finnish
+Laitetta ei ole liitetty.
 .
 
 MessageId=2114
@@ -248,6 +267,9 @@ The Server service is not started.
 Language=Taiwanese
 The Server service is not started.
 .
+Language=Finnish
+Server-palvelua ei ole käynnistetty.
+.
 
 MessageId=2115
 Severity=Success
@@ -276,6 +298,9 @@ The queue is empty.
 .
 Language=Taiwanese
 The queue is empty.
+.
+Language=Finnish
+Jono on tyhjä.
 .
 
 MessageId=2116
@@ -306,6 +331,9 @@ The device or directory does not exist.
 Language=Taiwanese
 The device or directory does not exist.
 .
+Language=Finnish
+Laitetta tai hakemistoa ei ole olemassa.
+.
 
 MessageId=2117
 Severity=Success
@@ -334,6 +362,9 @@ The operation is invalid on a redirected resource.
 .
 Language=Taiwanese
 The operation is invalid on a redirected resource.
+.
+Language=Finnish
+Toiminto on virheellinen uudelleenohjatulle resurssille.
 .
 
 MessageId=2118
@@ -364,6 +395,9 @@ The name has already been shared.
 Language=Taiwanese
 The name has already been shared.
 .
+Language=Finnish
+Nimi on jo jaettu.
+.
 
 MessageId=2119
 Severity=Success
@@ -392,6 +426,9 @@ The server is currently out of the requested resource.
 .
 Language=Taiwanese
 The server is currently out of the requested resource.
+.
+Language=Finnish
+Palvelimelta on pyydetty resurssi tällä hetkellä lopussa.
 .
 
 MessageId=2121
@@ -422,6 +459,9 @@ Requested addition of items exceeds the maximum allowed.
 Language=Taiwanese
 Requested addition of items exceeds the maximum allowed.
 .
+Language=Finnish
+Pyydetty kohteiden lisäys ylittää sallitun enimmäismäärän.
+.
 
 MessageId=2122
 Severity=Success
@@ -450,6 +490,9 @@ The Peer service supports only two simultaneous users.
 .
 Language=Taiwanese
 The Peer service supports only two simultaneous users.
+.
+Language=Finnish
+Peer-palvelu tukee vain kahta samanaikaista käyttäjää.
 .
 
 MessageId=2123
@@ -480,6 +523,9 @@ The API return buffer is too small.
 Language=Taiwanese
 The API return buffer is too small.
 .
+Language=Finnish
+Ohjelmointirajapinnan palautuspuskuri on liian pieni.
+.
 
 MessageId=2127
 Severity=Success
@@ -508,6 +554,9 @@ A remote API error occurred.
 .
 Language=Taiwanese
 A remote API error occurred.
+.
+Language=Finnish
+Tapahtui etäohjelmointirajapinnan virhe.
 .
 
 MessageId=2131
@@ -538,6 +587,9 @@ An error occurred when opening or reading the configuration file.
 Language=Taiwanese
 An error occurred when opening or reading the configuration file.
 .
+Language=Finnish
+Määritystiedostoa avattaessa tai luettaessa tapahtui virhe.
+.
 
 MessageId=2136
 Severity=Success
@@ -566,6 +618,9 @@ A general network error occurred.
 .
 Language=Taiwanese
 A general network error occurred.
+.
+Language=Finnish
+Tapahtui yleinen verkkovirhe.
 .
 
 MessageId=2137
@@ -596,6 +651,9 @@ The Workstation service is in an inconsistent state. Restart the computer before
 Language=Taiwanese
 The Workstation service is in an inconsistent state. Restart the computer before restarting the Workstation service.
 .
+Language=Finnish
+Workstation-palvelu on ristiriitaisessa tilassa. Käynnistä tietokone uudelleen ennen Workstation-palvelun käynnistämistä uudelleen.
+.
 
 MessageId=2138
 Severity=Success
@@ -624,6 +682,9 @@ The Workstation service has not been started.
 .
 Language=Taiwanese
 The Workstation service has not been started.
+.
+Language=Finnish
+Workstation-palvelua ei ole käynnistetty.
 .
 
 MessageId=2139
@@ -654,6 +715,9 @@ The requested information is not available.
 Language=Taiwanese
 The requested information is not available.
 .
+Language=Finnish
+Pyydetyt tiedot eivät ole käytettävissä.
+.
 
 MessageId=2140
 Severity=Success
@@ -682,6 +746,9 @@ An internal error occurred.
 .
 Language=Taiwanese
 An internal error occurred.
+.
+Language=Finnish
+Tapahtui sisäinen virhe.
 .
 
 MessageId=2141
@@ -712,6 +779,9 @@ The server is not configured for transactions.
 Language=Taiwanese
 The server is not configured for transactions.
 .
+Language=Finnish
+Palvelinta ei ole määritetty tapahtumia varten.
+.
 
 MessageId=2142
 Severity=Success
@@ -740,6 +810,9 @@ The requested API is not supported on the remote server.
 .
 Language=Taiwanese
 The requested API is not supported on the remote server.
+.
+Language=Finnish
+Etäpalvelin ei tue pyydettyä ohjelmointirajapintaa.
 .
 
 MessageId=2143
@@ -770,6 +843,9 @@ The event name is invalid.
 Language=Taiwanese
 The event name is invalid.
 .
+Language=Finnish
+Tapahtuman nimi on virheellinen.
+.
 
 MessageId=2144
 Severity=Success
@@ -798,6 +874,9 @@ The computer name already exists on the network. Change it and restart the compu
 .
 Language=Taiwanese
 The computer name already exists on the network. Change it and restart the computer.
+.
+Language=Finnish
+Tietokoneen nimi on jo olemassa verkossa. Vaihda se ja käynnistä tietokone uudelleen.
 .
 
 MessageId=2146
@@ -828,6 +907,9 @@ The specified component could not be found in the configuration information.
 Language=Taiwanese
 The specified component could not be found in the configuration information.
 .
+Language=Finnish
+Määritettyä osaa ei löytynyt määritystiedoista.
+.
 
 MessageId=2147
 Severity=Success
@@ -856,6 +938,9 @@ The specified parameter could not be found in the configuration information.
 .
 Language=Taiwanese
 The specified parameter could not be found in the configuration information.
+.
+Language=Finnish
+Määritettyä parametria ei löytynyt määritystiedoista.
 .
 
 MessageId=2149
@@ -886,6 +971,9 @@ A line in the configuration file is too long.
 Language=Taiwanese
 A line in the configuration file is too long.
 .
+Language=Finnish
+Määritystiedoston rivi on liian pitkä.
+.
 
 MessageId=2150
 Severity=Success
@@ -914,6 +1002,9 @@ The printer does not exist.
 .
 Language=Taiwanese
 The printer does not exist.
+.
+Language=Finnish
+Tulostinta ei ole olemassa.
 .
 
 MessageId=2151
@@ -944,6 +1035,9 @@ The print job does not exist.
 Language=Taiwanese
 The print job does not exist.
 .
+Language=Finnish
+Tulostustyötä ei ole olemassa.
+.
 
 MessageId=2152
 Severity=Success
@@ -972,6 +1066,9 @@ The printer destination cannot be found.
 .
 Language=Taiwanese
 The printer destination cannot be found.
+.
+Language=Finnish
+Tulostinkohdetta ei löydy.
 .
 
 MessageId=2153
@@ -1002,6 +1099,9 @@ The printer destination already exists.
 Language=Taiwanese
 The printer destination already exists.
 .
+Language=Finnish
+Tulostinkohde on jo olemassa.
+.
 
 MessageId=2154
 Severity=Success
@@ -1030,6 +1130,9 @@ The printer queue already exists.
 .
 Language=Taiwanese
 The printer queue already exists.
+.
+Language=Finnish
+Tulostusjono on jo olemassa.
 .
 
 MessageId=2155
@@ -1060,6 +1163,9 @@ No more printers can be added.
 Language=Taiwanese
 No more printers can be added.
 .
+Language=Finnish
+Tulostimia ei voi lisätä enempää.
+.
 
 MessageId=2156
 Severity=Success
@@ -1088,6 +1194,9 @@ No more print jobs can be added.
 .
 Language=Taiwanese
 No more print jobs can be added.
+.
+Language=Finnish
+Tulostustöitä ei voi lisätä enempää.
 .
 
 MessageId=2157
@@ -1118,6 +1227,9 @@ No more printer destinations can be added.
 Language=Taiwanese
 No more printer destinations can be added.
 .
+Language=Finnish
+Tulostinkohteita ei voi lisätä enempää.
+.
 
 MessageId=2158
 Severity=Success
@@ -1146,6 +1258,9 @@ This printer destination is idle and cannot accept control operations.
 .
 Language=Taiwanese
 This printer destination is idle and cannot accept control operations.
+.
+Language=Finnish
+Tämä tulostinkohde on joutokäynnillä, eikä se voi vastaanottaa ohjaustoimintoja.
 .
 
 MessageId=2159
@@ -1176,6 +1291,9 @@ This printer destination request contains an invalid control function.
 Language=Taiwanese
 This printer destination request contains an invalid control function.
 .
+Language=Finnish
+Tämän tulostinkohteen pyynnössä on virheellinen ohjaustoiminto.
+.
 
 MessageId=2160
 Severity=Success
@@ -1204,6 +1322,9 @@ The print processor is not responding.
 .
 Language=Taiwanese
 The print processor is not responding.
+.
+Language=Finnish
+Tulostusprosessori ei vastaa.
 .
 
 MessageId=2161
@@ -1234,6 +1355,9 @@ The spooler is not running.
 Language=Taiwanese
 The spooler is not running.
 .
+Language=Finnish
+Taustatulostus ei ole käynnissä.
+.
 
 MessageId=2162
 Severity=Success
@@ -1262,6 +1386,9 @@ This operation cannot be performed on the print destination in its current state
 .
 Language=Taiwanese
 This operation cannot be performed on the print destination in its current state.
+.
+Language=Finnish
+Tätä toimintoa ei voi suorittaa tulostuskohteelle sen nykyisessä tilassa.
 .
 
 MessageId=2163
@@ -1292,6 +1419,9 @@ This operation cannot be performed on the printer queue in its current state.
 Language=Taiwanese
 This operation cannot be performed on the printer queue in its current state.
 .
+Language=Finnish
+Tätä toimintoa ei voi suorittaa tulostusjonolle sen nykyisessä tilassa.
+.
 
 MessageId=2164
 Severity=Success
@@ -1320,6 +1450,9 @@ This operation cannot be performed on the print job in its current state.
 .
 Language=Taiwanese
 This operation cannot be performed on the print job in its current state.
+.
+Language=Finnish
+Tätä toimintoa ei voi suorittaa tulostustyölle sen nykyisessä tilassa.
 .
 
 MessageId=2165
@@ -1350,6 +1483,9 @@ A spooler memory allocation failure occurred.
 Language=Taiwanese
 A spooler memory allocation failure occurred.
 .
+Language=Finnish
+Taustatulostuksen muistin varaus epäonnistui.
+.
 
 MessageId=2166
 Severity=Success
@@ -1378,6 +1514,9 @@ The device driver does not exist.
 .
 Language=Taiwanese
 The device driver does not exist.
+.
+Language=Finnish
+Laiteajuria ei ole olemassa.
 .
 
 MessageId=2167
@@ -1408,6 +1547,9 @@ The data type is not supported by the print processor.
 Language=Taiwanese
 The data type is not supported by the print processor.
 .
+Language=Finnish
+Tulostusprosessori ei tue tietotyyppiä.
+.
 
 MessageId=2168
 Severity=Success
@@ -1436,6 +1578,9 @@ The print processor is not installed.
 .
 Language=Taiwanese
 The print processor is not installed.
+.
+Language=Finnish
+Tulostusprosessoria ei ole asennettu.
 .
 
 MessageId=2180
@@ -1466,6 +1611,9 @@ The service database is locked.
 Language=Taiwanese
 The service database is locked.
 .
+Language=Finnish
+Palvelutietokanta on lukittu.
+.
 
 MessageId=2181
 Severity=Success
@@ -1494,6 +1642,9 @@ The service table is full.
 .
 Language=Taiwanese
 The service table is full.
+.
+Language=Finnish
+Palvelutaulukko on täynnä.
 .
 
 MessageId=2182
@@ -1524,6 +1675,9 @@ The requested service has already been started.
 Language=Taiwanese
 The requested service has already been started.
 .
+Language=Finnish
+Pyydetty palvelu on jo käynnistetty.
+.
 
 MessageId=2183
 Severity=Success
@@ -1552,6 +1706,9 @@ The service does not respond to control actions.
 .
 Language=Taiwanese
 The service does not respond to control actions.
+.
+Language=Finnish
+Palvelu ei vastaa ohjaustoimintoihin.
 .
 
 MessageId=2184
@@ -1582,6 +1739,9 @@ The service has not been started.
 Language=Taiwanese
 The service has not been started.
 .
+Language=Finnish
+Palvelua ei ole käynnistetty.
+.
 
 MessageId=2185
 Severity=Success
@@ -1610,6 +1770,9 @@ The service name is invalid.
 .
 Language=Taiwanese
 The service name is invalid.
+.
+Language=Finnish
+Palvelun nimi on virheellinen.
 .
 
 MessageId=2186
@@ -1640,6 +1803,9 @@ The service is not responding to the control function.
 Language=Taiwanese
 The service is not responding to the control function.
 .
+Language=Finnish
+Palvelu ei vastaa ohjaustoimintoon.
+.
 
 MessageId=2187
 Severity=Success
@@ -1668,6 +1834,9 @@ The service control is busy.
 .
 Language=Taiwanese
 The service control is busy.
+.
+Language=Finnish
+Palvelun ohjaus on varattu.
 .
 
 MessageId=2188
@@ -1698,6 +1867,9 @@ The configuration file contains an invalid service program name.
 Language=Taiwanese
 The configuration file contains an invalid service program name.
 .
+Language=Finnish
+Määritystiedostossa on virheellinen palveluohjelman nimi.
+.
 
 MessageId=2189
 Severity=Success
@@ -1726,6 +1898,9 @@ The service could not be controlled in its present state.
 .
 Language=Taiwanese
 The service could not be controlled in its present state.
+.
+Language=Finnish
+Palvelua ei voitu ohjata sen nykyisessä tilassa.
 .
 
 MessageId=2190
@@ -1756,6 +1931,9 @@ The service ended abnormally.
 Language=Taiwanese
 The service ended abnormally.
 .
+Language=Finnish
+Palvelu päättyi epänormaalisti.
+.
 
 MessageId=2191
 Severity=Success
@@ -1784,6 +1962,9 @@ The requested pause, continue, or stop is not valid for this service.
 .
 Language=Taiwanese
 The requested pause, continue, or stop is not valid for this service.
+.
+Language=Finnish
+Pyydetty keskeytys, jatkaminen tai pysäytys ei ole kelvollinen tälle palvelulle.
 .
 
 MessageId=2192
@@ -1814,6 +1995,9 @@ The service control dispatcher could not find the service name in the dispatch t
 Language=Taiwanese
 The service control dispatcher could not find the service name in the dispatch table.
 .
+Language=Finnish
+Palvelun ohjauksen välittäjä ei löytänyt palvelun nimeä välitystaulukosta.
+.
 
 MessageId=2193
 Severity=Success
@@ -1842,6 +2026,9 @@ The service control dispatcher pipe read failed.
 .
 Language=Taiwanese
 The service control dispatcher pipe read failed.
+.
+Language=Finnish
+Palvelun ohjauksen välittäjän putken luku epäonnistui.
 .
 
 MessageId=2194
@@ -1872,6 +2059,9 @@ A thread for the new service could not be created.
 Language=Taiwanese
 A thread for the new service could not be created.
 .
+Language=Finnish
+Uudelle palvelulle ei voitu luoda säiettä.
+.
 
 MessageId=2200
 Severity=Success
@@ -1900,6 +2090,9 @@ This workstation is already logged on to the local-area network.
 .
 Language=Taiwanese
 This workstation is already logged on to the local-area network.
+.
+Language=Finnish
+Tämä työasema on jo kirjautunut lähiverkkoon.
 .
 
 MessageId=2201
@@ -1930,6 +2123,9 @@ The workstation is not logged on to the local-area network.
 Language=Taiwanese
 The workstation is not logged on to the local-area network.
 .
+Language=Finnish
+Työasema ei ole kirjautunut lähiverkkoon.
+.
 
 MessageId=2202
 Severity=Success
@@ -1958,6 +2154,9 @@ The user name or group name parameter is invalid.
 .
 Language=Taiwanese
 The user name or group name parameter is invalid.
+.
+Language=Finnish
+Käyttäjänimen tai ryhmän nimen parametri on virheellinen.
 .
 
 MessageId=2203
@@ -1988,6 +2187,9 @@ The password parameter is invalid.
 Language=Taiwanese
 The password parameter is invalid.
 .
+Language=Finnish
+Salasanaparametri on virheellinen.
+.
 
 MessageId=2204
 Severity=Success
@@ -2016,6 +2218,9 @@ The logon processor did not add the message alias.
 .
 Language=Taiwanese
 The logon processor did not add the message alias.
+.
+Language=Finnish
+Kirjautumisen käsittelijä ei lisännyt viestialiasta.
 .
 
 MessageId=2205
@@ -2046,6 +2251,9 @@ The logon processor did not add the message alias.
 Language=Taiwanese
 The logon processor did not add the message alias.
 .
+Language=Finnish
+Kirjautumisen käsittelijä ei lisännyt viestialiasta.
+.
 
 MessageId=2206
 Severity=Success
@@ -2074,6 +2282,9 @@ The logoff processor did not delete the message alias.
 .
 Language=Taiwanese
 The logoff processor did not delete the message alias.
+.
+Language=Finnish
+Uloskirjautumisen käsittelijä ei poistanut viestialiasta.
 .
 
 MessageId=2207
@@ -2104,6 +2315,9 @@ The logoff processor did not delete the message alias.
 Language=Taiwanese
 The logoff processor did not delete the message alias.
 .
+Language=Finnish
+Uloskirjautumisen käsittelijä ei poistanut viestialiasta.
+.
 
 MessageId=2209
 Severity=Success
@@ -2132,6 +2346,9 @@ Network logons are paused.
 .
 Language=Taiwanese
 Network logons are paused.
+.
+Language=Finnish
+Verkkokirjautumiset on keskeytetty.
 .
 
 MessageId=2210
@@ -2162,6 +2379,9 @@ A centralized logon-server conflict occurred.
 Language=Taiwanese
 A centralized logon-server conflict occurred.
 .
+Language=Finnish
+Tapahtui keskitetyn kirjautumispalvelimen ristiriita.
+.
 
 MessageId=2211
 Severity=Success
@@ -2190,6 +2410,9 @@ The server is configured without a valid user path.
 .
 Language=Taiwanese
 The server is configured without a valid user path.
+.
+Language=Finnish
+Palvelin on määritetty ilman kelvollista käyttäjäpolkua.
 .
 
 MessageId=2212
@@ -2220,6 +2443,9 @@ An error occurred while loading or running the logon script.
 Language=Taiwanese
 An error occurred while loading or running the logon script.
 .
+Language=Finnish
+Kirjautumiskomentosarjaa ladattaessa tai suoritettaessa tapahtui virhe.
+.
 
 MessageId=2214
 Severity=Success
@@ -2248,6 +2474,9 @@ The logon server was not specified.  Your computer will be logged on as STANDALO
 .
 Language=Taiwanese
 The logon server was not specified.  Your computer will be logged on as STANDALONE.
+.
+Language=Finnish
+Kirjautumispalvelinta ei määritetty.  Tietokone kirjataan sisään erillisenä (STANDALONE).
 .
 
 MessageId=2215
@@ -2278,6 +2507,9 @@ The logon server could not be found.
 Language=Taiwanese
 The logon server could not be found.
 .
+Language=Finnish
+Kirjautumispalvelinta ei löytynyt.
+.
 
 MessageId=2216
 Severity=Success
@@ -2306,6 +2538,9 @@ There is already a logon domain for this computer.
 .
 Language=Taiwanese
 There is already a logon domain for this computer.
+.
+Language=Finnish
+Tällä tietokoneella on jo kirjautumistoimialue.
 .
 
 MessageId=2217
@@ -2336,6 +2571,9 @@ The logon server could not validate the logon.
 Language=Taiwanese
 The logon server could not validate the logon.
 .
+Language=Finnish
+Kirjautumispalvelin ei voinut vahvistaa kirjautumista.
+.
 
 MessageId=2219
 Severity=Success
@@ -2364,6 +2602,9 @@ The security database could not be found.
 .
 Language=Taiwanese
 The security database could not be found.
+.
+Language=Finnish
+Suojaustietokantaa ei löytynyt.
 .
 
 MessageId=2220
@@ -2394,6 +2635,9 @@ The group name could not be found.
 Language=Taiwanese
 The group name could not be found.
 .
+Language=Finnish
+Ryhmän nimeä ei löytynyt.
+.
 
 MessageId=2221
 Severity=Success
@@ -2422,6 +2666,9 @@ The user name could not be found.
 .
 Language=Taiwanese
 The user name could not be found.
+.
+Language=Finnish
+Käyttäjänimeä ei löytynyt.
 .
 
 MessageId=2222
@@ -2452,6 +2699,9 @@ The resource name could not be found.
 Language=Taiwanese
 The resource name could not be found.
 .
+Language=Finnish
+Resurssin nimeä ei löytynyt.
+.
 
 MessageId=2223
 Severity=Success
@@ -2480,6 +2730,9 @@ The group already exists.
 .
 Language=Taiwanese
 The group already exists.
+.
+Language=Finnish
+Ryhmä on jo olemassa.
 .
 
 MessageId=2224
@@ -2510,6 +2763,9 @@ The account already exists.
 Language=Taiwanese
 The account already exists.
 .
+Language=Finnish
+Tili on jo olemassa.
+.
 
 MessageId=2225
 Severity=Success
@@ -2538,6 +2794,9 @@ The resource permission list already exists.
 .
 Language=Taiwanese
 The resource permission list already exists.
+.
+Language=Finnish
+Resurssin käyttöoikeusluettelo on jo olemassa.
 .
 
 MessageId=2226
@@ -2568,6 +2827,9 @@ This operation is only allowed on the primary domain controller of the domain.
 Language=Taiwanese
 This operation is only allowed on the primary domain controller of the domain.
 .
+Language=Finnish
+Tämä toiminto on sallittu vain toimialueen ensisijaisessa toimialueen ohjauskoneessa.
+.
 
 MessageId=2227
 Severity=Success
@@ -2596,6 +2858,9 @@ The security database has not been started.
 .
 Language=Taiwanese
 The security database has not been started.
+.
+Language=Finnish
+Suojaustietokantaa ei ole käynnistetty.
 .
 
 MessageId=2228
@@ -2626,6 +2891,9 @@ There are too many names in the user accounts database.
 Language=Taiwanese
 There are too many names in the user accounts database.
 .
+Language=Finnish
+Käyttäjätilitietokannassa on liian monta nimeä.
+.
 
 MessageId=2229
 Severity=Success
@@ -2654,6 +2922,9 @@ A disk I/O failure occurred.
 .
 Language=Taiwanese
 A disk I/O failure occurred.
+.
+Language=Finnish
+Tapahtui levyn I/O-virhe.
 .
 
 MessageId=2230
@@ -2684,6 +2955,9 @@ The limit of 64 entries per resource was exceeded.
 Language=Taiwanese
 The limit of 64 entries per resource was exceeded.
 .
+Language=Finnish
+Resurssikohtainen 64 merkinnän raja ylittyi.
+.
 
 MessageId=2231
 Severity=Success
@@ -2712,6 +2986,9 @@ Deleting a user with a session is not allowed.
 .
 Language=Taiwanese
 Deleting a user with a session is not allowed.
+.
+Language=Finnish
+Käyttäjää, jolla on istunto, ei voi poistaa.
 .
 
 MessageId=2232
@@ -2742,6 +3019,9 @@ The parent directory could not be located.
 Language=Taiwanese
 The parent directory could not be located.
 .
+Language=Finnish
+Ylähakemistoa ei löytynyt.
+.
 
 MessageId=2233
 Severity=Success
@@ -2770,6 +3050,9 @@ Unable to add to the security database session cache segment.
 .
 Language=Taiwanese
 Unable to add to the security database session cache segment.
+.
+Language=Finnish
+Suojaustietokannan istuntovälimuistin segmenttiin ei voi lisätä.
 .
 
 MessageId=2234
@@ -2800,6 +3083,9 @@ This operation is not allowed on this special group.
 Language=Taiwanese
 This operation is not allowed on this special group.
 .
+Language=Finnish
+Tämä toiminto ei ole sallittu tälle erikoisryhmälle.
+.
 
 MessageId=2235
 Severity=Success
@@ -2828,6 +3114,9 @@ This user is not cached in user accounts database session cache.
 .
 Language=Taiwanese
 This user is not cached in user accounts database session cache.
+.
+Language=Finnish
+Tätä käyttäjää ei ole tallennettu käyttäjätilitietokannan istuntovälimuistiin.
 .
 
 MessageId=2236
@@ -2858,6 +3147,9 @@ The user already belongs to this group.
 Language=Taiwanese
 The user already belongs to this group.
 .
+Language=Finnish
+Käyttäjä kuuluu jo tähän ryhmään.
+.
 
 MessageId=2237
 Severity=Success
@@ -2886,6 +3178,9 @@ The user does not belong to this group.
 .
 Language=Taiwanese
 The user does not belong to this group.
+.
+Language=Finnish
+Käyttäjä ei kuulu tähän ryhmään.
 .
 
 MessageId=2238
@@ -2916,6 +3211,9 @@ This user account is undefined.
 Language=Taiwanese
 This user account is undefined.
 .
+Language=Finnish
+Tätä käyttäjätiliä ei ole määritetty.
+.
 
 MessageId=2239
 Severity=Success
@@ -2944,6 +3242,9 @@ This user account has expired.
 .
 Language=Taiwanese
 This user account has expired.
+.
+Language=Finnish
+Tämä käyttäjätili on vanhentunut.
 .
 
 MessageId=2240
@@ -2974,6 +3275,9 @@ The user is not allowed to log on from this workstation.
 Language=Taiwanese
 The user is not allowed to log on from this workstation.
 .
+Language=Finnish
+Käyttäjä ei saa kirjautua tältä työasemalta.
+.
 
 MessageId=2241
 Severity=Success
@@ -3002,6 +3306,9 @@ The user is not allowed to log on at this time.
 .
 Language=Taiwanese
 The user is not allowed to log on at this time.
+.
+Language=Finnish
+Käyttäjä ei saa kirjautua tähän aikaan.
 .
 
 MessageId=2242
@@ -3032,6 +3339,9 @@ The password of this user has expired.
 Language=Taiwanese
 The password of this user has expired.
 .
+Language=Finnish
+Tämän käyttäjän salasana on vanhentunut.
+.
 
 MessageId=2243
 Severity=Success
@@ -3060,6 +3370,9 @@ The password of this user cannot change.
 .
 Language=Taiwanese
 The password of this user cannot change.
+.
+Language=Finnish
+Tämän käyttäjän salasanaa ei voi vaihtaa.
 .
 
 MessageId=2244
@@ -3090,6 +3403,9 @@ This password cannot be used now.
 Language=Taiwanese
 This password cannot be used now.
 .
+Language=Finnish
+Tätä salasanaa ei voi käyttää nyt.
+.
 
 MessageId=2245
 Severity=Success
@@ -3118,6 +3434,9 @@ The password does not meet the password policy requirements. Check the minimum p
 .
 Language=Taiwanese
 The password does not meet the password policy requirements. Check the minimum password length, password complexity and password history requirements.
+.
+Language=Finnish
+Salasana ei täytä salasanakäytännön vaatimuksia. Tarkista salasanan vähimmäispituuden, monimutkaisuuden ja historian vaatimukset.
 .
 
 MessageId=2246
@@ -3148,6 +3467,9 @@ The password of this user is too recent to change.
 Language=Taiwanese
 The password of this user is too recent to change.
 .
+Language=Finnish
+Tämän käyttäjän salasana on liian uusi vaihdettavaksi.
+.
 
 MessageId=2247
 Severity=Success
@@ -3176,6 +3498,9 @@ The security database is corrupted.
 .
 Language=Taiwanese
 The security database is corrupted.
+.
+Language=Finnish
+Suojaustietokanta on vioittunut.
 .
 
 MessageId=2248
@@ -3206,6 +3531,9 @@ No updates are necessary to this replicant network/local security database.
 Language=Taiwanese
 No updates are necessary to this replicant network/local security database.
 .
+Language=Finnish
+Tähän replikoituun verkon tai paikalliseen suojaustietokantaan ei tarvita päivityksiä.
+.
 
 MessageId=2249
 Severity=Success
@@ -3234,6 +3562,9 @@ This replicant database is outdated; synchronization is required.
 .
 Language=Taiwanese
 This replicant database is outdated; synchronization is required.
+.
+Language=Finnish
+Tämä replikoitu tietokanta on vanhentunut; synkronointi tarvitaan.
 .
 
 MessageId=2250
@@ -3264,6 +3595,9 @@ The network connection could not be found.
 Language=Taiwanese
 The network connection could not be found.
 .
+Language=Finnish
+Verkkoyhteyttä ei löytynyt.
+.
 
 MessageId=2251
 Severity=Success
@@ -3292,6 +3626,9 @@ This asg_type is invalid.
 .
 Language=Taiwanese
 This asg_type is invalid.
+.
+Language=Finnish
+Tämä asg_type on virheellinen.
 .
 
 MessageId=2252
@@ -3322,6 +3659,9 @@ This device is currently being shared.
 Language=Taiwanese
 This device is currently being shared.
 .
+Language=Finnish
+Tämä laite on tällä hetkellä jaettu.
+.
 
 MessageId=2270
 Severity=Success
@@ -3350,6 +3690,9 @@ The computer name could not be added as a message alias.  The name may already e
 .
 Language=Taiwanese
 The computer name could not be added as a message alias.  The name may already exist on the network.
+.
+Language=Finnish
+Tietokoneen nimeä ei voitu lisätä viestialiakseksi.  Nimi on ehkä jo olemassa verkossa.
 .
 
 MessageId=2271
@@ -3380,6 +3723,9 @@ The Messenger service is already started.
 Language=Taiwanese
 The Messenger service is already started.
 .
+Language=Finnish
+Messenger-palvelu on jo käynnistetty.
+.
 
 MessageId=2272
 Severity=Success
@@ -3408,6 +3754,9 @@ The Messenger service failed to start.
 .
 Language=Taiwanese
 The Messenger service failed to start.
+.
+Language=Finnish
+Messenger-palvelu ei käynnistynyt.
 .
 
 MessageId=2273
@@ -3438,6 +3787,9 @@ The message alias could not be found on the network.
 Language=Taiwanese
 The message alias could not be found on the network.
 .
+Language=Finnish
+Viestialiasta ei löytynyt verkosta.
+.
 
 MessageId=2274
 Severity=Success
@@ -3466,6 +3818,9 @@ This message alias has already been forwarded.
 .
 Language=Taiwanese
 This message alias has already been forwarded.
+.
+Language=Finnish
+Tämä viestialias on jo edelleenlähetetty.
 .
 
 MessageId=2275
@@ -3496,6 +3851,9 @@ This message alias has been added but is still forwarded.
 Language=Taiwanese
 This message alias has been added but is still forwarded.
 .
+Language=Finnish
+Tämä viestialias on lisätty, mutta se on yhä edelleenlähetetty.
+.
 
 MessageId=2276
 Severity=Success
@@ -3524,6 +3882,9 @@ This message alias already exists locally.
 .
 Language=Taiwanese
 This message alias already exists locally.
+.
+Language=Finnish
+Tämä viestialias on jo olemassa paikallisesti.
 .
 
 MessageId=2277
@@ -3554,6 +3915,9 @@ The maximum number of added message aliases has been exceeded.
 Language=Taiwanese
 The maximum number of added message aliases has been exceeded.
 .
+Language=Finnish
+Lisättyjen viestialiasten enimmäismäärä on ylitetty.
+.
 
 MessageId=2278
 Severity=Success
@@ -3582,6 +3946,9 @@ The computer name could not be deleted.
 .
 Language=Taiwanese
 The computer name could not be deleted.
+.
+Language=Finnish
+Tietokoneen nimeä ei voitu poistaa.
 .
 
 MessageId=2279
@@ -3612,6 +3979,9 @@ Messages cannot be forwarded back to the same workstation.
 Language=Taiwanese
 Messages cannot be forwarded back to the same workstation.
 .
+Language=Finnish
+Viestejä ei voi lähettää edelleen takaisin samalle työasemalle.
+.
 
 MessageId=2280
 Severity=Success
@@ -3640,6 +4010,9 @@ An error occurred in the domain message processor.
 .
 Language=Taiwanese
 An error occurred in the domain message processor.
+.
+Language=Finnish
+Toimialueen viestien käsittelijässä tapahtui virhe.
 .
 
 MessageId=2281
@@ -3670,6 +4043,9 @@ The message was sent, but the recipient has paused the Messenger service.
 Language=Taiwanese
 The message was sent, but the recipient has paused the Messenger service.
 .
+Language=Finnish
+Viesti lähetettiin, mutta vastaanottaja on keskeyttänyt Messenger-palvelun.
+.
 
 MessageId=2282
 Severity=Success
@@ -3698,6 +4074,9 @@ The message was sent but not received.
 .
 Language=Taiwanese
 The message was sent but not received.
+.
+Language=Finnish
+Viesti lähetettiin, mutta sitä ei vastaanotettu.
 .
 
 MessageId=2283
@@ -3728,6 +4107,9 @@ The message alias is currently in use. Try again later.
 Language=Taiwanese
 The message alias is currently in use. Try again later.
 .
+Language=Finnish
+Viestialias on tällä hetkellä käytössä. Yritä myöhemmin uudelleen.
+.
 
 MessageId=2284
 Severity=Success
@@ -3756,6 +4138,9 @@ The Messenger service has not been started.
 .
 Language=Taiwanese
 The Messenger service has not been started.
+.
+Language=Finnish
+Messenger-palvelua ei ole käynnistetty.
 .
 
 MessageId=2285
@@ -3786,6 +4171,9 @@ The name is not on the local computer.
 Language=Taiwanese
 The name is not on the local computer.
 .
+Language=Finnish
+Nimi ei ole paikallisessa tietokoneessa.
+.
 
 MessageId=2286
 Severity=Success
@@ -3814,6 +4202,9 @@ The forwarded message alias could not be found on the network.
 .
 Language=Taiwanese
 The forwarded message alias could not be found on the network.
+.
+Language=Finnish
+Edelleenlähetettyä viestialiasta ei löytynyt verkosta.
 .
 
 MessageId=2287
@@ -3844,6 +4235,9 @@ The message alias table on the remote station is full.
 Language=Taiwanese
 The message alias table on the remote station is full.
 .
+Language=Finnish
+Etäaseman viestialiastaulukko on täynnä.
+.
 
 MessageId=2288
 Severity=Success
@@ -3872,6 +4266,9 @@ Messages for this alias are not currently being forwarded.
 .
 Language=Taiwanese
 Messages for this alias are not currently being forwarded.
+.
+Language=Finnish
+Tämän aliaksen viestejä ei tällä hetkellä lähetetä edelleen.
 .
 
 MessageId=2289
@@ -3902,6 +4299,9 @@ The broadcast message was truncated.
 Language=Taiwanese
 The broadcast message was truncated.
 .
+Language=Finnish
+Yleislähetysviesti katkaistiin.
+.
 
 MessageId=2294
 Severity=Success
@@ -3930,6 +4330,9 @@ This is an invalid device name.
 .
 Language=Taiwanese
 This is an invalid device name.
+.
+Language=Finnish
+Tämä on virheellinen laitenimi.
 .
 
 MessageId=2295
@@ -3960,6 +4363,9 @@ A write fault occurred.
 Language=Taiwanese
 A write fault occurred.
 .
+Language=Finnish
+Tapahtui kirjoitusvirhe.
+.
 
 MessageId=2297
 Severity=Success
@@ -3988,6 +4394,9 @@ A duplicate message alias exists on the network.
 .
 Language=Taiwanese
 A duplicate message alias exists on the network.
+.
+Language=Finnish
+Verkossa on samanniminen viestialias.
 .
 
 MessageId=2298
@@ -4018,6 +4427,9 @@ This message alias will be deleted later.
 Language=Taiwanese
 This message alias will be deleted later.
 .
+Language=Finnish
+Tämä viestialias poistetaan myöhemmin.
+.
 
 MessageId=2299
 Severity=Success
@@ -4046,6 +4458,9 @@ The message alias was not successfully deleted from all networks.
 .
 Language=Taiwanese
 The message alias was not successfully deleted from all networks.
+.
+Language=Finnish
+Viestialiasta ei poistettu onnistuneesti kaikista verkoista.
 .
 
 MessageId=2300
@@ -4076,6 +4491,9 @@ This operation is not supported on computers with multiple networks.
 Language=Taiwanese
 This operation is not supported on computers with multiple networks.
 .
+Language=Finnish
+Tätä toimintoa ei tueta tietokoneissa, joissa on useita verkkoja.
+.
 
 MessageId=2310
 Severity=Success
@@ -4104,6 +4522,9 @@ This shared resource does not exist.
 .
 Language=Taiwanese
 This shared resource does not exist.
+.
+Language=Finnish
+Tätä jaettua resurssia ei ole olemassa.
 .
 
 MessageId=2311
@@ -4134,6 +4555,9 @@ This device is not shared.
 Language=Taiwanese
 This device is not shared.
 .
+Language=Finnish
+Tätä laitetta ei ole jaettu.
+.
 
 MessageId=2312
 Severity=Success
@@ -4162,6 +4586,9 @@ A session does not exist with that computer name.
 .
 Language=Taiwanese
 A session does not exist with that computer name.
+.
+Language=Finnish
+Tämännimisellä tietokoneella ei ole istuntoa.
 .
 
 MessageId=2314
@@ -4192,6 +4619,9 @@ There is not an open file with that identification number.
 Language=Taiwanese
 There is not an open file with that identification number.
 .
+Language=Finnish
+Tällä tunnistenumerolla ei ole avointa tiedostoa.
+.
 
 MessageId=2315
 Severity=Success
@@ -4220,6 +4650,9 @@ A failure occurred when executing a remote administration command.
 .
 Language=Taiwanese
 A failure occurred when executing a remote administration command.
+.
+Language=Finnish
+Etähallintakomentoa suoritettaessa tapahtui virhe.
 .
 
 MessageId=2316
@@ -4250,6 +4683,9 @@ A failure occurred when opening a remote temporary file.
 Language=Taiwanese
 A failure occurred when opening a remote temporary file.
 .
+Language=Finnish
+Etätilapäistiedostoa avattaessa tapahtui virhe.
+.
 
 MessageId=2317
 Severity=Success
@@ -4278,6 +4714,9 @@ The data returned from a remote administration command has been truncated to 64K
 .
 Language=Taiwanese
 The data returned from a remote administration command has been truncated to 64K.
+.
+Language=Finnish
+Etähallintakomennon palauttamat tiedot on katkaistu 64 kt:hen.
 .
 
 MessageId=2318
@@ -4308,6 +4747,9 @@ This device cannot be shared as both a spooled and a non-spooled resource.
 Language=Taiwanese
 This device cannot be shared as both a spooled and a non-spooled resource.
 .
+Language=Finnish
+Tätä laitetta ei voi jakaa sekä taustatulostettuna että ei-taustatulostettuna resurssina.
+.
 
 MessageId=2319
 Severity=Success
@@ -4336,6 +4778,9 @@ The information in the list of servers may be incorrect.
 .
 Language=Taiwanese
 The information in the list of servers may be incorrect.
+.
+Language=Finnish
+Palvelinluettelon tiedot voivat olla virheellisiä.
 .
 
 MessageId=2320
@@ -4366,6 +4811,9 @@ The computer is not active in this domain.
 Language=Taiwanese
 The computer is not active in this domain.
 .
+Language=Finnish
+Tietokone ei ole aktiivinen tässä toimialueessa.
+.
 
 MessageId=2321
 Severity=Success
@@ -4394,6 +4842,9 @@ The share must be removed from the Distributed File System before it can be dele
 .
 Language=Taiwanese
 The share must be removed from the Distributed File System before it can be deleted.
+.
+Language=Finnish
+Jako on poistettava hajautetusta tiedostojärjestelmästä (DFS) ennen kuin sen voi poistaa.
 .
 
 MessageId=2331
@@ -4424,6 +4875,9 @@ The operation is invalid for this device.
 Language=Taiwanese
 The operation is invalid for this device.
 .
+Language=Finnish
+Toiminto on virheellinen tälle laitteelle.
+.
 
 MessageId=2332
 Severity=Success
@@ -4452,6 +4906,9 @@ This device cannot be shared.
 .
 Language=Taiwanese
 This device cannot be shared.
+.
+Language=Finnish
+Tätä laitetta ei voi jakaa.
 .
 
 MessageId=2333
@@ -4482,6 +4939,9 @@ This device was not open.
 Language=Taiwanese
 This device was not open.
 .
+Language=Finnish
+Tätä laitetta ei ollut avattu.
+.
 
 MessageId=2334
 Severity=Success
@@ -4510,6 +4970,9 @@ This device name list is invalid.
 .
 Language=Taiwanese
 This device name list is invalid.
+.
+Language=Finnish
+Tämä laitenimiluettelo on virheellinen.
 .
 
 MessageId=2335
@@ -4540,6 +5003,9 @@ The queue priority is invalid.
 Language=Taiwanese
 The queue priority is invalid.
 .
+Language=Finnish
+Jonon prioriteetti on virheellinen.
+.
 
 MessageId=2337
 Severity=Success
@@ -4568,6 +5034,9 @@ There are no shared communication devices.
 .
 Language=Taiwanese
 There are no shared communication devices.
+.
+Language=Finnish
+Jaettuja tietoliikennelaitteita ei ole.
 .
 
 MessageId=2338
@@ -4598,6 +5067,9 @@ The queue you specified does not exist.
 Language=Taiwanese
 The queue you specified does not exist.
 .
+Language=Finnish
+Määrittämääsi jonoa ei ole olemassa.
+.
 
 MessageId=2340
 Severity=Success
@@ -4626,6 +5098,9 @@ This list of devices is invalid.
 .
 Language=Taiwanese
 This list of devices is invalid.
+.
+Language=Finnish
+Tämä laiteluettelo on virheellinen.
 .
 
 MessageId=2341
@@ -4656,6 +5131,9 @@ The requested device is invalid.
 Language=Taiwanese
 The requested device is invalid.
 .
+Language=Finnish
+Pyydetty laite on virheellinen.
+.
 
 MessageId=2342
 Severity=Success
@@ -4684,6 +5162,9 @@ This device is already in use by the spooler.
 .
 Language=Taiwanese
 This device is already in use by the spooler.
+.
+Language=Finnish
+Taustatulostus käyttää jo tätä laitetta.
 .
 
 MessageId=2343
@@ -4714,6 +5195,9 @@ This device is already in use as a communication device.
 Language=Taiwanese
 This device is already in use as a communication device.
 .
+Language=Finnish
+Tätä laitetta käytetään jo tietoliikennelaitteena.
+.
 
 MessageId=2351
 Severity=Success
@@ -4742,6 +5226,9 @@ This computer name is invalid.
 .
 Language=Taiwanese
 This computer name is invalid.
+.
+Language=Finnish
+Tämä tietokoneen nimi on virheellinen.
 .
 
 MessageId=2354
@@ -4772,6 +5259,9 @@ The string and prefix specified are too long.
 Language=Taiwanese
 The string and prefix specified are too long.
 .
+Language=Finnish
+Määritetty merkkijono ja etuliite ovat liian pitkiä.
+.
 
 MessageId=2356
 Severity=Success
@@ -4800,6 +5290,9 @@ This path component is invalid.
 .
 Language=Taiwanese
 This path component is invalid.
+.
+Language=Finnish
+Tämä polun osa on virheellinen.
 .
 
 MessageId=2357
@@ -4830,6 +5323,9 @@ Could not determine the type of input.
 Language=Taiwanese
 Could not determine the type of input.
 .
+Language=Finnish
+Syötteen tyyppiä ei voitu määrittää.
+.
 
 MessageId=2362
 Severity=Success
@@ -4858,6 +5354,9 @@ The buffer for types is not big enough.
 .
 Language=Taiwanese
 The buffer for types is not big enough.
+.
+Language=Finnish
+Tyyppien puskuri ei ole tarpeeksi suuri.
 .
 
 MessageId=2370
@@ -4888,6 +5387,9 @@ Profile files cannot exceed 64K.
 Language=Taiwanese
 Profile files cannot exceed 64K.
 .
+Language=Finnish
+Profiilitiedostot eivät voi olla yli 64 kt.
+.
 
 MessageId=2371
 Severity=Success
@@ -4916,6 +5418,9 @@ The start offset is out of range.
 .
 Language=Taiwanese
 The start offset is out of range.
+.
+Language=Finnish
+Aloitussiirtymä on alueen ulkopuolella.
 .
 
 MessageId=2372
@@ -4946,6 +5451,9 @@ The system cannot delete current connections to network resources.
 Language=Taiwanese
 The system cannot delete current connections to network resources.
 .
+Language=Finnish
+Järjestelmä ei voi poistaa nykyisiä yhteyksiä verkkoresursseihin.
+.
 
 MessageId=2373
 Severity=Success
@@ -4974,6 +5482,9 @@ The system was unable to parse the command line in this file.
 .
 Language=Taiwanese
 The system was unable to parse the command line in this file.
+.
+Language=Finnish
+Järjestelmä ei pystynyt jäsentämään tämän tiedoston komentoriviä.
 .
 
 MessageId=2374
@@ -5004,6 +5515,9 @@ An error occurred while loading the profile file.
 Language=Taiwanese
 An error occurred while loading the profile file.
 .
+Language=Finnish
+Profiilitiedostoa ladattaessa tapahtui virhe.
+.
 
 MessageId=2375
 Severity=Success
@@ -5032,6 +5546,9 @@ Errors occurred while saving the profile file.  The profile was partially saved.
 .
 Language=Taiwanese
 Errors occurred while saving the profile file.  The profile was partially saved.
+.
+Language=Finnish
+Profiilitiedostoa tallennettaessa tapahtui virheitä.  Profiili tallennettiin osittain.
 .
 
 MessageId=2377
@@ -5062,6 +5579,9 @@ Log file %1 is full.
 Language=Taiwanese
 Log file %1 is full.
 .
+Language=Finnish
+Lokitiedosto %1 on täynnä.
+.
 
 MessageId=2378
 Severity=Success
@@ -5090,6 +5610,9 @@ This log file has changed between reads.
 .
 Language=Taiwanese
 This log file has changed between reads.
+.
+Language=Finnish
+Tämä lokitiedosto on muuttunut lukukertojen välillä.
 .
 
 MessageId=2379
@@ -5120,6 +5643,9 @@ Log file %1 is corrupt.
 Language=Taiwanese
 Log file %1 is corrupt.
 .
+Language=Finnish
+Lokitiedosto %1 on vioittunut.
+.
 
 MessageId=2380
 Severity=Success
@@ -5148,6 +5674,9 @@ The source path cannot be a directory.
 .
 Language=Taiwanese
 The source path cannot be a directory.
+.
+Language=Finnish
+Lähdepolku ei voi olla hakemisto.
 .
 
 MessageId=2381
@@ -5178,6 +5707,9 @@ The source path is illegal.
 Language=Taiwanese
 The source path is illegal.
 .
+Language=Finnish
+Lähdepolku on kelpaamaton.
+.
 
 MessageId=2382
 Severity=Success
@@ -5206,6 +5738,9 @@ The destination path is illegal.
 .
 Language=Taiwanese
 The destination path is illegal.
+.
+Language=Finnish
+Kohdepolku on kelpaamaton.
 .
 
 MessageId=2383
@@ -5236,6 +5771,9 @@ The source and destination paths are on different servers.
 Language=Taiwanese
 The source and destination paths are on different servers.
 .
+Language=Finnish
+Lähde- ja kohdepolku ovat eri palvelimilla.
+.
 
 MessageId=2385
 Severity=Success
@@ -5264,6 +5802,9 @@ The Run server you requested is paused.
 .
 Language=Taiwanese
 The Run server you requested is paused.
+.
+Language=Finnish
+Pyytämäsi Run-palvelin on keskeytetty.
 .
 
 MessageId=2389
@@ -5294,6 +5835,9 @@ An error occurred when communicating with a Run server.
 Language=Taiwanese
 An error occurred when communicating with a Run server.
 .
+Language=Finnish
+Run-palvelimen kanssa viestittäessä tapahtui virhe.
+.
 
 MessageId=2391
 Severity=Success
@@ -5322,6 +5866,9 @@ An error occurred when starting a background process.
 .
 Language=Taiwanese
 An error occurred when starting a background process.
+.
+Language=Finnish
+Taustaprosessia käynnistettäessä tapahtui virhe.
 .
 
 MessageId=2392
@@ -5352,6 +5899,9 @@ The shared resource you are connected to could not be found.
 Language=Taiwanese
 The shared resource you are connected to could not be found.
 .
+Language=Finnish
+Jaettua resurssia, johon olet yhteydessä, ei löytynyt.
+.
 
 MessageId=2400
 Severity=Success
@@ -5380,6 +5930,9 @@ The LAN adapter number is invalid.
 .
 Language=Taiwanese
 The LAN adapter number is invalid.
+.
+Language=Finnish
+Lähiverkkosovittimen numero on virheellinen.
 .
 
 MessageId=2401
@@ -5410,6 +5963,9 @@ There are open files on the connection.
 Language=Taiwanese
 There are open files on the connection.
 .
+Language=Finnish
+Yhteydellä on avoimia tiedostoja.
+.
 
 MessageId=2402
 Severity=Success
@@ -5438,6 +5994,9 @@ Active connections still exist.
 .
 Language=Taiwanese
 Active connections still exist.
+.
+Language=Finnish
+Aktiivisia yhteyksiä on yhä olemassa.
 .
 
 MessageId=2403
@@ -5468,6 +6027,9 @@ This share name or password is invalid.
 Language=Taiwanese
 This share name or password is invalid.
 .
+Language=Finnish
+Tämä jaettu nimi tai salasana on virheellinen.
+.
 
 MessageId=2404
 Severity=Success
@@ -5496,6 +6058,9 @@ The device is being accessed by an active process.
 .
 Language=Taiwanese
 The device is being accessed by an active process.
+.
+Language=Finnish
+Aktiivinen prosessi käyttää laitetta.
 .
 
 MessageId=2405
@@ -5526,6 +6091,9 @@ The drive letter is in use locally.
 Language=Taiwanese
 The drive letter is in use locally.
 .
+Language=Finnish
+Aseman tunnus on käytössä paikallisesti.
+.
 
 MessageId=2430
 Severity=Success
@@ -5554,6 +6122,9 @@ The specified client is already registered for the specified event.
 .
 Language=Taiwanese
 The specified client is already registered for the specified event.
+.
+Language=Finnish
+Määritetty asiakas on jo rekisteröity määritettyyn tapahtumaan.
 .
 
 MessageId=2431
@@ -5584,6 +6155,9 @@ The alert table is full.
 Language=Taiwanese
 The alert table is full.
 .
+Language=Finnish
+Hälytystaulukko on täynnä.
+.
 
 MessageId=2432
 Severity=Success
@@ -5612,6 +6186,9 @@ An invalid or nonexistent alert name was raised.
 .
 Language=Taiwanese
 An invalid or nonexistent alert name was raised.
+.
+Language=Finnish
+Nostettiin virheellinen tai olematon hälytyksen nimi.
 .
 
 MessageId=2433
@@ -5642,6 +6219,9 @@ The alert recipient is invalid.
 Language=Taiwanese
 The alert recipient is invalid.
 .
+Language=Finnish
+Hälytyksen vastaanottaja on virheellinen.
+.
 
 MessageId=2434
 Severity=Success
@@ -5670,6 +6250,9 @@ A user's session with this server has been deleted\nbecause the user's logon hou
 .
 Language=Taiwanese
 A user's session with this server has been deleted\nbecause the user's logon hours are no longer valid.
+.
+Language=Finnish
+Käyttäjän istunto tämän palvelimen kanssa on poistettu,\nkoska käyttäjän kirjautumisajat eivät ole enää voimassa.
 .
 
 MessageId=2440
@@ -5700,6 +6283,9 @@ The log file does not contain the requested record number.
 Language=Taiwanese
 The log file does not contain the requested record number.
 .
+Language=Finnish
+Lokitiedostossa ei ole pyydettyä tietuenumeroa.
+.
 
 MessageId=2450
 Severity=Success
@@ -5728,6 +6314,9 @@ The user accounts database is not configured correctly.
 .
 Language=Taiwanese
 The user accounts database is not configured correctly.
+.
+Language=Finnish
+Käyttäjätilitietokantaa ei ole määritetty oikein.
 .
 
 MessageId=2451
@@ -5758,6 +6347,9 @@ This operation is not permitted when the Netlogon service is running.
 Language=Taiwanese
 This operation is not permitted when the Netlogon service is running.
 .
+Language=Finnish
+Tämä toiminto ei ole sallittu, kun Netlogon-palvelu on käynnissä.
+.
 
 MessageId=2452
 Severity=Success
@@ -5786,6 +6378,9 @@ This operation is not allowed on the last administrative account.
 .
 Language=Taiwanese
 This operation is not allowed on the last administrative account.
+.
+Language=Finnish
+Tämä toiminto ei ole sallittu viimeiselle järjestelmänvalvojan tilille.
 .
 
 MessageId=2453
@@ -5816,6 +6411,9 @@ Could not find domain controller for this domain.
 Language=Taiwanese
 Could not find domain controller for this domain.
 .
+Language=Finnish
+Tämän toimialueen toimialueen ohjauskonetta ei löytynyt.
+.
 
 MessageId=2454
 Severity=Success
@@ -5844,6 +6442,9 @@ Could not set logon information for this user.
 .
 Language=Taiwanese
 Could not set logon information for this user.
+.
+Language=Finnish
+Tämän käyttäjän kirjautumistietoja ei voitu asettaa.
 .
 
 MessageId=2455
@@ -5874,6 +6475,9 @@ The Netlogon service has not been started.
 Language=Taiwanese
 The Netlogon service has not been started.
 .
+Language=Finnish
+Netlogon-palvelua ei ole käynnistetty.
+.
 
 MessageId=2456
 Severity=Success
@@ -5902,6 +6506,9 @@ Unable to add to the user accounts database.
 .
 Language=Taiwanese
 Unable to add to the user accounts database.
+.
+Language=Finnish
+Käyttäjätilitietokantaan ei voi lisätä.
 .
 
 MessageId=2457
@@ -5932,6 +6539,9 @@ This server's clock is not synchronized with the primary domain controller's clo
 Language=Taiwanese
 This server's clock is not synchronized with the primary domain controller's clock.
 .
+Language=Finnish
+Tämän palvelimen kello ei ole synkronoitu ensisijaisen toimialueen ohjauskoneen kellon kanssa.
+.
 
 MessageId=2458
 Severity=Success
@@ -5960,6 +6570,9 @@ A password mismatch has been detected.
 .
 Language=Taiwanese
 A password mismatch has been detected.
+.
+Language=Finnish
+Havaittiin salasanojen ristiriita.
 .
 
 MessageId=2460
@@ -5990,6 +6603,9 @@ The server identification does not specify a valid server.
 Language=Taiwanese
 The server identification does not specify a valid server.
 .
+Language=Finnish
+Palvelimen tunniste ei määritä kelvollista palvelinta.
+.
 
 MessageId=2461
 Severity=Success
@@ -6018,6 +6634,9 @@ The session identification does not specify a valid session.
 .
 Language=Taiwanese
 The session identification does not specify a valid session.
+.
+Language=Finnish
+Istunnon tunniste ei määritä kelvollista istuntoa.
 .
 
 MessageId=2462
@@ -6048,6 +6667,9 @@ The connection identification does not specify a valid connection.
 Language=Taiwanese
 The connection identification does not specify a valid connection.
 .
+Language=Finnish
+Yhteyden tunniste ei määritä kelvollista yhteyttä.
+.
 
 MessageId=2463
 Severity=Success
@@ -6076,6 +6698,9 @@ There is no space for another entry in the table of available servers.
 .
 Language=Taiwanese
 There is no space for another entry in the table of available servers.
+.
+Language=Finnish
+Käytettävissä olevien palvelinten taulukossa ei ole tilaa uudelle merkinnälle.
 .
 
 MessageId=2464
@@ -6106,6 +6731,9 @@ The server has reached the maximum number of sessions it supports.
 Language=Taiwanese
 The server has reached the maximum number of sessions it supports.
 .
+Language=Finnish
+Palvelin on saavuttanut tukemiensa istuntojen enimmäismäärän.
+.
 
 MessageId=2465
 Severity=Success
@@ -6134,6 +6762,9 @@ The server has reached the maximum number of connections it supports.
 .
 Language=Taiwanese
 The server has reached the maximum number of connections it supports.
+.
+Language=Finnish
+Palvelin on saavuttanut tukemiensa yhteyksien enimmäismäärän.
 .
 
 MessageId=2466
@@ -6164,6 +6795,9 @@ The server cannot open more files because it has reached its maximum number.
 Language=Taiwanese
 The server cannot open more files because it has reached its maximum number.
 .
+Language=Finnish
+Palvelin ei voi avata enempää tiedostoja, koska se on saavuttanut enimmäismäärän.
+.
 
 MessageId=2467
 Severity=Success
@@ -6192,6 +6826,9 @@ There are no alternate servers registered on this server.
 .
 Language=Taiwanese
 There are no alternate servers registered on this server.
+.
+Language=Finnish
+Tälle palvelimelle ei ole rekisteröity varapalvelimia.
 .
 
 MessageId=2470
@@ -6222,6 +6859,9 @@ Try down-level (remote admin protocol) version of API instead.
 Language=Taiwanese
 Try down-level (remote admin protocol) version of API instead.
 .
+Language=Finnish
+Kokeile sen sijaan ohjelmointirajapinnan alemman tason (etähallintaprotokollan) versiota.
+.
 
 MessageId=2480
 Severity=Success
@@ -6250,6 +6890,9 @@ The UPS driver could not be accessed by the UPS service.
 .
 Language=Taiwanese
 The UPS driver could not be accessed by the UPS service.
+.
+Language=Finnish
+UPS-palvelu ei voinut käyttää UPS-ajuria.
 .
 
 MessageId=2481
@@ -6280,6 +6923,9 @@ The UPS service is not configured correctly.
 Language=Taiwanese
 The UPS service is not configured correctly.
 .
+Language=Finnish
+UPS-palvelua ei ole määritetty oikein.
+.
 
 MessageId=2482
 Severity=Success
@@ -6308,6 +6954,9 @@ The UPS service could not access the specified Comm Port.
 .
 Language=Taiwanese
 The UPS service could not access the specified Comm Port.
+.
+Language=Finnish
+UPS-palvelu ei voinut käyttää määritettyä tietoliikenneporttia.
 .
 
 MessageId=2483
@@ -6338,6 +6987,9 @@ The UPS indicated a line fail or low battery situation. Service not started.
 Language=Taiwanese
 The UPS indicated a line fail or low battery situation. Service not started.
 .
+Language=Finnish
+UPS ilmoitti verkkovirtakatkoksesta tai alhaisesta akun varauksesta. Palvelua ei käynnistetty.
+.
 
 MessageId=2484
 Severity=Success
@@ -6366,6 +7018,9 @@ The UPS service failed to perform a system shut down.
 .
 Language=Taiwanese
 The UPS service failed to perform a system shut down.
+.
+Language=Finnish
+UPS-palvelu ei pystynyt sammuttamaan järjestelmää.
 .
 
 MessageId=2500
@@ -6396,6 +7051,9 @@ The program below returned a DOS error code:
 Language=Taiwanese
 The program below returned a DOS error code:
 .
+Language=Finnish
+Alla oleva ohjelma palautti DOS-virhekoodin:
+.
 
 MessageId=2501
 Severity=Success
@@ -6424,6 +7082,9 @@ The program below needs more memory:
 .
 Language=Taiwanese
 The program below needs more memory:
+.
+Language=Finnish
+Alla oleva ohjelma tarvitsee lisää muistia:
 .
 
 MessageId=2502
@@ -6454,6 +7115,9 @@ The program below called an unsupported DOS function:
 Language=Taiwanese
 The program below called an unsupported DOS function:
 .
+Language=Finnish
+Alla oleva ohjelma kutsui DOS-funktiota, jota ei tueta:
+.
 
 MessageId=2503
 Severity=Success
@@ -6482,6 +7146,9 @@ The workstation failed to boot.
 .
 Language=Taiwanese
 The workstation failed to boot.
+.
+Language=Finnish
+Työaseman käynnistys epäonnistui.
 .
 
 MessageId=2504
@@ -6512,6 +7179,9 @@ The file below is corrupt.
 Language=Taiwanese
 The file below is corrupt.
 .
+Language=Finnish
+Alla oleva tiedosto on vioittunut.
+.
 
 MessageId=2505
 Severity=Success
@@ -6540,6 +7210,9 @@ No loader is specified in the boot-block definition file.
 .
 Language=Taiwanese
 No loader is specified in the boot-block definition file.
+.
+Language=Finnish
+Käynnistyslohkon määritystiedostossa ei ole määritetty latainta.
 .
 
 MessageId=2506
@@ -6570,6 +7243,9 @@ NetBIOS returned an error: The NCB and SMB are dumped above.
 Language=Taiwanese
 NetBIOS returned an error: The NCB and SMB are dumped above.
 .
+Language=Finnish
+NetBIOS palautti virheen: NCB ja SMB on vedostettu yllä.
+.
 
 MessageId=2507
 Severity=Success
@@ -6598,6 +7274,9 @@ A disk I/O error occurred.
 .
 Language=Taiwanese
 A disk I/O error occurred.
+.
+Language=Finnish
+Tapahtui levyn I/O-virhe.
 .
 
 MessageId=2508
@@ -6628,6 +7307,9 @@ Image parameter substitution failed.
 Language=Taiwanese
 Image parameter substitution failed.
 .
+Language=Finnish
+Näköistiedoston parametrien korvaus epäonnistui.
+.
 
 MessageId=2509
 Severity=Success
@@ -6656,6 +7338,9 @@ Too many image parameters cross disk sector boundaries.
 .
 Language=Taiwanese
 Too many image parameters cross disk sector boundaries.
+.
+Language=Finnish
+Liian moni näköistiedoston parametri ylittää levyn sektorirajat.
 .
 
 MessageId=2510
@@ -6686,6 +7371,9 @@ The image was not generated from a DOS diskette formatted with /S.
 Language=Taiwanese
 The image was not generated from a DOS diskette formatted with /S.
 .
+Language=Finnish
+Näköistiedostoa ei luotu /S-valinnalla alustetulta DOS-levykkeeltä.
+.
 
 MessageId=2511
 Severity=Success
@@ -6714,6 +7402,9 @@ Remote boot will be restarted later.
 .
 Language=Taiwanese
 Remote boot will be restarted later.
+.
+Language=Finnish
+Etäkäynnistys käynnistetään myöhemmin uudelleen.
 .
 
 MessageId=2512
@@ -6744,6 +7435,9 @@ The call to the Remoteboot server failed.
 Language=Taiwanese
 The call to the Remoteboot server failed.
 .
+Language=Finnish
+Remoteboot-palvelimen kutsu epäonnistui.
+.
 
 MessageId=2513
 Severity=Success
@@ -6772,6 +7466,9 @@ Cannot connect to the Remoteboot server.
 .
 Language=Taiwanese
 Cannot connect to the Remoteboot server.
+.
+Language=Finnish
+Remoteboot-palvelimeen ei saada yhteyttä.
 .
 
 MessageId=2514
@@ -6802,6 +7499,9 @@ Cannot open image file on the Remoteboot server.
 Language=Taiwanese
 Cannot open image file on the Remoteboot server.
 .
+Language=Finnish
+Remoteboot-palvelimen näköistiedostoa ei voi avata.
+.
 
 MessageId=2515
 Severity=Success
@@ -6830,6 +7530,9 @@ Connecting to the Remoteboot server...
 .
 Language=Taiwanese
 Connecting to the Remoteboot server...
+.
+Language=Finnish
+Muodostetaan yhteyttä Remoteboot-palvelimeen...
 .
 
 MessageId=2516
@@ -6860,6 +7563,9 @@ Connecting to the Remoteboot server...
 Language=Taiwanese
 Connecting to the Remoteboot server...
 .
+Language=Finnish
+Muodostetaan yhteyttä Remoteboot-palvelimeen...
+.
 
 MessageId=2517
 Severity=Success
@@ -6888,6 +7594,9 @@ Remote boot service was stopped; check the error log for the cause of the proble
 .
 Language=Taiwanese
 Remote boot service was stopped; check the error log for the cause of the problem.
+.
+Language=Finnish
+Etäkäynnistyspalvelu pysäytettiin; tarkista ongelman syy virhelokista.
 .
 
 MessageId=2518
@@ -6918,6 +7627,9 @@ Remote boot startup failed; check the error log for the cause of the problem.
 Language=Taiwanese
 Remote boot startup failed; check the error log for the cause of the problem.
 .
+Language=Finnish
+Etäkäynnistyksen aloitus epäonnistui; tarkista ongelman syy virhelokista.
+.
 
 MessageId=2519
 Severity=Success
@@ -6946,6 +7658,9 @@ A second connection to a Remoteboot resource is not allowed.
 .
 Language=Taiwanese
 A second connection to a Remoteboot resource is not allowed.
+.
+Language=Finnish
+Toinen yhteys Remoteboot-resurssiin ei ole sallittu.
 .
 
 MessageId=2550
@@ -6976,6 +7691,9 @@ The browser service was configured with MaintainServerList=No.
 Language=Taiwanese
 The browser service was configured with MaintainServerList=No.
 .
+Language=Finnish
+Selainpalvelu määritettiin asetuksella MaintainServerList=No.
+.
 
 MessageId=2610
 Severity=Success
@@ -7004,6 +7722,9 @@ Service failed to start since none of the network adapters started with this ser
 .
 Language=Taiwanese
 Service failed to start since none of the network adapters started with this service.
+.
+Language=Finnish
+Palvelu ei käynnistynyt, koska yksikään verkkosovitin ei käynnistynyt tämän palvelun kanssa.
 .
 
 MessageId=2611
@@ -7034,6 +7755,9 @@ Service failed to start due to bad startup information in the registry.
 Language=Taiwanese
 Service failed to start due to bad startup information in the registry.
 .
+Language=Finnish
+Palvelu ei käynnistynyt, koska rekisterin käynnistystiedot ovat virheellisiä.
+.
 
 MessageId=2612
 Severity=Success
@@ -7062,6 +7786,9 @@ Service failed to start because its database is absent or corrupt.
 .
 Language=Taiwanese
 Service failed to start because its database is absent or corrupt.
+.
+Language=Finnish
+Palvelu ei käynnistynyt, koska sen tietokanta puuttuu tai on vioittunut.
 .
 
 MessageId=2613
@@ -7092,6 +7819,9 @@ Service failed to start because RPLFILES share is absent.
 Language=Taiwanese
 Service failed to start because RPLFILES share is absent.
 .
+Language=Finnish
+Palvelu ei käynnistynyt, koska RPLFILES-jako puuttuu.
+.
 
 MessageId=2614
 Severity=Success
@@ -7120,6 +7850,9 @@ Service failed to start because RPLUSER group is absent.
 .
 Language=Taiwanese
 Service failed to start because RPLUSER group is absent.
+.
+Language=Finnish
+Palvelu ei käynnistynyt, koska RPLUSER-ryhmä puuttuu.
 .
 
 MessageId=2615
@@ -7150,6 +7883,9 @@ Cannot enumerate service records.
 Language=Taiwanese
 Cannot enumerate service records.
 .
+Language=Finnish
+Palvelutietueita ei voi luetella.
+.
 
 MessageId=2616
 Severity=Success
@@ -7178,6 +7914,9 @@ Workstation record information has been corrupted.
 .
 Language=Taiwanese
 Workstation record information has been corrupted.
+.
+Language=Finnish
+Työasematietueen tiedot ovat vioittuneet.
 .
 
 MessageId=2617
@@ -7208,6 +7947,9 @@ Workstation record was not found.
 Language=Taiwanese
 Workstation record was not found.
 .
+Language=Finnish
+Työasematietuetta ei löytynyt.
+.
 
 MessageId=2618
 Severity=Success
@@ -7236,6 +7978,9 @@ Workstation name is in use by some other workstation.
 .
 Language=Taiwanese
 Workstation name is in use by some other workstation.
+.
+Language=Finnish
+Jokin toinen työasema käyttää työaseman nimeä.
 .
 
 MessageId=2619
@@ -7266,6 +8011,9 @@ Profile record information has been corrupted.
 Language=Taiwanese
 Profile record information has been corrupted.
 .
+Language=Finnish
+Profiilitietueen tiedot ovat vioittuneet.
+.
 
 MessageId=2620
 Severity=Success
@@ -7294,6 +8042,9 @@ Profile record was not found.
 .
 Language=Taiwanese
 Profile record was not found.
+.
+Language=Finnish
+Profiilitietuetta ei löytynyt.
 .
 
 MessageId=2621
@@ -7324,6 +8075,9 @@ Profile name is in use by some other profile.
 Language=Taiwanese
 Profile name is in use by some other profile.
 .
+Language=Finnish
+Jokin toinen profiili käyttää profiilin nimeä.
+.
 
 MessageId=2622
 Severity=Success
@@ -7352,6 +8106,9 @@ There are workstations using this profile.
 .
 Language=Taiwanese
 There are workstations using this profile.
+.
+Language=Finnish
+Tätä profiilia käyttäviä työasemia on olemassa.
 .
 
 MessageId=2623
@@ -7382,6 +8139,9 @@ Configuration record information has been corrupted.
 Language=Taiwanese
 Configuration record information has been corrupted.
 .
+Language=Finnish
+Kokoonpanotietueen tiedot ovat vioittuneet.
+.
 
 MessageId=2624
 Severity=Success
@@ -7410,6 +8170,9 @@ Configuration record was not found.
 .
 Language=Taiwanese
 Configuration record was not found.
+.
+Language=Finnish
+Kokoonpanotietuetta ei löytynyt.
 .
 
 MessageId=2625
@@ -7440,6 +8203,9 @@ Adapter id record information has been corrupted.
 Language=Taiwanese
 Adapter id record information has been corrupted.
 .
+Language=Finnish
+Sovitintunnustietueen tiedot ovat vioittuneet.
+.
 
 MessageId=2626
 Severity=Success
@@ -7468,6 +8234,9 @@ An internal service error has occurred.
 .
 Language=Taiwanese
 An internal service error has occurred.
+.
+Language=Finnish
+On tapahtunut sisäinen palveluvirhe.
 .
 
 MessageId=2627
@@ -7498,6 +8267,9 @@ Vendor id record information has been corrupted.
 Language=Taiwanese
 Vendor id record information has been corrupted.
 .
+Language=Finnish
+Toimittajatunnustietueen tiedot ovat vioittuneet.
+.
 
 MessageId=2628
 Severity=Success
@@ -7526,6 +8298,9 @@ Boot block record information has been corrupted.
 .
 Language=Taiwanese
 Boot block record information has been corrupted.
+.
+Language=Finnish
+Käynnistyslohkotietueen tiedot ovat vioittuneet.
 .
 
 MessageId=2629
@@ -7556,6 +8331,9 @@ The user account for this workstation record is missing.
 Language=Taiwanese
 The user account for this workstation record is missing.
 .
+Language=Finnish
+Tämän työasematietueen käyttäjätili puuttuu.
+.
 
 MessageId=2630
 Severity=Success
@@ -7584,6 +8362,9 @@ The RPLUSER local group could not be found.
 .
 Language=Taiwanese
 The RPLUSER local group could not be found.
+.
+Language=Finnish
+Paikallista RPLUSER-ryhmää ei löytynyt.
 .
 
 MessageId=2631
@@ -7614,6 +8395,9 @@ Boot block record was not found.
 Language=Taiwanese
 Boot block record was not found.
 .
+Language=Finnish
+Käynnistyslohkotietuetta ei löytynyt.
+.
 
 MessageId=2632
 Severity=Success
@@ -7642,6 +8426,9 @@ Chosen profile is incompatible with this workstation.
 .
 Language=Taiwanese
 Chosen profile is incompatible with this workstation.
+.
+Language=Finnish
+Valittu profiili ei ole yhteensopiva tämän työaseman kanssa.
 .
 
 MessageId=2633
@@ -7672,6 +8459,9 @@ Chosen network adapter id is in use by some other workstation.
 Language=Taiwanese
 Chosen network adapter id is in use by some other workstation.
 .
+Language=Finnish
+Jokin toinen työasema käyttää valittua verkkosovittimen tunnusta.
+.
 
 MessageId=2634
 Severity=Success
@@ -7700,6 +8490,9 @@ There are profiles using this configuration.
 .
 Language=Taiwanese
 There are profiles using this configuration.
+.
+Language=Finnish
+Tätä kokoonpanoa käyttäviä profiileja on olemassa.
 .
 
 MessageId=2635
@@ -7730,6 +8523,9 @@ There are workstations, profiles or configurations using this boot block.
 Language=Taiwanese
 There are workstations, profiles or configurations using this boot block.
 .
+Language=Finnish
+Tätä käynnistyslohkoa käyttäviä työasemia, profiileja tai kokoonpanoja on olemassa.
+.
 
 MessageId=2636
 Severity=Success
@@ -7758,6 +8554,9 @@ Service failed to backup Remoteboot database.
 .
 Language=Taiwanese
 Service failed to backup Remoteboot database.
+.
+Language=Finnish
+Palvelu ei pystynyt varmuuskopioimaan Remoteboot-tietokantaa.
 .
 
 MessageId=2637
@@ -7788,6 +8587,9 @@ Adapter record was not found.
 Language=Taiwanese
 Adapter record was not found.
 .
+Language=Finnish
+Sovitintietuetta ei löytynyt.
+.
 
 MessageId=2638
 Severity=Success
@@ -7816,6 +8618,9 @@ Vendor record was not found.
 .
 Language=Taiwanese
 Vendor record was not found.
+.
+Language=Finnish
+Toimittajatietuetta ei löytynyt.
 .
 
 MessageId=2639
@@ -7846,6 +8651,9 @@ Vendor name is in use by some other vendor record.
 Language=Taiwanese
 Vendor name is in use by some other vendor record.
 .
+Language=Finnish
+Jokin toinen toimittajatietue käyttää toimittajan nimeä.
+.
 
 MessageId=2640
 Severity=Success
@@ -7874,6 +8682,9 @@ Language=Chinese
 .
 Language=Taiwanese
 (boot name, vendor id) is in use by some other boot block record.
+.
+Language=Finnish
+Jokin toinen käynnistyslohkotietue käyttää (käynnistysnimi, toimittajan tunnus) -paria.
 .
 
 MessageId=2641
@@ -7904,6 +8715,9 @@ Configuration name is in use by some other configuration.
 Language=Taiwanese
 Configuration name is in use by some other configuration.
 .
+Language=Finnish
+Jokin toinen kokoonpano käyttää kokoonpanon nimeä.
+.
 
 MessageId=2660
 Severity=Success
@@ -7932,6 +8746,9 @@ The internal database maintained by the DFS service is corrupt
 .
 Language=Taiwanese
 The internal database maintained by the DFS service is corrupt
+.
+Language=Finnish
+DFS-palvelun ylläpitämä sisäinen tietokanta on vioittunut
 .
 
 MessageId=2661
@@ -7962,6 +8779,9 @@ One of the records in the internal DFS database is corrupt
 Language=Taiwanese
 One of the records in the internal DFS database is corrupt
 .
+Language=Finnish
+Yksi sisäisen DFS-tietokannan tietueista on vioittunut
+.
 
 MessageId=2662
 Severity=Success
@@ -7990,6 +8810,9 @@ There is no DFS name whose entry path matches the input Entry Path
 .
 Language=Taiwanese
 There is no DFS name whose entry path matches the input Entry Path
+.
+Language=Finnish
+Mitään DFS-nimeä, jonka merkintäpolku vastaa annettua merkintäpolkua, ei ole
 .
 
 MessageId=2663
@@ -8020,6 +8843,9 @@ A root or link with the given name already exists
 Language=Taiwanese
 A root or link with the given name already exists
 .
+Language=Finnish
+Annetun niminen pääkohde tai linkki on jo olemassa
+.
 
 MessageId=2664
 Severity=Success
@@ -8048,6 +8874,9 @@ The server share specified is already shared in the DFS
 .
 Language=Taiwanese
 The server share specified is already shared in the DFS
+.
+Language=Finnish
+Määritetty palvelimen jako on jo jaettu DFS:ssä
 .
 
 MessageId=2665
@@ -8078,6 +8907,9 @@ The indicated server share does not support the indicated DFS namespace
 Language=Taiwanese
 The indicated server share does not support the indicated DFS namespace
 .
+Language=Finnish
+Ilmoitettu palvelimen jako ei tue ilmoitettua DFS-nimitilaa
+.
 
 MessageId=2666
 Severity=Success
@@ -8106,6 +8938,9 @@ The operation is not valid on this portion of the namespace
 .
 Language=Taiwanese
 The operation is not valid on this portion of the namespace
+.
+Language=Finnish
+Toiminto ei ole kelvollinen tälle nimitilan osalle
 .
 
 MessageId=2667
@@ -8136,6 +8971,9 @@ The operation is not valid on this portion of the namespace
 Language=Taiwanese
 The operation is not valid on this portion of the namespace
 .
+Language=Finnish
+Toiminto ei ole kelvollinen tälle nimitilan osalle
+.
 
 MessageId=2668
 Severity=Success
@@ -8164,6 +9002,9 @@ The operation is ambiguous because the link has multiple servers
 .
 Language=Taiwanese
 The operation is ambiguous because the link has multiple servers
+.
+Language=Finnish
+Toiminto on monitulkintainen, koska linkillä on useita palvelimia
 .
 
 MessageId=2669
@@ -8194,6 +9035,9 @@ Unable to create a link
 Language=Taiwanese
 Unable to create a link
 .
+Language=Finnish
+Linkkiä ei voi luoda
+.
 
 MessageId=2670
 Severity=Success
@@ -8222,6 +9066,9 @@ The server is not DFS Aware
 .
 Language=Taiwanese
 The server is not DFS Aware
+.
+Language=Finnish
+Palvelin ei tue DFS:ää
 .
 
 MessageId=2671
@@ -8252,6 +9099,9 @@ The specified rename target path is invalid
 Language=Taiwanese
 The specified rename target path is invalid
 .
+Language=Finnish
+Määritetty uudelleennimeämisen kohdepolku on virheellinen
+.
 
 MessageId=2672
 Severity=Success
@@ -8280,6 +9130,9 @@ The specified DFS link is offline
 .
 Language=Taiwanese
 The specified DFS link is offline
+.
+Language=Finnish
+Määritetty DFS-linkki ei ole käytettävissä
 .
 
 MessageId=2673
@@ -8310,6 +9163,9 @@ The specified server is not a server for this link
 Language=Taiwanese
 The specified server is not a server for this link
 .
+Language=Finnish
+Määritetty palvelin ei ole tämän linkin palvelin
+.
 
 MessageId=2674
 Severity=Success
@@ -8338,6 +9194,9 @@ A cycle in the DFS name was detected
 .
 Language=Taiwanese
 A cycle in the DFS name was detected
+.
+Language=Finnish
+DFS-nimessä havaittiin kehä
 .
 
 MessageId=2675
@@ -8368,6 +9227,9 @@ The operation is not supported on a server-based DFS
 Language=Taiwanese
 The operation is not supported on a server-based DFS
 .
+Language=Finnish
+Toimintoa ei tueta palvelinpohjaisessa DFS:ssä
+.
 
 MessageId=2676
 Severity=Success
@@ -8396,6 +9258,9 @@ This link is already supported by the specified server-share
 .
 Language=Taiwanese
 This link is already supported by the specified server-share
+.
+Language=Finnish
+Määritetty palvelimen jako tukee jo tätä linkkiä
 .
 
 MessageId=2677
@@ -8426,6 +9291,9 @@ Can't remove the last server-share supporting this root or link
 Language=Taiwanese
 Can't remove the last server-share supporting this root or link
 .
+Language=Finnish
+Tätä pääkohdetta tai linkkiä tukevaa viimeistä palvelimen jakoa ei voi poistaa
+.
 
 MessageId=2678
 Severity=Success
@@ -8454,6 +9322,9 @@ The operation is not supported for an Inter-DFS link
 .
 Language=Taiwanese
 The operation is not supported for an Inter-DFS link
+.
+Language=Finnish
+Toimintoa ei tueta DFS:ien väliselle linkille
 .
 
 MessageId=2679
@@ -8484,6 +9355,9 @@ The internal state of the DFS Service has become inconsistent
 Language=Taiwanese
 The internal state of the DFS Service has become inconsistent
 .
+Language=Finnish
+DFS-palvelun sisäinen tila on muuttunut ristiriitaiseksi
+.
 
 MessageId=2680
 Severity=Success
@@ -8512,6 +9386,9 @@ The DFS Service has been installed on the specified server
 .
 Language=Taiwanese
 The DFS Service has been installed on the specified server
+.
+Language=Finnish
+DFS-palvelu on asennettu määritetylle palvelimelle
 .
 
 MessageId=2681
@@ -8542,6 +9419,9 @@ The DFS data being reconciled is identical
 Language=Taiwanese
 The DFS data being reconciled is identical
 .
+Language=Finnish
+Täsmäytettävät DFS-tiedot ovat samat
+.
 
 MessageId=2682
 Severity=Success
@@ -8570,6 +9450,9 @@ The DFS root cannot be deleted - Uninstall DFS if required
 .
 Language=Taiwanese
 The DFS root cannot be deleted - Uninstall DFS if required
+.
+Language=Finnish
+DFS-pääkohdetta ei voi poistaa - poista DFS:n asennus tarvittaessa
 .
 
 MessageId=2683
@@ -8600,6 +9483,9 @@ A child or parent directory of the share is already in a DFS
 Language=Taiwanese
 A child or parent directory of the share is already in a DFS
 .
+Language=Finnish
+Jaon ali- tai ylähakemisto on jo DFS:ssä
+.
 
 MessageId=2690
 Severity=Success
@@ -8628,6 +9514,9 @@ DFS internal error
 .
 Language=Taiwanese
 DFS internal error
+.
+Language=Finnish
+DFS:n sisäinen virhe
 .
 
 MessageId=2691
@@ -8658,6 +9547,9 @@ This machine is already joined to a domain.
 Language=Taiwanese
 This machine is already joined to a domain.
 .
+Language=Finnish
+Tämä kone on jo liitetty toimialueeseen.
+.
 
 MessageId=2692
 Severity=Success
@@ -8686,6 +9578,9 @@ This machine is not currently joined to a domain.
 .
 Language=Taiwanese
 This machine is not currently joined to a domain.
+.
+Language=Finnish
+Tätä konetta ei ole tällä hetkellä liitetty toimialueeseen.
 .
 
 MessageId=2693
@@ -8716,6 +9611,9 @@ This machine is a domain controller and cannot be unjoined from a domain.
 Language=Taiwanese
 This machine is a domain controller and cannot be unjoined from a domain.
 .
+Language=Finnish
+Tämä kone on toimialueen ohjauskone, eikä sitä voi irrottaa toimialueesta.
+.
 
 MessageId=2694
 Severity=Success
@@ -8744,6 +9642,9 @@ The destination domain controller does not support creating machine accounts in 
 .
 Language=Taiwanese
 The destination domain controller does not support creating machine accounts in OUs.
+.
+Language=Finnish
+Kohteen toimialueen ohjauskone ei tue tietokonetilien luomista organisaatioyksiköihin.
 .
 
 MessageId=2695
@@ -8774,6 +9675,9 @@ The specified workgroup name is invalid.
 Language=Taiwanese
 The specified workgroup name is invalid.
 .
+Language=Finnish
+Määritetty työryhmän nimi on virheellinen.
+.
 
 MessageId=2696
 Severity=Success
@@ -8802,6 +9706,9 @@ The specified computer name is incompatible with the default language used on th
 .
 Language=Taiwanese
 The specified computer name is incompatible with the default language used on the domain controller.
+.
+Language=Finnish
+Määritetty tietokoneen nimi ei ole yhteensopiva toimialueen ohjauskoneen oletuskielen kanssa.
 .
 
 MessageId=2697
@@ -8832,6 +9739,9 @@ The specified computer account could not be found.
 Language=Taiwanese
 The specified computer account could not be found.
 .
+Language=Finnish
+Määritettyä tietokonetiliä ei löytynyt.
+.
 
 MessageId=2698
 Severity=Success
@@ -8860,6 +9770,9 @@ This version of the operating system cannot be joined to a domain.
 .
 Language=Taiwanese
 This version of the operating system cannot be joined to a domain.
+.
+Language=Finnish
+Tätä käyttöjärjestelmän versiota ei voi liittää toimialueeseen.
 .
 
 MessageId=2701
@@ -8890,6 +9803,9 @@ Password must change at next logon
 Language=Taiwanese
 Password must change at next logon
 .
+Language=Finnish
+Salasana on vaihdettava seuraavalla kirjautumiskerralla
+.
 
 MessageId=2702
 Severity=Success
@@ -8918,6 +9834,9 @@ Account is locked out
 .
 Language=Taiwanese
 Account is locked out
+.
+Language=Finnish
+Tili on lukittu
 .
 
 MessageId=2703
@@ -8948,6 +9867,9 @@ Password is too long
 Language=Taiwanese
 Password is too long
 .
+Language=Finnish
+Salasana on liian pitkä
+.
 
 MessageId=2704
 Severity=Success
@@ -8976,6 +9898,9 @@ Password doesn't meet the complexity policy
 .
 Language=Taiwanese
 Password doesn't meet the complexity policy
+.
+Language=Finnish
+Salasana ei täytä monimutkaisuuskäytäntöä
 .
 
 MessageId=2705
@@ -9006,6 +9931,9 @@ Password doesn't meet the requirements of the filter dll's
 Language=Taiwanese
 Password doesn't meet the requirements of the filter dll's
 .
+Language=Finnish
+Salasana ei täytä suodatin-DLL-tiedostojen vaatimuksia
+.
 
 MessageId=2999
 Severity=Success
@@ -9034,6 +9962,9 @@ This is the last error in NERR range.
 .
 Language=Taiwanese
 This is the last error in NERR range.
+.
+Language=Finnish
+Tämä on NERR-alueen viimeinen virhe.
 .
 
 
@@ -9077,6 +10008,10 @@ Language=Taiwanese
 Drive %1 is nearly full. %2 bytes are available.\n
 Please warn users and delete unneeded files.
 .
+Language=Finnish
+Asemassa %1 on tila lähes lopussa. Käytettävissä on %2 tavua.\n
+Varoita käyttäjiä ja poista tarpeettomat tiedostot.
+.
 
 MessageId=3001
 Severity=Success
@@ -9113,6 +10048,10 @@ Please review the server's error log.
 Language=Taiwanese
 %1 errors were logged in the last %2 minutes.\n
 Please review the server's error log.
+.
+Language=Finnish
+Viimeisten %2 minuutin aikana kirjattiin %1 virhettä.\n
+Tarkista palvelimen virheloki.
 .
 
 MessageId=3002
@@ -9159,6 +10098,11 @@ Language=Taiwanese
 Please review the server's error log.  The server and/or\n
 network hardware may need service.
 .
+Language=Finnish
+Viimeisten %2 minuutin aikana tapahtui %1 verkkovirhettä.\n
+Tarkista palvelimen virheloki.  Palvelin ja/tai\n
+verkkolaitteisto voi tarvita huoltoa.
+.
 
 MessageId=3003
 Severity=Success
@@ -9195,6 +10139,10 @@ Please review the server's audit trail.
 Language=Taiwanese
 There were %1 bad password attempts in the last %2 minutes.\n
 Please review the server's audit trail.
+.
+Language=Finnish
+Viimeisten %2 minuutin aikana oli %1 virheellistä salasanayritystä.\n
+Tarkista palvelimen valvontaloki.
 .
 
 MessageId=3004
@@ -9233,6 +10181,10 @@ Language=Taiwanese
 There were %1 access-denied errors in the last %2 minutes.\n
 Please review the server's audit trail.
 .
+Language=Finnish
+Viimeisten %2 minuutin aikana oli %1 käyttö estetty -virhettä.\n
+Tarkista palvelimen valvontaloki.
+.
 
 MessageId=3006
 Severity=Success
@@ -9270,6 +10222,10 @@ Language=Taiwanese
 The error log is full.  No errors will be logged until\n
 the file is cleared or the limit is raised.
 .
+Language=Finnish
+Virheloki on täynnä.  Virheitä ei kirjata ennen kuin\n
+tiedosto tyhjennetään tai rajaa nostetaan.
+.
 
 MessageId=3007
 Severity=Success
@@ -9298,6 +10254,9 @@ The error log is 80%% full.
 .
 Language=Taiwanese
 The error log is 80%% full.
+.
+Language=Finnish
+Virheloki on 80-prosenttisesti (80%%) täynnä.
 .
 
 MessageId=3008
@@ -9336,6 +10295,10 @@ Language=Taiwanese
 The audit log is full.  No audit entries will be logged\n
 until the file is cleared or the limit is raised.
 .
+Language=Finnish
+Valvontaloki on täynnä.  Valvontamerkintöjä ei kirjata\n
+ennen kuin tiedosto tyhjennetään tai rajaa nostetaan.
+.
 
 MessageId=3009
 Severity=Success
@@ -9364,6 +10327,9 @@ The audit log is 80%% full.
 .
 Language=Taiwanese
 The audit log is 80%% full.
+.
+Language=Finnish
+Valvontaloki on 80-prosenttisesti (80%%) täynnä.
 .
 
 MessageId=3010
@@ -9402,6 +10368,10 @@ Language=Taiwanese
 An error occurred closing file %1.\n
 Please check the file to make sure it is not corrupted.
 .
+Language=Finnish
+Tiedostoa %1 suljettaessa tapahtui virhe.\n
+Tarkista, että tiedosto ei ole vioittunut.
+.
 
 MessageId=3011
 Severity=Success
@@ -9430,6 +10400,9 @@ The administrator has closed %1.
 .
 Language=Taiwanese
 The administrator has closed %1.
+.
+Language=Finnish
+Järjestelmänvalvoja on sulkenut kohteen %1.
 .
 
 MessageId=3012
@@ -9460,6 +10433,9 @@ There were %1 access-denied errors in the last %2 minutes.
 Language=Taiwanese
 There were %1 access-denied errors in the last %2 minutes.
 .
+Language=Finnish
+Viimeisten %2 minuutin aikana oli %1 käyttö estetty -virhettä.
+.
 
 MessageId=3020
 Severity=Success
@@ -9488,6 +10464,9 @@ A power failure was detected at %1.  The server has been paused.
 .
 Language=Taiwanese
 A power failure was detected at %1.  The server has been paused.
+.
+Language=Finnish
+Kohteessa %1 havaittiin sähkökatko.  Palvelin on keskeytetty.
 .
 
 MessageId=3021
@@ -9518,6 +10497,9 @@ Power has been restored at %1.  The server is no longer paused.
 Language=Taiwanese
 Power has been restored at %1.  The server is no longer paused.
 .
+Language=Finnish
+Sähköt on palautettu kohteessa %1.  Palvelin ei ole enää keskeytetty.
+.
 
 MessageId=3022
 Severity=Success
@@ -9546,6 +10528,9 @@ The UPS service is starting shut down at %1 due to low battery.
 .
 Language=Taiwanese
 The UPS service is starting shut down at %1 due to low battery.
+.
+Language=Finnish
+UPS-palvelu aloittaa sammutuksen kohteessa %1 alhaisen akun varauksen vuoksi.
 .
 
 MessageId=3023
@@ -9583,6 +10568,10 @@ shut down command file.  The UPS service started anyway.
 Language=Taiwanese
 There is a problem with a configuration of user specified\n
 shut down command file.  The UPS service started anyway.
+.
+Language=Finnish
+Käyttäjän määrittämän sammutuskomentotiedoston määrityksessä on\n
+ongelma.  UPS-palvelu käynnistyi silti.
 .
 
 MessageId=3025
@@ -9637,6 +10626,12 @@ No data was lost.  You should run CHKDSK soon to restore full\n
 performance and replenish the volume's spare sector pool.\n\n
 The hotfix occurred while processing a remote request.
 .
+Language=Finnish
+Aseman %1 viallinen sektori on korvattu (hotfix).\n
+Tietoja ei menetetty.  Suorita pian CHKDSK palauttaaksesi täyden\n
+suorituskyvyn ja täydentääksesi taltion varasektorivarannon.\n\n
+Korvaus tapahtui etäpyyntöä käsiteltäessä.
+.
 
 MessageId=3026
 Severity=Success
@@ -9673,6 +10668,10 @@ The error occurred while processing a remote request.
 Language=Taiwanese
 A disk error occurred on the HPFS volume in drive %1.\n
 The error occurred while processing a remote request.
+.
+Language=Finnish
+Aseman %1 HPFS-taltiolla tapahtui levyvirhe.\n
+Virhe tapahtui etäpyyntöä käsiteltäessä.
 .
 
 MessageId=3027
@@ -9727,6 +10726,12 @@ system is replacing the corrupted NET.ACC with the backup\n
 made on %1 at %2.\n
 Any updates made to the database after this time are lost.\n
 .
+Language=Finnish
+Käyttäjätilitietokanta (NET.ACC) on vioittunut.  Paikallinen\n
+suojausjärjestelmä korvaa vioittuneen NET.ACC-tiedoston\n
+varmuuskopiolla, joka tehtiin %1 klo %2.\n
+Kaikki tietokantaan tämän jälkeen tehdyt päivitykset menetetään.\n
+.
 
 MessageId=3028
 Severity=Success
@@ -9779,6 +10784,12 @@ The user accounts database (NET.ACC) is missing. The local\n
 security system is restoring the backup database\n
 made on %1 at %2.\n
 Any updates made to the database after this time are lost.\n
+.
+Language=Finnish
+Käyttäjätilitietokanta (NET.ACC) puuttuu. Paikallinen\n
+suojausjärjestelmä palauttaa varmuuskopiotietokannan, joka\n
+tehtiin %1 klo %2.\n
+Kaikki tietokantaan tämän jälkeen tehdyt päivitykset menetetään.\n
 .
 
 MessageId=3029
@@ -9833,6 +10844,12 @@ Local security could not be started because the user accounts database\n
 database was present.\n\n
 THE SYSTEM IS NOT SECURE.\n"
 .
+Language=Finnish
+Paikallista suojausta ei voitu käynnistää, koska käyttäjätilitietokanta\n
+(NET.ACC) puuttui tai oli vioittunut, eikä käyttökelpoista\n
+varmuuskopiotietokantaa ollut.\n\n
+JÄRJESTELMÄ EI OLE SUOJATTU.\n"
+.
 
 MessageId=3030
 Severity=Success
@@ -9869,6 +10886,10 @@ It is exported from another server.
 Language=Taiwanese
 The server cannot export directory %1, to client %2.\n
 It is exported from another server.
+.
+Language=Finnish
+Palvelin ei voi viedä hakemistoa %1 asiakkaalle %2.\n
+Se viedään toiselta palvelimelta.
 .
 
 MessageId=3031
@@ -9907,6 +10928,10 @@ Language=Taiwanese
 The replication server could not update directory %2 from the source\n
 on %3 due to error %1.
 .
+Language=Finnish
+Replikointipalvelin ei voinut päivittää hakemistoa %2 lähteestä\n
+kohteessa %3 virheen %1 vuoksi.
+.
 
 MessageId=3032
 Severity=Success
@@ -9944,6 +10969,10 @@ Language=Taiwanese
 Master %1 did not send an update notice for directory %2 at the expected\n
 time.
 .
+Language=Finnish
+Päätoimija %1 ei lähettänyt hakemiston %2 päivitysilmoitusta\n
+odotettuun aikaan.
+.
 
 MessageId=3033
 Severity=Success
@@ -9973,6 +11002,9 @@ User %1 has exceeded account limitation %2 on server %3.
 Language=Taiwanese
 User %1 has exceeded account limitation %2 on server %3.
 .
+Language=Finnish
+Käyttäjä %1 on ylittänyt tilin rajoituksen %2 palvelimella %3.
+.
 
 MessageId=3034
 Severity=Success
@@ -10001,6 +11033,9 @@ The primary domain controller for domain %1 failed.
 .
 Language=Taiwanese
 The primary domain controller for domain %1 failed.
+.
+Language=Finnish
+Toimialueen %1 ensisijainen toimialueen ohjauskone epäonnistui.
 .
 
 MessageId=3035
@@ -10039,6 +11074,10 @@ Language=Taiwanese
 Failed to authenticate with %2, a Windows NT or Windows 2000 Domain Controller for\n
 domain %1.
 .
+Language=Finnish
+Todennus epäonnistui toimialueen %1 Windows NT- tai Windows 2000 -toimialueen\n
+ohjauskoneen %2 kanssa.
+.
 
 MessageId=3036
 Severity=Success
@@ -10068,6 +11107,9 @@ The replicator attempted to log on at %2 as %1 and failed.
 Language=Taiwanese
 The replicator attempted to log on at %2 as %1 and failed.
 .
+Language=Finnish
+Replikoija yritti kirjautua kohteeseen %2 käyttäjänä %1, mutta epäonnistui.
+.
 
 MessageId=3037
 Severity=Success
@@ -10096,6 +11138,9 @@ Language=Chinese
 .
 Language=Taiwanese
 @I *LOGON HOURS %0
+.
+Language=Finnish
+@I *KIRJAUTUMISAJAT %0
 .
 
 MessageId=3038
@@ -10134,6 +11179,10 @@ Language=Taiwanese
 Replicator could not access %2\n
 on %3 due to system error %1.
 .
+Language=Finnish
+Replikoija ei voinut käyttää kohdetta %2\n
+kohteessa %3 järjestelmävirheen %1 vuoksi.
+.
 
 MessageId=3039
 Severity=Success
@@ -10163,6 +11212,9 @@ Replicator limit for files in a directory has been exceeded.
 Language=Taiwanese
 Replicator limit for files in a directory has been exceeded.
 .
+Language=Finnish
+Replikoijan hakemistokohtaisten tiedostojen raja on ylitetty.
+.
 
 MessageId=3040
 Severity=Success
@@ -10191,6 +11243,9 @@ Replicator limit for tree depth has been exceeded.
 .
 Language=Taiwanese
 Replicator limit for tree depth has been exceeded.
+.
+Language=Finnish
+Replikoijan puun syvyyden raja on ylitetty.
 .
 
 MessageId=3041
@@ -10229,6 +11284,10 @@ Language=Taiwanese
 The replicator cannot update directory %1. It has tree integrity\n
 and is the current directory for some process.
 .
+Language=Finnish
+Replikoija ei voi päivittää hakemistoa %1. Sillä on puun eheys\n
+ja se on jonkin prosessin nykyinen hakemisto.
+.
 
 MessageId=3042
 Severity=Success
@@ -10258,6 +11317,9 @@ Network error %1 occurred.
 Language=Taiwanese
 Network error %1 occurred.
 .
+Language=Finnish
+Tapahtui verkkovirhe %1.
+.
 
 MessageId=3045
 Severity=Success
@@ -10286,6 +11348,9 @@ System error %1 occurred.
 .
 Language=Taiwanese
 System error %1 occurred.
+.
+Language=Finnish
+Tapahtui järjestelmävirhe %1.
 .
 
 MessageId=3046
@@ -10324,6 +11389,10 @@ Language=Taiwanese
 Cannot log on. User is currently logged on and argument TRYUSER\n
 is set to NO.
 .
+Language=Finnish
+Ei voi kirjautua. Käyttäjä on tällä hetkellä kirjautuneena, ja argumentin TRYUSER\n
+arvo on NO.
+.
 
 MessageId=3047
 Severity=Success
@@ -10352,6 +11421,9 @@ IMPORT path %1 cannot be found.
 .
 Language=Taiwanese
 IMPORT path %1 cannot be found.
+.
+Language=Finnish
+IMPORT-polkua %1 ei löydy.
 .
 
 MessageId=3048
@@ -10382,6 +11454,9 @@ EXPORT path %1 cannot be found.
 Language=Taiwanese
 EXPORT path %1 cannot be found.
 .
+Language=Finnish
+EXPORT-polkua %1 ei löydy.
+.
 
 MessageId=3049
 Severity=Success
@@ -10410,6 +11485,9 @@ Replicated data has changed in directory %1.
 .
 Language=Taiwanese
 Replicated data has changed in directory %1.
+.
+Language=Finnish
+Replikoidut tiedot ovat muuttuneet hakemistossa %1.
 .
 
 MessageId=3050
@@ -10447,6 +11525,10 @@ Replicator failed to update signal file in directory %2 due to\n
 Language=Taiwanese
 Replicator failed to update signal file in directory %2 due to\n
 %1 system error.
+.
+Language=Finnish
+Replikoija ei pystynyt päivittämään hakemiston %2 signaalitiedostoa\n
+järjestelmävirheen %1 vuoksi.
 .
 
 
@@ -10490,6 +11572,10 @@ Language=Taiwanese
 The Registry or the information you just typed includes an illegal\n
 value for \"%1\".
 .
+Language=Finnish
+Rekisterissä tai juuri kirjoittamissasi tiedoissa on kelpaamaton\n
+arvo kohteelle \"%1\".
+.
 
 MessageId=3052
 Severity=Success
@@ -10518,6 +11604,9 @@ The required parameter was not provided on the command\nline or in the configura
 .
 Language=Taiwanese
 The required parameter was not provided on the command\nline or in the configuration file.
+.
+Language=Finnish
+Pakollista parametria ei annettu komentorivillä\ntai määritystiedostossa.
 .
 
 MessageId=3053
@@ -10548,6 +11637,9 @@ LAN Manager does not recognize \"%1\" as a valid option.
 Language=Taiwanese
 LAN Manager does not recognize \"%1\" as a valid option.
 .
+Language=Finnish
+LAN Manager ei tunnista kohdetta \"%1\" kelvolliseksi valinnaksi.
+.
 
 MessageId=3054
 Severity=Success
@@ -10576,6 +11668,9 @@ A request for resource could not be satisfied.
 .
 Language=Taiwanese
 A request for resource could not be satisfied.
+.
+Language=Finnish
+Resurssipyyntöä ei voitu täyttää.
 .
 
 MessageId=3055
@@ -10606,6 +11701,9 @@ A problem exists with the system configuration.
 Language=Taiwanese
 A problem exists with the system configuration.
 .
+Language=Finnish
+Järjestelmän kokoonpanossa on ongelma.
+.
 
 MessageId=3056
 Severity=Success
@@ -10634,6 +11732,9 @@ A system error has occurred.
 .
 Language=Taiwanese
 A system error has occurred.
+.
+Language=Finnish
+On tapahtunut järjestelmävirhe.
 .
 
 MessageId=3057
@@ -10664,6 +11765,9 @@ An internal consistency error has occurred.
 Language=Taiwanese
 An internal consistency error has occurred.
 .
+Language=Finnish
+On tapahtunut sisäinen johdonmukaisuusvirhe.
+.
 
 MessageId=3058
 Severity=Success
@@ -10692,6 +11796,9 @@ The configuration file or the command line has an ambiguous option.
 .
 Language=Taiwanese
 The configuration file or the command line has an ambiguous option.
+.
+Language=Finnish
+Määritystiedostossa tai komentorivillä on monitulkintainen valinta.
 .
 
 MessageId=3059
@@ -10722,6 +11829,9 @@ The configuration file or the command line has a duplicate parameter.
 Language=Taiwanese
 The configuration file or the command line has a duplicate parameter.
 .
+Language=Finnish
+Määritystiedostossa tai komentorivillä on kaksinkertainen parametri.
+.
 
 MessageId=3060
 Severity=Success
@@ -10750,6 +11860,9 @@ The service did not respond to control and was stopped with\nthe DosKillProc fun
 .
 Language=Taiwanese
 The service did not respond to control and was stopped with\nthe DosKillProc function.
+.
+Language=Finnish
+Palvelu ei vastannut ohjaukseen, ja se pysäytettiin\nDosKillProc-funktiolla.
 .
 
 MessageId=3061
@@ -10780,6 +11893,9 @@ An error occurred when attempting to run the service program.
 Language=Taiwanese
 An error occurred when attempting to run the service program.
 .
+Language=Finnish
+Palveluohjelmaa yritettäessä suorittaa tapahtui virhe.
+.
 
 MessageId=3062
 Severity=Success
@@ -10808,6 +11924,9 @@ The sub-service failed to start.
 .
 Language=Taiwanese
 The sub-service failed to start.
+.
+Language=Finnish
+Alipalvelu ei käynnistynyt.
 .
 
 MessageId=3063
@@ -10838,6 +11957,9 @@ There is a conflict in the value or use of these options: %1.
 Language=Taiwanese
 There is a conflict in the value or use of these options: %1.
 .
+Language=Finnish
+Näiden valintojen arvossa tai käytössä on ristiriita: %1.
+.
 
 MessageId=3064
 Severity=Success
@@ -10866,6 +11988,9 @@ There is a problem with the file.
 .
 Language=Taiwanese
 There is a problem with the file.
+.
+Language=Finnish
+Tiedostossa on ongelma.
 .
 
 MessageId=3070
@@ -10896,6 +12021,9 @@ memory
 Language=Taiwanese
 memory
 .
+Language=Finnish
+muisti
+.
 
 MessageId=3071
 Severity=Success
@@ -10924,6 +12052,9 @@ disk space
 .
 Language=Taiwanese
 disk space
+.
+Language=Finnish
+levytila
 .
 
 MessageId=3072
@@ -10954,6 +12085,9 @@ thread
 Language=Taiwanese
 thread
 .
+Language=Finnish
+säie
+.
 
 MessageId=3073
 Severity=Success
@@ -10982,6 +12116,9 @@ process
 .
 Language=Taiwanese
 process
+.
+Language=Finnish
+prosessi
 .
 
 MessageId=3074
@@ -11012,6 +12149,9 @@ Security Failure. %0
 Language=Taiwanese
 Security Failure. %0
 .
+Language=Finnish
+Suojausvirhe. %0
+.
 
 MessageId=3075
 Severity=Success
@@ -11040,6 +12180,9 @@ Bad or missing LAN Manager root directory.
 .
 Language=Taiwanese
 Bad or missing LAN Manager root directory.
+.
+Language=Finnish
+LAN Managerin juurihakemisto on virheellinen tai puuttuu.
 .
 
 MessageId=3076
@@ -11070,6 +12213,9 @@ The network software is not installed.
 Language=Taiwanese
 The network software is not installed.
 .
+Language=Finnish
+Verkko-ohjelmistoa ei ole asennettu.
+.
 
 MessageId=3077
 Severity=Success
@@ -11098,6 +12244,9 @@ The server is not started.
 .
 Language=Taiwanese
 The server is not started.
+.
+Language=Finnish
+Palvelinta ei ole käynnistetty.
 .
 
 MessageId=3078
@@ -11128,6 +12277,9 @@ The server cannot access the user accounts database (NET.ACC).
 Language=Taiwanese
 The server cannot access the user accounts database (NET.ACC).
 .
+Language=Finnish
+Palvelin ei voi käyttää käyttäjätilitietokantaa (NET.ACC).
+.
 
 MessageId=3079
 Severity=Success
@@ -11156,6 +12308,9 @@ Incompatible files are installed in the LANMAN tree.
 .
 Language=Taiwanese
 Incompatible files are installed in the LANMAN tree.
+.
+Language=Finnish
+LANMAN-puuhun on asennettu yhteensopimattomia tiedostoja.
 .
 
 MessageId=3080
@@ -11186,6 +12341,9 @@ The LANMAN\\LOGS directory is invalid.
 Language=Taiwanese
 The LANMAN\\LOGS directory is invalid.
 .
+Language=Finnish
+LANMAN\\LOGS-hakemisto on virheellinen.
+.
 
 MessageId=3081
 Severity=Success
@@ -11214,6 +12372,9 @@ The domain specified could not be used.
 .
 Language=Taiwanese
 The domain specified could not be used.
+.
+Language=Finnish
+Määritettyä toimialuetta ei voitu käyttää.
 .
 
 MessageId=3082
@@ -11244,6 +12405,9 @@ The computer name is being used as a message alias on another computer.
 Language=Taiwanese
 The computer name is being used as a message alias on another computer.
 .
+Language=Finnish
+Tietokoneen nimeä käytetään viestialiaksena toisessa tietokoneessa.
+.
 
 MessageId=3083
 Severity=Success
@@ -11272,6 +12436,9 @@ The announcement of the server name failed.
 .
 Language=Taiwanese
 The announcement of the server name failed.
+.
+Language=Finnish
+Palvelimen nimen ilmoitus epäonnistui.
 .
 
 MessageId=3084
@@ -11302,6 +12469,9 @@ The user accounts database is not configured correctly.
 Language=Taiwanese
 The user accounts database is not configured correctly.
 .
+Language=Finnish
+Käyttäjätilitietokantaa ei ole määritetty oikein.
+.
 
 MessageId=3085
 Severity=Success
@@ -11330,6 +12500,9 @@ The server is not running with user-level security.
 .
 Language=Taiwanese
 The server is not running with user-level security.
+.
+Language=Finnish
+Palvelin ei käytä käyttäjätason suojausta.
 .
 
 MessageId=3087
@@ -11360,6 +12533,9 @@ The workstation is not configured properly.
 Language=Taiwanese
 The workstation is not configured properly.
 .
+Language=Finnish
+Työasemaa ei ole määritetty oikein.
+.
 
 MessageId=3088
 Severity=Success
@@ -11389,6 +12565,9 @@ View your error log for details.
 Language=Taiwanese
 View your error log for details.
 .
+Language=Finnish
+Katso lisätietoja virhelokista.
+.
 
 MessageId=3089
 Severity=Success
@@ -11417,6 +12596,9 @@ Unable to write to this file.
 .
 Language=Taiwanese
 Unable to write to this file.
+.
+Language=Finnish
+Tähän tiedostoon ei voi kirjoittaa.
 .
 
 MessageId=3090
@@ -11455,6 +12637,10 @@ Language=Taiwanese
 ADDPAK file is corrupted.  Delete LANMAN\\NETPROG\\ADDPAK.SER\n
 and reapply all ADDPAKs.
 .
+Language=Finnish
+ADDPAK-tiedosto on vioittunut.  Poista LANMAN\\NETPROG\\ADDPAK.SER\n
+ja ota kaikki ADDPAKit uudelleen käyttöön.
+.
 
 MessageId=3091
 Severity=Success
@@ -11483,6 +12669,9 @@ The LM386 server cannot be started because CACHE.EXE is not running.
 .
 Language=Taiwanese
 The LM386 server cannot be started because CACHE.EXE is not running.
+.
+Language=Finnish
+LM386-palvelinta ei voi käynnistää, koska CACHE.EXE ei ole käynnissä.
 .
 
 MessageId=3092
@@ -11513,6 +12702,9 @@ There is no account for this computer in the security database.
 Language=Taiwanese
 There is no account for this computer in the security database.
 .
+Language=Finnish
+Suojaustietokannassa ei ole tiliä tälle tietokoneelle.
+.
 
 MessageId=3093
 Severity=Success
@@ -11542,6 +12734,9 @@ This computer is not a member of the group SERVERS.
 Language=Taiwanese
 This computer is not a member of the group SERVERS.
 .
+Language=Finnish
+Tämä tietokone ei ole SERVERS-ryhmän jäsen.
+.
 
 MessageId=3094
 Severity=Success
@@ -11570,6 +12765,9 @@ The group SERVERS is not present in the local security database.
 .
 Language=Taiwanese
 The group SERVERS is not present in the local security database.
+.
+Language=Finnish
+SERVERS-ryhmää ei ole paikallisessa suojaustietokannassa.
 .
 
 MessageId=3095
@@ -11616,6 +12814,11 @@ This computer is configured as a member of a workgroup, not as\n
 a member of a domain. The Netlogon service does not need to run in this\n
 configuration.
 .
+Language=Finnish
+Tämä tietokone on määritetty työryhmän jäseneksi eikä\n
+toimialueen jäseneksi. Netlogon-palvelun ei tarvitse olla käynnissä tässä\n
+kokoonpanossa.
+.
 
 MessageId=3096
 Severity=Success
@@ -11644,6 +12847,9 @@ The primary Domain Controller for this domain could not be located.
 .
 Language=Taiwanese
 The primary Domain Controller for this domain could not be located.
+.
+Language=Finnish
+Tämän toimialueen ensisijaista toimialueen ohjauskonetta ei löytynyt.
 .
 
 MessageId=3097
@@ -11690,6 +12896,11 @@ This computer is configured to be the primary domain controller of its domain.\n
 However, the computer %1 is currently claiming to be the primary domain controller\n
 of the domain.
 .
+Language=Finnish
+Tämä tietokone on määritetty toimialueensa ensisijaiseksi toimialueen ohjauskoneeksi.\n
+Tietokone %1 kuitenkin väittää parhaillaan olevansa toimialueen ensisijainen\n
+toimialueen ohjauskone.
+.
 
 MessageId=3098
 Severity=Success
@@ -11719,6 +12930,9 @@ The service failed to authenticate with the primary domain controller.
 Language=Taiwanese
 The service failed to authenticate with the primary domain controller.
 .
+Language=Finnish
+Palvelun todennus ensisijaisen toimialueen ohjauskoneen kanssa epäonnistui.
+.
 
 MessageId=3099
 Severity=Success
@@ -11747,6 +12961,9 @@ There is a problem with the security database creation date or serial number.
 .
 Language=Taiwanese
 There is a problem with the security database creation date or serial number.
+.
+Language=Finnish
+Suojaustietokannan luontipäivämäärässä tai sarjanumerossa on ongelma.
 .
 
 
@@ -11782,6 +12999,9 @@ The operation failed because a network software error occurred.
 Language=Taiwanese
 The operation failed because a network software error occurred.
 .
+Language=Finnish
+Toiminto epäonnistui, koska tapahtui verkko-ohjelmiston virhe.
+.
 
 MessageId=3101
 Severity=Success
@@ -11810,6 +13030,9 @@ The system ran out of a resource controlled by the %1 option.
 .
 Language=Taiwanese
 The system ran out of a resource controlled by the %1 option.
+.
+Language=Finnish
+Järjestelmästä loppui %1-valinnan hallitsema resurssi.
 .
 
 MessageId=3102
@@ -11840,6 +13063,9 @@ The service failed to obtain a long-term lock on the\nsegment for network contro
 Language=Taiwanese
 The service failed to obtain a long-term lock on the\nsegment for network control blocks (NCBs). The error code is the data.
 .
+Language=Finnish
+Palvelu ei saanut pitkäaikaista lukitusta\nverkon ohjauslohkojen (NCB) segmenttiin. Virhekoodi on tiedoissa.
+.
 
 MessageId=3103
 Severity=Success
@@ -11868,6 +13094,9 @@ The service failed to release the long-term lock on the\nsegment for network con
 .
 Language=Taiwanese
 The service failed to release the long-term lock on the\nsegment for network control blocks (NCBs). The error code is the data.
+.
+Language=Finnish
+Palvelu ei pystynyt vapauttamaan pitkäaikaista lukitusta\nverkon ohjauslohkojen (NCB) segmentistä. Virhekoodi on tiedoissa.
 .
 
 MessageId=3104
@@ -11898,6 +13127,9 @@ There was an error stopping service %1.\nThe error code from NetServiceControl i
 Language=Taiwanese
 There was an error stopping service %1.\nThe error code from NetServiceControl is the data.
 .
+Language=Finnish
+Palvelua %1 pysäytettäessä tapahtui virhe.\nNetServiceControl-funktion virhekoodi on tiedoissa.
+.
 
 MessageId=3105
 Severity=Success
@@ -11926,6 +13158,9 @@ Initialization failed because of a system execution failure on\npath %1. The sys
 .
 Language=Taiwanese
 Initialization failed because of a system execution failure on\npath %1. The system error code is the data.
+.
+Language=Finnish
+Alustus epäonnistui järjestelmän suoritusvirheen vuoksi\npolulla %1. Järjestelmän virhekoodi on tiedoissa.
 .
 
 MessageId=3106
@@ -11956,6 +13191,9 @@ An unexpected network control block (NCB) was received. The NCB is the data.
 Language=Taiwanese
 An unexpected network control block (NCB) was received. The NCB is the data.
 .
+Language=Finnish
+Vastaanotettiin odottamaton verkon ohjauslohko (NCB). NCB on tiedoissa.
+.
 
 MessageId=3107
 Severity=Success
@@ -11984,6 +13222,9 @@ The network is not started.
 .
 Language=Taiwanese
 The network is not started.
+.
+Language=Finnish
+Verkkoa ei ole käynnistetty.
 .
 
 MessageId=3108
@@ -12014,6 +13255,9 @@ A DosDevIoctl or DosFsCtl to NETWKSTA.SYS failed.\nThe data shown is in this for
 Language=Taiwanese
 A DosDevIoctl or DosFsCtl to NETWKSTA.SYS failed.\nThe data shown is in this format:\nDWORD  approx CS:IP of call to ioctl or fsctl\nWORD   error code\nWORD   ioctl or fsctl number
 .
+Language=Finnish
+DosDevIoctl- tai DosFsCtl-kutsu NETWKSTA.SYS-tiedostoon epäonnistui.\nTiedot ovat tässä muodossa:\nDWORD  ioctl- tai fsctl-kutsun likimääräinen CS:IP\nWORD   virhekoodi\nWORD   ioctl- tai fsctl-numero
+.
 
 MessageId=3109
 Severity=Success
@@ -12042,6 +13286,9 @@ Unable to create or open system semaphore %1.\nThe error code is the data.
 .
 Language=Taiwanese
 Unable to create or open system semaphore %1.\nThe error code is the data.
+.
+Language=Finnish
+Järjestelmäsemaforia %1 ei voi luoda tai avata.\nVirhekoodi on tiedoissa.
 .
 
 MessageId=3110
@@ -12072,6 +13319,9 @@ Initialization failed because of an open/create error on the\nfile %1. The syste
 Language=Taiwanese
 Initialization failed because of an open/create error on the\nfile %1. The system error code is the data.
 .
+Language=Finnish
+Alustus epäonnistui avaus- tai luontivirheen vuoksi\ntiedostossa %1. Järjestelmän virhekoodi on tiedoissa.
+.
 
 MessageId=3111
 Severity=Success
@@ -12100,6 +13350,9 @@ An unexpected NetBIOS error occurred.\nThe error code is the data.
 .
 Language=Taiwanese
 An unexpected NetBIOS error occurred.\nThe error code is the data.
+.
+Language=Finnish
+Tapahtui odottamaton NetBIOS-virhe.\nVirhekoodi on tiedoissa.
 .
 
 MessageId=3112
@@ -12130,6 +13383,9 @@ An illegal server message block (SMB) was received.\nThe SMB is the data.
 Language=Taiwanese
 An illegal server message block (SMB) was received.\nThe SMB is the data.
 .
+Language=Finnish
+Vastaanotettiin kelpaamaton palvelimen viestilohko (SMB).\nSMB on tiedoissa.
+.
 
 MessageId=3113
 Severity=Success
@@ -12158,6 +13414,9 @@ Initialization failed because the requested service %1\ncould not be started.
 .
 Language=Taiwanese
 Initialization failed because the requested service %1\ncould not be started.
+.
+Language=Finnish
+Alustus epäonnistui, koska pyydettyä palvelua %1\nei voitu käynnistää.
 .
 
 MessageId=3114
@@ -12188,6 +13447,9 @@ Some entries in the error log were lost because of a buffer\noverflow.
 Language=Taiwanese
 Some entries in the error log were lost because of a buffer\noverflow.
 .
+Language=Finnish
+Osa virhelokin merkinnöistä menetettiin puskurin\nylivuodon vuoksi.
+.
 
 MessageId=3120
 Severity=Success
@@ -12216,6 +13478,9 @@ Initialization parameters controlling resource usage other\nthan net buffers are
 .
 Language=Taiwanese
 Initialization parameters controlling resource usage other\nthan net buffers are sized so that too much memory is needed.
+.
+Language=Finnish
+Resurssien käyttöä ohjaavat alustusparametrit, muut kuin\nverkkopuskurit, on mitoitettu niin, että muistia tarvitaan liikaa.
 .
 
 MessageId=3121
@@ -12246,6 +13511,9 @@ The server cannot increase the size of a memory segment.
 Language=Taiwanese
 The server cannot increase the size of a memory segment.
 .
+Language=Finnish
+Palvelin ei voi kasvattaa muistisegmentin kokoa.
+.
 
 MessageId=3122
 Severity=Success
@@ -12274,6 +13542,9 @@ Initialization failed because account file %1 is either incorrect\nor not presen
 .
 Language=Taiwanese
 Initialization failed because account file %1 is either incorrect\nor not present.
+.
+Language=Finnish
+Alustus epäonnistui, koska tilitiedosto %1 on virheellinen\ntai puuttuu.
 .
 
 MessageId=3123
@@ -12304,6 +13575,9 @@ Initialization failed because network %1 was not started.
 Language=Taiwanese
 Initialization failed because network %1 was not started.
 .
+Language=Finnish
+Alustus epäonnistui, koska verkkoa %1 ei käynnistetty.
+.
 
 MessageId=3124
 Severity=Success
@@ -12332,6 +13606,9 @@ The server failed to start. Either all three chdev\nparameters must be zero or a
 .
 Language=Taiwanese
 The server failed to start. Either all three chdev\nparameters must be zero or all three must be nonzero.
+.
+Language=Finnish
+Palvelin ei käynnistynyt. Kaikkien kolmen chdev-parametrin\non oltava nollia tai kaikkien kolmen nollasta poikkeavia.
 .
 
 MessageId=3125
@@ -12362,6 +13639,9 @@ A remote API request was halted due to the following\ninvalid description string
 Language=Taiwanese
 A remote API request was halted due to the following\ninvalid description string: %1.
 .
+Language=Finnish
+Etäohjelmointirajapinnan pyyntö pysäytettiin seuraavan\nvirheellisen kuvausmerkkijonon vuoksi: %1.
+.
 
 MessageId=3126
 Severity=Success
@@ -12390,6 +13670,9 @@ The network %1 ran out of network control blocks (NCBs).  You may need to increa
 .
 Language=Taiwanese
 The network %1 ran out of network control blocks (NCBs).  You may need to increase NCBs\nfor this network.  The following information includes the\nnumber of NCBs submitted by the server when this error occurred:
+.
+Language=Finnish
+Verkosta %1 loppuivat verkon ohjauslohkot (NCB).  Tämän verkon NCB-määrää\non ehkä kasvatettava.  Seuraavat tiedot sisältävät palvelimen\nlähettämien NCB:iden määrän virheen tapahtuessa:
 .
 
 MessageId=3127
@@ -12420,6 +13703,9 @@ The server cannot create the %1 mailslot needed to send\nthe ReleaseMemory alert
 Language=Taiwanese
 The server cannot create the %1 mailslot needed to send\nthe ReleaseMemory alert message.  The error received is:
 .
+Language=Finnish
+Palvelin ei voi luoda %1-postipaikkaa, jota tarvitaan\nReleaseMemory-hälytysviestin lähettämiseen.  Saatu virhe on:
+.
 
 MessageId=3128
 Severity=Success
@@ -12448,6 +13734,9 @@ The server failed to register for the ReleaseMemory alert,\nwith recipient %1. T
 .
 Language=Taiwanese
 The server failed to register for the ReleaseMemory alert,\nwith recipient %1. The error code from\nNetAlertStart is the data.
+.
+Language=Finnish
+Palvelin ei pystynyt rekisteröitymään ReleaseMemory-hälytykseen\nvastaanottajalla %1. NetAlertStart-funktion\nvirhekoodi on tiedoissa.
 .
 
 MessageId=3129
@@ -12478,6 +13767,9 @@ The server cannot update the AT schedule file. The file\nis corrupted.
 Language=Taiwanese
 The server cannot update the AT schedule file. The file\nis corrupted.
 .
+Language=Finnish
+Palvelin ei voi päivittää AT-ajoitustiedostoa. Tiedosto\non vioittunut.
+.
 
 MessageId=3130
 Severity=Success
@@ -12506,6 +13798,9 @@ The server encountered an error when calling\nNetIMakeLMFileName. The error code
 .
 Language=Taiwanese
 The server encountered an error when calling\nNetIMakeLMFileName. The error code is the data.
+.
+Language=Finnish
+Palvelin kohtasi virheen kutsuessaan\nNetIMakeLMFileName-funktiota. Virhekoodi on tiedoissa.
 .
 
 MessageId=3131
@@ -12536,6 +13831,9 @@ Initialization failed because of a system execution failure on\npath %1. There i
 Language=Taiwanese
 Initialization failed because of a system execution failure on\npath %1. There is not enough memory to start the process.\nThe system error code is the data.
 .
+Language=Finnish
+Alustus epäonnistui järjestelmän suoritusvirheen vuoksi\npolulla %1. Muisti ei riitä prosessin käynnistämiseen.\nJärjestelmän virhekoodi on tiedoissa.
+.
 
 MessageId=3132
 Severity=Success
@@ -12564,6 +13862,9 @@ Longterm lock of the server buffers failed.\nCheck swap disk's free space and re
 .
 Language=Taiwanese
 Longterm lock of the server buffers failed.\nCheck swap disk's free space and restart the system to start the server.
+.
+Language=Finnish
+Palvelimen puskureiden pitkäaikainen lukitus epäonnistui.\nTarkista sivutuslevyn vapaa tila ja käynnistä järjestelmä uudelleen palvelimen käynnistämiseksi.
 .
 
 MessageId=3140
@@ -12594,6 +13895,9 @@ The service has stopped due to repeated consecutive\noccurrences of a network co
 Language=Taiwanese
 The service has stopped due to repeated consecutive\noccurrences of a network control block (NCB) error.  The last bad NCB follows\nin raw data.
 .
+Language=Finnish
+Palvelu on pysähtynyt toistuvien peräkkäisten\nverkon ohjauslohkon (NCB) virheiden vuoksi.  Viimeinen virheellinen NCB on\nraakatiedoissa.
+.
 
 MessageId=3141
 Severity=Success
@@ -12622,6 +13926,9 @@ The Message server has stopped due to a lock on the\nMessage server shared data 
 .
 Language=Taiwanese
 The Message server has stopped due to a lock on the\nMessage server shared data segment.
+.
+Language=Finnish
+Viestipalvelin on pysähtynyt viestipalvelimen jaetun\ntietosegmentin lukituksen vuoksi.
 .
 
 MessageId=3150
@@ -12652,6 +13959,9 @@ A file system error occurred while opening or writing to the\nsystem message log
 Language=Taiwanese
 A file system error occurred while opening or writing to the\nsystem message log file %1. Message logging has been\nswitched off due to the error. The error code is the data.
 .
+Language=Finnish
+Järjestelmän viestilokitiedostoa %1 avattaessa tai siihen kirjoitettaessa\ntapahtui tiedostojärjestelmän virhe. Viestien kirjaaminen on\npoistettu käytöstä virheen vuoksi. Virhekoodi on tiedoissa.
+.
 
 MessageId=3151
 Severity=Success
@@ -12680,6 +13990,9 @@ Unable to display message POPUP due to system VIO call error.\nThe error code is
 .
 Language=Taiwanese
 Unable to display message POPUP due to system VIO call error.\nThe error code is the data.
+.
+Language=Finnish
+Ponnahdusviestiä ei voi näyttää järjestelmän VIO-kutsun virheen vuoksi.\nVirhekoodi on tiedoissa.
 .
 
 MessageId=3152
@@ -12710,6 +14023,9 @@ An illegal server message block (SMB) was received.  The SMB is the data.
 Language=Taiwanese
 An illegal server message block (SMB) was received.  The SMB is the data.
 .
+Language=Finnish
+Vastaanotettiin kelpaamaton palvelimen viestilohko (SMB).  SMB on tiedoissa.
+.
 
 MessageId=3160
 Severity=Success
@@ -12738,6 +14054,9 @@ The workstation information segment is bigger than 64K.\nThe size follows, in DW
 .
 Language=Taiwanese
 The workstation information segment is bigger than 64K.\nThe size follows, in DWORD format:
+.
+Language=Finnish
+Työaseman tietosegmentti on yli 64 kt.\nKoko on seuraavassa DWORD-muodossa:
 .
 
 MessageId=3161
@@ -12768,6 +14087,9 @@ The workstation was unable to get the name-number of the computer.
 Language=Taiwanese
 The workstation was unable to get the name-number of the computer.
 .
+Language=Finnish
+Työasema ei saanut tietokoneen nimi-numeroa.
+.
 
 MessageId=3162
 Severity=Success
@@ -12796,6 +14118,9 @@ The workstation could not initialize the Async NetBIOS Thread.\nThe error code i
 .
 Language=Taiwanese
 The workstation could not initialize the Async NetBIOS Thread.\nThe error code is the data.
+.
+Language=Finnish
+Työasema ei pystynyt alustamaan asynkronista NetBIOS-säiettä.\nVirhekoodi on tiedoissa.
 .
 
 MessageId=3163
@@ -12826,6 +14151,9 @@ The workstation could not open the initial shared segment.\nThe error code is th
 Language=Taiwanese
 The workstation could not open the initial shared segment.\nThe error code is the data.
 .
+Language=Finnish
+Työasema ei pystynyt avaamaan jaettua alkusegmenttiä.\nVirhekoodi on tiedoissa.
+.
 
 MessageId=3164
 Severity=Success
@@ -12854,6 +14182,9 @@ The workstation host table is full.
 .
 Language=Taiwanese
 The workstation host table is full.
+.
+Language=Finnish
+Työaseman isäntätaulukko on täynnä.
 .
 
 MessageId=3165
@@ -12884,6 +14215,9 @@ A bad mailslot server message block (SMB) was received.  The SMB is the data.
 Language=Taiwanese
 A bad mailslot server message block (SMB) was received.  The SMB is the data.
 .
+Language=Finnish
+Vastaanotettiin virheellinen postipaikan palvelimen viestilohko (SMB).  SMB on tiedoissa.
+.
 
 MessageId=3166
 Severity=Success
@@ -12912,6 +14246,9 @@ The workstation encountered an error while trying to start the user accounts dat
 .
 Language=Taiwanese
 The workstation encountered an error while trying to start the user accounts database.\nThe error code is the data.
+.
+Language=Finnish
+Työasema kohtasi virheen yrittäessään käynnistää käyttäjätilitietokantaa.\nVirhekoodi on tiedoissa.
 .
 
 MessageId=3167
@@ -12942,6 +14279,9 @@ The workstation encountered an error while responding to an SSI revalidation req
 Language=Taiwanese
 The workstation encountered an error while responding to an SSI revalidation request.\nThe function code and the error codes are the data.
 .
+Language=Finnish
+Työasema kohtasi virheen vastatessaan SSI-uudelleenvahvistuspyyntöön.\nFunktiokoodi ja virhekoodit ovat tiedoissa.
+.
 
 MessageId=3170
 Severity=Success
@@ -12970,6 +14310,9 @@ The Alerter service had a problem creating the list of\nalert recipients.  The e
 .
 Language=Taiwanese
 The Alerter service had a problem creating the list of\nalert recipients.  The error code is %1.
+.
+Language=Finnish
+Hälytyspalvelulla oli ongelmia hälytysten\nvastaanottajaluettelon luomisessa.  Virhekoodi on %1.
 .
 
 MessageId=3171
@@ -13000,6 +14343,9 @@ There was an error expanding %1 as a group name. Try\nsplitting the group into t
 Language=Taiwanese
 There was an error expanding %1 as a group name. Try\nsplitting the group into two or more smaller groups.
 .
+Language=Finnish
+Kohteen %1 laajentamisessa ryhmän nimeksi tapahtui virhe. Yritä\njakaa ryhmä kahteen tai useampaan pienempään ryhmään.
+.
 
 MessageId=3172
 Severity=Success
@@ -13028,6 +14374,9 @@ There was an error sending %2 the alert message -\n(\n%3 )\nThe error code is %1
 .
 Language=Taiwanese
 There was an error sending %2 the alert message -\n(\n%3 )\nThe error code is %1.
+.
+Language=Finnish
+Hälytysviestin lähettämisessä kohteelle %2 tapahtui virhe -\n(\n%3 )\nVirhekoodi on %1.
 .
 
 MessageId=3173
@@ -13058,6 +14407,9 @@ There was an error in creating or reading the alerter mailslot.\nThe error code 
 Language=Taiwanese
 There was an error in creating or reading the alerter mailslot.\nThe error code is %1.
 .
+Language=Finnish
+Hälytyspalvelun postipaikan luomisessa tai lukemisessa tapahtui virhe.\nVirhekoodi on %1.
+.
 
 MessageId=3174
 Severity=Success
@@ -13086,6 +14438,9 @@ The server could not read the AT schedule file.
 .
 Language=Taiwanese
 The server could not read the AT schedule file.
+.
+Language=Finnish
+Palvelin ei voinut lukea AT-ajoitustiedostoa.
 .
 
 MessageId=3175
@@ -13116,6 +14471,9 @@ The server found an invalid AT schedule record.
 Language=Taiwanese
 The server found an invalid AT schedule record.
 .
+Language=Finnish
+Palvelin löysi virheellisen AT-ajoitustietueen.
+.
 
 MessageId=3176
 Severity=Success
@@ -13144,6 +14502,9 @@ The server could not find an AT schedule file so it created one.
 .
 Language=Taiwanese
 The server could not find an AT schedule file so it created one.
+.
+Language=Finnish
+Palvelin ei löytänyt AT-ajoitustiedostoa, joten se loi sellaisen.
 .
 
 MessageId=3177
@@ -13174,6 +14535,9 @@ The server could not access the %1 network with NetBiosOpen.
 Language=Taiwanese
 The server could not access the %1 network with NetBiosOpen.
 .
+Language=Finnish
+Palvelin ei voinut käyttää verkkoa %1 NetBiosOpen-kutsulla.
+.
 
 MessageId=3178
 Severity=Success
@@ -13202,6 +14566,9 @@ The AT command processor could not run %1.
 .
 Language=Taiwanese
 The AT command processor could not run %1.
+.
+Language=Finnish
+AT-komennon käsittelijä ei voinut suorittaa kohdetta %1.
 .
 
 MessageId=3180
@@ -13232,6 +14599,9 @@ WARNING:  Because of a lazy-write error, drive %1 now\ncontains some corrupted d
 Language=Taiwanese
 WARNING:  Because of a lazy-write error, drive %1 now\ncontains some corrupted data.  The cache is stopped.
 .
+Language=Finnish
+VAROITUS:  Viivästetyn kirjoituksen virheen vuoksi asemassa %1 on nyt\njoitakin vioittuneita tietoja.  Välimuisti on pysäytetty.
+.
 
 MessageId=3181
 Severity=Success
@@ -13260,6 +14630,9 @@ A defective sector on drive %1 has been replaced (hotfixed).\nNo data was lost. 
 .
 Language=Taiwanese
 A defective sector on drive %1 has been replaced (hotfixed).\nNo data was lost.  You should run CHKDSK soon to restore full\nperformance and replenish the volume's spare sector pool.\n\nThe hotfix occurred while processing a remote request.
+.
+Language=Finnish
+Aseman %1 viallinen sektori on korvattu (hotfix).\nTietoja ei menetetty.  Suorita pian CHKDSK palauttaaksesi täyden\nsuorituskyvyn ja täydentääksesi taltion varasektorivarannon.\n\nKorvaus tapahtui etäpyyntöä käsiteltäessä.
 .
 
 MessageId=3182
@@ -13290,6 +14663,9 @@ A disk error occurred on the HPFS volume in drive %1.\nThe error occurred while 
 Language=Taiwanese
 A disk error occurred on the HPFS volume in drive %1.\nThe error occurred while processing a remote request.
 .
+Language=Finnish
+Aseman %1 HPFS-taltiolla tapahtui levyvirhe.\nVirhe tapahtui etäpyyntöä käsiteltäessä.
+.
 
 MessageId=3183
 Severity=Success
@@ -13318,6 +14694,9 @@ The user accounts database (NET.ACC) is corrupted.  The local security\nsystem i
 .
 Language=Taiwanese
 The user accounts database (NET.ACC) is corrupted.  The local security\nsystem is replacing the corrupted NET.ACC with the backup\nmade at %1.\nAny updates made to the database after this time are lost.\n
+.
+Language=Finnish
+Käyttäjätilitietokanta (NET.ACC) on vioittunut.  Paikallinen\nsuojausjärjestelmä korvaa vioittuneen NET.ACC-tiedoston\nvarmuuskopiolla, joka tehtiin %1.\nKaikki tietokantaan tämän jälkeen tehdyt päivitykset menetetään.\n
 .
 
 MessageId=3184
@@ -13348,6 +14727,9 @@ The user accounts database (NET.ACC) is missing.  The local\nsecurity system is 
 Language=Taiwanese
 The user accounts database (NET.ACC) is missing.  The local\nsecurity system is restoring the backup database\nmade at %1.\nAny updates made to the database made after this time are lost.\n
 .
+Language=Finnish
+Käyttäjätilitietokanta (NET.ACC) puuttuu.  Paikallinen\nsuojausjärjestelmä palauttaa varmuuskopiotietokannan, joka\ntehtiin %1.\nKaikki tietokantaan tämän jälkeen tehdyt päivitykset menetetään.\n
+.
 
 MessageId=3185
 Severity=Success
@@ -13376,6 +14758,9 @@ Local security could not be started because the user accounts database\n(NET.ACC
 .
 Language=Taiwanese
 Local security could not be started because the user accounts database\n(NET.ACC) was missing or corrupted, and no usable backup\ndatabase was present.\n\nTHE SYSTEM IS NOT SECURE.
+.
+Language=Finnish
+Paikallista suojausta ei voitu käynnistää, koska käyttäjätilitietokanta\n(NET.ACC) puuttui tai oli vioittunut, eikä käyttökelpoista\nvarmuuskopiotietokantaa ollut.\n\nJÄRJESTELMÄ EI OLE SUOJATTU.
 .
 
 MessageId=3186
@@ -13406,6 +14791,9 @@ Local security could not be started because an error\noccurred during initializa
 Language=Taiwanese
 Local security could not be started because an error\noccurred during initialization. The error code returned is %1.\n\nTHE SYSTEM IS NOT SECURE.\n
 .
+Language=Finnish
+Paikallista suojausta ei voitu käynnistää, koska alustuksen\naikana tapahtui virhe. Palautettu virhekoodi on %1.\n\nJÄRJESTELMÄ EI OLE SUOJATTU.\n
+.
 
 MessageId=3190
 Severity=Success
@@ -13434,6 +14822,9 @@ A NetWksta internal error has occurred:\n%1
 .
 Language=Taiwanese
 A NetWksta internal error has occurred:\n%1
+.
+Language=Finnish
+On tapahtunut NetWksta-palvelun sisäinen virhe:\n%1
 .
 
 MessageId=3191
@@ -13464,6 +14855,9 @@ The redirector is out of a resource: %1.
 Language=Taiwanese
 The redirector is out of a resource: %1.
 .
+Language=Finnish
+Uudelleenohjaimelta on resurssi lopussa: %1.
+.
 
 MessageId=3192
 Severity=Success
@@ -13492,6 +14886,9 @@ A server message block (SMB) error occurred on the connection to %1.\nThe SMB he
 .
 Language=Taiwanese
 A server message block (SMB) error occurred on the connection to %1.\nThe SMB header is the data.
+.
+Language=Finnish
+Yhteydessä kohteeseen %1 tapahtui palvelimen viestilohkon (SMB) virhe.\nSMB-otsake on tiedoissa.
 .
 
 MessageId=3193
@@ -13522,6 +14919,9 @@ A virtual circuit error occurred on the session to %1.\nThe network control bloc
 Language=Taiwanese
 A virtual circuit error occurred on the session to %1.\nThe network control block (NCB) command and return code is the data.
 .
+Language=Finnish
+Istunnossa kohteeseen %1 tapahtui virtuaalipiirin virhe.\nVerkon ohjauslohkon (NCB) komento ja paluukoodi ovat tiedoissa.
+.
 
 MessageId=3194
 Severity=Success
@@ -13550,6 +14950,9 @@ Hanging up a stuck session to %1.
 .
 Language=Taiwanese
 Hanging up a stuck session to %1.
+.
+Language=Finnish
+Katkaistaan jumittunut istunto kohteeseen %1.
 .
 
 MessageId=3195
@@ -13580,6 +14983,9 @@ A network control block (NCB) error occurred (%1).\nThe NCB is the data.
 Language=Taiwanese
 A network control block (NCB) error occurred (%1).\nThe NCB is the data.
 .
+Language=Finnish
+Tapahtui verkon ohjauslohkon (NCB) virhe (%1).\nNCB on tiedoissa.
+.
 
 MessageId=3196
 Severity=Success
@@ -13608,6 +15014,9 @@ A write operation to %1 failed.\nData may have been lost.
 .
 Language=Taiwanese
 A write operation to %1 failed.\nData may have been lost.
+.
+Language=Finnish
+Kirjoitustoiminto kohteeseen %1 epäonnistui.\nTietoja on ehkä menetetty.
 .
 
 MessageId=3197
@@ -13638,6 +15047,9 @@ Reset of driver %1 failed to complete the network control block (NCB).\nThe NCB 
 Language=Taiwanese
 Reset of driver %1 failed to complete the network control block (NCB).\nThe NCB is the data.
 .
+Language=Finnish
+Ajurin %1 palautus ei suorittanut verkon ohjauslohkoa (NCB) loppuun.\nNCB on tiedoissa.
+.
 
 MessageId=3198
 Severity=Success
@@ -13666,6 +15078,9 @@ The amount of resource %1 requested was more\nthan the maximum. The maximum amou
 .
 Language=Taiwanese
 The amount of resource %1 requested was more\nthan the maximum. The maximum amount was allocated.
+.
+Language=Finnish
+Resurssia %1 pyydettiin enemmän kuin\nenimmäismäärä. Enimmäismäärä varattiin.
 .
 
 MessageId=3204
@@ -13696,6 +15111,9 @@ The server could not create a thread.\nThe THREADS parameter in the CONFIG.SYS f
 Language=Taiwanese
 The server could not create a thread.\nThe THREADS parameter in the CONFIG.SYS file should be increased.
 .
+Language=Finnish
+Palvelin ei voinut luoda säiettä.\nCONFIG.SYS-tiedoston THREADS-parametria pitäisi kasvattaa.
+.
 
 MessageId=3205
 Severity=Success
@@ -13724,6 +15142,9 @@ The server could not close %1.\nThe file is probably corrupted.
 .
 Language=Taiwanese
 The server could not close %1.\nThe file is probably corrupted.
+.
+Language=Finnish
+Palvelin ei voinut sulkea kohdetta %1.\nTiedosto on todennäköisesti vioittunut.
 .
 
 MessageId=3206
@@ -13754,6 +15175,9 @@ The replicator cannot update directory %1. It has tree integrity\nand is the cur
 Language=Taiwanese
 The replicator cannot update directory %1. It has tree integrity\nand is the current directory for some process.
 .
+Language=Finnish
+Replikoija ei voi päivittää hakemistoa %1. Sillä on puun eheys\nja se on jonkin prosessin nykyinen hakemisto.
+.
 
 MessageId=3207
 Severity=Success
@@ -13782,6 +15206,9 @@ The server cannot export directory %1 to client %2.\nIt is exported from another
 .
 Language=Taiwanese
 The server cannot export directory %1 to client %2.\nIt is exported from another server.
+.
+Language=Finnish
+Palvelin ei voi viedä hakemistoa %1 asiakkaalle %2.\nSe viedään toiselta palvelimelta.
 .
 
 MessageId=3208
@@ -13812,6 +15239,9 @@ The replication server could not update directory %2 from the source\non %3 due 
 Language=Taiwanese
 The replication server could not update directory %2 from the source\non %3 due to error %1.
 .
+Language=Finnish
+Replikointipalvelin ei voinut päivittää hakemistoa %2 lähteestä\nkohteessa %3 virheen %1 vuoksi.
+.
 
 MessageId=3209
 Severity=Success
@@ -13840,6 +15270,9 @@ Master %1 did not send an update notice for directory %2 at the expected\ntime.
 .
 Language=Taiwanese
 Master %1 did not send an update notice for directory %2 at the expected\ntime.
+.
+Language=Finnish
+Päätoimija %1 ei lähettänyt hakemiston %2 päivitysilmoitusta\nodotettuun aikaan.
 .
 
 MessageId=3210
@@ -13910,6 +15343,14 @@ same network using the same name or the password for this computer account\n
 is not recognized. If this message appears again, contact your system\n
 administrator.
 .
+Language=Finnish
+Tämä tietokone ei pystynyt todentamaan toimialueen %1 toimialueen ohjauskoneen\n
+%2 kanssa, joten tämä tietokone saattaa hylätä kirjautumispyyntöjä.\n
+Todennuksen epäonnistumisen syy voi olla, että toinen saman verkon tietokone\n
+käyttää samaa nimeä tai että tämän tietokonetilin salasanaa ei tunnisteta.\n
+Jos tämä viesti tulee uudelleen, ota yhteyttä järjestelmän\n
+valvojaan.
+.
 
 MessageId=3211
 Severity=Success
@@ -13938,6 +15379,9 @@ The replicator attempted to log on at %2 as %1 and failed.
 .
 Language=Taiwanese
 The replicator attempted to log on at %2 as %1 and failed.
+.
+Language=Finnish
+Replikoija yritti kirjautua kohteeseen %2 käyttäjänä %1, mutta epäonnistui.
 .
 
 MessageId=3212
@@ -13968,6 +15412,9 @@ Network error %1 occurred.
 Language=Taiwanese
 Network error %1 occurred.
 .
+Language=Finnish
+Tapahtui verkkovirhe %1.
+.
 
 MessageId=3213
 Severity=Success
@@ -13996,6 +15443,9 @@ Replicator limit for files in a directory has been exceeded.
 .
 Language=Taiwanese
 Replicator limit for files in a directory has been exceeded.
+.
+Language=Finnish
+Replikoijan hakemistokohtaisten tiedostojen raja on ylitetty.
 .
 
 MessageId=3214
@@ -14026,6 +15476,9 @@ Replicator limit for tree depth has been exceeded.
 Language=Taiwanese
 Replicator limit for tree depth has been exceeded.
 .
+Language=Finnish
+Replikoijan puun syvyyden raja on ylitetty.
+.
 
 MessageId=3215
 Severity=Success
@@ -14054,6 +15507,9 @@ Unrecognized message received in mailslot.
 .
 Language=Taiwanese
 Unrecognized message received in mailslot.
+.
+Language=Finnish
+Postipaikkaan vastaanotettiin tuntematon viesti.
 .
 
 MessageId=3216
@@ -14084,6 +15540,9 @@ System error %1 occurred.
 Language=Taiwanese
 System error %1 occurred.
 .
+Language=Finnish
+Tapahtui järjestelmävirhe %1.
+.
 
 MessageId=3217
 Severity=Success
@@ -14112,6 +15571,9 @@ Cannot log on. User is currently logged on and argument TRYUSER\nis set to NO.
 .
 Language=Taiwanese
 Cannot log on. User is currently logged on and argument TRYUSER\nis set to NO.
+.
+Language=Finnish
+Ei voi kirjautua. Käyttäjä on tällä hetkellä kirjautuneena, ja argumentin TRYUSER\narvo on NO.
 .
 
 MessageId=3218
@@ -14142,6 +15604,9 @@ IMPORT path %1 cannot be found.
 Language=Taiwanese
 IMPORT path %1 cannot be found.
 .
+Language=Finnish
+IMPORT-polkua %1 ei löydy.
+.
 
 MessageId=3219
 Severity=Success
@@ -14170,6 +15635,9 @@ EXPORT path %1 cannot be found.
 .
 Language=Taiwanese
 EXPORT path %1 cannot be found.
+.
+Language=Finnish
+EXPORT-polkua %1 ei löydy.
 .
 
 MessageId=3220
@@ -14200,6 +15668,9 @@ Replicator failed to update signal file in directory %2 due to\n%1 system error.
 Language=Taiwanese
 Replicator failed to update signal file in directory %2 due to\n%1 system error.
 .
+Language=Finnish
+Replikoija ei pystynyt päivittämään hakemiston %2 signaalitiedostoa\njärjestelmävirheen %1 vuoksi.
+.
 
 MessageId=3221
 Severity=Success
@@ -14228,6 +15699,9 @@ Disk Fault Tolerance Error\n\n%1
 .
 Language=Taiwanese
 Disk Fault Tolerance Error\n\n%1
+.
+Language=Finnish
+Levyn vikasietoisuusvirhe\n\n%1
 .
 
 MessageId=3222
@@ -14258,6 +15732,9 @@ Replicator could not access %2\non %3 due to system error %1.
 Language=Taiwanese
 Replicator could not access %2\non %3 due to system error %1.
 .
+Language=Finnish
+Replikoija ei voinut käyttää kohdetta %2\nkohteessa %3 järjestelmävirheen %1 vuoksi.
+.
 
 MessageId=3223
 Severity=Success
@@ -14286,6 +15763,9 @@ The primary domain controller for domain %1 has apparently failed.
 .
 Language=Taiwanese
 The primary domain controller for domain %1 has apparently failed.
+.
+Language=Finnish
+Toimialueen %1 ensisijainen toimialueen ohjauskone on ilmeisesti epäonnistunut.
 .
 
 MessageId=3224
@@ -14316,6 +15796,9 @@ Changing machine account password for account %1 failed with\nthe following erro
 Language=Taiwanese
 Changing machine account password for account %1 failed with\nthe following error: %n%2
 .
+Language=Finnish
+Tilin %1 tietokonetilin salasanan vaihtaminen epäonnistui\nseuraavalla virheellä: %n%2
+.
 
 MessageId=3225
 Severity=Success
@@ -14345,6 +15828,9 @@ An error occurred while updating the logon or logoff information for %1.
 Language=Taiwanese
 An error occurred while updating the logon or logoff information for %1.
 .
+Language=Finnish
+Kohteen %1 kirjautumis- tai uloskirjautumistietoja päivitettäessä tapahtui virhe.
+.
 
 MessageId=3226
 Severity=Success
@@ -14373,6 +15859,9 @@ An error occurred while synchronizing with primary domain controller %1
 .
 Language=Taiwanese
 An error occurred while synchronizing with primary domain controller %1
+.
+Language=Finnish
+Synkronoitaessa ensisijaisen toimialueen ohjauskoneen %1 kanssa tapahtui virhe
 .
 
 MessageId=3227
@@ -14427,6 +15916,12 @@ because %1 does not support signing or sealing the Netlogon session.\n\n
 Either upgrade the Domain Controller or set the RequireSignOrSeal\n
 registry entry on this machine to 0.
 .
+Language=Finnish
+Istunnon muodostaminen toimialueen %2 toimialueen ohjauskoneeseen %1 epäonnistui,\n
+koska %1 ei tue Netlogon-istunnon allekirjoitusta tai salausta.\n\n
+Päivitä toimialueen ohjauskone tai aseta tämän koneen rekisterimerkinnän\n
+RequireSignOrSeal arvoksi 0.
+.
 
 MessageId=3230
 Severity=Success
@@ -14455,6 +15950,9 @@ A power failure was detected at the server.
 .
 Language=Taiwanese
 A power failure was detected at the server.
+.
+Language=Finnish
+Palvelimella havaittiin sähkökatko.
 .
 
 MessageId=3231
@@ -14485,6 +15983,9 @@ The UPS service performed server shut down.
 Language=Taiwanese
 The UPS service performed server shut down.
 .
+Language=Finnish
+UPS-palvelu sammutti palvelimen.
+.
 
 MessageId=3232
 Severity=Success
@@ -14513,6 +16014,9 @@ The UPS service did not complete execution of the\nuser specified shut down comm
 .
 Language=Taiwanese
 The UPS service did not complete execution of the\nuser specified shut down command file.
+.
+Language=Finnish
+UPS-palvelu ei suorittanut loppuun\nkäyttäjän määrittämää sammutuskomentotiedostoa.
 .
 
 MessageId=3233
@@ -14543,6 +16047,9 @@ The UPS driver could not be opened.  The error code is\nthe data.
 Language=Taiwanese
 The UPS driver could not be opened.  The error code is\nthe data.
 .
+Language=Finnish
+UPS-ajuria ei voitu avata.  Virhekoodi on\ntiedoissa.
+.
 
 MessageId=3234
 Severity=Success
@@ -14571,6 +16078,9 @@ Power has been restored.
 .
 Language=Taiwanese
 Power has been restored.
+.
+Language=Finnish
+Sähköt on palautettu.
 .
 
 MessageId=3235
@@ -14601,6 +16111,9 @@ There is a problem with a configuration of user specified\nshut down command fil
 Language=Taiwanese
 There is a problem with a configuration of user specified\nshut down command file.
 .
+Language=Finnish
+Käyttäjän määrittämän sammutuskomentotiedoston kokoonpanossa\non ongelma.
+.
 
 MessageId=3236
 Severity=Success
@@ -14629,6 +16142,9 @@ The UPS service failed to execute a user specified shutdown\ncommand file %1.  T
 .
 Language=Taiwanese
 The UPS service failed to execute a user specified shutdown\ncommand file %1.  The error code is the data.
+.
+Language=Finnish
+UPS-palvelu ei pystynyt suorittamaan käyttäjän määrittämää\nsammutuskomentotiedostoa %1.  Virhekoodi on tiedoissa.
 .
 
 MessageId=3250
@@ -14659,6 +16175,9 @@ Initialization failed because of an invalid or missing\nparameter in the configu
 Language=Taiwanese
 Initialization failed because of an invalid or missing\nparameter in the configuration file %1.
 .
+Language=Finnish
+Alustus epäonnistui virheellisen tai puuttuvan\nparametrin vuoksi määritystiedostossa %1.
+.
 
 MessageId=3251
 Severity=Success
@@ -14687,6 +16206,9 @@ Initialization failed because of an invalid line in the\nconfiguration file %1. 
 .
 Language=Taiwanese
 Initialization failed because of an invalid line in the\nconfiguration file %1. The invalid line is the data.
+.
+Language=Finnish
+Alustus epäonnistui virheellisen rivin vuoksi\nmääritystiedostossa %1. Virheellinen rivi on tiedoissa.
 .
 
 MessageId=3252
@@ -14717,6 +16239,9 @@ Initialization failed because of an error in the configuration\nfile %1.
 Language=Taiwanese
 Initialization failed because of an error in the configuration\nfile %1.
 .
+Language=Finnish
+Alustus epäonnistui määritystiedoston %1\nvirheen vuoksi.
+.
 
 MessageId=3253
 Severity=Success
@@ -14745,6 +16270,9 @@ The file %1 has been changed after initialization.\nThe boot-block loading was t
 .
 Language=Taiwanese
 The file %1 has been changed after initialization.\nThe boot-block loading was temporarily terminated.
+.
+Language=Finnish
+Tiedostoa %1 on muutettu alustuksen jälkeen.\nKäynnistyslohkon lataus keskeytettiin tilapäisesti.
 .
 
 MessageId=3254
@@ -14775,6 +16303,9 @@ The files do not fit to the boot-block configuration\nfile %1. Change the BASE a
 Language=Taiwanese
 The files do not fit to the boot-block configuration\nfile %1. Change the BASE and ORG definitions or the order\nof the files.
 .
+Language=Finnish
+Tiedostot eivät sovi käynnistyslohkon määritystiedostoon\n%1. Muuta BASE- ja ORG-määrityksiä tai tiedostojen\njärjestystä.
+.
 
 MessageId=3255
 Severity=Success
@@ -14803,6 +16334,9 @@ Initialization failed because the dynamic-link\nlibrary %1 returned an incorrect
 .
 Language=Taiwanese
 Initialization failed because the dynamic-link\nlibrary %1 returned an incorrect version number.
+.
+Language=Finnish
+Alustus epäonnistui, koska dynaaminen\nlinkkikirjasto %1 palautti virheellisen versionumeron.
 .
 
 MessageId=3256
@@ -14833,6 +16367,9 @@ There was an unrecoverable error in the dynamic-\nlink library of the service.
 Language=Taiwanese
 There was an unrecoverable error in the dynamic-\nlink library of the service.
 .
+Language=Finnish
+Palvelun dynaamisessa linkkikirjastossa tapahtui\nkorjaamaton virhe.
+.
 
 MessageId=3257
 Severity=Success
@@ -14862,6 +16399,9 @@ The system returned an unexpected error code.\nThe error code is the data.
 Language=Taiwanese
 The system returned an unexpected error code.\nThe error code is the data.
 .
+Language=Finnish
+Järjestelmä palautti odottamattoman virhekoodin.\nVirhekoodi on tiedoissa.
+.
 
 MessageId=3258
 Severity=Success
@@ -14890,6 +16430,9 @@ The fault-tolerance error log file, LANROOT\\LOGS\\FT.LOG,\nis more than 64K.
 .
 Language=Taiwanese
 The fault-tolerance error log file, LANROOT\\LOGS\\FT.LOG,\nis more than 64K.
+.
+Language=Finnish
+Vikasietoisuuden virhelokitiedosto LANROOT\\LOGS\\FT.LOG\non yli 64 kt.
 .
 
 MessageId=3259
@@ -14936,6 +16479,11 @@ The fault-tolerance error-log file, LANROOT\\LOGS\\FT.LOG, had the\n
 update in progress bit set upon opening, which means that the\n
 system crashed while working on the error log.
 .
+Language=Finnish
+Vikasietoisuuden virhelokitiedostossa LANROOT\\LOGS\\FT.LOG oli\n
+avattaessa asetettuna päivitys käynnissä -bitti, mikä tarkoittaa, että\n
+järjestelmä kaatui käsitellessään virhelokia.
+.
 
 MessageId=3260
 Severity=Success
@@ -14964,6 +16512,9 @@ This computer has been successfully joined to domain '%1'.
 .
 Language=Taiwanese
 This computer has been successfully joined to domain '%1'.
+.
+Language=Finnish
+Tämä tietokone on liitetty onnistuneesti toimialueeseen '%1'.
 .
 
 MessageId=3261
@@ -14994,6 +16545,9 @@ This computer has been successfully joined to workgroup '%1'.
 Language=Taiwanese
 This computer has been successfully joined to workgroup '%1'.
 .
+Language=Finnish
+Tämä tietokone on liitetty onnistuneesti työryhmään '%1'.
+.
 
 MessageId=3299
 Severity=Success
@@ -15021,6 +16575,9 @@ Language=Chinese
 %1 %2 %3 %4 %5 %6 %7 %8 %9.
 .
 Language=Taiwanese
+%1 %2 %3 %4 %5 %6 %7 %8 %9.
+.
+Language=Finnish
 %1 %2 %3 %4 %5 %6 %7 %8 %9.
 .
 
@@ -15057,6 +16614,9 @@ Remote IPC %0
 Language=Taiwanese
 Remote IPC %0
 .
+Language=Finnish
+Etä-IPC %0
+.
 
 MessageId=3302
 Severity=Success
@@ -15085,6 +16645,9 @@ Remote Admin %0
 .
 Language=Taiwanese
 Remote Admin %0
+.
+Language=Finnish
+Etähallinta %0
 .
 
 MessageId=3303
@@ -15115,6 +16678,9 @@ Logon server share %0
 Language=Taiwanese
 Logon server share %0
 .
+Language=Finnish
+Kirjautumispalvelimen jako %0
+.
 
 MessageId=3304
 Severity=Success
@@ -15143,6 +16709,9 @@ A network error occurred. %0
 .
 Language=Taiwanese
 A network error occurred. %0
+.
+Language=Finnish
+Tapahtui verkkovirhe. %0
 .
 
 MessageId=3400
@@ -15173,6 +16742,9 @@ There is not enough memory to start the Workstation service.
 Language=Taiwanese
 There is not enough memory to start the Workstation service.
 .
+Language=Finnish
+Muisti ei riitä Workstation-palvelun käynnistämiseen.
+.
 
 MessageId=3401
 Severity=Success
@@ -15201,6 +16773,9 @@ An error occurred when reading the NETWORKS entry in the LANMAN.INI file.
 .
 Language=Taiwanese
 An error occurred when reading the NETWORKS entry in the LANMAN.INI file.
+.
+Language=Finnish
+LANMAN.INI-tiedoston NETWORKS-merkintää luettaessa tapahtui virhe.
 .
 
 MessageId=3402
@@ -15231,6 +16806,9 @@ This is an invalid argument: %1.
 Language=Taiwanese
 This is an invalid argument: %1.
 .
+Language=Finnish
+Tämä argumentti on virheellinen: %1.
+.
 
 MessageId=3403
 Severity=Success
@@ -15259,6 +16837,9 @@ The %1 NETWORKS entry in the LANMAN.INI file has a\nsyntax error and will be ign
 .
 Language=Taiwanese
 The %1 NETWORKS entry in the LANMAN.INI file has a\nsyntax error and will be ignored.
+.
+Language=Finnish
+LANMAN.INI-tiedoston NETWORKS-merkinnässä %1 on\nsyntaksivirhe, ja se ohitetaan.
 .
 
 MessageId=3404
@@ -15289,6 +16870,9 @@ There are too many NETWORKS entries in the LANMAN.INI file.
 Language=Taiwanese
 There are too many NETWORKS entries in the LANMAN.INI file.
 .
+Language=Finnish
+LANMAN.INI-tiedostossa on liian monta NETWORKS-merkintää.
+.
 
 MessageId=3406
 Severity=Success
@@ -15317,6 +16901,9 @@ An error occurred when opening network\ndevice driver %1 = %2.
 .
 Language=Taiwanese
 An error occurred when opening network\ndevice driver %1 = %2.
+.
+Language=Finnish
+Avattaessa verkkolaitteen\najuria %1 = %2 tapahtui virhe.
 .
 
 MessageId=3407
@@ -15347,6 +16934,9 @@ Device driver %1 sent a bad BiosLinkage response.
 Language=Taiwanese
 Device driver %1 sent a bad BiosLinkage response.
 .
+Language=Finnish
+Laiteajuri %1 lähetti virheellisen BiosLinkage-vastauksen.
+.
 
 MessageId=3408
 Severity=Success
@@ -15375,6 +16965,9 @@ The program cannot be used with this operating system.
 .
 Language=Taiwanese
 The program cannot be used with this operating system.
+.
+Language=Finnish
+Ohjelmaa ei voi käyttää tämän käyttöjärjestelmän kanssa.
 .
 
 MessageId=3409
@@ -15405,6 +16998,9 @@ The redirector is already installed.
 Language=Taiwanese
 The redirector is already installed.
 .
+Language=Finnish
+Uudelleenohjain on jo asennettu.
+.
 
 MessageId=3410
 Severity=Success
@@ -15433,6 +17029,9 @@ Installing NETWKSTA.SYS Version %1.%2.%3  (%4)\n
 .
 Language=Taiwanese
 Installing NETWKSTA.SYS Version %1.%2.%3  (%4)\n
+.
+Language=Finnish
+Asennetaan NETWKSTA.SYS-versio %1.%2.%3  (%4)\n
 .
 
 MessageId=3411
@@ -15471,6 +17070,10 @@ Language=Taiwanese
 There was an error installing NETWKSTA.SYS.\n\n
 Press ENTER to continue.
 .
+Language=Finnish
+NETWKSTA.SYS-tiedostoa asennettaessa tapahtui virhe.\n\n
+Jatka painamalla ENTER-näppäintä.
+.
 
 MessageId=3412
 Severity=Success
@@ -15499,6 +17102,9 @@ Resolver linkage problem.
 .
 Language=Taiwanese
 Resolver linkage problem.
+.
+Language=Finnish
+Selvittimen linkitysongelma.
 .
 
 MessageId=3413
@@ -15537,6 +17143,10 @@ Language=Taiwanese
 Your logon time at %1 ends at %2.\n
 Please clean up and log off.
 .
+Language=Finnish
+Kirjautumisaikasi kohteessa %1 päättyy %2.\n
+Siivoa jälkesi ja kirjaudu ulos.
+.
 
 MessageId=3414
 Severity=Success
@@ -15565,6 +17175,9 @@ You will be automatically disconnected at %1.
 .
 Language=Taiwanese
 You will be automatically disconnected at %1.
+.
+Language=Finnish
+Yhteytesi katkaistaan automaattisesti %1.
 .
 
 MessageId=3415
@@ -15595,6 +17208,9 @@ Your logon time at %1 has ended.
 Language=Taiwanese
 Your logon time at %1 has ended.
 .
+Language=Finnish
+Kirjautumisaikasi kohteessa %1 on päättynyt.
+.
 
 MessageId=3416
 Severity=Success
@@ -15623,6 +17239,9 @@ Your logon time at %1 ended at %2.
 .
 Language=Taiwanese
 Your logon time at %1 ended at %2.
+.
+Language=Finnish
+Kirjautumisaikasi kohteessa %1 päättyi %2.
 .
 
 MessageId=3417
@@ -15676,6 +17295,12 @@ have not logged off at this time, your session will be\n
 disconnected, and any open files or devices you\n
 have open may lose data.
 .
+Language=Finnish
+VAROITUS: Sinulla on aikaa kirjautua ulos %1 asti. Jos et\n
+ole kirjautunut ulos siihen mennessä, istuntosi\n
+katkaistaan, ja avoinna olevien tiedostojen tai laitteiden\n
+tietoja voi kadota.
+.
 
 MessageId=3418
 Severity=Success
@@ -15712,6 +17337,10 @@ two minutes to log off, or you will be disconnected.
 Language=Taiwanese
 WARNING: You must log off at %1 now.  You have\n
 two minutes to log off, or you will be disconnected.
+.
+Language=Finnish
+VAROITUS: Sinun on kirjauduttava ulos kohteesta %1 nyt.  Sinulla on\n
+kaksi minuuttia aikaa kirjautua ulos, tai yhteytesi katkaistaan.
 .
 
 MessageId=3419
@@ -15750,6 +17379,10 @@ Language=Taiwanese
 You have open files or devices, and a forced\n
 disconnection may cause you to lose data.
 .
+Language=Finnish
+Sinulla on avoinna tiedostoja tai laitteita, ja pakotettu\n
+yhteyden katkaisu voi aiheuttaa tietojen menetyksen.
+.
 
 MessageId=3420
 Severity=Success
@@ -15779,6 +17412,9 @@ Default Share for Internal Use %0
 Language=Taiwanese
 Default Share for Internal Use %0
 .
+Language=Finnish
+Oletusjako sisäiseen käyttöön %0
+.
 
 MessageId=3421
 Severity=Success
@@ -15807,6 +17443,9 @@ Messenger Service %0
 .
 Language=Taiwanese
 Messenger Service %0
+.
+Language=Finnish
+Messenger-palvelu %0
 .
 
 
@@ -15842,6 +17481,9 @@ Language=Chinese
 Language=Taiwanese
 The command completed successfully.
 .
+Language=Finnish
+Komento suoritettiin onnistuneesti.
+.
 
 MessageId=3501
 Severity=Success
@@ -15870,6 +17512,9 @@ You used an invalid option.
 .
 Language=Taiwanese
 You used an invalid option.
+.
+Language=Finnish
+Käytit virheellistä valitsinta.
 .
 
 MessageId=3502
@@ -15900,6 +17545,9 @@ Language=Chinese
 Language=Taiwanese
 System error %1 has occurred.
 .
+Language=Finnish
+On tapahtunut järjestelmävirhe %1.
+.
 
 MessageId=3503
 Severity=Success
@@ -15928,6 +17576,9 @@ The command contains an invalid number of arguments.
 .
 Language=Taiwanese
 The command contains an invalid number of arguments.
+.
+Language=Finnish
+Komennossa on virheellinen määrä argumentteja.
 .
 
 MessageId=3504
@@ -15958,6 +17609,9 @@ The command completed with one or more errors.
 Language=Taiwanese
 The command completed with one or more errors.
 .
+Language=Finnish
+Komento suoritettiin, mutta tapahtui yksi tai useampi virhe.
+.
 
 MessageId=3505
 Severity=Success
@@ -15986,6 +17640,9 @@ You used an option with an invalid value.
 .
 Language=Taiwanese
 You used an option with an invalid value.
+.
+Language=Finnish
+Käytit valitsinta virheellisellä arvolla.
 .
 
 MessageId=3506
@@ -16016,6 +17673,9 @@ The option %1 is unknown.
 Language=Taiwanese
 The option %1 is unknown.
 .
+Language=Finnish
+Valitsin %1 on tuntematon.
+.
 
 MessageId=3507
 Severity=Success
@@ -16044,6 +17704,9 @@ Option %1 is ambiguous.
 .
 Language=Taiwanese
 Option %1 is ambiguous.
+.
+Language=Finnish
+Valitsin %1 on monitulkintainen.
 .
 
 MessageId=3510
@@ -16074,6 +17737,9 @@ A command was used with conflicting switches.
 Language=Taiwanese
 A command was used with conflicting switches.
 .
+Language=Finnish
+Komentoa käytettiin keskenään ristiriitaisten valitsimien kanssa.
+.
 
 MessageId=3511
 Severity=Success
@@ -16102,6 +17768,9 @@ Could not find subprogram %1.
 .
 Language=Taiwanese
 Could not find subprogram %1.
+.
+Language=Finnish
+Aliohjelmaa %1 ei löytynyt.
 .
 
 MessageId=3512
@@ -16132,6 +17801,9 @@ The software requires a newer version of the operating\nsystem.
 Language=Taiwanese
 The software requires a newer version of the operating\nsystem.
 .
+Language=Finnish
+Ohjelmisto vaatii uudemman version\nkäyttöjärjestelmästä.
+.
 
 MessageId=3513
 Severity=Success
@@ -16160,6 +17832,9 @@ More data is available than can be returned by the operating\nsystem.
 .
 Language=Taiwanese
 More data is available than can be returned by the operating\nsystem.
+.
+Language=Finnish
+Tietoja on saatavilla enemmän kuin käyttöjärjestelmä\npystyy palauttamaan.
 .
 
 MessageId=3514
@@ -16190,6 +17865,9 @@ More help is available by typing NET HELPMSG %1.
 Language=Taiwanese
 More help is available by typing NET HELPMSG %1.
 .
+Language=Finnish
+Lisätietoja saat kirjoittamalla NET HELPMSG %1.
+.
 
 MessageId=3515
 Severity=Success
@@ -16218,6 +17896,9 @@ The command can be used only on a Domain Controller.
 .
 Language=Taiwanese
 The command can be used only on a Domain Controller.
+.
+Language=Finnish
+Komentoa voi käyttää vain toimialueen ohjauskoneessa.
 .
 
 MessageId=3516
@@ -16248,6 +17929,9 @@ This command cannot be used on a Domain Controller.
 Language=Taiwanese
 This command cannot be used on a Domain Controller.
 .
+Language=Finnish
+Tätä komentoa ei voi käyttää toimialueen ohjauskoneessa.
+.
 
 MessageId=3520
 Severity=Success
@@ -16276,6 +17960,9 @@ These services are started:
 .
 Language=Taiwanese
 These services are started:
+.
+Language=Finnish
+Nämä palvelut on käynnistetty:
 .
 
 MessageId=3521
@@ -16306,6 +17993,9 @@ The %1 service is not started.
 Language=Taiwanese
 The %1 service is not started.
 .
+Language=Finnish
+Palvelua %1 ei ole käynnistetty.
+.
 
 MessageId=3522
 Severity=Success
@@ -16334,6 +18024,9 @@ The %1 service is starting%0
 .
 Language=Taiwanese
 The %1 service is starting%0
+.
+Language=Finnish
+Palvelu %1 käynnistyy%0
 .
 
 MessageId=3523
@@ -16364,6 +18057,9 @@ The %1 service could not be started.
 Language=Taiwanese
 The %1 service could not be started.
 .
+Language=Finnish
+Palvelua %1 ei voitu käynnistää.
+.
 
 MessageId=3524
 Severity=Success
@@ -16392,6 +18088,9 @@ The %1 service was started successfully.
 .
 Language=Taiwanese
 The %1 service was started successfully.
+.
+Language=Finnish
+Palvelu %1 käynnistettiin onnistuneesti.
 .
 
 MessageId=3525
@@ -16422,6 +18121,9 @@ Stopping the Workstation service also stops the Server service.
 Language=Taiwanese
 Stopping the Workstation service also stops the Server service.
 .
+Language=Finnish
+Workstation-palvelun pysäyttäminen pysäyttää myös Server-palvelun.
+.
 
 MessageId=3526
 Severity=Success
@@ -16450,6 +18152,9 @@ The workstation has open files.
 .
 Language=Taiwanese
 The workstation has open files.
+.
+Language=Finnish
+Työasemalla on avoimia tiedostoja.
 .
 
 MessageId=3527
@@ -16480,6 +18185,9 @@ The %1 service is stopping%0
 Language=Taiwanese
 The %1 service is stopping%0
 .
+Language=Finnish
+Palvelu %1 pysähtyy%0
+.
 
 MessageId=3528
 Severity=Success
@@ -16508,6 +18216,9 @@ The %1 service could not be stopped.
 .
 Language=Taiwanese
 The %1 service could not be stopped.
+.
+Language=Finnish
+Palvelua %1 ei voitu pysäyttää.
 .
 
 MessageId=3529
@@ -16538,6 +18249,9 @@ The %1 service was stopped successfully.
 Language=Taiwanese
 The %1 service was stopped successfully.
 .
+Language=Finnish
+Palvelu %1 pysäytettiin onnistuneesti.
+.
 
 MessageId=3530
 Severity=Success
@@ -16566,6 +18280,9 @@ The following services are dependent on the %1 service.\nStopping the %1 service
 .
 Language=Taiwanese
 The following services are dependent on the %1 service.\nStopping the %1 service will also stop these services.
+.
+Language=Finnish
+Seuraavat palvelut ovat riippuvaisia palvelusta %1.\nPalvelun %1 pysäyttäminen pysäyttää myös nämä palvelut.
 .
 
 MessageId=3533
@@ -16596,6 +18313,9 @@ The service is starting or stopping.  Please try again later.
 Language=Taiwanese
 The service is starting or stopping.  Please try again later.
 .
+Language=Finnish
+Palvelu on käynnistymässä tai pysähtymässä.  Yritä myöhemmin uudelleen.
+.
 
 MessageId=3534
 Severity=Success
@@ -16624,6 +18344,9 @@ The service did not report an error.
 .
 Language=Taiwanese
 The service did not report an error.
+.
+Language=Finnish
+Palvelu ei ilmoittanut virheestä.
 .
 
 MessageId=3535
@@ -16654,6 +18377,9 @@ An error occurred controlling the device.
 Language=Taiwanese
 An error occurred controlling the device.
 .
+Language=Finnish
+Laitetta ohjattaessa tapahtui virhe.
+.
 
 MessageId=3536
 Severity=Success
@@ -16682,6 +18408,9 @@ The %1 service was continued successfully.
 .
 Language=Taiwanese
 The %1 service was continued successfully.
+.
+Language=Finnish
+Palvelun %1 toimintaa jatkettiin onnistuneesti.
 .
 
 MessageId=3537
@@ -16712,6 +18441,9 @@ The %1 service was paused successfully.
 Language=Taiwanese
 The %1 service was paused successfully.
 .
+Language=Finnish
+Palvelu %1 keskeytettiin onnistuneesti.
+.
 
 MessageId=3538
 Severity=Success
@@ -16740,6 +18472,9 @@ The %1 service failed to resume.
 .
 Language=Taiwanese
 The %1 service failed to resume.
+.
+Language=Finnish
+Palvelun %1 jatkaminen epäonnistui.
 .
 
 MessageId=3539
@@ -16770,6 +18505,9 @@ The %1 service failed to pause.
 Language=Taiwanese
 The %1 service failed to pause.
 .
+Language=Finnish
+Palvelun %1 keskeyttäminen epäonnistui.
+.
 
 MessageId=3540
 Severity=Success
@@ -16798,6 +18536,9 @@ The %1 service continue is pending%0
 .
 Language=Taiwanese
 The %1 service continue is pending%0
+.
+Language=Finnish
+Palvelun %1 jatkaminen on kesken%0
 .
 
 MessageId=3541
@@ -16828,6 +18569,9 @@ The %1 service pause is pending%0
 Language=Taiwanese
 The %1 service pause is pending%0
 .
+Language=Finnish
+Palvelun %1 keskeyttäminen on kesken%0
+.
 
 MessageId=3542
 Severity=Success
@@ -16856,6 +18600,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 was continued successfully.
+.
+Language=Finnish
+Kohteen %1 toimintaa jatkettiin onnistuneesti.
 .
 
 MessageId=3543
@@ -16886,6 +18633,9 @@ Language=Chinese
 Language=Taiwanese
 %1 was paused successfully.
 .
+Language=Finnish
+%1 keskeytettiin onnistuneesti.
+.
 
 MessageId=3544
 Severity=Success
@@ -16915,6 +18665,9 @@ The %1 service has been started by another process and is pending.%0
 Language=Taiwanese
 The %1 service has been started by another process and is pending.%0
 .
+Language=Finnish
+Toinen prosessi on käynnistänyt palvelun %1, ja se on kesken.%0
+.
 
 MessageId=3547
 Severity=Success
@@ -16943,6 +18696,9 @@ A service specific error occurred: %1.
 .
 Language=Taiwanese
 A service specific error occurred: %1.
+.
+Language=Finnish
+Tapahtui palvelukohtainen virhe: %1.
 .
 
 
@@ -16974,6 +18730,9 @@ These workstations have sessions on this server:
 Language=Taiwanese
 These workstations have sessions on this server:
 .
+Language=Finnish
+Näillä työasemilla on istuntoja tällä palvelimella:
+.
 
 MessageId=3661
 Severity=Success
@@ -17002,6 +18761,9 @@ These workstations have sessions with open files on this server:
 .
 Language=Taiwanese
 These workstations have sessions with open files on this server:
+.
+Language=Finnish
+Näillä työasemilla on istuntoja, joissa on avoimia tiedostoja tällä palvelimella:
 .
 
 MessageId=3666
@@ -17032,6 +18794,9 @@ The message alias is forwarded.
 Language=Taiwanese
 The message alias is forwarded.
 .
+Language=Finnish
+Viestialias on edelleenlähetetty.
+.
 
 MessageId=3670
 Severity=Success
@@ -17060,6 +18825,9 @@ You have these remote connections:
 .
 Language=Taiwanese
 You have these remote connections:
+.
+Language=Finnish
+Sinulla on nämä etäyhteydet:
 .
 
 MessageId=3671
@@ -17090,6 +18858,9 @@ Continuing will cancel the connections.
 Language=Taiwanese
 Continuing will cancel the connections.
 .
+Language=Finnish
+Jatkaminen peruuttaa yhteydet.
+.
 
 MessageId=3675
 Severity=Success
@@ -17118,6 +18889,9 @@ The session from %1 has open files.
 .
 Language=Taiwanese
 The session from %1 has open files.
+.
+Language=Finnish
+Istunnolla kohteesta %1 on avoimia tiedostoja.
 .
 
 MessageId=3676
@@ -17148,6 +18922,9 @@ New connections will be remembered.
 Language=Taiwanese
 New connections will be remembered.
 .
+Language=Finnish
+Uudet yhteydet muistetaan.
+.
 
 MessageId=3677
 Severity=Success
@@ -17176,6 +18953,9 @@ New connections will not be remembered.
 .
 Language=Taiwanese
 New connections will not be remembered.
+.
+Language=Finnish
+Uusia yhteyksiä ei muisteta.
 .
 
 MessageId=3678
@@ -17206,6 +18986,9 @@ An error occurred while saving your profile. The state of your remembered connec
 Language=Taiwanese
 An error occurred while saving your profile. The state of your remembered connections has not changed.
 .
+Language=Finnish
+Profiilia tallennettaessa tapahtui virhe. Muistettujen yhteyksiesi tila ei muuttunut.
+.
 
 MessageId=3679
 Severity=Success
@@ -17234,6 +19017,9 @@ An error occurred while reading your profile.
 .
 Language=Taiwanese
 An error occurred while reading your profile.
+.
+Language=Finnish
+Profiilia luettaessa tapahtui virhe.
 .
 
 MessageId=3680
@@ -17264,6 +19050,9 @@ An error occurred while restoring the connection to %1.
 Language=Taiwanese
 An error occurred while restoring the connection to %1.
 .
+Language=Finnish
+Yhteyttä kohteeseen %1 palautettaessa tapahtui virhe.
+.
 
 MessageId=3682
 Severity=Success
@@ -17292,6 +19081,9 @@ No network services are started.
 .
 Language=Taiwanese
 No network services are started.
+.
+Language=Finnish
+Verkkopalveluita ei ole käynnistetty.
 .
 
 MessageId=3683
@@ -17322,6 +19114,9 @@ There are no entries in the list.
 Language=Taiwanese
 There are no entries in the list.
 .
+Language=Finnish
+Luettelossa ei ole merkintöjä.
+.
 
 MessageId=3688
 Severity=Success
@@ -17350,6 +19145,9 @@ Users have open files on %1.  Continuing the operation will force the files clos
 .
 Language=Taiwanese
 Users have open files on %1.  Continuing the operation will force the files closed.
+.
+Language=Finnish
+Käyttäjillä on avoimia tiedostoja kohteessa %1.  Toiminnon jatkaminen sulkee tiedostot pakotetusti.
 .
 
 MessageId=3689
@@ -17380,6 +19178,9 @@ The Workstation service is already running. The operating system will ignore com
 Language=Taiwanese
 The Workstation service is already running. The operating system will ignore command options for the workstation.
 .
+Language=Finnish
+Workstation-palvelu on jo käynnissä. Käyttöjärjestelmä ohittaa työaseman komentovalitsimet.
+.
 
 MessageId=3691
 Severity=Success
@@ -17408,6 +19209,9 @@ There are open files and/or incomplete directory searches pending on the connect
 .
 Language=Taiwanese
 There are open files and/or incomplete directory searches pending on the connection to %1.
+.
+Language=Finnish
+Yhteydellä kohteeseen %1 on avoimia tiedostoja ja/tai keskeneräisiä hakemistohakuja.
 .
 
 MessageId=3693
@@ -17438,6 +19242,9 @@ The request will be processed at a domain controller for domain %1.
 Language=Taiwanese
 The request will be processed at a domain controller for domain %1.
 .
+Language=Finnish
+Pyyntö käsitellään toimialueen %1 toimialueen ohjauskoneessa.
+.
 
 MessageId=3694
 Severity=Success
@@ -17466,6 +19273,9 @@ The shared queue cannot be deleted while a print job is being spooled to the que
 .
 Language=Taiwanese
 The shared queue cannot be deleted while a print job is being spooled to the queue.
+.
+Language=Finnish
+Jaettua jonoa ei voi poistaa, kun jonoon taustatulostetaan tulostustyötä.
 .
 
 MessageId=3695
@@ -17496,6 +19306,9 @@ Language=Chinese
 Language=Taiwanese
 %1 has a remembered connection to %2.
 .
+Language=Finnish
+Kohteella %1 on muistettu yhteys kohteeseen %2.
+.
 
 MessageId=3710
 Severity=Success
@@ -17524,6 +19337,9 @@ An error occurred while opening the Help file.
 .
 Language=Taiwanese
 An error occurred while opening the Help file.
+.
+Language=Finnish
+Ohjetiedostoa avattaessa tapahtui virhe.
 .
 
 MessageId=3711
@@ -17554,6 +19370,9 @@ The Help file is empty.
 Language=Taiwanese
 The Help file is empty.
 .
+Language=Finnish
+Ohjetiedosto on tyhjä.
+.
 
 MessageId=3712
 Severity=Success
@@ -17582,6 +19401,9 @@ The Help file is corrupted.
 .
 Language=Taiwanese
 The Help file is corrupted.
+.
+Language=Finnish
+Ohjetiedosto on vioittunut.
 .
 
 MessageId=3713
@@ -17612,6 +19434,9 @@ Could not find a domain controller for domain %1.
 Language=Taiwanese
 Could not find a domain controller for domain %1.
 .
+Language=Finnish
+Toimialueen %1 toimialueen ohjauskonetta ei löytynyt.
+.
 
 MessageId=3714
 Severity=Success
@@ -17640,6 +19465,9 @@ This operation is privileged on systems with earlier\nversions of the software.
 .
 Language=Taiwanese
 This operation is privileged on systems with earlier\nversions of the software.
+.
+Language=Finnish
+Tämä toiminto vaatii erikoisoikeudet järjestelmissä, joissa on\nohjelmiston aiempi versio.
 .
 
 MessageId=3716
@@ -17670,6 +19498,9 @@ The device type is unknown.
 Language=Taiwanese
 The device type is unknown.
 .
+Language=Finnish
+Laitetyyppi on tuntematon.
+.
 
 MessageId=3717
 Severity=Success
@@ -17698,6 +19529,9 @@ The log file has been corrupted.
 .
 Language=Taiwanese
 The log file has been corrupted.
+.
+Language=Finnish
+Lokitiedosto on vioittunut.
 .
 
 MessageId=3718
@@ -17728,6 +19562,9 @@ Program filenames must end with .EXE.
 Language=Taiwanese
 Program filenames must end with .EXE.
 .
+Language=Finnish
+Ohjelmatiedostojen nimien on päätyttävä .EXE-tunnisteeseen.
+.
 
 MessageId=3719
 Severity=Success
@@ -17756,6 +19593,9 @@ A matching share could not be found so nothing was deleted.
 .
 Language=Taiwanese
 A matching share could not be found so nothing was deleted.
+.
+Language=Finnish
+Vastaavaa jakoa ei löytynyt, joten mitään ei poistettu.
 .
 
 MessageId=3720
@@ -17786,6 +19626,9 @@ A bad value is in the units-per-week field of the user record.
 Language=Taiwanese
 A bad value is in the units-per-week field of the user record.
 .
+Language=Finnish
+Käyttäjätietueen yksikköä viikossa -kentässä on virheellinen arvo.
+.
 
 MessageId=3721
 Severity=Success
@@ -17814,6 +19657,9 @@ The password is invalid for %1.
 .
 Language=Taiwanese
 The password is invalid for %1.
+.
+Language=Finnish
+Salasana on virheellinen kohteelle %1.
 .
 
 MessageId=3722
@@ -17844,6 +19690,9 @@ An error occurred while sending a message to %1.
 Language=Taiwanese
 An error occurred while sending a message to %1.
 .
+Language=Finnish
+Viestiä lähetettäessä kohteelle %1 tapahtui virhe.
+.
 
 MessageId=3723
 Severity=Success
@@ -17872,6 +19721,9 @@ The password or user name is invalid for %1.
 .
 Language=Taiwanese
 The password or user name is invalid for %1.
+.
+Language=Finnish
+Salasana tai käyttäjänimi on virheellinen kohteelle %1.
 .
 
 MessageId=3725
@@ -17902,6 +19754,9 @@ An error occurred when the share was deleted.
 Language=Taiwanese
 An error occurred when the share was deleted.
 .
+Language=Finnish
+Jakoa poistettaessa tapahtui virhe.
+.
 
 MessageId=3726
 Severity=Success
@@ -17930,6 +19785,9 @@ The user name is invalid.
 .
 Language=Taiwanese
 The user name is invalid.
+.
+Language=Finnish
+Käyttäjänimi on virheellinen.
 .
 
 MessageId=3727
@@ -17960,6 +19818,9 @@ The password is invalid.
 Language=Taiwanese
 The password is invalid.
 .
+Language=Finnish
+Salasana on virheellinen.
+.
 
 MessageId=3728
 Severity=Success
@@ -17988,6 +19849,9 @@ Language=Chinese
 .
 Language=Taiwanese
 密碼不匹配.
+.
+Language=Finnish
+Salasanat eivät täsmää.
 .
 
 MessageId=3729
@@ -18018,6 +19882,9 @@ Your persistent connections were not all restored.
 Language=Taiwanese
 Your persistent connections were not all restored.
 .
+Language=Finnish
+Kaikkia pysyviä yhteyksiäsi ei palautettu.
+.
 
 MessageId=3730
 Severity=Success
@@ -18046,6 +19913,9 @@ This is not a valid computer name or domain name.
 .
 Language=Taiwanese
 This is not a valid computer name or domain name.
+.
+Language=Finnish
+Tämä ei ole kelvollinen tietokoneen tai toimialueen nimi.
 .
 
 MessageId=3732
@@ -18076,6 +19946,9 @@ Default permissions cannot be set for that resource.
 Language=Taiwanese
 Default permissions cannot be set for that resource.
 .
+Language=Finnish
+Tälle resurssille ei voi asettaa oletuskäyttöoikeuksia.
+.
 
 MessageId=3734
 Severity=Success
@@ -18104,6 +19977,9 @@ A valid password was not entered.
 .
 Language=Taiwanese
 A valid password was not entered.
+.
+Language=Finnish
+Kelvollista salasanaa ei annettu.
 .
 
 MessageId=3735
@@ -18134,6 +20010,9 @@ A valid name was not entered.
 Language=Taiwanese
 A valid name was not entered.
 .
+Language=Finnish
+Kelvollista nimeä ei annettu.
+.
 
 MessageId=3736
 Severity=Success
@@ -18162,6 +20041,9 @@ The resource named cannot be shared.
 .
 Language=Taiwanese
 The resource named cannot be shared.
+.
+Language=Finnish
+Nimettyä resurssia ei voi jakaa.
 .
 
 MessageId=3737
@@ -18192,6 +20074,9 @@ The permissions string contains invalid permissions.
 Language=Taiwanese
 The permissions string contains invalid permissions.
 .
+Language=Finnish
+Käyttöoikeusmerkkijono sisältää virheellisiä käyttöoikeuksia.
+.
 
 MessageId=3738
 Severity=Success
@@ -18220,6 +20105,9 @@ You can only perform this operation on printers and communication devices.
 .
 Language=Taiwanese
 You can only perform this operation on printers and communication devices.
+.
+Language=Finnish
+Tämän toiminnon voi suorittaa vain tulostimille ja tiedonsiirtolaitteille.
 .
 
 MessageId=3742
@@ -18250,6 +20138,9 @@ Language=Chinese
 Language=Taiwanese
 %1 is an invalid user or group name.
 .
+Language=Finnish
+%1 on virheellinen käyttäjän tai ryhmän nimi.
+.
 
 MessageId=3743
 Severity=Success
@@ -18278,6 +20169,9 @@ The server is not configured for remote administration.
 .
 Language=Taiwanese
 The server is not configured for remote administration.
+.
+Language=Finnish
+Palvelinta ei ole määritetty etähallintaa varten.
 .
 
 MessageId=3752
@@ -18308,6 +20202,9 @@ No users have sessions with this server.
 Language=Taiwanese
 No users have sessions with this server.
 .
+Language=Finnish
+Yhdelläkään käyttäjällä ei ole istuntoa tällä palvelimella.
+.
 
 MessageId=3753
 Severity=Success
@@ -18336,6 +20233,9 @@ User %1 is not a member of group %2.
 .
 Language=Taiwanese
 User %1 is not a member of group %2.
+.
+Language=Finnish
+Käyttäjä %1 ei ole ryhmän %2 jäsen.
 .
 
 MessageId=3754
@@ -18366,6 +20266,9 @@ User %1 is already a member of group %2.
 Language=Taiwanese
 User %1 is already a member of group %2.
 .
+Language=Finnish
+Käyttäjä %1 on jo ryhmän %2 jäsen.
+.
 
 MessageId=3755
 Severity=Success
@@ -18394,6 +20297,9 @@ There is no such user: %1.
 .
 Language=Taiwanese
 There is no such user: %1.
+.
+Language=Finnish
+Tällaista käyttäjää ei ole: %1.
 .
 
 MessageId=3756
@@ -18424,6 +20330,9 @@ This is an invalid response.
 Language=Taiwanese
 This is an invalid response.
 .
+Language=Finnish
+Tämä on virheellinen vastaus.
+.
 
 MessageId=3757
 Severity=Success
@@ -18452,6 +20361,9 @@ No valid response was provided.
 .
 Language=Taiwanese
 No valid response was provided.
+.
+Language=Finnish
+Kelvollista vastausta ei annettu.
 .
 
 MessageId=3758
@@ -18482,6 +20394,9 @@ The destination list provided does not match the destination list of the printer
 Language=Taiwanese
 The destination list provided does not match the destination list of the printer queue.
 .
+Language=Finnish
+Annettu kohdeluettelo ei vastaa tulostinjonon kohdeluetteloa.
+.
 
 MessageId=3759
 Severity=Success
@@ -18510,6 +20425,9 @@ Your password cannot be changed until %1.
 .
 Language=Taiwanese
 Your password cannot be changed until %1.
+.
+Language=Finnish
+Salasanaasi ei voi vaihtaa ennen ajankohtaa %1.
 .
 
 MessageId=3760
@@ -18540,6 +20458,9 @@ Language=Chinese
 Language=Taiwanese
 %1 is not a recognized day of the week.
 .
+Language=Finnish
+%1 ei ole tunnistettu viikonpäivä.
+.
 
 MessageId=3761
 Severity=Success
@@ -18568,6 +20489,9 @@ The time range specified ends before it starts.
 .
 Language=Taiwanese
 The time range specified ends before it starts.
+.
+Language=Finnish
+Määritetty aikaväli päättyy ennen kuin se alkaa.
 .
 
 MessageId=3762
@@ -18598,6 +20522,9 @@ Language=Chinese
 Language=Taiwanese
 %1 is not a recognized hour.
 .
+Language=Finnish
+%1 ei ole tunnistettu tunti.
+.
 
 MessageId=3763
 Severity=Success
@@ -18626,6 +20553,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 is not a valid specification for minutes.
+.
+Language=Finnish
+%1 ei ole kelvollinen minuuttimääritys.
 .
 
 MessageId=3764
@@ -18656,6 +20586,9 @@ Time supplied is not exactly on the hour.
 Language=Taiwanese
 Time supplied is not exactly on the hour.
 .
+Language=Finnish
+Annettu aika ei ole tasatunti.
+.
 
 MessageId=3765
 Severity=Success
@@ -18684,6 +20617,9 @@ Language=Chinese
 .
 Language=Taiwanese
 12 and 24 hour time formats may not be mixed.
+.
+Language=Finnish
+12 ja 24 tunnin aikamuotoja ei voi sekoittaa.
 .
 
 MessageId=3766
@@ -18714,6 +20650,9 @@ Language=Chinese
 Language=Taiwanese
 %1 is not a valid 12-hour suffix.
 .
+Language=Finnish
+%1 ei ole kelvollinen 12 tunnin jälkiliite.
+.
 
 MessageId=3767
 Severity=Success
@@ -18742,6 +20681,9 @@ An illegal date format has been supplied.
 .
 Language=Taiwanese
 An illegal date format has been supplied.
+.
+Language=Finnish
+Annettiin kelpaamaton päivämäärämuoto.
 .
 
 MessageId=3768
@@ -18772,6 +20714,9 @@ An illegal day range has been supplied.
 Language=Taiwanese
 An illegal day range has been supplied.
 .
+Language=Finnish
+Annettiin kelpaamaton päiväväli.
+.
 
 MessageId=3769
 Severity=Success
@@ -18800,6 +20745,9 @@ An illegal time range has been supplied.
 .
 Language=Taiwanese
 An illegal time range has been supplied.
+.
+Language=Finnish
+Annettiin kelpaamaton aikaväli.
 .
 
 MessageId=3770
@@ -18838,6 +20786,10 @@ Language=Taiwanese
 Arguments to NET USER are invalid. Check the minimum password\n
 length and/or arguments supplied.
 .
+Language=Finnish
+NET USER -komennon argumentit ovat virheellisiä. Tarkista salasanan\n
+vähimmäispituus ja/tai annetut argumentit.
+.
 
 MessageId=3771
 Severity=Success
@@ -18867,6 +20819,9 @@ The value for ENABLESCRIPT must be YES.
 Language=Taiwanese
 The value for ENABLESCRIPT must be YES.
 .
+Language=Finnish
+ENABLESCRIPT-arvon on oltava YES.
+.
 
 MessageId=3773
 Severity=Success
@@ -18895,6 +20850,9 @@ An illegal country code has been supplied.
 .
 Language=Taiwanese
 An illegal country code has been supplied.
+.
+Language=Finnish
+Annettiin kelpaamaton maakoodi.
 .
 
 MessageId=3774
@@ -18933,6 +20891,10 @@ Language=Taiwanese
 The user was successfully created but could not be added\n
 to the USERS local group.
 .
+Language=Finnish
+Käyttäjä luotiin onnistuneesti, mutta sitä ei voitu lisätä\n
+paikalliseen USERS-ryhmään.
+.
 
 MessageId=3775
 Severity=Success
@@ -18961,6 +20923,9 @@ The user context supplied is invalid.
 .
 Language=Taiwanese
 The user context supplied is invalid.
+.
+Language=Finnish
+Annettu käyttäjäkonteksti on virheellinen.
 .
 
 MessageId=3776
@@ -18999,6 +20964,10 @@ Language=Taiwanese
 The dynamic-link library %1 could not be loaded, or an error\n
 occurred while trying to use it.
 .
+Language=Finnish
+Dynaamista linkkikirjastoa %1 ei voitu ladata, tai sitä\n
+yritettäessä käyttää tapahtui virhe.
+.
 
 MessageId=3777
 Severity=Success
@@ -19027,6 +20996,9 @@ Sending files is no longer supported.
 .
 Language=Taiwanese
 Sending files is no longer supported.
+.
+Language=Finnish
+Tiedostojen lähettämistä ei enää tueta.
 .
 
 MessageId=3778
@@ -19057,6 +21029,9 @@ You may not specify paths for ADMIN$ and IPC$ shares.
 Language=Taiwanese
 You may not specify paths for ADMIN$ and IPC$ shares.
 .
+Language=Finnish
+ADMIN$- ja IPC$-jaoille ei voi määrittää polkuja.
+.
 
 MessageId=3779
 Severity=Success
@@ -19085,6 +21060,9 @@ User or group %1 is already a member of local group %2.
 .
 Language=Taiwanese
 User or group %1 is already a member of local group %2.
+.
+Language=Finnish
+Käyttäjä tai ryhmä %1 on jo paikallisen ryhmän %2 jäsen.
 .
 
 MessageId=3780
@@ -19115,6 +21093,9 @@ There is no such user or group: %1.
 Language=Taiwanese
 There is no such user or group: %1.
 .
+Language=Finnish
+Tällaista käyttäjää tai ryhmää ei ole: %1.
+.
 
 MessageId=3781
 Severity=Success
@@ -19143,6 +21124,9 @@ There is no such computer: %1.
 .
 Language=Taiwanese
 There is no such computer: %1.
+.
+Language=Finnish
+Tällaista tietokonetta ei ole: %1.
 .
 
 MessageId=3782
@@ -19173,6 +21157,9 @@ The computer %1 already exists.
 Language=Taiwanese
 The computer %1 already exists.
 .
+Language=Finnish
+Tietokone %1 on jo olemassa.
+.
 
 MessageId=3783
 Severity=Success
@@ -19201,6 +21188,9 @@ There is no such global user or group: %1.
 .
 Language=Taiwanese
 There is no such global user or group: %1.
+.
+Language=Finnish
+Tällaista yleistä käyttäjää tai ryhmää ei ole: %1.
 .
 
 MessageId=3784
@@ -19231,6 +21221,9 @@ Only disk shares can be marked as cacheable
 Language=Taiwanese
 Only disk shares can be marked as cacheable
 .
+Language=Finnish
+Vain levyjaot voidaan merkitä välimuistiin tallennettaviksi
+.
 
 MessageId=3790
 Severity=Success
@@ -19259,6 +21252,9 @@ The system could not find message: %1.
 .
 Language=Taiwanese
 The system could not find message: %1.
+.
+Language=Finnish
+Järjestelmä ei löytänyt viestiä: %1.
 .
 
 MessageId=3802
@@ -19289,6 +21285,9 @@ This schedule date is invalid.
 Language=Taiwanese
 This schedule date is invalid.
 .
+Language=Finnish
+Tämä ajoituspäivämäärä on virheellinen.
+.
 
 MessageId=3803
 Severity=Success
@@ -19317,6 +21316,9 @@ The LANMAN root directory is unavailable.
 .
 Language=Taiwanese
 The LANMAN root directory is unavailable.
+.
+Language=Finnish
+LANMAN-juurihakemisto ei ole käytettävissä.
 .
 
 MessageId=3804
@@ -19347,6 +21349,9 @@ The SCHED.LOG file could not be opened.
 Language=Taiwanese
 The SCHED.LOG file could not be opened.
 .
+Language=Finnish
+SCHED.LOG-tiedostoa ei voitu avata.
+.
 
 MessageId=3805
 Severity=Success
@@ -19375,6 +21380,9 @@ The Server service has not been started.
 .
 Language=Taiwanese
 The Server service has not been started.
+.
+Language=Finnish
+Server-palvelua ei ole käynnistetty.
 .
 
 MessageId=3806
@@ -19405,6 +21413,9 @@ The AT job ID does not exist.
 Language=Taiwanese
 The AT job ID does not exist.
 .
+Language=Finnish
+AT-työn tunnusta ei ole olemassa.
+.
 
 MessageId=3807
 Severity=Success
@@ -19433,6 +21444,9 @@ The AT schedule file is corrupted.
 .
 Language=Taiwanese
 The AT schedule file is corrupted.
+.
+Language=Finnish
+AT-ajoitustiedosto on vioittunut.
 .
 
 MessageId=3808
@@ -19463,6 +21477,9 @@ The delete failed due to a problem with the AT schedule file.
 Language=Taiwanese
 The delete failed due to a problem with the AT schedule file.
 .
+Language=Finnish
+Poisto epäonnistui AT-ajoitustiedoston ongelman vuoksi.
+.
 
 MessageId=3809
 Severity=Success
@@ -19491,6 +21508,9 @@ The command line cannot exceed 259 characters.
 .
 Language=Taiwanese
 The command line cannot exceed 259 characters.
+.
+Language=Finnish
+Komentorivi voi olla enintään 259 merkkiä pitkä.
 .
 
 MessageId=3810
@@ -19521,6 +21541,9 @@ The AT schedule file could not be updated because the disk is full.
 Language=Taiwanese
 The AT schedule file could not be updated because the disk is full.
 .
+Language=Finnish
+AT-ajoitustiedostoa ei voitu päivittää, koska levy on täynnä.
+.
 
 MessageId=3812
 Severity=Success
@@ -19550,6 +21573,9 @@ The AT schedule file is invalid.  Please delete the file and create a new one.
 Language=Taiwanese
 The AT schedule file is invalid.  Please delete the file and create a new one.
 .
+Language=Finnish
+AT-ajoitustiedosto on virheellinen.  Poista tiedosto ja luo uusi.
+.
 
 MessageId=3813
 Severity=Success
@@ -19578,6 +21604,9 @@ The AT schedule file was deleted.
 .
 Language=Taiwanese
 The AT schedule file was deleted.
+.
+Language=Finnish
+AT-ajoitustiedosto poistettiin.
 .
 
 MessageId=3814
@@ -19672,6 +21701,17 @@ You can specify the date as M,T,W,Th,F,Sa,Su or 1-31\n
 for the day of the month.\n\n
 You can specify the time in the 24 hour HH:MM format.
 .
+Language=Finnish
+Tämän komennon syntaksi on:\n\n
+AT [id] [/DELETE]\n
+AT aika [/EVERY:päivä | /NEXT:päivä] komento\n\n
+AT-komento ajoittaa ohjelmakomennon suoritettavaksi\n
+palvelimella myöhempänä päivänä ja aikana.  Se näyttää myös\n
+luettelon suoritettaviksi ajoitetuista ohjelmista ja komennoista.\n\n
+Voit määrittää päivän muodossa M,T,W,Th,F,Sa,Su tai 1-31\n
+kuukauden päivälle.\n\n
+Voit määrittää ajan 24 tunnin muodossa HH:MM.
+.
 
 MessageId=3815
 Severity=Success
@@ -19708,6 +21748,10 @@ Please try again later.
 Language=Taiwanese
 The AT command has timed-out.\n
 Please try again later.
+.
+Language=Finnish
+AT-komennon aikakatkaisu.\n
+Yritä myöhemmin uudelleen.
 .
 
 MessageId=3816
@@ -19746,6 +21790,10 @@ Language=Taiwanese
 The minimum password age for user accounts cannot be greater\n
 than the maximum password age.
 .
+Language=Finnish
+Käyttäjätilien salasanan vähimmäisikä ei voi olla suurempi\n
+kuin salasanan enimmäisikä.
+.
 
 MessageId=3817
 Severity=Success
@@ -19783,6 +21831,10 @@ Language=Taiwanese
 You have specified a value that is incompatible\n
 with servers with down-level software. Please specify a lower value.
 .
+Language=Finnish
+Määritit arvon, joka ei ole yhteensopiva\n
+vanhemman ohjelmiston palvelimien kanssa. Määritä pienempi arvo.
+.
 
 MessageId=3870
 Severity=Success
@@ -19811,6 +21863,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 is not a valid computer name.
+.
+Language=Finnish
+%1 ei ole kelvollinen tietokoneen nimi.
 .
 
 MessageId=3871
@@ -19841,6 +21896,9 @@ Language=Chinese
 Language=Taiwanese
 %1 is not a valid Windows network message number.
 .
+Language=Finnish
+%1 ei ole kelvollinen Windows-verkkoviestin numero.
+.
 
 MessageId=3900
 Severity=Success
@@ -19870,6 +21928,9 @@ Message from %1 to %2 on %3
 Language=Taiwanese
 Message from %1 to %2 on %3
 .
+Language=Finnish
+Viesti lähettäjältä %1 vastaanottajalle %2 ajankohtana %3
+.
 
 MessageId=3901
 Severity=Success
@@ -19897,6 +21958,9 @@ Language=Chinese
 ****
 .
 Language=Taiwanese
+****
+.
+Language=Finnish
 ****
 .
 
@@ -19928,6 +21992,9 @@ Language=Chinese
 Language=Taiwanese
 **** unexpected end of message ****
 .
+Language=Finnish
+**** odottamaton viestin loppu ****
+.
 
 MessageId=3905
 Severity=Success
@@ -19956,6 +22023,9 @@ Press ESC to exit
 .
 Language=Taiwanese
 Press ESC to exit
+.
+Language=Finnish
+Poistu painamalla ESC
 .
 
 MessageId=3906
@@ -19986,6 +22056,9 @@ Language=Chinese
 Language=Taiwanese
 ...
 .
+Language=Finnish
+...
+.
 
 MessageId=3910
 Severity=Success
@@ -20014,6 +22087,9 @@ Current time at %1 is %2
 .
 Language=Taiwanese
 Current time at %1 is %2
+.
+Language=Finnish
+Kohteen %1 nykyinen aika on %2
 .
 
 MessageId=3911
@@ -20059,6 +22135,11 @@ The current local clock is %1\n
 Do you want to set the local computer's time to match the\n
 time at %2? %3: %0
 .
+Language=Finnish
+Paikallisen kellon aika on %1\n
+Haluatko asettaa paikallisen tietokoneen ajan vastaamaan\n
+kohteen %2 aikaa? %3: %0
+.
 
 MessageId=3912
 Severity=Success
@@ -20087,6 +22168,9 @@ Could not locate a time-server.
 .
 Language=Taiwanese
 Could not locate a time-server.
+.
+Language=Finnish
+Aikapalvelinta ei löytynyt.
 .
 
 MessageId=3913
@@ -20117,6 +22201,9 @@ Could not find the domain controller for domain %1.
 Language=Taiwanese
 Could not find the domain controller for domain %1.
 .
+Language=Finnish
+Toimialueen %1 toimialueen ohjauskonetta ei löytynyt.
+.
 
 MessageId=3914
 Severity=Success
@@ -20145,6 +22232,9 @@ Local time (GMT%3) at %1 is %2
 .
 Language=Taiwanese
 Local time (GMT%3) at %1 is %2
+.
+Language=Finnish
+Paikallinen aika (GMT%3) kohteessa %1 on %2
 .
 
 MessageId=3915
@@ -20175,6 +22265,9 @@ The user's home directory could not be determined.
 Language=Taiwanese
 The user's home directory could not be determined.
 .
+Language=Finnish
+Käyttäjän kotihakemistoa ei voitu määrittää.
+.
 
 MessageId=3916
 Severity=Success
@@ -20203,6 +22296,9 @@ The user's home directory has not been specified.
 .
 Language=Taiwanese
 The user's home directory has not been specified.
+.
+Language=Finnish
+Käyttäjän kotihakemistoa ei ole määritetty.
 .
 
 MessageId=3917
@@ -20233,6 +22329,9 @@ The name specified for the user's home directory (%1) is not a universal naming 
 Language=Taiwanese
 The name specified for the user's home directory (%1) is not a universal naming convention (UNC) name.
 .
+Language=Finnish
+Käyttäjän kotihakemistolle määritetty nimi (%1) ei ole UNC-nimi (universal naming convention).
+.
 
 MessageId=3918
 Severity=Success
@@ -20262,6 +22361,9 @@ Drive %1 is now connected to %2. Your home directory is %3\\%4.
 Language=Taiwanese
 Drive %1 is now connected to %2. Your home directory is %3\\%4.
 .
+Language=Finnish
+Asema %1 on nyt yhdistetty kohteeseen %2. Kotihakemistosi on %3\\%4.
+.
 
 MessageId=3919
 Severity=Success
@@ -20290,6 +22392,9 @@ Language=Chinese
 .
 Language=Taiwanese
 Drive %1 is now connected to %2.
+.
+Language=Finnish
+Asema %1 on nyt yhdistetty kohteeseen %2.
 .
 
 ; Language=Italian
@@ -20324,6 +22429,9 @@ There are no available drive letters left.
 Language=Taiwanese
 There are no available drive letters left.
 .
+Language=Finnish
+Vapaita asemakirjaimia ei ole jäljellä.
+.
 
 MessageId=3932
 Severity=Success
@@ -20352,6 +22460,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 is not a valid domain or workgroup name.
+.
+Language=Finnish
+%1 ei ole kelvollinen toimialueen tai työryhmän nimi.
 .
 
 MessageId=3935
@@ -20382,6 +22493,9 @@ The current SNTP value is: %1
 Language=Taiwanese
 The current SNTP value is: %1
 .
+Language=Finnish
+Nykyinen SNTP-arvo on: %1
+.
 
 MessageId=3936
 Severity=Success
@@ -20410,6 +22524,9 @@ This computer is not currently configured to use a specific SNTP server.
 .
 Language=Taiwanese
 This computer is not currently configured to use a specific SNTP server.
+.
+Language=Finnish
+Tätä tietokonetta ei ole tällä hetkellä määritetty käyttämään tiettyä SNTP-palvelinta.
 .
 
 MessageId=3937
@@ -20440,6 +22557,9 @@ This current autoconfigured SNTP value is: %1
 Language=Taiwanese
 This current autoconfigured SNTP value is: %1
 .
+Language=Finnish
+Nykyinen automaattisesti määritetty SNTP-arvo on: %1
+.
 
 MessageId=3951
 Severity=Success
@@ -20468,6 +22588,9 @@ You specified too many values for the %1 option.
 .
 Language=Taiwanese
 You specified too many values for the %1 option.
+.
+Language=Finnish
+Määritit liian monta arvoa valitsimelle %1.
 .
 
 MessageId=3952
@@ -20498,6 +22621,9 @@ Language=Chinese
 Language=Taiwanese
 您輸入了無效的值為 %1 選項。
 .
+Language=Finnish
+Annoit virheellisen arvon valitsimelle %1.
+.
 
 MessageId=3953
 Severity=Success
@@ -20526,6 +22652,9 @@ The syntax is incorrect.
 .
 Language=Taiwanese
 The syntax is incorrect.
+.
+Language=Finnish
+Syntaksi on virheellinen.
 .
 
 MessageId=3960
@@ -20556,6 +22685,9 @@ You specified an invalid file number.
 Language=Taiwanese
 You specified an invalid file number.
 .
+Language=Finnish
+Määritit virheellisen tiedostonumeron.
+.
 
 MessageId=3961
 Severity=Success
@@ -20585,6 +22717,9 @@ You specified an invalid print job number.
 Language=Taiwanese
 You specified an invalid print job number.
 .
+Language=Finnish
+Määritit virheellisen tulostustyön numeron.
+.
 
 MessageId=3963
 Severity=Success
@@ -20613,6 +22748,9 @@ The user or group account specified cannot be found.
 .
 Language=Taiwanese
 The user or group account specified cannot be found.
+.
+Language=Finnish
+Määritettyä käyttäjä- tai ryhmätiliä ei löydy.
 .
 
 MessageId=3965
@@ -20651,6 +22789,10 @@ Language=Taiwanese
 The user was added but could not be enabled for File and Print\n
 Services for NetWare.
 .
+Language=Finnish
+Käyttäjä lisättiin, mutta sille ei voitu ottaa käyttöön File and Print\n
+Services for NetWare -palvelua.
+.
 
 MessageId=3966
 Severity=Success
@@ -20679,6 +22821,9 @@ File and Print Services for NetWare is not installed.
 .
 Language=Taiwanese
 File and Print Services for NetWare is not installed.
+.
+Language=Finnish
+File and Print Services for NetWare -palvelua ei ole asennettu.
 .
 
 MessageId=3967
@@ -20709,6 +22854,9 @@ Cannot set user properties for File and Print Services for NetWare.
 Language=Taiwanese
 Cannot set user properties for File and Print Services for NetWare.
 .
+Language=Finnish
+File and Print Services for NetWare -palvelun käyttäjäominaisuuksia ei voi asettaa.
+.
 
 MessageId=3968
 Severity=Success
@@ -20738,6 +22886,9 @@ Password for %1 is: %2
 Language=Taiwanese
 Password for %1 is: %2
 .
+Language=Finnish
+Käyttäjän %1 salasana on: %2
+.
 
 MessageId=3969
 Severity=Success
@@ -20766,6 +22917,9 @@ NetWare compatible logon
 .
 Language=Taiwanese
 NetWare compatible logon
+.
+Language=Finnish
+NetWare-yhteensopiva kirjautuminen
 .
 
 
@@ -20801,6 +22955,9 @@ Language=Chinese
 Language=Taiwanese
 是%0
 .
+Language=Finnish
+Kyllä%0
+.
 
 MessageId=4301
 Severity=Success
@@ -20829,6 +22986,9 @@ Language=Chinese
 .
 Language=Taiwanese
 否%0
+.
+Language=Finnish
+Ei%0
 .
 
 MessageId=4302
@@ -20859,6 +23019,9 @@ Language=Chinese
 Language=Taiwanese
 所有%0
 .
+Language=Finnish
+Kaikki%0
+.
 
 MessageId=4303
 Severity=Success
@@ -20887,6 +23050,9 @@ Language=Chinese
 .
 Language=Taiwanese
 無%0
+.
+Language=Finnish
+Ei mitään%0
 .
 
 MessageId=4304
@@ -20917,6 +23083,9 @@ Always%0
 Language=Taiwanese
 Always%0
 .
+Language=Finnish
+Aina%0
+.
 
 MessageId=4305
 Severity=Success
@@ -20945,6 +23114,9 @@ Language=Chinese
 .
 Language=Taiwanese
 永不%0
+.
+Language=Finnish
+Ei koskaan%0
 .
 
 MessageId=4306
@@ -20975,6 +23147,9 @@ Unlimited%0
 Language=Taiwanese
 Unlimited%0
 .
+Language=Finnish
+Rajoittamaton%0
+.
 
 MessageId=4307
 Severity=Success
@@ -21003,6 +23178,9 @@ Sunday%0
 .
 Language=Taiwanese
 Sunday%0
+.
+Language=Finnish
+Sunnuntai%0
 .
 
 MessageId=4308
@@ -21033,6 +23211,9 @@ Monday%0
 Language=Taiwanese
 Monday%0
 .
+Language=Finnish
+Maanantai%0
+.
 
 MessageId=4309
 Severity=Success
@@ -21061,6 +23242,9 @@ Tuesday%0
 .
 Language=Taiwanese
 Tuesday%0
+.
+Language=Finnish
+Tiistai%0
 .
 
 MessageId=4310
@@ -21091,6 +23275,9 @@ Wednesday%0
 Language=Taiwanese
 Wednesday%0
 .
+Language=Finnish
+Keskiviikko%0
+.
 
 MessageId=4311
 Severity=Success
@@ -21119,6 +23306,9 @@ Thursday%0
 .
 Language=Taiwanese
 Thursday%0
+.
+Language=Finnish
+Torstai%0
 .
 
 MessageId=4312
@@ -21149,6 +23339,9 @@ Friday%0
 Language=Taiwanese
 Friday%0
 .
+Language=Finnish
+Perjantai%0
+.
 
 MessageId=4313
 Severity=Success
@@ -21178,6 +23371,9 @@ Saturday%0
 Language=Taiwanese
 Saturday%0
 .
+Language=Finnish
+Lauantai%0
+.
 
 MessageId=4314
 Severity=Success
@@ -21205,6 +23401,9 @@ Language=Chinese
 Su%0
 .
 Language=Taiwanese
+Su%0
+.
+Language=Finnish
 Su%0
 .
 
@@ -21236,6 +23435,9 @@ M%0
 Language=Taiwanese
 M%0
 .
+Language=Finnish
+Ma%0
+.
 
 MessageId=4316
 Severity=Success
@@ -21264,6 +23466,9 @@ T%0
 .
 Language=Taiwanese
 T%0
+.
+Language=Finnish
+Ti%0
 .
 
 MessageId=4317
@@ -21294,6 +23499,9 @@ W%0
 Language=Taiwanese
 W%0
 .
+Language=Finnish
+Ke%0
+.
 
 MessageId=4318
 Severity=Success
@@ -21322,6 +23530,9 @@ Th%0
 .
 Language=Taiwanese
 Th%0
+.
+Language=Finnish
+To%0
 .
 
 MessageId=4319
@@ -21352,6 +23563,9 @@ F%0
 Language=Taiwanese
 F%0
 .
+Language=Finnish
+Pe%0
+.
 
 MessageId=4320
 Severity=Success
@@ -21380,6 +23594,9 @@ S%0
 .
 Language=Taiwanese
 S%0
+.
+Language=Finnish
+La%0
 .
 
 MessageId=4321
@@ -21410,6 +23627,9 @@ Unknown%0
 Language=Taiwanese
 Unknown%0
 .
+Language=Finnish
+Tuntematon%0
+.
 
 MessageId=4322
 Severity=Success
@@ -21438,6 +23658,9 @@ AM%0
 .
 Language=Taiwanese
 AM%0
+.
+Language=Finnish
+ap.%0
 .
 
 MessageId=4323
@@ -21468,6 +23691,9 @@ A.M.%0
 Language=Taiwanese
 A.M.%0
 .
+Language=Finnish
+ap.%0
+.
 
 MessageId=4324
 Severity=Success
@@ -21496,6 +23722,9 @@ PM%0
 .
 Language=Taiwanese
 PM%0
+.
+Language=Finnish
+ip.%0
 .
 
 MessageId=4325
@@ -21526,6 +23755,9 @@ P.M.%0
 Language=Taiwanese
 P.M.%0
 .
+Language=Finnish
+ip.%0
+.
 
 MessageId=4326
 Severity=Success
@@ -21554,6 +23786,9 @@ Server%0
 .
 Language=Taiwanese
 Server%0
+.
+Language=Finnish
+Palvelin%0
 .
 
 MessageId=4327
@@ -21584,6 +23819,9 @@ Redirector%0
 Language=Taiwanese
 Redirector%0
 .
+Language=Finnish
+Uudelleenohjain%0
+.
 
 MessageId=4328
 Severity=Success
@@ -21612,6 +23850,9 @@ Application%0
 .
 Language=Taiwanese
 Application%0
+.
+Language=Finnish
+Sovellus%0
 .
 
 MessageId=4329
@@ -21642,6 +23883,9 @@ Total%0
 Language=Taiwanese
 Total%0
 .
+Language=Finnish
+Yhteensä%0
+.
 
 MessageId=4330
 Severity=Success
@@ -21669,6 +23913,9 @@ Language=Chinese
 ? %1 %0
 .
 Language=Taiwanese
+? %1 %0
+.
+Language=Finnish
 ? %1 %0
 .
 
@@ -21700,6 +23947,9 @@ K%0
 Language=Taiwanese
 K%0
 .
+Language=Finnish
+kt%0
+.
 
 MessageId=4332
 Severity=Success
@@ -21728,6 +23978,9 @@ Language=Chinese
 .
 Language=Taiwanese
 (none)%0
+.
+Language=Finnish
+(ei mitään)%0
 .
 
 MessageId=4333
@@ -21758,6 +24011,9 @@ Device%0
 Language=Taiwanese
 Device%0
 .
+Language=Finnish
+Laite%0
+.
 
 MessageId=4334
 Severity=Success
@@ -21786,6 +24042,9 @@ Remark%0
 .
 Language=Taiwanese
 Remark%0
+.
+Language=Finnish
+Huomautus%0
 .
 
 MessageId=4335
@@ -21816,6 +24075,9 @@ At%0
 Language=Taiwanese
 At%0
 .
+Language=Finnish
+Klo%0
+.
 
 MessageId=4336
 Severity=Success
@@ -21844,6 +24106,9 @@ Queue%0
 .
 Language=Taiwanese
 Queue%0
+.
+Language=Finnish
+Jono%0
 .
 
 MessageId=4337
@@ -21874,6 +24139,9 @@ Queues%0
 Language=Taiwanese
 Queues%0
 .
+Language=Finnish
+Jonot%0
+.
 
 MessageId=4338
 Severity=Success
@@ -21902,6 +24170,9 @@ User name%0
 .
 Language=Taiwanese
 User name%0
+.
+Language=Finnish
+Käyttäjänimi%0
 .
 
 MessageId=4339
@@ -21932,6 +24203,9 @@ Path%0
 Language=Taiwanese
 Path%0
 .
+Language=Finnish
+Polku%0
+.
 
 MessageId=4340
 Severity=Success
@@ -21960,6 +24234,9 @@ Language=Chinese
 .
 Language=Taiwanese
 (Y/N) [Y]%0
+.
+Language=Finnish
+(K/E) [K]%0
 .
 
 MessageId=4341
@@ -21990,6 +24267,9 @@ Language=Chinese
 Language=Taiwanese
 (Y/N) [N]%0
 .
+Language=Finnish
+(K/E) [E]%0
+.
 
 MessageId=4342
 Severity=Success
@@ -22019,6 +24299,9 @@ Error%0
 Language=Taiwanese
 Error%0
 .
+Language=Finnish
+Virhe%0
+.
 
 MessageId=4343
 Severity=Success
@@ -22046,6 +24329,9 @@ Language=Chinese
 OK%0
 .
 Language=Taiwanese
+OK%0
+.
+Language=Finnish
 OK%0
 .
 
@@ -22077,6 +24363,9 @@ Y%0
 Language=Taiwanese
 Y%0
 .
+Language=Finnish
+K%0
+.
 
 MessageId=4345
 Severity=Success
@@ -22105,6 +24394,9 @@ N%0
 .
 Language=Taiwanese
 N%0
+.
+Language=Finnish
+E%0
 .
 
 MessageId=4346
@@ -22135,6 +24427,9 @@ Any%0
 Language=Taiwanese
 Any%0
 .
+Language=Finnish
+Mikä tahansa%0
+.
 
 MessageId=4347
 Severity=Success
@@ -22163,6 +24458,9 @@ A%0
 .
 Language=Taiwanese
 A%0
+.
+Language=Finnish
+ap%0
 .
 
 MessageId=4348
@@ -22193,6 +24491,9 @@ P%0
 Language=Taiwanese
 P%0
 .
+Language=Finnish
+ip%0
+.
 
 MessageId=4349
 Severity=Success
@@ -22221,6 +24522,9 @@ Language=Chinese
 .
 Language=Taiwanese
 (not found)%0
+.
+Language=Finnish
+(ei löytynyt)%0
 .
 
 MessageId=4350
@@ -22251,6 +24555,9 @@ Language=Chinese
 Language=Taiwanese
 (unknown)%0
 .
+Language=Finnish
+(tuntematon)%0
+.
 
 MessageId=4351
 Severity=Success
@@ -22279,6 +24586,9 @@ For help on %1 type NET HELP %1
 .
 Language=Taiwanese
 For help on %1 type NET HELP %1
+.
+Language=Finnish
+Ohjeita kohteesta %1 saat kirjoittamalla NET HELP %1
 .
 
 MessageId=4352
@@ -22309,6 +24619,9 @@ Grant%0
 Language=Taiwanese
 Grant%0
 .
+Language=Finnish
+Myönnä%0
+.
 
 MessageId=4353
 Severity=Success
@@ -22337,6 +24650,9 @@ Read%0
 .
 Language=Taiwanese
 Read%0
+.
+Language=Finnish
+Luku%0
 .
 
 MessageId=4354
@@ -22367,6 +24683,9 @@ Change%0
 Language=Taiwanese
 Change%0
 .
+Language=Finnish
+Muutos%0
+.
 
 MessageId=4355
 Severity=Success
@@ -22395,6 +24714,9 @@ Full%0
 .
 Language=Taiwanese
 Full%0
+.
+Language=Finnish
+Täysi%0
 .
 
 MessageId=4356
@@ -22425,6 +24747,9 @@ Please type the password: %0
 Language=Taiwanese
 Please type the password: %0
 .
+Language=Finnish
+Kirjoita salasana: %0
+.
 
 MessageId=4357
 Severity=Success
@@ -22453,6 +24778,9 @@ Type the password for %1: %0
 .
 Language=Taiwanese
 Type the password for %1: %0
+.
+Language=Finnish
+Kirjoita kohteen %1 salasana: %0
 .
 
 MessageId=4358
@@ -22483,6 +24811,9 @@ Type a password for the user: %0
 Language=Taiwanese
 Type a password for the user: %0
 .
+Language=Finnish
+Kirjoita käyttäjän salasana: %0
+.
 
 MessageId=4359
 Severity=Success
@@ -22511,6 +24842,9 @@ Type the password for the shared resource: %0
 .
 Language=Taiwanese
 Type the password for the shared resource: %0
+.
+Language=Finnish
+Kirjoita jaetun resurssin salasana: %0
 .
 
 MessageId=4360
@@ -22541,6 +24875,9 @@ Type your password: %0
 Language=Taiwanese
 Type your password: %0
 .
+Language=Finnish
+Kirjoita salasanasi: %0
+.
 
 MessageId=4361
 Severity=Success
@@ -22569,6 +24906,9 @@ Retype the password to confirm: %0
 .
 Language=Taiwanese
 Retype the password to confirm: %0
+.
+Language=Finnish
+Vahvista kirjoittamalla salasana uudelleen: %0
 .
 
 MessageId=4362
@@ -22599,6 +24939,9 @@ Type the user's old password: %0
 Language=Taiwanese
 Type the user's old password: %0
 .
+Language=Finnish
+Kirjoita käyttäjän vanha salasana: %0
+.
 
 MessageId=4363
 Severity=Success
@@ -22627,6 +24970,9 @@ Type the user's new password: %0
 .
 Language=Taiwanese
 Type the user's new password: %0
+.
+Language=Finnish
+Kirjoita käyttäjän uusi salasana: %0
 .
 
 MessageId=4364
@@ -22657,6 +25003,9 @@ Type your new password: %0
 Language=Taiwanese
 Type your new password: %0
 .
+Language=Finnish
+Kirjoita uusi salasanasi: %0
+.
 
 MessageId=4365
 Severity=Success
@@ -22686,6 +25035,9 @@ Type the Replicator service password: %0
 Language=Taiwanese
 Type the Replicator service password: %0
 .
+Language=Finnish
+Kirjoita Replicator-palvelun salasana: %0
+.
 
 MessageId=4366
 Severity=Success
@@ -22714,6 +25066,9 @@ Type your user name, or press ENTER if it is %1: %0
 .
 Language=Taiwanese
 Type your user name, or press ENTER if it is %1: %0
+.
+Language=Finnish
+Kirjoita käyttäjänimesi tai paina ENTER, jos se on %1: %0
 .
 
 MessageId=4367
@@ -22752,6 +25107,10 @@ Language=Taiwanese
 Type the domain or server where you want to change a password, or\n
 press ENTER if it is for domain %1: %0.
 .
+Language=Finnish
+Kirjoita toimialue tai palvelin, jossa haluat vaihtaa salasanan, tai\n
+paina ENTER, jos se koskee toimialuetta %1: %0.
+.
 
 MessageId=4368
 Severity=Success
@@ -22780,6 +25139,9 @@ Type your user name: %0
 .
 Language=Taiwanese
 Type your user name: %0
+.
+Language=Finnish
+Kirjoita käyttäjänimesi: %0
 .
 
 MessageId=4369
@@ -22810,6 +25172,9 @@ Network statistics for \\%1
 Language=Taiwanese
 Network statistics for \\%1
 .
+Language=Finnish
+Kohteen \\%1 verkkotilastot
+.
 
 MessageId=4370
 Severity=Success
@@ -22838,6 +25203,9 @@ Printing options for %1
 .
 Language=Taiwanese
 Printing options for %1
+.
+Language=Finnish
+Kohteen %1 tulostusasetukset
 .
 
 MessageId=4371
@@ -22868,6 +25236,9 @@ Communication-device queues accessing %1
 Language=Taiwanese
 Communication-device queues accessing %1
 .
+Language=Finnish
+Kohdetta %1 käyttävät tiedonsiirtolaitejonot
+.
 
 MessageId=4372
 Severity=Success
@@ -22896,6 +25267,9 @@ Print job detail
 .
 Language=Taiwanese
 Print job detail
+.
+Language=Finnish
+Tulostustyön tiedot
 .
 
 MessageId=4373
@@ -22926,6 +25300,9 @@ Communication-device queues at \\%1
 Language=Taiwanese
 Communication-device queues at \\%1
 .
+Language=Finnish
+Tiedonsiirtolaitejonot kohteessa \\%1
+.
 
 MessageId=4374
 Severity=Success
@@ -22954,6 +25331,9 @@ Printers at %1
 .
 Language=Taiwanese
 Printers at %1
+.
+Language=Finnish
+Tulostimet kohteessa %1
 .
 
 MessageId=4375
@@ -22984,6 +25364,9 @@ Printers accessing %1
 Language=Taiwanese
 Printers accessing %1
 .
+Language=Finnish
+Kohdetta %1 käyttävät tulostimet
+.
 
 MessageId=4376
 Severity=Success
@@ -23012,6 +25395,9 @@ Print jobs at %1:
 .
 Language=Taiwanese
 Print jobs at %1:
+.
+Language=Finnish
+Tulostustyöt kohteessa %1:
 .
 
 MessageId=4377
@@ -23042,6 +25428,9 @@ Shared resources at %1
 Language=Taiwanese
 Shared resources at %1
 .
+Language=Finnish
+Jaetut resurssit kohteessa %1
+.
 
 MessageId=4378
 Severity=Success
@@ -23070,6 +25459,9 @@ The following running services can be controlled:
 .
 Language=Taiwanese
 The following running services can be controlled:
+.
+Language=Finnish
+Seuraavia käynnissä olevia palveluita voi ohjata:
 .
 
 MessageId=4379
@@ -23100,6 +25492,9 @@ Statistics are available for the following running services:
 Language=Taiwanese
 Statistics are available for the following running services:
 .
+Language=Finnish
+Tilastoja on saatavilla seuraavista käynnissä olevista palveluista:
+.
 
 MessageId=4380
 Severity=Success
@@ -23128,6 +25523,9 @@ User accounts for \\%1
 .
 Language=Taiwanese
 User accounts for \\%1
+.
+Language=Finnish
+Kohteen \\%1 käyttäjätilit
 .
 
 MessageId=4381
@@ -23158,6 +25556,9 @@ The syntax of this command is:
 Language=Taiwanese
 The syntax of this command is:
 .
+Language=Finnish
+Tämän komennon syntaksi on:
+.
 
 MessageId=4382
 Severity=Success
@@ -23187,6 +25588,9 @@ The options of this command are:
 Language=Taiwanese
 The options of this command are:
 .
+Language=Finnish
+Tämän komennon valitsimet ovat:
+.
 
 MessageId=4383
 Severity=Success
@@ -23215,6 +25619,9 @@ Please enter the name of the Primary Domain Controller: %0
 .
 Language=Taiwanese
 Please enter the name of the Primary Domain Controller: %0
+.
+Language=Finnish
+Anna ensisijaisen toimialueen ohjauskoneen nimi: %0
 .
 
 MessageId=4384
@@ -23253,6 +25660,10 @@ Language=Taiwanese
 The string you have entered is too long. The maximum\n
 is %1, please reenter. %0
 .
+Language=Finnish
+Kirjoittamasi merkkijono on liian pitkä. Enimmäispituus\n
+on %1, kirjoita uudelleen. %0
+.
 
 MessageId=4385
 Severity=Success
@@ -23281,6 +25692,9 @@ Sunday%0
 .
 Language=Taiwanese
 Sunday%0
+.
+Language=Finnish
+Sunnuntai%0
 .
 
 MessageId=4386
@@ -23311,6 +25725,9 @@ Monday%0
 Language=Taiwanese
 Monday%0
 .
+Language=Finnish
+Maanantai%0
+.
 
 MessageId=4387
 Severity=Success
@@ -23339,6 +25756,9 @@ Tuesday%0
 .
 Language=Taiwanese
 Tuesday%0
+.
+Language=Finnish
+Tiistai%0
 .
 
 MessageId=4388
@@ -23369,6 +25789,9 @@ Wednesday%0
 Language=Taiwanese
 Wednesday%0
 .
+Language=Finnish
+Keskiviikko%0
+.
 
 MessageId=4389
 Severity=Success
@@ -23397,6 +25820,9 @@ Thursday%0
 .
 Language=Taiwanese
 Thursday%0
+.
+Language=Finnish
+Torstai%0
 .
 
 MessageId=4390
@@ -23427,6 +25853,9 @@ Friday%0
 Language=Taiwanese
 Friday%0
 .
+Language=Finnish
+Perjantai%0
+.
 
 MessageId=4391
 Severity=Success
@@ -23456,6 +25885,9 @@ Saturday%0
 Language=Taiwanese
 Saturday%0
 .
+Language=Finnish
+Lauantai%0
+.
 
 MessageId=4392
 Severity=Success
@@ -23483,6 +25915,9 @@ Language=Chinese
 Su%0
 .
 Language=Taiwanese
+Su%0
+.
+Language=Finnish
 Su%0
 .
 
@@ -23514,6 +25949,9 @@ M%0
 Language=Taiwanese
 M%0
 .
+Language=Finnish
+Ma%0
+.
 
 MessageId=4394
 Severity=Success
@@ -23542,6 +25980,9 @@ T%0
 .
 Language=Taiwanese
 T%0
+.
+Language=Finnish
+Ti%0
 .
 
 MessageId=4395
@@ -23572,6 +26013,9 @@ W%0
 Language=Taiwanese
 W%0
 .
+Language=Finnish
+Ke%0
+.
 
 MessageId=4396
 Severity=Success
@@ -23600,6 +26044,9 @@ Th%0
 .
 Language=Taiwanese
 Th%0
+.
+Language=Finnish
+To%0
 .
 
 MessageId=4397
@@ -23630,6 +26077,9 @@ F%0
 Language=Taiwanese
 F%0
 .
+Language=Finnish
+Pe%0
+.
 
 MessageId=4398
 Severity=Success
@@ -23658,6 +26108,9 @@ S%0
 .
 Language=Taiwanese
 S%0
+.
+Language=Finnish
+La%0
 .
 
 MessageId=4399
@@ -23688,6 +26141,9 @@ Sa%0
 Language=Taiwanese
 Sa%0
 .
+Language=Finnish
+La%0
+.
 
 MessageId=4400
 Severity=Success
@@ -23716,6 +26172,9 @@ Group Accounts for \\%1
 .
 Language=Taiwanese
 Group Accounts for \\%1
+.
+Language=Finnish
+Kohteen \\%1 ryhmätilit
 .
 
 MessageId=4401
@@ -23746,6 +26205,9 @@ Group name%0
 Language=Taiwanese
 Group name%0
 .
+Language=Finnish
+Ryhmän nimi%0
+.
 
 MessageId=4402
 Severity=Success
@@ -23774,6 +26236,9 @@ Language=Chinese
 .
 Language=Taiwanese
 評論%0
+.
+Language=Finnish
+Kommentti%0
 .
 
 MessageId=4403
@@ -23804,6 +26269,9 @@ Language=Chinese
 Language=Taiwanese
 成員
 .
+Language=Finnish
+Jäsenet
+.
 
 MessageId=4405
 Severity=Success
@@ -23832,6 +26300,9 @@ Language=Chinese
 .
 Language=Taiwanese
 別名 \\%1
+.
+Language=Finnish
+Kohteen \\%1 aliakset
 .
 
 MessageId=4406
@@ -23862,6 +26333,9 @@ Language=Chinese
 Language=Taiwanese
 別名名稱%0
 .
+Language=Finnish
+Aliaksen nimi%0
+.
 
 MessageId=4407
 Severity=Success
@@ -23890,6 +26364,9 @@ Language=Chinese
 .
 Language=Taiwanese
 評論%0
+.
+Language=Finnish
+Kommentti%0
 .
 
 MessageId=4408
@@ -23920,6 +26397,9 @@ Language=Chinese
 Language=Taiwanese
 成員
 .
+Language=Finnish
+Jäsenet
+.
 
 MessageId=4410
 Severity=Success
@@ -23948,6 +26428,9 @@ Language=Chinese
 .
 Language=Taiwanese
 使用者帳戶 \\%1
+.
+Language=Finnish
+Kohteen \\%1 käyttäjätilit
 .
 
 MessageId=4411
@@ -23978,6 +26461,9 @@ Language=Chinese
 Language=Taiwanese
 使用者名稱%0
 .
+Language=Finnish
+Käyttäjänimi%0
+.
 
 MessageId=4412
 Severity=Success
@@ -24006,6 +26492,9 @@ Language=Chinese
 .
 Language=Taiwanese
 全名%0
+.
+Language=Finnish
+Koko nimi%0
 .
 
 MessageId=4413
@@ -24036,6 +26525,9 @@ Language=Chinese
 Language=Taiwanese
 評論%0
 .
+Language=Finnish
+Kommentti%0
+.
 
 MessageId=4414
 Severity=Success
@@ -24064,6 +26556,9 @@ Language=Chinese
 .
 Language=Taiwanese
 使用者註釋%0
+.
+Language=Finnish
+Käyttäjän kommentti%0
 .
 
 MessageId=4415
@@ -24094,6 +26589,9 @@ Parameters%0
 Language=Taiwanese
 Parameters%0
 .
+Language=Finnish
+Parametrit%0
+.
 
 MessageId=4416
 Severity=Success
@@ -24122,6 +26620,9 @@ Language=Chinese
 .
 Language=Taiwanese
 國家/地區程式碼%0
+.
+Language=Finnish
+Maakoodi%0
 .
 
 MessageId=4417
@@ -24152,6 +26653,9 @@ Privilege level%0
 Language=Taiwanese
 Privilege level%0
 .
+Language=Finnish
+Oikeustaso%0
+.
 
 MessageId=4418
 Severity=Success
@@ -24180,6 +26684,9 @@ Operator privileges%0
 .
 Language=Taiwanese
 Operator privileges%0
+.
+Language=Finnish
+Operaattorin oikeudet%0
 .
 
 MessageId=4419
@@ -24210,6 +26717,9 @@ Language=Chinese
 Language=Taiwanese
 帳戶活動%0
 .
+Language=Finnish
+Tili käytössä%0
+.
 
 MessageId=4420
 Severity=Success
@@ -24238,6 +26748,9 @@ Language=Chinese
 .
 Language=Taiwanese
 帳戶過期%0
+.
+Language=Finnish
+Tili vanhenee%0
 .
 
 MessageId=4421
@@ -24268,6 +26781,9 @@ Language=Chinese
 Language=Taiwanese
 上次設定的密碼%0
 .
+Language=Finnish
+Salasana asetettu viimeksi%0
+.
 
 MessageId=4422
 Severity=Success
@@ -24296,6 +26812,9 @@ Language=Chinese
 .
 Language=Taiwanese
 密碼過期%0
+.
+Language=Finnish
+Salasana vanhenee%0
 .
 
 MessageId=4423
@@ -24326,6 +26845,9 @@ Language=Chinese
 Language=Taiwanese
 密碼多變%0
 .
+Language=Finnish
+Salasanan voi vaihtaa%0
+.
 
 MessageId=4424
 Severity=Success
@@ -24354,6 +26876,9 @@ Language=Chinese
 .
 Language=Taiwanese
 允許的工作站%0
+.
+Language=Finnish
+Sallitut työasemat%0
 .
 
 MessageId=4425
@@ -24384,6 +26909,9 @@ Maximum disk space%0
 Language=Taiwanese
 Maximum disk space%0
 .
+Language=Finnish
+Levytilan enimmäismäärä%0
+.
 
 MessageId=4426
 Severity=Success
@@ -24412,6 +26940,9 @@ Unlimited%0
 .
 Language=Taiwanese
 Unlimited%0
+.
+Language=Finnish
+Rajoittamaton%0
 .
 
 MessageId=4427
@@ -24442,6 +26973,9 @@ Language=Chinese
 Language=Taiwanese
 本地組成員身份%0
 .
+Language=Finnish
+Paikallisten ryhmien jäsenyydet%0
+.
 
 MessageId=4428
 Severity=Success
@@ -24470,6 +27004,9 @@ Domain controller%0
 .
 Language=Taiwanese
 Domain controller%0
+.
+Language=Finnish
+Toimialueen ohjauskone%0
 .
 
 MessageId=4429
@@ -24500,6 +27037,9 @@ Language=Chinese
 Language=Taiwanese
 登入指令碼%0
 .
+Language=Finnish
+Kirjautumiskomentosarja%0
+.
 
 MessageId=4430
 Severity=Success
@@ -24528,6 +27068,9 @@ Language=Chinese
 .
 Language=Taiwanese
 最後一次登入%0
+.
+Language=Finnish
+Viimeisin kirjautuminen%0
 .
 
 MessageId=4431
@@ -24558,6 +27101,9 @@ Language=Chinese
 Language=Taiwanese
 全局組成員身份%0
 .
+Language=Finnish
+Yleisten ryhmien jäsenyydet%0
+.
 
 MessageId=4432
 Severity=Success
@@ -24586,6 +27132,9 @@ Language=Chinese
 .
 Language=Taiwanese
 幾個小時允許的登入%0
+.
+Language=Finnish
+Sallitut kirjautumisajat%0
 .
 
 MessageId=4433
@@ -24616,6 +27165,9 @@ All%0
 Language=Taiwanese
 All%0
 .
+Language=Finnish
+Kaikki%0
+.
 
 MessageId=4434
 Severity=Success
@@ -24644,6 +27196,9 @@ None%0
 .
 Language=Taiwanese
 None%0
+.
+Language=Finnish
+Ei mitään%0
 .
 
 MessageId=4435
@@ -24674,6 +27229,9 @@ Daily %1 - %2%0
 Language=Taiwanese
 Daily %1 - %2%0
 .
+Language=Finnish
+Päivittäin %1 - %2%0
+.
 
 MessageId=4436
 Severity=Success
@@ -24702,6 +27260,9 @@ Language=Chinese
 .
 Language=Taiwanese
 主目錄%0
+.
+Language=Finnish
+Kotihakemisto%0
 .
 
 MessageId=4437
@@ -24732,6 +27293,9 @@ Language=Chinese
 Language=Taiwanese
 需要密碼%0
 .
+Language=Finnish
+Salasana vaaditaan%0
+.
 
 MessageId=4438
 Severity=Success
@@ -24760,6 +27324,9 @@ Language=Chinese
 .
 Language=Taiwanese
 使用者可以更改密碼%0
+.
+Language=Finnish
+Käyttäjä voi vaihtaa salasanan%0
 .
 
 MessageId=4439
@@ -24790,6 +27357,9 @@ Language=Chinese
 Language=Taiwanese
 使用者配置檔案%0
 .
+Language=Finnish
+Käyttäjäprofiili%0
+.
 
 MessageId=4440
 Severity=Success
@@ -24818,6 +27388,9 @@ Language=Chinese
 .
 Language=Taiwanese
 鎖定%0
+.
+Language=Finnish
+Lukittu%0
 .
 
 MessageId=4450
@@ -24848,6 +27421,9 @@ Computer name%0
 Language=Taiwanese
 Computer name%0
 .
+Language=Finnish
+Tietokoneen nimi%0
+.
 
 MessageId=4451
 Severity=Success
@@ -24876,6 +27452,9 @@ User name%0
 .
 Language=Taiwanese
 User name%0
+.
+Language=Finnish
+Käyttäjänimi%0
 .
 
 MessageId=4452
@@ -24906,6 +27485,9 @@ Software version%0
 Language=Taiwanese
 Software version%0
 .
+Language=Finnish
+Ohjelmistoversio%0
+.
 
 MessageId=4453
 Severity=Success
@@ -24934,6 +27516,9 @@ Workstation active on%0
 .
 Language=Taiwanese
 Workstation active on%0
+.
+Language=Finnish
+Työasema käytössä kohteessa%0
 .
 
 MessageId=4454
@@ -24964,6 +27549,9 @@ LiberNT root directory%0
 Language=Taiwanese
 LiberNT root directory%0
 .
+Language=Finnish
+LiberNT-juurihakemisto%0
+.
 
 MessageId=4455
 Severity=Success
@@ -24992,6 +27580,9 @@ Workstation domain%0
 .
 Language=Taiwanese
 Workstation domain%0
+.
+Language=Finnish
+Työaseman toimialue%0
 .
 
 MessageId=4456
@@ -25022,6 +27613,9 @@ Logon domain%0
 Language=Taiwanese
 Logon domain%0
 .
+Language=Finnish
+Kirjautumistoimialue%0
+.
 
 MessageId=4457
 Severity=Success
@@ -25050,6 +27644,9 @@ Other domain(s)%0
 .
 Language=Taiwanese
 Other domain(s)%0
+.
+Language=Finnish
+Muut toimialueet%0
 .
 
 MessageId=4458
@@ -25080,6 +27677,9 @@ COM Open Timeout (sec)%0
 Language=Taiwanese
 COM Open Timeout (sec)%0
 .
+Language=Finnish
+COM-avauksen aikakatkaisu (s)%0
+.
 
 MessageId=4459
 Severity=Success
@@ -25108,6 +27708,9 @@ COM Send Count (byte)%0
 .
 Language=Taiwanese
 COM Send Count (byte)%0
+.
+Language=Finnish
+COM-lähetysmäärä (tavua)%0
 .
 
 MessageId=4460
@@ -25138,6 +27741,9 @@ COM Send Timeout (msec)%0
 Language=Taiwanese
 COM Send Timeout (msec)%0
 .
+Language=Finnish
+COM-lähetyksen aikakatkaisu (ms)%0
+.
 
 MessageId=4461
 Severity=Success
@@ -25166,6 +27772,9 @@ DOS session print time-out (sec)%0
 .
 Language=Taiwanese
 DOS session print time-out (sec)%0
+.
+Language=Finnish
+DOS-istunnon tulostuksen aikakatkaisu (s)%0
 .
 
 MessageId=4462
@@ -25196,6 +27805,9 @@ Maximum error log size (K)%0
 Language=Taiwanese
 Maximum error log size (K)%0
 .
+Language=Finnish
+Virhelokin enimmäiskoko (kt)%0
+.
 
 MessageId=4463
 Severity=Success
@@ -25224,6 +27836,9 @@ Maximum cache memory (K)%0
 .
 Language=Taiwanese
 Maximum cache memory (K)%0
+.
+Language=Finnish
+Välimuistin enimmäiskoko (kt)%0
 .
 
 MessageId=4464
@@ -25254,6 +27869,9 @@ Number of network buffers%0
 Language=Taiwanese
 Number of network buffers%0
 .
+Language=Finnish
+Verkkopuskureiden määrä%0
+.
 
 MessageId=4465
 Severity=Success
@@ -25282,6 +27900,9 @@ Number of character buffers%0
 .
 Language=Taiwanese
 Number of character buffers%0
+.
+Language=Finnish
+Merkkipuskureiden määrä%0
 .
 
 MessageId=4466
@@ -25312,6 +27933,9 @@ Size of network buffers%0
 Language=Taiwanese
 Size of network buffers%0
 .
+Language=Finnish
+Verkkopuskureiden koko%0
+.
 
 MessageId=4467
 Severity=Success
@@ -25340,6 +27964,9 @@ Size of character buffers%0
 .
 Language=Taiwanese
 Size of character buffers%0
+.
+Language=Finnish
+Merkkipuskureiden koko%0
 .
 
 MessageId=4468
@@ -25370,6 +27997,9 @@ Full Computer name%0
 Language=Taiwanese
 Full Computer name%0
 .
+Language=Finnish
+Tietokoneen koko nimi%0
+.
 
 MessageId=4469
 Severity=Success
@@ -25399,6 +28029,9 @@ Workstation Domain DNS Name%0
 Language=Taiwanese
 Workstation Domain DNS Name%0
 .
+Language=Finnish
+Työaseman toimialueen DNS-nimi%0
+.
 
 MessageId=4470
 Severity=Success
@@ -25426,6 +28059,9 @@ Language=Chinese
 LiberNT%0
 .
 Language=Taiwanese
+LiberNT%0
+.
+Language=Finnish
 LiberNT%0
 .
 
@@ -25457,6 +28093,9 @@ Server Name%0
 Language=Taiwanese
 Server Name%0
 .
+Language=Finnish
+Palvelimen nimi%0
+.
 
 MessageId=4482
 Severity=Success
@@ -25485,6 +28124,9 @@ Server Comment%0
 .
 Language=Taiwanese
 Server Comment%0
+.
+Language=Finnish
+Palvelimen kommentti%0
 .
 
 MessageId=4483
@@ -25515,6 +28157,9 @@ Send administrative alerts to%0
 Language=Taiwanese
 Send administrative alerts to%0
 .
+Language=Finnish
+Lähetä hallinnolliset hälytykset kohteeseen%0
+.
 
 MessageId=4484
 Severity=Success
@@ -25543,6 +28188,9 @@ Software version%0
 .
 Language=Taiwanese
 Software version%0
+.
+Language=Finnish
+Ohjelmistoversio%0
 .
 
 MessageId=4485
@@ -25573,6 +28221,9 @@ Peer Server%0
 Language=Taiwanese
 Peer Server%0
 .
+Language=Finnish
+Vertaispalvelin%0
+.
 
 MessageId=4486
 Severity=Success
@@ -25600,6 +28251,9 @@ Language=Chinese
 LiberNT%0
 .
 Language=Taiwanese
+LiberNT%0
+.
+Language=Finnish
 LiberNT%0
 .
 
@@ -25631,6 +28285,9 @@ Server Level%0
 Language=Taiwanese
 Server Level%0
 .
+Language=Finnish
+Palvelimen taso%0
+.
 
 MessageId=4488
 Severity=Success
@@ -25659,6 +28316,9 @@ LiberNT Server%0
 .
 Language=Taiwanese
 LiberNT Server%0
+.
+Language=Finnish
+LiberNT-palvelin%0
 .
 
 MessageId=4489
@@ -25689,6 +28349,9 @@ Server is active on%0
 Language=Taiwanese
 Server is active on%0
 .
+Language=Finnish
+Palvelin on käytössä kohteessa%0
+.
 
 MessageId=4492
 Severity=Success
@@ -25717,6 +28380,9 @@ Server hidden%0
 .
 Language=Taiwanese
 Server hidden%0
+.
+Language=Finnish
+Palvelin piilotettu%0
 .
 
 MessageId=4506
@@ -25747,6 +28413,9 @@ Maximum Logged On Users%0
 Language=Taiwanese
 Maximum Logged On Users%0
 .
+Language=Finnish
+Kirjautuneiden käyttäjien enimmäismäärä%0
+.
 
 MessageId=4507
 Severity=Success
@@ -25775,6 +28444,9 @@ Maximum concurrent administrators%0
 .
 Language=Taiwanese
 Maximum concurrent administrators%0
+.
+Language=Finnish
+Samanaikaisten järjestelmänvalvojien enimmäismäärä%0
 .
 
 MessageId=4508
@@ -25805,6 +28477,9 @@ Maximum resources shared%0
 Language=Taiwanese
 Maximum resources shared%0
 .
+Language=Finnish
+Jaettujen resurssien enimmäismäärä%0
+.
 
 MessageId=4509
 Severity=Success
@@ -25833,6 +28508,9 @@ Maximum connections to resources%0
 .
 Language=Taiwanese
 Maximum connections to resources%0
+.
+Language=Finnish
+Resurssiyhteyksien enimmäismäärä%0
 .
 
 MessageId=4510
@@ -25863,6 +28541,9 @@ Maximum open files on server%0
 Language=Taiwanese
 Maximum open files on server%0
 .
+Language=Finnish
+Avoimien tiedostojen enimmäismäärä palvelimella%0
+.
 
 MessageId=4511
 Severity=Success
@@ -25891,6 +28572,9 @@ Maximum open files per session%0
 .
 Language=Taiwanese
 Maximum open files per session%0
+.
+Language=Finnish
+Avoimien tiedostojen enimmäismäärä istuntoa kohden%0
 .
 
 MessageId=4512
@@ -25921,6 +28605,9 @@ Maximum file locks%0
 Language=Taiwanese
 Maximum file locks%0
 .
+Language=Finnish
+Tiedostolukitusten enimmäismäärä%0
+.
 
 MessageId=4520
 Severity=Success
@@ -25949,6 +28636,9 @@ Idle session time (min)%0
 .
 Language=Taiwanese
 Idle session time (min)%0
+.
+Language=Finnish
+Istunnon joutoaika (min)%0
 .
 
 MessageId=4526
@@ -25979,6 +28669,9 @@ Share-level%0
 Language=Taiwanese
 Share-level%0
 .
+Language=Finnish
+Jakotaso%0
+.
 
 MessageId=4527
 Severity=Success
@@ -26007,6 +28700,9 @@ User-level%0
 .
 Language=Taiwanese
 User-level%0
+.
+Language=Finnish
+Käyttäjätaso%0
 .
 
 MessageId=4530
@@ -26037,6 +28733,9 @@ Unlimited Server%0
 Language=Taiwanese
 Unlimited Server%0
 .
+Language=Finnish
+Rajoittamaton palvelin%0
+.
 
 MessageId=4570
 Severity=Success
@@ -26065,6 +28764,9 @@ Language=Chinese
 .
 Language=Taiwanese
 強制登出後:%0\n
+.
+Language=Finnish
+Kuinka kauan ajan päättymisen jälkeen käyttäjä kirjataan ulos pakotetusti?:%0\n
 .
 
 MessageId=4571
@@ -26095,6 +28797,9 @@ Lock out account after how many bad passwords?:%0\n
 Language=Taiwanese
 Lock out account after how many bad passwords?:%0\n
 .
+Language=Finnish
+Kuinka monen virheellisen salasanan jälkeen tili lukitaan?:%0\n
+.
 
 MessageId=4572
 Severity=Success
@@ -26123,6 +28828,9 @@ Language=Chinese
 .
 Language=Taiwanese
 密碼最短使用期限 (以天):%0
+.
+Language=Finnish
+Salasanan vähimmäisikä (päivää):%0
 .
 
 MessageId=4573
@@ -26153,6 +28861,9 @@ Language=Chinese
 Language=Taiwanese
 密碼最長使用期限 (以天):%0
 .
+Language=Finnish
+Salasanan enimmäisikä (päivää):%0
+.
 
 MessageId=4574
 Severity=Success
@@ -26181,6 +28892,9 @@ Language=Chinese
 .
 Language=Taiwanese
 最小密碼長度:%0
+.
+Language=Finnish
+Salasanan vähimmäispituus:%0
 .
 
 MessageId=4575
@@ -26211,6 +28925,9 @@ Language=Chinese
 Language=Taiwanese
 密碼歷史記錄長度:%0
 .
+Language=Finnish
+Säilytettävän salasanahistorian pituus:%0
+.
 
 MessageId=4576
 Severity=Success
@@ -26239,6 +28956,9 @@ Language=Chinese
 .
 Language=Taiwanese
 電腦角色:%0
+.
+Language=Finnish
+Tietokoneen rooli:%0
 .
 
 MessageId=4577
@@ -26269,6 +28989,9 @@ Primary Domain controller for workstation domain:%0.
 Language=Taiwanese
 Primary Domain controller for workstation domain:%0.
 .
+Language=Finnish
+Työaseman toimialueen ensisijainen toimialueen ohjauskone:%0.
+.
 
 MessageId=4578
 Severity=Success
@@ -26297,6 +29020,9 @@ Language=Chinese
 .
 Language=Taiwanese
 鎖定閾值:%0
+.
+Language=Finnish
+Lukituskynnys:%0
 .
 
 MessageId=4579
@@ -26327,6 +29053,9 @@ Language=Chinese
 Language=Taiwanese
 鎖定時間 (以分鐘為單位):%0
 .
+Language=Finnish
+Lukituksen kesto (minuuttia):%0
+.
 
 MessageId=4580
 Severity=Success
@@ -26355,6 +29084,9 @@ Language=Chinese
 .
 Language=Taiwanese
 鎖定觀察視窗 (以分鐘為單位):%0
+.
+Language=Finnish
+Lukituksen seurantajakso (minuuttia):%0
 .
 
 MessageId=4600
@@ -26385,6 +29117,9 @@ Statistics since%0
 Language=Taiwanese
 Statistics since%0
 .
+Language=Finnish
+Tilastot alkaen%0
+.
 
 MessageId=4601
 Severity=Success
@@ -26413,6 +29148,9 @@ Sessions accepted%0
 .
 Language=Taiwanese
 Sessions accepted%0
+.
+Language=Finnish
+Hyväksytyt istunnot%0
 .
 
 MessageId=4602
@@ -26443,6 +29181,9 @@ Sessions timed-out%0
 Language=Taiwanese
 Sessions timed-out%0
 .
+Language=Finnish
+Aikakatkaistut istunnot%0
+.
 
 MessageId=4603
 Severity=Success
@@ -26471,6 +29212,9 @@ Sessions errored-out%0
 .
 Language=Taiwanese
 Sessions errored-out%0
+.
+Language=Finnish
+Virheeseen päättyneet istunnot%0
 .
 
 MessageId=4604
@@ -26501,6 +29245,9 @@ Kilobytes sent%0
 Language=Taiwanese
 Kilobytes sent%0
 .
+Language=Finnish
+Lähetetyt kilotavut%0
+.
 
 MessageId=4605
 Severity=Success
@@ -26529,6 +29276,9 @@ Kilobytes received%0
 .
 Language=Taiwanese
 Kilobytes received%0
+.
+Language=Finnish
+Vastaanotetut kilotavut%0
 .
 
 MessageId=4606
@@ -26559,6 +29309,9 @@ Mean response time (msec)%0
 Language=Taiwanese
 Mean response time (msec)%0
 .
+Language=Finnish
+Keskimääräinen vasteaika (ms)%0
+.
 
 MessageId=4607
 Severity=Success
@@ -26587,6 +29340,9 @@ Network errors%0
 .
 Language=Taiwanese
 Network errors%0
+.
+Language=Finnish
+Verkkovirheet%0
 .
 
 MessageId=4608
@@ -26617,6 +29373,9 @@ Files accessed%0
 Language=Taiwanese
 Files accessed%0
 .
+Language=Finnish
+Käytetyt tiedostot%0
+.
 
 MessageId=4609
 Severity=Success
@@ -26645,6 +29404,9 @@ Print jobs spooled%0
 .
 Language=Taiwanese
 Print jobs spooled%0
+.
+Language=Finnish
+Taustatulostetut tulostustyöt%0
 .
 
 MessageId=4610
@@ -26675,6 +29437,9 @@ System errors%0
 Language=Taiwanese
 System errors%0
 .
+Language=Finnish
+Järjestelmävirheet%0
+.
 
 MessageId=4611
 Severity=Success
@@ -26703,6 +29468,9 @@ Password violations%0
 .
 Language=Taiwanese
 Password violations%0
+.
+Language=Finnish
+Salasanarikkomukset%0
 .
 
 MessageId=4612
@@ -26733,6 +29501,9 @@ Permission violations%0
 Language=Taiwanese
 Permission violations%0
 .
+Language=Finnish
+Käyttöoikeusrikkomukset%0
+.
 
 MessageId=4613
 Severity=Success
@@ -26761,6 +29532,9 @@ Communication devices accessed%0
 .
 Language=Taiwanese
 Communication devices accessed%0
+.
+Language=Finnish
+Käytetyt tiedonsiirtolaitteet%0
 .
 
 MessageId=4614
@@ -26791,6 +29565,9 @@ Sessions started%0
 Language=Taiwanese
 Sessions started%0
 .
+Language=Finnish
+Aloitetut istunnot%0
+.
 
 MessageId=4615
 Severity=Success
@@ -26819,6 +29596,9 @@ Sessions reconnected%0
 .
 Language=Taiwanese
 Sessions reconnected%0
+.
+Language=Finnish
+Uudelleen yhdistetyt istunnot%0
 .
 
 MessageId=4616
@@ -26849,6 +29629,9 @@ Sessions starts failed%0
 Language=Taiwanese
 Sessions starts failed%0
 .
+Language=Finnish
+Epäonnistuneet istuntojen aloitukset%0
+.
 
 MessageId=4617
 Severity=Success
@@ -26877,6 +29660,9 @@ Sessions disconnected%0
 .
 Language=Taiwanese
 Sessions disconnected%0
+.
+Language=Finnish
+Katkaistut istunnot%0
 .
 
 MessageId=4618
@@ -26907,6 +29693,9 @@ Network I/O's performed%0
 Language=Taiwanese
 Network I/O's performed%0
 .
+Language=Finnish
+Suoritetut verkon I/O-toiminnot%0
+.
 
 MessageId=4619
 Severity=Success
@@ -26935,6 +29724,9 @@ Files and pipes accessed%0
 .
 Language=Taiwanese
 Files and pipes accessed%0
+.
+Language=Finnish
+Käytetyt tiedostot ja putket%0
 .
 
 MessageId=4620
@@ -26965,6 +29757,9 @@ Times buffers exhausted
 Language=Taiwanese
 Times buffers exhausted
 .
+Language=Finnish
+Puskurit loppuneet (kertaa)
+.
 
 MessageId=4621
 Severity=Success
@@ -26993,6 +29788,9 @@ Big buffers%0
 .
 Language=Taiwanese
 Big buffers%0
+.
+Language=Finnish
+Suuret puskurit%0
 .
 
 MessageId=4622
@@ -27023,6 +29821,9 @@ Request buffers%0
 Language=Taiwanese
 Request buffers%0
 .
+Language=Finnish
+Pyyntöpuskurit%0
+.
 
 MessageId=4623
 Severity=Success
@@ -27051,6 +29852,9 @@ Workstation Statistics for \\%1
 .
 Language=Taiwanese
 Workstation Statistics for \\%1
+.
+Language=Finnish
+Kohteen \\%1 työasematilastot
 .
 
 MessageId=4624
@@ -27081,6 +29885,9 @@ Server Statistics for \\%1
 Language=Taiwanese
 Server Statistics for \\%1
 .
+Language=Finnish
+Kohteen \\%1 palvelintilastot
+.
 
 MessageId=4625
 Severity=Success
@@ -27109,6 +29916,9 @@ Statistics since %1
 .
 Language=Taiwanese
 Statistics since %1
+.
+Language=Finnish
+Tilastot alkaen %1
 .
 
 MessageId=4626
@@ -27139,6 +29949,9 @@ Connections made%0
 Language=Taiwanese
 Connections made%0
 .
+Language=Finnish
+Muodostetut yhteydet%0
+.
 
 MessageId=4627
 Severity=Success
@@ -27167,6 +29980,9 @@ Connections failed%0
 .
 Language=Taiwanese
 Connections failed%0
+.
+Language=Finnish
+Epäonnistuneet yhteydet%0
 .
 
 MessageId=4630
@@ -27197,6 +30013,9 @@ Bytes received%0
 Language=Taiwanese
 Bytes received%0
 .
+Language=Finnish
+Vastaanotetut tavut%0
+.
 
 MessageId=4631
 Severity=Success
@@ -27225,6 +30044,9 @@ Server Message Blocks (SMBs) received%0
 .
 Language=Taiwanese
 Server Message Blocks (SMBs) received%0
+.
+Language=Finnish
+Vastaanotetut palvelimen viestilohkot (SMB)%0
 .
 
 MessageId=4632
@@ -27255,6 +30077,9 @@ Bytes transmitted%0
 Language=Taiwanese
 Bytes transmitted%0
 .
+Language=Finnish
+Lähetetyt tavut%0
+.
 
 MessageId=4633
 Severity=Success
@@ -27283,6 +30108,9 @@ Server Message Blocks (SMBs) transmitted%0
 .
 Language=Taiwanese
 Server Message Blocks (SMBs) transmitted%0
+.
+Language=Finnish
+Lähetetyt palvelimen viestilohkot (SMB)%0
 .
 
 MessageId=4634
@@ -27313,6 +30141,9 @@ Read operations%0
 Language=Taiwanese
 Read operations%0
 .
+Language=Finnish
+Lukutoiminnot%0
+.
 
 MessageId=4635
 Severity=Success
@@ -27341,6 +30172,9 @@ Write operations%0
 .
 Language=Taiwanese
 Write operations%0
+.
+Language=Finnish
+Kirjoitustoiminnot%0
 .
 
 MessageId=4636
@@ -27371,6 +30205,9 @@ Raw reads denied%0
 Language=Taiwanese
 Raw reads denied%0
 .
+Language=Finnish
+Estetyt raakaluvut%0
+.
 
 MessageId=4637
 Severity=Success
@@ -27399,6 +30236,9 @@ Raw writes denied%0
 .
 Language=Taiwanese
 Raw writes denied%0
+.
+Language=Finnish
+Estetyt raakakirjoitukset%0
 .
 
 MessageId=4638
@@ -27429,6 +30269,9 @@ Network errors%0
 Language=Taiwanese
 Network errors%0
 .
+Language=Finnish
+Verkkovirheet%0
+.
 
 MessageId=4639
 Severity=Success
@@ -27457,6 +30300,9 @@ Connections made%0
 .
 Language=Taiwanese
 Connections made%0
+.
+Language=Finnish
+Muodostetut yhteydet%0
 .
 
 MessageId=4640
@@ -27487,6 +30333,9 @@ Reconnections made%0
 Language=Taiwanese
 Reconnections made%0
 .
+Language=Finnish
+Muodostetut uudelleenyhteydet%0
+.
 
 MessageId=4641
 Severity=Success
@@ -27515,6 +30364,9 @@ Server disconnects%0
 .
 Language=Taiwanese
 Server disconnects%0
+.
+Language=Finnish
+Palvelimen katkaisut%0
 .
 
 MessageId=4642
@@ -27545,6 +30397,9 @@ Sessions started%0
 Language=Taiwanese
 Sessions started%0
 .
+Language=Finnish
+Aloitetut istunnot%0
+.
 
 MessageId=4643
 Severity=Success
@@ -27573,6 +30428,9 @@ Hung sessions%0
 .
 Language=Taiwanese
 Hung sessions%0
+.
+Language=Finnish
+Jumittuneet istunnot%0
 .
 
 MessageId=4644
@@ -27603,6 +30461,9 @@ Failed sessions%0
 Language=Taiwanese
 Failed sessions%0
 .
+Language=Finnish
+Epäonnistuneet istunnot%0
+.
 
 MessageId=4645
 Severity=Success
@@ -27631,6 +30492,9 @@ Failed operations%0
 .
 Language=Taiwanese
 Failed operations%0
+.
+Language=Finnish
+Epäonnistuneet toiminnot%0
 .
 
 MessageId=4646
@@ -27661,6 +30525,9 @@ Use count%0
 Language=Taiwanese
 Use count%0
 .
+Language=Finnish
+Käyttökerrat%0
+.
 
 MessageId=4647
 Severity=Success
@@ -27689,6 +30556,9 @@ Failed use count%0
 .
 Language=Taiwanese
 Failed use count%0
+.
+Language=Finnish
+Epäonnistuneet käyttökerrat%0
 .
 
 MessageId=4650
@@ -27719,6 +30589,9 @@ Language=Chinese
 Language=Taiwanese
 %1 was deleted successfully.
 .
+Language=Finnish
+%1 poistettiin onnistuneesti.
+.
 
 MessageId=4651
 Severity=Success
@@ -27747,6 +30620,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 was used successfully.
+.
+Language=Finnish
+%1 otettiin käyttöön onnistuneesti.
 .
 
 MessageId=4652
@@ -27777,6 +30653,9 @@ The message was successfully sent to %1.
 Language=Taiwanese
 The message was successfully sent to %1.
 .
+Language=Finnish
+Viesti lähetettiin onnistuneesti kohteeseen %1.
+.
 
 MessageId=4653
 Severity=Success
@@ -27805,6 +30684,9 @@ The message name %1 was forwarded successfully.
 .
 Language=Taiwanese
 The message name %1 was forwarded successfully.
+.
+Language=Finnish
+Viestinimi %1 edelleenlähetettiin onnistuneesti.
 .
 
 MessageId=4654
@@ -27835,6 +30717,9 @@ The message name %1 was added successfully.
 Language=Taiwanese
 The message name %1 was added successfully.
 .
+Language=Finnish
+Viestinimi %1 lisättiin onnistuneesti.
+.
 
 MessageId=4655
 Severity=Success
@@ -27863,6 +30748,9 @@ The message name forwarding was successfully canceled.
 .
 Language=Taiwanese
 The message name forwarding was successfully canceled.
+.
+Language=Finnish
+Viestinimen edelleenlähetys peruutettiin onnistuneesti.
 .
 
 MessageId=4656
@@ -27893,6 +30781,9 @@ Language=Chinese
 Language=Taiwanese
 %1 was shared successfully.
 .
+Language=Finnish
+%1 jaettiin onnistuneesti.
+.
 
 MessageId=4657
 Severity=Success
@@ -27922,6 +30813,9 @@ The server %1 successfully logged you on as %2.
 Language=Taiwanese
 The server %1 successfully logged you on as %2.
 .
+Language=Finnish
+Palvelin %1 kirjasi sinut onnistuneesti sisään käyttäjänä %2.
+.
 
 MessageId=4658
 Severity=Success
@@ -27950,6 +30844,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 was logged off successfully.
+.
+Language=Finnish
+%1 kirjattiin onnistuneesti ulos.
 .
 
 MessageId=4659
@@ -27988,6 +30885,10 @@ Language=Taiwanese
 %1 was successfully removed from the list of shares the Server creates\n
 on startup.
 .
+Language=Finnish
+%1 poistettiin onnistuneesti niiden jakojen luettelosta, jotka Server luo\n
+käynnistyksen yhteydessä.
+.
 
 MessageId=4661
 Severity=Success
@@ -28016,6 +30917,9 @@ The password was changed successfully.
 .
 Language=Taiwanese
 The password was changed successfully.
+.
+Language=Finnish
+Salasana vaihdettiin onnistuneesti.
 .
 
 MessageId=4662
@@ -28046,6 +30950,9 @@ Language=Chinese
 Language=Taiwanese
 %1 file(s) copied.
 .
+Language=Finnish
+%1 tiedosto(a) kopioitu.
+.
 
 MessageId=4663
 Severity=Success
@@ -28074,6 +30981,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 file(s) moved.
+.
+Language=Finnish
+%1 tiedosto(a) siirretty.
 .
 
 MessageId=4664
@@ -28104,6 +31014,9 @@ The message was successfully sent to all users of the network.
 Language=Taiwanese
 The message was successfully sent to all users of the network.
 .
+Language=Finnish
+Viesti lähetettiin onnistuneesti kaikille verkon käyttäjille.
+.
 
 MessageId=4665
 Severity=Success
@@ -28132,6 +31045,9 @@ The message was successfully sent to domain %1.
 .
 Language=Taiwanese
 The message was successfully sent to domain %1.
+.
+Language=Finnish
+Viesti lähetettiin onnistuneesti toimialueeseen %1.
 .
 
 MessageId=4666
@@ -28162,6 +31078,9 @@ The message was successfully sent to all users of this server.
 Language=Taiwanese
 The message was successfully sent to all users of this server.
 .
+Language=Finnish
+Viesti lähetettiin onnistuneesti kaikille tämän palvelimen käyttäjille.
+.
 
 MessageId=4667
 Severity=Success
@@ -28190,6 +31109,9 @@ The message was successfully sent to group *%1.
 .
 Language=Taiwanese
 The message was successfully sent to group *%1.
+.
+Language=Finnish
+Viesti lähetettiin onnistuneesti ryhmälle *%1.
 .
 
 MessageId=4695
@@ -28220,6 +31142,9 @@ Microsoft LAN Manager Version %1
 Language=Taiwanese
 Microsoft LAN Manager Version %1
 .
+Language=Finnish
+Microsoft LAN Manager, versio %1
+.
 
 MessageId=4696
 Severity=Success
@@ -28248,6 +31173,9 @@ LiberNT Server
 .
 Language=Taiwanese
 LiberNT Server
+.
+Language=Finnish
+LiberNT-palvelin
 .
 
 MessageId=4697
@@ -28278,6 +31206,9 @@ LiberNT Workstation
 Language=Taiwanese
 LiberNT Workstation
 .
+Language=Finnish
+LiberNT-työasema
+.
 
 MessageId=4698
 Severity=Success
@@ -28306,6 +31237,9 @@ MS-DOS Enhanced Workstation
 .
 Language=Taiwanese
 MS-DOS Enhanced Workstation
+.
+Language=Finnish
+MS-DOS Enhanced -työasema
 .
 
 MessageId=4699
@@ -28336,6 +31270,9 @@ Created at %1
 Language=Taiwanese
 Created at %1
 .
+Language=Finnish
+Luotu %1
+.
 
 MessageId=4700
 Severity=Success
@@ -28365,6 +31302,9 @@ Server Name            Remark
 Language=Taiwanese
 Server Name            Remark
 .
+Language=Finnish
+Palvelimen nimi        Huomautus
+.
 
 MessageId=4702
 Severity=Success
@@ -28392,6 +31332,9 @@ Language=Chinese
 (UNC)%0
 .
 Language=Taiwanese
+(UNC)%0
+.
+Language=Finnish
 (UNC)%0
 .
 
@@ -28423,6 +31366,9 @@ Language=Chinese
 Language=Taiwanese
 ...%0
 .
+Language=Finnish
+...%0
+.
 
 MessageId=4704
 Severity=Success
@@ -28451,6 +31397,9 @@ Domain
 .
 Language=Taiwanese
 Domain
+.
+Language=Finnish
+Toimialue
 .
 
 MessageId=4705
@@ -28481,6 +31430,9 @@ Resources on %1
 Language=Taiwanese
 Resources on %1
 .
+Language=Finnish
+Resurssit kohteessa %1
+.
 
 MessageId=4706
 Severity=Success
@@ -28509,6 +31461,9 @@ Invalid network provider.  Available networks are:
 .
 Language=Taiwanese
 Invalid network provider.  Available networks are:
+.
+Language=Finnish
+Virheellinen verkkopalvelu.  Käytettävissä olevat verkot ovat:
 .
 
 MessageId=4710
@@ -28539,6 +31494,9 @@ Disk%0
 Language=Taiwanese
 Disk%0
 .
+Language=Finnish
+Levy%0
+.
 
 MessageId=4711
 Severity=Success
@@ -28567,6 +31525,9 @@ Print%0
 .
 Language=Taiwanese
 Print%0
+.
+Language=Finnish
+Tulostus%0
 .
 
 MessageId=4712
@@ -28597,6 +31558,9 @@ Comm%0
 Language=Taiwanese
 Comm%0
 .
+Language=Finnish
+Tiedonsiirto%0
+.
 
 MessageId=4713
 Severity=Success
@@ -28624,6 +31588,9 @@ Language=Chinese
 IPC%0
 .
 Language=Taiwanese
+IPC%0
+.
+Language=Finnish
 IPC%0
 .
 
@@ -28655,6 +31622,9 @@ Status       Local     Remote                    Network
 Language=Taiwanese
 Status       Local     Remote                    Network
 .
+Language=Finnish
+Tila         Paikall.  Etä                       Verkko
+.
 
 MessageId=4715
 Severity=Success
@@ -28682,6 +31652,9 @@ Language=Chinese
 OK%0
 .
 Language=Taiwanese
+OK%0
+.
+Language=Finnish
 OK%0
 .
 
@@ -28713,6 +31686,9 @@ Dormant%0
 Language=Taiwanese
 Dormant%0
 .
+Language=Finnish
+Lepotila%0
+.
 
 MessageId=4717
 Severity=Success
@@ -28741,6 +31717,9 @@ Paused%0
 .
 Language=Taiwanese
 Paused%0
+.
+Language=Finnish
+Keskeytetty%0
 .
 
 MessageId=4718
@@ -28771,6 +31750,9 @@ Disconnected%0
 Language=Taiwanese
 Disconnected%0
 .
+Language=Finnish
+Katkaistu%0
+.
 
 MessageId=4719
 Severity=Success
@@ -28799,6 +31781,9 @@ Error%0
 .
 Language=Taiwanese
 Error%0
+.
+Language=Finnish
+Virhe%0
 .
 
 MessageId=4720
@@ -28829,6 +31814,9 @@ Connecting%0
 Language=Taiwanese
 Connecting%0
 .
+Language=Finnish
+Yhdistetään%0
+.
 
 MessageId=4721
 Severity=Success
@@ -28857,6 +31845,9 @@ Reconnecting%0
 .
 Language=Taiwanese
 Reconnecting%0
+.
+Language=Finnish
+Yhdistetään uudelleen%0
 .
 
 MessageId=4722
@@ -28887,6 +31878,9 @@ Status%0
 Language=Taiwanese
 Status%0
 .
+Language=Finnish
+Tila%0
+.
 
 MessageId=4723
 Severity=Success
@@ -28915,6 +31909,9 @@ Local name%0
 .
 Language=Taiwanese
 Local name%0
+.
+Language=Finnish
+Paikallinen nimi%0
 .
 
 MessageId=4724
@@ -28945,6 +31942,9 @@ Remote name%0
 Language=Taiwanese
 Remote name%0
 .
+Language=Finnish
+Etänimi%0
+.
 
 MessageId=4725
 Severity=Success
@@ -28973,6 +31973,9 @@ Resource type%0
 .
 Language=Taiwanese
 Resource type%0
+.
+Language=Finnish
+Resurssin tyyppi%0
 .
 
 MessageId=4726
@@ -29003,6 +32006,9 @@ Language=Chinese
 Language=Taiwanese
 # Opens%0
 .
+Language=Finnish
+# Avauksia%0
+.
 
 MessageId=4727
 Severity=Success
@@ -29031,6 +32037,9 @@ Language=Chinese
 .
 Language=Taiwanese
 # Connections%0
+.
+Language=Finnish
+# Yhteyksiä%0
 .
 
 MessageId=4728
@@ -29061,6 +32070,9 @@ Unavailable%0
 Language=Taiwanese
 Unavailable%0
 .
+Language=Finnish
+Ei käytettävissä%0
+.
 
 MessageId=4730
 Severity=Success
@@ -29089,6 +32101,9 @@ Share name   Resource                        Remark
 .
 Language=Taiwanese
 Share name   Resource                        Remark
+.
+Language=Finnish
+Jaon nimi    Resurssi                        Huomautus
 .
 
 MessageId=4731
@@ -29119,6 +32134,9 @@ Share name%0
 Language=Taiwanese
 Share name%0
 .
+Language=Finnish
+Jaon nimi%0
+.
 
 MessageId=4732
 Severity=Success
@@ -29147,6 +32165,9 @@ Resource%0
 .
 Language=Taiwanese
 Resource%0
+.
+Language=Finnish
+Resurssi%0
 .
 
 MessageId=4733
@@ -29177,6 +32198,9 @@ Spooled%0
 Language=Taiwanese
 Spooled%0
 .
+Language=Finnish
+Taustatulostettu%0
+.
 
 MessageId=4734
 Severity=Success
@@ -29205,6 +32229,9 @@ Permission%0
 .
 Language=Taiwanese
 Permission%0
+.
+Language=Finnish
+Käyttöoikeus%0
 .
 
 MessageId=4735
@@ -29235,6 +32262,9 @@ Maximum users%0
 Language=Taiwanese
 Maximum users%0
 .
+Language=Finnish
+Käyttäjien enimmäismäärä%0
+.
 
 MessageId=4736
 Severity=Success
@@ -29264,6 +32294,9 @@ No limit%0
 Language=Taiwanese
 No limit%0
 .
+Language=Finnish
+Ei rajoitusta%0
+.
 
 MessageId=4737
 Severity=Success
@@ -29292,6 +32325,9 @@ Users%0
 .
 Language=Taiwanese
 Users%0
+.
+Language=Finnish
+Käyttäjät%0
 .
 
 MessageId=4738
@@ -29330,6 +32366,10 @@ Language=Taiwanese
 The share name entered may not be accessible from some MS-DOS workstations.\n
 Are you sure you want to use this share name? %1: %0
 .
+Language=Finnish
+Annettu jaon nimi ei ehkä ole käytettävissä joistakin MS-DOS-työasemista.\n
+Haluatko varmasti käyttää tätä jaon nimeä? %1: %0
+.
 
 MessageId=4739
 Severity=Success
@@ -29358,6 +32398,9 @@ Caching%0
 .
 Language=Taiwanese
 Caching%0
+.
+Language=Finnish
+Välimuisti%0
 .
 
 MessageId=4740
@@ -29388,6 +32431,9 @@ ID         Path                                    User name            # Locks
 Language=Taiwanese
 ID         Path                                    User name            # Locks
 .
+Language=Finnish
+Tunnus     Polku                                   Käyttäjänimi         # Lukituksia
+.
 
 MessageId=4741
 Severity=Success
@@ -29416,6 +32462,9 @@ File ID%0
 .
 Language=Taiwanese
 File ID%0
+.
+Language=Finnish
+Tiedoston tunnus%0
 .
 
 MessageId=4742
@@ -29446,6 +32495,9 @@ Locks%0
 Language=Taiwanese
 Locks%0
 .
+Language=Finnish
+Lukitukset%0
+.
 
 MessageId=4743
 Severity=Success
@@ -29474,6 +32526,9 @@ Permissions%0
 .
 Language=Taiwanese
 Permissions%0
+.
+Language=Finnish
+Käyttöoikeudet%0
 .
 
 MessageId=4744
@@ -29504,6 +32559,9 @@ Share name%0
 Language=Taiwanese
 Share name%0
 .
+Language=Finnish
+Jaon nimi%0
+.
 
 MessageId=4745
 Severity=Success
@@ -29532,6 +32590,9 @@ Type%0
 .
 Language=Taiwanese
 Type%0
+.
+Language=Finnish
+Tyyppi%0
 .
 
 MessageId=4746
@@ -29562,6 +32623,9 @@ Used as%0
 Language=Taiwanese
 Used as%0
 .
+Language=Finnish
+Käytetään nimellä%0
+.
 
 MessageId=4747
 Severity=Success
@@ -29590,6 +32654,9 @@ Comment%0
 .
 Language=Taiwanese
 Comment%0
+.
+Language=Finnish
+Kommentti%0
 .
 
 MessageId=4750
@@ -29620,6 +32687,9 @@ Computer               User name            Client Type       Opens Idle time
 Language=Taiwanese
 Computer               User name            Client Type       Opens Idle time
 .
+Language=Finnish
+Tietokone              Käyttäjänimi         Asiakastyyppi     Avoinna Joutoaika
+.
 
 MessageId=4751
 Severity=Success
@@ -29648,6 +32718,9 @@ Computer%0
 .
 Language=Taiwanese
 Computer%0
+.
+Language=Finnish
+Tietokone%0
 .
 
 MessageId=4752
@@ -29678,6 +32751,9 @@ Sess time%0
 Language=Taiwanese
 Sess time%0
 .
+Language=Finnish
+Istuntoaika%0
+.
 
 MessageId=4753
 Severity=Success
@@ -29706,6 +32782,9 @@ Idle time%0
 .
 Language=Taiwanese
 Idle time%0
+.
+Language=Finnish
+Joutoaika%0
 .
 
 MessageId=4754
@@ -29736,6 +32815,9 @@ Share name     Type     # Opens
 Language=Taiwanese
 Share name     Type     # Opens
 .
+Language=Finnish
+Jaon nimi      Tyyppi   # Avauksia
+.
 
 MessageId=4755
 Severity=Success
@@ -29764,6 +32846,9 @@ Client type%0
 .
 Language=Taiwanese
 Client type%0
+.
+Language=Finnish
+Asiakastyyppi%0
 .
 
 MessageId=4756
@@ -29794,6 +32879,9 @@ Guest logon%0
 Language=Taiwanese
 Guest logon%0
 .
+Language=Finnish
+Vieraskirjautuminen%0
+.
 
 MessageId=4770
 Severity=Success
@@ -29822,6 +32910,9 @@ Manual caching of documents%0
 .
 Language=Taiwanese
 Manual caching of documents%0
+.
+Language=Finnish
+Asiakirjojen manuaalinen välimuistiin tallennus%0
 .
 
 MessageId=4771
@@ -29852,6 +32943,9 @@ Automatic caching of documents%0
 Language=Taiwanese
 Automatic caching of documents%0
 .
+Language=Finnish
+Asiakirjojen automaattinen välimuistiin tallennus%0
+.
 
 MessageId=4772
 Severity=Success
@@ -29880,6 +32974,9 @@ Automatic caching of programs and documents%0
 .
 Language=Taiwanese
 Automatic caching of programs and documents%0
+.
+Language=Finnish
+Ohjelmien ja asiakirjojen automaattinen välimuistiin tallennus%0
 .
 
 MessageId=4773
@@ -29910,6 +33007,9 @@ Caching disabled%0
 Language=Taiwanese
 Caching disabled%0
 .
+Language=Finnish
+Välimuisti poistettu käytöstä%0
+.
 
 MessageId=4774
 Severity=Success
@@ -29938,6 +33038,9 @@ Automatic%0
 .
 Language=Taiwanese
 Automatic%0
+.
+Language=Finnish
+Automaattinen%0
 .
 
 MessageId=4775
@@ -29968,6 +33071,9 @@ Manual%0
 Language=Taiwanese
 Manual%0
 .
+Language=Finnish
+Manuaalinen%0
+.
 
 MessageId=4776
 Severity=Success
@@ -29996,6 +33102,9 @@ Documents%0
 .
 Language=Taiwanese
 Documents%0
+.
+Language=Finnish
+Asiakirjat%0
 .
 
 MessageId=4777
@@ -30026,6 +33135,9 @@ Programs%0
 Language=Taiwanese
 Programs%0
 .
+Language=Finnish
+Ohjelmat%0
+.
 
 MessageId=4778
 Severity=Success
@@ -30054,6 +33166,9 @@ None%0
 .
 Language=Taiwanese
 None%0
+.
+Language=Finnish
+Ei mitään%0
 .
 
 MessageId=4800
@@ -30084,6 +33199,9 @@ Name%0
 Language=Taiwanese
 Name%0
 .
+Language=Finnish
+Nimi%0
+.
 
 MessageId=4801
 Severity=Success
@@ -30112,6 +33230,9 @@ Forwarded to%0
 .
 Language=Taiwanese
 Forwarded to%0
+.
+Language=Finnish
+Edelleenlähetetty kohteeseen%0
 .
 
 MessageId=4802
@@ -30142,6 +33263,9 @@ Forwarded to you from%0
 Language=Taiwanese
 Forwarded to you from%0
 .
+Language=Finnish
+Edelleenlähetetty sinulle kohteesta%0
+.
 
 MessageId=4803
 Severity=Success
@@ -30170,6 +33294,9 @@ Users of this server%0
 .
 Language=Taiwanese
 Users of this server%0
+.
+Language=Finnish
+Tämän palvelimen käyttäjät%0
 .
 
 MessageId=4804
@@ -30200,6 +33327,9 @@ Net Send has been interrupted by a Ctrl+Break from the user.
 Language=Taiwanese
 Net Send has been interrupted by a Ctrl+Break from the user.
 .
+Language=Finnish
+Käyttäjä keskeytti Net Send -komennon painamalla Ctrl+Break.
+.
 
 MessageId=4810
 Severity=Success
@@ -30228,6 +33358,9 @@ Name                         Job #      Size            Status
 .
 Language=Taiwanese
 Name                         Job #      Size            Status
+.
+Language=Finnish
+Nimi                         Työ #      Koko            Tila
 .
 
 MessageId=4811
@@ -30258,6 +33391,9 @@ jobs%0
 Language=Taiwanese
 jobs%0
 .
+Language=Finnish
+työtä%0
+.
 
 MessageId=4812
 Severity=Success
@@ -30286,6 +33422,9 @@ Print%0
 .
 Language=Taiwanese
 Print%0
+.
+Language=Finnish
+Tulostus%0
 .
 
 MessageId=4813
@@ -30316,6 +33455,9 @@ Name%0
 Language=Taiwanese
 Name%0
 .
+Language=Finnish
+Nimi%0
+.
 
 MessageId=4814
 Severity=Success
@@ -30344,6 +33486,9 @@ Job #%0
 .
 Language=Taiwanese
 Job #%0
+.
+Language=Finnish
+Työ #%0
 .
 
 MessageId=4815
@@ -30374,6 +33519,9 @@ Size%0
 Language=Taiwanese
 Size%0
 .
+Language=Finnish
+Koko%0
+.
 
 MessageId=4816
 Severity=Success
@@ -30402,6 +33550,9 @@ Status%0
 .
 Language=Taiwanese
 Status%0
+.
+Language=Finnish
+Tila%0
 .
 
 MessageId=4817
@@ -30432,6 +33583,9 @@ Separator file%0
 Language=Taiwanese
 Separator file%0
 .
+Language=Finnish
+Erotintiedosto%0
+.
 
 MessageId=4818
 Severity=Success
@@ -30460,6 +33614,9 @@ Comment%0
 .
 Language=Taiwanese
 Comment%0
+.
+Language=Finnish
+Kommentti%0
 .
 
 MessageId=4819
@@ -30490,6 +33647,9 @@ Priority%0
 Language=Taiwanese
 Priority%0
 .
+Language=Finnish
+Prioriteetti%0
+.
 
 MessageId=4820
 Severity=Success
@@ -30518,6 +33678,9 @@ Print after%0
 .
 Language=Taiwanese
 Print after%0
+.
+Language=Finnish
+Tulosta alkaen%0
 .
 
 MessageId=4821
@@ -30548,6 +33711,9 @@ Print until%0
 Language=Taiwanese
 Print until%0
 .
+Language=Finnish
+Tulosta asti%0
+.
 
 MessageId=4822
 Severity=Success
@@ -30576,6 +33742,9 @@ Print processor%0
 .
 Language=Taiwanese
 Print processor%0
+.
+Language=Finnish
+Tulostusprosessori%0
 .
 
 MessageId=4823
@@ -30606,6 +33775,9 @@ Additional info%0
 Language=Taiwanese
 Additional info%0
 .
+Language=Finnish
+Lisätiedot%0
+.
 
 MessageId=4824
 Severity=Success
@@ -30634,6 +33806,9 @@ Parameters%0
 .
 Language=Taiwanese
 Parameters%0
+.
+Language=Finnish
+Parametrit%0
 .
 
 MessageId=4825
@@ -30664,6 +33839,9 @@ Print Devices%0
 Language=Taiwanese
 Print Devices%0
 .
+Language=Finnish
+Tulostuslaitteet%0
+.
 
 MessageId=4826
 Severity=Success
@@ -30692,6 +33870,9 @@ Printer Active%0
 .
 Language=Taiwanese
 Printer Active%0
+.
+Language=Finnish
+Tulostin käytössä%0
 .
 
 MessageId=4827
@@ -30722,6 +33903,9 @@ Printer held%0
 Language=Taiwanese
 Printer held%0
 .
+Language=Finnish
+Tulostin pidossa%0
+.
 
 MessageId=4828
 Severity=Success
@@ -30750,6 +33934,9 @@ Printer error%0
 .
 Language=Taiwanese
 Printer error%0
+.
+Language=Finnish
+Tulostinvirhe%0
 .
 
 MessageId=4829
@@ -30780,6 +33967,9 @@ Printer being deleted%0
 Language=Taiwanese
 Printer being deleted%0
 .
+Language=Finnish
+Tulostinta poistetaan%0
+.
 
 MessageId=4830
 Severity=Success
@@ -30808,6 +33998,9 @@ Printer status unknown%0
 .
 Language=Taiwanese
 Printer status unknown%0
+.
+Language=Finnish
+Tulostimen tila tuntematon%0
 .
 
 MessageId=4840
@@ -30838,6 +34031,9 @@ Held until %1%0
 Language=Taiwanese
 Held until %1%0
 .
+Language=Finnish
+Pidossa ajankohtaan %1 asti%0
+.
 
 MessageId=4841
 Severity=Success
@@ -30866,6 +34062,9 @@ Job #%0
 .
 Language=Taiwanese
 Job #%0
+.
+Language=Finnish
+Työ #%0
 .
 
 MessageId=4842
@@ -30896,6 +34095,9 @@ Submitting user%0
 Language=Taiwanese
 Submitting user%0
 .
+Language=Finnish
+Lähettänyt käyttäjä%0
+.
 
 MessageId=4843
 Severity=Success
@@ -30924,6 +34126,9 @@ Notify%0
 .
 Language=Taiwanese
 Notify%0
+.
+Language=Finnish
+Ilmoita%0
 .
 
 MessageId=4844
@@ -30954,6 +34159,9 @@ Job data type%0
 Language=Taiwanese
 Job data type%0
 .
+Language=Finnish
+Työn tietotyyppi%0
+.
 
 MessageId=4845
 Severity=Success
@@ -30982,6 +34190,9 @@ Job parameters%0
 .
 Language=Taiwanese
 Job parameters%0
+.
+Language=Finnish
+Työn parametrit%0
 .
 
 MessageId=4846
@@ -31012,6 +34223,9 @@ Waiting%0
 Language=Taiwanese
 Waiting%0
 .
+Language=Finnish
+Odottaa%0
+.
 
 MessageId=4847
 Severity=Success
@@ -31040,6 +34254,9 @@ Held in queue%0
 .
 Language=Taiwanese
 Held in queue%0
+.
+Language=Finnish
+Pidossa jonossa%0
 .
 
 MessageId=4848
@@ -31070,6 +34287,9 @@ Spooling%0
 Language=Taiwanese
 Spooling%0
 .
+Language=Finnish
+Taustatulostetaan%0
+.
 
 MessageId=4849
 Severity=Success
@@ -31098,6 +34318,9 @@ Paused%0
 .
 Language=Taiwanese
 Paused%0
+.
+Language=Finnish
+Keskeytetty%0
 .
 
 MessageId=4850
@@ -31128,6 +34351,9 @@ Offline%0
 Language=Taiwanese
 Offline%0
 .
+Language=Finnish
+Offline-tilassa%0
+.
 
 MessageId=4851
 Severity=Success
@@ -31156,6 +34382,9 @@ Error%0
 .
 Language=Taiwanese
 Error%0
+.
+Language=Finnish
+Virhe%0
 .
 
 MessageId=4852
@@ -31186,6 +34415,9 @@ Out of paper%0
 Language=Taiwanese
 Out of paper%0
 .
+Language=Finnish
+Paperi lopussa%0
+.
 
 MessageId=4853
 Severity=Success
@@ -31214,6 +34446,9 @@ Intervention required%0
 .
 Language=Taiwanese
 Intervention required%0
+.
+Language=Finnish
+Toimenpiteitä tarvitaan%0
 .
 
 MessageId=4854
@@ -31244,6 +34479,9 @@ Printing%0
 Language=Taiwanese
 Printing%0
 .
+Language=Finnish
+Tulostetaan%0
+.
 
 MessageId=4855
 Severity=Success
@@ -31272,6 +34510,9 @@ on %0
 .
 Language=Taiwanese
 on %0
+.
+Language=Finnish
+kohteessa %0
 .
 
 MessageId=4856
@@ -31302,6 +34543,9 @@ Paused on %1%0
 Language=Taiwanese
 Paused on %1%0
 .
+Language=Finnish
+Keskeytetty kohteessa %1%0
+.
 
 MessageId=4857
 Severity=Success
@@ -31330,6 +34574,9 @@ Offline on %1%0
 .
 Language=Taiwanese
 Offline on %1%0
+.
+Language=Finnish
+Offline-tilassa kohteessa %1%0
 .
 
 MessageId=4858
@@ -31360,6 +34607,9 @@ Error on%1%0
 Language=Taiwanese
 Error on%1%0
 .
+Language=Finnish
+Virhe kohteessa%1%0
+.
 
 MessageId=4859
 Severity=Success
@@ -31388,6 +34638,9 @@ Out of Paper on %1%0
 .
 Language=Taiwanese
 Out of Paper on %1%0
+.
+Language=Finnish
+Paperi lopussa kohteessa %1%0
 .
 
 MessageId=4860
@@ -31418,6 +34671,9 @@ Check printer on %1%0
 Language=Taiwanese
 Check printer on %1%0
 .
+Language=Finnish
+Tarkista tulostin kohteessa %1%0
+.
 
 MessageId=4861
 Severity=Success
@@ -31446,6 +34702,9 @@ Printing on %1%0
 .
 Language=Taiwanese
 Printing on %1%0
+.
+Language=Finnish
+Tulostetaan kohteessa %1%0
 .
 
 MessageId=4862
@@ -31476,6 +34735,9 @@ Driver%0
 Language=Taiwanese
 Driver%0
 .
+Language=Finnish
+Ajuri%0
+.
 
 MessageId=4930
 Severity=Success
@@ -31504,6 +34766,9 @@ User name              Type                 Date%0
 .
 Language=Taiwanese
 User name              Type                 Date%0
+.
+Language=Finnish
+Käyttäjänimi           Tyyppi               Päivämäärä%0
 .
 
 MessageId=4931
@@ -31534,6 +34799,9 @@ Lockout%0
 Language=Taiwanese
 Lockout%0
 .
+Language=Finnish
+Lukitus%0
+.
 
 MessageId=4932
 Severity=Success
@@ -31562,6 +34830,9 @@ Service%0
 .
 Language=Taiwanese
 Service%0
+.
+Language=Finnish
+Palvelu%0
 .
 
 MessageId=4933
@@ -31592,6 +34863,9 @@ Server%0
 Language=Taiwanese
 Server%0
 .
+Language=Finnish
+Palvelin%0
+.
 
 MessageId=4934
 Severity=Success
@@ -31620,6 +34894,9 @@ Server started%0
 .
 Language=Taiwanese
 Server started%0
+.
+Language=Finnish
+Palvelin käynnistetty%0
 .
 
 MessageId=4935
@@ -31650,6 +34927,9 @@ Server paused%0
 Language=Taiwanese
 Server paused%0
 .
+Language=Finnish
+Palvelin keskeytetty%0
+.
 
 MessageId=4936
 Severity=Success
@@ -31678,6 +34958,9 @@ Server continued%0
 .
 Language=Taiwanese
 Server continued%0
+.
+Language=Finnish
+Palvelinta jatkettu%0
 .
 
 MessageId=4937
@@ -31708,6 +34991,9 @@ Server stopped%0
 Language=Taiwanese
 Server stopped%0
 .
+Language=Finnish
+Palvelin pysäytetty%0
+.
 
 MessageId=4938
 Severity=Success
@@ -31736,6 +35022,9 @@ Session%0
 .
 Language=Taiwanese
 Session%0
+.
+Language=Finnish
+Istunto%0
 .
 
 MessageId=4939
@@ -31766,6 +35055,9 @@ Logon Guest%0
 Language=Taiwanese
 Logon Guest%0
 .
+Language=Finnish
+Vieraan kirjautuminen%0
+.
 
 MessageId=4940
 Severity=Success
@@ -31794,6 +35086,9 @@ Logon User%0
 .
 Language=Taiwanese
 Logon User%0
+.
+Language=Finnish
+Käyttäjän kirjautuminen%0
 .
 
 MessageId=4941
@@ -31824,6 +35119,9 @@ Logon Administrator%0
 Language=Taiwanese
 Logon Administrator%0
 .
+Language=Finnish
+Järjestelmänvalvojan kirjautuminen%0
+.
 
 MessageId=4942
 Severity=Success
@@ -31852,6 +35150,9 @@ Logoff normal%0
 .
 Language=Taiwanese
 Logoff normal%0
+.
+Language=Finnish
+Normaali uloskirjautuminen%0
 .
 
 MessageId=4943
@@ -31882,6 +35183,9 @@ Logon%0
 Language=Taiwanese
 Logon%0
 .
+Language=Finnish
+Kirjautuminen%0
+.
 
 MessageId=4944
 Severity=Success
@@ -31910,6 +35214,9 @@ Logoff error%0
 .
 Language=Taiwanese
 Logoff error%0
+.
+Language=Finnish
+Uloskirjautumisvirhe%0
 .
 
 MessageId=4945
@@ -31940,6 +35247,9 @@ Logoff auto-disconnect%0
 Language=Taiwanese
 Logoff auto-disconnect%0
 .
+Language=Finnish
+Uloskirjautuminen, automaattinen katkaisu%0
+.
 
 MessageId=4946
 Severity=Success
@@ -31968,6 +35278,9 @@ Logoff administrator-disconnect%0
 .
 Language=Taiwanese
 Logoff administrator-disconnect%0
+.
+Language=Finnish
+Uloskirjautuminen, järjestelmänvalvojan katkaisu%0
 .
 
 MessageId=4947
@@ -31998,6 +35311,9 @@ Logoff forced by logon restrictions%0
 Language=Taiwanese
 Logoff forced by logon restrictions%0
 .
+Language=Finnish
+Kirjautumisrajoitusten pakottama uloskirjautuminen%0
+.
 
 MessageId=4948
 Severity=Success
@@ -32026,6 +35342,9 @@ Service%0
 .
 Language=Taiwanese
 Service%0
+.
+Language=Finnish
+Palvelu%0
 .
 
 MessageId=4949
@@ -32056,6 +35375,9 @@ Language=Chinese
 Language=Taiwanese
 %1 Installed%0
 .
+Language=Finnish
+%1 asennettu%0
+.
 
 MessageId=4950
 Severity=Success
@@ -32084,6 +35406,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 Install Pending%0
+.
+Language=Finnish
+%1 asennus kesken%0
 .
 
 MessageId=4951
@@ -32114,6 +35439,9 @@ Language=Chinese
 Language=Taiwanese
 %1 Paused%0
 .
+Language=Finnish
+%1 keskeytetty%0
+.
 
 MessageId=4952
 Severity=Success
@@ -32142,6 +35470,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 Pause Pending%0
+.
+Language=Finnish
+%1 keskeytys kesken%0
 .
 
 MessageId=4953
@@ -32172,6 +35503,9 @@ Language=Chinese
 Language=Taiwanese
 %1 Continued%0
 .
+Language=Finnish
+%1 jatkettu%0
+.
 
 MessageId=4954
 Severity=Success
@@ -32200,6 +35534,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 Continue Pending%0
+.
+Language=Finnish
+%1 jatkaminen kesken%0
 .
 
 MessageId=4955
@@ -32230,6 +35567,9 @@ Language=Chinese
 Language=Taiwanese
 %1 Stopped%0
 .
+Language=Finnish
+%1 pysäytetty%0
+.
 
 MessageId=4956
 Severity=Success
@@ -32258,6 +35598,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 Stop Pending%0
+.
+Language=Finnish
+%1 pysäytys kesken%0
 .
 
 MessageId=4957
@@ -32288,6 +35631,9 @@ Account%0
 Language=Taiwanese
 Account%0
 .
+Language=Finnish
+Tili%0
+.
 
 MessageId=4958
 Severity=Success
@@ -32316,6 +35662,9 @@ User account %1 was modified.%0
 .
 Language=Taiwanese
 User account %1 was modified.%0
+.
+Language=Finnish
+Käyttäjätiliä %1 muokattiin.%0
 .
 
 MessageId=4959
@@ -32346,6 +35695,9 @@ Group account %1 was modified.%0
 Language=Taiwanese
 Group account %1 was modified.%0
 .
+Language=Finnish
+Ryhmätiliä %1 muokattiin.%0
+.
 
 MessageId=4960
 Severity=Success
@@ -32374,6 +35726,9 @@ User account %1 was deleted%0
 .
 Language=Taiwanese
 User account %1 was deleted%0
+.
+Language=Finnish
+Käyttäjätili %1 poistettiin%0
 .
 
 MessageId=4961
@@ -32404,6 +35759,9 @@ Group account %1 was deleted%0
 Language=Taiwanese
 Group account %1 was deleted%0
 .
+Language=Finnish
+Ryhmätili %1 poistettiin%0
+.
 
 MessageId=4962
 Severity=Success
@@ -32432,6 +35790,9 @@ User account %1 was added%0
 .
 Language=Taiwanese
 User account %1 was added%0
+.
+Language=Finnish
+Käyttäjätili %1 lisättiin%0
 .
 
 MessageId=4963
@@ -32462,6 +35823,9 @@ Group account %1 was added%0
 Language=Taiwanese
 Group account %1 was added%0
 .
+Language=Finnish
+Ryhmätili %1 lisättiin%0
+.
 
 MessageId=4964
 Severity=Success
@@ -32490,6 +35854,9 @@ Account system settings were modified%0
 .
 Language=Taiwanese
 Account system settings were modified%0
+.
+Language=Finnish
+Tilin järjestelmäasetuksia muokattiin%0
 .
 
 MessageId=4965
@@ -32520,6 +35887,9 @@ Logon restriction%0
 Language=Taiwanese
 Logon restriction%0
 .
+Language=Finnish
+Kirjautumisrajoitus%0
+.
 
 MessageId=4966
 Severity=Success
@@ -32548,6 +35918,9 @@ Limit exceeded:  UNKNOWN%0
 .
 Language=Taiwanese
 Limit exceeded:  UNKNOWN%0
+.
+Language=Finnish
+Raja ylitetty:  TUNTEMATON%0
 .
 
 MessageId=4967
@@ -32578,6 +35951,9 @@ Limit exceeded:  Logon hours%0
 Language=Taiwanese
 Limit exceeded:  Logon hours%0
 .
+Language=Finnish
+Raja ylitetty:  Kirjautumisajat%0
+.
 
 MessageId=4968
 Severity=Success
@@ -32606,6 +35982,9 @@ Limit exceeded:  Account expired%0
 .
 Language=Taiwanese
 Limit exceeded:  Account expired%0
+.
+Language=Finnish
+Raja ylitetty:  Tili vanhentunut%0
 .
 
 MessageId=4969
@@ -32636,6 +36015,9 @@ Limit exceeded:  Workstation ID invalid%0
 Language=Taiwanese
 Limit exceeded:  Workstation ID invalid%0
 .
+Language=Finnish
+Raja ylitetty:  Työaseman tunnus virheellinen%0
+.
 
 MessageId=4970
 Severity=Success
@@ -32664,6 +36046,9 @@ Limit exceeded:  Account disabled%0
 .
 Language=Taiwanese
 Limit exceeded:  Account disabled%0
+.
+Language=Finnish
+Raja ylitetty:  Tili poistettu käytöstä%0
 .
 
 MessageId=4971
@@ -32694,6 +36079,9 @@ Limit exceeded:  Account deleted%0
 Language=Taiwanese
 Limit exceeded:  Account deleted%0
 .
+Language=Finnish
+Raja ylitetty:  Tili poistettu%0
+.
 
 MessageId=4972
 Severity=Success
@@ -32722,6 +36110,9 @@ Share%0
 .
 Language=Taiwanese
 Share%0
+.
+Language=Finnish
+Jako%0
 .
 
 MessageId=4973
@@ -32752,6 +36143,9 @@ Use %1%0
 Language=Taiwanese
 Use %1%0
 .
+Language=Finnish
+Käytä %1%0
+.
 
 MessageId=4974
 Severity=Success
@@ -32780,6 +36174,9 @@ Unuse %1%0
 .
 Language=Taiwanese
 Unuse %1%0
+.
+Language=Finnish
+Lopeta käyttö %1%0
 .
 
 MessageId=4975
@@ -32810,6 +36207,9 @@ User's session disconnected %1%0
 Language=Taiwanese
 User's session disconnected %1%0
 .
+Language=Finnish
+Käyttäjän istunto katkaistu %1%0
+.
 
 MessageId=4976
 Severity=Success
@@ -32838,6 +36238,9 @@ Administrator stopped sharing resource %1%0
 .
 Language=Taiwanese
 Administrator stopped sharing resource %1%0
+.
+Language=Finnish
+Järjestelmänvalvoja lopetti resurssin %1 jakamisen%0
 .
 
 MessageId=4977
@@ -32868,6 +36271,9 @@ User reached limit for %1%0
 Language=Taiwanese
 User reached limit for %1%0
 .
+Language=Finnish
+Käyttäjä saavutti kohteen %1 rajan%0
+.
 
 MessageId=4978
 Severity=Success
@@ -32896,6 +36302,9 @@ Bad password%0
 .
 Language=Taiwanese
 Bad password%0
+.
+Language=Finnish
+Virheellinen salasana%0
 .
 
 MessageId=4979
@@ -32926,6 +36335,9 @@ Administrator privilege required%0
 Language=Taiwanese
 Administrator privilege required%0
 .
+Language=Finnish
+Järjestelmänvalvojan oikeudet vaaditaan%0
+.
 
 MessageId=4980
 Severity=Success
@@ -32954,6 +36366,9 @@ Access%0
 .
 Language=Taiwanese
 Access%0
+.
+Language=Finnish
+Käyttö%0
 .
 
 MessageId=4981
@@ -32984,6 +36399,9 @@ Language=Chinese
 Language=Taiwanese
 %1 permissions added%0
 .
+Language=Finnish
+%1 käyttöoikeutta lisätty%0
+.
 
 MessageId=4982
 Severity=Success
@@ -33012,6 +36430,9 @@ Language=Chinese
 .
 Language=Taiwanese
 %1 permissions modified%0
+.
+Language=Finnish
+%1 käyttöoikeutta muokattu%0
 .
 
 MessageId=4983
@@ -33042,6 +36463,9 @@ Language=Chinese
 Language=Taiwanese
 %1 permissions deleted%0
 .
+Language=Finnish
+%1 käyttöoikeutta poistettu%0
+.
 
 MessageId=4984
 Severity=Success
@@ -33070,6 +36494,9 @@ Access denied%0
 .
 Language=Taiwanese
 Access denied%0
+.
+Language=Finnish
+Käyttö estetty%0
 .
 
 MessageId=4985
@@ -33100,6 +36527,9 @@ Unknown%0
 Language=Taiwanese
 Unknown%0
 .
+Language=Finnish
+Tuntematon%0
+.
 
 MessageId=4986
 Severity=Success
@@ -33128,6 +36558,9 @@ Other%0
 .
 Language=Taiwanese
 Other%0
+.
+Language=Finnish
+Muu%0
 .
 
 MessageId=4987
@@ -33158,6 +36591,9 @@ Duration:%0
 Language=Taiwanese
 Duration:%0
 .
+Language=Finnish
+Kesto:%0
+.
 
 MessageId=4988
 Severity=Success
@@ -33186,6 +36622,9 @@ Duration: Not available%0
 .
 Language=Taiwanese
 Duration: Not available%0
+.
+Language=Finnish
+Kesto: Ei saatavilla%0
 .
 
 MessageId=4989
@@ -33216,6 +36655,9 @@ Duration: Less than one second%0
 Language=Taiwanese
 Duration: Less than one second%0
 .
+Language=Finnish
+Kesto: Alle sekunti%0
+.
 
 MessageId=4990
 Severity=Success
@@ -33244,6 +36686,9 @@ Language=Chinese
 .
 Language=Taiwanese
 (none)%0
+.
+Language=Finnish
+(ei mitään)%0
 .
 
 MessageId=4991
@@ -33274,6 +36719,9 @@ Closed %1%0
 Language=Taiwanese
 Closed %1%0
 .
+Language=Finnish
+Suljettu %1%0
+.
 
 MessageId=4992
 Severity=Success
@@ -33302,6 +36750,9 @@ Closed %1 (disconnected)%0
 .
 Language=Taiwanese
 Closed %1 (disconnected)%0
+.
+Language=Finnish
+Suljettu %1 (yhteys katkaistu)%0
 .
 
 MessageId=4993
@@ -33332,6 +36783,9 @@ Administrator closed %1%0
 Language=Taiwanese
 Administrator closed %1%0
 .
+Language=Finnish
+Järjestelmänvalvoja sulki kohteen %1%0
+.
 
 MessageId=4994
 Severity=Success
@@ -33360,6 +36814,9 @@ Access ended%0
 .
 Language=Taiwanese
 Access ended%0
+.
+Language=Finnish
+Käyttö päättyi%0
 .
 
 MessageId=4995
@@ -33390,6 +36847,9 @@ Log on to network%0
 Language=Taiwanese
 Log on to network%0
 .
+Language=Finnish
+Kirjaudu verkkoon%0
+.
 
 MessageId=4996
 Severity=Success
@@ -33418,6 +36878,9 @@ Logon denied%0
 .
 Language=Taiwanese
 Logon denied%0
+.
+Language=Finnish
+Kirjautuminen estetty%0
 .
 
 MessageId=4997
@@ -33448,6 +36911,9 @@ Program             Message             Time%0
 Language=Taiwanese
 Program             Message             Time%0
 .
+Language=Finnish
+Ohjelma             Viesti              Aika%0
+.
 
 MessageId=4998
 Severity=Success
@@ -33476,6 +36942,9 @@ Account locked due to %1 bad passwords%0
 .
 Language=Taiwanese
 Account locked due to %1 bad passwords%0
+.
+Language=Finnish
+Tili lukittu %1 virheellisen salasanan vuoksi%0
 .
 
 MessageId=4999
@@ -33506,6 +36975,9 @@ Account unlocked by administrator%0
 Language=Taiwanese
 Account unlocked by administrator%0
 .
+Language=Finnish
+Järjestelmänvalvoja avasi tilin lukituksen%0
+.
 
 MessageId=5000
 Severity=Success
@@ -33535,6 +37007,9 @@ Log off network%0
 Language=Taiwanese
 Log off network%0
 .
+Language=Finnish
+Kirjaudu ulos verkosta%0
+.
 
 MessageId=5009
 Severity=Success
@@ -33562,6 +37037,9 @@ Language=Chinese
 
 .
 Language=Taiwanese
+
+.
+Language=Finnish
 
 .
 
@@ -33593,6 +37071,9 @@ Subj:   ** ADMINISTRATOR ALERT **
 Language=Taiwanese
 Subj:   ** ADMINISTRATOR ALERT **
 .
+Language=Finnish
+Aihe:   ** JÄRJESTELMÄNVALVOJAN HÄLYTYS **
+.
 
 MessageId=5011
 Severity=Success
@@ -33621,6 +37102,9 @@ Subj:   ** PRINTING NOTIFICATION **
 .
 Language=Taiwanese
 Subj:   ** PRINTING NOTIFICATION **
+.
+Language=Finnish
+Aihe:   ** TULOSTUSILMOITUS **
 .
 
 MessageId=5012
@@ -33651,6 +37135,9 @@ Subj:   ** USER NOTIFICATION **
 Language=Taiwanese
 Subj:   ** USER NOTIFICATION **
 .
+Language=Finnish
+Aihe:   ** KÄYTTÄJÄILMOITUS **
+.
 
 MessageId=5013
 Severity=Success
@@ -33679,6 +37166,9 @@ From:   %1 at \\%2
 .
 Language=Taiwanese
 From:   %1 at \\%2
+.
+Language=Finnish
+Lähettäjä: %1 kohteessa \\%2
 .
 
 MessageId=5014
@@ -33709,6 +37199,9 @@ Print job %1 has been canceled while printing on %2.
 Language=Taiwanese
 Print job %1 has been canceled while printing on %2.
 .
+Language=Finnish
+Tulostustyö %1 peruutettiin tulostettaessa kohteessa %2.
+.
 
 MessageId=5015
 Severity=Success
@@ -33737,6 +37230,9 @@ Print job %1 has been deleted and will not print.
 .
 Language=Taiwanese
 Print job %1 has been deleted and will not print.
+.
+Language=Finnish
+Tulostustyö %1 on poistettu, eikä sitä tulosteta.
 .
 
 MessageId=5016
@@ -33770,6 +37266,10 @@ Language=Chinese
 Language=Taiwanese
 %1 printed successfully on %2.
 .
+Language=Finnish
+Tulostus valmis\n\n
+%1 tulostettiin onnistuneesti kohteessa %2.
+.
 
 MessageId=5017
 Severity=Success
@@ -33798,6 +37298,9 @@ Print job %1 has not completed printing on %2.
 .
 Language=Taiwanese
 Print job %1 has not completed printing on %2.
+.
+Language=Finnish
+Tulostustyön %1 tulostus kohteessa %2 ei ole valmis.
 .
 
 MessageId=5018
@@ -33828,6 +37331,9 @@ Print job %1 has paused printing on %2.
 Language=Taiwanese
 Print job %1 has paused printing on %2.
 .
+Language=Finnish
+Tulostustyön %1 tulostus kohteessa %2 on keskeytetty.
+.
 
 MessageId=5019
 Severity=Success
@@ -33856,6 +37362,9 @@ Print job %1 is now printing on %2.
 .
 Language=Taiwanese
 Print job %1 is now printing on %2.
+.
+Language=Finnish
+Tulostustyötä %1 tulostetaan nyt kohteessa %2.
 .
 
 MessageId=5020
@@ -33886,6 +37395,9 @@ The printer is out of paper.
 Language=Taiwanese
 The printer is out of paper.
 .
+Language=Finnish
+Tulostimesta on paperi lopussa.
+.
 
 MessageId=5021
 Severity=Success
@@ -33914,6 +37426,9 @@ The printer is offline.
 .
 Language=Taiwanese
 The printer is offline.
+.
+Language=Finnish
+Tulostin on offline-tilassa.
 .
 
 MessageId=5022
@@ -33944,6 +37459,9 @@ Printing errors occurred.
 Language=Taiwanese
 Printing errors occurred.
 .
+Language=Finnish
+Tapahtui tulostusvirheitä.
+.
 
 MessageId=5023
 Severity=Success
@@ -33972,6 +37490,9 @@ There is a problem with the printer; please check it.
 .
 Language=Taiwanese
 There is a problem with the printer; please check it.
+.
+Language=Finnish
+Tulostimessa on ongelma; tarkista se.
 .
 
 MessageId=5024
@@ -34002,6 +37523,9 @@ Print job %1 is being held from printing.
 Language=Taiwanese
 Print job %1 is being held from printing.
 .
+Language=Finnish
+Tulostustyö %1 on pidätetty tulostuksesta.
+.
 
 MessageId=5025
 Severity=Success
@@ -34030,6 +37554,9 @@ Print job %1 is queued for printing.
 .
 Language=Taiwanese
 Print job %1 is queued for printing.
+.
+Language=Finnish
+Tulostustyö %1 on jonossa tulostettavaksi.
 .
 
 MessageId=5026
@@ -34060,6 +37587,9 @@ Print job %1 is being spooled.
 Language=Taiwanese
 Print job %1 is being spooled.
 .
+Language=Finnish
+Tulostustyötä %1 taustatulostetaan.
+.
 
 MessageId=5027
 Severity=Success
@@ -34088,6 +37618,9 @@ Job was queued to %1 on %2
 .
 Language=Taiwanese
 Job was queued to %1 on %2
+.
+Language=Finnish
+Työ lisättiin jonoon %1 kohteessa %2
 .
 
 MessageId=5028
@@ -34118,6 +37651,9 @@ Size of job is %1 bytes.
 Language=Taiwanese
 Size of job is %1 bytes.
 .
+Language=Finnish
+Työn koko on %1 tavua.
+.
 
 MessageId=5030
 Severity=Success
@@ -34147,6 +37683,9 @@ To:     %1
 Language=Taiwanese
 To:     %1
 .
+Language=Finnish
+Vastaanottaja: %1
+.
 
 MessageId=5031
 Severity=Success
@@ -34175,6 +37714,9 @@ Date:   %1
 .
 Language=Taiwanese
 Date:   %1
+.
+Language=Finnish
+Päiväys: %1
 .
 
 MessageId=5032
@@ -34221,6 +37763,11 @@ The error code is %1.\n
 There was an error retrieving the message. Make sure the file\n
 NET.MSG is available.
 .
+Language=Finnish
+Virhekoodi on %1.\n
+Viestin noutamisessa tapahtui virhe. Varmista, että tiedosto\n
+NET.MSG on käytettävissä.
+.
 
 MessageId=5033
 Severity=Success
@@ -34265,6 +37812,11 @@ Language=Taiwanese
 Printing Failed\n\n
 \"%1\" failed to print on %2 on %3.\n\n
 For more help use the print troubleshooter.
+.
+Language=Finnish
+Tulostus epäonnistui\n\n
+Kohteen \"%1\" tulostus epäonnistui kohteessa %2 kohteessa %3.\n\n
+Saat lisäohjeita tulostuksen vianmääritystoiminnolla.
 .
 
 MessageId=5034
@@ -34311,6 +37863,11 @@ Printing Failed\n\n
 \"%1\" failed to print on %2 on %3.  The Printer is %4.\n\n
 For more help use the print troubleshooter.
 .
+Language=Finnish
+Tulostus epäonnistui\n\n
+Kohteen \"%1\" tulostus epäonnistui kohteessa %2 kohteessa %3.  Tulostin on %4.\n\n
+Saat lisäohjeita tulostuksen vianmääritystoiminnolla.
+.
 
 MessageId=5035
 Severity=Success
@@ -34348,6 +37905,10 @@ Language=Taiwanese
 Printing Complete\n\n
 \"%1\" printed successfully on %2 on %3.
 .
+Language=Finnish
+Tulostus valmis\n\n
+\"%1\" tulostettiin onnistuneesti kohteessa %2 kohteessa %3.
+.
 
 MessageId=5041
 Severity=Success
@@ -34376,6 +37937,9 @@ January%0
 .
 Language=Taiwanese
 January%0
+.
+Language=Finnish
+Tammikuu%0
 .
 
 MessageId=5042
@@ -34406,6 +37970,9 @@ February%0
 Language=Taiwanese
 February%0
 .
+Language=Finnish
+Helmikuu%0
+.
 
 MessageId=5043
 Severity=Success
@@ -34434,6 +38001,9 @@ March%0
 .
 Language=Taiwanese
 March%0
+.
+Language=Finnish
+Maaliskuu%0
 .
 
 MessageId=5044
@@ -34464,6 +38034,9 @@ April%0
 Language=Taiwanese
 April%0
 .
+Language=Finnish
+Huhtikuu%0
+.
 
 MessageId=5045
 Severity=Success
@@ -34492,6 +38065,9 @@ May%0
 .
 Language=Taiwanese
 May%0
+.
+Language=Finnish
+Toukokuu%0
 .
 
 MessageId=5046
@@ -34522,6 +38098,9 @@ June%0
 Language=Taiwanese
 June%0
 .
+Language=Finnish
+Kesäkuu%0
+.
 
 MessageId=5047
 Severity=Success
@@ -34550,6 +38129,9 @@ July%0
 .
 Language=Taiwanese
 July%0
+.
+Language=Finnish
+Heinäkuu%0
 .
 
 MessageId=5048
@@ -34580,6 +38162,9 @@ August%0
 Language=Taiwanese
 August%0
 .
+Language=Finnish
+Elokuu%0
+.
 
 MessageId=5049
 Severity=Success
@@ -34608,6 +38193,9 @@ September%0
 .
 Language=Taiwanese
 September%0
+.
+Language=Finnish
+Syyskuu%0
 .
 
 MessageId=5050
@@ -34638,6 +38226,9 @@ October%0
 Language=Taiwanese
 October%0
 .
+Language=Finnish
+Lokakuu%0
+.
 
 MessageId=5051
 Severity=Success
@@ -34666,6 +38257,9 @@ November%0
 .
 Language=Taiwanese
 November%0
+.
+Language=Finnish
+Marraskuu%0
 .
 
 MessageId=5052
@@ -34696,6 +38290,9 @@ December%0
 Language=Taiwanese
 December%0
 .
+Language=Finnish
+Joulukuu%0
+.
 
 MessageId=5053
 Severity=Success
@@ -34724,6 +38321,9 @@ Jan%0
 .
 Language=Taiwanese
 Jan%0
+.
+Language=Finnish
+Tammi%0
 .
 
 MessageId=5054
@@ -34754,6 +38354,9 @@ Feb%0
 Language=Taiwanese
 Feb%0
 .
+Language=Finnish
+Helmi%0
+.
 
 MessageId=5055
 Severity=Success
@@ -34782,6 +38385,9 @@ Mar%0
 .
 Language=Taiwanese
 Mar%0
+.
+Language=Finnish
+Maalis%0
 .
 
 MessageId=5056
@@ -34812,6 +38418,9 @@ Apr%0
 Language=Taiwanese
 Apr%0
 .
+Language=Finnish
+Huhti%0
+.
 
 MessageId=5057
 Severity=Success
@@ -34840,6 +38449,9 @@ May%0
 .
 Language=Taiwanese
 May%0
+.
+Language=Finnish
+Touko%0
 .
 
 MessageId=5058
@@ -34870,6 +38482,9 @@ Jun%0
 Language=Taiwanese
 Jun%0
 .
+Language=Finnish
+Kesä%0
+.
 
 MessageId=5059
 Severity=Success
@@ -34898,6 +38513,9 @@ Jul%0
 .
 Language=Taiwanese
 Jul%0
+.
+Language=Finnish
+Heinä%0
 .
 
 MessageId=5060
@@ -34928,6 +38546,9 @@ Aug%0
 Language=Taiwanese
 Aug%0
 .
+Language=Finnish
+Elo%0
+.
 
 MessageId=5061
 Severity=Success
@@ -34956,6 +38577,9 @@ Sep%0
 .
 Language=Taiwanese
 Sep%0
+.
+Language=Finnish
+Syys%0
 .
 
 MessageId=5062
@@ -34986,6 +38610,9 @@ Oct%0
 Language=Taiwanese
 Oct%0
 .
+Language=Finnish
+Loka%0
+.
 
 MessageId=5063
 Severity=Success
@@ -35014,6 +38641,9 @@ Nov%0
 .
 Language=Taiwanese
 Nov%0
+.
+Language=Finnish
+Marras%0
 .
 
 MessageId=5064
@@ -35044,6 +38674,9 @@ Dec%0
 Language=Taiwanese
 Dec%0
 .
+Language=Finnish
+Joulu%0
+.
 
 MessageId=5065
 Severity=Success
@@ -35072,6 +38705,9 @@ D%0
 .
 Language=Taiwanese
 D%0
+.
+Language=Finnish
+pv%0
 .
 
 MessageId=5066
@@ -35102,6 +38738,9 @@ H%0
 Language=Taiwanese
 H%0
 .
+Language=Finnish
+t%0
+.
 
 MessageId=5067
 Severity=Success
@@ -35130,6 +38769,9 @@ M%0
 .
 Language=Taiwanese
 M%0
+.
+Language=Finnish
+min%0
 .
 
 MessageId=5068
@@ -35160,6 +38802,9 @@ Sa%0
 Language=Taiwanese
 Sa%0
 .
+Language=Finnish
+s%0
+.
 
 MessageId=5070
 Severity=Success
@@ -35188,6 +38833,9 @@ Language=Chinese
 .
 Language=Taiwanese
 主伺服器%0.
+.
+Language=Finnish
+ENSISIJAINEN%0.
 .
 
 MessageId=5071
@@ -35218,6 +38866,9 @@ Language=Chinese
 Language=Taiwanese
 備份伺服器%0.
 .
+Language=Finnish
+VARMUUSKOPIO%0.
+.
 
 MessageId=5072
 Severity=Success
@@ -35246,6 +38897,9 @@ Language=Chinese
 .
 Language=Taiwanese
 工作站%0.
+.
+Language=Finnish
+TYÖASEMA%0.
 .
 
 MessageId=5073
@@ -35276,6 +38930,9 @@ Language=Chinese
 Language=Taiwanese
 獨立伺服器%0.
 .
+Language=Finnish
+PALVELIN%0.
+.
 
 MessageId=5080
 Severity=Success
@@ -35304,6 +38961,9 @@ System Default%0
 .
 Language=Taiwanese
 System Default%0
+.
+Language=Finnish
+Järjestelmän oletus%0
 .
 
 MessageId=5081
@@ -35334,6 +38994,9 @@ United States%0
 Language=Taiwanese
 United States%0
 .
+Language=Finnish
+Yhdysvallat%0
+.
 
 MessageId=5082
 Severity=Success
@@ -35362,6 +39025,9 @@ Canada (French)%0
 .
 Language=Taiwanese
 Canada (French)%0
+.
+Language=Finnish
+Kanada (ranska)%0
 .
 
 MessageId=5083
@@ -35392,6 +39058,9 @@ Latin America%0
 Language=Taiwanese
 Latin America%0
 .
+Language=Finnish
+Latinalainen Amerikka%0
+.
 
 MessageId=5084
 Severity=Success
@@ -35420,6 +39089,9 @@ Netherlands%0
 .
 Language=Taiwanese
 Netherlands%0
+.
+Language=Finnish
+Alankomaat%0
 .
 
 MessageId=5085
@@ -35450,6 +39122,9 @@ Belgium%0
 Language=Taiwanese
 Belgium%0
 .
+Language=Finnish
+Belgia%0
+.
 
 MessageId=5086
 Severity=Success
@@ -35478,6 +39153,9 @@ France%0
 .
 Language=Taiwanese
 France%0
+.
+Language=Finnish
+Ranska%0
 .
 
 MessageId=5087
@@ -35508,6 +39186,9 @@ Italy%0
 Language=Taiwanese
 Italy%0
 .
+Language=Finnish
+Italia%0
+.
 
 MessageId=5088
 Severity=Success
@@ -35536,6 +39217,9 @@ Switzerland%0
 .
 Language=Taiwanese
 Switzerland%0
+.
+Language=Finnish
+Sveitsi%0
 .
 
 MessageId=5089
@@ -35566,6 +39250,9 @@ United Kingdom%0
 Language=Taiwanese
 United Kingdom%0
 .
+Language=Finnish
+Iso-Britannia%0
+.
 
 MessageId=5090
 Severity=Success
@@ -35594,6 +39281,9 @@ Spain%0
 .
 Language=Taiwanese
 Spain%0
+.
+Language=Finnish
+Espanja%0
 .
 
 MessageId=5091
@@ -35624,6 +39314,9 @@ Denmark%0
 Language=Taiwanese
 Denmark%0
 .
+Language=Finnish
+Tanska%0
+.
 
 MessageId=5092
 Severity=Success
@@ -35652,6 +39345,9 @@ Sweden%0
 .
 Language=Taiwanese
 Sweden%0
+.
+Language=Finnish
+Ruotsi%0
 .
 
 MessageId=5093
@@ -35682,6 +39378,9 @@ Norway%0
 Language=Taiwanese
 Norway%0
 .
+Language=Finnish
+Norja%0
+.
 
 MessageId=5094
 Severity=Success
@@ -35711,6 +39410,9 @@ Germany%0
 Language=Taiwanese
 Germany%0
 .
+Language=Finnish
+Saksa%0
+.
 
 MessageId=5095
 Severity=Success
@@ -35738,6 +39440,9 @@ Language=Chinese
 Australia%0
 .
 Language=Taiwanese
+Australia%0
+.
+Language=Finnish
 Australia%0
 .
 
@@ -35769,6 +39474,9 @@ Japan%0
 Language=Taiwanese
 Japan%0
 .
+Language=Finnish
+Japani%0
+.
 
 MessageId=5097
 Severity=Success
@@ -35796,6 +39504,9 @@ Language=Chinese
 Korea%0
 .
 Language=Taiwanese
+Korea%0
+.
+Language=Finnish
 Korea%0
 .
 
@@ -35827,6 +39538,9 @@ China (PRC)%0
 Language=Taiwanese
 China (PRC)%0
 .
+Language=Finnish
+Kiina (Kiinan kansantasavalta)%0
+.
 
 MessageId=5099
 Severity=Success
@@ -35854,6 +39568,9 @@ Language=Chinese
 Taiwan%0
 .
 Language=Taiwanese
+Taiwan%0
+.
+Language=Finnish
 Taiwan%0
 .
 
@@ -35885,6 +39602,9 @@ Asia%0
 Language=Taiwanese
 Asia%0
 .
+Language=Finnish
+Aasia%0
+.
 
 MessageId=5101
 Severity=Success
@@ -35913,6 +39633,9 @@ Portugal%0
 .
 Language=Taiwanese
 Portugal%0
+.
+Language=Finnish
+Portugali%0
 .
 
 MessageId=5102
@@ -35943,6 +39666,9 @@ Finland%0
 Language=Taiwanese
 Finland%0
 .
+Language=Finnish
+Suomi%0
+.
 
 MessageId=5103
 Severity=Success
@@ -35971,6 +39697,9 @@ Arabic%0
 .
 Language=Taiwanese
 Arabic%0
+.
+Language=Finnish
+Arabia%0
 .
 
 MessageId=5104
@@ -36001,6 +39730,9 @@ Hebrew%0
 Language=Taiwanese
 Hebrew%0
 .
+Language=Finnish
+Heprea%0
+.
 
 MessageId=5150
 Severity=Success
@@ -36029,6 +39761,9 @@ A power failure has occurred at %1.  Please terminate all activity with this ser
 .
 Language=Taiwanese
 A power failure has occurred at %1.  Please terminate all activity with this server.
+.
+Language=Finnish
+Kohteessa %1 on tapahtunut sähkökatko.  Lopeta kaikki toiminta tällä palvelimella.
 .
 
 MessageId=5151
@@ -36059,6 +39794,9 @@ Power has been restored at %1.  Normal operations have resumed.
 Language=Taiwanese
 Power has been restored at %1.  Normal operations have resumed.
 .
+Language=Finnish
+Sähköt on palautettu kohteessa %1.  Normaali toiminta on jatkunut.
+.
 
 MessageId=5152
 Severity=Success
@@ -36087,6 +39825,9 @@ The UPS service is starting shut down at %1.
 .
 Language=Taiwanese
 The UPS service is starting shut down at %1.
+.
+Language=Finnish
+UPS-palvelu aloittaa sammutuksen kohteessa %1.
 .
 
 MessageId=5153
@@ -36117,6 +39858,9 @@ The UPS service is about to perform final shut down.
 Language=Taiwanese
 The UPS service is about to perform final shut down.
 .
+Language=Finnish
+UPS-palvelu on suorittamassa lopullista sammutusta.
+.
 
 MessageId=5170
 Severity=Success
@@ -36145,6 +39889,9 @@ The Workstation must be started with the NET START command.
 .
 Language=Taiwanese
 The Workstation must be started with the NET START command.
+.
+Language=Finnish
+Workstation on käynnistettävä NET START -komennolla.
 .
 
 MessageId=5175
@@ -36175,6 +39922,9 @@ Remote IPC%0
 Language=Taiwanese
 Remote IPC%0
 .
+Language=Finnish
+Etä-IPC%0
+.
 
 MessageId=5176
 Severity=Success
@@ -36204,6 +39954,9 @@ Remote Admin%0
 Language=Taiwanese
 Remote Admin%0
 .
+Language=Finnish
+Etähallinta%0
+.
 
 MessageId=5177
 Severity=Success
@@ -36232,6 +39985,9 @@ Default share%0
 .
 Language=Taiwanese
 Default share%0
+.
+Language=Finnish
+Oletusjako%0
 .
 
 MessageId=5280
@@ -36278,6 +40034,11 @@ The password entered is longer than 14 characters.  Computers\n
 with Windows prior to Windows 2000 will not be able to use\n
 this account. Do you want to continue this operation? %1: %0
 .
+Language=Finnish
+Annettu salasana on yli 14 merkkiä pitkä.  Tietokoneet,\n
+joissa on Windows 2000:ta vanhempi Windows, eivät voi käyttää\n
+tätä tiliä. Haluatko jatkaa tätä toimintoa? %1: %0
+.
 
 MessageId=5281
 Severity=Success
@@ -36314,6 +40075,10 @@ want to overwrite the remembered connection? %3: %0
 Language=Taiwanese
 %1 has a remembered connection to %2. Do you\n
 want to overwrite the remembered connection? %3: %0
+.
+Language=Finnish
+Kohteella %1 on muistettu yhteys kohteeseen %2. Haluatko\n
+korvata muistetun yhteyden? %3: %0
 .
 
 MessageId=5282
@@ -36352,6 +40117,10 @@ Language=Taiwanese
 Do you want to resume loading the profile?  The command which\n
 caused the error will be ignored. %1: %0
 .
+Language=Finnish
+Haluatko jatkaa profiilin lataamista?  Virheen aiheuttanut\n
+komento ohitetaan. %1: %0
+.
 
 MessageId=5284
 Severity=Success
@@ -36380,6 +40149,9 @@ Do you want to continue this operation? %1: %0
 .
 Language=Taiwanese
 Do you want to continue this operation? %1: %0
+.
+Language=Finnish
+Haluatko jatkaa tätä toimintoa? %1: %0
 .
 
 MessageId=5285
@@ -36410,6 +40182,9 @@ Do you want to add this? %1: %0
 Language=Taiwanese
 Do you want to add this? %1: %0
 .
+Language=Finnish
+Haluatko lisätä tämän? %1: %0
+.
 
 MessageId=5286
 Severity=Success
@@ -36438,6 +40213,9 @@ Do you want to continue this operation? %1: %0
 .
 Language=Taiwanese
 Do you want to continue this operation? %1: %0
+.
+Language=Finnish
+Haluatko jatkaa tätä toimintoa? %1: %0
 .
 
 MessageId=5287
@@ -36468,6 +40246,9 @@ Is it OK to start it? %1: %0
 Language=Taiwanese
 Is it OK to start it? %1: %0
 .
+Language=Finnish
+Saako sen käynnistää? %1: %0
+.
 
 MessageId=5288
 Severity=Success
@@ -36497,6 +40278,9 @@ Do you want to start the Workstation service? %1: %0
 Language=Taiwanese
 Do you want to start the Workstation service? %1: %0
 .
+Language=Finnish
+Haluatko käynnistää Workstation-palvelun? %1: %0
+.
 
 MessageId=5289
 Severity=Success
@@ -36525,6 +40309,9 @@ Is it OK to continue disconnecting and force them closed? %1: %0
 .
 Language=Taiwanese
 Is it OK to continue disconnecting and force them closed? %1: %0
+.
+Language=Finnish
+Jatketaanko yhteyksien katkaisua ja suljetaanko ne pakotetusti? %1: %0
 .
 
 
@@ -36556,6 +40343,9 @@ The printer does not exist.  Do you want to create it? %1: %0
 Language=Taiwanese
 The printer does not exist.  Do you want to create it? %1: %0
 .
+Language=Finnish
+Tulostinta ei ole.  Haluatko luoda sen? %1: %0
+.
 
 MessageId=5291
 Severity=Success
@@ -36584,6 +40374,9 @@ Never%0
 .
 Language=Taiwanese
 Never%0
+.
+Language=Finnish
+Ei koskaan%0
 .
 
 MessageId=5292
@@ -36614,6 +40407,9 @@ Never%0
 Language=Taiwanese
 Never%0
 .
+Language=Finnish
+Ei koskaan%0
+.
 
 MessageId=5293
 Severity=Success
@@ -36642,6 +40438,9 @@ Never%0
 .
 Language=Taiwanese
 Never%0
+.
+Language=Finnish
+Ei koskaan%0
 .
 
 MessageId=5295
@@ -36672,6 +40471,9 @@ NET.HLP%0
 Language=Taiwanese
 NET.HLP%0
 .
+Language=Finnish
+NET.HLP%0
+.
 
 MessageId=5296
 Severity=Success
@@ -36699,6 +40501,9 @@ Language=Chinese
 NET.HLP%0
 .
 Language=Taiwanese
+NET.HLP%0
+.
+Language=Finnish
 NET.HLP%0
 .
 
@@ -36742,6 +40547,10 @@ The NCB is the data.
 Language=Taiwanese
 The network control block (NCB) request completed successfully.\n
 The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkon (NCB) pyyntö suoritettiin onnistuneesti.\n
+NCB on tiedoissa.
 .
 
 MessageId=5301
@@ -36788,6 +40597,11 @@ Illegal network control block (NCB) buffer length on SEND DATAGRAM,\n
 SEND BROADCAST, ADAPTER STATUS, or SESSION STATUS.\n
 The NCB is the data.
 .
+Language=Finnish
+Kelpaamaton verkon ohjauslohkon (NCB) puskurin pituus komennossa SEND DATAGRAM,\n
+SEND BROADCAST, ADAPTER STATUS tai SESSION STATUS.\n
+NCB on tiedoissa.
+.
 
 MessageId=5302
 Severity=Success
@@ -36824,6 +40638,10 @@ invalid.  The NCB is the data.
 Language=Taiwanese
 The data descriptor array specified in the network control block (NCB) is\n
 invalid.  The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty tietokuvaintaulukko on\n
+virheellinen.  NCB on tiedoissa.
 .
 
 MessageId=5303
@@ -36862,6 +40680,10 @@ Language=Taiwanese
 The command specified in the network control block (NCB) is illegal.\n
 The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty komento on kelpaamaton.\n
+NCB on tiedoissa.
+.
 
 MessageId=5304
 Severity=Success
@@ -36898,6 +40720,10 @@ invalid.  The NCB is the data.
 Language=Taiwanese
 The message correlator specified in the network control block (NCB) is\n
 invalid.  The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty viestin korrelaattori on\n
+virheellinen.  NCB on tiedoissa.
 .
 
 MessageId=5305
@@ -36936,6 +40762,10 @@ Language=Taiwanese
 A network control block (NCB) command timed-out.  The session may have\n
 terminated abnormally.  The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkon (NCB) komento aikakatkaistiin.  Istunto on ehkä\n
+päättynyt epänormaalisti.  NCB on tiedoissa.
+.
 
 MessageId=5306
 Severity=Success
@@ -36972,6 +40802,10 @@ The NCB is the data.
 Language=Taiwanese
 An incomplete network control block (NCB) message was received.\n
 The NCB is the data.
+.
+Language=Finnish
+Vastaanotettiin keskeneräinen verkon ohjauslohkon (NCB) viesti.\n
+NCB on tiedoissa.
 .
 
 MessageId=5307
@@ -37010,6 +40844,10 @@ Language=Taiwanese
 The buffer address specified in the network control block (NCB) is illegal.\n
 The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty puskurin osoite on kelpaamaton.\n
+NCB on tiedoissa.
+.
 
 MessageId=5308
 Severity=Success
@@ -37046,6 +40884,10 @@ The NCB is the data.
 Language=Taiwanese
 The session number specified in the network control block (NCB) is not active.\n
 The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty istunnon numero ei ole aktiivinen.\n
+NCB on tiedoissa.
 .
 
 MessageId=5309
@@ -37084,6 +40926,10 @@ Language=Taiwanese
 No resource was available in the network adapter.\n
 The network control block (NCB) request was refused.  The NCB is the data.
 .
+Language=Finnish
+Verkkosovittimessa ei ollut käytettävissä resursseja.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
+.
 
 MessageId=5310
 Severity=Success
@@ -37120,6 +40966,10 @@ The NCB is the data.
 Language=Taiwanese
 The session specified in the network control block (NCB) was closed.\n
 The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty istunto suljettiin.\n
+NCB on tiedoissa.
 .
 
 MessageId=5311
@@ -37158,6 +41008,10 @@ Language=Taiwanese
 The network control block (NCB) command was canceled.\n
 The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkon (NCB) komento peruutettiin.\n
+NCB on tiedoissa.
+.
 
 MessageId=5312
 Severity=Success
@@ -37194,6 +41048,10 @@ illogical.  The NCB is the data.
 Language=Taiwanese
 The message segment specified in the network control block (NCB) is\n
 illogical.  The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty viestisegmentti on\n
+epälooginen.  NCB on tiedoissa.
 .
 
 MessageId=5313
@@ -37232,6 +41090,10 @@ Language=Taiwanese
 The name already exists in the local adapter name table.\n
 The network control block (NCB) request was refused.  The NCB is the data.
 .
+Language=Finnish
+Nimi on jo paikallisen sovittimen nimitaulukossa.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
+.
 
 MessageId=5314
 Severity=Success
@@ -37269,6 +41131,10 @@ Language=Taiwanese
 The network adapter name table is full.\n
 The network control block (NCB) request was refused.  The NCB is the data.
 .
+Language=Finnish
+Verkkosovittimen nimitaulukko on täynnä.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
+.
 
 MessageId=5315
 Severity=Success
@@ -37305,6 +41171,10 @@ The network control block (NCB) command completed.  The NCB is the data.
 Language=Taiwanese
 The network name has active sessions and is now de-registered.\n
 The network control block (NCB) command completed.  The NCB is the data.
+.
+Language=Finnish
+Verkkonimellä on aktiivisia istuntoja, ja sen rekisteröinti on nyt poistettu.\n
+Verkon ohjauslohkon (NCB) komento suoritettiin.  NCB on tiedoissa.
 .
 
 MessageId=5316
@@ -37351,6 +41221,11 @@ A previously issued Receive Lookahead command is active\n
 for this session.  The network control block (NCB) command was rejected.\n
 The NCB is the data.
 .
+Language=Finnish
+Aiemmin annettu Receive Lookahead -komento on aktiivinen\n
+tälle istunnolle.  Verkon ohjauslohkon (NCB) komento hylättiin.\n
+NCB on tiedoissa.
+.
 
 MessageId=5317
 Severity=Success
@@ -37387,6 +41262,10 @@ The NCB is the data.
 Language=Taiwanese
 The local session table is full. The network control block (NCB) request was refused.\n
 The NCB is the data.
+.
+Language=Finnish
+Paikallinen istuntotaulukko on täynnä. Verkon ohjauslohkon (NCB) pyyntö hylättiin.\n
+NCB on tiedoissa.
 .
 
 MessageId=5318
@@ -37425,6 +41304,10 @@ Language=Taiwanese
 A network control block (NCB) session open was rejected.  No LISTEN is outstanding\n
 on the remote computer.  The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkon (NCB) istunnon avaus hylättiin.  Etätietokoneella ei ole\n
+odottavaa LISTEN-komentoa.  NCB on tiedoissa.
+.
 
 MessageId=5319
 Severity=Success
@@ -37461,6 +41344,10 @@ The NCB is the data.
 Language=Taiwanese
 The name number specified in the network control block (NCB) is illegal.\n
 The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty nimen numero on kelpaamaton.\n
+NCB on tiedoissa.
 .
 
 MessageId=5320
@@ -37499,6 +41386,10 @@ Language=Taiwanese
 The call name specified in the network control block (NCB) cannot be found or\n
 did not answer.  The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritettyä kutsunimeä ei löydy tai se\n
+ei vastannut.  NCB on tiedoissa.
+.
 
 MessageId=5321
 Severity=Success
@@ -37535,6 +41426,10 @@ The name specified in the network control block (NCB) was not found.  Cannot put
 Language=Taiwanese
 The name specified in the network control block (NCB) was not found.  Cannot put '*' or\n
 00h in the NCB name.  The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritettyä nimeä ei löytynyt.  NCB:n nimeen ei voi\n
+laittaa merkkiä '*' tai 00h.  NCB on tiedoissa.
 .
 
 MessageId=5322
@@ -37573,6 +41468,10 @@ Language=Taiwanese
 The name specified in the network control block (NCB) is in use on a remote adapter.\n
 The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty nimi on käytössä etäsovittimessa.\n
+NCB on tiedoissa.
+.
 
 MessageId=5323
 Severity=Success
@@ -37609,6 +41508,10 @@ The NCB is the data.
 Language=Taiwanese
 The name specified in the network control block (NCB) has been deleted.\n
 The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty nimi on poistettu.\n
+NCB on tiedoissa.
 .
 
 MessageId=5324
@@ -37647,6 +41550,10 @@ Language=Taiwanese
 The session specified in the network control block (NCB) ended abnormally.\n
 The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty istunto päättyi epänormaalisti.\n
+NCB on tiedoissa.
+.
 
 MessageId=5325
 Severity=Success
@@ -37683,6 +41590,10 @@ names on the network.\tThe network control block (NCB) is the data.
 Language=Taiwanese
 The network protocol has detected two or more identical\n
 names on the network.\tThe network control block (NCB) is the data.
+.
+Language=Finnish
+Verkkoprotokolla on havainnut verkossa kaksi tai useampia samanlaisia\n
+nimiä.\tVerkon ohjauslohko (NCB) on tiedoissa.
 .
 
 MessageId=5326
@@ -37721,6 +41632,10 @@ Language=Taiwanese
 An unexpected protocol packet was received.  There may be an\n
 incompatible remote device.  The network control block (NCB) is the data.
 .
+Language=Finnish
+Vastaanotettiin odottamaton protokollapaketti.  Kyseessä voi olla\n
+yhteensopimaton etälaite.  Verkon ohjauslohko (NCB) on tiedoissa.
+.
 
 MessageId=5333
 Severity=Success
@@ -37757,6 +41672,10 @@ The network control block (NCB) request was refused.  The NCB is the data.
 Language=Taiwanese
 The NetBIOS interface is busy.\n
 The network control block (NCB) request was refused.  The NCB is the data.
+.
+Language=Finnish
+NetBIOS-liittymä on varattu.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
 .
 
 MessageId=5334
@@ -37795,6 +41714,10 @@ Language=Taiwanese
 There are too many network control block (NCB) commands outstanding.\n
 The NCB request was refused.  The NCB is the data.
 .
+Language=Finnish
+Odottavia verkon ohjauslohkon (NCB) komentoja on liian monta.\n
+NCB-pyyntö hylättiin.  NCB on tiedoissa.
+.
 
 MessageId=5335
 Severity=Success
@@ -37831,6 +41754,10 @@ The NCB is the data.
 Language=Taiwanese
 The adapter number specified in the network control block (NCB) is illegal.\n
 The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty sovittimen numero on kelpaamaton.\n
+NCB on tiedoissa.
 .
 
 MessageId=5336
@@ -37869,6 +41796,10 @@ Language=Taiwanese
 The network control block (NCB) command completed while a cancel was occurring.\n
 The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkon (NCB) komento valmistui peruutuksen ollessa käynnissä.\n
+NCB on tiedoissa.
+.
 
 MessageId=5337
 Severity=Success
@@ -37905,6 +41836,10 @@ The NCB is the data.
 Language=Taiwanese
 The name specified in the network control block (NCB) is reserved.\n
 The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkossa (NCB) määritetty nimi on varattu.\n
+NCB on tiedoissa.
 .
 
 MessageId=5338
@@ -37943,6 +41878,10 @@ Language=Taiwanese
 The network control block (NCB) command is not valid to cancel.\n
 The NCB is the data.
 .
+Language=Finnish
+Verkon ohjauslohkon (NCB) komentoa ei voi peruuttaa.\n
+NCB on tiedoissa.
+.
 
 MessageId=5351
 Severity=Success
@@ -37979,6 +41918,10 @@ The NCB request was refused.  The NCB is the data.
 Language=Taiwanese
 There are multiple network control block (NCB) requests for the same session.\n
 The NCB request was refused.  The NCB is the data.
+.
+Language=Finnish
+Samalle istunnolle on useita verkon ohjauslohkon (NCB) pyyntöjä.\n
+NCB-pyyntö hylättiin.  NCB on tiedoissa.
 .
 
 MessageId=5352
@@ -38025,6 +41968,11 @@ There has been a network adapter error. The only NetBIOS\n
 command that may be issued is an NCB RESET. The network control block (NCB) is\n
 the data.
 .
+Language=Finnish
+On tapahtunut verkkosovittimen virhe. Ainoa NetBIOS-komento,\n
+jonka voi antaa, on NCB RESET. Verkon ohjauslohko (NCB) on\n
+tiedoissa.
+.
 
 MessageId=5354
 Severity=Success
@@ -38061,6 +42009,10 @@ The network control block (NCB) request was refused.  The NCB is the data.
 Language=Taiwanese
 The maximum number of applications was exceeded.\n
 The network control block (NCB) request was refused.  The NCB is the data.
+.
+Language=Finnish
+Sovellusten enimmäismäärä ylitettiin.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
 .
 
 MessageId=5356
@@ -38099,6 +42051,10 @@ Language=Taiwanese
 The requested resources are not available.\n
 The network control block (NCB) request was refused.  The NCB is the data.
 .
+Language=Finnish
+Pyydetyt resurssit eivät ole käytettävissä.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
+.
 
 MessageId=5364
 Severity=Success
@@ -38135,6 +42091,10 @@ The network control block (NCB) request was refused.  The NCB is the data.
 Language=Taiwanese
 A system error has occurred.\n
 The network control block (NCB) request was refused.  The NCB is the data.
+.
+Language=Finnish
+On tapahtunut järjestelmävirhe.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
 .
 
 MessageId=5365
@@ -38173,6 +42133,10 @@ Language=Taiwanese
 A ROM checksum failure has occurred.\n
 The network control block (NCB) request was refused.  The NCB is the data.
 .
+Language=Finnish
+ROM-tarkistussumma epäonnistui.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
+.
 
 MessageId=5366
 Severity=Success
@@ -38209,6 +42173,10 @@ The network control block (NCB) request was refused.  The NCB is the data.
 Language=Taiwanese
 A RAM test failure has occurred.\n
 The network control block (NCB) request was refused.  The NCB is the data.
+.
+Language=Finnish
+RAM-testi epäonnistui.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
 .
 
 MessageId=5367
@@ -38247,6 +42215,10 @@ Language=Taiwanese
 A digital loopback failure has occurred.\n
 The network control block (NCB) request was refused.  The NCB is the data.
 .
+Language=Finnish
+Digitaalinen silmukkatesti epäonnistui.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
+.
 
 MessageId=5368
 Severity=Success
@@ -38283,6 +42255,10 @@ The network control block (NCB) request was refused.  The NCB is the data.
 Language=Taiwanese
 An analog loopback failure has occurred.\n
 The network control block (NCB) request was refused.  The NCB is the data.
+.
+Language=Finnish
+Analoginen silmukkatesti epäonnistui.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
 .
 
 MessageId=5369
@@ -38321,6 +42297,10 @@ Language=Taiwanese
 An interface failure has occurred.\n
 The network control block (NCB) request was refused.  The NCB is the data.
 .
+Language=Finnish
+Liittymävirhe.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
+.
 
 MessageId=5370
 Severity=Success
@@ -38357,6 +42337,10 @@ The NCB is the data.
 Language=Taiwanese
 An unrecognized network control block (NCB) return code was received.\n
 The NCB is the data.
+.
+Language=Finnish
+Vastaanotettiin tunnistamaton verkon ohjauslohkon (NCB) paluukoodi.\n
+NCB on tiedoissa.
 .
 
 MessageId=5380
@@ -38395,6 +42379,10 @@ Language=Taiwanese
 A network adapter malfunction has occurred.\n
 The network control block (NCB) request was refused.  The NCB is the data.
 .
+Language=Finnish
+Verkkosovittimessa on toimintahäiriö.\n
+Verkon ohjauslohkon (NCB) pyyntö hylättiin.  NCB on tiedoissa.
+.
 
 MessageId=5381
 Severity=Success
@@ -38431,6 +42419,10 @@ The NCB is the data.
 Language=Taiwanese
 The network control block (NCB) command is still pending.\n
 The NCB is the data.
+.
+Language=Finnish
+Verkon ohjauslohkon (NCB) komento on yhä kesken.\n
+NCB on tiedoissa.
 .
 
 
@@ -38473,6 +42465,10 @@ domain controller %2 is not retrieving the updates.
 Language=Taiwanese
 The update log on %1 is over 80%% capacity. The primary\n
 domain controller %2 is not retrieving the updates.
+.
+Language=Finnish
+Kohteen %1 päivitysloki on yli 80-prosenttisesti (80%%) täynnä. Ensisijainen\n
+toimialueen ohjauskone %2 ei nouda päivityksiä.
 .
 
 MessageId=5501
@@ -38519,6 +42515,11 @@ The update log on %1 is full, and no further updates\n
 can be added until the primary domain controller %2\n
 retrieves the updates.
 .
+Language=Finnish
+Kohteen %1 päivitysloki on täynnä, eikä uusia päivityksiä\n
+voi lisätä ennen kuin ensisijainen toimialueen ohjauskone %2\n
+noutaa päivitykset.
+.
 
 MessageId=5502
 Severity=Success
@@ -38555,6 +42556,10 @@ exceeds the maximum allowed skew of %2 seconds.
 Language=Taiwanese
 The time difference with the primary domain controller %1\n
 exceeds the maximum allowed skew of %2 seconds.
+.
+Language=Finnish
+Aikaero ensisijaiseen toimialueen ohjauskoneeseen %1\n
+ylittää suurimman sallitun eron %2 sekuntia.
 .
 
 MessageId=5503
@@ -38593,6 +42598,10 @@ Language=Taiwanese
 The account of user %1 has been locked out on %2\n
 due to %3 bad password attempts.
 .
+Language=Finnish
+Käyttäjän %1 tili on lukittu kohteessa %2\n
+%3 virheellisen salasanayrityksen vuoksi.
+.
 
 MessageId=5504
 Severity=Success
@@ -38622,6 +42631,9 @@ The %1 log file cannot be opened.
 Language=Taiwanese
 The %1 log file cannot be opened.
 .
+Language=Finnish
+Lokitiedostoa %1 ei voi avata.
+.
 
 MessageId=5505
 Severity=Success
@@ -38650,6 +42662,9 @@ The %1 log file is corrupted and will be cleared.
 .
 Language=Taiwanese
 The %1 log file is corrupted and will be cleared.
+.
+Language=Finnish
+Lokitiedosto %1 on vioittunut, ja se tyhjennetään.
 .
 
 MessageId=5506
@@ -38687,6 +42702,10 @@ default log file.
 Language=Taiwanese
 The Application log file could not be opened.  %1 will be used as the\n
 default log file.
+.
+Language=Finnish
+Sovelluslokitiedostoa ei voitu avata.  Oletuslokitiedostona\n
+käytetään tiedostoa %1.
 .
 
 MessageId=5507
@@ -38750,6 +42769,13 @@ message, take the following steps:%n\n
 2. Click %1, click the Action menu, click Clear All Events, and then click No.\n%n\n
 If this dialog reappears, contact your helpdesk or system administrator.
 .
+Language=Finnish
+%1-loki on täynnä.  Jos näet tämän viestin\n
+ensimmäistä kertaa, toimi seuraavasti:%n\n
+1. Valitse Käynnistä, valitse Suorita, kirjoita \"eventvwr\" ja valitse OK.%n\n
+2. Valitse %1, valitse Toiminto-valikko, valitse Tyhjennä kaikki tapahtumat ja valitse Ei.\n%n\n
+Jos tämä valintaikkuna tulee uudelleen näkyviin, ota yhteyttä tukipalveluun tai järjestelmänvalvojaan.
+.
 
 MessageId=5508
 Severity=Success
@@ -38778,6 +42804,9 @@ The security database full synchronization has been initiated by the server %1.
 .
 Language=Taiwanese
 The security database full synchronization has been initiated by the server %1.
+.
+Language=Finnish
+Palvelin %1 on aloittanut suojaustietokannan täyden synkronoinnin.
 .
 
 MessageId=5509
@@ -38816,6 +42845,10 @@ Language=Taiwanese
 The operating system could not be started as configured.\n
 A previous working configuration was used instead.
 .
+Language=Finnish
+Käyttöjärjestelmää ei voitu käynnistää määritetyllä tavalla.\n
+Sen sijaan käytettiin aiempaa toimivaa kokoonpanoa.
+.
 
 MessageId=5510
 Severity=Success
@@ -38844,6 +42877,9 @@ The exception 0x%1 occurred in the application %2 at location 0x%3.
 .
 Language=Taiwanese
 The exception 0x%1 occurred in the application %2 at location 0x%3.
+.
+Language=Finnish
+Sovelluksessa %2 tapahtui poikkeus 0x%1 kohdassa 0x%3.
 .
 
 MessageId=5511
@@ -38898,6 +42934,12 @@ the %2 domain. One of the servers should be removed from the\n
 domain because the servers have different security identifiers\n
 (SID).
 .
+Language=Finnish
+Palvelimet %1 ja  %3 väittävät molemmat olevansa toimialueen %2\n
+NT-toimialueen ohjauskone. Toinen palvelimista pitäisi poistaa\n
+toimialueesta, koska palvelimilla on eri suojaustunnukset\n
+(SID).
+.
 
 MessageId=5512
 Severity=Success
@@ -38942,6 +42984,11 @@ Language=Taiwanese
 The server %1 and %2 both claim to be the primary domain\n
 controller for the %3 domain. One of the servers should be\n
 demoted or removed from the domain.
+.
+Language=Finnish
+Palvelimet %1 ja %2 väittävät molemmat olevansa toimialueen %3\n
+ensisijainen toimialueen ohjauskone. Toinen palvelimista pitäisi\n
+alentaa tai poistaa toimialueesta.
 .
 
 MessageId=5513
@@ -39004,6 +43051,13 @@ computer lost the correct security identifier (SID)\n
 when the domain was reconfigured. Reestablish the trust\n
 relationship.
 .
+Language=Finnish
+Tietokone %1 yritti muodostaa yhteyden palvelimeen %2 käyttäen\n
+toimialueen %3 muodostamaa luottamussuhdetta. Tietokone kuitenkin\n
+menetti oikean suojaustunnuksen (SID)\n
+toimialuetta uudelleen määritettäessä. Muodosta luottamussuhde\n
+uudelleen.
+.
 
 MessageId=5514
 Severity=Success
@@ -39056,6 +43110,12 @@ The computer has rebooted from a bugcheck.  The bugcheck was:\n
 %1.\n
 %2\n
 A full dump was not saved.
+.
+Language=Finnish
+Tietokone on käynnistynyt uudelleen virhetarkistuksen jälkeen.  Virhetarkistus oli:\n
+%1.\n
+%2\n
+Täyttä vedosta ei tallennettu.
 .
 
 MessageId=5515
@@ -39110,6 +43170,12 @@ The computer has rebooted from a bugcheck.  The bugcheck was:\n
 %2\n
 A dump was saved in: %3.
 .
+Language=Finnish
+Tietokone on käynnistynyt uudelleen virhetarkistuksen jälkeen.  Virhetarkistus oli:\n
+%1.\n
+%2\n
+Vedos tallennettiin kohteeseen: %3.
+.
 
 MessageId=5516
 Severity=Success
@@ -39154,6 +43220,11 @@ Language=Taiwanese
 The computer or domain %1 trusts domain %2.  (This may be an indirect\n
 trust.)  However, %1 and %2 have the same machine security identifier\n
 (SID).  The operating system should be re-installed on either %1 or %2.
+.
+Language=Finnish
+Tietokone tai toimialue %1 luottaa toimialueeseen %2.  (Luottamus voi olla\n
+epäsuora.)  Kohteilla %1 ja %2 on kuitenkin sama koneen suojaustunnus\n
+(SID).  Käyttöjärjestelmä pitäisi asentaa uudelleen joko kohteeseen %1 tai %2.
 .
 
 MessageId=5517
@@ -39200,6 +43271,11 @@ The computer or domain %1 trusts domain %2.  (This may be an indirect\n
 trust.)  However, %2 is not a valid name for a trusted domain.\n
 The name of the trusted domain should be changed to a valid name.
 .
+Language=Finnish
+Tietokone tai toimialue %1 luottaa toimialueeseen %2.  (Luottamus voi olla\n
+epäsuora.)  %2 ei kuitenkaan ole kelvollinen luotetun toimialueen nimi.\n
+Luotetun toimialueen nimi pitäisi vaihtaa kelvolliseksi.
+.
 
 
 ;
@@ -39234,6 +43310,9 @@ Could not share the User or Script path.
 Language=Taiwanese
 Could not share the User or Script path.
 .
+Language=Finnish
+Käyttäjä- tai komentosarjapolkua ei voitu jakaa.
+.
 
 MessageId=5601
 Severity=Success
@@ -39263,6 +43342,9 @@ The password for this computer is not found in the local security\ndatabase.
 Language=Taiwanese
 The password for this computer is not found in the local security\ndatabase.
 .
+Language=Finnish
+Tämän tietokoneen salasanaa ei löydy paikallisesta\nsuojaustietokannasta.
+.
 
 MessageId=5602
 Severity=Success
@@ -39291,6 +43373,9 @@ An internal error occurred while accessing the computer's\nlocal or network secu
 .
 Language=Taiwanese
 An internal error occurred while accessing the computer's\nlocal or network security database.
+.
+Language=Finnish
+Tietokoneen paikallista tai verkon suojaustietokantaa\nkäytettäessä tapahtui sisäinen virhe.
 .
 
 
@@ -39342,6 +43427,11 @@ The Netlogon service could not initialize the replication data\n
 structures successfully. The service was terminated.  The following\n
 error occurred: %n%1
 .
+Language=Finnish
+Netlogon-palvelu ei pystynyt alustamaan replikoinnin\n
+tietorakenteita. Palvelu lopetettiin.  Tapahtui seuraava\n
+virhe: %n%1
+.
 
 MessageId=5701
 Severity=Success
@@ -39378,6 +43468,10 @@ following error occurred: %n%1
 Language=Taiwanese
 The Netlogon service failed to update the domain trust list.  The\n
 following error occurred: %n%1
+.
+Language=Finnish
+Netlogon-palvelu ei pystynyt päivittämään toimialueiden luottamusluetteloa.\n
+Tapahtui seuraava virhe: %n%1
 .
 
 MessageId=5702
@@ -39416,6 +43510,10 @@ Language=Taiwanese
 The Netlogon service could not add the RPC interface.  The\n
 service was terminated. The following error occurred: %n%1
 .
+Language=Finnish
+Netlogon-palvelu ei pystynyt lisäämään RPC-liittymää.\n
+Palvelu lopetettiin. Tapahtui seuraava virhe: %n%1
+.
 
 MessageId=5703
 Severity=Success
@@ -39452,6 +43550,10 @@ to the following error: %n%2
 Language=Taiwanese
 The Netlogon service could not read a mailslot message from %1 due\n
 to the following error: %n%2
+.
+Language=Finnish
+Netlogon-palvelu ei voinut lukea postipaikan viestiä kohteesta %1\n
+seuraavan virheen vuoksi: %n%2
 .
 
 MessageId=5704
@@ -39498,6 +43600,11 @@ The Netlogon service failed to register the service with the\n
 service controller. The service was terminated. The following\n
 error occurred: %n%1
 .
+Language=Finnish
+Netlogon-palvelu ei pystynyt rekisteröimään palvelua\n
+palveluiden ohjausohjelmaan. Palvelu lopetettiin. Tapahtui\n
+seuraava virhe: %n%1
+.
 
 MessageId=5705
 Severity=Success
@@ -39543,6 +43650,11 @@ The change log cache maintained by the Netlogon service for %1\n
 database changes is inconsistent. The Netlogon service is resetting\n
 the change log.
 .
+Language=Finnish
+Netlogon-palvelun ylläpitämä muutoslokin välimuisti tietokannan %1\n
+muutoksille on ristiriitainen. Netlogon-palvelu nollaa\n
+muutoslokin.
+.
 
 MessageId=5706
 Severity=Success
@@ -39580,6 +43692,10 @@ Language=Taiwanese
 The Netlogon service could not create server share %1.  The following\n
 error occurred: %n%2
 .
+Language=Finnish
+Netlogon-palvelu ei voinut luoda palvelimen jakoa %1.  Tapahtui\n
+seuraava virhe: %n%2
+.
 
 MessageId=5707
 Severity=Success
@@ -39609,6 +43725,9 @@ The down-level logon request for the user %1 from %2 failed.
 Language=Taiwanese
 The down-level logon request for the user %1 from %2 failed.
 .
+Language=Finnish
+Käyttäjän %1 vanhemman järjestelmän kirjautumispyyntö kohteesta %2 epäonnistui.
+.
 
 MessageId=5708
 Severity=Success
@@ -39637,6 +43756,9 @@ The down-level logoff request for the user %1 from %2 failed.
 .
 Language=Taiwanese
 The down-level logoff request for the user %1 from %2 failed.
+.
+Language=Finnish
+Käyttäjän %1 vanhemman järjestelmän uloskirjautumispyyntö kohteesta %2 epäonnistui.
 .
 
 MessageId=5709
@@ -39675,6 +43797,10 @@ Language=Taiwanese
 The Windows NT or Windows 2000 %1 logon request for the user %2\\%3 from %4 (via %5)\n
 failed.
 .
+Language=Finnish
+Windows NT- tai Windows 2000 -järjestelmän %1-kirjautumispyyntö käyttäjälle %2\\%3 kohteesta %4 (kohteen %5 kautta)\n
+epäonnistui.
+.
 
 MessageId=5710
 Severity=Success
@@ -39711,6 +43837,10 @@ failed.
 Language=Taiwanese
 The Windows NT or Windows 2000 %1 logoff request for the user %2\\%3 from %4\n
 failed.
+.
+Language=Finnish
+Windows NT- tai Windows 2000 -järjestelmän %1-uloskirjautumispyyntö käyttäjälle %2\\%3 kohteesta %4\n
+epäonnistui.
 .
 
 MessageId=5711
@@ -39757,6 +43887,11 @@ The partial synchronization request from the server %1 completed\n
 successfully. %2 changes(s) has(have) been returned to the\n
 caller.
 .
+Language=Finnish
+Palvelimen %1 osittaisen synkronoinnin pyyntö suoritettiin\n
+onnistuneesti. Kutsujalle palautettiin %2\n
+muutos(ta).
+.
 
 MessageId=5712
 Severity=Success
@@ -39793,6 +43928,10 @@ the following error: %n%2
 Language=Taiwanese
 The partial synchronization request from the server %1 failed with\n
 the following error: %n%2
+.
+Language=Finnish
+Palvelimen %1 osittaisen synkronoinnin pyyntö epäonnistui\n
+seuraavalla virheellä: %n%2
 .
 
 MessageId=5713
@@ -39839,6 +43978,11 @@ The full synchronization request from the server %1 completed\n
 successfully. %2 object(s) has(have) been returned to\n
 the caller.
 .
+Language=Finnish
+Palvelimen %1 täyden synkronoinnin pyyntö suoritettiin\n
+onnistuneesti. Kutsujalle palautettiin %2\n
+objekti(a).
+.
 
 MessageId=5714
 Severity=Success
@@ -39875,6 +44019,10 @@ the following error: %n%2
 Language=Taiwanese
 The full synchronization request from the server %1 failed with\n
 the following error: %n%2
+.
+Language=Finnish
+Palvelimen %1 täyden synkronoinnin pyyntö epäonnistui\n
+seuraavalla virheellä: %n%2
 .
 
 MessageId=5715
@@ -39921,6 +44069,11 @@ The partial synchronization replication of the %1 database from the\n
 primary domain controller %2 completed successfully. %3 change(s) is(are)\n
 applied to the database.
 .
+Language=Finnish
+Tietokannan %1 osittainen synkronointireplikointi\n
+ensisijaisesta toimialueen ohjauskoneesta %2 onnistui. Tietokantaan\n
+tehtiin %3 muutos(ta).
+.
 
 MessageId=5716
 Severity=Success
@@ -39957,6 +44110,10 @@ primary domain controller %2 failed with the following error: %n%3
 Language=Taiwanese
 The partial synchronization replication of the %1 database from the\n
 primary domain controller %2 failed with the following error: %n%3
+.
+Language=Finnish
+Tietokannan %1 osittainen synkronointireplikointi\n
+ensisijaisesta toimialueen ohjauskoneesta %2 epäonnistui seuraavalla virheellä: %n%3
 .
 
 MessageId=5717
@@ -39995,6 +44152,10 @@ Language=Taiwanese
 The full synchronization replication of the %1 database from the\n
 primary domain controller %2 completed successfully.
 .
+Language=Finnish
+Tietokannan %1 täysi synkronointireplikointi\n
+ensisijaisesta toimialueen ohjauskoneesta %2 onnistui.
+.
 
 MessageId=5718
 Severity=Success
@@ -40031,6 +44192,10 @@ primary domain controller %2 failed with the following error: %n%3
 Language=Taiwanese
 The full synchronization replication of the %1 database from the\n
 primary domain controller %2 failed with the following error: %n%3
+.
+Language=Finnish
+Tietokannan %1 täysi synkronointireplikointi\n
+ensisijaisesta toimialueen ohjauskoneesta %2 epäonnistui seuraavalla virheellä: %n%3
 .
 
 MessageId=5719
@@ -40133,6 +44298,18 @@ sets up the secure session to the primary domain controller emulator in the spec
 domain. Otherwise, this computer sets up the secure session to any domain controller\n
 in the specified domain.
 .
+Language=Finnish
+Tämä tietokone ei pystynyt muodostamaan suojattua istuntoa toimialueen\n
+%1 toimialueen ohjauskoneen kanssa seuraavasta syystä: %n%2\n
+%nTämä voi aiheuttaa todennusongelmia. Varmista, että tämä\n
+tietokone on yhteydessä verkkoon. Jos ongelma jatkuu,\n
+ota yhteyttä toimialueen järjestelmänvalvojaan.\n\n
+%n%nLISÄTIETOJA\n
+%nJos tämä tietokone on määritetyn toimialueen toimialueen ohjauskone, se\n
+muodostaa suojatun istunnon määritetyn toimialueen ensisijaisen toimialueen\n
+ohjauskoneen emulaattoriin. Muussa tapauksessa tämä tietokone muodostaa suojatun\n
+istunnon mihin tahansa määritetyn toimialueen toimialueen ohjauskoneeseen.
+.
 
 MessageId=5720
 Severity=Success
@@ -40169,6 +44346,10 @@ failed because the computer %3 does not have a local security database account.
 Language=Taiwanese
 The session setup to the Domain Controller %1 for the domain %2\n
 failed because the computer %3 does not have a local security database account.
+.
+Language=Finnish
+Istunnon muodostaminen toimialueen %2 toimialueen ohjauskoneeseen %1\n
+epäonnistui, koska tietokoneella %3 ei ole paikallisen suojaustietokannan tiliä.
 .
 
 MessageId=5721
@@ -40239,6 +44420,14 @@ needed to set up the session by this computer %3.\n\n%n%nADDITIONAL DATA\n
 aforementioned account is a computer account for this computer in the specified domain.\n
 Otherwise, the account is an interdomain trust account with the specified domain.
 .
+Language=Finnish
+Istunnon muodostaminen toimialueen %2 toimialueen ohjauskoneeseen %1\n
+epäonnistui, koska toimialueen ohjauskoneella ei ollut tiliä %4,\n
+jota tämä tietokone %3 tarvitsee istunnon muodostamiseen.\n\n%n%nLISÄTIETOJA\n
+%nJos tämä tietokone on määritetyn toimialueen jäsen tai toimialueen ohjauskone,\n
+edellä mainittu tili on tämän tietokoneen tietokonetili määritetyssä toimialueessa.\n
+Muussa tapauksessa tili on toimialueiden välinen luottamustili määritetyn toimialueen kanssa.
+.
 
 MessageId=5722
 Severity=Success
@@ -40283,6 +44472,11 @@ Language=Taiwanese
 The session setup from the computer %1 failed to authenticate.\n
 The name(s) of the account(s) referenced in the security database is\n
 %2.  The following error occurred: %n%3
+.
+Language=Finnish
+Tietokoneen %1 istunnon muodostamisen todennus epäonnistui.\n
+Suojaustietokannassa viitattujen tilien nimet ovat\n
+%2.  Tapahtui seuraava virhe: %n%3
 .
 
 MessageId=5723
@@ -40417,6 +44611,22 @@ action should be taken on '%1':\n\n
 %n%nIf '%1' is a Domain Controller, then the trust associated with '%2' should be deleted.\n\n
 %n%nIf '%1' is not a Domain Controller, it should be disjoined from the domain.
 .
+Language=Finnish
+Istunnon muodostaminen tietokoneesta '%1' epäonnistui, koska suojaustietokannassa\n
+ei ole määritetyn tietokoneen viittaamaa luottamustiliä '%2'.\n\n
+%n%nKÄYTTÄJÄN TOIMET\n\n
+%nJos tämä on ensimmäinen kerta, kun tämä tapahtuma ilmenee määritetylle tietokoneelle\n
+ja tilille, kyseessä voi olla tilapäinen ongelma, joka ei vaadi toimia\n
+tällä hetkellä. Muussa tapauksessa ongelman voi ratkaista seuraavasti:\n\n
+%n%nJos '%2' on tietokoneen '%1' oikea konetili, '%1'\n
+pitäisi liittää uudelleen toimialueeseen.\n\n
+%n%nJos '%2' on oikea toimialueiden välinen luottamustili, luottamus\n
+pitäisi luoda uudelleen.\n\n
+%n%nMuussa tapauksessa, olettaen että '%2' ei ole oikea tili, tee seuraava\n
+toimenpide kohteessa '%1':\n\n
+%n%nJos '%1' on toimialueen ohjauskone, tiliin '%2' liittyvä luottamus pitäisi poistaa.\n\n
+%n%nJos '%1' ei ole toimialueen ohjauskone, se pitäisi irrottaa toimialueesta.
+.
 
 MessageId=5724
 Severity=Success
@@ -40445,6 +44655,9 @@ Could not register control handler with service controller %1.
 .
 Language=Taiwanese
 Could not register control handler with service controller %1.
+.
+Language=Finnish
+Ohjauskäsittelijää ei voitu rekisteröidä palveluiden ohjausohjelmaan %1.
 .
 
 MessageId=5725
@@ -40475,6 +44688,9 @@ Could not set service status with service controller %1.
 Language=Taiwanese
 Could not set service status with service controller %1.
 .
+Language=Finnish
+Palvelun tilaa ei voitu asettaa palveluiden ohjausohjelmassa %1.
+.
 
 MessageId=5726
 Severity=Success
@@ -40503,6 +44719,9 @@ Could not find the computer name %1.
 .
 Language=Taiwanese
 Could not find the computer name %1.
+.
+Language=Finnish
+Tietokoneen nimeä %1 ei löytynyt.
 .
 
 MessageId=5727
@@ -40533,6 +44752,9 @@ Could not load %1 device driver.
 Language=Taiwanese
 Could not load %1 device driver.
 .
+Language=Finnish
+Laiteajuria %1 ei voitu ladata.
+.
 
 MessageId=5728
 Severity=Success
@@ -40561,6 +44783,9 @@ Could not load any transport.
 .
 Language=Taiwanese
 Could not load any transport.
+.
+Language=Finnish
+Yhtään siirtoprotokollaa ei voitu ladata.
 .
 
 MessageId=5729
@@ -40599,6 +44824,10 @@ Language=Taiwanese
 Replication of the %1 Domain Object \"%2\" from primary domain controller\n
 %3 failed with the following error: %n%4
 .
+Language=Finnish
+Tietokannan %1 toimialueobjektin \"%2\" replikointi ensisijaisesta toimialueen ohjauskoneesta\n
+%3 epäonnistui seuraavalla virheellä: %n%4
+.
 
 MessageId=5730
 Severity=Success
@@ -40635,6 +44864,10 @@ Replication of the %1 Global Group \"%2\" from primary domain controller\n
 Language=Taiwanese
 Replication of the %1 Global Group \"%2\" from primary domain controller\n
 %3 failed with the following error: %n%4
+.
+Language=Finnish
+Tietokannan %1 yleisen ryhmän \"%2\" replikointi ensisijaisesta toimialueen ohjauskoneesta\n
+%3 epäonnistui seuraavalla virheellä: %n%4
 .
 
 MessageId=5731
@@ -40673,6 +44906,10 @@ Language=Taiwanese
 Replication of the %1 Local Group \"%2\" from primary domain controller\n
 %3 failed with the following error: %n%4
 .
+Language=Finnish
+Tietokannan %1 paikallisen ryhmän \"%2\" replikointi ensisijaisesta toimialueen ohjauskoneesta\n
+%3 epäonnistui seuraavalla virheellä: %n%4
+.
 
 MessageId=5732
 Severity=Success
@@ -40709,6 +44946,10 @@ Replication of the %1 User \"%2\" from primary domain controller\n
 Language=Taiwanese
 Replication of the %1 User \"%2\" from primary domain controller\n
 %3 failed with the following error: %n%4
+.
+Language=Finnish
+Tietokannan %1 käyttäjän \"%2\" replikointi ensisijaisesta toimialueen ohjauskoneesta\n
+%3 epäonnistui seuraavalla virheellä: %n%4
 .
 
 MessageId=5733
@@ -40747,6 +44988,10 @@ Language=Taiwanese
 Replication of the %1 Policy Object \"%2\" from primary domain controller\n
 %3 failed with the following error: %n%4
 .
+Language=Finnish
+Tietokannan %1 käytäntöobjektin \"%2\" replikointi ensisijaisesta toimialueen ohjauskoneesta\n
+%3 epäonnistui seuraavalla virheellä: %n%4
+.
 
 MessageId=5734
 Severity=Success
@@ -40783,6 +45028,10 @@ Replication of the %1 Trusted Domain Object \"%2\" from primary domain controlle
 Language=Taiwanese
 Replication of the %1 Trusted Domain Object \"%2\" from primary domain controller\n
 %3 failed with the following error: %n%4
+.
+Language=Finnish
+Tietokannan %1 luotetun toimialueen objektin \"%2\" replikointi ensisijaisesta toimialueen ohjauskoneesta\n
+%3 epäonnistui seuraavalla virheellä: %n%4
 .
 
 MessageId=5735
@@ -40821,6 +45070,10 @@ Language=Taiwanese
 Replication of the %1 Account Object \"%2\" from primary domain controller\n
 %3 failed with the following error: %n%4
 .
+Language=Finnish
+Tietokannan %1 tiliobjektin \"%2\" replikointi ensisijaisesta toimialueen ohjauskoneesta\n
+%3 epäonnistui seuraavalla virheellä: %n%4
+.
 
 MessageId=5736
 Severity=Success
@@ -40858,6 +45111,10 @@ Language=Taiwanese
 Replication of the %1 Secret \"%2\" from primary domain controller\n
 %3 failed with the following error: %n%4
 .
+Language=Finnish
+Tietokannan %1 salaisuuden \"%2\" replikointi ensisijaisesta toimialueen ohjauskoneesta\n
+%3 epäonnistui seuraavalla virheellä: %n%4
+.
 
 MessageId=5737
 Severity=Success
@@ -40886,6 +45143,9 @@ The system returned the following unexpected error code: %n%1
 .
 Language=Taiwanese
 The system returned the following unexpected error code: %n%1
+.
+Language=Finnish
+Järjestelmä palautti seuraavan odottamattoman virhekoodin: %n%1
 .
 
 MessageId=5738
@@ -40940,6 +45200,12 @@ The server can be either a Windows 2000 Server that is a member of the\n
 domain or the server can be a LAN Manager server with an account in the\n
 SERVERS global group.  It cannot be both.
 .
+Language=Finnish
+Netlogon on havainnut palvelimelle \"%1\" kaksi konetiliä.\n
+Palvelin voi olla joko toimialueen jäsenenä oleva Windows 2000 Server\n
+tai LAN Manager -palvelin, jolla on tili yleisessä\n
+SERVERS-ryhmässä.  Se ei voi olla molempia.
+.
 
 MessageId=5739
 Severity=Success
@@ -40984,6 +45250,11 @@ This domain has more global groups than can be replicated to a LanMan\n
 BDC.  Either delete some of your global groups or remove the LanMan\n
 BDCs from the domain.
 .
+Language=Finnish
+Tällä toimialueella on enemmän yleisiä ryhmiä kuin voidaan replikoida LanMan-\n
+varaohjauskoneeseen (BDC).  Poista joitakin yleisiä ryhmiä tai poista LanMan-\n
+varaohjauskoneet toimialueesta.
+.
 
 MessageId=5740
 Severity=Success
@@ -41012,6 +45283,9 @@ The Browser driver returned the following error to Netlogon: %n%1
 .
 Language=Taiwanese
 The Browser driver returned the following error to Netlogon: %n%1
+.
+Language=Finnish
+Selainajuri palautti Netlogonille seuraavan virheen: %n%1
 .
 
 MessageId=5741
@@ -41042,6 +45316,9 @@ Netlogon could not register the %1<1B> name for the following reason: %n%2
 Language=Taiwanese
 Netlogon could not register the %1<1B> name for the following reason: %n%2
 .
+Language=Finnish
+Netlogon ei voinut rekisteröidä nimeä %1<1B> seuraavasta syystä: %n%2
+.
 
 MessageId=5742
 Severity=Success
@@ -41070,6 +45347,9 @@ Service failed to retrieve messages needed to boot remote boot clients.
 .
 Language=Taiwanese
 Service failed to retrieve messages needed to boot remote boot clients.
+.
+Language=Finnish
+Palvelu ei pystynyt noutamaan viestejä, joita tarvitaan etäkäynnistysasiakkaiden käynnistämiseen.
 .
 
 MessageId=5743
@@ -41108,6 +45388,10 @@ Language=Taiwanese
 Service experienced a severe error and can no longer provide remote boot\n
 for 3Com 3Start remote boot clients.
 .
+Language=Finnish
+Palvelussa tapahtui vakava virhe, eikä se voi enää tarjota etäkäynnistystä\n
+3Com 3Start -etäkäynnistysasiakkaille.
+.
 
 MessageId=5744
 Severity=Success
@@ -41136,6 +45420,9 @@ Service experienced a severe system error and will shut itself down.
 .
 Language=Taiwanese
 Service experienced a severe system error and will shut itself down.
+.
+Language=Finnish
+Palvelussa tapahtui vakava järjestelmävirhe, ja se sammuttaa itsensä.
 .
 
 MessageId=5745
@@ -41174,6 +45461,10 @@ Language=Taiwanese
 Client with computer name %1 failed to acknowledge receipt of the\n
 boot data.  Remote boot of this client was not completed.
 .
+Language=Finnish
+Asiakas, jonka tietokoneen nimi on %1, ei kuitannut käynnistystietojen\n
+vastaanottoa.  Tämän asiakkaan etäkäynnistys ei valmistunut.
+.
 
 MessageId=5746
 Severity=Success
@@ -41210,6 +45501,10 @@ file %2.
 Language=Taiwanese
 Client with computer name %1 was not booted due to an error in opening\n
 file %2.
+.
+Language=Finnish
+Asiakasta, jonka tietokoneen nimi on %1, ei käynnistetty, koska tiedoston\n
+%2 avaamisessa tapahtui virhe.
 .
 
 MessageId=5747
@@ -41248,6 +45543,10 @@ Language=Taiwanese
 Client with computer name %1 was not booted due to an error in reading\n
 file %2.
 .
+Language=Finnish
+Asiakasta, jonka tietokoneen nimi on %1, ei käynnistetty, koska tiedoston\n
+%2 lukemisessa tapahtui virhe.
+.
 
 MessageId=5748
 Severity=Success
@@ -41284,6 +45583,10 @@ at the remote boot server.
 Language=Taiwanese
 Client with computer name %1 was not booted due to insufficient memory\n
 at the remote boot server.
+.
+Language=Finnish
+Asiakasta, jonka tietokoneen nimi on %1, ei käynnistetty, koska muisti\n
+ei riittänyt etäkäynnistyspalvelimella.
 .
 
 MessageId=5749
@@ -41322,6 +45625,10 @@ Language=Taiwanese
 Client with computer name %1 will be booted without using checksums\n
 because checksum for file %2 could not be calculated.
 .
+Language=Finnish
+Asiakas, jonka tietokoneen nimi on %1, käynnistetään ilman tarkistussummia,\n
+koska tiedoston %2 tarkistussummaa ei voitu laskea.
+.
 
 MessageId=5750
 Severity=Success
@@ -41358,6 +45665,10 @@ file %2.
 Language=Taiwanese
 Client with computer name %1 was not booted due to too many lines in\n
 file %2.
+.
+Language=Finnish
+Asiakasta, jonka tietokoneen nimi on %1, ei käynnistetty, koska\n
+tiedostossa %2 on liian monta riviä.
 .
 
 MessageId=5751
@@ -41404,6 +45715,11 @@ Client with computer name %1 was not booted because the boot block\n
 configuration file %2 for this client does not contain boot block\n
 line and/or loader line.
 .
+Language=Finnish
+Asiakasta, jonka tietokoneen nimi on %1, ei käynnistetty, koska tämän asiakkaan\n
+käynnistyslohkon määritystiedostossa %2 ei ole käynnistyslohkon\n
+riviä ja/tai lataajan riviä.
+.
 
 MessageId=5752
 Severity=Success
@@ -41440,6 +45756,10 @@ file %2.
 Language=Taiwanese
 Client with computer name %1 was not booted due to a bad size of\n
 file %2.
+.
+Language=Finnish
+Asiakasta, jonka tietokoneen nimi on %1, ei käynnistetty, koska tiedoston\n
+%2 koko on virheellinen.
 .
 
 MessageId=5753
@@ -41478,6 +45798,10 @@ Language=Taiwanese
 Client with computer name %1 was not booted due to remote boot\n
 service internal error.
 .
+Language=Finnish
+Asiakasta, jonka tietokoneen nimi on %1, ei käynnistetty etäkäynnistyspalvelun\n
+sisäisen virheen vuoksi.
+.
 
 MessageId=5754
 Severity=Success
@@ -41515,6 +45839,10 @@ Language=Taiwanese
 Client with computer name %1 was not booted because file %2 has an\n
 invalid boot header.
 .
+Language=Finnish
+Asiakasta, jonka tietokoneen nimi on %1, ei käynnistetty, koska tiedostolla %2 on\n
+virheellinen käynnistysotsake.
+.
 
 MessageId=5755
 Severity=Success
@@ -41543,6 +45871,9 @@ Client with computer name %1 was not booted due to network error.
 .
 Language=Taiwanese
 Client with computer name %1 was not booted due to network error.
+.
+Language=Finnish
+Asiakasta, jonka tietokoneen nimi on %1, ei käynnistetty verkkovirheen vuoksi.
 .
 
 MessageId=5756
@@ -41573,6 +45904,9 @@ Client with adapter id %1 was not booted due to lack of resources.
 Language=Taiwanese
 Client with adapter id %1 was not booted due to lack of resources.
 .
+Language=Finnish
+Asiakasta, jonka sovitintunnus on %1, ei käynnistetty resurssien puutteen vuoksi.
+.
 
 MessageId=5757
 Severity=Success
@@ -41601,6 +45935,9 @@ Service experienced error copying file or directory %1.
 .
 Language=Taiwanese
 Service experienced error copying file or directory %1.
+.
+Language=Finnish
+Palvelussa tapahtui virhe kopioitaessa tiedostoa tai hakemistoa %1.
 .
 
 MessageId=5758
@@ -41631,6 +45968,9 @@ Service experienced error deleting file or directory %1.
 Language=Taiwanese
 Service experienced error deleting file or directory %1.
 .
+Language=Finnish
+Palvelussa tapahtui virhe poistettaessa tiedostoa tai hakemistoa %1.
+.
 
 MessageId=5759
 Severity=Success
@@ -41659,6 +45999,9 @@ Service experienced error setting permissions on file or directory %1.
 .
 Language=Taiwanese
 Service experienced error setting permissions on file or directory %1.
+.
+Language=Finnish
+Palvelussa tapahtui virhe asetettaessa tiedoston tai hakemiston %1 käyttöoikeuksia.
 .
 
 MessageId=5760
@@ -41689,6 +46032,9 @@ Service experienced error evaluating RPL configurations.
 Language=Taiwanese
 Service experienced error evaluating RPL configurations.
 .
+Language=Finnish
+Palvelussa tapahtui virhe arvioitaessa RPL-kokoonpanoja.
+.
 
 MessageId=5761
 Severity=Success
@@ -41717,6 +46063,9 @@ Service experienced error creating RPL profiles for all configurations.
 .
 Language=Taiwanese
 Service experienced error creating RPL profiles for all configurations.
+.
+Language=Finnish
+Palvelussa tapahtui virhe luotaessa RPL-profiileja kaikille kokoonpanoille.
 .
 
 MessageId=5762
@@ -41747,6 +46096,9 @@ Service experienced error accessing registry.
 Language=Taiwanese
 Service experienced error accessing registry.
 .
+Language=Finnish
+Palvelussa tapahtui virhe rekisteriä käytettäessä.
+.
 
 MessageId=5763
 Severity=Success
@@ -41775,6 +46127,9 @@ Service experienced error replacing possibly outdated RPLDISK.SYS.
 .
 Language=Taiwanese
 Service experienced error replacing possibly outdated RPLDISK.SYS.
+.
+Language=Finnish
+Palvelussa tapahtui virhe korvattaessa mahdollisesti vanhentunutta RPLDISK.SYS-tiedostoa.
 .
 
 MessageId=5764
@@ -41821,6 +46176,11 @@ Service experienced error adding security accounts or setting\n
 file permissions.  These accounts are the RPLUSER local group\n
 and the user accounts for the individual RPL workstations.
 .
+Language=Finnish
+Palvelussa tapahtui virhe lisättäessä suojaustilejä tai asetettaessa\n
+tiedostojen käyttöoikeuksia.  Nämä tilit ovat paikallinen RPLUSER-ryhmä\n
+ja yksittäisten RPL-työasemien käyttäjätilit.
+.
 
 MessageId=5765
 Severity=Success
@@ -41849,6 +46209,9 @@ Service failed to back up its database.
 .
 Language=Taiwanese
 Service failed to back up its database.
+.
+Language=Finnish
+Palvelu ei pystynyt varmuuskopioimaan tietokantaansa.
 .
 
 MessageId=5766
@@ -41895,6 +46258,11 @@ Service failed to initialize from its database.  The database may be\n
 missing or corrupted.  Service will attempt restoring the database\n
 from the backup.
 .
+Language=Finnish
+Palvelu ei pystynyt alustamaan tietokannastaan.  Tietokanta voi\n
+puuttua tai olla vioittunut.  Palvelu yrittää palauttaa tietokannan\n
+varmuuskopiosta.
+.
 
 MessageId=5767
 Severity=Success
@@ -41932,6 +46300,10 @@ Language=Taiwanese
 Service failed to restore its database from the backup.  Service\n
 will not start.
 .
+Language=Finnish
+Palvelu ei pystynyt palauttamaan tietokantaansa varmuuskopiosta.  Palvelu\n
+ei käynnisty.
+.
 
 MessageId=5768
 Severity=Success
@@ -41960,6 +46332,9 @@ Service successfully restored its database from the backup.
 .
 Language=Taiwanese
 Service successfully restored its database from the backup.
+.
+Language=Finnish
+Palvelu palautti tietokantansa onnistuneesti varmuuskopiosta.
 .
 
 MessageId=5769
@@ -41997,6 +46372,10 @@ will not start.
 Language=Taiwanese
 Service failed to initialize from its restored database.  Service\n
 will not start.
+.
+Language=Finnish
+Palvelu ei pystynyt alustamaan palautetusta tietokannastaan.  Palvelu\n
+ei käynnisty.
 .
 
 MessageId=5770
@@ -42060,6 +46439,13 @@ However, %2 tried to connect as either a DC in a trusted domain,\n
 a member workstation in domain %3, or as a server in domain %3.\n
 Use the Active Directory Users and Computers tool or Server Manager to remove the BDC account for %2.
 .
+Language=Finnish
+Istunnon muodostaminen Windows NT- tai Windows 2000 -toimialueen ohjauskoneeseen %1 tietokoneesta\n
+%2 tilillä %4 epäonnistui.  %2 on määritetty toimialueen %3 varaohjauskoneeksi (BDC).\n
+%2 yritti kuitenkin muodostaa yhteyden joko luotetun toimialueen ohjauskoneena,\n
+toimialueen %3 jäsentyöasemana tai palvelimena toimialueessa %3.\n
+Poista kohteen %2 BDC-tili Active Directory -käyttäjät ja -tietokoneet -työkalulla tai Server Managerilla.
+.
 
 MessageId=5771
 Severity=Success
@@ -42105,6 +46491,11 @@ The Remoteboot database was in NT 3.5 / NT 3.51 format and NT is\n
 attempting to convert it to NT 4.0 format. The JETCONV converter\n
 will write to the Application event log when it is finished.
 .
+Language=Finnish
+Remoteboot-tietokanta oli NT 3.5- / NT 3.51 -muodossa, ja NT\n
+yrittää muuntaa sen NT 4.0 -muotoon. JETCONV-muunnin\n
+kirjoittaa sovellustapahtumalokiin, kun se on valmis.
+.
 
 MessageId=5772
 Severity=Success
@@ -42149,6 +46540,11 @@ Language=Taiwanese
 Global group SERVERS exists in domain %1 and has members.\n
 This group defines Lan Manager BDCs in the domain.\n
 Lan Manager BDCs are not permitted in NT domains.
+.
+Language=Finnish
+Yleinen SERVERS-ryhmä on olemassa toimialueessa %1, ja sillä on jäseniä.\n
+Tämä ryhmä määrittää toimialueen Lan Manager -varaohjauskoneet (BDC).\n
+Lan Manager -varaohjauskoneet eivät ole sallittuja NT-toimialueissa.
 .
 
 MessageId=5773
@@ -42234,6 +46630,16 @@ locator records of this domain controller does not support dynamic DNS updates:\
 %n%nUSER ACTION\n\n
 %nConfigure the DNS server to allow dynamic DNS updates or manually add the DNS\n
 records from the file '%SystemRoot%\\System32\\Config\\Netlogon.dns' to the DNS database.
+.
+Language=Finnish
+Seuraava DNS-palvelin, joka on määräävä tämän toimialueen ohjauskoneen DNS-toimialueen\n
+ohjauskoneen paikannintietueille, ei tue dynaamisia DNS-päivityksiä:\n\n
+%n%nDNS-palvelimen IP-osoite: %1\n
+%nPalautettu vastauskoodi (RCODE): %2\n
+%nPalautettu tilakoodi: %3\n\n
+%n%nKÄYTTÄJÄN TOIMET\n\n
+%nMääritä DNS-palvelin sallimaan dynaamiset DNS-päivitykset tai lisää DNS-\n
+tietueet tiedostosta '%SystemRoot%\\System32\\Config\\Netlogon.dns' DNS-tietokantaan manuaalisesti.
 .
 
 MessageId=5774
@@ -42401,6 +46807,26 @@ recommended.\n\n
 %n%nADDITIONAL DATA\n
 %nError Value: %2
 .
+Language=Finnish
+DNS-tietueen '%1' dynaaminen rekisteröinti epäonnistui seuraavassa DNS-palvelimessa:\n\n
+%n%nDNS-palvelimen IP-osoite: %3\n
+%nPalautettu vastauskoodi (RCODE): %4\n
+%nPalautettu tilakoodi: %5\n\n
+%n%nJotta tietokoneet ja käyttäjät löytävät tämän toimialueen ohjauskoneen, tietue on\n
+rekisteröitävä DNS:ään.\n\n
+%n%nKÄYTTÄJÄN TOIMET\n\n
+%nSelvitä, mikä on voinut aiheuttaa virheen, ratkaise ongelma ja käynnistä\n
+DNS-tietueiden rekisteröinti toimialueen ohjauskoneella. Voit selvittää\n
+virheen syytä suorittamalla DCDiag.exe-ohjelman. Ohjelma löytyy LiberNT\n
+Server -asennus-CD:ltä kohteesta Support\\Tools\\support.cab. Lisätietoja\n
+DCDiag.exe-ohjelmasta on Ohje ja tuki -palvelussa. Voit käynnistää DNS-tietueiden rekisteröinnin\n
+tällä toimialueen ohjauskoneella suorittamalla komentokehotteessa 'nltest.exe /dsregdns'\n
+tai käynnistämällä Net Logon -palvelun uudelleen. Nltest.exe on saatavilla LiberNT Server\n
+Resource Kit -CD:llä. %n  Voit myös lisätä tämän tietueen DNS:ään manuaalisesti, mutta sitä ei\n
+suositella.\n\n
+%n%nLISÄTIETOJA\n
+%nVirheen arvo: %2
+.
 
 MessageId=5775
 Severity=Success
@@ -42494,6 +46920,17 @@ record. To learn more about debugging DNS, see Help and Support Center.\n\n
 %n%nADDITIONAL DATA\n
 %nError Value: %2
 .
+Language=Finnish
+DNS-tietueen '%1' dynaaminen poisto epäonnistui seuraavassa DNS-palvelimessa:\n\n
+%n%nDNS-palvelimen IP-osoite: %3\n%nPalautettu vastauskoodi (RCODE): %4\n
+%nPalautettu tilakoodi: %5\n\n
+%n%nKÄYTTÄJÄN TOIMET\n\n
+%nJotta etätietokoneet eivät muodosta tarpeettomasti yhteyttä toimialueen ohjauskoneeseen,\n
+poista tietue manuaalisesti tai selvitä, miksi tietueen dynaaminen poisto\n
+epäonnistui. Lisätietoja DNS:n vianmäärityksestä on Ohje ja tuki -palvelussa.\n\n
+%n%nLISÄTIETOJA\n
+%nVirheen arvo: %2
+.
 
 MessageId=5776
 Severity=Success
@@ -42522,6 +46959,9 @@ Failed to create/open file %1 with the following error: %n%2
 .
 Language=Taiwanese
 Failed to create/open file %1 with the following error: %n%2
+.
+Language=Finnish
+Tiedoston %1 luonti/avaus epäonnistui seuraavalla virheellä: %n%2
 .
 
 MessageId=5777
@@ -42559,6 +46999,10 @@ mapping information from the DS: %n%1
 Language=Taiwanese
 Netlogon got the following error while trying to get the subnet to site\n
 mapping information from the DS: %n%1
+.
+Language=Finnish
+Netlogon sai seuraavan virheen yrittäessään noutaa aliverkkojen ja sivustojen\n
+vastaavuustietoja hakemistopalvelusta (DS): %n%1
 .
 
 MessageId=5778
@@ -42605,6 +47049,11 @@ Language=Taiwanese
 in the Configuration\\Sites\\Subnets container in the DS.  No subnet matched\n
 the IP address.  Consider adding a subnet object for this IP address.
 .
+Language=Finnish
+'%1' yritti selvittää sivustonsa etsimällä IP-osoitettaan ('%2')\n
+hakemistopalvelun (DS) Configuration\\Sites\\Subnets-säilöstä.  Mikään aliverkko ei vastannut\n
+IP-osoitetta.  Harkitse aliverkko-objektin lisäämistä tälle IP-osoitteelle.
+.
 
 MessageId=5779
 Severity=Success
@@ -42649,6 +47098,11 @@ Language=Taiwanese
 The site name for this computer is '%1'.  That site name is not a valid\n
 site name.  A site name must be a valid DNS label.\n
 Rename the site to be a valid name.
+.
+Language=Finnish
+Tämän tietokoneen sivuston nimi on '%1'.  Sivuston nimi ei ole kelvollinen\n
+sivuston nimi.  Sivuston nimen on oltava kelvollinen DNS-nimiö.\n
+Anna sivustolle kelvollinen nimi.
 .
 
 MessageId=5780
@@ -42710,6 +47164,13 @@ container in the DS.  The name is not syntactically valid.  The valid\n
 syntax is xx.xx.xx.xx/yy where xx.xx.xx.xx is a valid IP subnet number\n
 and yy is the number of bits in the subnet mask.\n\n
 Correct the name of the subnet object.
+.
+Language=Finnish
+Aliverkko-objekti '%1' on hakemistopalvelun (DS) Configuration\\Sites\\Subnets-\n
+säilössä.  Nimi ei ole syntaktisesti kelvollinen.  Kelvollinen\n
+syntaksi on xx.xx.xx.xx/yy, jossa xx.xx.xx.xx on kelvollinen IP-aliverkon numero\n
+ja yy on aliverkon peitteen bittien määrä.\n\n
+Korjaa aliverkko-objektin nimi.
 .
 
 MessageId=5781
@@ -42844,6 +47305,22 @@ domain) or as an LDAP server (if the specified domain is an application partitio
 the DNS records by running 'nltest.exe /dsregdns' from the command prompt or by restarting\n
 Net Logon service. Nltest.exe is available in the LiberNT Server Resource Kit CD.
 .
+Language=Finnish
+Yhden tai useamman DNS-toimialueeseen '%1' liittyvän DNS-tietueen dynaaminen\n
+rekisteröinti tai poisto epäonnistui.  Muut tietokoneet käyttävät näitä tietueita tämän\n
+palvelimen paikantamiseen toimialueen ohjauskoneena (jos määritetty toimialue on Active Directory\n
+-toimialue) tai LDAP-palvelimena (jos määritetty toimialue on sovellusosio).\n\n
+%n%nMahdollisia virheen syitä ovat:\n\n
+%n- Tämän tietokoneen verkkoyhteyksien TCP/IP-ominaisuuksissa on ensisijaisen ja vaihtoehtoisen DNS-palvelimen väärät IP-osoitteet\n
+%n- Määritetyt ensisijainen ja vaihtoehtoinen DNS-palvelin eivät ole käynnissä\n
+%n- Rekisteröitävien tietueiden ensisijainen DNS-palvelin ei ole käynnissä\n
+%n- Ensisijaiselle tai vaihtoehtoiselle DNS-palvelimelle on määritetty väärät juurivihjeet\n
+%n- Ylemmässä DNS-vyöhykkeessä on virheellinen delegointi alemmalle vyöhykkeelle, joka on määräävä epäonnistuneille DNS-tietueille\n\n
+%n%nKÄYTTÄJÄN TOIMET\n\n
+%nKorjaa edellä mainitut mahdolliset määritysvirheet ja käynnistä\n
+DNS-tietueiden rekisteröinti tai poisto suorittamalla komentokehotteessa 'nltest.exe /dsregdns' tai käynnistämällä\n
+Net Logon -palvelu uudelleen. Nltest.exe on saatavilla LiberNT Server Resource Kit -CD:llä.
+.
 
 MessageId=5782
 Severity=Success
@@ -42872,6 +47349,9 @@ Dynamic registration or deregistration of one or more DNS records failed with th
 .
 Language=Taiwanese
 Dynamic registration or deregistration of one or more DNS records failed with the following error: %n%1
+.
+Language=Finnish
+Yhden tai useamman DNS-tietueen dynaaminen rekisteröinti tai rekisteröinnin poisto epäonnistui seuraavalla virheellä: %n%1
 .
 
 MessageId=5783
@@ -42909,6 +47389,10 @@ is not responsive.  The current RPC call from Netlogon on \\%3 to %1 has been ca
 Language=Taiwanese
 The session setup to the Windows NT or Windows 2000 Domain Controller %1 for the domain %2\n
 is not responsive.  The current RPC call from Netlogon on \\%3 to %1 has been cancelled.
+.
+Language=Finnish
+Istunnon muodostaminen toimialueen %2 Windows NT- tai Windows 2000 -toimialueen ohjauskoneeseen %1\n
+ei vastaa.  Nykyinen RPC-kutsu Netlogonista kohteessa \\%3 kohteeseen %1 on peruutettu.
 .
 
 MessageId=5784
@@ -42963,6 +47447,12 @@ Domain Controllers in site '%1' have been automatically\n
 selected to cover site '%2' for domain '%3' based on configured\n
 Directory Server replication costs.
 .
+Language=Finnish
+Sivustolla '%2' ei ole yhtään toimialueen '%3' toimialueen ohjauskonetta.\n
+Sivuston '%1' toimialueen ohjauskoneet on valittu automaattisesti\n
+kattamaan sivusto '%2' toimialueelle '%3' määritettyjen\n
+hakemistopalvelimen replikointikustannusten perusteella.
+.
 
 MessageId=5785
 Severity=Success
@@ -42991,6 +47481,9 @@ This Domain Controller no longer automatically covers site '%1' for domain '%2'.
 .
 Language=Taiwanese
 This Domain Controller no longer automatically covers site '%1' for domain '%2'.
+.
+Language=Finnish
+Tämä toimialueen ohjauskone ei enää kata automaattisesti sivustoa '%1' toimialueelle '%2'.
 .
 
 MessageId=5786
@@ -43045,6 +47538,12 @@ Global Catalog servers in site '%1' have been automatically\n
 selected to cover site '%2' for forest '%3' based on configured\n
 Directory Server replication costs.
 .
+Language=Finnish
+Sivustolla '%2' ei ole yhtään metsän '%3' yleisen luettelon palvelinta.\n
+Sivuston '%1' yleisen luettelon palvelimet on valittu automaattisesti\n
+kattamaan sivusto '%2' metsälle '%3' määritettyjen\n
+hakemistopalvelimen replikointikustannusten perusteella.
+.
 
 MessageId=5787
 Severity=Success
@@ -43073,6 +47572,9 @@ This Global Catalog server no longer automatically covers site '%1' for forest '
 .
 Language=Taiwanese
 This Global Catalog server no longer automatically covers site '%1' for forest '%2'.
+.
+Language=Finnish
+Tämä yleisen luettelon palvelin ei enää kata automaattisesti sivustoa '%1' metsälle '%2'.
 .
 
 MessageId=5788
@@ -43119,6 +47621,11 @@ Attempt to update HOST Service Principal Names (SPNs) of the computer\n
 object in Active Directory failed. The updated values were '%1' and '%2'.\n
 The following error occurred: %n%3
 .
+Language=Finnish
+Active Directoryn tietokoneobjektin HOST-palvelun päänimien (SPN) päivitysyritys\n
+epäonnistui. Päivitetyt arvot olivat '%1' ja '%2'.\n
+Tapahtui seuraava virhe: %n%3
+.
 
 MessageId=5789
 Severity=Success
@@ -43163,6 +47670,11 @@ Language=Taiwanese
 Attempt to update DNS Host Name of the computer object\n
 in Active Directory failed. The updated value was '%1'.\n
 The following error occurred: %n%2
+.
+Language=Finnish
+Active Directoryn tietokoneobjektin DNS-isäntänimen päivitysyritys\n
+epäonnistui. Päivitetty arvo oli '%1'.\n
+Tapahtui seuraava virhe: %n%2
 .
 
 MessageId=5790
@@ -43225,6 +47737,13 @@ be used for authentication purposes in the Windows 2000 or newer\n
 domain that this computer is a member of.\n
 The following error occurred:%n%2
 .
+Language=Finnish
+Toimialueelle %1 ei ole käytettävissä sopivaa toimialueen ohjauskonetta.\n
+NT4- tai vanhempi toimialueen ohjauskone on käytettävissä, mutta sitä ei voi\n
+käyttää todennukseen Windows 2000- tai uudemmassa\n
+toimialueessa, jonka jäsen tämä tietokone on.\n
+Tapahtui seuraava virhe:%n%2
+.
 
 MessageId=5791
 Severity=Success
@@ -43286,6 +47805,13 @@ in this case for authentication purposes. This computer needs to rejoin\n
 the domain.\n
 The following error occurred:%n%2
 .
+Language=Finnish
+Tämän tietokoneen toimialue %1 on alennettu Windows 2000:sta\n
+tai uudemmasta Windows NT4:ksi tai vanhemmaksi. Tietokone ei voi toimia oikein\n
+tässä tilanteessa todennuksen osalta. Tämän tietokoneen on liityttävä uudelleen\n
+toimialueeseen.\n
+Tapahtui seuraava virhe:%n%2
+.
 
 MessageId=5792
 Severity=Success
@@ -43339,6 +47865,12 @@ LDAP servers in site '%1' have been automatically selected to\n
 cover site '%2' for non-domain NC '%3' based on configured\n
 Directory Server replication costs.
 .
+Language=Finnish
+Sivustolla '%2' ei ole yhtään LDAP-palvelinta ei-toimialueen nimeämiskontekstille (NC) '%3'.\n
+Sivuston '%1' LDAP-palvelimet on valittu automaattisesti\n
+kattamaan sivusto '%2' ei-toimialueen NC:lle '%3' määritettyjen\n
+hakemistopalvelimen replikointikustannusten perusteella.
+.
 
 MessageId=5793
 Severity=Success
@@ -43367,6 +47899,9 @@ This LDAP server no longer automatically covers site '%1' for non-domain NC '%2'
 .
 Language=Taiwanese
 This LDAP server no longer automatically covers site '%1' for non-domain NC '%2'.
+.
+Language=Finnish
+Tämä LDAP-palvelin ei enää kata automaattisesti sivustoa '%1' ei-toimialueen NC:lle '%2'.
 .
 
 MessageId=5794
@@ -43437,6 +47972,14 @@ Domain Controllers in site '%1' have been automatically\n
 selected to cover site '%2' for domain '%3' based on configured\n
 Directory Server replication costs.
 .
+Language=Finnish
+Sivustoa '%2' ei ole enää määritetty rekisterissä manuaalisesti\n
+tämän toimialueen '%3' toimialueen ohjauskoneen kattamaksi. Tämän vuoksi\n
+sivustolla '%2' ei ole yhtään toimialueen '%3' toimialueen ohjauskonetta.\n
+Sivuston '%1' toimialueen ohjauskoneet on valittu automaattisesti\n
+kattamaan sivusto '%2' toimialueelle '%3' määritettyjen\n
+hakemistopalvelimen replikointikustannusten perusteella.
+.
 
 MessageId=5795
 Severity=Success
@@ -43481,6 +48024,11 @@ Language=Taiwanese
 This Domain Controller no longer automatically covers site '%1' for domain '%2'.\n
 However, site '%1' is still (manually) covered by this Domain Controller for\n
 domain '%2' since this site has been manually configured in the registry.
+.
+Language=Finnish
+Tämä toimialueen ohjauskone ei enää kata automaattisesti sivustoa '%1' toimialueelle '%2'.\n
+Tämä toimialueen ohjauskone kattaa kuitenkin yhä (manuaalisesti) sivuston '%1'\n
+toimialueelle '%2', koska sivusto on määritetty rekisterissä manuaalisesti.
 .
 
 MessageId=5796
@@ -43551,6 +48099,14 @@ Global Catalog servers in site '%1' have been automatically\n
 selected to cover site '%2' for forest '%3' based on configured\n
 Directory Server replication costs.
 .
+Language=Finnish
+Sivustoa '%2' ei ole enää määritetty rekisterissä manuaalisesti\n
+tämän metsän '%3' yleisen luettelon palvelimen kattamaksi. Tämän vuoksi\n
+sivustolla '%2' ei ole yhtään metsän '%3' yleisen luettelon palvelinta.\n
+Sivuston '%1' yleisen luettelon palvelimet on valittu automaattisesti\n
+kattamaan sivusto '%2' metsälle '%3' määritettyjen\n
+hakemistopalvelimen replikointikustannusten perusteella.
+.
 
 MessageId=5797
 Severity=Success
@@ -43595,6 +48151,11 @@ Language=Taiwanese
 This Global Catalog server no longer automatically covers site '%1' for forest '%2'.\n
 However, site '%1' is still (manually) covered by this Global catalog for\n
 forest '%2' since this site has been manually configured in the registry.
+.
+Language=Finnish
+Tämä yleisen luettelon palvelin ei enää kata automaattisesti sivustoa '%1' metsälle '%2'.\n
+Tämä yleinen luettelo kattaa kuitenkin yhä (manuaalisesti) sivuston '%1'\n
+metsälle '%2', koska sivusto on määritetty rekisterissä manuaalisesti.
 .
 
 MessageId=5798
@@ -43665,6 +48226,14 @@ LDAP servers in site '%1' have been automatically\n
 selected to cover site '%2' for non-domain NC '%3' based on\n
 configured Directory Server replication costs.
 .
+Language=Finnish
+Sivustoa '%2' ei ole enää määritetty rekisterissä manuaalisesti\n
+tämän ei-toimialueen NC:n '%3' LDAP-palvelimen kattamaksi. Tämän vuoksi\n
+sivustolla '%2' ei ole yhtään LDAP-palvelinta ei-toimialueen NC:lle '%3'.\n
+Sivuston '%1' LDAP-palvelimet on valittu automaattisesti\n
+kattamaan sivusto '%2' ei-toimialueen NC:lle '%3' määritettyjen\n
+hakemistopalvelimen replikointikustannusten perusteella.
+.
 
 MessageId=5799
 Severity=Success
@@ -43709,6 +48278,11 @@ Language=Taiwanese
 This LDAP server no longer automatically covers site '%1' for non-domain NC '%2'.\n
 However, site '%1' is still (manually) covered by this LDAP server for\n
 non-domain NC '%2' since this site has been manually configured in the registry.
+.
+Language=Finnish
+Tämä LDAP-palvelin ei enää kata automaattisesti sivustoa '%1' ei-toimialueen NC:lle '%2'.\n
+Tämä LDAP-palvelin kattaa kuitenkin yhä (manuaalisesti) sivuston '%1'\n
+ei-toimialueen NC:lle '%2', koska sivusto on määritetty rekisterissä manuaalisesti.
 .
 
 MessageId=5800
@@ -43778,6 +48352,14 @@ of the computer object in Active Directory failed because the Domain Controller\
 Not having SPNs registered may result in authentication failures for this computer.\n
 Contact your domain administrator who may need to manually resolve the account name\n
 collision.
+.
+Language=Finnish
+Active Directoryn tietokoneobjektin DnsHostName- ja HOST-palvelun päänimen (SPN) määritteiden\n
+päivitysyritys epäonnistui, koska toimialueen ohjauskoneella\n
+'%1' oli useampi kuin yksi tätä tietokonetta vastaava tili nimeltä '%2'.\n
+Rekisteröimättömät SPN-nimet voivat aiheuttaa tämän tietokoneen todennusvirheitä.\n
+Ota yhteyttä toimialueen järjestelmänvalvojaan, joka voi joutua ratkaisemaan tilinimien\n
+ristiriidan manuaalisesti.
 .
 
 MessageId=5801
@@ -43854,6 +48436,15 @@ Not having SPNs registered may result in authentication failures for this comput
 Contact your domain administrator. The following technical information may be\n
 useful for the resolution of this failure:%n\n
 DsCrackNames status = 0x%3, crack error = 0x%4.
+.
+Language=Finnish
+Active Directoryn tietokoneobjektin DnsHostName- ja HOST-palvelun päänimen (SPN) määritteiden\n
+päivitysyritys epäonnistui, koska tämän tietokonetilin\n
+nimeä '%2' ei voitu yhdistää tietokoneobjektiin toimialueen ohjauskoneessa '%1'.\n
+Rekisteröimättömät SPN-nimet voivat aiheuttaa tämän tietokoneen todennusvirheitä.\n
+Ota yhteyttä toimialueen järjestelmänvalvojaan. Seuraavista teknisistä tiedoista voi olla\n
+apua virheen ratkaisemisessa:%n\n
+DsCrackNames-tila = 0x%3, crack-virhe = 0x%4.
 .
 
 MessageId=5802
@@ -43940,6 +48531,16 @@ exist) such that the above IP address maps to the selected site. This may requir
 creation of a new subnet object (whose range includes the above IP address) which maps\n
 to the selected site object.
 .
+Language=Finnish
+Yksikään tämän toimialueen ohjauskoneen IP-osoitteista (%2) ei vastaa määritettyä sivustoa '%1'.\n
+Vaikka tämä voi olla IP-osoitteiden muutoksista johtuva tilapäinen tilanne, on yleensä\n
+suositeltavaa, että toimialueen ohjauskoneen IP-osoite (johon sen toimialueen koneet\n
+pääsevät) vastaa sivustoa, jota se palvelee. Jos edellä oleva IP-osoiteluettelo on\n
+vakaa, harkitse tämän palvelimen siirtämistä sivustolle (tai luo sivusto, jos sitä ei vielä\n
+ole) niin, että edellä oleva IP-osoite vastaa valittua sivustoa. Tämä voi edellyttää\n
+uuden aliverkko-objektin luomista (jonka alue sisältää edellä olevan IP-osoitteen) ja joka vastaa\n
+valittua sivusto-objektia.
+.
 
 MessageId=5803
 Severity=Success
@@ -43976,6 +48577,10 @@ Netlogon %1 registry section:%n%3
 Language=Taiwanese
 The following error occurred while reading a parameter '%2' in the\n
 Netlogon %1 registry section:%n%3
+.
+Language=Finnish
+Luettaessa parametria '%2'\n
+Netlogonin rekisteriosasta %1 tapahtui seuraava virhe:%n%3
 .
 
 MessageId=5804
@@ -44022,6 +48627,11 @@ The Netlogon %1 registry key contains an invalid value 0x%2 for parameter '%3'.\
 The minimum and maximum values allowed for this parameter are 0x%4 and 0x%5, respectively.\n
 The value of 0x%6 has been assigned to this parameter.
 .
+Language=Finnish
+Netlogonin rekisteriavain %1 sisältää virheellisen arvon 0x%2 parametrille '%3'.\n
+Tämän parametrin pienin ja suurin sallittu arvo ovat 0x%4 ja 0x%5.\n
+Parametrille on annettu arvo 0x%6.
+.
 
 MessageId=5805
 Severity=Success
@@ -44058,6 +48668,10 @@ The following error occurred: %n%2
 Language=Taiwanese
 The session setup from the computer %1 failed to authenticate.\n
 The following error occurred: %n%2
+.
+Language=Finnish
+Tietokoneen %1 istunnon muodostamisen todennus epäonnistui.\n
+Tapahtui seuraava virhe: %n%2
 .
 
 MessageId=5806
@@ -44111,6 +48725,12 @@ Dynamic DNS updates have been manually disabled on this domain controller.\n\n
 %n%nUSER ACTION\n\n
 %nReconfigure this domain controller to use dynamic DNS updates or manually add the DNS\n
 records from the file '%SystemRoot%\\System32\\Config\\Netlogon.dns' to the DNS database.
+.
+Language=Finnish
+Dynaamiset DNS-päivitykset on poistettu manuaalisesti käytöstä tässä toimialueen ohjauskoneessa.\n\n
+%n%nKÄYTTÄJÄN TOIMET\n\n
+%nMääritä tämä toimialueen ohjauskone käyttämään dynaamisia DNS-päivityksiä tai lisää DNS-\n
+tietueet tiedostosta '%SystemRoot%\\System32\\Config\\Netlogon.dns' DNS-tietokantaan manuaalisesti.
 .
 
 MessageId=5807
@@ -44301,6 +48921,29 @@ the default is %3 bytes.  The current maximum size is %4 bytes.  To set a\n
 different maximum size, create the above registry value and set the desired\n
 maximum size in bytes.
 .
+Language=Finnish
+Viimeisten %1 tunnin aikana tähän toimialueen ohjauskoneeseen on muodostettu %2 yhteyttä\n
+asiakaskoneista, joiden IP-osoitteet eivät vastaa yhtään\n
+yrityksen olemassa olevaa sivustoa. Näiden asiakkaiden sivustot ovat siksi\n
+määrittämättömiä, ja ne voivat muodostaa yhteyden mihin tahansa toimialueen ohjauskoneeseen, myös\n
+sellaisiin, jotka ovat kaukana asiakkaista. Asiakkaan sivusto\n
+määräytyy sen aliverkon vastaavuudesta johonkin olemassa olevista sivustoista.\n
+Jos haluat siirtää edellä mainitut asiakkaat jollekin sivustolle, harkitse\n
+aliverkko-objektien luomista edellä mainituille IP-osoitteille niin, että ne vastaavat jotakin\n
+olemassa olevaa sivustoa.  Kyseisten asiakkaiden nimet ja IP-osoitteet on\n
+kirjattu tässä tietokoneessa seuraavaan lokitiedostoon\n
+'%SystemRoot%\\debug\\netlogon.log' ja mahdollisesti lokitiedostoon\n
+'%SystemRoot%\\debug\\netlogon.bak', joka luodaan, jos edellinen loki täyttyy.\n
+Lokit voivat sisältää myös muita, asiaan liittymättömiä virheenkorjaustietoja. Voit suodattaa\n
+tarvittavat tiedot etsimällä rivejä, joilla on teksti\n
+'NO_CLIENT_SITE:'. Merkkijonon jälkeinen ensimmäinen sana on asiakkaan nimi ja\n
+toinen sana on asiakkaan IP-osoite. Lokien enimmäiskokoa\n
+ohjaa seuraava rekisterin DWORD-arvo\n
+'HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Netlogon\\Parameters\\LogFileMaxSize';\n
+oletus on %3 tavua.  Nykyinen enimmäiskoko on %4 tavua.  Jos haluat asettaa\n
+eri enimmäiskoon, luo edellä mainittu rekisteriarvo ja aseta haluamasi\n
+enimmäiskoko tavuina.
+.
 
 MessageId=5808
 Severity=Success
@@ -44369,6 +49012,14 @@ took too long.\n\n
 %n%nUSER ACTION\n\n
 %nManually delete the DNS records listed in the file\n
 '%SystemRoot%\\System32\\Config\\Netlogon.dns' from the DNS database.
+.
+Language=Finnish
+Joidenkin DNS-toimialueen ohjauskoneen paikannintietueiden rekisteröinnin poisto keskeytettiin\n
+tämän toimialueen ohjauskoneen alentamisen yhteydessä, koska DNS-rekisteröintien poisto\n
+kesti liian kauan.\n\n
+%n%nKÄYTTÄJÄN TOIMET\n\n
+%nPoista DNS-tietokannasta manuaalisesti tiedostossa\n
+'%SystemRoot%\\System32\\Config\\Netlogon.dns' luetellut DNS-tietueet.
 .
 
 MessageId=5809
@@ -44510,4 +49161,21 @@ configuration for the port in which case the port will be assigned dynamically b
 the endpoint mapper at the time the NetLogon service on remote machines makes RPC connections\n
 to this domain controller. After the misconfiguration is corrected, restart the NetLogon\n
 service on this machine and verify that this event log no longer appears.
+.
+Language=Finnish
+Tämän toimialueen ohjauskoneen NetLogon-palvelu on määritetty käyttämään porttia %1\n
+etäkoneista TCP/IP:n kautta saapuville RPC-yhteyksille. Kun Netlogon yritti\n
+rekisteröidä tämän portin RPC-päätepisteiden yhdistäjäpalveluun, tapahtui kuitenkin\n
+seuraava virhe: %n%2 %nTämä estää etäkoneiden NetLogon-palvelua\n
+muodostamasta yhteyttä tähän toimialueen ohjauskoneeseen TCP/IP:n kautta, mikä voi aiheuttaa\n
+todennusongelmia.\n\n
+%n%nKÄYTTÄJÄN TOIMET\n\n
+%nMääritetty portti määritetään ryhmäkäytännöllä tai rekisteriarvolla 'DcTcpipPort'\n
+rekisteriavaimessa 'HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Netlogon\\Parameters';\n
+ryhmäkäytännöllä määritetty arvo on ensisijainen. Jos\n
+määritetty portti on virheellinen, palauta se oikeaan arvoon. Voit myös poistaa tämän\n
+porttimäärityksen, jolloin päätepisteiden yhdistäjä määrittää portin dynaamisesti\n
+silloin, kun etäkoneiden NetLogon-palvelu muodostaa RPC-yhteyksiä\n
+tähän toimialueen ohjauskoneeseen. Kun määritysvirhe on korjattu, käynnistä NetLogon-\n
+palvelu uudelleen tässä koneessa ja varmista, että tämä tapahtumaloki ei enää näy.
 .
