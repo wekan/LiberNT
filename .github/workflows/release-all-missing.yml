@@ -1,20 +1,22 @@
 name: Release All Missing
 
-# Build only the platforms a release does not fully carry and upload only the
-# files it lacks. A platform is rebuilt when any of its four images, or the
-# .sha256 of one, is absent - a build that failed or an upload that did. Files
-# already on the release are never replaced. The platforms and the build are in
-# release-build.yml; the source is the commit the release's tag points at.
+# Complete a release Release All made: make again only the source files and
+# build only the platforms it lacks a file of, and upload only the files it
+# does not have - a build that failed, or an upload that did. Files already on
+# the release are never replaced. The source is made from the upstream and
+# LiberNT-patches commits in the release's LiberNT-<tag>-source.env, which
+# gives the same commits, or the release's own source zip when it has one.
+# Upstream's releases are mirrored as well. The steps are in release-build.yml.
 #
 # Usage:
-#   gh workflow run release-all-missing.yml              # the newest release
-#   gh workflow run release-all-missing.yml -f tag=v0.4.17-dev-20261107-5a85856
+#   gh workflow run release-all-missing.yml -R wekan/LiberNT             # the newest Release All release
+#   gh workflow run release-all-missing.yml -R wekan/LiberNT -f tag=v0.4.17-dev-wekan-20261113-d02ef2e0db2
 
 on:
   workflow_dispatch:
     inputs:
       tag:
-        description: 'Release tag to complete (empty = the newest release)'
+        description: 'Release tag to complete (empty = the newest Release All release)'
         required: false
         type: string
 

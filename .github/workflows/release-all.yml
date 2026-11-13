@@ -1,21 +1,34 @@
 name: Release All
 
-# Build the boot CD and disk images of every platform LiberNT's own CI builds
-# images for (i386, amd64, arm64-raspberry, riscv64-spacemit-k1, ppc) and
-# attach them to a GitHub Release of this repository, replacing any file of
-# the same name. The platforms and the build are in release-build.yml.
+# Make a release of wekan/LiberNT from upstream LiberNT/LiberNT and
+# wekan/LiberNT-patches: clone upstream with its whole history, apply the
+# patches (the Finnish translation, these workflows) as git commits, and put
+# on a GitHub Release of this repository the patched source zipped with its
+# git history and without it, and the boot CD and disk images of every
+# platform LiberNT's own CI builds images for, built from that source. Files
+# of the same name are replaced. Upstream's own releases are mirrored here as
+# well. The steps are in release-build.yml.
 #
 # Usage:
-#   gh workflow run release-all.yml                      # new tag from version.cmake, date and commit
-#   gh workflow run release-all.yml -f tag=v0.4.17-dev-20261107-5a85856
+#   gh workflow run release-all.yml -R wekan/LiberNT                     # upstream main-nt10, LiberNT-patches main
+#   gh workflow run release-all.yml -R wekan/LiberNT -f ref=<upstream branch, tag or commit>
+#   gh workflow run release-all.yml -R wekan/LiberNT -f tag=v0.4.17-dev-wekan-20261113-d02ef2e0db2
 #
 # To fill in only what a release is missing, use release-all-missing.yml.
 
 on:
   workflow_dispatch:
     inputs:
+      ref:
+        description: 'Upstream LiberNT/LiberNT branch, tag or commit (empty = main-nt10)'
+        required: false
+        type: string
+      patches_ref:
+        description: 'wekan/LiberNT-patches branch, tag or commit (empty = main)'
+        required: false
+        type: string
       tag:
-        description: 'Release tag (empty = v<version>-<date>-<commit> of this commit)'
+        description: 'Release tag (empty = v<version>-wekan-<date>-<upstream commit>)'
         required: false
         type: string
 
@@ -23,7 +36,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: libernt-release-${{ inputs.tag || github.sha }}
+  group: libernt-release-${{ inputs.tag || inputs.ref || github.sha }}
   cancel-in-progress: false
 
 jobs:
@@ -32,3 +45,5 @@ jobs:
     with:
       mode: all
       tag: ${{ inputs.tag }}
+      ref: ${{ inputs.ref }}
+      patches_ref: ${{ inputs.patches_ref }}
