@@ -190,7 +190,11 @@ int main(int argc, const char **argv)
 				FORMAT_MESSAGE_ARGUMENT_ARRAY,
 				NULL, HelpMsg[idx].help, 0,
 				(LPTSTR)&buf, 0, (va_list *)&help_progname);
-			
+
+#ifdef __REACTOS__
+			//	the message table is ANSI, the console is OEM
+			CharToOemA(buf, buf);
+#endif
 			printf("%s", buf);
 
 			LocalFree(buf);
@@ -2845,6 +2849,9 @@ int	Help(const char **args)
 		return VFD_NG;
 	}
 
+#ifdef __REACTOS__
+	CharToOemA(buf, buf);
+#endif
 	ConsolePager(buf, TRUE);
 	LocalFree(buf);
 
@@ -3250,6 +3257,9 @@ BOOL ConsolePager(char *pBuffer, BOOL bReset)
 				strcpy(prompt, "Press any key to continue...");
 				prompt_len = strlen(prompt);
 			}
+#ifdef __REACTOS__
+			CharToOemA(prompt, prompt);
+#endif
 		}
 
 		//	get the current console input mode
@@ -3349,6 +3359,9 @@ void PrintMessage(UINT msg, ...)
 		FORMAT_MESSAGE_ALLOCATE_BUFFER,
 		NULL, msg, 0, (LPTSTR)&buf, 0, &list)) {
 
+#ifdef __REACTOS__
+		CharToOemA(buf, buf);
+#endif
 		printf("%s", buf);
 	}
 	else {
@@ -3379,6 +3392,11 @@ const char *SystemError(DWORD err)
 		sprintf(msg, "Unknown system error %lu (0x%08lx)\n", err, err);
 #endif
 	}
+#ifdef __REACTOS__
+	else {
+		CharToOemA(msg, msg);
+	}
+#endif
 
 	return msg;
 }
